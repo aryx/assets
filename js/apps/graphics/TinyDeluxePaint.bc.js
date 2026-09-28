@@ -2791,9 +2791,9 @@ d=0;for(;;){var
 g=b[1]-1|0;if(g>=0){var
 e=0;for(;;){var
 h=a$(b,e,d);if(h!==a)D(j,(f+e|0)-(b[1]/2|0)|0,(i+d|0)-(b[2]/2|0)|0,h);h=e+1|0;if(g===e)break;e=h}}g=d+1|0;if(c===d)break;d=g}}return}a=a[1];for(;;){if(!a)return;c=a[1];a=a[2];D(j,f+c[1]|0,i+c[2]|0,b)}}function
-aq(n,m,l,c,e){var
-f=e[2],e=e[1],a=c[2],c=c[1],g=J(e-c|0),b=-J(f-a|0)|0,j=c<e?1:-1,k=a<f?1:-1,d=g+b|0,h=0;for(;;){h=[0,[0,c,a],h];if(c===e&&a===f)break;var
-i=2*d|0;if(b<=i){d=d+b|0;c=c+j|0}if(i<=g){a=a+k|0;d=d+g|0}}b=K(h);for(;;){if(!b)return 0;a=b[2];cM(n,m,l,b[1]);b=a}}function
+aq(n,m,l,b,c){var
+f=c[2],c=c[1],d=b[2],b=b[1],g=J(c-b|0),a=-J(f-d|0)|0,j=b<c?1:-1,k=d<f?1:-1,e=g+a|0,h=0;for(;;){h=[0,[0,b,d],h];if(b===c&&d===f)break;var
+i=2*e|0;if(a<=i){e=e+a|0;b=b+j|0}if(i<=g){d=d+k|0;e=e+g|0}}a=K(h);for(;;){if(!a)return 0;c=a[2];cM(n,m,l,a[1]);a=c}}function
 bK(b,a){var
 d=a[2],a=a[1],c=b[2],b=b[1],e=au(c,d),f=au(b,a),c=I(c,d);return[0,I(b,a),c,f,e]}function
 cN(h,g,a,d){a=bK(a,d);d=a[4];var
@@ -3033,34 +3033,34 @@ c==="number")n=0;else if(0===c[0]){c=c[1];a=bH(num_70);r=dX(t[9],c);m=ed(.8,Q(t[
 v=a[2],v=[0,d(ae(a)+num_10+r,v,x),m],c=Q(u,c),m=a[2],c=[0,d(ae(a)+8.+r/2.,m,c),v],v=f(A,a[3],a[4]),c=[0,d(a[1],a[2],v),c],n=b(n,[0,y("Save the document as:"),c])}else{c=0===c[1]?[0,d(0.,num_60,Q(t[7],"nothing saved yet")),0]:0;n=b(n,b([0,y("Open a document:"),0],c))}j=b(n,j);p=b(w,b(p,b(h,b(i,b(e,b(k,b(g,b([0,d(0.,-440.,Q(A,s)),0],j))))))));i=[0,d(-380.,num_475,Q(u,"Deluxe Paint")),0];i=[0,d(0.,num_475,f(z[2],num_1000$0,num_40)),i];return b([0,f(Z(0,85,170),num_1000$0,num_1000$0),i],p)}var
 V=[0,0];if(V[1])aJ("Cap.main() already called");else{V[1]=1;var
 g2=function(a,b){return gT(fV,a,b)},eJ=[0,[0,1,0]][1],go=[5,1],gn=[5,0],gm=[6,1],gl=[6,0],gj=[0,0.,0.,0,0,0,0.,0.,0.,0],dQ=0,gf=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,str],gh=[0,1.],g3=function(a){return[0,[0,i,[0,gj,gf,gi,gh,a]],dQ]},g4=function(a){return gW(a[2],a[1])},g5=function(a,b){return[0,gk(g2,a,b),dQ]},g6=function(a){return ai([0,[0,[12,function(a,b){return[1,a,b]}],0],[0,[0,[0,function(a){return[0,a]}],0],[0,[0,[1,function(a){return[3,a]}],0],[0,[0,[2,function(a){return[4,a]}],0],[0,[0,[3,function(a){return go}],0],[0,[0,[4,function(a){return gn}],0],[0,[0,[5,function(a){return gm}],0],[0,[0,[6,function(a){return gl}],0],[0,[0,[7,function(a){return[2,1,a]}],0],[0,[0,[8,function(a){return[2,0,a]}],0],[0,[0,[9,function(a){return[7,a]}],0],[0,[0,[10,function(a){return[8,a]}],0],[0,[0,[11,function(a){return 1}],0],0]]]]]]]]]]]]])},gx=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],gy=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],gr=[0,[4,0]],gs=[0,[4,1]],gt=[0,0];ay.onload=caml_js_wrap_callback_strict(1,function(a){var
-d=cD(eb,ec),a=g3(0),e=[0,a[1]];function
-g(a){a=g5(a,e[1]);var
-b=a[2];e[1]=a[1];return k(b)}var
-f=[0,0];function
-k(a){a=dR(a);for(;;){if(!a)return 0;var
+f=cD(eb,ec),a=g3(0),g=[0,a[1]];function
+i(a){a=g5(a,g[1]);var
+b=a[2];g[1]=a[1];return n(b)}var
+h=[0,0];function
+n(a){a=dR(a);for(;;){if(!a)return 0;var
 c=a[2],a=a[1];if(typeof
 a==="number")a=c;else
 switch(a[0]){case
 3:a=c;break;case
-0:f[1]=b(f[1],[0,a[1],0]);a=c;break;case
+0:h[1]=b(h[1],[0,a[1],0]);a=c;break;case
 1:let
-e=a[3];ep(0,a[2],function(a){return g(caml_call1(e,a))});a=c;break;default:let
-d=a[4];ep([0,a[3]],a[2],function(a){return g(caml_call1(d,a))});a=c}}}k(a[2]);function
-h(a){a=fW(a,g6(e[1]));if(a)return g(a[1])}var
-l=[0,0],c=[0,0.],m=[0,0],j=[0,0],i=[0,0];function
-n(a){a/=num_1000$0;var
-q=m[1];if(q){q=q[1];j[1]++;if(num_120===j[1]){q=j[1]/(a-q);eg(caml_call1(o(gx),q))}}else
-m[1]=[0,a];q=l[1];var
-r=.016666666666666666,k=r;c[1]=q?c[1]+(a-q[1]):k;l[1]=[0,a];if(num_0_25<c[1])c[1]=k;k=al.Date.now()/num_1000$0;a=f[1];f[1]=0;for(;;){if(!a)break;var
-s=a[2];g(a[1]);a=s}a=0;for(;;){if(!(.014666666666666666<=c[1]))break;h([0,k]);c[1]=c[1]-r;a=a+1|0}gu(a);a=g4(e[1]);k=p(d[1]);r=p(d[2]);q=p(d[4]);var
-u=p(d[6]),a=W(ek,a),t=eJ[2]?0:[0,[1,"image-rendering","pixelated"],0],s=eJ[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",r=[0,"svg",b([0,[0,"viewBox",q+str$10+u+str$10+k+str$10+r],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,cE,str_100],[0,[0,cF,str_100],0]]]]]],b(s,t)),a],a=cz.body,k=i[1];if(k){k=k[1];i[1]=[0,[0,r,eh(a,k[2],k[1],r)]]}else{k=a.firstChild;for(;;){if(caml_equal(k,bA)){k=bE(r);cw(a,k);i[1]=[0,[0,r,k]];break}d8(a,k);k=a.firstChild}}return d9(ay,n)}d9(ay,n);a=gy;function
+e=a[3];ep(0,a[2],function(a){return i(caml_call1(e,a))});a=c;break;default:let
+d=a[4];ep([0,a[3]],a[2],function(a){return i(caml_call1(d,a))});a=c}}}n(a[2]);function
+d(a){a=fW(a,g6(g[1]));if(a)return i(a[1])}var
+k=[0,0],c=[0,0.],l=[0,0],j=[0,0],e=[0,0];function
+m(a){a/=num_1000$0;var
+q=l[1];if(q){q=q[1];j[1]++;if(num_120===j[1]){q=j[1]/(a-q);eg(caml_call1(o(gx),q))}}else
+l[1]=[0,a];q=k[1];var
+r=.016666666666666666,n=r;c[1]=q?c[1]+(a-q[1]):n;k[1]=[0,a];if(num_0_25<c[1])c[1]=n;n=al.Date.now()/num_1000$0;a=h[1];h[1]=0;for(;;){if(!a)break;var
+s=a[2];i(a[1]);a=s}a=0;for(;;){if(!(.014666666666666666<=c[1]))break;d([0,n]);c[1]=c[1]-r;a=a+1|0}gu(a);a=g4(g[1]);n=p(f[1]);r=p(f[2]);q=p(f[4]);var
+u=p(f[6]),a=W(ek,a),t=eJ[2]?0:[0,[1,"image-rendering","pixelated"],0],s=eJ[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",r=[0,"svg",b([0,[0,"viewBox",q+str$10+u+str$10+n+str$10+r],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,cE,str_100],[0,[0,cF,str_100],0]]]]]],b(s,t)),a],a=cz.body,n=e[1];if(n){n=n[1];e[1]=[0,[0,r,eh(a,n[2],n[1],r)]]}else{n=a.firstChild;for(;;){if(caml_equal(n,bA)){n=bE(r);cw(a,n);e[1]=[0,[0,r,n]];break}d8(a,n);n=a.firstChild}}return d9(ay,m)}d9(ay,m);a=gy;function
 r(b){var
-c=caml_obj_tag(ao),c=num_250===c?ao[1]:num_246===c?ag(ao):ao;if(c){c=c[1];if(en(c)==="suspended")c.resume()}c=i[1];c=c?[0,c[1][2]]:0;var
+c=caml_obj_tag(ao),c=num_250===c?ao[1]:num_246===c?ag(ao):ao;if(c){c=c[1];if(en(c)==="suspended")c.resume()}c=e[1];c=c?[0,c[1][2]]:0;var
 a=cv(b);a:if(a!==str_dblclick)if(a!==str_keydown)if(a!==str_keyup){if(a!==str_mousedown){if(a===str_mousemove){if(c){a=c[1];c=b.clientY;var
-e=b.clientX,d=a.createSVGPoint();d.x=e;d.y=c;a=d.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;d=b.deltaMode|0;a=0===d?a/num_100$0:1===d?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=gr;break a}}else if(2===b.button){a=gs;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
+g=b.clientX,f=a.createSVGPoint();f.x=g;f.y=c;a=f.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;f=b.deltaMode|0;a=0===f?a/num_100$0:1===f?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=gr;break a}}else if(2===b.button){a=gs;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
 a=[0,[5,[0,0,el(bB(b))]]];else
 a=[0,[5,[0,1,el(bB(b))]]];else
-a=gt;if(a)h(a[1]);if(cv(b)===str_mousemove)h([2,[0,b.movementX,-b.movementY]]);if(cv(b)===str_keydown){b=bB(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)h([6,b[1]])}return 0}for(;;){if(!a)break;var
+a=gt;if(a)d(a[1]);if(cv(b)===str_mousemove)d([2,[0,b.movementX,-b.movementY]]);if(cv(b)===str_keydown){b=bB(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)d([6,b[1]])}return 0}for(;;){if(!a)break;var
 q=a[2];cy(ay,a[1],r,1);a=q}cy(ay,28,d7,1);return cy(ay,76,function(d){var
 c=bB(d),a=c===str_Tab?1:0;if(a);else{a=2<=caml_ml_string_length(c)?1:0;if(a){a=70===caml_string_get(c,0)?1:0;if(a){a=L(c,1,caml_ml_string_length(c)-1|0);try{var
 b=[0,caml_int_of_string(a)]}catch(a){b=caml_wrap_exception(a);if(b[1]!==Failure)throw caml_maybe_attach_backtrace(b,0);b=0}if(b){a=b[1];b=1<=a?1:0;a=b?a<=10?1:0:b}else

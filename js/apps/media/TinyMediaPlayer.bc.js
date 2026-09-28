@@ -3481,12 +3481,12 @@ iH(a){a=N(a);var
 b=0;for(;;){if(0===a)return b;a=a>>>1|0;b=b+1|0}}function
 iI(a,b){return 0<=a?a:(a+(1<<b)|0)-1|0}var
 nG=[0,[11,"JPEG: no code for symbol ",[4,8,[0,2,2],0,0]],"JPEG: no code for symbol %02X"];function
-fN(k,m,e,j,f,d){var
+fN(k,m,e,j,f,a){var
 l=fK(H(function(a){return a-num_128},f)),f=c(64,function(a){a=caml_check_bound(aP,a)[a+1];var
 b=caml_check_bound(m,a)[a+1];return caml_round_float(caml_check_bound(l,a)[a+1]/b)|0});function
 h(a,c){a=caml_check_bound(a,c)[c+1];var
 d=a[2],a=a[1];if(0===d)b(caml_call1(v(nG),c));return em(k,a,d)}var
-d=caml_check_bound(f,0)[1]-d|0,a=iH(d);h(e,a);em(k,iI(d,a),a);a=63;for(;;){if(0>=a)break;if(0!==caml_check_bound(f,a)[a+1])break;a=a-1|0}if(a>=1){d=0;e=1;for(;;){var
+a=caml_check_bound(f,0)[1]-a|0,d=iH(a);h(e,d);em(k,iI(a,d),d);a=63;for(;;){if(0>=a)break;if(0!==caml_check_bound(f,a)[a+1])break;a=a-1|0}if(a>=1){d=0;e=1;for(;;){var
 g=caml_check_bound(f,e)[e+1];if(0===g)d=d+1|0;else
 for(;;){if(16>d){var
 i=iH(g);h(j,d<<4|i);em(k,iI(g,i),i);d=0;break}h(j,num_240);d=d+num_16|0}g=e+1|0;if(a===e)break;e=g}}if(a<63)h(j,0);return caml_check_bound(f,0)[1]}function
@@ -3782,8 +3782,8 @@ i0(i,h,g,f,c){var
 e=0,a=0,j=c[2],c=c[1];for(;;){var
 b=0,k=caml_mul(f+a|0,i[2])+g|0,l=(caml_mul((f+a|0)+j|0,h[2])+g|0)+c|0;for(;;){e=e+N(caml_bytes_unsafe_get(i[1],k+b|0)-caml_bytes_unsafe_get(h[1],l+b|0)|0)|0;var
 d=b+1|0;if(15===b){d=a+1|0;if(15===a)return e;a=d;break}b=d}}}function
-i1(h,c,g,f,a){var
-b=a[2],a=a[1];if(0===(a&1)&&0===(b&1))return i0(h,c,g,f,[0,a>>1,b>>1]);c=ds(c[1],c[2],c[3],g,f,16,[0,a,b]);a=c.length-2|0;b=0;if(a<0);else{var
+i1(h,b,g,f,a){var
+c=a[2],a=a[1];if(0===(a&1)&&0===(c&1))return i0(h,b,g,f,[0,a>>1,c>>1]);c=ds(b[1],b[2],b[3],g,f,16,[0,a,c]);a=c.length-2|0;b=0;if(a<0);else{var
 d=0;for(;;){var
 e=c[d+1],b=b+N(caml_bytes_get(h[1],(caml_mul(f+(d/16|0)|0,h[2])+g|0)+(d%16|0)|0)-e|0)|0,e=d+1|0;if(a===d)break;d=e}}return b}function
 s(a,d,b){b=b-1|0;if(b>=0)for(;;){a[2]=a[2]<<1|(d>>>b|0)&1;a[3]=a[3]+1|0;if(8===a[3]){A(a[1],a[2]);a[2]=0;a[3]=0}var

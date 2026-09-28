@@ -2555,35 +2555,35 @@ eZ(a){return b8([0,[0,[12,function(b,a){return[1,b,a]}],0],[0,[0,[0,function(a){
 c=0<caml_ml_string_length(c)?63===caml_string_get(c,0)?F(c,1,caml_ml_string_length(c)-1|0):c:c,c=ci(38,c),fn=m(function(b){var
 a=ch(b,61);if(!a)return[0,b,str];a=a[1];var
 c=F(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0);return[0,F(b,0,a),c]},P(function(a){return a!==str?1:0})(c)),da=[0,1,1],eX=[0,0.,0.,0,0,0,0.,0.,0.,0],fa=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],fb=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],e6=[0,[4,0]],e7=[0,[4,1]],e8=[0,0],fm=[0,[11,b,[4,0,0,0,0]],"score %d"],bT=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,str],eV=[0,1.],fc=[0,0,0.,0,0,bT,bT];aq.onload=caml_js_wrap_callback_strict(1,function(b){var
-i=bS(c6,c7),l=0,c=[0,[0,fc,[0,eX,bT,eW,eV,fn]]];function
-e(a){c[1]=eY(fi,a,c[1]);return n(l)}var
-d=[0,0];function
-n(a){a=cK(a);for(;;){if(!a)return 0;var
+i=bS(c6,c7),l=0,e=[0,[0,fc,[0,eX,bT,eW,eV,fn]]];function
+h(a){e[1]=eY(fi,a,e[1]);return t(l)}var
+f=[0,0];function
+t(a){a=cK(a);for(;;){if(!a)return 0;var
 b=a[2],a=a[1];if(typeof
 a==="number")a=b;else
 switch(a[0]){case
 3:a=b;break;case
-0:d[1]=g(d[1],[0,a[1],0]);a=b;break;case
+0:f[1]=g(f[1],[0,a[1],0]);a=b;break;case
 1:let
-f=a[3];dj(0,a[2],function(a){return e(caml_call1(f,a))});a=b;break;default:let
-c=a[4];dj([0,a[3]],a[2],function(a){return e(caml_call1(c,a))});a=b}}}n(l);function
-f(a){a=ez(a,eZ(c[1]));if(a)return e(a[1])}var
-num_100=100.,p=[0,0],a=[0,0.],q=[0,0],k=[0,0],h=[0,0];function
-t(b){b/=num_1000$0;var
-n=q[1];if(n){n=n[1];k[1]++;if(num_120===k[1]){n=k[1]/(b-n);db(caml_call1(r(fa),n))}}else
-q[1]=[0,b];n=p[1];var
-l=num_0_016666666666666666;a[1]=n?a[1]+(b-n[1]):l;p[1]=[0,b];if(num_0_25<a[1])a[1]=l;l=N.Date.now()/num_1000$0;b=d[1];d[1]=0;for(;;){if(!b)break;var
-u=b[2];e(b[1]);b=u}b=0;for(;;){if(!(.014666666666666666<=a[1]))break;f([0,l]);a[1]=a[1]-num_0_016666666666666666;b=b+1|0}e9(b);l=c[1];b=l[2];l=l[1];n=b[3];var
+d=a[3];dj(0,a[2],function(a){return h(caml_call1(d,a))});a=b;break;default:let
+c=a[4];dj([0,a[3]],a[2],function(a){return h(caml_call1(c,a))});a=b}}}t(l);function
+c(a){a=ez(a,eZ(e[1]));if(a)return h(a[1])}var
+num_100=100.,n=[0,0],a=[0,0.],p=[0,0],k=[0,0],d=[0,0];function
+q(b){b/=num_1000$0;var
+t=p[1];if(t){t=t[1];k[1]++;if(num_120===k[1]){t=k[1]/(b-t);db(caml_call1(r(fa),t))}}else
+p[1]=[0,b];t=n[1];var
+l=num_0_016666666666666666;a[1]=t?a[1]+(b-t[1]):l;n[1]=[0,b];if(num_0_25<a[1])a[1]=l;l=N.Date.now()/num_1000$0;b=f[1];f[1]=0;for(;;){if(!b)break;var
+u=b[2];h(b[1]);b=u}b=0;for(;;){if(!(.014666666666666666<=a[1]))break;c([0,l]);a[1]=a[1]-num_0_016666666666666666;b=b+1|0}e9(b);l=e[1];b=l[2];l=l[1];t=b[3];var
 v=l[1],x=-230.,w="PRESS SPACE";if(typeof
-v==="number"){w=dm(1.,l,[0,o(x,A(H,3.,w)),0]);l=[0,o(num_90,A(a9,2.,"a lander that reaches the top becomes a mutant, and wants only you")),0];b=[0,o(num_40$0,A(a8,2.,"and fly it down to the ground")),l];b=[0,o(0.,A(a8,2.,"the landers carry the humans up. shoot one, catch what falls,")),b];b=[0,o(num_60,A(H,2.,"up/down: climb and dive    space: laser    b: smart bomb")),b];b=[0,o(num_100,A(H,2.,"left/right: thrust, and the way you point (press the other way to flip)")),b];b=[0,o(230.,A(H,6.,"TINY DEFENDER")),b];n=g([0,s(bZ,n[1],n[2]),b],w)}else if(0===v[0])n=fk(b,v[1]);else{b=v[1];l=dm(1.,l,[0,o(x,A(H,3.,w)),0]);b=[0,o(num_20,A(H,3.,caml_call1(r(fm),b))),0];b=[0,o(num_120$0,A(H,5.,"GAME OVER")),b];n=g([0,s(bZ,n[1],n[2]),b],l)}b=j(i[1]);l=j(i[2]);w=j(i[4]);x=j(i[6]);n=m(df,n);v=da[2]?0:[0,[1,"image-rendering","pixelated"],0];u=da[1]?0:[0,[0,"shape-rendering","crispEdges"],0];var
-str_100="100%",b=[0,"svg",g([0,[0,"viewBox",w+str$9+x+str$9+b+str$9+l],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,bU,str_100],[0,[0,bV,str_100],0]]]]]],g(u,v)),n],l=c3.body,u=h[1];if(u){u=u[1];h[1]=[0,[0,b,dc(l,u[2],u[1],b)]]}else{u=l.firstChild;for(;;){if(caml_equal(u,eR)){u=a6(b);bP(l,u);h[1]=[0,[0,b,u]];break}c1(l,u);u=l.firstChild}}return c2(aq,t)}c2(aq,t);b=fb;function
+v==="number"){w=dm(1.,l,[0,o(x,A(H,3.,w)),0]);l=[0,o(num_90,A(a9,2.,"a lander that reaches the top becomes a mutant, and wants only you")),0];b=[0,o(num_40$0,A(a8,2.,"and fly it down to the ground")),l];b=[0,o(0.,A(a8,2.,"the landers carry the humans up. shoot one, catch what falls,")),b];b=[0,o(num_60,A(H,2.,"up/down: climb and dive    space: laser    b: smart bomb")),b];b=[0,o(num_100,A(H,2.,"left/right: thrust, and the way you point (press the other way to flip)")),b];b=[0,o(230.,A(H,6.,"TINY DEFENDER")),b];t=g([0,s(bZ,t[1],t[2]),b],w)}else if(0===v[0])t=fk(b,v[1]);else{b=v[1];l=dm(1.,l,[0,o(x,A(H,3.,w)),0]);b=[0,o(num_20,A(H,3.,caml_call1(r(fm),b))),0];b=[0,o(num_120$0,A(H,5.,"GAME OVER")),b];t=g([0,s(bZ,t[1],t[2]),b],l)}b=j(i[1]);l=j(i[2]);w=j(i[4]);x=j(i[6]);t=m(df,t);v=da[2]?0:[0,[1,"image-rendering","pixelated"],0];u=da[1]?0:[0,[0,"shape-rendering","crispEdges"],0];var
+str_100="100%",b=[0,"svg",g([0,[0,"viewBox",w+str$9+x+str$9+b+str$9+l],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,bU,str_100],[0,[0,bV,str_100],0]]]]]],g(u,v)),t],l=c3.body,u=d[1];if(u){u=u[1];d[1]=[0,[0,b,dc(l,u[2],u[1],b)]]}else{u=l.firstChild;for(;;){if(caml_equal(u,eR)){u=a6(b);bP(l,u);d[1]=[0,[0,b,u]];break}c1(l,u);u=l.firstChild}}return c2(aq,q)}c2(aq,q);b=fb;function
 v(b){var
-c=caml_obj_tag(X),c=num_250===c?X[1]:num_246===c?O(X):X;if(c){c=c[1];if(dh(c)==="suspended")c.resume()}c=h[1];c=c?[0,c[1][2]]:0;var
-a=bO(b);a:if(a!==str_dblclick)if(a!==str_keydown)if(a!==str_keyup){if(a!==str_mousedown){if(a===str_mousemove){if(c){a=c[1];c=b.clientY;var
-e=b.clientX,d=a.createSVGPoint();d.x=e;d.y=c;a=d.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;d=b.deltaMode|0;a=0===d?a/num_100:1===d?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=e6;break a}}else if(2===b.button){a=e7;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
+e=caml_obj_tag(X),e=num_250===e?X[1]:num_246===e?O(X):X;if(e){e=e[1];if(dh(e)==="suspended")e.resume()}e=d[1];e=e?[0,e[1][2]]:0;var
+a=bO(b);a:if(a!==str_dblclick)if(a!==str_keydown)if(a!==str_keyup){if(a!==str_mousedown){if(a===str_mousemove){if(e){a=e[1];e=b.clientY;var
+g=b.clientX,f=a.createSVGPoint();f.x=g;f.y=e;a=f.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;f=b.deltaMode|0;a=0===f?a/num_100:1===f?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=e6;break a}}else if(2===b.button){a=e7;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
 a=[0,[5,[0,0,dg(a4(b))]]];else
 a=[0,[5,[0,1,dg(a4(b))]]];else
-a=e8;if(a)f(a[1]);if(bO(b)===str_mousemove)f([2,[0,b.movementX,-b.movementY]]);if(bO(b)===str_keydown){b=a4(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)f([6,b[1]])}return 0}for(;;){if(!b)break;var
+a=e8;if(a)c(a[1]);if(bO(b)===str_mousemove)c([2,[0,b.movementX,-b.movementY]]);if(bO(b)===str_keydown){b=a4(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)c([6,b[1]])}return 0}for(;;){if(!b)break;var
 u=b[2];bQ(aq,b[1],v,1);b=u}bQ(aq,28,c0,1);return bQ(aq,76,function(d){var
 c=a4(d),a=c===str_Tab?1:0;if(a);else{a=2<=caml_ml_string_length(c)?1:0;if(a){a=70===caml_string_get(c,0)?1:0;if(a){a=F(c,1,caml_ml_string_length(c)-1|0);try{var
 b=[0,caml_int_of_string(a)]}catch(a){b=caml_wrap_exception(a);if(b[1]!==Failure)throw caml_maybe_attach_backtrace(b,0);b=0}if(b){a=b[1];b=1<=a?1:0;a=b?a<=10?1:0:b}else

@@ -2556,8 +2556,8 @@ for(;;){var
 f=a-1|0,j=a+1|0;if(j>=f)for(;;){var
 c=bc([0,f,g]),c=c?0===aH(i,[0,f,g]):c;if(c){c=bb([0,f,g]);caml_check_bound(i,c)[c+1]=fq}c=f+1|0;if(j===f)break;f=c}j=g+1|0;if(h===g){a=k;break}g=j}}}function
 dy(a){return function(b){return dv(a,b)}}function
-aJ(b,a,h){var
-c=a[10],d=a[9],e=a[8],f=a[7],g=ah(a),b=c2(du(dy(b),h),g)[1];return[0,a[1],a[2],a[3],a[4],a[5],b,f,e,d,c]}function
+aJ(h,a,b){var
+c=a[10],d=a[9],e=a[8],f=a[7],g=ah(a),b=c2(du(dy(h),b),g)[1];return[0,a[1],a[2],a[3],a[4],a[5],b,f,e,d,c]}function
 b7(c,a){var
 d=a[10],e=a[9],f=a[8],g=a[7],b=ah(a),b=c2([0,du(dy(c),b)[1],function(a){a=aH(c,a);return typeof
 a==="number"?0:0<a[1]?1:0},function(a){return 0.}],b)[1];return[0,a[1],a[2],a[3],a[4],a[5],b,g,f,e,d]}function
@@ -2651,34 +2651,34 @@ c==="number")return b?ba([0,dx(0)],a):a;if(0!==c[0]){if(b&&2.<a[2])return ba(0,a
 e=1===b[1][1],b=b[2];if(!e)continue}else
 e=0;return e?d?[0,[0,c],a[2],a[3],a[4],a[5],a[6]]:ba(fA,a):ba(fB,a)}}var
 di=[0,1,1],e9=[0,0.,0.,0,0,0,0.,0.,0.,0],fm=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],fn=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],fg=[0,[4,0]],fh=[0,[4,1]],fi=[0,0],b1=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,str],e7=[0,1.],fo=[0,0,0.,0,0,b1,b1];av.onload=caml_js_wrap_callback_strict(1,function(b){var
-i=b0(dd,de),n=0,c=[0,[0,fo,[0,e9,b1,e8,e7,0]]];function
-e(a){c[1]=e_(fz,a,c[1]);return o(n)}var
-d=[0,0];function
-o(a){a=cP(a);for(;;){if(!a)return 0;var
+i=b0(dd,de),n=0,e=[0,[0,fo,[0,e9,b1,e8,e7,0]]];function
+h(a){e[1]=e_(fz,a,e[1]);return s(n)}var
+f=[0,0];function
+s(a){a=cP(a);for(;;){if(!a)return 0;var
 b=a[2],a=a[1];if(typeof
 a==="number")a=b;else
 switch(a[0]){case
 3:a=b;break;case
-0:d[1]=l(d[1],[0,a[1],0]);a=b;break;case
+0:f[1]=l(f[1],[0,a[1],0]);a=b;break;case
 1:let
-f=a[3];ds(0,a[2],function(a){return e(caml_call1(f,a))});a=b;break;default:let
-c=a[4];ds([0,a[3]],a[2],function(a){return e(caml_call1(c,a))});a=b}}}o(n);function
-f(a){a=eD(a,e$(c[1]));if(a)return e(a[1])}var
-num_100=100.,p=[0,0],a=[0,0.],q=[0,0],m=[0,0],h=[0,0];function
-s(n){n/=num_1000$0;var
-o=q[1];if(o){o=o[1];m[1]++;if(num_120===m[1]){o=m[1]/(n-o);dj(caml_call1(r(fm),o))}}else
-q[1]=[0,n];o=p[1];var
-b=.016666666666666666,u=b;a[1]=o?a[1]+(n-o[1]):u;p[1]=[0,n];if(num_0_25<a[1])a[1]=u;u=V.Date.now()/num_1000$0;n=d[1];d[1]=0;for(;;){if(!n)break;var
-v=n[2];e(n[1]);n=v}n=0;for(;;){if(!(.014666666666666666<=a[1]))break;f([0,u]);a[1]=a[1]-b;n=n+1|0}fj(n);n=c[1];u=n[1];n=n[2][3];b=u[1];o="PRESS SPACE";if(typeof
-b==="number"){o=dt(1.,u,[0,ad(-60.,M(bH,3.,o)),0]);b=[0,ad(num_20,M(a4,num_2_5,"harvest the spice, build tanks, take their refinery")),0];o=l([0,ad(num_100,M(g(num_250,num_220,num_120),6.,"TINY DUNE II")),b],o);o=l(dz(dx(0)),o)}else if(0===b[0])o=dz(b[1]);else{b=b[1];o=2.<u[2]?dt(1.,u,[0,ad(-120.,M(bH,3.,o)),0]):0;u=b?"THE SPICE IS YOURS":"YOUR BASE IS GONE";b=b?g(num_120,num_220,140):g(num_230,90,80);o=l([0,M(b,6.,u),0],o)}u=n[2];n=n[1];u=[0,t(g(60,45,30),n,u),o];n=k(i[1]);b=k(i[2]);o=k(i[4]);var
-x=k(i[6]),u=j(dn,u),w=di[2]?0:[0,[1,"image-rendering","pixelated"],0],v=di[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",n=[0,"svg",l([0,[0,"viewBox",o+str$9+x+str$9+n+str$9+b],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,b2,str_100],[0,[0,b3,str_100],0]]]]]],l(v,w)),u],u=da.body,b=h[1];if(b){b=b[1];h[1]=[0,[0,n,dk(u,b[2],b[1],n)]]}else{b=u.firstChild;for(;;){if(caml_equal(b,e0)){b=a$(n);bW(u,b);h[1]=[0,[0,n,b]];break}c_(u,b);b=u.firstChild}}return c$(av,s)}c$(av,s);b=fn;function
+d=a[3];ds(0,a[2],function(a){return h(caml_call1(d,a))});a=b;break;default:let
+c=a[4];ds([0,a[3]],a[2],function(a){return h(caml_call1(c,a))});a=b}}}s(n);function
+c(a){a=eD(a,e$(e[1]));if(a)return h(a[1])}var
+num_100=100.,o=[0,0],a=[0,0.],p=[0,0],m=[0,0],d=[0,0];function
+q(n){n/=num_1000$0;var
+s=p[1];if(s){s=s[1];m[1]++;if(num_120===m[1]){s=m[1]/(n-s);dj(caml_call1(r(fm),s))}}else
+p[1]=[0,n];s=o[1];var
+b=.016666666666666666,u=b;a[1]=s?a[1]+(n-s[1]):u;o[1]=[0,n];if(num_0_25<a[1])a[1]=u;u=V.Date.now()/num_1000$0;n=f[1];f[1]=0;for(;;){if(!n)break;var
+v=n[2];h(n[1]);n=v}n=0;for(;;){if(!(.014666666666666666<=a[1]))break;c([0,u]);a[1]=a[1]-b;n=n+1|0}fj(n);n=e[1];u=n[1];n=n[2][3];b=u[1];s="PRESS SPACE";if(typeof
+b==="number"){s=dt(1.,u,[0,ad(-60.,M(bH,3.,s)),0]);b=[0,ad(num_20,M(a4,num_2_5,"harvest the spice, build tanks, take their refinery")),0];s=l([0,ad(num_100,M(g(num_250,num_220,num_120),6.,"TINY DUNE II")),b],s);s=l(dz(dx(0)),s)}else if(0===b[0])s=dz(b[1]);else{b=b[1];s=2.<u[2]?dt(1.,u,[0,ad(-120.,M(bH,3.,s)),0]):0;u=b?"THE SPICE IS YOURS":"YOUR BASE IS GONE";b=b?g(num_120,num_220,140):g(num_230,90,80);s=l([0,M(b,6.,u),0],s)}u=n[2];n=n[1];u=[0,t(g(60,45,30),n,u),s];n=k(i[1]);b=k(i[2]);s=k(i[4]);var
+x=k(i[6]),u=j(dn,u),w=di[2]?0:[0,[1,"image-rendering","pixelated"],0],v=di[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",n=[0,"svg",l([0,[0,"viewBox",s+str$9+x+str$9+n+str$9+b],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,b2,str_100],[0,[0,b3,str_100],0]]]]]],l(v,w)),u],u=da.body,b=d[1];if(b){b=b[1];d[1]=[0,[0,n,dk(u,b[2],b[1],n)]]}else{b=u.firstChild;for(;;){if(caml_equal(b,e0)){b=a$(n);bW(u,b);d[1]=[0,[0,n,b]];break}c_(u,b);b=u.firstChild}}return c$(av,q)}c$(av,q);b=fn;function
 v(b){var
-c=caml_obj_tag(Y),c=num_250===c?Y[1]:num_246===c?N(Y):Y;if(c){c=c[1];if(dq(c)==="suspended")c.resume()}c=h[1];c=c?[0,c[1][2]]:0;var
-a=bV(b);a:if(a!==str_dblclick)if(a!==str_keydown)if(a!==str_keyup){if(a!==str_mousedown){if(a===str_mousemove){if(c){a=c[1];c=b.clientY;var
-e=b.clientX,d=a.createSVGPoint();d.x=e;d.y=c;a=d.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;d=b.deltaMode|0;a=0===d?a/num_100:1===d?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=fg;break a}}else if(2===b.button){a=fh;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
+e=caml_obj_tag(Y),e=num_250===e?Y[1]:num_246===e?N(Y):Y;if(e){e=e[1];if(dq(e)==="suspended")e.resume()}e=d[1];e=e?[0,e[1][2]]:0;var
+a=bV(b);a:if(a!==str_dblclick)if(a!==str_keydown)if(a!==str_keyup){if(a!==str_mousedown){if(a===str_mousemove){if(e){a=e[1];e=b.clientY;var
+g=b.clientX,f=a.createSVGPoint();f.x=g;f.y=e;a=f.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;f=b.deltaMode|0;a=0===f?a/num_100:1===f?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=fg;break a}}else if(2===b.button){a=fh;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
 a=[0,[5,[0,0,dp(a9(b))]]];else
 a=[0,[5,[0,1,dp(a9(b))]]];else
-a=fi;if(a)f(a[1]);if(bV(b)===str_mousemove)f([2,[0,b.movementX,-b.movementY]]);if(bV(b)===str_keydown){b=a9(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)f([6,b[1]])}return 0}for(;;){if(!b)break;var
+a=fi;if(a)c(a[1]);if(bV(b)===str_mousemove)c([2,[0,b.movementX,-b.movementY]]);if(bV(b)===str_keydown){b=a9(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)c([6,b[1]])}return 0}for(;;){if(!b)break;var
 u=b[2];bX(av,b[1],v,1);b=u}bX(av,28,c9,1);return bX(av,76,function(d){var
 c=a9(d),a=c===str_Tab?1:0;if(a);else{a=2<=caml_ml_string_length(c)?1:0;if(a){a=70===caml_string_get(c,0)?1:0;if(a){a=$(c,1,caml_ml_string_length(c)-1|0);try{var
 b=[0,caml_int_of_string(a)]}catch(a){b=caml_wrap_exception(a);if(b[1]!==Failure)throw caml_maybe_attach_backtrace(b,0);b=0}if(b){a=b[1];b=1<=a?1:0;a=b?a<=10?1:0:b}else
