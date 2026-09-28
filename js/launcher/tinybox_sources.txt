@@ -224257,7 +224257,7 @@ val budget : int
    modules: what tinybox embeds, and what budgets are counted over *)
 val repository_sources : root:string -> (string * string) list
 launcher/menu/Tinybox_menu.ml
-38911
+40848
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -224496,10 +224496,38 @@ type model = {
   repeat : (string * float) option; (* an arrow held, when it moves again *)
   status : string; (* what happened to the last one *)
   code : Codemap.t option; (* the chosen one's code, shown instead of the menu *)
+  code_asked : bool; (* its code to be opened once the sources are here (code=) *)
 }
 
 let initial_model : model =
-  { grouping = By_genre; filters = no_filters; section = 0; pos = 0; search = None; before = Set_.empty; repeat = None; status = ""; code = None }
+  { grouping = By_genre; filters = no_filters; section = 0; pos = 0; search = None; before = Set_.empty; repeat = None; status = ""; code = None; code_asked = false }
+
+(* claude: a program named as tinybox's command line names one: its
+ * name, in any case, "Tiny" optional (turbopascal, TinyTurboPascal) *)
+let find_program (name : string) : Catalogue.program option =
+  let q = lowercase name in
+  List.find_opt (fun (p : Catalogue.program) -> lowercase p.name = q || lowercase p.name = "tiny" ^ q) everything
+
+(* claude: the menu started on a program, its flags (natively the
+ * command line's, on the web the URL's): chosen=<Name> puts it in the
+ * grid on that program, code=<Name> opens that program's code map too --
+ * so a link, tinybox.html?code=TinyTurboPascal, is a program's code to
+ * read (the website's cards link there) *)
+let initial (flags : flags) : model =
+  let named key = Option.bind (List.assoc_opt key flags) find_program in
+  match (named "code", named "chosen") with
+  | None, None -> initial_model
+  | Some p, _ | None, Some p ->
+      let gs = groups By_genre no_filters in
+      let rec find i =
+        if i >= Array.length gs then initial_model
+        else
+          let rec index k = function [] -> None | (q : Catalogue.program) :: rest -> if q.name = p.name then Some k else index (k + 1) rest in
+          match index 0 gs.(i).programs with
+          | Some pos -> { initial_model with section = i; pos }
+          | None -> find (i + 1)
+      in
+      { (find 0) with code_asked = named "code" <> None }
 
 (* the section shown, if any passes the filters *)
 let current_group (m : model) : group option =
@@ -224693,6 +224721,16 @@ let tinybox_code (host : host) (screen : screen) (m : model) : model =
 
 let update (host : host) (computer : computer) (m : model) : model =
   let m = wait host m in
+  (* claude: code= asked for its code map: opened when the sources are
+   * here (on the web, a few seconds after the page) *)
+  let m =
+    if not m.code_asked then m
+    else
+      match host.sources () with
+      | Sources _ -> { (open_code host computer.screen m) with code_asked = false; status = "" }
+      | Loading as s -> { m with status = not_yet s }
+      | No_sources _ as s -> { m with code_asked = false; status = not_yet s }
+  in
   match m.code with
   | Some code ->
       let keys = computer.keyboard.keys in
@@ -225067,10 +225105,10 @@ let view (host : host) (computer : computer) (m : model) : shape list =
 
 let run ?(network : < Cap.network ; .. > option) (host : host) : unit =
   let network = (network :> < Cap.network > option) in
-  Playground_platform.run_app ~screen:(screen_w, screen_h) ~flags:(Playground_platform.flags ()) ?network
-    (game (view host) (update host) initial_model)
+  let flags = Playground_platform.flags () in
+  Playground_platform.run_app ~screen:(screen_w, screen_h) ~flags ?network (game (view host) (update host) (initial flags))
 launcher/menu/Tinybox_menu.mli
-2191
+2389
 (* tinybox's menu: every program of the catalogue, on two shelves
  * (games, apps), a section at a time, each with its screenshot, the
  * original it is after, what it is and what the original brought.
@@ -225113,10 +225151,13 @@ and preview = {
 }
 
 (* [run ?network host]: the menu; [network], to fetch the thumbnails
- * when they are URLs (Playground_platform.run_app's) *)
+ * when they are URLs (Playground_platform.run_app's). Its flags (the
+ * command line, the URL's query): chosen=<Name> starts it on a program,
+ * code=<Name> in that program's code map -- tinybox.html?code=TinyVi,
+ * a link to a program's code to read *)
 val run : ?network:< Cap.network ; .. > -> host -> unit
 launcher/native/Tinybox.ml
-6708
+6946
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -225214,7 +225255,8 @@ let columns (names : string list) : string =
   Buffer.contents b
 
 let usage =
-  "usage: tinybox [-platform flags | list | <program> [args] | <program> -tty]\n\
+  "usage: tinybox [-platform flags | chosen=<program> | code=<program> | list | <program> [args] | <program> -tty]\n\
+  \  chosen=, code=: the menu on a program, or in its code map\n\
   \  <program>: its name, case-insensitive, \"Tiny\" optional, or a unique part of it\n\
   \  args: the program's own, e.g. -debug-keys, artwork=shapes\n"
 
@@ -225258,9 +225300,11 @@ let () =
   | _ :: args when String.lowercase_ascii invoked <> "tinybox" -> start invoked args
   | [ _; "list" ] -> list_programs ()
   | [ _; ("-h" | "-help" | "--help") ] -> Cap.main (fun caps -> print caps usage)
-  (* the menu, with the platform's flags if any (-fixed-time, -dump-frame) *)
+  (* the menu, with the platform's flags if any (-fixed-time, -dump-frame),
+   * claude: and its own, name=value (code=TinyVi: Tinybox_menu.run), no
+   * program's name having an = *)
   | [ exe ] -> Program.run menu ~argv:[| exe |]
-  | exe :: (flag :: _ as args) when String.length flag > 1 && flag.[0] = '-' ->
+  | exe :: (flag :: _ as args) when String.length flag > 1 && (flag.[0] = '-' || String.contains flag '=') ->
       Program.run menu ~argv:(Array.of_list (exe :: args))
   | _ :: query :: args -> start query args
   | [] -> fail usage
@@ -225631,7 +225675,7 @@ launcher/native/Tinybox_native.mli
  * authority to start one and wait for it. *)
 val host : < Cap.fork ; Cap.exec ; Cap.wait ; .. > -> string list -> Tinybox_menu.host
 launcher/website/make_website.ml
-7757
+9076
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -225649,8 +225693,10 @@ launcher/website/make_website.ml
  *
  * writes docs/games/index.html and docs/apps/index.html, from CATALOG.md:
  * a section per genre or category, its definition, and a card per
- * program -- its thumbnail, what it is after, a link to play it and one
- * to its source. The programs and their thumbnails are in the assets
+ * program -- its thumbnail, what it is after, a link to play it, one to
+ * its source, and one to its code map (tinybox's, on the web:
+ * tinybox.html?code=<Name>). Each section and card an anchor, a link
+ * to give: games/#shoot-em-up, games/#TinyPong. The programs and their thumbnails are in the assets
  * repository (the argument), too many to commit here; the pages that
  * run them, docs/games/<genre>/<Name>.html, are here.
  *
@@ -225707,6 +225753,8 @@ let page ~(title : string) (body : string) : string =
       .card img { width: 100%%; aspect-ratio: 1; display: block; }
       .card .name { font-weight: bold; }
       .card .meta, .card .src { color: #777; }
+      h2 a { color: inherit; text-decoration: none; }
+      :target { scroll-margin-top: 12px; }
     </style>
   </head>
   <body>
@@ -225733,25 +225781,49 @@ let subdir (p : Catalogue.program) : string = Filename.basename (Filename.dirnam
 let card ~(assets : string) ~(base : string) ~(meta : string) (p : Catalogue.program) : string =
   let play = Printf.sprintf "%s%s/%s.html" base (subdir p) p.name in
   Printf.sprintf
-    {|<div class="card" title="after %s"><a href="%s"><img loading="lazy" src="%s/pngs/%s.png" alt="%s"/>
-<span class="name">%s</span></a> <span class="meta">%s</span><br/>%s <a class="src" href="%s%s">source</a></div>
+    {|<div class="card" id="%s" title="after %s"><a href="%s"><img loading="lazy" src="%s/pngs/%s.png" alt="%s"/>
+<span class="name">%s</span></a> <span class="meta">%s</span><br/>%s <a class="src" href="%s%s">source</a> &middot;
+<a class="src" href="../tinybox.html?code=%s">code map</a></div>
 |}
-    (escape p.after) play assets p.name p.name p.name meta (escape p.one_line) github p.source
+    p.name (escape p.after) play assets p.name p.name p.name meta (escape p.one_line) github p.source p.name
 
 (* "2D, 1978", "app, 1983" *)
 let look_year ~(games : bool) (p : Catalogue.program) : string =
   Printf.sprintf "%s, %d" (if games then p.look else "app") p.year
 
+(* claude: a section's anchor, from its title (several apps' sections
+ * share a directory, apps/office/): "Shoot 'em up" -> "shoot-em-up",
+ * games/#shoot-em-up a link to give *)
+let anchor (title : string) : string =
+  let b = Buffer.create (String.length title) in
+  String.iter
+    (fun c ->
+      match Char.lowercase_ascii c with
+      | ('a' .. 'z' | '0' .. '9') as c -> Buffer.add_char b c
+      | ' ' | '-' | '/' -> if Buffer.length b > 0 && Buffer.nth b (Buffer.length b - 1) <> '-' then Buffer.add_char b '-'
+      | _ -> ())
+    title;
+  Buffer.contents b
+
 let index ~(assets : string) ~(games : bool) (sections : Catalogue.section list) : string =
   let kind = if games then "games" else "apps" in
+  let sections = List.filter (fun (s : Catalogue.section) -> s.games = games) sections in
+  (* the sections first, each a link to its own *)
+  let contents =
+    sections
+    |> List.map (fun (s : Catalogue.section) -> Printf.sprintf {|<a href="#%s">%s</a>|} (anchor s.title) (escape s.title))
+    |> String.concat " &middot;\n"
+    |> Printf.sprintf "<p>%s</p>\n"
+  in
   sections
-  |> List.filter (fun (s : Catalogue.section) -> s.games = games)
   |> List.map (fun (s : Catalogue.section) ->
-         Printf.sprintf "<h2>%s</h2>\n<p>%s</p>\n<div class=\"grid\">\n%s</div>\n" (escape s.title)
+         Printf.sprintf "<h2 id=\"%s\"><a href=\"#%s\">%s</a></h2>\n<p>%s</p>\n<div class=\"grid\">\n%s</div>\n" (anchor s.title)
+           (anchor s.title) (escape s.title)
            (escape (Catalogue.plain s.intro))
            (String.concat ""
               (List.map (fun p -> card ~assets ~base:"" ~meta:(look_year ~games p) p) s.programs)))
   |> String.concat ""
+  |> ( ^ ) contents
   |> page ~title:(String.capitalize_ascii kind)
 
 (*****************************************************************************)
