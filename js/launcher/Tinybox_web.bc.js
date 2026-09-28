@@ -73,14 +73,14 @@ sign=bytes>>>15,exponent=bytes>>>10&EXP_MASK16,significand=bytes&SIGNIFICAND_MAS
 r=pow(2,exponent-15)*(sign===0?1+significand*SIGNIFICAND_DENOM16:-1-significand*SIGNIFICAND_DENOM16);return r}}(),caml_int64_offset=Math.pow(2,-24);function
 caml_raise_constant(tag){throw tag}function
 caml_raise_zero_divide(){caml_raise_constant(caml_global_data["predef:Division_by_zero"])}var
-num_0xff=0xff,num_0xffffff=0xffffff,H=0x000000,num_0x8000=0x8000;class
+num_0xff=0xff,num_0xffffff=0xffffff,I=0x000000,num_0x8000=0x8000;class
 MlInt64{constructor(lo,mi,hi){this.lo=lo&num_0xffffff;this.mi=mi&num_0xffffff;this.hi=hi&num_0xffff;this.caml_custom="_j"}static
 UNSIGNED_MAX=new
 MlInt64(num_0xffffff,num_0xffffff,num_0xffff);static
 SIGNED_MAX=new
 MlInt64(num_0xffffff,num_0xffffff,0x7fff);static
 SIGNED_MIN=new
-MlInt64(H,H,num_0x8000);slice(){return new
+MlInt64(I,I,num_0x8000);slice(){return new
 MlInt64(this.lo,this.mi,this.hi)}ucompare(x){if(this.hi>x.hi)return 1;if(this.hi<x.hi)return-1;if(this.mi>x.mi)return 1;if(this.mi<x.mi)return-1;if(this.lo>x.lo)return 1;if(this.lo<x.lo)return-1;return 0}compare(x){var
 hi=this.hi<<16,xhi=x.hi<<16;if(hi>xhi)return 1;if(hi<xhi)return-1;if(this.mi>x.mi)return 1;if(this.mi<x.mi)return-1;if(this.lo>x.lo)return 1;if(this.lo<x.lo)return-1;return 0}neg(){var
 lo=-this.lo,mi=-this.mi+(lo>>24),hi=-this.hi+(mi>>24);return new
@@ -716,8 +716,8 @@ caml_root=caml_get_root(caml_current_dir)||caml_failwith("unable to compute caml
 MlNodeDevice(caml_root)});else if(fs_quickjs_supported())jsoo_mount_point.push({path:caml_root,device:new
 MlQuickJSDevice(caml_root)});else
 jsoo_mount_point.push({path:caml_root,device:new
-MlFakeDevice(caml_root)});H="/static/";jsoo_mount_point.push({path:H,device:new
-MlFakeDevice(H)});function
+MlFakeDevice(caml_root)});I="/static/";jsoo_mount_point.push({path:I,device:new
+MlFakeDevice(I)});function
 resolve_fs_device(name,raise_unix){var
 path=caml_make_path(name,raise_unix),name=path.join(str$7),name_slash=caml_trailing_slash(name),res;for(var
 i=0;i<jsoo_mount_point.length;i++){var
@@ -977,8 +977,8 @@ caml_signbit_float(x){if(x===0)x=1/x;return x<0?1:0}function
 caml_string_bound_error(){caml_invalid_argument(str_index_out_of_bounds)}function
 caml_string_get(s,i){if(i>>>0>=caml_ml_string_length(s))caml_string_bound_error();return caml_string_unsafe_get(s,i)}function
 caml_string_of_bytes(s){s.t&6&&caml_convert_string_to_bytes(s);return caml_string_of_jsbytes(s.c)}function
-caml_sys_const_max_wosize(){return num_0x7fffffff/4|0}H="Win32";var
-os_type=jsoo_is_win32?H:"Unix";function
+caml_sys_const_max_wosize(){return num_0x7fffffff/4|0}I="Win32";var
+os_type=jsoo_is_win32?I:"Unix";function
 caml_sys_get_config(){return[0,caml_string_of_jsbytes(os_type),32,0]}function
 caml_raise_not_found(){caml_raise_constant(caml_global_data["predef:Not_found"])}function
 caml_sys_getenv(name){var
@@ -1112,55 +1112,57 @@ cD(a,c,b){return a[1]===c?(a[1]=b,1):0}function
 bP(a){throw caml_maybe_attach_backtrace([0,Failure,a],1)}function
 l(a){throw caml_maybe_attach_backtrace([0,Invalid_argument,a],1)}function
 u(b,a){return caml_lessequal(b,a)?b:a}function
-D(b,a){return caml_greaterequal(b,a)?b:a}function
+F(b,a){return caml_greaterequal(b,a)?b:a}function
 a0(a){return 0<=a?a:-a|0}function
-d1(a){try{a=[0,caml_int_of_string(a)];return a}catch(b){a=caml_wrap_exception(b);if(a[1]===Failure)return 0;throw caml_maybe_attach_backtrace(a,0)}}function
+d2(a){try{a=[0,caml_int_of_string(a)];return a}catch(b){a=caml_wrap_exception(b);if(a[1]===Failure)return 0;throw caml_maybe_attach_backtrace(a,0)}}function
 c(a,b){if(!a)return b;var
 d=a[1];return[0,d,c(a[2],b)]}caml_ml_open_descriptor_in(0);b=caml_ml_open_descriptor_out(1);var
 W=caml_ml_open_descriptor_out(2);function
 bi(b,a){caml_ml_output(b,a,0,caml_ml_string_length(a))}function
-d2(a){bi(W,a);caml_ml_output_char(W,10);return caml_ml_flush(W)}var
+d3(a){bi(W,a);caml_ml_output_char(W,10);return caml_ml_flush(W)}var
 cC=[0,function(a){a=caml_ml_out_channels_list(0);for(;;){if(!a)return 0;var
 b=a[2],c=a[1];try{caml_ml_flush(c);a=b}catch(c){a=caml_wrap_exception(c);if(a[1]!==Sys_error)throw caml_maybe_attach_backtrace(a,0);a=b}}}];function
 cF(a){return caml_call1(cC[1],0)}caml_register_named_value(str_Pervasives_do_at_abr,cF);var
-Z=caml_sys_get_config(0)[1],cG=caml_sys_const_max_wosize(0),bj=(4*cG|0)-1|0,gC=[num_248,"CamlinternalLazy.Undefined",caml_fresh_oo_id(0)];function
-gD(a){throw caml_maybe_attach_backtrace(gC,1)}function
+Z=caml_sys_get_config(0)[1],cG=caml_sys_const_max_wosize(0),bj=(4*cG|0)-1|0,gE=[num_248,"CamlinternalLazy.Undefined",caml_fresh_oo_id(0)];function
+gF(a){throw caml_maybe_attach_backtrace(gE,1)}function
 X(b){var
-a=b[1];b[1]=gD;try{a=caml_call1(a,0);caml_obj_make_forward(b,a);return a}catch(a){var
+a=b[1];b[1]=gF;try{a=caml_call1(a,0);caml_obj_make_forward(b,a);return a}catch(a){var
 c=caml_wrap_exception(a);b[1]=function(a){throw caml_maybe_attach_backtrace(c,0)};throw caml_maybe_attach_backtrace(c,0)}}var
 num_246=246;function
 bQ(a){return caml_obj_tag(a)!==num_246?1:0}function
 bk(a,b){return a?a[1]:b}function
 bl(a){if(0<=a&&num_255>=a)return a;return l("Char.chr")}var
 num_32=-32,num_97=-97;function
-d3(a){return 25<a+num_97>>>0?a:a+num_32|0}function
-I(b){var
+d4(a){return 25<a+num_97>>>0?a:a+num_32|0}function
+J(b){var
 a=0;for(;;){if(!b)return a;a=a+1|0;b=b[2]}}var
 str_List_nth="List.nth";function
-d4(a,b){if(0>b)return l(str_List_nth);for(;;){if(!a)return bP("nth");var
+d5(a,b){if(0>b)return l(str_List_nth);for(;;){if(!a)return bP("nth");var
 c=a[2],a=a[1];if(0===b)return a;a=c;b=b-1|0}}function
 bR(a,b){if(0>b)return l(str_List_nth);for(;;){if(!a)return 0;var
 c=a[2],a=a[1];if(0===b)return[0,a];a=c;b=b-1|0}}function
 O(a,b){for(;;){if(!a)return b;b=[0,a[1],b];a=a[2]}}function
 o(a){return O(a,0)}function
-d5(a,c,b){if(c<=a)return 0;var
-d=caml_call1(b,a);return[0,d,d5(a+1|0,c,b)]}function
-bS(c,d){if(0>c)return l("List.init");if(50>=c)return d5(0,c,d);var
+d6(a,c,b){if(c<=a)return 0;var
+d=caml_call1(b,a);return[0,d,d6(a+1|0,c,b)]}function
+bS(c,d){if(0>c)return l("List.init");if(50>=c)return d6(0,c,d);var
 b=0,a=0;for(;;){if(c<=a)return o(b);b=[0,caml_call1(d,a),b];a=a+1|0}}function
-d6(a){if(!a)return 0;var
-b=a[1];return c(b,d6(a[2]))}function
+d7(a){if(!a)return 0;var
+b=a[1];return c(b,d7(a[2]))}function
 p(b,a){if(!a)return 0;var
 c=a[2],a=caml_call1(b,a[1]);return[0,a,p(b,c)]}function
-d7(c,b,a){if(!a)return 0;var
-d=a[2],a=caml_call2(b,c,a[1]);return[0,a,d7(c+1|0,b,d)]}function
-cH(b,a){return d7(0,b,a)}function
-d8(d,b,a){for(;;){if(!a)return b;var
+d8(c,b,a){if(!a)return 0;var
+d=a[2],a=caml_call2(b,c,a[1]);return[0,a,d8(c+1|0,b,d)]}function
+cH(b,a){return d8(0,b,a)}function
+d9(c,a){for(;;){if(!a)return 0;var
+b=a[2];caml_call1(c,a[1]);a=b}}function
+d_(d,b,a){for(;;){if(!a)return b;var
 c=a[2];b=caml_call2(d,b,a[1]);a=c}}function
-z(c,a){for(;;){if(!a)return 0;var
+v(c,a){for(;;){if(!a)return 0;var
 b=a[2],a=0===caml_compare(a[1],c)?1:0;if(a)return a;a=b}}function
 cI(d,a){for(;;){if(!a)return 0;var
 b=a[1],a=a[2],c=b[2];if(0===caml_compare(b[1],d))return[0,c]}}function
-J(a){return function(b){var
+A(a){return function(b){var
 c=0;for(;;){if(!b)return o(c);var
 d=b[2],b=b[1];if(caml_call1(a,b)){c=[0,b,c];b=d}else
 b=d}}}function
@@ -1179,7 +1181,7 @@ e=c[2];if(e){d=e[1];c=c[1];e=e[2];c=0<caml_call2(a,c,d)?[0,c,[0,d,0]]:[0,d,[0,c,
 f=e[2];if(f){d=f[1];e=e[1];c=c[1];f=f[2];d=0<caml_call2(a,c,e)?0<caml_call2(a,e,d)?[0,c,[0,e,[0,d,0]]]:0<caml_call2(a,c,d)?[0,c,[0,d,[0,e,0]]]:[0,d,[0,c,[0,e,0]]]:0<caml_call2(a,c,d)?[0,e,[0,c,[0,d,0]]]:0<caml_call2(a,e,d)?[0,e,[0,d,[0,c,0]]]:[0,d,[0,e,[0,c,0]]];return[0,d,f]}}}f=d>>1;c=b(f,c);e=c[1];f=b(d-f|0,c[2]);d=f[1];c=0;f=f[2];for(;;){if(e){if(d){var
 g=d[1],h=e[1],i=d[2],j=e[2];if(0<caml_call2(a,h,g)){d=i;c=[0,g,c];continue}e=j;c=[0,h,c];continue}c=O(e,c)}else
 c=O(d,c);return[0,c,f]}}var
-e=I(c);return 2<=e?b(e,c)[1]:c}function
+e=J(c);return 2<=e?b(e,c)[1]:c}function
 bU(a,c){function
 b(f,b){if(2===f){if(b){var
 e=b[2];if(e){f=e[1];b=b[1];e=e[2];var
@@ -1195,21 +1197,21 @@ g=caml_call2(a,c,f),c=0===g?[0,c,0]:0<g?[0,c,[0,f,0]]:[0,f,[0,c,0]];return[0,c,e
 d=caml_call2(a,c,e);if(0===d){d=caml_call2(a,e,f);d=0===d?[0,e,0]:0<d?[0,e,[0,f,0]]:[0,f,[0,e,0]]}else if(0<d){d=caml_call2(a,e,f);if(0===d)d=[0,c,[0,e,0]];else if(0<d)d=[0,c,[0,e,[0,f,0]]];else{d=caml_call2(a,c,f);d=0===d?[0,c,[0,e,0]]:0<d?[0,c,[0,f,[0,e,0]]]:[0,f,[0,c,[0,e,0]]]}}else{d=caml_call2(a,c,f);if(0===d)d=[0,e,[0,c,0]];else if(0<d)d=[0,e,[0,c,[0,f,0]]];else{d=caml_call2(a,e,f);d=0===d?[0,e,[0,c,0]]:0<d?[0,e,[0,f,[0,c,0]]]:[0,f,[0,e,[0,c,0]]]}}return[0,d,g]}}}g=f>>1;c=b(g,c);d=c[1];g=b(f-g|0,c[2]);f=g[1];c=0;g=g[2];for(;;){if(d){if(f){e=f[2];var
 i=f[1],j=d[2],h=d[1],k=caml_call2(a,h,i);if(0===k){d=j;f=e;c=[0,h,c];continue}if(0<=k){f=e;c=[0,i,c];continue}d=j;c=[0,h,c];continue}c=O(d,c)}else
 c=O(f,c);return[0,c,g]}}var
-e=I(c);return 2<=e?b(e,c)[1]:c}function
-d9(b,a){return a<=b?b:a}function
+e=J(c);return 2<=e?b(e,c)[1]:c}function
+d$(b,a){return a<=b?b:a}function
 _(b,c){var
 a=caml_create_bytes(b);caml_fill_bytes(a,0,b,c);return a}function
-gE(a){return 25<a-65>>>0?a:a+32|0}var
-gG=caml_create_bytes(0);function
+gG(a){return 25<a-65>>>0?a:a+32|0}var
+gI=caml_create_bytes(0);function
 cJ(c){var
 a=caml_ml_bytes_length(c),b=caml_create_bytes(a);caml_blit_bytes(c,0,b,0,a);return b}function
 cK(d,b,a){if(0<=b&&0<=a&&(caml_ml_bytes_length(d)-a|0)>=b){var
 c=caml_create_bytes(a);caml_blit_bytes(d,b,c,0,a);return c}return l("String.sub / Bytes.sub")}function
 bV(c,b,a){return caml_string_of_bytes(cK(c,b,a))}function
-d_(e,c,d,b,a){if(0<=a&&0<=c&&(caml_ml_bytes_length(e)-a|0)>=c&&0<=b&&(caml_ml_bytes_length(d)-a|0)>=b){caml_blit_bytes(e,c,d,b,a);return}return l("Bytes.blit")}function
+ea(e,c,d,b,a){if(0<=a&&0<=c&&(caml_ml_bytes_length(e)-a|0)>=c&&0<=b&&(caml_ml_bytes_length(d)-a|0)>=b){caml_blit_bytes(e,c,d,b,a);return}return l("Bytes.blit")}function
 ap(e,c,d,b,a){if(0<=a&&0<=c&&(caml_ml_string_length(e)-a|0)>=c&&0<=b&&(caml_ml_bytes_length(d)-a|0)>=b){caml_blit_string(e,c,d,b,a);return}return l("String.blit / Bytes.blit_string")}function
-d$(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
-ea(f,c){var
+eb(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
+ec(f,c){var
 a=caml_ml_bytes_length(c);if(0===a)return c;var
 d=caml_create_bytes(a),a=a-1|0;if(a>=0){var
 b=0;for(;;){caml_bytes_unsafe_set(d,b,caml_call1(f,caml_bytes_unsafe_get(c,b)));var
@@ -1221,22 +1223,22 @@ f=caml_ml_string_length(g);a:{var
 a=0,d=c,e=0;for(;;){if(!d)break a;var
 b=d[1];if(!d[2])break;d=d[2];b=(caml_ml_string_length(b)+f|0)+a|0;if(a<=b)a=b;else
 a=l("String.concat")}a=caml_ml_string_length(b)+a|0}b=caml_create_bytes(a);for(;;){if(c){a=c[1];if(c[2]){c=c[2];caml_blit_string(a,0,b,e,caml_ml_string_length(a));caml_blit_string(g,0,b,e+caml_ml_string_length(a)|0,f);e=(e+caml_ml_string_length(a)|0)+f|0;continue}caml_blit_string(a,0,b,e,caml_ml_string_length(a))}return caml_string_of_bytes(b)}}function
-eb(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
-aq(b){if(b===str)return b;if(!eb(caml_string_unsafe_get(b,0))&&!eb(caml_string_unsafe_get(b,caml_ml_string_length(b)-1|0)))return b;b=caml_bytes_of_string(b);var
-a=caml_ml_bytes_length(b),c=0;for(;;){if(c>=a)break;if(!d$(caml_bytes_unsafe_get(b,c)))break;c=c+1|0}a=a-1|0;for(;;){if(c<=a&&d$(caml_bytes_unsafe_get(b,a))){a=a-1|0;continue}a=c<=a?cK(b,c,(a-c|0)+1|0):gG;return caml_string_of_bytes(a)}}function
-ec(b,c,a,d){for(;;){if(c<=a)throw caml_maybe_attach_backtrace(Not_found,1);if(caml_string_unsafe_get(b,a)===d)return a;a=a+1|0}}function
-ed(b,c,a,d){for(;;){if(c<=a)return 0;if(caml_string_unsafe_get(b,a)===d)return[0,a];a=a+1|0}}function
-az(a,b){return ed(a,caml_ml_string_length(a),0,b)}function
+ed(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
+aq(b){if(b===str)return b;if(!ed(caml_string_unsafe_get(b,0))&&!ed(caml_string_unsafe_get(b,caml_ml_string_length(b)-1|0)))return b;b=caml_bytes_of_string(b);var
+a=caml_ml_bytes_length(b),c=0;for(;;){if(c>=a)break;if(!eb(caml_bytes_unsafe_get(b,c)))break;c=c+1|0}a=a-1|0;for(;;){if(c<=a&&eb(caml_bytes_unsafe_get(b,a))){a=a-1|0;continue}a=c<=a?cK(b,c,(a-c|0)+1|0):gI;return caml_string_of_bytes(a)}}function
+ee(b,c,a,d){for(;;){if(c<=a)throw caml_maybe_attach_backtrace(Not_found,1);if(caml_string_unsafe_get(b,a)===d)return a;a=a+1|0}}function
+ef(b,c,a,d){for(;;){if(c<=a)return 0;if(caml_string_unsafe_get(b,a)===d)return[0,a];a=a+1|0}}function
+az(a,b){return ef(a,caml_ml_string_length(a),0,b)}function
 cN(c,a,d){var
-b=caml_ml_string_length(c);if(0<=a&&b>=a)return ec(c,b,a,d);return l("String.index_from / Bytes.index_from")}function
-ee(c,a,d){var
-b=caml_ml_string_length(c);if(0<=a&&b>=a)return ed(c,b,a,d);return l("String.index_from_opt / Bytes.index_from_opt")}function
-aM(a){return caml_string_of_bytes(ea(gE,caml_bytes_of_string(a)))}function
-ef(a){a=caml_bytes_of_string(a);if(0===caml_ml_bytes_length(a));else{var
-b=cJ(a);caml_bytes_unsafe_set(b,0,d3(caml_bytes_unsafe_get(a,0)));a=b}return caml_string_of_bytes(a)}function
+b=caml_ml_string_length(c);if(0<=a&&b>=a)return ee(c,b,a,d);return l("String.index_from / Bytes.index_from")}function
+eg(c,a,d){var
+b=caml_ml_string_length(c);if(0<=a&&b>=a)return ef(c,b,a,d);return l("String.index_from_opt / Bytes.index_from_opt")}function
+aM(a){return caml_string_of_bytes(ec(gG,caml_bytes_of_string(a)))}function
+eh(a){a=caml_bytes_of_string(a);if(0===caml_ml_bytes_length(a));else{var
+b=cJ(a);caml_bytes_unsafe_set(b,0,d4(caml_bytes_unsafe_get(a,0)));a=b}return caml_string_of_bytes(a)}function
 cO(d,c){var
 b=caml_ml_string_length(d),a=b<=caml_ml_string_length(c)?1:0;if(!a)return a;a=0;for(;;){if(a===b)return 1;if(caml_string_unsafe_get(c,a)!==caml_string_unsafe_get(d,a))return 0;a=a+1|0}}function
-eg(e,d){var
+ei(e,d){var
 b=caml_ml_string_length(e),c=caml_ml_string_length(d)-b|0,a=0<=c?1:0;if(!a)return a;a=0;for(;;){if(a===b)return 1;if(caml_string_unsafe_get(d,c+a|0)!==caml_string_unsafe_get(e,a))return 0;a=a+1|0}}function
 af(h,c){var
 b=caml_ml_string_length(c),a=caml_ml_string_length(c)-1|0,d=0;if(a<0);else
@@ -1244,7 +1246,7 @@ for(;;){if(caml_string_unsafe_get(c,a)===h)var
 e=a,d=[0,f(c,a+1|0,(b-a|0)-1|0),d];else
 e=b;var
 g=a-1|0;if(0===a){b=e;break}b=e;a=g}return[0,f(c,0,b),d]}function
-eh(a,d){if(0===a)return[0];if(0>a)return l("Array.init");var
+ej(a,d){if(0===a)return[0];if(0>a)return l("Array.init");var
 c=caml_make_vect(a,caml_call1(d,0)),a=a-1|0;if(a>=1){var
 b=1;for(;;){c[b+1]=caml_call1(d,b);var
 e=b+1|0;if(a===b)break;b=e}}return c}function
@@ -1258,11 +1260,11 @@ a=c.length-2|0,b=0;for(;;){if(0>a)return b;b=[0,c[a+1],b];a=a-1|0}}function
 aN(a){if(!a)return[0];var
 c=0,b=a,d=a[2],a=a[1];for(;;){if(!b)break;c=c+1|0;b=b[2]}a=caml_make_vect(c,a);b=1;for(;;){if(!d)return a;c=d[2];a[b+1]=d[1];b=b+1|0;d=c}}function
 s(b,a){a:if(!(b<a)){if(!caml_signbit_float(a)&&caml_signbit_float(b))break a;return b!==b?b:a}return a!==a?a:b}function
-v(b,a){a:if(!(b<a)){if(!caml_signbit_float(a)&&caml_signbit_float(b))break a;return a!==a?a:b}return b!==b?b:a}var
-gI=[0,str,0,0,-1];function
-bX(c,a,b){c=caml_lex_engine(c,a,b);a=0<=c;a=a?b[12]!==gI:a;if(a){b[11]=b[12];a=b[12];b[12]=[0,a[1],a[2],a[3],b[4]+b[6]|0]}return c}function
+w(b,a){a:if(!(b<a)){if(!caml_signbit_float(a)&&caml_signbit_float(b))break a;return a!==a?a:b}return b!==b?b:a}var
+gK=[0,str,0,0,-1];function
+bX(c,a,b){c=caml_lex_engine(c,a,b);a=0<=c;a=a?b[12]!==gK:a;if(a){b[11]=b[12];a=b[12];b[12]=[0,a[1],a[2],a[3],b[4]+b[6]|0]}return c}function
 cP(c,a,b){return bV(c[2],a,b-a|0)}function
-ej(a){return a[12][4]}function
+el(a){return a[12][4]}function
 cQ(e){function
 b(a){return a?a[5]:0}function
 a(e,g,f,d){var
@@ -1282,28 +1284,28 @@ b=a[1];if(!b)return 0;var
 c=b[1];a[1]=b[2];a[2]=a[2]-1|0;return[0,c]}function
 a3(a){a=a[1];return a?[0,a[1]]:0}function
 cR(a){a[1]=0;a[2]=0;a[3]=0}function
-ek(b,a){b=[0,b,0];var
+em(b,a){b=[0,b,0];var
 c=a[3];if(c){a[1]=a[1]+1|0;c[2]=b;a[3]=b;return}a[1]=1;a[2]=b;a[3]=b}function
 bY(a){a=1<=a?a:1;a=bj<a?bj:a;var
 b=caml_create_bytes(a);return[0,b,0,a,b]}function
 cS(a){return bV(a[1],0,a[2])}var
-e="buffer.ml",gK=[0,e,94,2],gL=[0,e,93,2];function
+e="buffer.ml",gM=[0,e,94,2],gN=[0,e,93,2];function
 cT(b,c){var
 d=b[2],a=b[3];for(;;){if(a>=(d+c|0))break;a=2*a|0}a=bj<a?(d+c|0)<=bj?bj:(bP("Buffer.add: cannot grow buffer"),a):a;var
-e=caml_create_bytes(a);d_(b[1],0,e,0,b[2]);b[1]=e;b[3]=a;if((b[2]+c|0)>b[3])throw caml_maybe_attach_backtrace([0,Assert_failure,gL],1);if((d+c|0)<=b[3])return;throw caml_maybe_attach_backtrace([0,Assert_failure,gK],1)}function
+e=caml_create_bytes(a);ea(b[1],0,e,0,b[2]);b[1]=e;b[3]=a;if((b[2]+c|0)>b[3])throw caml_maybe_attach_backtrace([0,Assert_failure,gN],1);if((d+c|0)<=b[3])return;throw caml_maybe_attach_backtrace([0,Assert_failure,gM],1)}function
 bo(a,c){var
 b=a[2];if(a[3]<=b)cT(a,1);caml_bytes_unsafe_set(a[1],b,c);a[2]=b+1|0}function
 a4(a,d){var
 b=caml_ml_string_length(d),c=a[2]+b|0;if(a[3]<c)cT(a,b);caml_blit_string(d,0,a[1],a[2],b);a[2]=c}function
 cU(a){return 5===a[2]?12:-6}function
-el(a){return[0,0,caml_create_bytes(a)]}function
-em(b,a){var
-c=caml_ml_bytes_length(b[2]),a=b[1]+a|0;if(c<a){a=caml_create_bytes(d9(c*2|0,a));d_(b[2],0,a,0,c);b[2]=a}}function
-a5(a,b){em(a,1);caml_bytes_set(a[2],a[1],b);a[1]=a[1]+1|0}function
-E(a,c){var
-b=caml_ml_string_length(c);em(a,b);ap(c,0,a[2],a[1],b);a[1]=a[1]+b|0}function
-en(a){return bV(a[2],0,a[1])}function
-eo(a){if(typeof
+en(a){return[0,0,caml_create_bytes(a)]}function
+eo(b,a){var
+c=caml_ml_bytes_length(b[2]),a=b[1]+a|0;if(c<a){a=caml_create_bytes(d$(c*2|0,a));ea(b[2],0,a,0,c);b[2]=a}}function
+a5(a,b){eo(a,1);caml_bytes_set(a[2],a[1],b);a[1]=a[1]+1|0}function
+G(a,c){var
+b=caml_ml_string_length(c);eo(a,b);ap(c,0,a[2],a[1],b);a[1]=a[1]+b|0}function
+ep(a){return bV(a[2],0,a[1])}function
+eq(a){if(typeof
 a==="number")switch(a){case
 0:return"@]";case
 1:return"@}";case
@@ -1314,76 +1316,76 @@ a==="number")switch(a){case
 str_ni="%ni",str_Li="%Li",str_li="%li",str_i="%i";function
 cV(b,a){for(;;){if(typeof
 a==="number")return;switch(a[0]){case
-0:a=a[1];E(b,"%c");break;case
-1:a=a[1];E(b,"%s");break;case
-2:a=a[1];E(b,str_i);break;case
-3:a=a[1];E(b,str_li);break;case
-4:a=a[1];E(b,str_ni);break;case
-5:a=a[1];E(b,str_Li);break;case
-6:a=a[1];E(b,"%f");break;case
-7:a=a[1];E(b,"%B");break;case
+0:a=a[1];G(b,"%c");break;case
+1:a=a[1];G(b,"%s");break;case
+2:a=a[1];G(b,str_i);break;case
+3:a=a[1];G(b,str_li);break;case
+4:a=a[1];G(b,str_ni);break;case
+5:a=a[1];G(b,str_Li);break;case
+6:a=a[1];G(b,"%f");break;case
+7:a=a[1];G(b,"%B");break;case
 8:var
-c=a[2],a=a[1];E(b,"%{");cV(b,a);E(b,"%}");a=c;break;case
-9:c=a[3];a=a[1];E(b,"%(");cV(b,a);E(b,"%)");a=c;break;case
-10:a=a[1];E(b,"%a");break;case
-11:a=a[1];E(b,"%t");break;case
-12:a=a[1];E(b,"%?");break;case
-13:a=a[1];E(b,"%r");break;default:a=a[1];E(b,"%_r")}}}function
-w(a){if(typeof
+c=a[2],a=a[1];G(b,"%{");cV(b,a);G(b,"%}");a=c;break;case
+9:c=a[3];a=a[1];G(b,"%(");cV(b,a);G(b,"%)");a=c;break;case
+10:a=a[1];G(b,"%a");break;case
+11:a=a[1];G(b,"%t");break;case
+12:a=a[1];G(b,"%?");break;case
+13:a=a[1];G(b,"%r");break;default:a=a[1];G(b,"%_r")}}}function
+x(a){if(typeof
 a==="number")return 0;switch(a[0]){case
-0:return[0,w(a[1])];case
-1:return[1,w(a[1])];case
-2:return[2,w(a[1])];case
-3:return[3,w(a[1])];case
-4:return[4,w(a[1])];case
-5:return[5,w(a[1])];case
-6:return[6,w(a[1])];case
-7:return[7,w(a[1])];case
+0:return[0,x(a[1])];case
+1:return[1,x(a[1])];case
+2:return[2,x(a[1])];case
+3:return[3,x(a[1])];case
+4:return[4,x(a[1])];case
+5:return[5,x(a[1])];case
+6:return[6,x(a[1])];case
+7:return[7,x(a[1])];case
 8:var
-b=a[1];return[8,b,w(a[2])];case
+b=a[1];return[8,b,x(a[2])];case
 9:b=a[2];var
-c=a[1];return[9,b,c,w(a[3])];case
-10:return[10,w(a[1])];case
-11:return[11,w(a[1])];case
-12:return[12,w(a[1])];case
-13:return[13,w(a[1])];default:return[14,w(a[1])]}}function
-F(a){if(typeof
+c=a[1];return[9,b,c,x(a[3])];case
+10:return[10,x(a[1])];case
+11:return[11,x(a[1])];case
+12:return[12,x(a[1])];case
+13:return[13,x(a[1])];default:return[14,x(a[1])]}}function
+H(a){if(typeof
 a==="number")return[0,,function(a){},,function(a){}];switch(a[0]){case
-0:a=F(a[1]);var
+0:a=H(a[1]);var
 b=a[2];return[0,,function(a){b(0)},,a[4]];case
-1:a=F(a[1]);var
+1:a=H(a[1]);var
 c=a[2];return[0,,function(a){c(0)},,a[4]];case
-2:a=F(a[1]);var
+2:a=H(a[1]);var
 d=a[2];return[0,,function(a){d(0)},,a[4]];case
-3:a=F(a[1]);var
+3:a=H(a[1]);var
 e=a[2];return[0,,function(a){e(0)},,a[4]];case
-4:a=F(a[1]);var
+4:a=H(a[1]);var
 f=a[2];return[0,,function(a){f(0)},,a[4]];case
-5:a=F(a[1]);var
+5:a=H(a[1]);var
 g=a[2];return[0,,function(a){g(0)},,a[4]];case
-6:a=F(a[1]);var
+6:a=H(a[1]);var
 h=a[2];return[0,,function(a){h(0)},,a[4]];case
-7:a=F(a[1]);var
+7:a=H(a[1]);var
 i=a[2];return[0,,function(a){i(0)},,a[4]];case
-8:a=F(a[2]);var
+8:a=H(a[2]);var
 j=a[2];return[0,,function(a){j(0)},,a[4]];case
 9:var
-k=a[2],l=a[1],a=F(a[3]),m=a[4],n=a[2],a=F(x(w(l),k)),o=a[4],p=a[2];return[0,,function(a){p(0);n(0)},,function(a){o(0);m(0)}];case
-10:a=F(a[1]);var
+k=a[2],l=a[1],a=H(a[3]),m=a[4],n=a[2],a=H(y(x(l),k)),o=a[4],p=a[2];return[0,,function(a){p(0);n(0)},,function(a){o(0);m(0)}];case
+10:a=H(a[1]);var
 q=a[2];return[0,,function(a){q(0)},,a[4]];case
-11:a=F(a[1]);var
+11:a=H(a[1]);var
 r=a[2];return[0,,function(a){r(0)},,a[4]];case
-12:a=F(a[1]);var
+12:a=H(a[1]);var
 s=a[2];return[0,,function(a){s(0)},,a[4]];case
-13:a=F(a[1]);var
-t=a[4],u=a[2];return[0,,function(a){u(0)},,function(a){t(0)}];default:a=F(a[1]);var
-v=a[4],y=a[2];return[0,,function(a){y(0)},,function(a){v(0)}]}}var
-e="camlinternalFormat.ml",bO=836,gM=[0,e,850,23],gN=[0,e,837,26],gO=[0,e,847,28],gP=[0,e,815,21],gQ=[0,e,819,21],gR=[0,e,823,19],gS=[0,e,827,22],gT=[0,e,832,30],gU=[0,e,851,23],gV=[0,e,bO,26],gW=[0,e,846,28],gX=[0,e,814,21],gY=[0,e,818,21],gZ=[0,e,822,19],g0=[0,e,826,22],g1=[0,e,831,30];function
-x(b,a){a:{b:{c:{d:{e:{f:{g:{if(typeof
+13:a=H(a[1]);var
+t=a[4],u=a[2];return[0,,function(a){u(0)},,function(a){t(0)}];default:a=H(a[1]);var
+v=a[4],w=a[2];return[0,,function(a){w(0)},,function(a){v(0)}]}}var
+e="camlinternalFormat.ml",bO=836,gO=[0,e,850,23],gP=[0,e,837,26],gQ=[0,e,847,28],gR=[0,e,815,21],gS=[0,e,819,21],gT=[0,e,823,19],gU=[0,e,827,22],gV=[0,e,832,30],gW=[0,e,851,23],gX=[0,e,bO,26],gY=[0,e,846,28],gZ=[0,e,814,21],g0=[0,e,818,21],g1=[0,e,822,19],g2=[0,e,826,22],g3=[0,e,831,30];function
+y(b,a){a:{b:{c:{d:{e:{f:{g:{if(typeof
 b!=="number"){switch(b[0]){case
 0:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-0:return[0,x(b,a[1])];case
+0:return[0,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1393,7 +1395,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 1:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-1:return[1,x(b,a[1])];case
+1:return[1,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1403,7 +1405,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 2:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-2:return[2,x(b,a[1])];case
+2:return[2,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1413,7 +1415,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 3:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-3:return[3,x(b,a[1])];case
+3:return[3,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1423,7 +1425,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 4:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-4:return[4,x(b,a[1])];case
+4:return[4,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1433,7 +1435,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 5:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-5:return[5,x(b,a[1])];case
+5:return[5,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1443,7 +1445,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 6:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-6:return[6,x(b,a[1])];case
+6:return[6,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1453,7 +1455,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 7:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-7:return[7,x(b,a[1])];case
+7:return[7,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1465,45 +1467,45 @@ a!=="number")switch(a[0]){case
 c=b[2],b=b[1];if(typeof
 a!=="number")switch(a[0]){case
 8:var
-d=a[1],a=x(c,a[2]);return[8,x(b,d),a];case
+d=a[1],a=y(c,a[2]);return[8,y(b,d),a];case
 10:break a;case
 11:break b;case
 12:break c;case
 13:break d;case
-14:break e}throw caml_maybe_attach_backtrace([0,Assert_failure,gV],1);case
+14:break e}throw caml_maybe_attach_backtrace([0,Assert_failure,gX],1);case
 9:d=b[3];c=b[2];b=b[1];if(typeof
 a!=="number")switch(a[0]){case
 9:var
-e=a[3],f=a[2],a=a[1],a=F(x(w(c),a)),c=a[4];a[2].call(null,0);c(0);return[9,b,f,x(d,e)];case
+e=a[3],f=a[2],a=a[1],a=H(y(x(c),a)),c=a[4];a[2].call(null,0);c(0);return[9,b,f,y(d,e)];case
 10:break a;case
 11:break b;case
 12:break c;case
 13:break d;case
 14:break e;case
-8:break f}throw caml_maybe_attach_backtrace([0,Assert_failure,gW],1);case
+8:break f}throw caml_maybe_attach_backtrace([0,Assert_failure,gY],1);case
 10:b=b[1];if(typeof
-a!=="number"&&10===a[0])return[10,x(b,a[1])];throw caml_maybe_attach_backtrace([0,Assert_failure,gX],1);case
+a!=="number"&&10===a[0])return[10,y(b,a[1])];throw caml_maybe_attach_backtrace([0,Assert_failure,gZ],1);case
 11:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-11:return[11,x(b,a[1])];case
-10:break a}throw caml_maybe_attach_backtrace([0,Assert_failure,gY],1);case
+11:return[11,y(b,a[1])];case
+10:break a}throw caml_maybe_attach_backtrace([0,Assert_failure,g0],1);case
 12:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-12:return[12,x(b,a[1])];case
+12:return[12,y(b,a[1])];case
 10:break a;case
-11:break b}throw caml_maybe_attach_backtrace([0,Assert_failure,gZ],1);case
+11:break b}throw caml_maybe_attach_backtrace([0,Assert_failure,g1],1);case
 13:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-13:return[13,x(b,a[1])];case
+13:return[13,y(b,a[1])];case
 10:break a;case
 11:break b;case
-12:break c}throw caml_maybe_attach_backtrace([0,Assert_failure,g0],1);default:b=b[1];if(typeof
+12:break c}throw caml_maybe_attach_backtrace([0,Assert_failure,g2],1);default:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-14:return[14,x(b,a[1])];case
+14:return[14,y(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
-13:break d}throw caml_maybe_attach_backtrace([0,Assert_failure,g1],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gU],1)}if(typeof
+13:break d}throw caml_maybe_attach_backtrace([0,Assert_failure,g3],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gW],1)}if(typeof
 a==="number")return 0;switch(a[0]){case
 10:break a;case
 11:break b;case
@@ -1511,15 +1513,15 @@ a==="number")return 0;switch(a[0]){case
 13:break d;case
 14:break e;case
 8:break f;case
-9:break;default:throw caml_maybe_attach_backtrace([0,Assert_failure,gM],1)}}throw caml_maybe_attach_backtrace([0,Assert_failure,gO],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gN],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gT],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gS],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gR],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gQ],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gP],1)}var
-A=[num_248,"CamlinternalFormat.Type_mismatch",caml_fresh_oo_id(0)],str_true="true",str_false="false";function
-gA(a){return a?str_true:str_false}function
+9:break;default:throw caml_maybe_attach_backtrace([0,Assert_failure,gO],1)}}throw caml_maybe_attach_backtrace([0,Assert_failure,gQ],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gP],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gV],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gU],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gT],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gS],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,gR],1)}var
+B=[num_248,"CamlinternalFormat.Type_mismatch",caml_fresh_oo_id(0)],str_true="true",str_false="false";function
+gC(a){return a?str_true:str_false}function
 bZ(b,a){if(typeof
 b==="number")return[0,0,a];if(0===b[0])return[0,[0,b[1],b[2]],a];if(typeof
-a!=="number"&&2===a[0])return[0,[1,b[1]],a[1]];throw caml_maybe_attach_backtrace(A,1)}function
+a!=="number"&&2===a[0])return[0,[1,b[1]],a[1]];throw caml_maybe_attach_backtrace(B,1)}function
 bp(c,b,a){a=bZ(c,a);if(typeof
 b!=="number")return[0,a[1],[0,b[1]],a[2]];if(!b)return[0,a[1],0,a[2]];b=a[2];if(typeof
-b!=="number"&&2===b[0])return[0,a[1],1,b[1]];throw caml_maybe_attach_backtrace(A,1)}function
+b!=="number"&&2===b[0])return[0,a[1],1,b[1]];throw caml_maybe_attach_backtrace(B,1)}function
 m(a,b){if(typeof
 a==="number")return[0,0,b];switch(a[0]){case
 0:if(typeof
@@ -1528,30 +1530,30 @@ b!=="number"&&0===b[0]){b=m(a[1],b[1]);return[0,[0,b[1]],b[2]]}break;case
 b!=="number"&&0===b[0]){b=m(a[1],b[1]);return[0,[1,b[1]],b[2]]}break;case
 2:var
 c=a[2],b=bZ(a[1],b),a=b[2],b=b[1];if(typeof
-a!=="number"&&1===a[0]){a=m(c,a[1]);return[0,[2,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(A,1);case
+a!=="number"&&1===a[0]){a=m(c,a[1]);return[0,[2,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(B,1);case
 3:c=a[2];a=bZ(a[1],b);b=a[2];a=a[1];if(typeof
-b!=="number"&&1===b[0]){b=m(c,b[1]);return[0,[3,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(A,1);case
+b!=="number"&&1===b[0]){b=m(c,b[1]);return[0,[3,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(B,1);case
 4:c=a[4];var
 e=a[1],b=bp(a[2],a[3],b),a=b[3],d=b[1];if(typeof
-a!=="number"&&2===a[0]){b=b[2];a=m(c,a[1]);return[0,[4,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(A,1);case
+a!=="number"&&2===a[0]){b=b[2];a=m(c,a[1]);return[0,[4,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(B,1);case
 5:d=a[4];e=a[1];a=bp(a[2],a[3],b);b=a[3];c=a[1];if(typeof
-b!=="number"&&3===b[0]){a=a[2];b=m(d,b[1]);return[0,[5,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(A,1);case
+b!=="number"&&3===b[0]){a=a[2];b=m(d,b[1]);return[0,[5,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(B,1);case
 6:c=a[4];e=a[1];b=bp(a[2],a[3],b);a=b[3];d=b[1];if(typeof
-a!=="number"&&4===a[0]){b=b[2];a=m(c,a[1]);return[0,[6,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(A,1);case
+a!=="number"&&4===a[0]){b=b[2];a=m(c,a[1]);return[0,[6,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(B,1);case
 7:d=a[4];e=a[1];a=bp(a[2],a[3],b);b=a[3];c=a[1];if(typeof
-b!=="number"&&5===b[0]){a=a[2];b=m(d,b[1]);return[0,[7,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(A,1);case
+b!=="number"&&5===b[0]){a=a[2];b=m(d,b[1]);return[0,[7,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(B,1);case
 8:c=a[4];e=a[1];b=bp(a[2],a[3],b);a=b[3];d=b[1];if(typeof
-a!=="number"&&6===a[0]){b=b[2];a=m(c,a[1]);return[0,[8,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(A,1);case
+a!=="number"&&6===a[0]){b=b[2];a=m(c,a[1]);return[0,[8,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(B,1);case
 9:d=a[2];a=bZ(a[1],b);b=a[2];a=a[1];if(typeof
-b!=="number"&&7===b[0]){b=m(d,b[1]);return[0,[9,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(A,1);case
+b!=="number"&&7===b[0]){b=m(d,b[1]);return[0,[9,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(B,1);case
 10:a=m(a[1],b);return[0,[10,a[1]],a[2]];case
 11:d=a[1];a=m(a[2],b);return[0,[11,d,a[1]],a[2]];case
 12:d=a[1];a=m(a[2],b);return[0,[12,d,a[1]],a[2]];case
 13:if(typeof
-b!=="number"&&8===b[0]){d=b[1];b=b[2];e=a[3];c=a[1];if(caml_notequal([0,a[2]],[0,d]))throw caml_maybe_attach_backtrace(A,1);a=m(e,b);return[0,[13,c,d,a[1]],a[2]]}break;case
+b!=="number"&&8===b[0]){d=b[1];b=b[2];e=a[3];c=a[1];if(caml_notequal([0,a[2]],[0,d]))throw caml_maybe_attach_backtrace(B,1);a=m(e,b);return[0,[13,c,d,a[1]],a[2]]}break;case
 14:if(typeof
 b!=="number"&&9===b[0]){d=b[1];b=b[3];c=a[3];e=a[2];a=a[1];var
-f=[0,r(d)];if(caml_notequal([0,r(e)],f))throw caml_maybe_attach_backtrace(A,1);b=m(c,r(b));return[0,[14,a,d,b[1]],b[2]]}break;case
+f=[0,r(d)];if(caml_notequal([0,r(e)],f))throw caml_maybe_attach_backtrace(B,1);b=m(c,r(b));return[0,[14,a,d,b[1]],b[2]]}break;case
 15:if(typeof
 b!=="number"&&10===b[0]){b=m(a[1],b[1]);return[0,[15,b[1]],b[2]]}break;case
 16:if(typeof
@@ -1568,7 +1570,7 @@ b!=="number"&&2===b[0]){c=a[1];a=m(a[2],b[1]);return[0,[21,c,a[1]],a[2]]}break;c
 a!=="number")switch(a[0]){case
 8:return cW([8,a[1],a[2]],c,b);case
 9:d=a[1];b=Q(a[2],c,b);a=b[2];return[0,[23,[9,d,b[1]],a[1]],a[2]];default:return cW(a,c,b)}if(2!==a)return cW(a,c,b);if(typeof
-b!=="number"&&14===b[0]){c=m(c,b[1]);return[0,[23,2,c[1]],c[2]]}throw caml_maybe_attach_backtrace(A,1)}throw caml_maybe_attach_backtrace(A,1)}function
+b!=="number"&&14===b[0]){c=m(c,b[1]);return[0,[23,2,c[1]],c[2]]}throw caml_maybe_attach_backtrace(B,1)}throw caml_maybe_attach_backtrace(B,1)}function
 cW(c,b,a){a=m(b,a);return[0,[23,c,a[1]],a[2]]}function
 Q(b,c,a){if(typeof
 b==="number")return[0,0,m(c,a)];switch(b[0]){case
@@ -1590,10 +1592,10 @@ a!=="number"&&6===a[0]){a=Q(b[1],c,a[1]);return[0,[6,a[1]],a[2]]}break;case
 a!=="number"&&7===a[0]){c=Q(b[1],c,a[1]);return[0,[7,c[1]],c[2]]}break;case
 8:if(typeof
 a!=="number"&&8===a[0]){var
-d=a[1],a=a[2],e=b[2];if(caml_notequal([0,b[1]],[0,d]))throw caml_maybe_attach_backtrace(A,1);a=Q(e,c,a);return[0,[8,d,a[1]],a[2]]}break;case
+d=a[1],a=a[2],e=b[2];if(caml_notequal([0,b[1]],[0,d]))throw caml_maybe_attach_backtrace(B,1);a=Q(e,c,a);return[0,[8,d,a[1]],a[2]]}break;case
 9:if(typeof
 a!=="number"&&9===a[0]){d=a[2];e=a[1];a=a[3];var
-g=b[3],f=b[2],b=b[1],h=[0,r(e)];if(caml_notequal([0,r(b)],h))throw caml_maybe_attach_backtrace(A,1);b=[0,r(d)];if(caml_notequal([0,r(f)],b))throw caml_maybe_attach_backtrace(A,1);b=F(x(w(e),d));f=b[4];b[2].call(null,0);f(0);b=Q(r(g),c,a);a=b[2];return[0,[9,e,d,w(b[1])],a]}break;case
+g=b[3],f=b[2],b=b[1],h=[0,r(e)];if(caml_notequal([0,r(b)],h))throw caml_maybe_attach_backtrace(B,1);b=[0,r(d)];if(caml_notequal([0,r(f)],b))throw caml_maybe_attach_backtrace(B,1);b=H(y(x(e),d));f=b[4];b[2].call(null,0);f(0);b=Q(r(g),c,a);a=b[2];return[0,[9,e,d,x(b[1])],a]}break;case
 10:if(typeof
 a!=="number"&&10===a[0]){b=Q(b[1],c,a[1]);return[0,[10,b[1]],b[2]]}break;case
 11:if(typeof
@@ -1601,7 +1603,7 @@ a!=="number"&&11===a[0]){b=Q(b[1],c,a[1]);return[0,[11,b[1]],b[2]]}break;case
 13:if(typeof
 a!=="number"&&13===a[0]){a=Q(b[1],c,a[1]);return[0,[13,a[1]],a[2]]}break;case
 14:if(typeof
-a!=="number"&&14===a[0]){c=Q(b[1],c,a[1]);return[0,[14,c[1]],c[2]]}break}throw caml_maybe_attach_backtrace(A,1)}var
+a!=="number"&&14===a[0]){c=Q(b[1],c,a[1]);return[0,[14,c[1]],c[2]]}break}throw caml_maybe_attach_backtrace(B,1)}var
 num_120=120;function
 S(e,d,a){var
 b=caml_ml_string_length(a),e=0<=d?e:0,d=a0(d);if(d<=b)return a;var
@@ -1618,7 +1620,7 @@ c=caml_ml_string_length(d),a=caml_string_get(d,0);a:{b:{if(58>a){if(32!==a){if(4
 4:break a;default:break b}}if(c>=(b+1|0))break a;var
 e=_(b+1|0,48);caml_bytes_set(e,0,a);ap(d,1,e,(b-c|0)+2|0,c-1|0);return caml_string_of_bytes(e)}if(71<=a){if(5<a+num_97>>>0)break a}else if(65>a)break a}if(c<b){e=_(b,48);ap(d,0,e,b-c|0,c);return caml_string_of_bytes(e)}}return d}var
 num_114=114,num_110=110;function
-g2(f){a:{var
+g4(f){a:{var
 a=0,b=caml_ml_string_length(f);for(;;){if(b<=a)break a;var
 e=caml_string_unsafe_get(f,a)+num_32|0;if(59<e>>>0){if(33<e-61>>>0)break}else if(2===e)break;a=a+1|0}f=caml_bytes_of_string(f);a=caml_ml_bytes_length(f)-1|0;b=0;if(a<0);else{e=0;for(;;){var
 c=caml_bytes_unsafe_get(f,e);b:{c:{d:{if(32<=c){c=c-34|0;if(58<c>>>0){if(93<=c)break d}else if(56<c-1>>>0)break c;c=1;break b}if(11<=c){if(13===c)break c}else if(8<=c)break c}c=4;break b}c=2}b=b+c|0;c=e+1|0;if(a===e)break;e=c}}if(b===caml_ml_bytes_length(f))b=cJ(f);else{b=caml_create_bytes(b);c=caml_ml_bytes_length(f)-1|0;if(c<0);else{a=0;e=0;for(;;){var
@@ -1627,9 +1629,9 @@ d=caml_bytes_unsafe_get(f,e);b:{c:{d:{if(35<=d){if(92!==d){if(num_127<=d)break c
 9:caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,116);break b;case
 10:caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,num_110);break b;case
 13:caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,num_114);break b;default:break c}}if(34>d)break d}caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,d);break b}caml_bytes_unsafe_set(b,a,d);break b}caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,48+(d/num_100|0)|0);a=a+1|0;caml_bytes_unsafe_set(b,a,48+((d/10|0)%10|0)|0);a=a+1|0;caml_bytes_unsafe_set(b,a,48+(d%10|0)|0)}a=a+1|0;d=e+1|0;if(c===e)break;e=d}}}f=caml_string_of_bytes(b)}a=caml_ml_string_length(f);b=_(a+2|0,34);caml_blit_string(f,0,b,1,a);return caml_string_of_bytes(b)}var
-num_102=102,num_103=103,g3=[0,num_103];function
-ep(d,c){c=a0(c);var
-a=g3[1];switch(d[2]){case
+num_102=102,num_103=103,g5=[0,num_103];function
+er(d,c){c=a0(c);var
+a=g5[1];switch(d[2]){case
 0:a=num_102;break;case
 1:a=101;break;case
 2:a=69;break;case
@@ -1638,9 +1640,9 @@ a=g3[1];switch(d[2]){case
 6:a=104;break;case
 7:a=72;break;case
 8:a=70;break}var
-b=el(16);a5(b,37);switch(d[1]){case
+b=en(16);a5(b,37);switch(d[1]){case
 1:a5(b,43);break;case
-2:a5(b,32);break}if(8<=d[2])a5(b,35);a5(b,46);E(b,str+c);a5(b,a);return en(b)}function
+2:a5(b,32);break}if(8<=d[2])a5(b,35);a5(b,46);G(b,str+c);a5(b,a);return ep(b)}function
 b0(c,e){if(13>c)return e;c=caml_ml_string_length(e)-1|0;var
 num_48=-48,a=0;if(c<0);else{var
 b=0;for(;;){a=9<caml_string_unsafe_get(e,b)+num_48>>>0?a:a+1|0;var
@@ -1649,7 +1651,7 @@ g=caml_create_bytes(caml_ml_string_length(e)+((a-1|0)/3|0)|0),h=[0,0];function
 f(a){caml_bytes_set(g,h[1],a);h[1]++}var
 c=caml_ml_string_length(e)-1|0,a=((a-1|0)%3|0)+1|0;if(c>=0){d=0;for(;;){b=caml_string_unsafe_get(e,d);if(9<b+num_48>>>0)f(b);else{a=0===a?(f(95),3):a;f(b);a=a-1|0}b=d+1|0;if(c===d)break;d=b}}return caml_string_of_bytes(g)}var
 str_u="%u";function
-g4(b,c){switch(b){case
+g6(b,c){switch(b){case
 1:var
 a="%+d";break;case
 2:a="% d";break;case
@@ -1665,7 +1667,7 @@ a="%+d";break;case
 13:a=str_d;break;case
 3:case
 14:a=str_i;break;default:a=str_u}return b0(b,caml_format_int(a,c))}function
-g5(b,c){switch(b){case
+g7(b,c){switch(b){case
 1:var
 a="%+ld";break;case
 2:a="% ld";break;case
@@ -1681,7 +1683,7 @@ a="%+ld";break;case
 13:a="%ld";break;case
 3:case
 14:a=str_li;break;default:a="%lu"}return b0(b,caml_format_int(a,c))}function
-g6(b,c){switch(b){case
+g8(b,c){switch(b){case
 1:var
 a="%+nd";break;case
 2:a="% nd";break;case
@@ -1697,7 +1699,7 @@ a="%+nd";break;case
 13:a="%nd";break;case
 3:case
 14:a=str_ni;break;default:a="%nu"}return b0(b,caml_format_int(a,c))}function
-g7(b,c){switch(b){case
+g9(b,c){switch(b){case
 1:var
 a="%+Ld";break;case
 2:a="% Ld";break;case
@@ -1720,12 +1722,12 @@ f(a){switch(e[1]){case
 i(c){var
 a=caml_classify_float(b);return 3===a?b<0.?"neg_infinity":str_infinity:4<=a?str_nan:c}switch(e[2]){case
 5:var
-a=caml_format_float(ep(e,h),b),d=0,c=caml_ml_string_length(a);for(;;){a:{if(d!==c){var
+a=caml_format_float(er(e,h),b),d=0,c=caml_ml_string_length(a);for(;;){a:{if(d!==c){var
 g=caml_string_get(a,d)-46|0;b:{if(23<g>>>0){if(55!==g)break b}else if(21>=g-1>>>0)break b;c=1;break a}d=d+1|0;continue}c=0}a=c?a:a+str$13;return i(a)}case
 6:return f(0);case
-7:return caml_string_of_bytes(ea(d3,caml_bytes_of_string(f(0))));case
-8:return i(f(0));default:return caml_format_float(ep(e,h),b)}}var
-g9=[0,e,1558,4],g_=[0,e,1626,39];function
+7:return caml_string_of_bytes(ec(d4,caml_bytes_of_string(f(0))));case
+8:return i(f(0));default:return caml_format_float(er(e,h),b)}}var
+g$=[0,e,1558,4],ha=[0,e,1626,39];function
 bL(counter,j,h,f){var
 d=0;a:for(;;)switch(d){case
 0:var
@@ -1734,13 +1736,13 @@ a==="number")return caml_call1(c,b);switch(a[0]){case
 0:d=1;continue a;case
 1:d=2;continue a;case
 2:d=3;continue a;case
-3:return cX(c,b,a[2],a[1],g2);case
-4:return b1(c,b,a[4],a[2],a[3],g4,a[1]);case
-5:return b1(c,b,a[4],a[2],a[3],g5,a[1]);case
-6:return b1(c,b,a[4],a[2],a[3],g6,a[1]);case
-7:return b1(c,b,a[4],a[2],a[3],g7,a[1]);case
+3:return cX(c,b,a[2],a[1],g4);case
+4:return b1(c,b,a[4],a[2],a[3],g6,a[1]);case
+5:return b1(c,b,a[4],a[2],a[3],g7,a[1]);case
+6:return b1(c,b,a[4],a[2],a[3],g8,a[1]);case
+7:return b1(c,b,a[4],a[2],a[3],g9,a[1]);case
 8:d=4;continue a;case
-9:return cX(c,b,a[2],a[1],gA);case
+9:return cX(c,b,a[2],a[1],gC);case
 10:b=[7,b];a=a[1];break;case
 11:b=[2,b,a[1]];a=a[2];break;case
 12:b=[3,b,a[1]];a=a[2];break;case
@@ -1752,29 +1754,29 @@ a==="number")return caml_call1(c,b);switch(a[0]){case
 18:d=a[1];if(0===d[0]){let
 e=b,f=c,g=a[2];c=function(a){return i(f,[1,e,[0,a]],g)};b=0;a=d[1][1]}else{let
 e=b,f=c,g=a[2];c=function(a){return i(f,[1,e,[1,a]],g)};b=0;a=d[1][1]}break;case
-19:throw caml_maybe_attach_backtrace([0,Assert_failure,g9],1);case
+19:throw caml_maybe_attach_backtrace([0,Assert_failure,g$],1);case
 20:d=9;continue a;case
 21:d=10;continue a;case
 22:d=11;continue a;case
-23:break b;default:d=a[3];f=a[1];h=caml_call1(a[2],0);return counter<50?dZ(counter+1|0,c,b,d,f,h):caml_trampoline_return(dZ,[0,c,b,d,f,h])}}case
+23:break b;default:d=a[3];f=a[1];h=caml_call1(a[2],0);return counter<50?d0(counter+1|0,c,b,d,f,h):caml_trampoline_return(d0,[0,c,b,d,f,h])}}case
 12:j=a[2];h=a[1];if(typeof
-h==="number"){if(2===h)throw caml_maybe_attach_backtrace([0,Assert_failure,g_],1);return counter<50?bg(counter+1|0,c,b,j):caml_trampoline_return(bg,[0,c,b,j])}if(9!==h[0])return counter<50?bg(counter+1|0,c,b,j):caml_trampoline_return(bg,[0,c,b,j]);f=h[2];return counter<50?d0(counter+1|0,c,b,f,j):caml_trampoline_return(d0,[0,c,b,f,j]);case
+h==="number"){if(2===h)throw caml_maybe_attach_backtrace([0,Assert_failure,ha],1);return counter<50?bg(counter+1|0,c,b,j):caml_trampoline_return(bg,[0,c,b,j])}if(9!==h[0])return counter<50?bg(counter+1|0,c,b,j):caml_trampoline_return(bg,[0,c,b,j]);f=h[2];return counter<50?d1(counter+1|0,c,b,f,j):caml_trampoline_return(d1,[0,c,b,f,j]);case
 11:var
 D=a[1];return function(a){return i(c,[5,b,a],D)};case
 10:var
 C=a[2];return function(a){return i(c,[4,b,caml_format_int(str_u,a)],C)};case
 9:var
-z=a[3],B=[8,b,"Printf: bad conversion %["];return function(a){return i(c,B,z)};case
+z=a[3],A=[8,b,"Printf: bad conversion %["];return function(a){return i(c,A,z)};case
 8:var
 y=a[1];return function(a){return i(c,[6,b,a],y)};case
 7:var
-x=a[1];return function(d,a){return i(c,[6,b,function(b){return caml_call2(d,b,a)}],x)};case
+w=a[1];return function(d,a){return i(c,[6,b,function(b){return caml_call2(d,b,a)}],w)};case
 6:var
-u=a[3],v=a[2];return function(a){a=a[1];a=m(a,r(w(v)));if(typeof
-a[2]==="number")return i(c,b,n(a[1],u));throw caml_maybe_attach_backtrace(A,1)};case
+u=a[3],v=a[2];return function(a){a=a[1];a=m(a,r(x(v)));if(typeof
+a[2]==="number")return i(c,b,n(a[1],u));throw caml_maybe_attach_backtrace(B,1)};case
 5:var
-t=a[3],d=a[2],a=el(16);cV(a,d);var
-p=en(a);return function(a){return i(c,[4,b,p],t)};case
+t=a[3],d=a[2],a=en(16);cV(a,d);var
+p=ep(a);return function(a){return i(c,[4,b,p],t)};case
 4:var
 g=a[4],d=a[3],f=a[2],e=a[1];if(typeof
 f==="number"){if(typeof
@@ -1798,8 +1800,8 @@ e=_(d+2|0,39);caml_blit_string(a,0,e,1,d);return i(c,[4,b,caml_string_of_bytes(e
 1:var
 q=a[1];return function(a){return i(c,[5,b,a],q)}}}function
 i(a,b,c){return caml_trampoline(bL(0,a,b,c))}var
-g$=[0,e,1649,31],ha=[0,e,1650,31];function
-d0(e,d,c,a,b){if(typeof
+hb=[0,e,1649,31],hc=[0,e,1650,31];function
+d1(e,d,c,a,b){if(typeof
 a==="number")return e<50?bg(e+1|0,d,c,b):caml_trampoline_return(bg,[0,d,c,b]);switch(a[0]){case
 0:var
 f=a[1];return function(a){return U(d,c,f,b)};case
@@ -1820,15 +1822,15 @@ m=a[1];return function(a){return U(d,c,m,b)};case
 8:var
 n=a[2];return function(a){return U(d,c,n,b)};case
 9:var
-o=a[3],e=a[2],p=x(w(a[1]),e);return function(a){return U(d,c,N(p,o),b)};case
+o=a[3],e=a[2],p=y(x(a[1]),e);return function(a){return U(d,c,N(p,o),b)};case
 10:var
 q=a[1];return function(e,a){return U(d,c,q,b)};case
 11:var
 r=a[1];return function(a){return U(d,c,r,b)};case
 12:var
 s=a[1];return function(a){return U(d,c,s,b)};case
-13:throw caml_maybe_attach_backtrace([0,Assert_failure,g$],1);default:throw caml_maybe_attach_backtrace([0,Assert_failure,ha],1)}}function
-U(a,b,c,d){return caml_trampoline(d0(0,a,b,c,d))}function
+13:throw caml_maybe_attach_backtrace([0,Assert_failure,hb],1);default:throw caml_maybe_attach_backtrace([0,Assert_failure,hc],1)}}function
+U(a,b,c,d){return caml_trampoline(d1(0,a,b,c,d))}function
 bg(counter,c,a,b){a=[8,a,"Printf: bad conversion %_"];return counter<50?bL(counter+1|0,c,a,b):caml_trampoline_return(bL,[0,c,a,b])}function
 cX(e,d,c,a,b){if(typeof
 a==="number")return function(a){return i(e,[4,d,caml_call1(b,a)],c)};if(0===a[0]){var
@@ -1844,14 +1846,14 @@ m=c[1];return function(c){return i(f,[4,e,S(j,h,a6(m,caml_call2(b,a,c)))],d)}}va
 k=g[1];if(typeof
 c==="number")return c?function(h,g,c){return i(f,[4,e,S(k,h,a6(g,caml_call2(b,a,c)))],d)}:function(g,c){return i(f,[4,e,S(k,g,caml_call2(b,a,c))],d)};var
 n=c[1];return function(g,c){return i(f,[4,e,S(k,g,a6(n,caml_call2(b,a,c)))],d)}}function
-dZ(counter,c,e,b,a,d){if(a){var
-f=a[1];return function(a){return g8(c,e,b,f,caml_call1(d,a))}}a=[4,e,d];return counter<50?bL(counter+1|0,c,a,b):caml_trampoline_return(bL,[0,c,a,b])}function
-g8(a,b,c,d,e){return caml_trampoline(dZ(0,a,b,c,d,e))}var
+d0(counter,c,e,b,a,d){if(a){var
+f=a[1];return function(a){return g_(c,e,b,f,caml_call1(d,a))}}a=[4,e,d];return counter<50?bL(counter+1|0,c,a,b):caml_trampoline_return(bL,[0,c,a,b])}function
+g_(a,b,c,d,e){return caml_trampoline(d0(0,a,b,c,d,e))}var
 str$14="@{",str$17="@[";function
 as(c,a){for(;;){if(typeof
 a==="number")return;switch(a[0]){case
 0:var
-b=a[1],a=eo(a[2]);as(c,b);return bi(c,a);case
+b=a[1],a=eq(a[2]);as(c,b);return bi(c,a);case
 1:b=a[2];a=a[1];if(0===b[0]){b=b[1];as(c,a);bi(c,str$14);a=b}else{b=b[1];as(c,a);bi(c,str$17);a=b}break;case
 6:b=a[2];as(c,a[1]);return caml_call1(b,c);case
 7:as(c,a[1]);caml_ml_flush(c);return;case
@@ -1861,7 +1863,7 @@ b=a[1],a=eo(a[2]);as(c,b);return bi(c,a);case
 aA(c,a){for(;;){if(typeof
 a==="number")return;switch(a[0]){case
 0:var
-b=a[1],a=eo(a[2]);aA(c,b);return a4(c,a);case
+b=a[1],a=eq(a[2]);aA(c,b);return a4(c,a);case
 1:b=a[2];a=a[1];if(0===b[0]){b=b[1];aA(c,a);a4(c,str$14);a=b}else{b=b[1];aA(c,a);a4(c,str$17);a=b}break;case
 6:b=a[2];aA(c,a[1]);return a4(c,caml_call1(b,0));case
 7:a=a[1];break;case
@@ -1871,62 +1873,62 @@ b=a[1],a=eo(a[2]);aA(c,b);return a4(c,a);case
 b2(b,a){return i(function(a){as(b,a);return 0},0,a[1])}function
 g(a){return i(function(b){var
 a=bY(64);aA(a,b);return cS(a)},0,a[1])}var
-hb=[0,[3,0,0],"%S"],hc=[0,[4,0,0,0,0],str_d];function
+hd=[0,[3,0,0],"%S"],he=[0,[4,0,0,0,0],str_d];function
 cZ(a,b){a=a[b+1];if(!(1-(typeof
-a==="number")))return caml_call1(g(hc),a);if(caml_obj_tag(a)===num_252)return caml_call1(g(hb),a);if(caml_obj_tag(a)!==253)return str$9;a=caml_format_float("%.12g",a);b=0;var
+a==="number")))return caml_call1(g(he),a);if(caml_obj_tag(a)===num_252)return caml_call1(g(hd),a);if(caml_obj_tag(a)!==253)return str$9;a=caml_format_float("%.12g",a);b=0;var
 d=caml_ml_string_length(a);for(;;){if(d<=b)return a+str$13;var
 c=caml_string_get(a,b);a:{if(48<=c){if(58<=c)break a}else if(45!==c)break a;b=b+1|0;continue}return a}}var
-hd=[0,[11,str$2,[2,0,[2,0,0]]],", %s%s"];function
-eq(b,a){if(b.length-1<=a)return str;var
-c=eq(b,a+1|0),a=cZ(b,a);return caml_call2(g(hd),a,c)}var
-e=", characters ",cY=[0,[11,'File "',[2,0,[11,'", line ',[4,0,0,0,[11,e,[4,0,0,0,[12,45,[4,0,0,0,[11,str$19,[2,0,0]]]]]]]]]],'File "%s", line %d, characters %d-%d: %s'],dY=[0,0],he=[0,[12,40,[2,0,[2,0,[12,41,0]]]],"(%s%s)"],hf=[0,[12,40,[2,0,[12,41,0]]],"(%s)"];function
+hf=[0,[11,str$2,[2,0,[2,0,0]]],", %s%s"];function
+es(b,a){if(b.length-1<=a)return str;var
+c=es(b,a+1|0),a=cZ(b,a);return caml_call2(g(hf),a,c)}var
+e=", characters ",cY=[0,[11,'File "',[2,0,[11,'", line ',[4,0,0,0,[11,e,[4,0,0,0,[12,45,[4,0,0,0,[11,str$19,[2,0,0]]]]]]]]]],'File "%s", line %d, characters %d-%d: %s'],dZ=[0,0],hg=[0,[12,40,[2,0,[2,0,[12,41,0]]]],"(%s%s)"],hh=[0,[12,40,[2,0,[12,41,0]]],"(%s)"];function
 b3(a){a:{b:{var
-c=dY[1];for(;;){if(!c)break;var
+c=dZ[1];for(;;){if(!c)break;var
 d=c[2],c=c[1];try{var
-b=caml_call1(c,a)}catch(a){c=d;continue}if(b)break b;c=d}c=0;break a}c=[0,b[1]]}if(c)return c[1];if(a===Out_of_memory)return"Out of memory";if(a===Stack_overflow)return"Stack overflow";if(a[1]===Match_failure){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(g(cY),a,d,b,b+5|0,"Pattern matching failed")}if(a[1]===Assert_failure){a=a[2];d=a[3];b=a[2];a=a[1];return caml_call5(g(cY),a,b,d,d+6|0,"Assertion failed")}if(a[1]===Undefined_recursive_module){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(g(cY),a,d,b,b+6|0,"Undefined recursive module")}if(0!==caml_obj_tag(a))return a[1];b=a.length-1;d=a[1][1];if(2<b>>>0){b=eq(a,2);a=cZ(a,1);a=caml_call2(g(he),a,b)}else
+b=caml_call1(c,a)}catch(a){c=d;continue}if(b)break b;c=d}c=0;break a}c=[0,b[1]]}if(c)return c[1];if(a===Out_of_memory)return"Out of memory";if(a===Stack_overflow)return"Stack overflow";if(a[1]===Match_failure){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(g(cY),a,d,b,b+5|0,"Pattern matching failed")}if(a[1]===Assert_failure){a=a[2];d=a[3];b=a[2];a=a[1];return caml_call5(g(cY),a,b,d,d+6|0,"Assertion failed")}if(a[1]===Undefined_recursive_module){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(g(cY),a,d,b,b+6|0,"Undefined recursive module")}if(0!==caml_obj_tag(a))return a[1];b=a.length-1;d=a[1][1];if(2<b>>>0){b=es(a,2);a=cZ(a,1);a=caml_call2(g(hg),a,b)}else
 switch(b){case
-2:a=cZ(a,1);a=caml_call1(g(hf),a);break;case
+2:a=cZ(a,1);a=caml_call1(g(hh),a);break;case
 0:a=str;break;default:a=str}return d+a}var
-hg=[0,[2,0,[12,32,[2,0,[11,' in file "',[2,0,[12,34,[2,0,[11,", line ",[4,0,0,0,[11,e,[4,0,0,0,[12,45,[4,0,0,0,0]]]]]]]]]]]]],'%s %s in file "%s"%s, line %d, characters %d-%d'],hh=[0,[2,0,[11," unknown location",0]],"%s unknown location"],hi=[0,[2,0,[12,10,0]],"%s\n"];function
+hi=[0,[2,0,[12,32,[2,0,[11,' in file "',[2,0,[12,34,[2,0,[11,", line ",[4,0,0,0,[11,e,[4,0,0,0,[12,45,[4,0,0,0,0]]]]]]]]]]]]],'%s %s in file "%s"%s, line %d, characters %d-%d'],hj=[0,[2,0,[11," unknown location",0]],"%s unknown location"],hk=[0,[2,0,[12,10,0]],"%s\n"];function
 c0(m,c){c=caml_convert_raw_backtrace(c);var
 e=c.length-2|0;if(e>=0){var
 b=0;for(;;){var
 a=caml_check_bound(c,b)[b+1];let
 n=b;var
 d=function(a){return a?0===n?"Raised at":"Re-raised at":0===n?"Raised by primitive operation at":"Called from"};if(0===a[0])var
-f=a[5],h=a[4],i=a[3],j=a[6]?" (inlined)":str,k=a[2],l=a[7],a=d(a[1]),a=[0,caml_call7(g(hg),a,l,k,j,i,h,f)];else if(a[1])a=0;else{a=d(0);a=[0,caml_call1(g(hh),a)]}if(a){a=a[1];caml_call1(b2(m,hi),a)}a=b+1|0;if(e===b)break;b=a}}}function
+f=a[5],h=a[4],i=a[3],j=a[6]?" (inlined)":str,k=a[2],l=a[7],a=d(a[1]),a=[0,caml_call7(g(hi),a,l,k,j,i,h,f)];else if(a[1])a=0;else{a=d(0);a=[0,caml_call1(g(hj),a)]}if(a){a=a[1];caml_call1(b2(m,hk),a)}a=b+1|0;if(e===b)break;b=a}}}function
 c1(b){for(;;){var
-a=dY[1],a=1-cD(dY,a,[0,b,a]);if(!a)return a}}var
-hj=caml_obj_dup([0,str,"(Cannot print locations:\n bytecode executable program file not found)","(Cannot print locations:\n bytecode executable program file appears to be corrupt)","(Cannot print locations:\n bytecode executable program file has wrong magic number)","(Cannot print locations:\n bytecode executable program file cannot be opened;\n -- too many open files. Try running with OCAMLRUNPARAM=b=2)"]),e="Fatal error: exception %s\n",hk=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],e],hl=[0],hm=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],e],hn=[0,[11,"Fatal error in uncaught exception handler: exception ",[2,0,[12,10,0]]],"Fatal error in uncaught exception handler: exception %s\n"];caml_register_named_value(str_Printexc_handle_abr,function(c,d){try{try{var
-b=d?hl:caml_get_exception_raw_backtrace(0);try{cF(0)}catch(a){}try{var
-a=b3(c);caml_call1(b2(W,hk),a);c0(W,b);a=caml_ml_debug_info_status(0);if(a<0){a=a0(a);d2(caml_check_bound(hj,a)[a+1])}a=caml_ml_flush(W)}catch(d){a=caml_wrap_exception(d);c=b3(c);caml_call1(b2(W,hm),c);c0(W,b);a=b3(a);caml_call1(b2(W,hn),a);c0(W,caml_get_exception_raw_backtrace(0));a=caml_ml_flush(W)}b=a}catch(a){b=caml_wrap_exception(a);if(b!==Out_of_memory)throw caml_maybe_attach_backtrace(b,0);b=d2("Fatal error: out of memory in uncaught exception handler")}return b}catch(a){return 0}});var
-ho=[num_248,"Stdlib.Fun.Finally_raised",caml_fresh_oo_id(0)];c1(function(a){return a[1]===ho?[0,"Fun.Finally_raised: "+b3(a[2])]:0});function
-er(a){var
+a=dZ[1],a=1-cD(dZ,a,[0,b,a]);if(!a)return a}}var
+hl=caml_obj_dup([0,str,"(Cannot print locations:\n bytecode executable program file not found)","(Cannot print locations:\n bytecode executable program file appears to be corrupt)","(Cannot print locations:\n bytecode executable program file has wrong magic number)","(Cannot print locations:\n bytecode executable program file cannot be opened;\n -- too many open files. Try running with OCAMLRUNPARAM=b=2)"]),e="Fatal error: exception %s\n",hm=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],e],hn=[0],ho=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],e],hp=[0,[11,"Fatal error in uncaught exception handler: exception ",[2,0,[12,10,0]]],"Fatal error in uncaught exception handler: exception %s\n"];caml_register_named_value(str_Printexc_handle_abr,function(c,d){try{try{var
+b=d?hn:caml_get_exception_raw_backtrace(0);try{cF(0)}catch(a){}try{var
+a=b3(c);caml_call1(b2(W,hm),a);c0(W,b);a=caml_ml_debug_info_status(0);if(a<0){a=a0(a);d3(caml_check_bound(hl,a)[a+1])}a=caml_ml_flush(W)}catch(d){a=caml_wrap_exception(d);c=b3(c);caml_call1(b2(W,ho),c);c0(W,b);a=b3(a);caml_call1(b2(W,hp),a);c0(W,caml_get_exception_raw_backtrace(0));a=caml_ml_flush(W)}b=a}catch(a){b=caml_wrap_exception(a);if(b!==Out_of_memory)throw caml_maybe_attach_backtrace(b,0);b=d3("Fatal error: out of memory in uncaught exception handler")}return b}catch(a){return 0}});var
+hq=[num_248,"Stdlib.Fun.Finally_raised",caml_fresh_oo_id(0)];c1(function(a){return a[1]===hq?[0,"Fun.Finally_raised: "+b3(a[2])]:0});function
+et(a){var
 b=a.length-1<4?1:0,a=b||(a[4]<0?1:0);return a}function
 c2(a){a[4]=-a[4]|0}function
-gB(b){for(;;){var
+gD(b){for(;;){var
 a=cC[1];let
 c=a,d=[0,1];a=1-cD(cC,a,function(a){if(cD(d,1,0))caml_call1(b,0);return caml_call1(c,0)});if(!a)return a}}function
-gF(d,a){var
+gH(d,a){var
 b=0;for(;;){if(!a)return o(b);var
 c=a[2];b=O(caml_call1(d,a[1]),b);a=c}}function
-gH(b,c){var
-a=caml_ml_string_length(b);if(a<0)return l("String.contains_from / Bytes.contains_from");try{ec(b,a,0,c);return 1}catch(b){a=caml_wrap_exception(b);if(a===Not_found)return 0;throw caml_maybe_attach_backtrace(a,0)}}var
-gJ=[num_248,"Stdlib.Queue.Empty",caml_fresh_oo_id(0)];try{e=caml_sys_getenv(str_OCAMLRUNPARAM);var
-y=e}catch(a){e=caml_wrap_exception(a);if(e!==Not_found)throw caml_maybe_attach_backtrace(e,0);try{y=caml_sys_getenv("CAMLRUNPARAM")}catch(a){y=caml_wrap_exception(a);if(y!==Not_found)throw caml_maybe_attach_backtrace(y,0);y=str}}var
+gJ(b,c){var
+a=caml_ml_string_length(b);if(a<0)return l("String.contains_from / Bytes.contains_from");try{ee(b,a,0,c);return 1}catch(b){a=caml_wrap_exception(b);if(a===Not_found)return 0;throw caml_maybe_attach_backtrace(a,0)}}var
+gL=[num_248,"Stdlib.Queue.Empty",caml_fresh_oo_id(0)];try{e=caml_sys_getenv(str_OCAMLRUNPARAM);var
+z=e}catch(a){e=caml_wrap_exception(a);if(e!==Not_found)throw caml_maybe_attach_backtrace(e,0);try{z=caml_sys_getenv("CAMLRUNPARAM")}catch(a){z=caml_wrap_exception(a);if(z!==Not_found)throw caml_maybe_attach_backtrace(z,0);z=str}}var
 num_1073741823=1073741823,b4=[num_246,function(f){f=caml_sys_random_seed(0);var
 c=[0,caml_make_vect(55,0),0],f=0===f.length-1?[0,0]:f,i=f.length-1,a=0;for(;;){caml_check_bound(c[1],a)[a+1]=a;var
-h=a+1|0;if(54===a)break;a=h}h=54+d9(55,i)|0;if(h>=0){a="x";var
+h=a+1|0;if(54===a)break;a=h}h=54+d$(55,i)|0;if(h>=0){a="x";var
 e=0;for(;;){var
-b=e%55|0,g=caml_mod(e,i),a=a+str+caml_check_bound(f,g)[g+1],a=caml_md5_string(a,0,caml_ml_string_length(a)),g=caml_string_get(a,3)<<24,d=caml_string_get(a,2)<<16,j=caml_string_get(a,1)<<8,d=((caml_string_get(a,0)+j|0)+d|0)+g|0,d=(caml_check_bound(c[1],b)[b+1]^d)&num_1073741823;caml_check_bound(c[1],b)[b+1]=d;b=e+1|0;if(h===e)break;e=b}}c[2]=0;return c}],hp=gH(y,82);function
-K(a,b){a=a?a[1]:hp;var
+b=e%55|0,g=caml_mod(e,i),a=a+str+caml_check_bound(f,g)[g+1],a=caml_md5_string(a,0,caml_ml_string_length(a)),g=caml_string_get(a,3)<<24,d=caml_string_get(a,2)<<16,j=caml_string_get(a,1)<<8,d=((caml_string_get(a,0)+j|0)+d|0)+g|0,d=(caml_check_bound(c[1],b)[b+1]^d)&num_1073741823;caml_check_bound(c[1],b)[b+1]=d;b=e+1|0;if(h===e)break;e=b}}c[2]=0;return c}],hr=gJ(z,82);function
+K(a,b){a=a?a[1]:hr;var
 c=16;for(;;){if(b<=c)break;if(cG<(c*2|0))break;c=c*2|0}if(a){a=caml_obj_tag(b4);a=num_250===a?b4[1]:num_246===a?X(b4):b4;a[2]=(a[2]+1|0)%55|0;b=a[2];b=caml_check_bound(a[1],b)[b+1];var
 d=(a[2]+24|0)%55|0,b=(caml_check_bound(a[1],d)[d+1]+(b^(b>>>25|0)&31)|0)&num_1073741823,d=a[2];caml_check_bound(a[1],d)[d+1]=b}else
 b=0;return[0,0,caml_make_vect(c,0),b,c]}function
-es(a){var
+eu(a){var
 b=a[2].length-1;if(4<=a.length-1&&b!==a0(a[4])){a[1]=0;a[2]=caml_make_vect(a0(a[4]),0);return}b=0<a[1]?1:0;if(!b)return b;a[1]=0;b=a[2].length-1;a=a[2];if(0<=b&&(a.length-1-b|0)>=0){caml_array_fill(a,0,b,0);return}return l("Array.fill")}function
 c3(h,c){var
-d=er(c);if(1-d)c2(c);try{var
+d=et(c);if(1-d)c2(c);try{var
 e=c[2],f=e.length-2|0;if(f>=0){var
 a=0;a:for(;;){var
 b=caml_check_bound(e,a)[a+1];for(;;){if(!b){b=a+1|0;if(f===a)break a;a=b;break}var
@@ -1941,37 +1943,37 @@ c=a[2];if(0===caml_compare(d,a[1]))return[0,c];if(!b)return 0;c=b[3];a=b[2];if(0
 $(e,i,d){var
 a=bq(e,i),f=caml_check_bound(e[2],a)[a+1];a:{b:{var
 c=f;for(;;){if(!c)break;var
-h=c[3];if(0===caml_compare(c[1],i))break b;c=h}c=1;break a}c[1]=i;c[2]=d;c=0}if(c){caml_check_bound(e[2],a)[a+1]=[0,i,d,f];e[1]=e[1]+1|0;if(e[2].length-1<<1<e[1]){d=e[2];h=(d.length-1)*2|0;a=h<cG?1:0;if(!a)return a;a=caml_make_vect(h,0);h=1-er(e);e[2]=a;f=a.length-1;i=caml_make_vect(f,0);c=d.length-2|0;if(c>=0){var
+h=c[3];if(0===caml_compare(c[1],i))break b;c=h}c=1;break a}c[1]=i;c[2]=d;c=0}if(c){caml_check_bound(e[2],a)[a+1]=[0,i,d,f];e[1]=e[1]+1|0;if(e[2].length-1<<1<e[1]){d=e[2];h=(d.length-1)*2|0;a=h<cG?1:0;if(!a)return a;a=caml_make_vect(h,0);h=1-et(e);e[2]=a;f=a.length-1;i=caml_make_vect(f,0);c=d.length-2|0;if(c>=0){var
 j=0;a:for(;;){var
 b=caml_check_bound(d,j)[j+1];for(;;){if(!b){b=j+1|0;if(c===j)break a;j=b;break}var
 g=b[1],k=b[2],l=b[3],b=h?b:[0,g,k,0],g=bq(e,g),k=caml_check_bound(i,g)[g+1];if(k)k[3]=b;else
 caml_check_bound(a,g)[g+1]=b;caml_check_bound(i,g)[g+1]=b;b=l}}}if(h){a=f-1|0;if(a>=0){d=0;for(;;){f=caml_check_bound(i,d)[d+1];if(f)f[3]=0;f=d+1|0;if(a===d)break;d=f}}}return}}}function
 br(b,c){var
 a=bq(b,c),a=caml_check_bound(b[2],a)[a+1];for(;;){if(!a)return 0;b=a[3];a=0===caml_compare(a[1],c)?1:0;if(a)return a;a=b}}var
-eu=[num_248,"Stdlib.Format.String_tag",caml_fresh_oo_id(0)];function
-b5(a,b){a[13]=a[13]+b[3]|0;return ek(b,a[28])}function
+ew=[num_248,"Stdlib.Format.String_tag",caml_fresh_oo_id(0)];function
+b5(a,b){a[13]=a[13]+b[3]|0;return em(b,a[28])}function
 c5(b,a){return caml_call3(b[17],a,0,caml_ml_string_length(a))}function
 c6(a){return caml_call1(a[19],0)}function
-ew(a,c,b){a[9]=a[9]-c|0;c5(a,b);a[11]=0}function
+ey(a,c,b){a[9]=a[9]-c|0;c5(a,b);a[11]=0}function
 b6(c,a){var
-b=a!==str?1:0;return b?ew(c,caml_ml_string_length(a),a):b}function
+b=a!==str?1:0;return b?ey(c,caml_ml_string_length(a),a):b}function
 aO(a,d,b){var
 e=d[3],c=d[2];b6(a,d[1]);c6(a);a[11]=1;b=(a[6]-b|0)+c|0;c=a[8];b=c<=b?c:b;a[10]=b;a[9]=a[6]-a[10]|0;caml_call1(a[21],a[10]);return b6(a,e)}function
 bs(a,b){var
 c=b[2],d=b[3];b6(a,b[1]);a[9]=a[9]-c|0;caml_call1(a[20],c);return b6(a,d)}var
-ex=[0,str,0,str];function
-hq(a,c,b){if(typeof
+ez=[0,str,0,str];function
+hs(a,c,b){if(typeof
 b==="number")switch(b){case
 0:b=a3(a[3]);if(!b)return;b=b[1][1];var
 i=function(b,a){if(!a)return[0,b,0];var
 c=a[1],d=a[2];return caml_lessthan(b,c)?[0,b,a]:[0,c,i(b,d)]};b[1]=i(a[6]-a[9]|0,b[1]);return;case
 1:a2(a[2]);return;case
 2:a2(a[3]);return;case
-3:b=a3(a[2]);return b?aO(a,ex,b[1][2]):c6(a);case
+3:b=a3(a[2]);return b?aO(a,ez,b[1][2]):c6(a);case
 4:b=a[10]!==(a[6]-a[9]|0)?1:0;if(!b)return b;b=a[28];c=b[2];if(c){var
 d=c[1];if(c[2]){c=c[2];b[1]=b[1]-1|0;b[2]=c;d=[0,d]}else{cR(b);d=[0,d]}}else
 d=0;if(!d)return;c=d[1];b=c[1];a[12]=a[12]-c[3]|0;a[9]=a[9]+b|0;return;default:c=a2(a[5]);if(c)return c5(a,caml_call1(a[25],c[1]));return}switch(b[0]){case
-0:return ew(a,c,b[1]);case
+0:return ey(a,c,b[1]);case
 1:d=b[2];b=b[1];var
 f=d[1],g=d[2],h=a3(a[2]);if(!h)return;h=h[1];var
 e=h[2];switch(h[1]){case
@@ -1981,73 +1983,73 @@ e=h[2];switch(h[1]){case
 5:return bs(a,b);default:return aO(a,d,e)}case
 2:c=a[6]-a[9]|0;e=b[2];b=b[1];d=a3(a[3]);if(!d)return;d=d[1][1];f=d[1];if(f){d=d[1];f=f[1];for(;;){if(!d)break;g=d[1];d=d[2];if(c<=g){f=g;break}}}else
 f=c;c=f-c|0;return 0<=c?bs(a,[0,str,c+b|0,str]):aO(a,[0,str,f+e|0,str],a[6]);case
-3:f=b[2];b=b[1];if(a[8]<(a[6]-a[9]|0)){e=a3(a[2]);if(e){e=e[1];g=e[2];e=e[1];if(a[9]<g&&3>=e-1>>>0)aO(a,ex,g)}else
+3:f=b[2];b=b[1];if(a[8]<(a[6]-a[9]|0)){e=a3(a[2]);if(e){e=e[1];g=e[2];e=e[1];if(a[9]<g&&3>=e-1>>>0)aO(a,ez,g)}else
 c6(a)}b=a[9]-b|0;c=1===f?1:a[9]<c?f:5;return a1([0,c,b],a[2]);case
 4:return a1(b[1],a[3]);default:c=b[1];c5(a,caml_call1(a[24],c));return a1(c,a[5])}}var
-ev=1000000010;function
-ey(d){for(;;){var
+ex=1000000010;function
+eA(d){for(;;){var
 a=d[28][2],a=a?[0,a[1]]:0;if(!a)return;a=a[1];var
-e=a[1],c=0<=e?1:0,f=a[3],a=a[2],b=d[13]-d[12]|0,b=c||(d[9]<=b?1:0);if(!b)return b;b=d[28];c=b[2];if(!c)throw caml_maybe_attach_backtrace(gJ,1);if(c[2]){c=c[2];b[1]=b[1]-1|0;b[2]=c}else
-cR(b);e=0<=e?e:ev;hq(d,e,a);d[12]=f+d[12]|0}}var
-hr=[0,str],et=-1;function
-c7(a){bn(a);return a1([0,-1,[0,et,hr,0]],a)}function
-ez(b,e){var
+e=a[1],c=0<=e?1:0,f=a[3],a=a[2],b=d[13]-d[12]|0,b=c||(d[9]<=b?1:0);if(!b)return b;b=d[28];c=b[2];if(!c)throw caml_maybe_attach_backtrace(gL,1);if(c[2]){c=c[2];b[1]=b[1]-1|0;b[2]=c}else
+cR(b);e=0<=e?e:ex;hs(d,e,a);d[12]=f+d[12]|0}}var
+ht=[0,str],ev=-1;function
+c7(a){bn(a);return a1([0,-1,[0,ev,ht,0]],a)}function
+eB(b,e){var
 a=a3(b[1]);if(!a)return;a=a[1];var
 c=a[2],d=c[1];if(a[1]<b[12])return c7(b[1]);a=c[2];if(typeof
 a!=="number")switch(a[0]){case
 3:if(1-e){c[1]=b[13]+d|0;a2(b[1])}return;case
 1:case
 2:if(e){c[1]=b[13]+d|0;a2(b[1])}return}}function
-eA(a,c){c=a[4][1];var
+eC(a,c){c=a[4][1];var
 b=0;for(;;){if(!c)break;c=c[2];if(a[23])b5(a,[0,b,5,0]);if(a[22]){var
-d=a2(a[4]);if(d)caml_call1(a[27],d[1])}}for(;;){if(1>=a[14])break;if(1<a[14]){if(a[14]<a[15]){b5(a,[0,b,1,0]);ez(a,1);ez(a,0)}a[14]=a[14]-1|0}}a[13]=ev;ey(a);a[12]=1;a[13]=1;cR(a[28]);c7(a[1]);bn(a[2]);bn(a[3]);bn(a[4]);bn(a[5]);a[10]=0;a[14]=0;a[9]=a[6];a[14]=a[14]+1|0;if(a[14]<a[15]){b=[0,-a[13]|0,[3,0,3],0];b5(a,b);a1([0,a[13],b],a[1])}else if(a[14]===a[15]){b=a[16];c=caml_ml_string_length(b);b5(a,[0,c,[0,b],c]);ey(a)}return caml_call1(a[18],0)}var
-eB=cL(80,32);function
-eC(c,a){for(;;){var
-b=0<a?1:0;if(!b)return b;if(80>=a)return caml_call3(c[17],eB,0,a);caml_call3(c[17],eB,0,80);a=a-80|0}}var
+d=a2(a[4]);if(d)caml_call1(a[27],d[1])}}for(;;){if(1>=a[14])break;if(1<a[14]){if(a[14]<a[15]){b5(a,[0,b,1,0]);eB(a,1);eB(a,0)}a[14]=a[14]-1|0}}a[13]=ex;eA(a);a[12]=1;a[13]=1;cR(a[28]);c7(a[1]);bn(a[2]);bn(a[3]);bn(a[4]);bn(a[5]);a[10]=0;a[14]=0;a[9]=a[6];a[14]=a[14]+1|0;if(a[14]<a[15]){b=[0,-a[13]|0,[3,0,3],0];b5(a,b);a1([0,a[13],b],a[1])}else if(a[14]===a[15]){b=a[16];c=caml_ml_string_length(b);b5(a,[0,c,[0,b],c]);eA(a)}return caml_call1(a[18],0)}var
+eD=cL(80,32);function
+eE(c,a){for(;;){var
+b=0<a?1:0;if(!b)return b;if(80>=a)return caml_call3(c[17],eD,0,a);caml_call3(c[17],eD,0,80);a=a-80|0}}var
 str$21=">",str$0="<";function
-hs(a){return a[1]===eu?str$0+a[2]+str$21:str}function
-ht(a){return a[1]===eu?"<\/"+a[2]+str$21:str}function
-hu(a){return 0}function
-hv(a){return 0}var
-num_2147483647=2147483647,cE=num_2147483647,hw=[3,0,3];function
-eD(i,h){var
-d=[0,0,0,0],b=[0,et,hw,0];ek(b,d);var
+hu(a){return a[1]===ew?str$0+a[2]+str$21:str}function
+hv(a){return a[1]===ew?"<\/"+a[2]+str$21:str}function
+hw(a){return 0}function
+hx(a){return 0}var
+num_2147483647=2147483647,cE=num_2147483647,hy=[3,0,3];function
+eF(i,h){var
+d=[0,0,0,0],b=[0,ev,hy,0];em(b,d);var
 c=bm(0);c7(c);a1([0,1,b],c);b=bm(0);var
-f=bm(0),g=bm(0),e=78,a=[0,c,bm(0),g,f,b,e,10,68,e,0,1,1,1,1,cE,str$13,i,h,function(a){return 0},function(a){return 0},function(a){return 0},0,0,hs,ht,hu,hv,d];a[19]=function(b){return caml_call3(a[17],"\n",0,1)};a[20]=function(b){return eC(a,b)};a[21]=function(b){return eC(a,b)};return a}function
-eE(a){return eD(function(d,b,c){if(0<=b&&0<=c&&(caml_ml_string_length(d)-c|0)>=b)return caml_ml_output(a,d,b,c);return l("output_substring")},function(b){return caml_ml_flush(a)})}var
-a7=bY(512),hx=eE(b),hy=eE(W);eD(function(e,d,b){var
+f=bm(0),g=bm(0),e=78,a=[0,c,bm(0),g,f,b,e,10,68,e,0,1,1,1,1,cE,str$13,i,h,function(a){return 0},function(a){return 0},function(a){return 0},0,0,hu,hv,hw,hx,d];a[19]=function(b){return caml_call3(a[17],"\n",0,1)};a[20]=function(b){return eE(a,b)};a[21]=function(b){return eE(a,b)};return a}function
+eG(a){return eF(function(d,b,c){if(0<=b&&0<=c&&(caml_ml_string_length(d)-c|0)>=b)return caml_ml_output(a,d,b,c);return l("output_substring")},function(b){return caml_ml_flush(a)})}var
+a7=bY(512),hz=eG(b),hA=eG(W);eF(function(e,d,b){var
 a=d<0;if(a);else{a=b<0;a||=(caml_ml_string_length(e)-b|0)<d}if(a)l("Buffer.add_substring/add_subbytes");var
-c=a7[2]+b|0;if(a7[3]<c)cT(a7,b);caml_blit_string(e,d,a7[1],a7[2],b);a7[2]=c;return 0},function(a){return 0});gB(function(a){eA(hx,0);return eA(hy,0)});function
-eF(b,a){a=caml_obj_tag(a)===num_248?a:a[1];caml_register_named_value(b,a)}var
-eG=cQ([0,caml_string_compare]),b7=cQ([0,caml_string_compare]),b8=cQ([0,caml_int_compare]),eH=caml_obj_block(0,0);function
-eI(a){return 2<a?eI((a+1|0)/2|0)*2|0:a}var
-hA=[0,0];function
-eJ(e){hA[1]++;var
-b=e.length-1,c=caml_make_vect((b*2|0)+2|0,eH);caml_check_bound(c,0)[1]=b;var
-a=((eI(b)*32|0)/8|0)-1|0;caml_check_bound(c,1)[2]=a;b=b-1|0;if(b>=0){a=0;for(;;){var
-d=(a*2|0)+3|0,f=caml_check_bound(e,a)[a+1];caml_check_bound(c,d)[d+1]=f;d=a+1|0;if(b===a)break;a=d}}return[0,2,c,b7[1],b8[1],0,0,eG[1],0]}function
+c=a7[2]+b|0;if(a7[3]<c)cT(a7,b);caml_blit_string(e,d,a7[1],a7[2],b);a7[2]=c;return 0},function(a){return 0});gD(function(a){eC(hz,0);return eC(hA,0)});function
+eH(b,a){a=caml_obj_tag(a)===num_248?a:a[1];caml_register_named_value(b,a)}var
+eI=cQ([0,caml_string_compare]),b7=cQ([0,caml_string_compare]),b8=cQ([0,caml_int_compare]),eJ=caml_obj_block(0,0);function
+eK(a){return 2<a?eK((a+1|0)/2|0)*2|0:a}var
+hC=[0,0];function
+eL(e){hC[1]++;var
+b=e.length-1,c=caml_make_vect((b*2|0)+2|0,eJ);caml_check_bound(c,0)[1]=b;var
+a=((eK(b)*32|0)/8|0)-1|0;caml_check_bound(c,1)[2]=a;b=b-1|0;if(b>=0){a=0;for(;;){var
+d=(a*2|0)+3|0,f=caml_check_bound(e,a)[a+1];caml_check_bound(c,d)[d+1]=f;d=a+1|0;if(b===a)break;a=d}}return[0,2,c,b7[1],b8[1],0,0,eI[1],0]}function
 c8(c,a){var
-b=c[2].length-1;if(b<a){a=caml_make_vect(a,eH);var
+b=c[2].length-1;if(b<a){a=caml_make_vect(a,eJ);var
 d=c[2];a:{if(0<=b&&(d.length-1-b|0)>=0&&(a.length-1-b|0)>=0){caml_array_blit(d,0,a,0,b);break a}l("Array.blit")}c[2]=a}}function
-hz(d){var
+hB(d){var
 c=caml_ml_string_length(d)-1|0,a=0;if(c<0);else{var
 b=0;for(;;){a=(223*a|0)+caml_string_get(d,b)|0;var
 e=b+1|0;if(c===b)break;b=e}}a&=num_2147483647;a=num_1073741823<a?a+2147483648|0:a;return a}function
 c9(b){var
 a=b[2].length-1;c8(b,a+1|0);return a}function
-eK(b,c){try{var
+eM(b,c){try{var
 a=b7[28].call(null,c,b[3]);return a}catch(d){a=caml_wrap_exception(d);if(a!==Not_found)throw caml_maybe_attach_backtrace(a,0);a=c9(b);b[3]=b7[4].call(null,c,a,b[3]);b[4]=b8[4].call(null,a,1,b[4]);return a}}var
-hB=[0,0];function
-eL(b,a,c){hB[1]++;if(b8[28].call(null,a,b[4])){c8(b,a+1|0);caml_check_bound(b[2],a)[a+1]=c;return}b[6]=[0,[0,a,c],b[6]]}function
-c_(d){if(0===d)return eJ([0]);var
-a=eJ(ag(hz,d)),e=d.length-2|0;if(e>=0){var
+hD=[0,0];function
+eN(b,a,c){hD[1]++;if(b8[28].call(null,a,b[4])){c8(b,a+1|0);caml_check_bound(b[2],a)[a+1]=c;return}b[6]=[0,[0,a,c],b[6]]}function
+c_(d){if(0===d)return eL([0]);var
+a=eL(ag(hB,d)),e=d.length-2|0;if(e>=0){var
 b=0;for(;;){var
 c=(b*2|0)+2|0;a[3]=b7[4].call(null,d[b+1],c,a[3]);a[4]=b8[4].call(null,c,1,a[4]);c=b+1|0;if(e===b)break;b=c}}return a}function
 c$(a){a[8]=o(a[8]);return c8(a,3+((caml_check_bound(a[2],1)[2]*16|0)/32|0)|0)}function
-eM(a,b){if(a)return a;a=caml_obj_block(num_248,b[1]);a[1]=b[2];caml_set_oo_id(a)}function
+eO(a,b){if(a)return a;a=caml_obj_block(num_248,b[1]);a[1]=b[2];caml_set_oo_id(a)}function
 b9(b){var
 a=c9(b),a=0===(a%2|0)?a:(2+((caml_check_bound(b[2],1)[2]*16|0)/32|0)|0)<a?a:c9(b);caml_check_bound(b[2],a)[a+1]=0;return a}function
-hC(b,e,ag){function
+hE(b,e,ag){function
 a(a){e[1]++;a=e[1];return caml_check_bound(ag,a)[a+1]}var
 c=a(0);if(typeof
 c==="number")switch(c){case
@@ -2104,23 +2106,23 @@ c=a+1|0;for(;;){if(0>a)return f(b,0,c);if(caml_call2(d,b,a))return f(b,a+1|0,(c-
 db(c,d,b){if(b===str)return d;var
 a=caml_ml_string_length(b)-1|0;for(;;){if(0>a)return f(b,0,1);if(!caml_call2(c,b,a))break;a=a-1|0}for(;;){if(0>a)return d;if(caml_call2(c,b,a))break;a=a-1|0}for(;;){if(0>a)return f(b,0,1);if(!caml_call2(c,b,a))return f(b,0,a+1|0);a=a-1|0}}function
 dc(b,a){return 47===caml_string_get(b,a)?1:0}function
-hD(d,c){var
+hF(d,c){var
 e=c.length-1,a=[0,0];for(;;){if(a[1]>=e)return;var
-b=a[1],b=caml_check_bound(c,b)[b+1];eL(d,b,hC(d,a,c));a[1]++}}function
-hE(b,a){return eg(a,b)}try{caml_sys_getenv("TMPDIR")}catch(a){y=caml_wrap_exception(a);if(y!==Not_found)throw caml_maybe_attach_backtrace(y,0)}function
+b=a[1],b=caml_check_bound(c,b)[b+1];eN(d,b,hE(d,a,c));a[1]++}}function
+hG(b,a){return ei(a,b)}try{caml_sys_getenv("TMPDIR")}catch(a){z=caml_wrap_exception(a);if(z!==Not_found)throw caml_maybe_attach_backtrace(z,0)}function
 a8(b,a){b=caml_string_get(b,a);a=47===b?1:0;if(a);else{a=92===b?1:0;a||=58===b?1:0}return a}function
-eP(c,a){var
+eR(c,a){var
 b=caml_ml_string_length(a)<=caml_ml_string_length(c)?1:0;if(b){b=f(c,caml_ml_string_length(c)-caml_ml_string_length(a)|0,caml_ml_string_length(a));a=aM(a);b=aM(b)===a?1:0}return b}var
-eN=str$13,y=[0,,,,,dc,,,hE,,,,,function(a){return da(dc,eN,a)},function(a){return db(dc,eN,a)}];try{caml_sys_getenv("TEMP")}catch(a){b=caml_wrap_exception(a);if(b!==Not_found)throw caml_maybe_attach_backtrace(b,0)}function
-eQ(b){var
+eP=str$13,z=[0,,,,,dc,,,hG,,,,,function(a){return da(dc,eP,a)},function(a){return db(dc,eP,a)}];try{caml_sys_getenv("TEMP")}catch(a){b=caml_wrap_exception(a);if(b!==Not_found)throw caml_maybe_attach_backtrace(b,0)}function
+eS(b){var
 a=2<=caml_ml_string_length(b);if(a){a=caml_string_get(b,0);a:{b:{if(91<=a){if(25<a+num_97>>>0)break b}else if(65>a)break b;a=1;break a}a=0}a=a?58===caml_string_get(b,1):a}if(!a)return[0,str,b];a=f(b,2,caml_ml_string_length(b)-2|0);return[0,f(b,0,2),a]}var
-eO=str$13,b=[0,,,,,a8,,,eP,,,,,function(a){return da(a8,eO,eQ(a)[2])},function(a){a=eQ(a);var
-b=a[1];return b+db(a8,eO,a[2])}],eR=str$13,e=[0,,,,,a8,,,eP,,,,,function(a){return da(a8,eR,a)},function(a){return db(a8,eR,a)}],b=Z!=="Cygwin"?Z!==H?y:b:e,eS=b[5],eT=b[8],eU=b[13],dd=b[14];function
-eV(b){a:{var
-a=caml_ml_string_length(b)-1|0;for(;;){if(0<=a&&!eS(b,a)){if(46===caml_string_get(b,a))break;a=a-1|0;continue}a=0;break a}var
-c=a-1|0;for(;;){if(0<=c&&!eS(b,c)){if(46===caml_string_get(b,c)){c=c-1|0;continue}a=caml_ml_string_length(b)-a|0;break}a=0;break}}return 0===a?b:f(b,0,caml_ml_string_length(b)-a|0)}var
-eW=[num_248,str_Unix_Unix_error,caml_fresh_oo_id(0)];eF(str_Unix_Unix_error,[0,eW,0,str,str]);var
-hG=[0,[11,"EUNKNOWNERR ",[4,0,0,0,0]],"EUNKNOWNERR %d"],hF=[0,[11,"Unix.Unix_error(Unix.",[2,0,[11,str$2,[3,0,[11,str$2,[3,0,[12,41,0]]]]]]],"Unix.Unix_error(Unix.%s, %S, %S)"];c1(function(b){if(b[1]!==eW)return 0;var
+eQ=str$13,b=[0,,,,,a8,,,eR,,,,,function(a){return da(a8,eQ,eS(a)[2])},function(a){a=eS(a);var
+b=a[1];return b+db(a8,eQ,a[2])}],eT=str$13,e=[0,,,,,a8,,,eR,,,,,function(a){return da(a8,eT,a)},function(a){return db(a8,eT,a)}],b=Z!=="Cygwin"?Z!==I?z:b:e,eU=b[5],eV=b[8],eW=b[13],dd=b[14];function
+eX(b){a:{var
+a=caml_ml_string_length(b)-1|0;for(;;){if(0<=a&&!eU(b,a)){if(46===caml_string_get(b,a))break;a=a-1|0;continue}a=0;break a}var
+c=a-1|0;for(;;){if(0<=c&&!eU(b,c)){if(46===caml_string_get(b,c)){c=c-1|0;continue}a=caml_ml_string_length(b)-a|0;break}a=0;break}}return 0===a?b:f(b,0,caml_ml_string_length(b)-a|0)}var
+eY=[num_248,str_Unix_Unix_error,caml_fresh_oo_id(0)];eH(str_Unix_Unix_error,[0,eY,0,str,str]);var
+hI=[0,[11,"EUNKNOWNERR ",[4,0,0,0,0]],"EUNKNOWNERR %d"],hH=[0,[11,"Unix.Unix_error(Unix.",[2,0,[11,str$2,[3,0,[11,str$2,[3,0,[12,41,0]]]]]]],"Unix.Unix_error(Unix.%s, %S, %S)"];c1(function(b){if(b[1]!==eY)return 0;var
 a=b[2],c=b[4],b=b[3];if(typeof
 a==="number")if(34<=a)switch(a){case
 34:a=str_ESPIPE;break;case
@@ -2189,9 +2191,9 @@ switch(a){case
 29:a=str_ENXIO;break;case
 30:a=str_EPERM;break;case
 31:a=str_EPIPE;break;case
-32:a=str_ERANGE;break;default:a=str_EROFS}else{a=a[1];a=caml_call1(g(hG),a)}return[0,caml_call3(g(hF),a,b,c)]});K(0,7);b=c_(0);c$(b);eM(0,b);b="stdout";e="open_out";Z="stdin";H="argv";y="exit";var
-a="stderr",ax="signal",aw="tmp",P="open_in",V="memory_limit",C="mouse",al="time_limit",j="wait",aL="env",M="bind",B="random",ay="draw",L="mount",R="network",an="chdir",bN="fork",am="keyboard",Y="kill",aK="exec",b_=c_([0,P,H,M,ay,aK,y,bN,an,Y,j,R,al,am,e,aL,aw,str_readdir,Z,a,b,L,C,ax,B,V]),a=ag(function(a){return eK(b_,a)},[0,j,aw,al,b,Z,a,ax,str_readdir,B,e,P,R,C,L,V,Y,am,bN,y,aK,aL,ay,an,M,H]);hD(b_,[0,a[8],function(b,a){return 0},a[2],function(a){return 0},a[11],function(b,a){return 0},a[10],function(b,a){return 0},a[5],function(a){return 0},a[4],function(a){return 0},a[6],function(a){return 0},a[22],function(a){return 0},a[17],function(a){return 0},a[13],function(a){return 0},a[25],function(a){return 0},a[21],function(a){return 0},a[23],function(a){return 0},a[7],function(a){return 0},a[3],function(a){return 0},a[15],function(a){return 0},a[18],function(a){return 0},a[1],function(a){return 0},a[16],function(a){return 0},a[19],function(a){return 0},a[14],function(a){return 0},a[24],function(a){return 0},a[9],function(a){return 0},a[20],function(b,a){return 0},a[12],function(b,a){return 0}]);c$(b_);eM(0,b_);function
-eY(a,b){if(typeof
+32:a=str_ERANGE;break;default:a=str_EROFS}else{a=a[1];a=caml_call1(g(hI),a)}return[0,caml_call3(g(hH),a,b,c)]});K(0,7);b=c_(0);c$(b);eO(0,b);b="stdout";e="open_out";Z="stdin";I="argv";z="exit";var
+a="stderr",ax="signal",aw="tmp",P="open_in",V="memory_limit",E="mouse",al="time_limit",j="wait",aL="env",M="bind",D="random",ay="draw",L="mount",R="network",an="chdir",bN="fork",am="keyboard",Y="kill",aK="exec",b_=c_([0,P,I,M,ay,aK,z,bN,an,Y,j,R,al,am,e,aL,aw,str_readdir,Z,a,b,L,E,ax,D,V]),a=ag(function(a){return eM(b_,a)},[0,j,aw,al,b,Z,a,ax,str_readdir,D,e,P,R,E,L,V,Y,am,bN,z,aK,aL,ay,an,M,I]);hF(b_,[0,a[8],function(b,a){return 0},a[2],function(a){return 0},a[11],function(b,a){return 0},a[10],function(b,a){return 0},a[5],function(a){return 0},a[4],function(a){return 0},a[6],function(a){return 0},a[22],function(a){return 0},a[17],function(a){return 0},a[13],function(a){return 0},a[25],function(a){return 0},a[21],function(a){return 0},a[23],function(a){return 0},a[7],function(a){return 0},a[3],function(a){return 0},a[15],function(a){return 0},a[18],function(a){return 0},a[1],function(a){return 0},a[16],function(a){return 0},a[19],function(a){return 0},a[14],function(a){return 0},a[24],function(a){return 0},a[9],function(a){return 0},a[20],function(b,a){return 0},a[12],function(b,a){return 0}]);c$(b_);eO(0,b_);function
+e0(a,b){if(typeof
 a==="number")for(;;){if(!b)return 0;a=b[1];b=b[2];a=11===a[0]?[0,caml_call1(a[1],0)]:0;if(a)return[0,a[1]]}else
 switch(a[0]){case
 0:a=a[1];for(;;){if(!b)return 0;var
@@ -2214,56 +2216,56 @@ d=c?c[4]:0,a=b?b[4]:0,e="Set.bal";if((a+2|0)<d){if(!c)return l(e);a=c[3];d=c[2];
 f=b$(a);if(f<=b$(c))return ah(c,d,ah(a,g,b));if(!a)return l(e);e=a[2];f=a[1];a=ah(a[3],g,b);return ah(ah(c,d,f),e,a)}if((d+2|0)>=a){e=a<=d?d+1|0:a+1|0;return[0,c,g,b,e]}if(!b)return l(e);a=b[3];f=b[2];b=b[1];d=b$(b);if(d<=b$(a))return ah(ah(c,g,b),f,a);if(!b)return l(e);e=b[2];d=b[1];a=ah(b[3],f,a);return ah(ah(c,g,d),e,a)}function
 de(b,a){if(!a)return[0,0,b,0,1];var
 d=a[3],c=a[2],e=a[1],f=caml_compare(b,c);return 0===f?a:0<=f?a9(e,c,de(b,d)):a9(de(b,e),c,d)}function
-eZ(a){if(!a)return l("Set.remove_min_elt");var
+e1(a){if(!a)return l("Set.remove_min_elt");var
 b=a[1];if(!b)return a[3];var
-c=a[3],a=a[2];return a9(eZ(b),a,c)}function
+c=a[3],a=a[2];return a9(e1(b),a,c)}function
 aC(e,a){for(;;){if(!a)return 0;var
 c=a[3],d=a[1],a=caml_compare(e,a[2]),b=0===a?1:0;if(b)return b;a=0<=a?c:d}}function
 df(e,a){if(!a)return 0;var
-b=a[3],c=a[2],a=a[1],d=caml_compare(e,c);if(0!==d)return 0<=d?a9(a,c,df(e,b)):a9(df(e,a),c,b);if(!a)return b;if(!b)return a;c=b;b=eZ(b);for(;;){if(!c)throw caml_maybe_attach_backtrace(Not_found,1);d=c[1];if(!d)return a9(a,c[2],b);c=d}}function
-e0(c,b,a){return caml_lessthan(a,c)?c:caml_greaterthan(a,b)?b:a}function
-dg(a){return e0(0,num_255,a)}function
+b=a[3],c=a[2],a=a[1],d=caml_compare(e,c);if(0!==d)return 0<=d?a9(a,c,df(e,b)):a9(df(e,a),c,b);if(!a)return b;if(!b)return a;c=b;b=e1(b);for(;;){if(!c)throw caml_maybe_attach_backtrace(Not_found,1);d=c[1];if(!d)return a9(a,c[2],b);c=d}}function
+e2(c,b,a){return caml_lessthan(a,c)?c:caml_greaterthan(a,b)?b:a}function
+dg(a){return e2(0,num_255,a)}function
 h(c,b,a){a=dg(a);b=dg(b);return[1,dg(c),b,a]}function
-e1(a){return typeof
-a==="number"?0:3===a[0]?gF(e1,a[1]):[0,a,0]}var
+e3(a){return typeof
+a==="number"?0:3===a[0]?gH(e3,a[1]):[0,a,0]}var
 num_1=-1.;function
-hI(a){return v(num_1,s(1.,a))}var
-hJ=caml_tanh_float;function
-e2(a,b){a=a?a[1]:0;a=a?hJ:hI;return ag(a,b)}var
+hK(a){return w(num_1,s(1.,a))}var
+hL=caml_tanh_float;function
+e4(a,b){a=a?a[1]:0;a=a?hL:hK;return ag(a,b)}var
 num_6_283185307179586=6.283185307179586,num_0_25=.25,num_0_75=.75;function
 bt(b,a){switch(b){case
 0:return Math.sin(num_6_283185307179586*a);case
 1:return a<num_0_5?1.:num_1;case
 2:return a<num_0_25?4.*a:a<num_0_75?2.-4.*a:4.*a-4.;default:return 2.*a-1.}}function
 di(b,a){if(a<b){b=a/b;return 2.*b-b*b-1.}if(!(1.-b<a))return 0.;a=(a-1.)/b;return a*a+2.*a+1.}function
-e3(b,a){if(a<b){b=1.-a/b;return b*b*b/6.}if(!(1.-b<a))return 0.;a=(a-1.)/b+1.;return a*a*a/6.}function
+e5(b,a){if(a<b){b=1.-a/b;return b*b*b/6.}if(!(1.-b<a))return 0.;a=(a-1.)/b+1.;return a*a*a/6.}function
 dj(a){return a-Math.floor(a)}var
 num_12=12.;function
 dk(a){return Math.pow(2.,a/num_12)}function
-e4(a){a=(v(num_1,s(1.,a))+1.)*3.141592653589793/4.;var
+e6(a){a=(w(num_1,s(1.,a))+1.)*3.141592653589793/4.;var
 num_1_4142135623730951=1.4142135623730951;return[0,num_1_4142135623730951*Math.cos(a),num_1_4142135623730951*Math.sin(a)]}function
 dl(a){return a-Math.floor(a)}var
-num_44100=44100.,hL=[0,2];function
-e5(b,a){var
+num_44100=44100.,hN=[0,2];function
+e7(b,a){var
 c=b?b[1]:1.;return function(e,b){if(typeof
 a!=="number"){if(2===a[0]){var
 g=Math.sin(num_6_283185307179586*b[1]+a[2]*c*Math.sin(num_6_283185307179586*b[2])),h=b[6],f=b[5],i=b[4],d=b[3],j=dl(b[2]+e*a[1]/num_44100);return[0,g,[0,dl(b[1]+e/num_44100),j,d,i,f,h]]}f=a[1];e/=num_44100;a:{if(typeof
 a!=="number"&&0===a[0]){d=b[1];switch(f){case
 0:d=bt(f,d);break a;case
 1:g=di(e,dj(d+num_0_5));i=di(e,d);d=bt(f,d)+i-g;break a;case
-2:g=8.*e*e3(e,dj(d-num_0_75));i=8.*e*e3(e,dj(d-num_0_25));d=bt(f,d)-i+g;break a;default:g=di(e,d);d=bt(f,d)-g;break a}}d=bt(f,b[1])}g=b[6];f=b[5];i=b[4];h=b[3];j=b[2];return[0,d,[0,dl(b[1]+e),j,h,i,f,g]]}if(0!==a)return e5(0,hL)(e,b);f=1===(b[3]&1)?1.:num_1;h=b[3];e=b[4]+e/num_44100;for(;;){if(!(1.<=e))return[0,f,[0,b[1],b[2],h,e,b[5],b[6]]];h=h>>>1|0|(h&1^(h>>>1|0)&1)<<14;e-=1.}}}function
-e6(d,b,f){var
-c=[0,d],e=d[5],d=eh(f,function(k){var
+2:g=8.*e*e5(e,dj(d-num_0_75));i=8.*e*e5(e,dj(d-num_0_25));d=bt(f,d)-i+g;break a;default:g=di(e,d);d=bt(f,d)-g;break a}}d=bt(f,b[1])}g=b[6];f=b[5];i=b[4];h=b[3];j=b[2];return[0,d,[0,dl(b[1]+e),j,h,i,f,g]]}if(0!==a)return e7(0,hN)(e,b);f=1===(b[3]&1)?1.:num_1;h=b[3];e=b[4]+e/num_44100;for(;;){if(!(1.<=e))return[0,f,[0,b[1],b[2],h,e,b[5],b[6]]];h=h>>>1|0|(h&1^(h>>>1|0)&1)<<14;e-=1.}}}function
+e8(d,b,f){var
+c=[0,d],e=d[5],d=ej(f,function(k){var
 h=c[1][6],j=b[7],d=1.,g=c[1];for(;;){if(!j)break;var
 a=j[1],j=j[2];switch(a[0]){case
 0:a=dk(a[2]*Math.sin(num_6_283185307179586*a[1]*h));break;case
 1:var
-i=a[1],a=h<a[2]?1.:dk(i);break;default:i=a[1];if(i){a=a[2];a=dk(d4(i,caml_mod(h/a|0,I(i))))}else
-a=1.}d*=a}h=b[2]*d;g=e5(0,b[1])(h,g);d=g[2];g=g[1];c[1]=[0,d[1],d[2],d[3],d[4],d[5],d[6]+2.2675736961451248e-5];return g*(e+(b[5]-e)*(k+1|0)/f)}),a=c[1];return[0,d,[0,a[1],a[2],a[3],a[4],b[5],a[6]]]}function
+i=a[1],a=h<a[2]?1.:dk(i);break;default:i=a[1];if(i){a=a[2];a=dk(d5(i,caml_mod(h/a|0,J(i))))}else
+a=1.}d*=a}h=b[2]*d;g=e7(0,b[1])(h,g);d=g[2];g=g[1];c[1]=[0,d[1],d[2],d[3],d[4],d[5],d[6]+2.2675736961451248e-5];return g*(e+(b[5]-e)*(k+1|0)/f)}),a=c[1];return[0,d,[0,a[1],a[2],a[3],a[4],b[5],a[6]]]}function
 aD(a){var
 b=a[9]!==0.?[0,[1,a[9],a[10]],0]:0,d=0.<a[8]?[0,[0,a[7],a[8]],0]:0;c(d,b);if(0.<a[16])return}function
 dm(a){return a[1].length-1}var
-a=440.,num_0_03=.03,num_0_1=.1,V=880.,num_0_04=.04,a=[0,0,a,a,0.,num_0_1,num_0_1,0.,0.,0.,0.,0.,0.,.707,0.,0.,0.,num_0_5],V=[0,a[1],V,V,a[4],num_0_03,num_0_04,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17]],num_0_22=.22,al=1047.,num_0_08=.08,num_0_4=.4,al=[0,a[1],al,al,a[4],num_0_08,num_0_22,a[7],a[8],7.,.07,a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_300=300.,aw=[0,a[1],num_300,650.,a[4],num_0_04,.14,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_200=200.,num_1200=1200.,num_1000$0=1000.,num_0_18=.18,num_0_02=.02,b=[0,1,num_1200,num_200,a[4],num_0_02,num_0_18,a[7],a[8],a[9],a[10],8000.,num_1000$0,a[13],a[14],a[15],a[16],a[17]],L=1500.,an=[0,4,3000.,L,a[4],.01,.09,a[7],a[8],a[9],a[10],5000.,a[12],a[13],a[14],a[15],a[16],a[17]],B=150.,num_0_6=.6,L=[0,4,L,B,a[4],num_0_1,num_0_6,a[7],a[8],a[9],a[10],4000.,B,a[13],a[14],a[15],a[16],num_0_75],num_90=90.,num_0_3=.3,aK=.05,B=[0,2,B,num_90,a[4],0.,aK,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_3],num_0_2=.2,num_0_35=.35,num_14=14.,num_330=330.,a=[0,a[1],num_330,990.,a[4],num_0_25,num_0_2,num_14,num_0_5,a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_35];p(function(a){switch(a){case
+a=440.,num_0_03=.03,num_0_1=.1,V=880.,num_0_04=.04,a=[0,0,a,a,0.,num_0_1,num_0_1,0.,0.,0.,0.,0.,0.,.707,0.,0.,0.,num_0_5],V=[0,a[1],V,V,a[4],num_0_03,num_0_04,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17]],num_0_22=.22,al=1047.,num_0_08=.08,num_0_4=.4,al=[0,a[1],al,al,a[4],num_0_08,num_0_22,a[7],a[8],7.,.07,a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_300=300.,aw=[0,a[1],num_300,650.,a[4],num_0_04,.14,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_200=200.,num_1200=1200.,num_1000$0=1000.,num_0_18=.18,num_0_02=.02,b=[0,1,num_1200,num_200,a[4],num_0_02,num_0_18,a[7],a[8],a[9],a[10],8000.,num_1000$0,a[13],a[14],a[15],a[16],a[17]],L=1500.,an=[0,4,3000.,L,a[4],.01,.09,a[7],a[8],a[9],a[10],5000.,a[12],a[13],a[14],a[15],a[16],a[17]],D=150.,num_0_6=.6,L=[0,4,L,D,a[4],num_0_1,num_0_6,a[7],a[8],a[9],a[10],4000.,D,a[13],a[14],a[15],a[16],num_0_75],num_90=90.,num_0_3=.3,aK=.05,D=[0,2,D,num_90,a[4],0.,aK,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_3],num_0_2=.2,num_0_35=.35,num_14=14.,num_330=330.,a=[0,a[1],num_330,990.,a[4],num_0_25,num_0_2,num_14,num_0_5,a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_35];p(function(a){switch(a){case
 0:return"hard";case
 1:return"tanh";case
 2:return"cubic";default:return"asymmetric"}},[0,0,[0,1,[0,2,[0,3,0]]]]);p(function(a){switch(a){case
@@ -2271,19 +2273,19 @@ a=440.,num_0_03=.03,num_0_1=.1,V=880.,num_0_04=.04,a=[0,0,a,a,0.,num_0_1,num_0_1
 1:return"limiter";default:return"gate"}},[0,0,[0,1,[0,2,0]]]);function
 dn(c,b){var
 a=caml_ba_create(3,0,[0,caml_mul(c,b)*4|0]);caml_ba_fill(a,0);return[0,c,b,a]}var
-e7=[num_248,"Jsoo_runtime.Error.Exn",caml_fresh_oo_id(0)];eF(str_jsError,[0,e7,[0]]);function
-e8(a){return caml_js_to_string(typeof
+e9=[num_248,"Jsoo_runtime.Error.Exn",caml_fresh_oo_id(0)];eH(str_jsError,[0,e9,[0]]);function
+e_(a){return caml_js_to_string(typeof
 a)}var
-dp=null,G=globalThis,P="to_js",j=c_([0,P]);function
-hK(a,c){var
+dp=null,C=globalThis,P="to_js",j=c_([0,P]);function
+hM(a,c){var
 b=a?a[1]:num_44100;return function(a,e){a=num_6_283185307179586*a/b;var
 d=Math.cos(a),e=Math.sin(a)/(2.*e),a=1.+e;switch(c){case
 0:var
 h=(1.-d)/2.,g=1.-d,f=(1.-d)/2.;break;case
-1:h=(1.+d)/2.;g=-(1.+d);f=(1.+d)/2.;break;default:h=-e;g=0.;f=e}return[num_254,f/a,g/a,h/a,-2.*d/a,(1.-e)/a]}}try{e=eG[28].call(null,str,j[7]);var
-e9=e}catch(a){e=caml_wrap_exception(a);if(e!==Not_found)throw caml_maybe_attach_backtrace(e,0);e=j[1];j[1]=e+1|0;e9=e}eL(j,eK(j,P),function(a){return a[e9+1]});c$(j);var
-str_end="end",str_mousemove="mousemove",str_mousedown="mousedown",str_keydown="keydown",str_mouseup="mouseup",str_keyup="keyup",str_wheel="wheel",str_dblclick="dblclick";function
-hO(a){if(typeof
+1:h=(1.+d)/2.;g=-(1.+d);f=(1.+d)/2.;break;default:h=-e;g=0.;f=e}return[num_254,f/a,g/a,h/a,-2.*d/a,(1.-e)/a]}}try{e=eI[28].call(null,str,j[7]);var
+e$=e}catch(a){e=caml_wrap_exception(a);if(e!==Not_found)throw caml_maybe_attach_backtrace(e,0);e=j[1];j[1]=e+1|0;e$=e}eN(j,eM(j,P),function(a){return a[e$+1]});c$(j);var
+str_end="end",str_mousemove="mousemove",str_mousedown="mousedown",str_keydown="keydown",str_mouseup="mouseup",str_keyup="keyup",str_wheel="wheel",str_blur="blur",str_dblclick="dblclick";function
+hQ(a){if(typeof
 a!=="number")return caml_js_from_string(a[1]);if(88<=a){if(132<=a)switch(a){case
 132:return"resume";case
 133:return"scroll";case
@@ -2426,7 +2428,7 @@ a!=="number")return caml_js_from_string(a[1]);if(88<=a){if(132<=a)switch(a){case
 10:return"beforeunload";case
 11:return"beginEvent";case
 12:return"blocked";case
-13:return"blur";case
+13:return str_blur;case
 14:return"boundary";case
 15:return"cached";case
 16:return"canplay";case
@@ -2456,30 +2458,30 @@ a!=="number")return caml_js_from_string(a[1]);if(88<=a){if(132<=a)switch(a){case
 40:return"DOMAttrModified";case
 41:return"DOMCharacterDataModified";case
 42:return"DOMContentLoaded";default:return"DOMElementNameChanged"}}function
-e_(a){a.preventDefault();return 0}function
+fa(a){a.preventDefault();return 0}function
 dq(a){return caml_js_to_string(a.type)}function
 ca(a){return caml_js_to_string(a.key)}function
 dr(b,a){b.appendChild(a)}function
-e$(b,a){b.removeChild(a)}function
-ds(d,c,b,a){d.addEventListener(hO(c),caml_js_wrap_callback_strict(1,function(a){return caml_call1(b,a)}),!!a);return 0}function
-fa(b,a){b.requestAnimationFrame(caml_js_wrap_callback_strict(1,function(b){return caml_call1(a,b)}));return 0}var
-a$=G.window,fb=G.document,j=globalThis;j.String;j.RegExp;j.Object;j.Array;j.Date;j.Math;function
-fc(a){return caml_string_of_jsstring(a.toString())}j.JSON;var
-hQ=j.Error,hP=G.console;c1(function(a){return a
+fb(b,a){b.removeChild(a)}function
+ds(d,c,b,a){d.addEventListener(hQ(c),caml_js_wrap_callback_strict(1,function(a){return caml_call1(b,a)}),!!a);return 0}function
+fc(b,a){b.requestAnimationFrame(caml_js_wrap_callback_strict(1,function(b){return caml_call1(a,b)}));return 0}var
+a$=C.window,fd=C.document,j=globalThis;j.String;j.RegExp;j.Object;j.Array;j.Date;j.Math;function
+fe(a){return caml_string_of_jsstring(a.toString())}j.JSON;var
+hS=j.Error,hR=C.console;c1(function(a){return a
 instanceof
-hQ?[0,fc(a)]:a[1]===e7?[0,fc(a[2])]:0});j.ArrayBuffer;j.Int8Array;j.Uint8Array;j.Int16Array;j.Uint16Array;j.Int32Array;j.Uint32Array;j.Float32Array;j.Float64Array;j.DataView;aD(V);aD(al);aD(aw);aD(b);aD(an);aD(L);aD(B);aD(a);a=K(0,2);B=K(0,2);var
-at=[0,0,K(0,8),B,a];K(0,2);K(0,2);var
-hM=[0,1],hN=[0,1];function
-fd(c){var
+hS?[0,fe(a)]:a[1]===e9?[0,fe(a[2])]:0});j.ArrayBuffer;j.Int8Array;j.Uint8Array;j.Int16Array;j.Uint16Array;j.Int32Array;j.Uint32Array;j.Float32Array;j.Float64Array;j.DataView;aD(V);aD(al);aD(aw);aD(b);aD(an);aD(L);aD(D);aD(a);a=K(0,2);D=K(0,2);var
+at=[0,0,K(0,8),D,a];K(0,2);K(0,2);var
+hO=[0,1],hP=[0,1];function
+ff(c){var
 g=caml_make_vect(c,0.),h=caml_make_vect(c,0.),a=at[1];for(;;){if(!a)break;var
 b=a[1],a=a[2],f=b[2],f=u(c,dm(b[1])-f|0),l=f-1|0;if(l>=0){var
 d=0;for(;;){var
-e=b[2]+d|0,e=caml_check_bound(b[1][1],e)[e+1];g[d+1]=caml_check_bound(g,d)[d+1]+e;e=b[2]+d|0;e=caml_check_bound(b[1][2],e)[e+1];h[d+1]=caml_check_bound(h,d)[d+1]+e;e=d+1|0;if(l===d)break;d=e}}b[2]=b[2]+f|0}a=at[1];at[1]=J(function(a){var
+e=b[2]+d|0,e=caml_check_bound(b[1][1],e)[e+1];g[d+1]=caml_check_bound(g,d)[d+1]+e;e=b[2]+d|0;e=caml_check_bound(b[1][2],e)[e+1];h[d+1]=caml_check_bound(h,d)[d+1]+e;e=d+1|0;if(l===d)break;d=e}}b[2]=b[2]+f|0}a=at[1];at[1]=A(function(a){var
 b=dm(a[1]);return a[2]<b?1:0})(a);var
-i=[0,0];c3(function(a,d){if(d[3]){a=e6(d[2],d[1],c);var
-b=a[1];d[2]=a[2]}else{i[1]=[0,a,i[1]];b=d[1];b=e6(d[2],[0,b[1],b[2],b[3],b[4],0.,b[6],b[7],b[8]],c)[1]}a=d[4];if(a){a=a[1];var
-k=a[4],j=a[2],l=hK(0,a[1])(j,k),f=d[5],b=ag(function(b){var
-a=l[1]*b+l[2]*f[1]+l[3]*f[2]-l[4]*f[3]-l[5]*f[4];f[2]=f[1];f[1]=b;f[4]=f[3];f[3]=a;return a},b)}j=e4(d[7]);a=j[2];j=j[1];k=e4(d[6]);var
+i=[0,0];c3(function(a,d){if(d[3]){a=e8(d[2],d[1],c);var
+b=a[1];d[2]=a[2]}else{i[1]=[0,a,i[1]];b=d[1];b=e8(d[2],[0,b[1],b[2],b[3],b[4],0.,b[6],b[7],b[8]],c)[1]}a=d[4];if(a){a=a[1];var
+k=a[4],j=a[2],l=hM(0,a[1])(j,k),f=d[5],b=ag(function(b){var
+a=l[1]*b+l[2]*f[1]+l[3]*f[2]-l[4]*f[3]-l[5]*f[4];f[2]=f[1];f[1]=b;f[4]=f[3];f[3]=a;return a},b)}j=e6(d[7]);a=j[2];j=j[1];k=e6(d[6]);var
 n=b.length-2|0,p=k[2],k=k[1];if(n>=0){var
 e=0;for(;;){var
 m=b[e+1],o=(e+1|0)/c;g[e+1]=caml_check_bound(g,e)[e+1]+m*(j+(k-j)*o);h[e+1]=caml_check_bound(h,e)[e+1]+m*(a+(p-a)*o);m=e+1|0;if(n===e)break;e=m}}d[7]=d[6];d[3]=0;return 0},at[2]);a=i[1];b=at[2];for(;;){if(!a)break;f=a[2];c4(b,a[1]);a=f}var
@@ -2491,38 +2493,38 @@ k=[0,0];c3(function(f,b){var
 e=[0,caml_make_vect(c,0.),caml_make_vect(c,0.)];caml_call1(b[1][4],e);var
 i=c-1|0;if(i>=0){var
 a=0;for(;;){var
-d=b[2]?1.-a/c:1.,j=d*caml_check_bound(e[1],a)[a+1];g[a+1]=caml_check_bound(g,a)[a+1]+j;d*=caml_check_bound(e[2],a)[a+1];h[a+1]=caml_check_bound(h,a)[a+1]+d;d=a+1|0;if(i===a)break;a=d}}b=b[2];f=b?(k[1]=[0,f,k[1]],0):b;return f},at[4]);a=k[1];b=at[4];for(;;){if(!a){a=e2(hM,h);return[0,e2(hN,g),a]}f=a[2];c4(b,a[1]);a=f}}function
+d=b[2]?1.-a/c:1.,j=d*caml_check_bound(e[1],a)[a+1];g[a+1]=caml_check_bound(g,a)[a+1]+j;d*=caml_check_bound(e[2],a)[a+1];h[a+1]=caml_check_bound(h,a)[a+1]+d;d=a+1|0;if(i===a)break;a=d}}b=b[2];f=b?(k[1]=[0,f,k[1]],0):b;return f},at[4]);a=k[1];b=at[4];for(;;){if(!a){a=e4(hO,h);return[0,e4(hP,g),a]}f=a[2];c4(b,a[1]);a=f}}function
 aP(b,a){return[0,0.,0.,0.,1.,1.,[0,b,a]]}function
-ff(c,b,a){return[0,0.,0.,0.,1.,1.,[1,c,b,a]]}function
+fh(c,b,a){return[0,0.,0.,0.,1.,1.,[1,c,b,a]]}function
 k(c,b,a){return[0,0.,0.,0.,1.,1.,[2,c,b,a]]}function
 ai(b,a){return[0,0.,0.,0.,1.,1.,[7,b,a]]}function
 bu(c,b,a){return[0,0.,0.,0.,1.,1.,[6,c,b,a]]}function
 ba(a){return[0,0.,0.,0.,1.,1.,[8,a]]}function
 d(c,b,a){return[0,a[1]+c,a[2]+b,a[3],a[4],a[5],a[6]]}function
-fg(b,a){return[0,a[1]+b,a[2],a[3],a[4],a[5],a[6]]}function
+fi(b,a){return[0,a[1]+b,a[2],a[3],a[4],a[5],a[6]]}function
 dt(b,a){return[0,a[1],b+a[2],a[3],a[4],a[5],a[6]]}function
 bv(b,a){return[0,a[1],a[2],a[3]+b,a[4],a[5],a[6]]}function
 aa(b,a){return[0,a[1],a[2],a[3],a[4],b,a[6]]}function
 ab(b,a){return[0,a[1],a[2],a[3],a[4]*b,a[5],a[6]]}function
 du(b,a){return[num_254,b,a,a/2.,-b/2.,b/2.,-a/2.]}function
-fh(b,a){return[0,a[1],a[2],a[3],b,a[5],a[6],a[7],a[8],a[9]]}function
-fi(b,a){return[0,a[1],a[2],b,a[4],a[5],a[6],a[7],a[8],a[9]]}var
-str_Backspace="Backspace",str_PageDown="PageDown",str_ArrowLeft="ArrowLeft",str_Enter="Enter",str_ArrowDown="ArrowDown",str_Escape="Escape",str_PageUp="PageUp",str_ArrowUp="ArrowUp",str_Tab="Tab",str_End="End",str_Shift="Shift",str_w="w",str_space="space",str_Home="Home",str_s="s",str_ArrowRight="ArrowRight",str_a="a";function
-hS(e,c,a){var
+fj(b,a){return[0,a[1],a[2],a[3],b,a[5],a[6],a[7],a[8],a[9]]}function
+fk(b,a){return[0,a[1],a[2],b,a[4],a[5],a[6],a[7],a[8],a[9]]}var
+str_Backspace="Backspace",str_PageDown="PageDown",str_ArrowLeft="ArrowLeft",str_Enter="Enter",str_ArrowDown="ArrowDown",str_Escape="Escape",str_Alt="Alt",str_PageUp="PageUp",str_ArrowUp="ArrowUp",str_Control="Control",str_Tab="Tab",str_End="End",str_Shift="Shift",str_w="w",str_space="space",str_Home="Home",str_s="s",str_ArrowRight="ArrowRight",str_a="a";function
+hU(e,c,a){var
 d=caml_string_compare(c,"home");a:{var
 b=str_Enter;if(0<=d){if(0>=d){b=str_Home;break a}if(c==="insert"){b="Insert";break a}if(c==="pagedown"){b=str_PageDown;break a}if(c==="pageup"){b=str_PageUp;break a}if(c==="return")break a;if(c==="tab"){b=str_Tab;break a}}else{if(c===str_Enter)break a;if(c==="backspace"){b=str_Backspace;break a}if(c==="delete"){b="Delete";break a}if(c===str_end){b=str_End;break a}if(c==="escape"){b=str_Escape;break a}}if(2<=caml_ml_string_length(c)&&num_102===caml_string_get(c,0)){b=caml_bytes_of_string(f(c,1,caml_ml_string_length(c)-1|0));d=0;var
 g=caml_ml_bytes_length(b);for(;;){if(d===g)g=1;else{var
-h=caml_bytes_unsafe_get(b,d),i=48<=h,h=i?h<=57:i;if(h){d=d+1|0;continue}g=0}if(!g)break;b="F"+f(c,1,caml_ml_string_length(c)-1|0);break a}}b=str_Shift;d="Control";g="Alt";b=c!=="left alt"?c!=="left ctrl"?c!=="left shift"?c!=="right alt"?c!=="right ctrl"?c!=="right shift"?c:b:d:g:b:d:g}d=e?de(b,a[13]):df(b,a[13]);c=caml_string_compare(b,str_Shift);if(0<=c){if(0>=c)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],e,a[12],d,a[14]];if(b===str_a)return[0,a[1],a[2],a[3],a[4],a[5],a[6],e,a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b==="d")return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],e,a[9],a[10],a[11],a[12],d,a[14]];if(b===str_s)return[0,a[1],a[2],a[3],a[4],a[5],e,a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_space)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],e,a[10],a[11],a[12],d,a[14]];if(b===str_w)return[0,a[1],a[2],a[3],a[4],e,a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]]}else{if(b===str_ArrowDown)return[0,a[1],e,a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowLeft)return[0,a[1],a[2],e,a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowRight)return[0,a[1],a[2],a[3],e,a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowUp)return[0,e,a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_Backspace)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],e,d,a[14]];if(b===str_Enter)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],e,a[11],a[12],d,a[14]]}return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]]}function
-fk(a){hP.log(caml_js_from_string(a))}var
-hU=du(num_1000$0,num_1000$0),h1=G.String;function
-t(a){return caml_js_to_string(h1(a))}function
+h=caml_bytes_unsafe_get(b,d),i=48<=h,h=i?h<=57:i;if(h){d=d+1|0;continue}g=0}if(!g)break;b="F"+f(c,1,caml_ml_string_length(c)-1|0);break a}}b=str_Shift;d=str_Control;g=str_Alt;b=c!=="left alt"?c!=="left ctrl"?c!=="left shift"?c!=="right alt"?c!=="right ctrl"?c!=="right shift"?c:b:d:g:b:d:g}d=e?de(b,a[13]):df(b,a[13]);c=caml_string_compare(b,str_Shift);if(0<=c){if(0>=c)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],e,a[12],d,a[14]];if(b===str_a)return[0,a[1],a[2],a[3],a[4],a[5],a[6],e,a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b==="d")return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],e,a[9],a[10],a[11],a[12],d,a[14]];if(b===str_s)return[0,a[1],a[2],a[3],a[4],a[5],e,a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_space)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],e,a[10],a[11],a[12],d,a[14]];if(b===str_w)return[0,a[1],a[2],a[3],a[4],e,a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]]}else{if(b===str_ArrowDown)return[0,a[1],e,a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowLeft)return[0,a[1],a[2],e,a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowRight)return[0,a[1],a[2],a[3],e,a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowUp)return[0,e,a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_Backspace)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],e,d,a[14]];if(b===str_Enter)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],e,a[11],a[12],d,a[14]]}return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]]}function
+fm(a){hR.log(caml_js_from_string(a))}var
+hW=du(num_1000$0,num_1000$0),h3=C.String;function
+t(a){return caml_js_to_string(h3(a))}function
 cb(b,a){switch(a[0]){case
 0:b.setAttribute(caml_js_from_string(a[1]),caml_js_from_string(a[2]));return;case
 1:b.style[a[1]]=caml_js_from_string(a[2]);return;default:b[a[1]]=caml_js_from_string(a[2]);return}}function
 cc(a){var
-c=fb.createElementNS("http://www.w3.org/2000/svg",caml_js_from_string(a[1])),b=a[2];for(;;){if(!b)break;var
+c=fd.createElementNS("http://www.w3.org/2000/svg",caml_js_from_string(a[1])),b=a[2];for(;;){if(!b)break;var
 d=b[2];cb(c,b[1]);b=d}a=a[3];for(;;){if(!a)return c;b=a[2];dr(c,cc(a[1]));a=b}}function
-fl(a,f,d,b){if(d[1]!==b[1]){b=cc(b);a.replaceChild(b,f);return b}a=d[2];for(;;){if(!a)break;var
+fn(a,f,d,b){if(d[1]!==b[1]){b=cc(b);a.replaceChild(b,f);return b}a=d[2];for(;;){if(!a)break;var
 e=a[2],a=a[1],g=b[2];a:for(;;){if(g){var
 c=g[1];b:{c:{g=g[2];switch(a[0]){case
 0:var
@@ -2530,54 +2532,54 @@ h=a[1];if(0===c[0]){c=c[1];break c}break;case
 1:h=a[1];if(1===c[0]){c=c[1];break c}break;default:h=a[1];if(2===c[0]){c=c[1];break c}}c=0;break b}c=h===c}if(!c)continue}else
 c=0;if(1-c)switch(a[0]){case
 0:f.removeAttribute(caml_js_from_string(a[1]));a=e;break a;case
-1:cb(f,[1,a[1],str]);a=e;break a;default:cb(f,[2,a[1],str]);a=e;break a}a=e;break}}a=b[2];for(;;){if(!a)break;e=a[2];a=a[1];if(1-z(a,d[2])){cb(f,a);a=e}else
-a=e}a=f.firstChild;d=d[3];b=b[3];for(;;)if(d){e=d[2];d=d[1];if(b){g=b[2];c=a.nextSibling;fl(f,a,d,b[1]);a=c;d=e;b=g}else{d=a.nextSibling;e$(f,a);a=d;d=e;b=0}}else{if(!b)return f;e=b[2];dr(f,cc(b[1]));d=0;b=e}}function
+1:cb(f,[1,a[1],str]);a=e;break a;default:cb(f,[2,a[1],str]);a=e;break a}a=e;break}}a=b[2];for(;;){if(!a)break;e=a[2];a=a[1];if(1-v(a,d[2])){cb(f,a);a=e}else
+a=e}a=f.firstChild;d=d[3];b=b[3];for(;;)if(d){e=d[2];d=d[1];if(b){g=b[2];c=a.nextSibling;fn(f,a,d,b[1]);a=c;d=e;b=g}else{d=a.nextSibling;fb(f,a);a=d;d=e;b=0}}else{if(!b)return f;e=b[2];dr(f,cc(b[1]));d=0;b=e}}function
 aR(a){return 0===a[0]?a[1]:"rgb("+str+a[1]+str$3+str+a[2]+str$3+str+a[3]+str$11}function
 aS(d,c,b,a){c=str$2+t(-c)+str$11;d="translate("+t(d)+c;b=b===0.?str:" rotate("+t(-b)+str$11;a=a===1.?str:" scale("+t(a)+str$11;return d+b+a}function
-fm(f,a,e,d,c,b){a=str$2+t(-a/2.)+str$11;a=" translate("+t(-f/2.)+a;return aS(e,d,c,b)+a}function
-aF(a){return a===1.?0:[0,[0,"opacity",t(e0(0.,1.,a))],0]}var
-dv="width",dw="height",aQ="fill",aE="transform",hH=[0,"#edd400"];function
-fn(d,b,h,g,a,f,e,c){c=aF(c);a=[0,[0,aE,fm(d,b,g,a,f,e)],c];a=[0,[0,aQ,aR(hH)],a];b=[0,[0,dw,t(b)],a];return[0,"image",[0,[0,"href",h],[0,[0,dv,t(d)],b]],0]}var
-str_g="g",num_10=10.,str_r="r",dx=[0,0],fo=[0,0];function
-fp(g){var
+fo(b,a,f,e,d,c){a=str$2+t(-a/2.)+str$11;b=" translate("+t(-b/2.)+a;return aS(f,e,d,c)+b}function
+aF(a){return a===1.?0:[0,[0,"opacity",t(e2(0.,1.,a))],0]}var
+dv="width",dw="height",aQ="fill",aE="transform",hJ=[0,"#edd400"];function
+fp(d,b,h,g,a,f,e,c){c=aF(c);a=[0,[0,aE,fo(d,b,g,a,f,e)],c];a=[0,[0,aQ,aR(hJ)],a];b=[0,[0,dw,t(b)],a];return[0,"image",[0,[0,"href",h],[0,[0,dv,t(d)],b]],0]}var
+str_g="g",num_10=10.,str_r="r",dx=[0,0],fq=[0,0];function
+fr(g){var
 a=g[6],b=g[5],h=g[4],e=g[3],f=g[2],g=g[1],c="polygon",d="points";switch(a[0]){case
 0:c=a[2];d=a[1];b=aF(b);e=[0,[0,aE,aS(g,f,e,h)],b];e=[0,[0,aQ,aR(d)],e];return[0,"circle",[0,[0,str_r,t(c)],e],0];case
 1:d=a[3];c=a[2];a=a[1];b=aF(b);f=[0,[0,aE,aS(g,f,e,h)],b];f=[0,[0,aQ,aR(a)],f];f=[0,[0,"ry",t(d/2.)],f];return[0,"ellipse",[0,[0,"rx",t(c/2.)],f],0];case
-2:c=a[3];d=a[2];a=a[1];b=aF(b);b=[0,[0,aE,fm(d,c,g,f,e,h)],b];b=[0,[0,aQ,aR(a)],b];c=[0,[0,dw,t(c)],b];return[0,"rect",[0,[0,dv,t(d)],c],0];case
+2:c=a[3];d=a[2];a=a[1];b=aF(b);b=[0,[0,aE,fo(d,c,g,f,e,h)],b];b=[0,[0,aQ,aR(a)],b];c=[0,[0,dw,t(c)],b];return[0,"rect",[0,[0,dv,t(d)],c],0];case
 3:var
 i=a[3],k=a[2],a=a[1],b=aF(b),f=[0,[0,aE,aS(g,f,e,h)],b],b=0,e=str,f=[0,[0,aQ,aR(a)],f];for(;;){if(b===k)return[0,c,[0,[0,d,e],f],0];h=num_6_283185307179586*(b/k-num_0_25);g=str$3+t(i*Math.sin(h))+str$16;b=b+1|0;e=e+t(i*Math.cos(h))+g}break;case
 4:k=a[1];a=cM(str$16,p(function(a){var
 b=a[1],a=str$3+t(-a[2]);return t(b)+a},a[2]));b=aF(b);b=[0,[0,aE,aS(g,f,e,h)],b];return[0,c,[0,[0,d,a],[0,[0,aQ,aR(k)],b]],0];case
-5:return fn(a[1],a[2],a[3],g,f,e,h,b);case
-6:d=a[3];a:{b:{c=dx[1];k=a[2];a=a[1];for(;;){if(!c)break b;i=c[1];c=c[2];if(i[1]===d)break}c=[0,i];break a}c=0}if(c)d=c[1][2];else{c=fo[1];if(c)c=c[1];else{c=G.document.createElement("canvas");fo[1]=[0,c]}c.width=d[1];c.height=d[2];i=c.getContext("2d");var
+5:return fp(a[1],a[2],a[3],g,f,e,h,b);case
+6:d=a[3];a:{b:{c=dx[1];k=a[2];a=a[1];for(;;){if(!c)break b;i=c[1];c=c[2];if(i[1]===d)break}c=[0,i];break a}c=0}if(c)d=c[1][2];else{c=fq[1];if(c)c=c[1];else{c=C.document.createElement("canvas");fq[1]=[0,c]}c.width=d[1];c.height=d[2];i=c.getContext("2d");var
 j=caml_ba_to_typed_array(d[3]),j=new
-G.Uint8ClampedArray(j.buffer,j.byteOffset,j.length);i.putImageData(new
-G.ImageData(j,d[1],d[2]),0,0);c=caml_js_to_string(c.toDataURL("image/png"));d=[0,[0,d,c],dx[1]];j=0;i=0;for(;;){if(!d){dx[1]=o(j);d=c;break}var
-l=d[2],d=d[1],j=i<32?[0,d,j]:j;d=l;i=i+1|0}}return fn(a,k,d,g,f,e,h,b);case
-7:d=a[2];a=a[1];b=aF(b);e=[0,[0,aE,aS(g,f,e,h)],b];a=[0,[0,"font-family","sans-serif"],[0,[2,"textContent",d],[0,[0,aQ,aR(a)],e]]];return[0,"text",[0,[0,"text-anchor","middle"],[0,[0,"dominant-baseline","central"],[0,[0,"font-size",t(num_10)],a]]],0];default:a=p(fp,a[1]);b=aF(b);return[0,str_g,[0,[0,aE,aS(g,f,e,h)],b],a]}}var
-h2=[0,[11,"key = '",[2,0,[12,39,0]]],"key = '%s'"];function
-fq(a){fk(caml_call1(g(h2),a));return a!==str$16?a:str_space}K(0,16);function
-fr(a){a=caml_js_to_string(G.location.search);a=0<caml_ml_string_length(a)?63===caml_string_get(a,0)?f(a,1,caml_ml_string_length(a)-1|0):a:a;a=af(38,a);return p(function(b){var
+C.Uint8ClampedArray(j.buffer,j.byteOffset,j.length);i.putImageData(new
+C.ImageData(j,d[1],d[2]),0,0);c=caml_js_to_string(c.toDataURL("image/png"));d=[0,[0,d,c],dx[1]];j=0;i=0;for(;;){if(!d){dx[1]=o(j);d=c;break}var
+l=d[2],d=d[1],j=i<32?[0,d,j]:j;d=l;i=i+1|0}}return fp(a,k,d,g,f,e,h,b);case
+7:d=a[2];a=a[1];b=aF(b);e=[0,[0,aE,aS(g,f,e,h)],b];a=[0,[0,"font-family","sans-serif"],[0,[2,"textContent",d],[0,[0,aQ,aR(a)],e]]];return[0,"text",[0,[0,"text-anchor","middle"],[0,[0,"dominant-baseline","central"],[0,[0,"font-size",t(num_10)],a]]],0];default:a=p(fr,a[1]);b=aF(b);return[0,str_g,[0,[0,aE,aS(g,f,e,h)],b],a]}}var
+h4=[0,[11,"key = '",[2,0,[12,39,0]]],"key = '%s'"];function
+fs(a){fm(caml_call1(g(h4),a));return a!==str$16?a:str_space}K(0,16);function
+ft(a){a=caml_js_to_string(C.location.search);a=0<caml_ml_string_length(a)?63===caml_string_get(a,0)?f(a,1,caml_ml_string_length(a)-1|0):a:a;a=af(38,a);return p(function(b){var
 a=az(b,61);if(!a)return[0,b,str];a=a[1];var
-c=f(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0);return[0,f(b,0,a),c]},J(function(a){return a!==str?1:0})(a))}var
-aG=[num_246,function(a){a=G.AudioContext;return e8(a)==="undefined"?0:[0,new
+c=f(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0);return[0,f(b,0,a),c]},A(function(a){return a!==str?1:0})(a))}var
+aG=[num_246,function(a){a=C.AudioContext;return e_(a)==="undefined"?0:[0,new
 a]}];function
-fs(a){return caml_js_to_string(a.state)}function
-h7(a){a=af(10,a);return ao(function(b){var
+fu(a){return caml_js_to_string(a.state)}function
+h9(a){a=af(10,a);return ao(function(b){var
 a=az(b,58);if(!a)return 0;a=a[1];var
 c=aq(f(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0));return[0,[0,aq(f(b,0,a)),c]]})(a)}var
-str_GET="GET",str_arraybuffer="arraybuffer",h8=[1,0];function
-fu(b,e,c){var
+str_GET="GET",str_arraybuffer="arraybuffer",h_=[1,0];function
+fw(b,e,c){var
 a=new
-G.XMLHttpRequest,d=0===b?str_GET:"POST";try{a.open(caml_js_from_string(d),caml_js_from_string(e))}catch(a){return caml_call1(c,[1,[0,e]])}a.timeout=30000;a.responseType=str_arraybuffer;a.onload=caml_js_wrap_callback_strict(1,function(h){h=a.status;var
+C.XMLHttpRequest,d=0===b?str_GET:"POST";try{a.open(caml_js_from_string(d),caml_js_from_string(e))}catch(a){return caml_call1(c,[1,[0,e]])}a.timeout=30000;a.responseType=str_arraybuffer;a.onload=caml_js_wrap_callback_strict(1,function(h){h=a.status;var
 f=new
-G.Uint8Array(a.response),d=f.length,e=caml_create_bytes(d),d=d-1|0;if(d>=0){var
+C.Uint8Array(a.response),d=f.length,e=caml_create_bytes(d),d=d-1|0;if(d>=0){var
 b=0;for(;;){caml_bytes_unsafe_set(e,b,bl(f[b]));var
-g=b+1|0;if(d===b)break;b=g}}e=caml_string_of_bytes(e);f=h7(caml_js_to_string(a.getAllResponseHeaders()));return caml_call1(c,[0,[0,caml_js_to_string(a.responseURL),h,f,e]])});a.onerror=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,[1,[1,e+": no answer (network, or CORS)"]])});a.ontimeout=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,h8)});if(b){b=b[1];d=b[2];a.setRequestHeader("Content-Type",caml_js_from_string(b[1]));a.send(caml_js_from_string(d));return}a.send()}function
+g=b+1|0;if(d===b)break;b=g}}e=caml_string_of_bytes(e);f=h9(caml_js_to_string(a.getAllResponseHeaders()));return caml_call1(c,[0,[0,caml_js_to_string(a.responseURL),h,f,e]])});a.onerror=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,[1,[1,e+": no answer (network, or CORS)"]])});a.ontimeout=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,h_)});if(b){b=b[1];d=b[2];a.setRequestHeader("Content-Type",caml_js_from_string(b[1]));a.send(caml_js_from_string(d));return}a.send()}function
 cd(c){var
 d=bY(caml_ml_string_length(c)),e=caml_ml_string_length(c),a=0;for(;;){if(a>=e)return cS(d);var
-b=caml_string_get(c,a);if(42===b){if((a+1|0)<e&&42===caml_string_get(c,a+1|0)){a=a+2|0;continue}}else{if(91===b){b=ee(c,a,93);if(b){b=b[1];if((b+1|0)<e&&40===caml_string_get(c,b+1|0)&&0!==ee(c,b,41)){a4(d,f(c,a+1|0,(b-a|0)-1|0));a=cN(c,b,41)+1|0;continue}}bo(d,91);a=a+1|0;continue}if(96===b){a=a+1|0;continue}}bo(d,b);a=a+1|0}}function
-fv(b){function
+b=caml_string_get(c,a);if(42===b){if((a+1|0)<e&&42===caml_string_get(c,a+1|0)){a=a+2|0;continue}}else{if(91===b){b=eg(c,a,93);if(b){b=b[1];if((b+1|0)<e&&40===caml_string_get(c,b+1|0)&&0!==eg(c,b,41)){a4(d,f(c,a+1|0,(b-a|0)-1|0));a=cN(c,b,41)+1|0;continue}}bo(d,91);a=a+1|0;continue}if(96===b){a=a+1|0;continue}}bo(d,b);a=a+1|0}}function
+fx(b){function
 a(a,b){if(a){a=a[1];if(0!==a[4]){var
 c=o(a[4]),d=aq(a[3]);return[0,[0,a[1],a[2],d,c],b]}}return b}return function(t,c,s,b){for(;;){if(!b)return o(a(c,s));var
 m=b[2],b=b[1];if(cO("## ",b)){b=aq(f(b,3,caml_ml_string_length(b)-3|0));s=a(c,s);c=[0,[0,b,t,str,0]];b=m}else if(cO("# ",b)){s=a(c,s);t=aq(b)==="# Games"?1:0;c=0;b=m}else if(c){var
@@ -2590,23 +2592,23 @@ j=q[2];if(j){var
 k=j[2];if(k){var
 l=k[2];if(l){var
 g=l[2];if(g){b=b[1];l=l[1];k=k[1];j=j[1];q=q[1];n=n[1];d=d[1];i=i[1];if(g[1]===str&&!g[2]){g=az(b,93);var
-h=az(b,40),r=az(b,41),d=d1(d);if(g&&h&&r&&d){h=h[1];g=g[1];d=d[1];r=r[1];if(0<caml_ml_string_length(b)&&91===caml_string_get(b,0)&&h===(g+1|0)){l=cd(l);k=cd(k);j=cd(j);h=f(b,h+1|0,(r-h|0)-1|0);b=[0,[0,f(b,1,g-1|0),h,i,d,n,q,j,k,l]];break a}}b=0;break a}}}}}}}}}}}b=0}if(b){c=[0,[0,e[1],e[2],e[3],[0,b[1],e[4]]]];b=m}else
+h=az(b,40),r=az(b,41),d=d2(d);if(g&&h&&r&&d){h=h[1];g=g[1];d=d[1];r=r[1];if(0<caml_ml_string_length(b)&&91===caml_string_get(b,0)&&h===(g+1|0)){l=cd(l);k=cd(k);j=cd(j);h=f(b,h+1|0,(r-h|0)-1|0);b=[0,[0,f(b,1,g-1|0),h,i,d,n,q,j,k,l]];break a}}b=0;break a}}}}}}}}}}}b=0}if(b){c=[0,[0,e[1],e[2],e[3],[0,b[1],e[4]]]];b=m}else
 b=m}else if(0===e[4]&&aq(b)!==str){c=e[3]===str?str:str$16;i=e[4];c+=cd(aq(b));c=[0,[0,e[1],e[2],e[3]+c,i]];b=m}else
 b=m}else
 b=m}}(1,0,0,af(10,b))}function
-dy(a){return eg(" (net)",a[6])}var
+dz(a){return ei(" (net)",a[6])}var
 str_2="2",str_1="1";function
 ce(b,c){var
 a=az(b[6],32),a=a?f(b[6],0,a[1]):b[6],b="1-2";a:{if(a!==str_1&&a!==b)break a;if(1===c)return 1}a:{if(a!==b&&a!==str_2)break a;if(2===c)return 1}return 0}function
-dz(a){return(a[4]/10|0)*10|0}var
-fw=_(num_4096,0),fx=K(0,num_256);(function(a){for(;;){if(!a)return;var
+dA(a){return(a[4]/10|0)*10|0}var
+fy=_(num_4096,0),fz=K(0,num_256);(function(a){for(;;){if(!a)return;var
 c=a[2],a=a[1];if(40<caml_ml_string_length(a)){var
-d=caml_int_of_string(str_0x+f(a,0,2)),e=caml_int_of_string(str_0x+f(a,3,4)),b=0,a=f(a,caml_ml_string_length(a)+num_32|0,32);for(;;){caml_bytes_set(fw,(d*16|0)+b|0,bl(caml_int_of_string(str_0x+f(a,2*b|0,2))));var
-g=b+1|0;if(15===b){if(0!==e){$(fx,e,d);a=c;break}a=c;break}b=g}}else
+d=caml_int_of_string(str_0x+f(a,0,2)),e=caml_int_of_string(str_0x+f(a,3,4)),b=0,a=f(a,caml_ml_string_length(a)+num_32|0,32);for(;;){caml_bytes_set(fy,(d*16|0)+b|0,bl(caml_int_of_string(str_0x+f(a,2*b|0,2))));var
+g=b+1|0;if(15===b){if(0!==e){$(fz,e,d);a=c;break}a=c;break}b=g}}else
 a=c}}(af(10,"00 0000   00000000000000000000000000000000\n01 263A \xe2\x98\xba 00007e81a58181a59981817e00000000\n02 263B \xe2\x98\xbb 00007effdbffffdbe7ffff7e00000000\n03 2665 \xe2\x99\xa5 000000006cfefefefe7c381000000000\n04 2666 \xe2\x99\xa6 0000000010387cfe7c38100000000000\n05 2663 \xe2\x99\xa3 000000183c3ce7e7e718183c00000000\n06 2660 \xe2\x99\xa0 000000183c7effff7e18183c00000000\n07 2022 \xe2\x80\xa2 000000000000183c3c18000000000000\n08 25D8 \xe2\x97\x98 ffffffffffffe7c3c3e7ffffffffffff\n09 25CB \xe2\x97\x8b 00003c42818181818181423c00000000\n0A 25D9 \xe2\x97\x99 ffffc3bd7e7e7e7e7e7ebdc3ffffffff\n0B 2642 \xe2\x99\x82 00001e060e1a78cccccccc7800000000\n0C 2640 \xe2\x99\x80 00003c666666663c187e181800000000\n0D 266A \xe2\x99\xaa 0000303c3e3230303070f0e000000000\n0E 266B \xe2\x99\xab 0000707f6f63636363e3e7c706000000\n0F 263C \xe2\x98\xbc 00000010105428c62854101000000000\n10 25BA \xe2\x96\xba 00000000000c06ff060c000000000000\n11 25C4 \xe2\x97\x84 00000000003060ff6030000000000000\n12 2195 \xe2\x86\x95 0000183c7e1818187e3c180000000000\n13 203C \xe2\x80\xbc 00006666666666666600666600000000\n14 00B6 \xc2\xb6 00007fdbdbdb7b1b1b1b1b1b00000000\n15 00A7 \xc2\xa7 007cc660386cc6c66c380cc67c000000\n16 25AC \xe2\x96\xac 00000000000000fefefefefe00000000\n17 21A8 \xe2\x86\xa8 0000183c7e1818187e3c187e00000000\n18 2191 \xe2\x86\x91 0000183c7e1818181818181800000000\n19 2193 \xe2\x86\x93 0000181818181818187e3c1800000000\n1A 2192 \xe2\x86\x92 00000000000c06ff060c000000000000\n1B 2190 \xe2\x86\x90 00000000003060ff6030000000000000\n1C 221F \xe2\x88\x9f 000000000000c0c0c0c0c0fe00000000\n1D 2194 \xe2\x86\x94 00000000002466ff6624000000000000\n1E 25B2 \xe2\x96\xb2 0000183c7e1818181818181800000000\n1F 25BC \xe2\x96\xbc 0000181818181818187e3c1800000000\n20 0020   00000000000000000000000000000000\n21 0021 ! 0000183c3c3c18181800181800000000\n22 0022 \" 00666666240000000000000000000000\n23 0023 # 0000006c6cfe6c6c6cfe6c6c00000000\n24 0024 $ 18187cc6c2c07c060686c67c18180000\n25 0025 % 00000000c2c60c183060c68600000000\n26 0026 & 0000386c6c3876dccccccc7600000000\n27 0027 ' 00303030200000000000000000000000\n28 0028 ( 00000c18303030303030180c00000000\n29 0029 ) 000030180c0c0c0c0c0c183000000000\n2A 002A * 0000000000663cff3c66000000000000\n2B 002B + 000000000018187e1818000000000000\n2C 002C , 00000000000000000018181830000000\n2D 002D - 00000000000000fe0000000000000000\n2E 002E . 00000000000000000000181800000000\n2F 002F / 0000000002060c183060c08000000000\n30 0030 0 0000386cc6c6d6d6c6c66c3800000000\n31 0031 1 00001838781818181818187e00000000\n32 0032 2 00007cc6060c183060c0c6fe00000000\n33 0033 3 00007cc606063c060606c67c00000000\n34 0034 4 00000c1c3c6cccfe0c0c0c1e00000000\n35 0035 5 0000fec0c0c0fc060606c67c00000000\n36 0036 6 00003860c0c0fcc6c6c6c67c00000000\n37 0037 7 0000fec606060c183030303000000000\n38 0038 8 00007cc6c6c67cc6c6c6c67c00000000\n39 0039 9 00007cc6c6c67e0606060c7800000000\n3A 003A : 00000000181800000018180000000000\n3B 003B ; 00000000181800000018183000000000\n3C 003C < 000000060c18306030180c0600000000\n3D 003D = 00000000007e00007e00000000000000\n3E 003E > 0000006030180c060c18306000000000\n3F 003F ? 00007cc6c60c18181800181800000000\n40 0040 @ 0000007cc6c6dedededcc07c00000000\n41 0041 A 000010386cc6c6fec6c6c6c600000000\n42 0042 B 0000fc6666667c66666666fc00000000\n43 0043 C 00003c66c2c0c0c0c0c2663c00000000\n44 0044 D 0000f86c6666666666666cf800000000\n45 0045 E 0000fe6662687868606266fe00000000\n46 0046 F 0000fe6662687868606060f000000000\n47 0047 G 00003c66c2c0c0dec6c6663a00000000\n48 0048 H 0000c6c6c6c6fec6c6c6c6c600000000\n49 0049 I 00003c18181818181818183c00000000\n4A 004A J 00001e0c0c0c0c0ccccccc7800000000\n4B 004B K 0000e666666c78786c6666e600000000\n4C 004C L 0000f06060606060606266fe00000000\n4D 004D M 0000c6eefefed6c6c6c6c6c600000000\n4E 004E N 0000c6e6f6fedecec6c6c6c600000000\n4F 004F O 00007cc6c6c6c6c6c6c6c67c00000000\n50 0050 P 0000fc6666667c60606060f000000000\n51 0051 Q 00007cc6c6c6c6c6c6d6de7c0c0e0000\n52 0052 R 0000fc6666667c6c666666e600000000\n53 0053 S 00007cc6c660380c06c6c67c00000000\n54 0054 T 00007e7e5a1818181818183c00000000\n55 0055 U 0000c6c6c6c6c6c6c6c6c67c00000000\n56 0056 V 0000c6c6c6c6c6c6c66c381000000000\n57 0057 W 0000c6c6c6c6d6d6d6feee6c00000000\n58 0058 X 0000c6c66c7c38387c6cc6c600000000\n59 0059 Y 0000666666663c181818183c00000000\n5A 005A Z 0000fec6860c183060c2c6fe00000000\n5B 005B [ 00003c30303030303030303c00000000\n5C 005C \\ 00000080c0e070381c0e060200000000\n5D 005D ] 00003c0c0c0c0c0c0c0c0c3c00000000\n5E 005E ^ 10386cc6000000000000000000000000\n5F 005F _ 00000000000000000000000000ff0000\n60 0060 ` 30301800000000000000000000000000\n61 0061 a 0000000000780c7ccccccc7600000000\n62 0062 b 0000e06060786c666666667c00000000\n63 0063 c 00000000007cc6c0c0c0c67c00000000\n64 0064 d 00001c0c0c3c6ccccccccc7600000000\n65 0065 e 00000000007cc6fec0c0c67c00000000\n66 0066 f 0000386c6460f060606060f000000000\n67 0067 g 000000000076cccccccccc7c0ccc7800\n68 0068 h 0000e060606c7666666666e600000000\n69 0069 i 00001818003818181818183c00000000\n6A 006A j 00000606000e06060606060666663c00\n6B 006B k 0000e06060666c78786c66e600000000\n6C 006C l 00003818181818181818183c00000000\n6D 006D m 0000000000ecfed6d6d6d6c600000000\n6E 006E n 0000000000dc66666666666600000000\n6F 006F o 00000000007cc6c6c6c6c67c00000000\n70 0070 p 0000000000dc66666666667c6060f000\n71 0071 q 000000000076cccccccccc7c0c0c1e00\n72 0072 r 0000000000dc7666606060f000000000\n73 0073 s 00000000007cc660380cc67c00000000\n74 0074 t 0000103030fc30303030361c00000000\n75 0075 u 0000000000cccccccccccc7600000000\n76 0076 v 000000000066666666663c1800000000\n77 0077 w 0000000000c6c6d6d6d6fe6c00000000\n78 0078 x 0000000000c66c3838386cc600000000\n79 0079 y 0000000000c6c6c6c6c6c67e060cf800\n7A 007A z 0000000000fecc183060c6fe00000000\n7B 007B { 00000e18181870181818180e00000000\n7C 007C | 00001818181818181818181800000000\n7D 007D } 0000701818180e181818187000000000\n7E 007E ~ 000076dc000000000000000000000000\n7F 2302 \xe2\x8c\x82 0000000010386cc6c6c6fe0000000000\n80 00C7 \xc3\x87 00003c66c2c0c0c0c0c2663c180c3800\n81 00FC \xc3\xbc 0000cccc00cccccccccccc7600000000\n82 00E9 \xc3\xa9 00000c18007cc6fec0c0c67c00000000\n83 00E2 \xc3\xa2 0010386c00780c7ccccccc7600000000\n84 00E4 \xc3\xa4 00006c6c00780c7ccccccc7600000000\n85 00E0 \xc3\xa0 0000603000780c7ccccccc7600000000\n86 00E5 \xc3\xa5 00386c3800780c7ccccccc7600000000\n87 00E7 \xc3\xa7 00000000007cc6c0c0c0c67c180c3800\n88 00EA \xc3\xaa 0010386c007cc6fec0c0c67c00000000\n89 00EB \xc3\xab 00006c6c007cc6fec0c0c67c00000000\n8A 00E8 \xc3\xa8 00006030007cc6fec0c0c67c00000000\n8B 00EF \xc3\xaf 00006666003818181818183c00000000\n8C 00EE \xc3\xae 0010386c003818181818183c00000000\n8D 00EC \xc3\xac 00003018003818181818183c00000000\n8E 00C4 \xc3\x84 6c6c0010386cc6c6fec6c6c600000000\n8F 00C5 \xc3\x85 386c3810386cc6c6fec6c6c600000000\n90 00C9 \xc3\x89 0c1800fe66626878686266fe00000000\n91 00E6 \xc3\xa6 0000000000cc76367ed8d86e00000000\n92 00C6 \xc3\x86 00003e6cccccfeccccccccce00000000\n93 00F4 \xc3\xb4 0010386c007cc6c6c6c6c67c00000000\n94 00F6 \xc3\xb6 00006c6c007cc6c6c6c6c67c00000000\n95 00F2 \xc3\xb2 00006030007cc6c6c6c6c67c00000000\n96 00FB \xc3\xbb 0010386c00cccccccccccc7600000000\n97 00F9 \xc3\xb9 0000603000cccccccccccc7600000000\n98 00FF \xc3\xbf 00006c6c00c6c6c6c6c6c67e060cf800\n99 00D6 \xc3\x96 6c6c007cc6c6c6c6c6c6c67c00000000\n9A 00DC \xc3\x9c 6c6c00c6c6c6c6c6c6c6c67c00000000\n9B 00A2 \xc2\xa2 0018183c66606060663c181800000000\n9C 00A3 \xc2\xa3 00386c6460f060606060e6fc00000000\n9D 00A5 \xc2\xa5 000066663c187e187e18181800000000\n9E 20A7 \xe2\x82\xa7 0000fc66667c62666f6666f300000000\n9F 0192 \xc6\x92 00001c3632307830303030303030e000\nA0 00E1 \xc3\xa1 0000183000780c7ccccccc7600000000\nA1 00ED \xc3\xad 00000c18003818181818183c00000000\nA2 00F3 \xc3\xb3 00000c18007cc6c6c6c6c67c00000000\nA3 00FA \xc3\xba 0000183000cccccccccccc7600000000\nA4 00F1 \xc3\xb1 000076dc00dc66666666666600000000\nA5 00D1 \xc3\x91 76dc00c6e6f6fedecec6c6c600000000\nA6 00AA \xc2\xaa 003c6c6c3e007e000000000000000000\nA7 00BA \xc2\xba 00386c6c38007c000000000000000000\nA8 00BF \xc2\xbf 0000303000303060c0c6c67c00000000\nA9 2310 \xe2\x8c\x90 000000000000fec0c0c0c00000000000\nAA 00AC \xc2\xac 000000000000fe060606060000000000\nAB 00BD \xc2\xbd 00c0c0c2c6cc183060dc860c183e0000\nAC 00BC \xc2\xbc 00c0c0c2c6cc183066ce9e3e06060000\nAD 00A1 \xc2\xa1 00001818001818183c3c3c1800000000\nAE 00AB \xc2\xab 0000000000366cd86c36000000000000\nAF 00BB \xc2\xbb 0000000000d86c366cd8000000000000\nB0 2591 \xe2\x96\x91 11441144114411441144114411441144\nB1 2592 \xe2\x96\x92 55aa55aa55aa55aa55aa55aa55aa55aa\nB2 2593 \xe2\x96\x93 dd77dd77dd77dd77dd77dd77dd77dd77\nB3 2502 \xe2\x94\x82 18181818181818181818181818181818\nB4 2524 \xe2\x94\xa4 18181818181818f81818181818181818\nB5 2561 \xe2\x95\xa1 18181818181818f81818181818181818\nB6 2562 \xe2\x95\xa2 18181818181818f81818181818181818\nB7 2556 \xe2\x95\x96 00000000000000f81818181818181818\nB8 2555 \xe2\x95\x95 00000000000000f81818181818181818\nB9 2563 \xe2\x95\xa3 18181818181818f81818181818181818\nBA 2551 \xe2\x95\x91 18181818181818181818181818181818\nBB 2557 \xe2\x95\x97 00000000000000f81818181818181818\nBC 255D \xe2\x95\x9d 18181818181818f80000000000000000\nBD 255C \xe2\x95\x9c 18181818181818f80000000000000000\nBE 255B \xe2\x95\x9b 18181818181818f80000000000000000\nBF 2510 \xe2\x94\x90 00000000000000f81818181818181818\nC0 2514 \xe2\x94\x94 181818181818181f0000000000000000\nC1 2534 \xe2\x94\xb4 18181818181818ff0000000000000000\nC2 252C \xe2\x94\xac 00000000000000ff1818181818181818\nC3 251C \xe2\x94\x9c 181818181818181f1818181818181818\nC4 2500 \xe2\x94\x80 00000000000000ff0000000000000000\nC5 253C \xe2\x94\xbc 18181818181818ff1818181818181818\nC6 255E \xe2\x95\x9e 181818181818181f1818181818181818\nC7 255F \xe2\x95\x9f 181818181818181f1818181818181818\nC8 255A \xe2\x95\x9a 181818181818181f0000000000000000\nC9 2554 \xe2\x95\x94 000000000000001f1818181818181818\nCA 2569 \xe2\x95\xa9 18181818181818ff0000000000000000\nCB 2566 \xe2\x95\xa6 00000000000000ff1818181818181818\nCC 2560 \xe2\x95\xa0 181818181818181f1818181818181818\nCD 2550 \xe2\x95\x90 00000000000000ff0000000000000000\nCE 256C \xe2\x95\xac 18181818181818ff1818181818181818\nCF 2567 \xe2\x95\xa7 18181818181818ff0000000000000000\nD0 2568 \xe2\x95\xa8 18181818181818ff0000000000000000\nD1 2564 \xe2\x95\xa4 00000000000000ff1818181818181818\nD2 2565 \xe2\x95\xa5 00000000000000ff1818181818181818\nD3 2559 \xe2\x95\x99 181818181818181f0000000000000000\nD4 2558 \xe2\x95\x98 181818181818181f0000000000000000\nD5 2552 \xe2\x95\x92 000000000000001f1818181818181818\nD6 2553 \xe2\x95\x93 000000000000001f1818181818181818\nD7 256B \xe2\x95\xab 18181818181818ff1818181818181818\nD8 256A \xe2\x95\xaa 18181818181818ff1818181818181818\nD9 2518 \xe2\x94\x98 18181818181818f80000000000000000\nDA 250C \xe2\x94\x8c 000000000000001f1818181818181818\nDB 2588 \xe2\x96\x88 ffffffffffffffffffffffffffffffff\nDC 2584 \xe2\x96\x84 0000000000000000ffffffffffffffff\nDD 258C \xe2\x96\x8c f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0\nDE 2590 \xe2\x96\x90 0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f\nDF 2580 \xe2\x96\x80 ffffffffffffff000000000000000000\nE0 03B1 \xce\xb1 000000000076cccccccccc7600000000\nE1 00DF \xc3\x9f 00003c6666666c66666666ec00000000\nE2 0393 \xce\x93 0000fe6662606060606060f000000000\nE3 03C0 \xcf\x80 0000000000fe6c6c6c6c6c6600000000\nE4 03A3 \xce\xa3 0000fec6623018183062c6fe00000000\nE5 03C3 \xcf\x83 00000000007ecccccccccc7800000000\nE6 00B5 \xc2\xb5 0000000000ccccccccccccf6c0c0c000\nE7 03C4 \xcf\x84 00000000007e18181818180e00000000\nE8 03A6 \xce\xa6 0000107cd6d6d6d6d67c101000000000\nE9 0398 \xce\x98 00007cc6c6c6fec6c6c6c67c00000000\nEA 03A9 \xce\xa9 00007cc6c6c6c6c66c6c6cee00000000\nEB 03B4 \xce\xb4 00003c6630187cc6c6c6c67c00000000\nEC 221E \xe2\x88\x9e 000000000076dbdb6e00000000000000\nED 03C6 \xcf\x86 00000000006cd6d6d6d6d67c10101000\nEE 03B5 \xce\xb5 00000000007cc6c078c0c67c00000000\nEF 2229 \xe2\x88\xa9 000000007cc6c6c6c6c6c6c600000000\nF0 2261 \xe2\x89\xa1 00000000fe0000fe0000fe0000000000\nF1 00B1 \xc2\xb1 0000000018187e1818007e0000000000\nF2 2265 \xe2\x89\xa5 00000000e0380e38e000fe0000000000\nF3 2264 \xe2\x89\xa4 000000000e38e0380e00fe0000000000\nF4 2320 \xe2\x8c\xa0 00000e1b1b1818181818181818181818\nF5 2321 \xe2\x8c\xa1 1818181818181818d8d8d87000000000\nF6 00F7 \xc3\xb7 000000001818007e0018180000000000\nF7 2248 \xe2\x89\x88 000000000076dc0076dc000000000000\nF8 00B0 \xc2\xb0 00386c6c380000000000000000000000\nF9 2219 \xe2\x88\x99 0000000000183c3c1800000000000000\nFA 00B7 \xc2\xb7 00000000000000001800000000000000\nFB 221A \xe2\x88\x9a 000003030606060ccc6c381800000000\nFC 207F \xe2\x81\xbf 0000b0d8d8d8d8000000000000000000\nFD 00B2 \xc2\xb2 0070d83060c8f8000000000000000000\nFE 25A0 \xe2\x96\xa0 000000fefefefefefefefefe00000000\nFF 00A0   00000000000000000000000000000000\n")));function
-fy(c,b,a){return 1===((caml_bytes_unsafe_get(fw,((c&num_255)*16|0)+a|0)>>>(7-b|0)|0)&1)?1:0}var
+fA(c,b,a){return 1===((caml_bytes_unsafe_get(fy,((c&num_255)*16|0)+a|0)>>>(7-b|0)|0)&1)?1:0}var
 num_240=240;function
-fz(h,g){function
+fB(h,g){function
 b(a){return caml_string_get(h,g+a|0)}var
 a=b(0),i=caml_ml_string_length(h)-g|0,num_192=192;function
 d(a){var
@@ -2614,185 +2616,185 @@ c=a<i?1:0,a=c?num_128===(b(a)&num_192)?1:0:c;return a}a:if(num_128<=a){var
 c=224;if(num_192===(a&c)&&d(1)){c=2;a=(a&31)<<6|b(1)&63;break a}if(c===(a&num_240)&&d(1)&&d(2)){var
 f=b(2)&63,c=3,a=(a&15)<<12|(b(1)&63)<<6|f;break a}if(num_240===(a&num_248)&&d(1)&&d(2)&&d(3)){f=b(3)&63;var
 e=(b(2)&63)<<6,c=4,a=(a&7)<<18|(b(1)&63)<<12|e|f;break a}c=1;a=-1}else
-c=1;e=63;e=0<=a?bk(aB(fx,a),e):e;return[0,e,c]}var
-dA=caml_obj_dup([0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]),num_210=210,a=238,B=154,L=140,an=179,b=105,aw=215,num_205=205,num_190=190,al=237,h$=[0,num_190,num_190,num_190],ia=[0,num_255,num_127,80],ib=[0,num_255,165,0],ic=[0,num_255,L,0],id=[0,num_210,b,30],ie=[0,a,201,0],ig=[0,num_255,aw,0],ih=[0,B,num_205,50],ii=[0,num_255,num_127,36],ij=[0,92,172,a],ik=[0,135,206,num_255],il=[0,num_250,num_128,num_114],im=[0,num_210,b,30],io=[0,num_255,181,197],ip=[0,num_127,num_255,0],iq=[0,50,num_205,50],ir=[0,num_100,149,al],is=[0,num_255,64,64],it=[0,num_205,num_205,0],iu=[0,60,an,113],iv=[0,0,B,num_205],iw=[0,0,num_205,num_205],ix=[0,a,118,0],iy=[0,245,222,an],iz=[0,num_255,99,71];function
+c=1;e=63;e=0<=a?bk(aB(fz,a),e):e;return[0,e,c]}var
+dB=caml_obj_dup([0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]),num_210=210,a=238,D=154,L=140,an=179,b=105,aw=215,num_205=205,num_190=190,al=237,ib=[0,num_190,num_190,num_190],ic=[0,num_255,num_127,80],id=[0,num_255,165,0],ie=[0,num_255,L,0],ig=[0,num_210,b,30],ih=[0,a,201,0],ii=[0,num_255,aw,0],ij=[0,D,num_205,50],ik=[0,num_255,num_127,36],il=[0,92,172,a],im=[0,135,206,num_255],io=[0,num_250,num_128,num_114],ip=[0,num_210,b,30],iq=[0,num_255,181,197],ir=[0,num_127,num_255,0],is=[0,50,num_205,50],it=[0,num_100,149,al],iu=[0,num_255,64,64],iv=[0,num_205,num_205,0],iw=[0,60,an,113],ix=[0,0,D,num_205],iy=[0,0,num_205,num_205],iz=[0,a,118,0],iA=[0,245,222,an],iB=[0,num_255,99,71];function
 cf(a){switch(a){case
-0:return h$;case
-1:return ia;case
-2:return ib;case
-3:return ic;case
-4:return id;case
-5:return ie;case
-6:return ig;case
-7:return ih;case
-8:return ii;case
-9:return ij;case
-10:return ik;case
-11:return il;case
-12:return im;case
-13:return io;case
-14:return ip;case
-15:return iq;case
-16:return ir;case
-17:return is;case
-18:return it;case
-19:return iu;case
-20:return iv;case
-21:return iw;case
-22:return ix;case
-23:return iy;default:return iz}}function
-fA(a){if(9>a)switch(a){case
+0:return ib;case
+1:return ic;case
+2:return id;case
+3:return ie;case
+4:return ig;case
+5:return ih;case
+6:return ii;case
+7:return ij;case
+8:return ik;case
+9:return il;case
+10:return im;case
+11:return io;case
+12:return ip;case
+13:return iq;case
+14:return ir;case
+15:return is;case
+16:return it;case
+17:return iu;case
+18:return iv;case
+19:return iw;case
+20:return ix;case
+21:return iy;case
+22:return iz;case
+23:return iA;default:return iB}}function
+fC(a){if(9>a)switch(a){case
 5:return 3.5;case
 6:return 2.5;case
 1:case
 7:case
 8:return 5.}return 1.}var
-fB=K(0,64),str_let="let",an="else",a="struct",B="to",b="try",V="virtual",str_external="external",str_module="module",j="do",P="match",e="class",str_rec="rec",C="while",aL="if",H="function",y="downto",str_in="in",am="nonrec",ay="with",bN="then",Z="mutable",R="when",str_method="method",str_and="and",str_fun="fun",str_exception="exception",Y="for",ax="done",str_include="include",M="sig",str_type="type",bh="private",str_val="val",bM="functor",aj=caml_list_of_js_array([str_and,"as","assert","begin",e,"constraint",j,ax,y,an,str_end,str_exception,str_external,str_false,Y,str_fun,H,bM,aL,str_in,str_include,"inherit","initializer","lazy",str_let,P,str_method,str_module,Z,"new",am,"object","of",str_open,"or",bh,str_rec,M,a,bN,B,str_true,b,str_type,str_val,V,R,C,ay,"mod","land","lor","lxor","lsl","lsr","asr"]);function
-hW(g,d,e){var
+fD=K(0,64),str_let="let",an="else",a="struct",D="to",b="try",V="virtual",str_external="external",str_module="module",j="do",P="match",e="class",str_rec="rec",E="while",aL="if",I="function",z="downto",str_in="in",am="nonrec",ay="with",bN="then",Z="mutable",R="when",str_method="method",str_and="and",str_fun="fun",str_exception="exception",Y="for",ax="done",str_include="include",M="sig",str_type="type",bh="private",str_val="val",bM="functor",aj=caml_list_of_js_array([str_and,"as","assert","begin",e,"constraint",j,ax,z,an,str_end,str_exception,str_external,str_false,Y,str_fun,I,bM,aL,str_in,str_include,"inherit","initializer","lazy",str_let,P,str_method,str_module,Z,"new",am,"object","of",str_open,"or",bh,str_rec,M,a,bN,D,str_true,b,str_type,str_val,V,R,E,ay,"mod","land","lor","lxor","lsl","lsr","asr"]);function
+hY(g,d,e){var
 a=e[2],e=e[1];if(typeof
 d!=="number")switch(d[0]){case
 0:var
 c=a[2],b=a[1],d=[0,[0,b[1],b[2],b[3],0,b[5],0.,0.,0.,0],[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],str],a[3],[0,d[1]],a[5]];return[0,caml_call2(g,a,e),d];case
 1:g=a[5];c=a[4];d=du(d[1],d[2]);return[0,e,[0,a[1],a[2],d,c,g]];case
-2:g=a[5];c=a[4];b=a[3];d=hS(d[1],d[2],a[2]);return[0,e,[0,a[1],d,b,c,g]];case
+2:g=a[5];c=a[4];b=a[3];d=hU(d[1],d[2],a[2]);return[0,e,[0,a[1],d,b,c,g]];case
 3:d=d[1];c=a[1];return[0,e,[0,[0,d[1],d[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9]],a[2],a[3],a[4],a[5]]];case
 4:d=d[1];c=a[1];return[0,e,[0,[0,c[1],c[2],c[3],c[4],c[5],c[6]+d[1],c[7]+d[2],c[8],c[9]],a[2],a[3],a[4],a[5]]];case
 5:c=a[5];b=a[4];g=a[3];var
-f=a[2],a=d[1]?fi(1,a[1]):fh(1,fi(0,a[1]));return[0,e,[0,a,f,g,b,c]];case
+f=a[2],a=d[1]?fk(1,a[1]):fj(1,fk(0,a[1]));return[0,e,[0,a,f,g,b,c]];case
 6:b=a[1];return[0,e,[0,[0,b[1],b[2],b[3],b[4],d[1],b[6],b[7],b[8],b[9]],a[2],a[3],a[4],a[5]]];case
-7:b=a[2];return[0,e,[0,a[1],[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8],b[9],b[10],b[11],b[12],b[13],b[14]+d[1]],a[3],a[4],a[5]]];default:b=a[1];return[0,e,[0,[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8]+d[1],b[9]],a[2],a[3],a[4],a[5]]]}if(0===d){d=a[5];b=a[4];f=a[3];c=a[2];return[0,e,[0,fh(1,a[1]),c,f,b,d]]}f=a[1];return[0,e,[0,[0,f[1],f[2],f[3],f[4],f[5],f[6],f[7],f[8],1],a[2],a[3],a[4],a[5]]]}var
-num_735=735,num_60=60.,fe=[0,0],aH=[0,0.],ft=aK,bb=[0,ft];function
-h6(c){var
+7:b=a[2];return[0,e,[0,a[1],[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8],b[9],b[10],b[11],b[12],b[13],b[14]+d[1]],a[3],a[4],a[5]]];default:b=a[1];return[0,e,[0,[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8]+d[1],b[9]],a[2],a[3],a[4],a[5]]]}if(0===d){d=a[5];b=a[4];f=a[3];c=a[2];return[0,e,[0,fj(1,a[1]),c,f,b,d]]}f=a[1];return[0,e,[0,[0,f[1],f[2],f[3],f[4],f[5],f[6],f[7],f[8],1],a[2],a[3],a[4],a[5]]]}var
+num_735=735,num_60=60.,fg=[0,0],aH=[0,0.],fv=aK,bb=[0,fv];function
+h8(c){var
 a=caml_obj_tag(aG),a=num_250===a?aG[1]:num_246===a?X(aG):aG;if(a){var
-e=a[1];if(fs(e)==="running"){c=e.currentTime;if(aH[1]<c){if(0.<aH[1])bb[1]=s(num_0_3,bb[1]+num_0_03);aH[1]=c+bb[1]/2.}else
-bb[1]=v(ft,bb[1]-.0002);var
-h=function(a){a=e[a];return e8(a)==="number"?a:0.},a=h("outputLatency"),b=h("baseLatency"),b=aH[1]-c+b+a,a=fe[1];if(a){a=a[1];b=a+(b-a)/num_60}fe[1]=[0,b];c=(bb[1]-(aH[1]-c))*num_44100|0;if(0<c){b=fd(c);a=e.createBuffer(2,c,44100);var
+e=a[1];if(fu(e)==="running"){c=e.currentTime;if(aH[1]<c){if(0.<aH[1])bb[1]=s(num_0_3,bb[1]+num_0_03);aH[1]=c+bb[1]/2.}else
+bb[1]=w(fv,bb[1]-.0002);var
+h=function(a){a=e[a];return e_(a)==="number"?a:0.},a=h("outputLatency"),b=h("baseLatency"),b=aH[1]-c+b+a,a=fg[1];if(a){a=a[1];b=a+(b-a)/num_60}fg[1]=[0,b];c=(bb[1]-(aH[1]-c))*num_44100|0;if(0<c){b=ff(c);a=e.createBuffer(2,c,44100);var
 d=0,b=[0,b[1],[0,b[2],0]];for(;;){if(!b){d=e.createBufferSource();d.buffer=a;d.connect(e.destination);d.start(aH[1]);aH[1]=aH[1]+c/num_44100;break}var
 g=b[1],b=b[2],i=g.length-2|0,k=a.getChannelData(d);if(i>=0){var
 f=0;for(;;){k[f]=g[f+1];var
-j=f+1|0;if(i===f)break;f=j}}d=d+1|0}}return}}fd(c*num_735|0)}for(;;){if(!aj)break;var
-cB=aj[2];$(fB,aj[1],0);aj=cB}var
+j=f+1|0;if(i===f)break;f=j}}d=d+1|0}}return}}ff(c*num_735|0)}for(;;){if(!aj)break;var
+cB=aj[2];$(fD,aj[1],0);aj=cB}var
 ch=[0,"\0\0\xee\xff\x81\0\xef\xff`\x01\xf1\xffE\0\x83\x01{\0x\0\xa9\x01\x84\x01\xf6\xff|\x02\x9d\x02\xe6\x02\xe6\x03\xc0\x04\xc0\x05\x9a\x06j\x07I\b\xa5\bX\0z\0\xfe\xffu\t\xfd\xffE\n\xfc\xff\x15\v\x15\f\xb4\f\xf2\f]\0\xf4\x01[\0`\x011\x03\xf8\xff\r\x05\xa1\x01\xe5\x06\xfe\x01\n\x026\x04\x8c\x02>\x04\x14\x02\xf5\xff\x13\r\xf3\r^\0<\x0e\f\x0f\xdc\x0f\xf4\xffk\0\x10\x06H\x03b\0R\x03p\0\xb5\x07r\0\x94\x01\xbd\x02x\0h\b\xec\x07\x98\0|\0c\0d\0\x98\x02\xf9\xff\xfa\xff\x15\x07\xfd\x0f\xfd\xff}\0}\0\xff\xff\xfe\xff\xfc\xff\x1e\x10\xfe\x10\x8b\0\xfb\xffi\x03\x8c\0H\x04\x8d\0`\x01\xfc\xff\xfd\xff\x83\0\xff\xff\xfe\xff8\x01\xfd\xff\xfe\xff\xd9\x10\xff\xff\x12\x11","\xff\xff\xff\xff\x11\0\xff\xff\x0f\0\xff\xff\x0e\0\x0f\0\x0e\0\x0e\0\x0e\0\x0e\0\xff\xff\x07\0\x07\0\x06\0\x06\0\x05\0\x05\0\x05\0\x05\0\x0f\0\x0f\0\x0e\0\0\0\xff\xff\x02\0\xff\xff\x03\0\xff\xff\x05\0\x05\0\x04\0\x05\0\xff\xff\b\0\xff\xff\xff\xff\xff\xff\xff\xff\x07\0\xff\xff\b\0\b\0\xff\xff\x07\0\x07\0\b\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\f\0\f\0\v\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\r\0\xff\xff\r\0\x0e\0\x0e\0\x0e\0\xff\xff\xff\xff\xff\xff\x06\0\x06\0\xff\xff\x06\0\x06\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x03\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x02\0\xff\xff\xff\xff","\x02\0\0\0\xff\xff\0\0\xff\xff\0\0\xff\xff\xff\xff\xff\xff\xff\xff4\0\xff\xff\0\0\xff\xff\xff\xff\xff\xff\x02\0\xff\xff\x02\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\0\0\xff\xff\0\0\xff\xff\0\0\xff\xff\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\0\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\0\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\0\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffF\0\xff\xffF\0\xff\xff\xff\xff\xff\xffK\0\0\0\0\0W\0\xff\xff\0\0\xff\xff\xff\xff\0\0\0\0\0\0\xff\xff\xff\xff\xff\xff\0\0\xff\xff\xff\xff\xff\xff\xff\xff^\0\0\0\0\0b\0\0\0\0\0d\0\0\0\0\0\xff\xff\0\0\xff\xff",`\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x18\0\x18\0\x01\0\x18\0\x18\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x01\0\x18\0\x04\0\f\0\t\0\x04\0\x04\0\x04\0\n\0\x17\0\x05\0\x04\0\x04\0\x05\0\x04\0\x04\0\x04\0\x0e\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\x04\0\x06\0\x04\0\x04\0\x04\0\x15\0\x04\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\b\0\x01\0\x05\0\x04\0\x11\0\x05\0\x13\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x14\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\v\0\x07\0\x05\0\x16\0\x01\0\x05\0E\0\x19\0\x18\0\x18\x008\0\x18\0\x18\x000\x008\x000\0.\0.\0/\0/\0/\0/\0/\0/\0/\0/\0/\0/\x008\0E\x008\0\x18\0A\0A\0A\0A\x008\0G\0\x05\0\xff\xffI\0\x05\0\xff\xffS\0R\0D\0D\0D\0D\0D\0D\0D\0D\0D\0D\0X\0X\0X\0\0\0\0\0\x05\0\0\0\x05\0\0\0H\0\0\0\0\0\0\0\0\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\0\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x05\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x03\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x04\0a\0\xff\xff\x04\0\x04\0\x04\0\0\0\0\0\0\0\x04\0\x04\0\0\0\x04\0\x04\0\x04\0-\0-\0-\0-\0-\0-\0-\0-\0\xff\xff\0\0\x04\0\0\0\x04\0\x04\0\x04\0\x04\0\x04\0\0\0\0\0\0\0\x04\0\0\0\0\0\x04\0\x04\0\x04\0\0\0\0\0\0\0\x04\0\x04\0\0\0\x04\0\x04\0\x04\0\xff\xfff\0\0\0\xff\xff\0\0\0\0\0\0\0\0\0\0\`\0\x04\0\x04\0\x04\0\x04\0\x04\0\x04\0\x04\0B\0B\0B\0B\0B\0B\0B\0B\0,\0\0\0,\0\0\0\xff\xff+\0+\0+\0+\0+\0+\0+\0+\0+\0+\0\0\0\x04\0\0\0\x04\0\0\0\x05\0\x04\0\0\x002\0\0\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\0\x04\x001\0\x04\0\0\0\0\0\0\x003\0\0\0\0\x005\0\0\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\0#\0#\0#\0#\0#\0#\0#\0#\0#\0#\0+\0+\0+\0+\0+\0+\0+\0+\0+\0+\0e\0"\0+\0+\0+\0+\0+\0+\0+\0+\0+\0+\0/\0/\0/\0/\0/\0/\0/\0/\0/\0/\0\0\0\0\0\0\0\0\0\0\0#\0\0\0\0\0\0\0\0\0\0\0"\0\0\0\0\0\0\0+\0\0\0\0\0_\0\0\0\0\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\0\0\x002\x002\x002\x002\x002\x002\x002\x002\0\0\0\0\0\0\0\0\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\0\0\x005\x005\x005\x005\x005\x005\x005\x005\0\xff\xff#\0\0\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\0\0\0\0\0\0\0\0O\0\0\0.\0.\0\0\0M\0Q\0"\0P\0\0\0\0\0\0\0\0\0\0\0'\0\0\0\0\0#\0\0\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\0\0'\0\0\0\0\0\r\0\0\0\0\0\0\0$\0\0\0"\0"\0\0\0\0\0\0\0\0\0\0\0'\0'\0'\0.\0%\0C\0C\0C\0C\0C\0C\0C\0C\0&\0\0\0\0\0'\0\0\0'\0\0\0\r\0\0\0\0\0$\0\0\0\0\0"\0\0\0\0\0\0\0\0\0\0\0\0\0'\0\0\0'\0%\0\x0f\0\0\0\0\0\0\0\0\0\0\0N\0\0\0&\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\0\0\0\0\0\0\0\0\x0f\0\0\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0(\0(\0(\0(\0(\0(\0(\0(\0(\0(\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\0(\0(\0(\0(\0(\0=\0=\0=\0=\0=\0=\0=\0=\0=\0=\0>\0>\0>\0>\0>\0>\0>\0>\0>\0>\0\0\0\0\0\0\0\0\0\0\0\0\0(\0(\0(\0(\0(\0(\0L\0[\0[\0[\0[\0[\0[\0[\0[\0[\0[\0\0\0\0\0\0\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\0\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\0\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\x0f\0\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff-\0-\0-\0-\0-\0-\0-\0-\0/\0/\0/\0/\0/\0/\0/\0/\0/\0/\0\\\0\\\0\\\0\\\0\\\0\\\0\\\0\\\0\\\0\\\0'\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0/\0\0\0\0\0\0\0\0\0'\0\0\0'\0\0\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\0\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\0\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\xff\xff\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0*\0\0\0(\0(\0(\0(\0(\0(\0(\0(\0(\0(\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\0(\0(\0(\0(\0(\0\0\0\0\0\0\0\0\0\0\0'\0\0\0\0\0\0\0)\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\0\0\0(\0(\0(\0(\0(\0(\0\0\0\0\0\0\0\0\0\0\0'\0\0\0'\0\0\0)\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\x11\0\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff?\0?\0?\0?\0?\0?\0?\0?\0?\0?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0?\0?\0?\0?\0?\0?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0?\0?\0?\0?\0?\0?\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\0\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\0\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\xff\xff\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0!\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0*\0*\0*\0*\0*\0*\0*\0*\0*\0*\0\xff\xff\0\0\0\0\xff\xff\0\0\0\0\0\0*\0*\0*\0*\0*\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0)\0\0\0\0\0\0\0\0\0\0\0\0\0X\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0*\0\0\0*\0*\0*\0*\0*\0*\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0)\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0V\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x1e\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0@\0@\0@\0@\0@\0@\0@\0@\0@\0@\0\0\0\0\0\0\0\0\0\0\0\0\0E\0@\0@\0@\0@\0@\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0E\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff@\0@\0@\0@\0@\0@\0D\0D\0D\0D\0D\0D\0D\0D\0D\0D\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x04\0\0\0\0\0\x04\0\x04\0\x04\0\0\0\0\0\xff\xff\x04\0\x04\0\xff\xff\x04\0\x04\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x04\0\0\0\x04\0\x04\0\x04\0\x04\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0D\0D\0D\0D\0D\0D\0D\0D\0D\0D\0\0\0\0\0\0\0\0\0\0\0\x04\0\x1c\0\0\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\0\0\x04\0\x04\0\x04\0\0\0\x04\0\x04\0\x04\0\0\0\0\0\0\0\x04\0\x04\0\0\0\x04\0\x04\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x04\0\0\0\x04\0\x04\0\x04\0\x04\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x04\0\x1a\0\0\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\0\0\x04\0\0\0\x04\0\0\0\0\0\0\0\0\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\0\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1b\0\0\0\0\0\0\0\0\0\0\0\0\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\0\0\0\0\0\0\0\0\x1a\0\0\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\0\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1c\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1d\0\0\0\0\0\0\0\0\0\0\0\0\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\0\0\0\0\0\0\0\0\x1c\0\0\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\0\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x11\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x1f\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff \0\xff\xff \0\0\0\xff\xff\xff\xff \0 \0\xff\xff \0\xff\xff \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff\xff\xff \0 \0 \0\xff\xff \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff\xff\xff\xff\xff \0\0\0\xff\xff\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff \0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff \0\0\0\0\0 \0 \0 \0\0\0\0\0\0\0 \0 \0\0\0 \0 \0 \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff\0\0 \0\0\0 \0 \0 \0 \0 \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff\0\0\0\0\0\0\0\0\0\0 \0\0\0\0\0\xff\xff\0\0\0\0\0\0\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0 \0\0\0 \0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\x11\0\0\0\x11\0\x11\0\x11\0\x1f\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\0\0\0\0\0\0\0\x002\0\0\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\0\0\x001\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\0\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\0\0\x002\x002\x002\x002\x002\x002\x002\x002\0<\0\0\0<\0\0\0\0\0\0\0\0\0<\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0;\0;\0;\0;\0;\0;\0;\0;\0;\0;\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0<\0\0\0\0\0\0\0\0\0\0\0<\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0<\x009\x007\0\0\0<\0\0\0<\0\0\0\0\0\0\0:\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\x006\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\x006\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\x006\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\0\0\0\0\0\0\0\0\0U\0\0\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0\0\0T\0\0\0\0\0\0\0U\0\0\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0\0\0T\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\0\x006\x006\x006\x006\x006\x006\x006\x006\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0\0\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0\0\0U\0U\0U\0U\0U\0U\0U\0U\0Z\0\0\0Z\0\0\0\0\0\0\0\0\0Z\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0h\0\0\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0\0\0\0\0g\0\0\0\0\0\0\0Z\0\0\0\0\0\0\0\0\0\0\0Z\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Z\0\0\0\0\0\0\0Z\0h\0Z\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0\0\0\0\0g\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0\0\0h\0h\0h\0h\0h\0h\0h\0h\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0\0\0h\0h\0h\0h\0h\0h\0h\0h\0\0\0`,'\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x06\0\t\0\x17\0\x18\0\x18\x004\0\x18\0\x18\0"\0<\0"\0$\0$\0"\0"\0"\0"\0"\0"\0"\0"\0"\0"\0>\0\t\0@\0\x18\x009\x009\x009\x009\0C\0\b\0G\0F\0H\0I\0F\0P\0Q\0\t\0\t\0\t\0\t\0\t\0\t\0\t\0\t\0\t\0\t\0W\0Z\0\\\0\xff\xff\xff\xff\b\0\xff\xff\b\0\xff\xff\b\0\xff\xff\xff\xff\xff\xff\xff\xff\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\b\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x02\0\x04\0]\0`\0\x04\0\x04\0\x04\0\xff\xff\xff\xff\xff\xff\x04\0\x04\0\xff\xff\x04\0\x04\0\x04\0%\0%\0%\0%\0%\0%\0%\0%\0F\0\xff\xff\x04\0\xff\xff\x04\0\x04\0\x04\0\x04\0\x04\0\xff\xff\xff\xff\xff\xff\x07\0\xff\xff\xff\xff\x07\0\x07\0\x07\0\xff\xff\xff\xff\xff\xff\x07\0\x07\0\xff\xff\x07\0\x07\0\x07\0\n\0c\0\xff\xff\n\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff]\0\x07\0\x04\0\x07\0\x07\0\x07\0\x07\0\x07\0A\0A\0A\0A\0A\0A\0A\0A\0)\0\xff\xff)\0\xff\xff\n\0)\0)\0)\0)\0)\0)\0)\0)\0)\0)\0\xff\xff\x04\0\xff\xff\x04\0\xff\xff\x07\0\x07\0\xff\xff\v\0\xff\xff\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\x07\0\v\0\x07\0\xff\xff\xff\xff\xff\xff\n\0\xff\xff\xff\xff\n\0\xff\xff\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0#\0#\0#\0#\0#\0#\0#\0#\0#\0#\0+\0+\0+\0+\0+\0+\0+\0+\0+\0+\0c\0#\0,\0,\0,\0,\0,\0,\0,\0,\0,\0,\x000\x000\x000\x000\x000\x000\x000\x000\x000\x000\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff#\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff#\0\xff\xff\xff\xff\xff\xff+\0\xff\xff\xff\xff]\0\xff\xff\xff\xff\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\xff\xff\v\0\v\0\v\0\v\0\v\0\v\0\v\0\v\0\xff\xff\xff\xff\xff\xff\xff\xff\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\xff\xff\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\n\0\r\0\xff\xff\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\r\0\xff\xff\xff\xff\xff\xff\xff\xffJ\0\xff\xff.\0.\0\xff\xffJ\0J\0\r\0J\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\r\0\xff\xff\xff\xff\x0e\0\xff\xff\x0e\0\x0e\0\x0e\0\x0e\0\x0e\0\x0e\0\x0e\0\x0e\0\x0e\0\x0e\0\xff\xff.\0\xff\xff\xff\xff\r\0\xff\xff\xff\xff\xff\xff\x0e\0\xff\xff\r\0\x0e\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\r\0\x0e\0\r\0.\0\x0e\0B\0B\0B\0B\0B\0B\0B\0B\0\x0e\0\xff\xff\xff\xff.\0\xff\xff.\0\xff\xff\x0e\0\xff\xff\xff\xff\x0e\0\xff\xff\xff\xff\x0e\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x0e\0\xff\xff\x0e\0\x0e\0\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffJ\0\xff\xff\x0e\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\xff\xff\xff\xff\xff\xff\x0f\0\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0&\0&\0&\0&\0&\0&\0&\0&\0&\0&\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff&\0&\0&\0&\0&\0&\0;\0;\0;\0;\0;\0;\0;\0;\0;\0;\0=\0=\0=\0=\0=\0=\0=\0=\0=\0=\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff&\0&\0&\0&\0&\0&\0J\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0Y\0\xff\xff\xff\xff\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\xff\xff\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x0f\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0-\0-\0-\0-\0-\0-\0-\0-\0/\0/\0/\0/\0/\0/\0/\0/\0/\0/\0[\0[\0[\0[\0[\0[\0[\0[\0[\0[\0-\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff-\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff/\0\xff\xff\xff\xff\xff\xff\xff\xff-\0\xff\xff-\0\xff\xff\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\xff\xff\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\xff\xff\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x10\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\xff\xff\xff\xff\xff\xff\x11\0\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0(\0\xff\xff(\0(\0(\0(\0(\0(\0(\0(\0(\0(\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff(\0(\0(\0(\0(\0(\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff(\0\xff\xff\xff\xff\xff\xff(\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff(\0\xff\xff(\0(\0(\0(\0(\0(\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff(\0\xff\xff(\0\xff\xff(\0\xff\xff\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\xff\xff\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x11\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0:\0:\0:\0:\0:\0:\0:\0:\0:\0:\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff:\0:\0:\0:\0:\0:\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff:\0:\0:\0:\0:\0:\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\xff\xff\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\xff\xff\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x12\0\x13\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\xff\xff\xff\xff\xff\xff\xff\xff\x13\0\xff\xff\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0*\0*\0*\0*\0*\0*\0*\0*\0*\0*\0M\0\xff\xff\xff\xffM\0\xff\xff\xff\xff\xff\xff*\0*\0*\0*\0*\0*\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff*\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffM\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff*\0\xff\xff*\0*\0*\0*\0*\0*\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff*\0\xff\xff\xff\xff\xff\xff\xff\xff\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0M\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x14\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x13\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\xff\xff\xff\xff\xff\xff\xff\xff\x14\0\xff\xff\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0?\0?\0?\0?\0?\0?\0?\0?\0?\0?\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffE\0?\0?\0?\0?\0?\0?\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffE\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffM\0?\0?\0?\0?\0?\0?\0E\0E\0E\0E\0E\0E\0E\0E\0E\0E\0\xff\xff\xff\xff\xff\xff\xff\xff\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\xff\xff\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\xff\xff\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x14\0\x15\0\xff\xff\xff\xff\x15\0\x15\0\x15\0\xff\xff\xff\xffD\0\x15\0\x15\0D\0\x15\0\x15\0\x15\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x15\0\xff\xff\x15\0\x15\0\x15\0\x15\0\x15\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffD\0D\0D\0D\0D\0D\0D\0D\0D\0D\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x15\0\x15\0\xff\xff\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\xff\xff\x15\0\x16\0\x15\0\xff\xff\x16\0\x16\0\x16\0\xff\xff\xff\xff\xff\xff\x16\0\x16\0\xff\xff\x16\0\x16\0\x16\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x16\0\xff\xff\x16\0\x16\0\x16\0\x16\0\x16\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x16\0\x16\0\xff\xff\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\xff\xff\x16\0\xff\xff\x16\0\xff\xff\xff\xff\xff\xff\xff\xff\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\xff\xff\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\x15\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffD\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x1a\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x16\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\xff\xff\xff\xff\xff\xff\xff\xff\x1a\0\xff\xff\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\xff\xff\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1c\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1a\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\xff\xff\xff\xff\xff\xff\xff\xff\x1c\0\xff\xff\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\xff\xff\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1e\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1c\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\xff\xff\xff\xff\xff\xff\xff\xff\x1e\0\xff\xff\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\xff\xff\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\xff\xff\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1e\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\xff\xff\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1f\0\x1f\0\x1f\0\x1f\0\xff\xff\x1f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0\x1f\0 \0\xff\xff\xff\xff \0 \0 \0\xff\xff\xff\xff\xff\xff \0 \0\xff\xff \0 \0 \0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1f\0\xff\xff \0\xff\xff \0 \0 \0 \0 \0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x1f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff \0\xff\xff\xff\xff\x1f\0\xff\xff\xff\xff\xff\xff!\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0\xff\xff\xff\xff\xff\xff\xff\xff \0\xff\xff \0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0\xff\xff\xff\xff\xff\xff\xff\xff!\0\xff\xff!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff2\0\xff\xff2\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\0\xff\xff2\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0\xff\xff!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0!\0\xff\xff!\0!\0!\0!\0!\0!\0!\0!\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\x002\0\xff\xff2\x002\x002\x002\x002\x002\x002\x002\x003\0\xff\xff3\0\xff\xff\xff\xff\xff\xff\xff\xff3\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff3\x003\x003\x003\x003\x003\x003\x003\x003\x003\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff3\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff3\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff3\x003\x005\0\xff\xff3\0\xff\xff3\0\xff\xff\xff\xff\xff\xff3\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff5\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\0\xff\xff\xff\xff\xff\xff\xff\xff5\0\xff\xff5\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff5\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\0\xff\xff5\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x005\x006\x005\x005\x005\x005\x005\x005\x005\x005\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff6\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\xff\xff\xff\xff\xff\xff\xff\xff6\0\xff\xff6\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff6\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\0\xff\xff6\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x006\x007\x006\x006\x006\x006\x006\x006\x006\x006\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff7\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\0\xff\xff\xff\xff\xff\xff\xff\xff7\0\xff\xff7\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffN\0\xff\xffN\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0\xff\xffN\0\xff\xff\xff\xff\xff\xffU\0\xff\xffU\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0\xff\xffU\0\xff\xff7\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\0\xff\xff7\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\x007\0\xff\xff7\x007\x007\x007\x007\x007\x007\x007\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0N\0\xff\xffN\0N\0N\0N\0N\0N\0N\0N\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0U\0\xff\xffU\0U\0U\0U\0U\0U\0U\0U\0V\0\xff\xffV\0\xff\xff\xff\xff\xff\xff\xff\xffV\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffV\0V\0V\0V\0V\0V\0V\0V\0V\0V\0f\0\xff\xfff\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0\xff\xff\xff\xfff\0\xff\xff\xff\xff\xff\xffV\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffV\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffV\0\xff\xff\xff\xff\xff\xffV\0h\0V\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0\xff\xff\xff\xffh\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xfff\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0f\0\xff\xfff\0f\0f\0f\0f\0f\0f\0f\0\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffh\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0h\0\xff\xffh\0h\0h\0h\0h\0h\0h\0h\0\xff\xff',str,str,str,str,str,str];function
-fC(b){for(;;){var
+fE(b){for(;;){var
 a=93;a:for(;;){a=bX(ch,a,b);if(3>=a>>>0)switch(a){case
 1:case
 3:break a;default:return}caml_call1(b[1],b)}}}function
-fD(c,b){for(;;){var
+fF(c,b){for(;;){var
 a=99;a:for(;;){a=bX(ch,a,b);if(2>=a>>>0)switch(a){case
 2:break a;case
 0:a=cP(b,b[5]+1|0,b[6]-1|0)!==c?1:0;if(a)break a;return a;default:return}caml_call1(b[1],b)}}}var
-num_4202096=4202096,ei=[0,str,1,0,0],fE=[0,num_4202096,0],iA=[0,num_4202096,4],iB=[0,num_4202096,4],iC=[0,num_4202096,1],iD=[0,num_4202096,3],iE=[0,num_4202096,6],iF=[0,num_4202096,7],iG=[0,num_4202096,9],iH=[0,num_4202096,9],iI=[0,num_4202096,8],iJ=[0,num_4202096,5],iK=[0,num_4202096,12],iL=[0,num_4202096,11],iM=[0,num_4202096,10],iN=[0,num_4202096,13];function
-fF(h){var
-b=[0,function(a){a[9]=1;return 0},cJ(caml_bytes_of_string(h)),caml_ml_string_length(h),0,0,0,0,0,1,[0],ei,ei],g=0,k=0,j=1,i=0;for(;;){var
-e=ej(b),a=0;for(;;){a=bX(ch,a,b);if(17>=a>>>0)break;caml_call1(b[1],b)}var
+num_4202096=4202096,ek=[0,str,1,0,0],fG=[0,num_4202096,0],iC=[0,num_4202096,4],iD=[0,num_4202096,4],iE=[0,num_4202096,1],iF=[0,num_4202096,3],iG=[0,num_4202096,6],iH=[0,num_4202096,7],iI=[0,num_4202096,9],iJ=[0,num_4202096,9],iK=[0,num_4202096,8],iL=[0,num_4202096,5],iM=[0,num_4202096,12],iN=[0,num_4202096,11],iO=[0,num_4202096,10],iP=[0,num_4202096,13];function
+fH(h){var
+b=[0,function(a){a[9]=1;return 0},cJ(caml_bytes_of_string(h)),caml_ml_string_length(h),0,0,0,0,0,1,[0],ek,ek],g=0,k=0,j=1,i=0;for(;;){var
+e=el(b),a=0;for(;;){a=bX(ch,a,b);if(17>=a>>>0)break;caml_call1(b[1],b)}var
 d=345242790;switch(a){case
 0:a=d;break;case
 1:a=1;a:for(;;){var
 c=74;b:for(;;){c=bX(ch,c,b);if(6>=c>>>0)switch(c){case
 0:a=a+1|0;break b;case
-1:if(1<a){a=a-1|0;break b}a=fE;break a;case
-2:fC(b);break b;case
-3:fD(cP(b,b[5]+1|0,b[6]-1|0),b);break b;case
-5:a=fE;break a;default:break b}caml_call1(b[1],b)}}break;case
-5:a=br(fB,bV(b[2],b[5],b[6]-b[5]|0))?1:2;a=[0,num_4202096,a];break;case
-9:fC(b);a=iG;break;case
-10:fD(cP(b,b[5]+1|0,b[6]-1|0),b);a=iH;break;case
+1:if(1<a){a=a-1|0;break b}a=fG;break a;case
+2:fE(b);break b;case
+3:fF(cP(b,b[5]+1|0,b[6]-1|0),b);break b;case
+5:a=fG;break a;default:break b}caml_call1(b[1],b)}}break;case
+5:a=br(fD,bV(b[2],b[5],b[6]-b[5]|0))?1:2;a=[0,num_4202096,a];break;case
+9:fE(b);a=iI;break;case
+10:fF(cP(b,b[5]+1|0,b[6]-1|0),b);a=iJ;break;case
 16:a=3456156;break;case
-2:a=iA;break;case
-3:a=iB;break;case
-4:a=iC;break;case
-6:a=iD;break;case
-7:a=iE;break;case
-8:a=iF;break;case
-11:a=iI;break;case
-12:a=iJ;break;case
-13:a=iK;break;case
-14:a=iL;break;case
-15:a=iM;break;default:a=iN}if(typeof
+2:a=iC;break;case
+3:a=iD;break;case
+4:a=iE;break;case
+6:a=iF;break;case
+7:a=iG;break;case
+8:a=iH;break;case
+11:a=iK;break;case
+12:a=iL;break;case
+13:a=iM;break;case
+14:a=iN;break;case
+15:a=iO;break;default:a=iP}if(typeof
 a==="number"){if(d>a)return o(i)}else{a=a[2];d=k;c=j;var
-l=f(h,e,ej(b)-e|0);for(;;){if(g>=e){k=d;j=c;i=[0,[0,a,l,e,c,e-d|0],i];break}if(10===caml_string_get(h,g)){d=g+1|0;c=c+1|0}g=g+1|0}}}}function
-fG(a){var
+l=f(h,e,el(b)-e|0);for(;;){if(g>=e){k=d;j=c;i=[0,[0,a,l,e,c,e-d|0],i];break}if(10===caml_string_get(h,g)){d=g+1|0;c=c+1|0}g=g+1|0}}}}function
+fI(a){var
 b=4<=caml_ml_string_length(a)?1:0,a=b?f(a,0,4)==="caps"?1:0:b;return a}function
-dC(b){var
+dD(b){var
 a=0===b[1]?1:0;if(a){a=6<=caml_ml_string_length(b[2])?1:0;a=a?f(b[2],0,6)==="(*****"?1:0:a}return a}function
-ja(a){var
-b=0,a=fF(a);for(;;){if(!a)return bU(caml_string_compare,b);var
+jc(a){var
+b=0,a=fH(a);for(;;){if(!a)return bU(caml_string_compare,b);var
 c=a[1],d=a[2];a:if(d){var
 e=d[1];if(3===c[1]&&e[2]===str$13){b=[0,c[2],b];a=d;continue}if(c[2]!==str_open&&c[2]!==str_include)break a;if(3===e[1]){b=[0,e[2],b];a=d;continue}}a=a[2]}}function
 ci(b,c){var
 a=caml_ml_string_length(b)<=caml_ml_string_length(c)?1:0,a=a?f(c,0,caml_ml_string_length(b))===b?1:0:a;return a}var
 str_languages="languages/";function
-fH(a,b){a=dd(a);a=dd(b)===a?1:0;if(a);else{a=ci("gamekits/",b);if(a);else{a=ci("appkits/",b);if(!a)return ci(str_languages,b)}}return a}var
-aj=".mly",aK=".mll",cB=".ml",jb=[0,cB,[0,aK,[0,aj,0]]];function
-fI(c){var
-a=jb;for(;;){if(!a)return 0;var
-b=a[2],a=eT(c,a[1]);if(a)return a;a=b}}var
+fJ(a,b){a=dd(a);a=dd(b)===a?1:0;if(a);else{a=ci("gamekits/",b);if(a);else{a=ci("appkits/",b);if(!a)return ci(str_languages,b)}}return a}var
+aj=".mly",aK=".mll",cB=".ml",jd=[0,cB,[0,aK,[0,aj,0]]];function
+fK(c){var
+a=jd;for(;;){if(!a)return 0;var
+b=a[2],a=eV(c,a[1]);if(a)return a;a=b}}var
 str_mli=".mli";function
-fJ(a,d){var
+fL(a,d){var
 b=a?a[1]:function(a){return 1};return function(g){var
 i=K(0,num_1024),j=K(0,num_4096),a=d;for(;;){if(!a)break;var
-f=a[2],a=a[1],e=a[1];$(j,e,a[2]);a=fI(e);a=a?1-ci("playground/platforms",e):a;if(a){a=ef(eV(eU(e)));$(i,a,[0,e,bk(aB(i,a),0)]);a=f}else
+f=a[2],a=a[1],e=a[1];$(j,e,a[2]);a=fK(e);a=a?1-ci("playground/platforms",e):a;if(a){a=eh(eX(eW(e)));$(i,a,[0,e,bk(aB(i,a),0)]);a=f}else
 a=f}a=K(0,num_256);f=0;g=[0,g,0];for(;;){if(!g)break;var
-h=g[1],e=g[2];if(br(a,h))g=e;else{g=g[2];$(a,h,0);e=aB(j,h);f=[0,h,f];if(e){e=ja(e[1]);e=ao(function(a){a=aB(i,a);if(a){a=a[1];if(a&&!a[2]){a=a[1];if(caml_call1(b,a))return[0,a]}}return 0})(e)}else
-e=0;g=c(g,e)}}a=o(f);g=0;for(;;){if(!a)return o(g);f=a[1];a=a[2];h=eV(f)+str_mli;a:{if(fI(f)&&br(j,h)){f=[0,h,[0,f,0]];break a}f=[0,f,0]}g=O(f,g)}}}function
-dD(a){if(0!==a[0])return a[2];a=a[2];var
+h=g[1],e=g[2];if(br(a,h))g=e;else{g=g[2];$(a,h,0);e=aB(j,h);f=[0,h,f];if(e){e=jc(e[1]);e=ao(function(a){a=aB(i,a);if(a){a=a[1];if(a&&!a[2]){a=a[1];if(caml_call1(b,a))return[0,a]}}return 0})(e)}else
+e=0;g=c(g,e)}}a=o(f);g=0;for(;;){if(!a)return o(g);f=a[1];a=a[2];h=eX(f)+str_mli;a:{if(fK(f)&&br(j,h)){f=[0,h,[0,f,0]];break a}f=[0,f,0]}g=O(f,g)}}}function
+dE(a){if(0!==a[0])return a[2];a=a[2];var
 b=0.;for(;;){if(!a)return b;var
-c=a[2],b=b+dD(a[1]);a=c}}function
-fK(a){for(;;){if(0!==a[0])return a;var
+c=a[2],b=b+dE(a[1]);a=c}}function
+fM(a){for(;;){if(0!==a[0])return a;var
 c=a[1],d=a[2];if(d){var
-b=d[1];if(0===b[0]&&!d[2]){a=b[1];b=b[2];a=c===str?a:c+str$7+a;a=[0,a,b];continue}}return[0,c,p(fK,a[2])]}}function
-fL(g,e,a){var
+b=d[1];if(0===b[0]&&!d[2]){a=b[1];b=b[2];a=c===str?a:c+str$7+a;a=[0,a,b];continue}}return[0,c,p(fM,a[2])]}}function
+fN(g,e,a){var
 c=e,b=0.;for(;;){if(!c)break;var
 f=b+c[1];c=c[2];b=f}var
 d=[0,0.];return p(function(c){c=0.<b?c/b:0.;var
 e=d[1];d[1]=d[1]+c;return g?[num_254,a[1]+e*a[3],a[2],c*a[3],a[4]]:[num_254,a[1],a[2]+e*a[4],a[3],c*a[4]]},e)}function
-fM(d,c){var
-a=d,b=0.;for(;;){if(!a){a=d8(v,0.,d);return v(c*c*a/(b*b),b*b/(c*c*d8(s,Infinity,d)))}b+=a[1];a=a[2]}}function
-fN(g,f,a){for(;;){var
+fO(d,c){var
+a=d,b=0.;for(;;){if(!a){a=d_(w,0.,d);return w(c*c*a/(b*b),b*b/(c*c*d_(s,Infinity,d)))}b+=a[1];a=a[2]}}function
+fP(g,f,a){for(;;){var
 b=s(a[3],a[4]);if(!g)break;var
 d=g[1],e=g[2];if(0!==f){var
-h=fM(f,b);if(!(fM(c(f,[0,d,0]),b)<=h))break}g=e;f=c(f,[0,d,0])}d=f;e=0.;for(;;){if(!d)break;e+=d[1];d=d[2]}b=0.<b?e/b:0.;if(a[4]<=a[3]){d=[num_254,a[1]+b,a[2],a[3]-b,a[4]];b=[num_254,a[1],a[2],b,a[4]]}else{d=[num_254,a[1],a[2]+b,a[3],a[4]-b];b=[num_254,a[1],a[2],a[3],b]}e=fL(a[3]<a[4]?1:0,f,b);return 0===g?e:c(e,fN(g,0,d))}var
-str$12="=",str$10="->",str$18="]",str$5="}",str$8="|]",dB=caml_list_of_js_array([str_let,str_type,str_module,str_val,str_external,str_exception,str_open,str_include,e,str_method,str_end]),i4=[0,1],iZ=[0,am,[0,str$20,[0,str$11,[0,str$3,[0,str$15,[0,str$6,0]]]]]],i0=[0,5],i1=[0,2],iU=[0,2],iW=[0,str_fun,[0,H,0]],iV=[0,str$12,0],iX=[0,10],iY=[0,str$12,0],iT=[0,1],i8=[0,str$10,0],i9=[0,3],i5=[0,str_type,[0,str_rec,0]],i6=[0,3],i7=[0,str_open,[0,str_module,[0,str_exception,0]]],i2=[0,Z,[0,V,[0,bh,0]]],i3=[0,2],i_=[0,3],i$=[0,str_open,[0,str_include,0]],iO=[0,a,[0,str_end,[0,ax,[0,str_true,[0,str_false,[0,M,0]]]]]],iP=[0,str$11,[0,str$18,[0,str$5,[0,";;",[0,str$8,0]]]]],iQ=caml_list_of_js_array([aL,bN,an,P,ay,R,b,Y,C,j,ax,B,y,H,str_fun]),iR=[0,str_module,[0,a,[0,M,[0,str_end,[0,str_open,[0,str_include,[0,bM,0]]]]]]];function
-iS(n){var
-p=aN(J(function(a){return 0!==a[1]?1:0})(n)),l=p.length-1,u=caml_make_vect(l,23),y=caml_make_vect(l,0);function
+h=fO(f,b);if(!(fO(c(f,[0,d,0]),b)<=h))break}g=e;f=c(f,[0,d,0])}d=f;e=0.;for(;;){if(!d)break;e+=d[1];d=d[2]}b=0.<b?e/b:0.;if(a[4]<=a[3]){d=[num_254,a[1]+b,a[2],a[3]-b,a[4]];b=[num_254,a[1],a[2],b,a[4]]}else{d=[num_254,a[1],a[2]+b,a[3],a[4]-b];b=[num_254,a[1],a[2],a[3],b]}e=fN(a[3]<a[4]?1:0,f,b);return 0===g?e:c(e,fP(g,0,d))}var
+str$12="=",str$10="->",str$18="]",str$5="}",str$8="|]",dC=caml_list_of_js_array([str_let,str_type,str_module,str_val,str_external,str_exception,str_open,str_include,e,str_method,str_end]),i6=[0,1],i1=[0,am,[0,str$20,[0,str$11,[0,str$3,[0,str$15,[0,str$6,0]]]]]],i2=[0,5],i3=[0,2],iW=[0,2],iY=[0,str_fun,[0,I,0]],iX=[0,str$12,0],iZ=[0,10],i0=[0,str$12,0],iV=[0,1],i_=[0,str$10,0],i$=[0,3],i7=[0,str_type,[0,str_rec,0]],i8=[0,3],i9=[0,str_open,[0,str_module,[0,str_exception,0]]],i4=[0,Z,[0,V,[0,bh,0]]],i5=[0,2],ja=[0,3],jb=[0,str_open,[0,str_include,0]],iQ=[0,a,[0,str_end,[0,ax,[0,str_true,[0,str_false,[0,M,0]]]]]],iR=[0,str$11,[0,str$18,[0,str$5,[0,";;",[0,str$8,0]]]]],iS=caml_list_of_js_array([aL,bN,an,P,ay,R,b,Y,E,j,ax,D,z,I,str_fun]),iT=[0,str_module,[0,a,[0,M,[0,str_end,[0,str_open,[0,str_include,[0,bM,0]]]]]]];function
+iU(n){var
+p=aN(A(function(a){return 0!==a[1]?1:0})(n)),l=p.length-1,u=caml_make_vect(l,23),z=caml_make_vect(l,0);function
 e(a){if(0<=a&&a<l)return caml_check_bound(p,a)[a+1][2];return str}function
 j(a){if(0<=a&&a<l)return[0,caml_check_bound(p,a)[a+1][1]];return 0}function
 m(a,c){var
-b=0<=a,b=b?a<l:b;if(b){caml_check_bound(u,a)[a+1]=c;caml_check_bound(y,a)[a+1]=1}}var
+b=0<=a,b=b?a<l:b;if(b){caml_check_bound(u,a)[a+1]=c;caml_check_bound(z,a)[a+1]=1}}var
 q=K(0,16),r=K(0,16),str$0="[",str$1="{";function
-v(b,k,i,h){var
-g=0,d=0;for(;;){a:if(b<l){if(0===d&&z(e(b),k))break a;if(caml_equal(j(b),iT)&&z(e(b),dB))break a;var
+w(b,k,i,h){var
+g=0,d=0;for(;;){a:if(b<l){if(0===d&&v(e(b),k))break a;if(caml_equal(j(b),iV)&&v(e(b),dC))break a;var
 c=j(b),a=e(b);if(c)switch(c[1]){case
-2:if(g||!(e(b-1|0)!==str$13&&a!==str$9));else{$(h,a,0);a=fG(a)?17:i;m(b,a)}break;case
+2:if(g||!(e(b-1|0)!==str$13&&a!==str$9));else{$(h,a,0);a=fI(a)?17:i;m(b,a)}break;case
 4:a=f(a,1,caml_ml_string_length(a)-1|0);c=a!==str;c=c?58!==caml_string_get(a,caml_ml_string_length(a)-1|0):c;if(c)$(h,a,0);break;case
 10:if(a!==str$4);else
 g=1;break;case
 11:b:if(a!==str$20){if(a!==str$11){if(a===str$0)break b;if(a!==str$18){if(a===str$1)break b;if(a!==str$5)break}}g=0;d=d-1|0;break}d=d+1|0;break}b=b+1|0;continue}return}}function
-w(a,b){a=e(a)===str_rec?a+1|0:a;if(caml_equal(j(a),iU)){var
-c=e(a+1|0),c=c!==str$4?c!==str$12?1:z(e(a+2|0),iW):0,c=b?c?5:6:10;m(a,c);if(1-b)$(r,e(a),0);b=b?q:r;return v(a+1|0,iV,9,b)}if(e(a)===str$20&&caml_equal(j(a+1|0),iX)&&e(a+2|0)===str$11){b=b?5:10;return m(a+1|0,b)}c=b?q:r;b=b?6:10;return v(a,iY,b,c)}function
-A(a){for(;;){a:if(a<l){if(!z(e(a),iZ)&&!caml_equal(j(a),i0))break a;a=a+1|0;continue}var
-b=caml_equal(j(a),i1);return b?m(a,7):b}}var
+x(a,b){a=e(a)===str_rec?a+1|0:a;if(caml_equal(j(a),iW)){var
+c=e(a+1|0),c=c!==str$4?c!==str$12?1:v(e(a+2|0),iY):0,c=b?c?5:6:10;m(a,c);if(1-b)$(r,e(a),0);b=b?q:r;return w(a+1|0,iX,9,b)}if(e(a)===str$20&&caml_equal(j(a+1|0),iZ)&&e(a+2|0)===str$11){b=b?5:10;return m(a+1|0,b)}c=b?q:r;b=b?6:10;return w(a,i0,b,c)}function
+B(a){for(;;){a:if(a<l){if(!v(e(a),i1)&&!caml_equal(j(a),i2))break a;a=a+1|0;continue}var
+b=caml_equal(j(a),i3);return b?m(a,7):b}}var
 s=l-1|0;if(s>=0){var
 t=870530776,c=t,h=0,g=0,k=0,d=0;for(;;){var
-i=caml_check_bound(p,d)[d+1],a=1===i[1],a=a?z(i[2],dB):a,g=a?0:g,a=i[1],b=i[2];a:if(12<=a);else{switch(a){case
+i=caml_check_bound(p,d)[d+1],a=1===i[1],a=a?v(i[2],dC):a,g=a?0:g,a=i[1],b=i[2];a:if(12<=a);else{switch(a){case
 1:if(b!==str_in)break a;g=0;break a;case
 10:if(b!==str$12)break a;break;case
-11:b:if(b!==str$20){if(b!==str$11){if(b===";")break;if(b===str$0)break b;if(b==="[|")break b;if(b!==str$18){if(b===str$1)break b;if(b!==str$8&&b!==str$5)break a}}k=k-1|0;if(!g)break a;if(k<g[1]){g=0;break a}break a}k=k+1|0;break a;default:break a}if(g&&k<=g[1])g=0}if(1-caml_check_bound(y,d)[d+1]){b=0!==g;b||=h;a="Cap";switch(i[1]){case
+11:b:if(b!==str$20){if(b!==str$11){if(b===";")break;if(b===str$0)break b;if(b==="[|")break b;if(b!==str$18){if(b===str$1)break b;if(b!==str$8&&b!==str$5)break a}}k=k-1|0;if(!g)break a;if(k<g[1]){g=0;break a}break a}k=k+1|0;break a;default:break a}if(g&&k<=g[1])g=0}if(1-caml_check_bound(z,d)[d+1]){b=0!==g;b||=h;a="Cap";switch(i[1]){case
 0:a=0;break;case
 1:a=i[2];b=caml_string_compare(a,str_let);a:{b:{var
-x=937565914,num_3802043=3802043;if(0<=b){if(0>=b){c=0===i[5]?1:0;c:if(c);else{c=0===d?1:0;if(c);else{c=d-1|0;c=caml_check_bound(p,c)[c+1];a=c[1];if(12>a)switch(a){case
-1:c=z(c[2],iO);break c;case
-11:c=z(c[2],iP);break c;case
+y=937565914,num_3802043=3802043;if(0<=b){if(0>=b){c=0===i[5]?1:0;c:if(c);else{c=0===d?1:0;if(c);else{c=d-1|0;c=caml_check_bound(p,c)[c+1];a=c[1];if(12>a)switch(a){case
+1:c=v(c[2],iQ);break c;case
+11:c=v(c[2],iR);break c;case
 0:case
-10:break;default:c=1;break c}c=0}}h=c?(es(q),es(r),0):h;a=c?-1005999919:num_3802043;if(1-z(e(d+1|0),i7))w(d+1|0,c);c=a;a=2;break}if(a!==str_method){if(a===str_module){h=z(e(d+1|0),i5)?d+2|0:d+1|0;if(caml_equal(j(h),i6))m(h,8);h=0;a=4;break}if(a===str_true)break b;if(a===str_type){a=e(d-1|0)!==str_module;a=a?e(d-1|0)!==str$4:a;if(a){A(d+1|0);h=1}else
-x=c;c=x;a=2;break}if(a!==str_val)break a}}else{if(a===str_and){if(t<=c){if(x<=c)A(d+1|0)}else if(num_3802043<=c)w(d+1|0,0);else
-w(d+1|0,1);a=2;break}if(a===str_exception){if(caml_equal(j(d+1|0),i9))m(d+1|0,7);h=1;a=3;break}if(a!==str_external){if(a===str_false)break b;if(a!==str_fun)break a;v(d+1|0,i8,9,q);a=3;break}}h=z(e(d+1|0),i2)?d+2|0:d+1|0;if(caml_equal(j(h),i3)){c:{if(a!==str_external){a=h+1|0;for(;;){b=a<l;if(b){b=caml_equal(j(a),i4);b=b?z(e(a),dB):b;b=1-b;if(b){b=e(a)===str$10;if(!b){a=a+1|0;continue}}}if(b)break;a=6;break c}}a=5}m(h,a)}h=0;a=2;break}a=13;break}if(z(a,iR))a=4;else if(z(a,iQ))a=3;else
+10:break;default:c=1;break c}c=0}}h=c?(eu(q),eu(r),0):h;a=c?-1005999919:num_3802043;if(1-v(e(d+1|0),i9))x(d+1|0,c);c=a;a=2;break}if(a!==str_method){if(a===str_module){h=v(e(d+1|0),i7)?d+2|0:d+1|0;if(caml_equal(j(h),i8))m(h,8);h=0;a=4;break}if(a===str_true)break b;if(a===str_type){a=e(d-1|0)!==str_module;a=a?e(d-1|0)!==str$4:a;if(a){B(d+1|0);h=1}else
+y=c;c=y;a=2;break}if(a!==str_val)break a}}else{if(a===str_and){if(t<=c){if(y<=c)B(d+1|0)}else if(num_3802043<=c)x(d+1|0,0);else
+x(d+1|0,1);a=2;break}if(a===str_exception){if(caml_equal(j(d+1|0),i$))m(d+1|0,7);h=1;a=3;break}if(a!==str_external){if(a===str_false)break b;if(a!==str_fun)break a;w(d+1|0,i_,9,q);a=3;break}}h=v(e(d+1|0),i4)?d+2|0:d+1|0;if(caml_equal(j(h),i5)){c:{if(a!==str_external){a=h+1|0;for(;;){b=a<l;if(b){b=caml_equal(j(a),i6);b=b?v(e(a),dC):b;b=1-b;if(b){b=e(a)===str$10;if(!b){a=a+1|0;continue}}}if(b)break;a=6;break c}}a=5}m(h,a)}h=0;a=2;break}a=13;break}if(v(a,iT))a=4;else if(v(a,iS))a=3;else
 a=2;break;case
-2:if(fG(i[2]))a=17;else{if(e(d-1|0)===str$13&&caml_equal(j(d-2|0),i_)){if(e(d-2|0)===a){a=17;break}a=11;break}if(e(d-1|0)===str$13)a=23;else if(b)if(e(d+1|0)===str$4)if(h)a=23;else
+2:if(fI(i[2]))a=17;else{if(e(d-1|0)===str$13&&caml_equal(j(d-2|0),ja)){if(e(d-2|0)===a){a=17;break}a=11;break}if(e(d-1|0)===str$13)a=23;else if(b)if(e(d+1|0)===str$4)if(h)a=23;else
 a=16;else
 a=14;else if(br(q,i[2]))a=9;else if(br(r,i[2]))a=10;else
 a=23}break;case
-3:if(i[2]===a&&e(d+1|0)===str$13){a=17;break}if(e(d+1|0)!==str$13&&!z(e(d-1|0),i$)){a=13;break}a=12;break;case
+3:if(i[2]===a&&e(d+1|0)===str$13){a=17;break}if(e(d+1|0)!==str$13&&!v(e(d-1|0),jb)){a=13;break}a=12;break;case
 4:a=16;break;case
 5:a=15;break;case
 10:a=20;break;case
@@ -2800,86 +2802,86 @@ a=23}break;case
 12:a=22;break;case
 13:a=24;break;case
 6:case
-7:a=18;break;default:a=19}caml_check_bound(u,d)[d+1]=a}b=10===i[1];if(b){b=i[2]===str$4;b=b?0===g:b}g=b?[0,k]:g;b=d+1|0;if(s===d)break;d=b}}n=aN(n);t=n.length-1;s=t-1|0;b=0;if(s<0);else{k=0;g=0;for(;;){h=caml_check_bound(n,g)[g+1];a:if(0===h[1]){b:if(!dC(h)){if(0<g){c=g-1|0;if(dC(caml_check_bound(n,c)[c+1])&&(g+1|0)<t){c=g+1|0;if(dC(caml_check_bound(n,c)[c+1]))break b}}c=0;break a}c=1}else{k=k+1|0;c=k-1|0;c=caml_check_bound(u,c)[c+1]}b=[0,[0,h,c],b];h=g+1|0;if(s===g)break;g=h}}return o(b)}function
-jc(b,d){var
+7:a=18;break;default:a=19}caml_check_bound(u,d)[d+1]=a}b=10===i[1];if(b){b=i[2]===str$4;b=b?0===g:b}g=b?[0,k]:g;b=d+1|0;if(s===d)break;d=b}}n=aN(n);t=n.length-1;s=t-1|0;b=0;if(s<0);else{k=0;g=0;for(;;){h=caml_check_bound(n,g)[g+1];a:if(0===h[1]){b:if(!dD(h)){if(0<g){c=g-1|0;if(dD(caml_check_bound(n,c)[c+1])&&(g+1|0)<t){c=g+1|0;if(dD(caml_check_bound(n,c)[c+1]))break b}}c=0;break a}c=1}else{k=k+1|0;c=k-1|0;c=caml_check_bound(u,c)[c+1]}b=[0,[0,h,c],b];h=g+1|0;if(s===g)break;g=h}}return o(b)}function
+je(b,d){var
 a=b,e=0.;for(;;){if(!a)break;var
 f=e+a[1];a=a[2];e=f}if(0===b)return 0;if(e<=0.)return p(function(a){return[num_254,d[1],d[2],0.,0.]},b);a=bT(function(b,a){return caml_float_compare(a[2],b[2])},cH(function(b,a){return[0,b,a]},b));var
-h=d[3]*d[4],c=fN(p(function(a){return a[2]/e*h},a),0,d),b=caml_make_vect(I(b),d);for(;;){a:{if(a){if(c){var
+h=d[3]*d[4],c=fP(p(function(a){return a[2]/e*h},a),0,d),b=caml_make_vect(J(b),d);for(;;){a:{if(a){if(c){var
 g=a[1][1],f=c[2],c=c[1],a=a[2];caml_check_bound(b,g)[g+1]=c;c=f;continue}}else if(!c)break a;l("List.iter2")}return bW(b)}}function
-fO(a){return aN(p(function(a){return a===str?0:[0,[0,0,a,23],0]},af(10,a)))}function
+fQ(a){return aN(p(function(a){return a===str?0:[0,[0,0,a,23],0]},af(10,a)))}function
 cj(a){return a[2].length-1}function
-fP(a){return[num_254,0.,0.,a[3],a[4]]}var
+fR(a){return[num_254,0.,0.,a[3],a[4]]}var
 num_80=80.;function
-jf(g,a){var
-c=D(1,a);function
+jh(g,a){var
+c=F(1,a);function
 d(a){var
 b=caml_div((c+a|0)-1|0,a),d=g[3]/a;return[0,a,b,d,d/num_80,g[4]/b]}function
 e(a){return Math.abs(Math.log(a[5]/a[4]/2.))}var
 a=2,b=d(1);for(;;){if(u(c,64)<a)return b;var
 f=d(a),h=e(b),b=e(f)<h?f:b;a=a+1|0}}function
-fQ(a,f,e){function
+fS(a,f,e){function
 b(f,d){var
 e=ao(function(b){var
-a=b[1];if(a&&!a[2])return[0,[1,a[1],b[2],b[3]]];return 0})(d),a=J(function(a){a=a[1];if(a&&a[2])return 1;return 0})(d);return[0,f,c(p(function(c){return b(c,ao(function(a){var
+a=b[1];if(a&&!a[2])return[0,[1,a[1],b[2],b[3]]];return 0})(d),a=A(function(a){a=a[1];if(a&&a[2])return 1;return 0})(d);return[0,f,c(p(function(c){return b(c,ao(function(a){var
 b=a[1];if(b){var
 d=b[2],e=a[3],a=a[2];if(b[1]===c&&0!==d)return[0,[0,d,a,e]]}return 0})(a))},bU(caml_string_compare,p(function(a){a=a[1];return a?a[1]:str},a))),e)]}var
-e=fK(b(str,p(function(a){var
+e=fM(b(str,p(function(a){var
 b=a[3],c=a[2];return[0,af(47,a[1]),c,b]},p(function(a){var
-b=D(1,a[2]);return[0,a[1],b,a]},e))));function
+b=F(1,a[2]);return[0,a[1],b,a]},e))));function
 d(i,h,a,b,g){h=h===str?b[1]:b[1]===str?h:h+str$7+b[1];if(0===b[0]||!(0<i));else
 var
-c=s(a[3],a[4])*.015,e=v(0.,a[4]-2.*c),j=v(0.,a[3]-2.*c),a=[num_254,a[1]+c,a[2]+c,j,e];g=[0,[0,a,i,h,b],g];if(0!==b[0])return g;b=b[2];b=J(function(a){return 0.<dD(a)?1:0})(b);if(0===i);else{e=1<i?num_0_02:.012;e*=s(a[3],a[4]);c=v(0.,a[4]-2.*e);j=v(0.,a[3]-2.*e);a=[num_254,a[1]+e,a[2]+e,j,c]}c=p(dD,b);if(f)a=fL(0===(i%2|0)?1:0,c,a);else
-a=jc(c,a);for(;;){if(b){if(a){c=a[2];e=b[2];g=d(i+1|0,h,a[1],b[1],g);b=e;a=c;continue}}else if(!a)return g;return l("List.fold_left2")}}var
-a=aN(o(d(0,str,fP(a),e,0)));return[0,a,ag(function(b){var
-a=b[4];return 0===a[0]?0:[0,jf(b[1],a[3][2])]},a)]}function
+c=s(a[3],a[4])*.015,e=w(0.,a[4]-2.*c),j=w(0.,a[3]-2.*c),a=[num_254,a[1]+c,a[2]+c,j,e];g=[0,[0,a,i,h,b],g];if(0!==b[0])return g;b=b[2];b=A(function(a){return 0.<dE(a)?1:0})(b);if(0===i);else{e=1<i?num_0_02:.012;e*=s(a[3],a[4]);c=w(0.,a[4]-2.*e);j=w(0.,a[3]-2.*e);a=[num_254,a[1]+e,a[2]+e,j,c]}c=p(dE,b);if(f)a=fN(0===(i%2|0)?1:0,c,a);else
+a=je(c,a);for(;;){if(b){if(a){c=a[2];e=b[2];g=d(i+1|0,h,a[1],b[1],g);b=e;a=c;continue}}else if(!a)return g;return l("List.fold_left2")}}var
+a=aN(o(d(0,str,fR(a),e,0)));return[0,a,ag(function(b){var
+a=b[4];return 0===a[0]?0:[0,jh(b[1],a[3][2])]},a)]}function
 ck(b,a){var
 c=.96*s(b[3]/a[3],b[4]/a[4]);return[0,a[1]+a[3]/2.,a[2]+a[4]/2.,c,b]}function
-cl(a){a=ck(a,fP(a));return[0,a[1],a[2],1.,a[4]]}function
-fR(a){var
+cl(a){a=ck(a,fR(a));return[0,a[1],a[2],1.,a[4]]}function
+fT(a){var
 b=0;for(;;){if(!a)return b;b=b+a[1][2]|0;a=a[2]}}var
 str_lines=" lines";function
-dE(d){var
+dF(d){var
 f=str+d,h=caml_ml_string_length(f),e=bY(h+8|0),g=caml_ml_string_length(f)-1|0;if(g>=0){var
 a=0;for(;;){var
 b=0<a,c=caml_string_unsafe_get(f,a),b=b?0===((h-a|0)%3|0):b;if(b)bo(e,44);bo(e,c);c=a+1|0;if(g===a)break;a=c}}d=1===d?" line":str_lines;return cS(e)+d}function
-fS(a){return I(a[3])}function
+fU(a){return J(a[3])}function
 bw(a,b){return(b-a[1])*a[3]+a[4][3]/2.}function
 bx(a,b){return(b-a[2])*a[3]+a[4][4]/2.}function
 by(a,b){return a[1]+(b-a[4][3]/2.)/a[3]}function
 bz(a,b){return a[2]+(b-a[4][4]/2.)/a[3]}function
 aT(b,a){return b[1]+a}function
 bc(b,a){return b[2]-a}function
-dF(b,a){return a-b[1]}function
-dG(b,a){return b[2]-a}function
-dH(d,c,b){var
+dG(b,a){return a-b[1]}function
+dH(b,a){return b[2]-a}function
+dI(d,c,b){var
 a=0.<=c?1:0;if(a){a=c<d[3]?1:0;if(a){a=0.<=b?1:0;a=a?b<d[4]?1:0:a}}return a}function
-fT(b,d,c){var
+fV(b,d,c){var
 a=b[1]<=d?1:0;if(a){a=d<b[1]+b[3]?1:0;if(a){a=b[2]<=c?1:0;a=a?c<b[2]+b[4]?1:0:a}}return a}function
-dI(b,g,f){b=b[5];var
+dJ(b,g,f){b=b[5];var
 d=b.length-2|0,c=0;if(d<0);else{var
-a=0;for(;;){c=fT(b[a+1][1],g,f)?[0,a]:c;var
+a=0;for(;;){c=fV(b[a+1][1],g,f)?[0,a]:c;var
 e=a+1|0;if(d===a)break;a=e}}return c}function
-fU(a,b,d,c){return caml_mul((d-b[1])/a[3]|0,a[2])+((c-b[2])/a[5]|0)|0}var
-C=170,num_150=150,num_200$0=200,R=220,jh=[0,R,C,50],ji=[0,num_200$0,90,60],jj=[0,R,70,num_150],jk=[0,num_120,num_120,num_120],jl=[0,70,num_100,R],jm=[0,50,C,C],jn=[0,C,80,num_210],jo=[0,60,C,num_100],jg=[0,num_120,num_120,num_120];function
+fW(a,b,d,c){return caml_mul((d-b[1])/a[3]|0,a[2])+((c-b[2])/a[5]|0)|0}var
+E=170,num_150=150,num_200$0=200,R=220,jj=[0,R,E,50],jk=[0,num_200$0,90,60],jl=[0,R,70,num_150],jm=[0,num_120,num_120,num_120],jn=[0,70,num_100,R],jo=[0,50,E,E],jp=[0,E,80,num_210],jq=[0,60,E,num_100],ji=[0,num_120,num_120,num_120];function
 bd(a){var
-b=az(a,47),a=b?f(a,0,b[1]):a;return a!=="appkits"?a!=="apps"?a!=="gamekits"?a!=="games"?a!=="languages"?a!=="launcher"?a!=="libs"?a!=="playground"?jg:jh:ji:jj:jk:jl:jm:jn:jo}function
+b=az(a,47),a=b?f(a,0,b[1]):a;return a!=="appkits"?a!=="apps"?a!=="gamekits"?a!=="games"?a!=="languages"?a!=="launcher"?a!=="libs"?a!=="playground"?ji:jj:jk:jl:jm:jn:jo:jp:jq}function
 cm(a,e,d){function
 c(b,a){return e*b+(1.-e)*a|0}var
 f=d[2],g=d[1],b=a[2],h=a[1],a=c(a[3],d[3]),b=c(b,f);return[0,c(h,g),b,a]}var
-Y=ag(cf,dA);function
-dK(b,a){return 6.<=a[5]*b[3]?1:0}function
+Y=ag(cf,dB);function
+dL(b,a){return 6.<=a[5]*b[3]?1:0}function
 bA(a,d){function
-b(a){return D(1,caml_round_float(a*d)|0)}var
+b(a){return F(1,caml_round_float(a*d)|0)}var
 c=a[4],e=b(a[4][4]),f=b(a[4][3]);return[0,a[1],a[2],a[3]*d,[0,c[1],c[2],f,e]]}function
 aU(b,f,e,d,h,g){var
 a=f<d,k=g[3],j=g[2],g=g[1],a=a?e<h:a;if(a){a=d-1|0;if(a>=f){var
 i=f;for(;;){var
 c=4*(caml_mul(e,b[1])+i|0)|0;caml_ba_set_1(b[3],c,g);caml_ba_set_1(b[3],c+1|0,j);caml_ba_set_1(b[3],c+2|0,k);caml_ba_set_1(b[3],c+3|0,num_255);c=i+1|0;if(a===i)break;i=c}}d=4*(d-f|0)|0;a=e+1|0;h=h-1|0;e=caml_ba_sub(b[3],4*(caml_mul(e,b[1])+f|0)|0,d);if(h>=a)for(;;){caml_ba_blit(e,caml_ba_sub(b[3],4*(caml_mul(a,b[1])+f|0)|0,d));j=a+1|0;if(h===a)break;a=j}}}function
 cn(b,a){var
-d=D(0,caml_round_float(bw(b,a[1]))|0),c=caml_round_float(bw(b,a[1]+a[3]))|0,c=u(b[4][3],c),e=D(0,caml_round_float(bx(b,a[2]))|0),a=caml_round_float(bx(b,a[2]+a[4]))|0,a=u(b[4][4],a);if(c>d&&a>e)return[0,[0,d,e,c,a]];return 0}var
-jq=ag(function(a){return a[1]},Y),jr=ag(function(a){return a[2]},Y),js=ag(function(a){return a[3]},Y),num_16=16.;function
-jt(e,J,A,I,w,z,m,r){var
-B=m[3],s=m[2],x=m[1],m=m[4],K=cj(z),C=dK(A,w);a:{if(C&&e){var
+d=F(0,caml_round_float(bw(b,a[1]))|0),c=caml_round_float(bw(b,a[1]+a[3]))|0,c=u(b[4][3],c),e=F(0,caml_round_float(bx(b,a[2]))|0),a=caml_round_float(bx(b,a[2]+a[4]))|0,a=u(b[4][4],a);if(c>d&&a>e)return[0,[0,d,e,c,a]];return 0}var
+js=ag(function(a){return a[1]},Y),jt=ag(function(a){return a[2]},Y),ju=ag(function(a){return a[3]},Y),num_16=16.;function
+jv(e,J,A,I,w,z,m,r){var
+B=m[3],s=m[2],x=m[1],m=m[4],K=cj(z),C=dL(A,w);a:{if(C&&e){var
 d=2;break a}d=1}function
 D(a){return(a+num_0_5)/d}var
 e=caml_mul(B-x|0,d),E=caml_make_vect(e,0),F=caml_make_vect(e,0),G=caml_make_vect(e,0),e=e-1|0;if(e>=0){var
@@ -2890,36 +2892,36 @@ a=0,k=d-1|0;for(;;){var
 g=w[5],l=I[2],l=(bz(A,s+D(a))-l)/g,g=Math.floor(l)|0;caml_check_bound(e,a)[a+1]=g;g=u(15,(l-g)*num_16|0);caml_check_bound(c,a)[a+1]=g;g=a+1|0;if(k===a)break;a=g}g=B-1|0;if(g>=x){k=x;for(;;){a=4*(caml_mul(s,J[1])+k|0)|0;l=0;var
 v=0,p=0,j=d-1|0;for(;;){var
 y=0,q=d-1|0;for(;;){var
-t=caml_mul(k-x|0,d)+y|0,f=caml_check_bound(e,p)[p+1],h=F[t+1],i=caml_mul(E[t+1],H)+f|0;a:{if(0<=i&&i<K&&0<=f&&f<H&&h<80&&0<=h){h=(i*80|0)+h|0;break a}h=-1}if(0<=h){i=caml_bytes_unsafe_get(z[3],h);f=0!==i;if(f){f=1-C;if(f);else{f=caml_check_bound(c,p)[p+1];t=caml_check_bound(G,t)[t+1];f=fy(caml_bytes_unsafe_get(z[4],h),t,f)}}if(f)v=v+1|0;else
+t=caml_mul(k-x|0,d)+y|0,f=caml_check_bound(e,p)[p+1],h=F[t+1],i=caml_mul(E[t+1],H)+f|0;a:{if(0<=i&&i<K&&0<=f&&f<H&&h<80&&0<=h){h=(i*80|0)+h|0;break a}h=-1}if(0<=h){i=caml_bytes_unsafe_get(z[3],h);f=0!==i;if(f){f=1-C;if(f);else{f=caml_check_bound(c,p)[p+1];t=caml_check_bound(G,t)[t+1];f=fA(caml_bytes_unsafe_get(z[4],h),t,f)}}if(f)v=v+1|0;else
 i=l}else
-i=l;h=y+1|0;if(q===y)break;l=i;y=h}q=p+1|0;if(j===p)break;l=i;p=q}q=caml_mul(d,d);if(0===v){caml_ba_set_1(o,a,r);caml_ba_set_1(o,a+1|0,n);caml_ba_set_1(o,a+2|0,b)}else{j=i-1|0;caml_ba_set_1(o,a,r+caml_div(caml_mul(caml_check_bound(jq,j)[j+1]-r|0,v),q)|0);caml_ba_set_1(o,a+1|0,n+caml_div(caml_mul(caml_check_bound(jr,j)[j+1]-n|0,v),q)|0);caml_ba_set_1(o,a+2|0,b+caml_div(caml_mul(caml_check_bound(js,j)[j+1]-b|0,v),q)|0)}caml_ba_set_1(o,a+3|0,num_255);j=k+1|0;if(g===k)break;k=j}}k=s+1|0;if(m===s)break;s=k}}var
-num_0_12=.12,dJ=[0,12,10,28],jp=[0,20,22,30];function
-fV(q,p,k){var
-d=dn(k[4][3],k[4][4]);aU(d,0,0,k[4][3],k[4][4],dJ);var
+i=l;h=y+1|0;if(q===y)break;l=i;y=h}q=p+1|0;if(j===p)break;l=i;p=q}q=caml_mul(d,d);if(0===v){caml_ba_set_1(o,a,r);caml_ba_set_1(o,a+1|0,n);caml_ba_set_1(o,a+2|0,b)}else{j=i-1|0;caml_ba_set_1(o,a,r+caml_div(caml_mul(caml_check_bound(js,j)[j+1]-r|0,v),q)|0);caml_ba_set_1(o,a+1|0,n+caml_div(caml_mul(caml_check_bound(jt,j)[j+1]-n|0,v),q)|0);caml_ba_set_1(o,a+2|0,b+caml_div(caml_mul(caml_check_bound(ju,j)[j+1]-b|0,v),q)|0)}caml_ba_set_1(o,a+3|0,num_255);j=k+1|0;if(g===k)break;k=j}}k=s+1|0;if(m===s)break;s=k}}var
+num_0_12=.12,dK=[0,12,10,28],jr=[0,20,22,30];function
+fX(q,p,k){var
+d=dn(k[4][3],k[4][4]);aU(d,0,0,k[4][3],k[4][4],dK);var
 n=p[5],o=n.length-2|0;if(o>=0){var
 j=0;for(;;){var
 a=n[j+1],h=cn(k,a[1]);if(h){h=h[1];var
-e=h[4],f=h[3],c=h[2],g=h[1],b=a[4],m=caml_check_bound(p[6],j)[j+1];if(0===b[0]){b=a[3];a=num_0_12+num_0_04*u(a[2],4);aU(d,g,c,f,e,cm(bd(b),a,dJ))}else{b=b[3];if(m){m=m[1];var
-i=cm(bd(a[3]),num_0_18,jp);a:{if(40>caml_mul(f-g|0,e-c|0)&&!bQ(b[3])){aU(d,g,c,f,e,cm(bd(a[3]),num_0_5,i));break a}b=b[3];var
-l=caml_obj_tag(b),l=num_250===l?b[1]:num_246===l?X(b):b;jt(q,d,k,a[1],m,l,h,i)}i=6<(f-g|0);i=i?6<(e-c|0):i;if(i){a=cm(bd(a[3]),num_0_6,dJ);aU(d,g,c,f,c+1|0,a);aU(d,g,e-1|0,f,e,a);aU(d,g,c,g+1|0,e,a);aU(d,f-1|0,c,f,e,a)}}}}c=j+1|0;if(o===j)break;j=c}}return d}var
+e=h[4],f=h[3],c=h[2],g=h[1],b=a[4],m=caml_check_bound(p[6],j)[j+1];if(0===b[0]){b=a[3];a=num_0_12+num_0_04*u(a[2],4);aU(d,g,c,f,e,cm(bd(b),a,dK))}else{b=b[3];if(m){m=m[1];var
+i=cm(bd(a[3]),num_0_18,jr);a:{if(40>caml_mul(f-g|0,e-c|0)&&!bQ(b[3])){aU(d,g,c,f,e,cm(bd(a[3]),num_0_5,i));break a}b=b[3];var
+l=caml_obj_tag(b),l=num_250===l?b[1]:num_246===l?X(b):b;jv(q,d,k,a[1],m,l,h,i)}i=6<(f-g|0);i=i?6<(e-c|0):i;if(i){a=cm(bd(a[3]),num_0_6,dK);aU(d,g,c,f,c+1|0,a);aU(d,g,e-1|0,f,e,a);aU(d,g,c,g+1|0,e,a);aU(d,f-1|0,c,f,e,a)}}}}c=j+1|0;if(o===j)break;j=c}}return d}var
 num_400=400.;function
-fW(a){var
-b=a[4],c=v(num_0_5,s(num_400,a[3]));return[0,a[1],a[2],c,b]}var
-str_the_trick_of_thi_abr="the trick of this game",ju=[0,0,"its header"];function
+fY(a){var
+b=a[4],c=w(num_0_5,s(num_400,a[3]));return[0,a[1],a[2],c,b]}var
+str_the_trick_of_thi_abr="the trick of this game",jw=[0,0,"its header"];function
 co(a){a=a[3];var
 b=caml_obj_tag(a),a=num_250===b?a[1]:num_246===b?X(a):a,b=a[5],b=ao(function(a){var
-b=a[1],c=a[2];if(1===a[3]&&0<b)return[0,[0,b,c]];return 0})(b),a=a[6];return[0,ju,bU(function(b,a){return caml_int_compare(b[1],a[1])},c(b,ao(function(a){return 0<a?[0,[0,a,str_the_trick_of_thi_abr]]:0})(a)))]}var
+b=a[1],c=a[2];if(1===a[3]&&0<b)return[0,[0,b,c]];return 0})(b),a=a[6];return[0,jw,bU(function(b,a){return caml_int_compare(b[1],a[1])},c(b,ao(function(a){return 0<a?[0,[0,a,str_the_trick_of_thi_abr]]:0})(a)))]}var
 cp=[0,0];function
-fX(a){switch(cp[1]){case
+fZ(a){switch(cp[1]){case
 0:a=1;break;case
 1:a=2;break;default:a=0}cp[1]=a}function
-fY(a){switch(cp[1]){case
+f0(a){switch(cp[1]){case
 0:return"round";case
 1:return"wide";default:return"none"}}var
-dL=h(num_255,aw,70),P=228,fZ=h(P,P,num_240),bh=180,jw=h(L,L,bh);function
-f0(b,a,e){var
+dM=h(num_255,aw,70),P=228,f1=h(P,P,num_240),bh=180,jy=h(L,L,bh);function
+f2(b,a,e){var
 c=a?a[1]:1.;return function(f,h,a,g){f=ab(f/num_10,ai(e,g));a=bc(b,a);return aa(c,d(aT(b,h),a,f))}}function
-f1(i,h){var
+f3(i,h){var
 c=bT(function(b,a){return caml_float_compare(a[1],b[1])},h),f=[0,0];for(;;){if(!c)break;var
 g=c[2],c=c[1],d=c[2],b=0.<=d[1],e=d[4],a=d[3],d=d[2];if(b){b=0.<=d;if(b){b=a<=i[3];b=b?e<=i[4]:b}}if(b){b=c[2];e=f[1];for(;;){if(e){a=e[1];e=e[2];d=a[4];var
 j=a[2],k=a[1],l=b[4],m=b[3],n=b[2],a=caml_lessthan(b[1],a[3]);if(a){a=caml_lessthan(k,m);if(a){a=caml_lessthan(n,d);a=a?caml_lessthan(j,l):a}}if(!a)continue}else
@@ -2928,94 +2930,94 @@ c=g}return ao(function(c){var
 a=f[1],d=c[2];for(;;){if(a){var
 b=a[1]===d,a=a[2];if(!b)continue}else
 b=0;return b?[0,c[3]]:0}})(h)}function
-dM(a,b,e){var
+dN(a,b,e){var
 c=b?b[1]:.85;return function(b,l,j,i){var
-f=num_0_5*b*caml_ml_string_length(i)+8.,g=b+6.,b=[0,f0(a,0,e)(b,l+f/2.,j+g/2.,i),0],i=k(h(12,10,28),f,g),m=bc(a,j+g/2.);return[0,[0,l,j,l+f,j+g],ba([0,aa(c,d(aT(a,l+f/2.),m,i)),b])]}}function
-f2(a){var
+f=num_0_5*b*caml_ml_string_length(i)+8.,g=b+6.,b=[0,f2(a,0,e)(b,l+f/2.,j+g/2.,i),0],i=k(h(12,10,28),f,g),m=bc(a,j+g/2.);return[0,[0,l,j,l+f,j+g],ba([0,aa(c,d(aT(a,l+f/2.),m,i)),b])]}}function
+f4(a){var
 b=a[2],c=a[1],a=u(num_255,a[3]+60|0),b=u(num_255,b+60|0);return h(u(num_255,c+60|0),b,a)}var
-num_22=22.,num_13=13.,num_40=40.,num_800=800.,num_100$0=100.,num_30=30.,num_18=18.,jB=[0,1.],jy=[0,num_0_35],jz=[0,1.],jA=[0,[4,0,0,0,[11,"  ",[2,0,0]]],"%d  %s"];function
-jx(i,b,p){var
+num_22=22.,num_13=13.,num_40=40.,num_800=800.,num_100$0=100.,num_30=30.,num_18=18.,jD=[0,1.],jA=[0,num_0_35],jB=[0,1.],jC=[0,[4,0,0,0,[11,"  ",[2,0,0]]],"%d  %s"];function
+jz(i,b,p){var
 a=b[4];function
 m(g,h,i,b,d,e,f){var
-c=num_0_5*b*caml_ml_string_length(f);return[0,g,[0,d-c/2.,e-b/2.,d+c/2.,e+b/2.],f0(a,h,i)(b,d,e,f)]}var
+c=num_0_5*b*caml_ml_string_length(f);return[0,g,[0,d-c/2.,e-b/2.,d+c/2.,e+b/2.],f2(a,h,i)(b,d,e,f)]}var
 f=i[5],l=f.length-2|0,j=[0,0],d=[0,0],k=[0,0];function
-o(n,w){var
-f=cn(b,w[1]);if(!f)return;f=f[1];var
-l=f[4],r=f[3],u=f[2],f=f[1],x=r-f|0,c=l-u|0,q=w[4],q=0===q[0]?q[1]:q[1];function
-y(a){return x/(.55*D(1,a))}var
-o=w[4],n=caml_check_bound(i[6],n)[n+1];a:{if(0===o[0]){o=o[2];if(0>=w[2]&&w[3]===str)break a;n=s(c/4.,num_90);n=s(y(caml_ml_string_length(q)),n);var
-e=num_12<=n,e=e?x*c<num_0_4*caml_mul(a[3],a[4]):e;if(e){e=j[1];j[1]=[0,m(n,jy,fZ,n,(f+r)/2.,(u+l)/2.,q),e]}u=w[3]+str$7;q=6.5*caml_ml_string_length(u)+8.;b:{n=num_13;for(;;){if(!o)break;f=o[2];o=0===o[1][0]?0:1;if(o)break b;o=f}o=0}if(o){o=q<=x;o=o?num_40<=c:o}if(o){f=s(r-q-2.,a[3]-q);r=v(0.,bx(b,w[1][2])+2.);f=dM(a,jz,f2(bd(w[3])))(n,f,r,u);d[1]=[0,[0,num_300-w[2],f[1],f[2]],d[1]]}return}if(n){n=n[1];o=o[3];r=z(o[1],i[2]);l=aB(i[16],o[1]);if(l){l=l[1];q=caml_call2(g(jA),l,q)}l=s((c-6.)/2.,num_18);l=s(y(caml_ml_string_length(q)+2|0),l);l=r?v(l,num_12):l;if(9.<=l){u+=1.;f+=1.;e=r?dL:f2(bd(w[3]));f=dM(a,0,e)(l,f,u,q);e=f[2];f=f[1];q=d[1];r=r?num_1000$0:num_100$0+l;d[1]=[0,[0,r,f,e],q]}e=bQ(o[3]);e=e?num_30<=c:e;if(e){e=o[3];c=caml_obj_tag(e);c=num_250===c?e[1]:num_246===c?X(e):e;c=c[6];for(;;){if(!c)break;e=c[2];c=c[1];if(c<caml_mul(n[2],n[1])){q=w[1];f=n[5];f*=caml_mod(c,n[2]);f=q[2]+f;r=n[3];c=caml_div(c,n[2])*r;c=q[1]+c;f=bx(b,f)-19.;c=bw(b,c);c=dM(a,jB,h(230,80,num_200$0))(num_13,c,f,"* "+str_the_trick_of_thi_abr);d[1]=[0,[0,num_800,c[1],c[2]],d[1]];c=e}else
-c=e}}e=1-dK(bA(b,p),n);e=e?bQ(o[3]):e;if(!e)return e;e=o[3];c=caml_obj_tag(e);c=num_250===c?e[1]:num_246===c?X(e):e;c=c[5];for(;;){if(!c)return;e=c[2];c=c[1];f=c[3];q=c[2];c=c[1];r=fA(f);r=s(num_22,n[5]*b[3]*r*1.6);l=9.<=r;if(l){l=o[3];u=caml_obj_tag(l);l=num_250===u?l[1]:num_246===u?X(l):l;l=c<cj(l)}if(l){l=caml_div(c,n[2]);c=caml_mod(c,n[2]);l=bw(b,w[1][1]+l*n[3]);c=bx(b,w[1][2]+(c+num_0_5)*n[5]);u=num_0_5*r*caml_ml_string_length(q);var
+o(n,x){var
+f=cn(b,x[1]);if(!f)return;f=f[1];var
+l=f[4],r=f[3],u=f[2],f=f[1],y=r-f|0,c=l-u|0,q=x[4],q=0===q[0]?q[1]:q[1];function
+z(a){return y/(.55*F(1,a))}var
+o=x[4],n=caml_check_bound(i[6],n)[n+1];a:{if(0===o[0]){o=o[2];if(0>=x[2]&&x[3]===str)break a;n=s(c/4.,num_90);n=s(z(caml_ml_string_length(q)),n);var
+e=num_12<=n,e=e?y*c<num_0_4*caml_mul(a[3],a[4]):e;if(e){e=j[1];j[1]=[0,m(n,jA,f1,n,(f+r)/2.,(u+l)/2.,q),e]}u=x[3]+str$7;q=6.5*caml_ml_string_length(u)+8.;b:{n=num_13;for(;;){if(!o)break;f=o[2];o=0===o[1][0]?0:1;if(o)break b;o=f}o=0}if(o){o=q<=y;o=o?num_40<=c:o}if(o){f=s(r-q-2.,a[3]-q);r=w(0.,bx(b,x[1][2])+2.);f=dN(a,jB,f4(bd(x[3])))(n,f,r,u);d[1]=[0,[0,num_300-x[2],f[1],f[2]],d[1]]}return}if(n){n=n[1];o=o[3];r=v(o[1],i[2]);l=aB(i[16],o[1]);if(l){l=l[1];q=caml_call2(g(jC),l,q)}l=s((c-6.)/2.,num_18);l=s(z(caml_ml_string_length(q)+2|0),l);l=r?w(l,num_12):l;if(9.<=l){u+=1.;f+=1.;e=r?dM:f4(bd(x[3]));f=dN(a,0,e)(l,f,u,q);e=f[2];f=f[1];q=d[1];r=r?num_1000$0:num_100$0+l;d[1]=[0,[0,r,f,e],q]}e=bQ(o[3]);e=e?num_30<=c:e;if(e){e=o[3];c=caml_obj_tag(e);c=num_250===c?e[1]:num_246===c?X(e):e;c=c[6];for(;;){if(!c)break;e=c[2];c=c[1];if(c<caml_mul(n[2],n[1])){q=x[1];f=n[5];f*=caml_mod(c,n[2]);f=q[2]+f;r=n[3];c=caml_div(c,n[2])*r;c=q[1]+c;f=bx(b,f)-19.;c=bw(b,c);c=dN(a,jD,h(230,80,num_200$0))(num_13,c,f,"* "+str_the_trick_of_thi_abr);d[1]=[0,[0,num_800,c[1],c[2]],d[1]];c=e}else
+c=e}}e=1-dL(bA(b,p),n);e=e?bQ(o[3]):e;if(!e)return e;e=o[3];c=caml_obj_tag(e);c=num_250===c?e[1]:num_246===c?X(e):e;c=c[5];for(;;){if(!c)return;e=c[2];c=c[1];f=c[3];q=c[2];c=c[1];r=fC(f);r=s(num_22,n[5]*b[3]*r*1.6);l=9.<=r;if(l){l=o[3];u=caml_obj_tag(l);l=num_250===u?l[1]:num_246===u?X(l):l;l=c<cj(l)}if(l){l=caml_div(c,n[2]);c=caml_mod(c,n[2]);l=bw(b,x[1][1]+l*n[3]);c=bx(b,x[1][2]+(c+num_0_5)*n[5]);u=num_0_5*r*caml_ml_string_length(q);var
 t=0.<=c;if(t){t=c<a[4];if(t){t=0.<l+u;t=t?l<a[3]:t}}if(t){t=cf(f);var
-A=k[1],t=h(t[1],t[2],t[3]);k[1]=[0,m(fA(f)*r,0,t,r,l+u/2.,c,q),A];c=e}else
+A=k[1],t=h(t[1],t[2],t[3]);k[1]=[0,m(fC(f)*r,0,t,r,l+u/2.,c,q),A];c=e}else
 c=e}else
 c=e}}}}if(l>=0){var
 e=0;for(;;){o(e,f[e+1]);var
-n=e+1|0;if(l===e)break;e=n}}f=f1(a,c(d[1],k[1]));return c(f1(a,j[1]),f)}var
-num_1_2=1.2,num_1_5=1.5,num_1_4=1.4,str$1="   ",num_45=45.,a_=[0,"#FFFFFF"],jD=[0,[2,0,[12,58,[4,0,0,0,[2,0,[11,"   (",[4,0,0,0,[11," lines)",0]]]]]]],"%s:%d%s   (%d lines)"],jC=[0,[11,"wheel zoom   drag pan   click fly in, again open   right click up   t layout (",[2,0,[11,")   n tour (p back)   o glass (",[2,0,[11,")   0 all   esc back",0]]]]],"wheel zoom   drag pan   click fly in, again open   right click up   t layout (%s)   n tour (p back)   o glass (%s)   0 all   esc back"];function
-f3(e,b){var
+n=e+1|0;if(l===e)break;e=n}}f=f3(a,c(d[1],k[1]));return c(f3(a,j[1]),f)}var
+num_1_2=1.2,num_1_5=1.5,num_1_4=1.4,str$1="   ",num_45=45.,a_=[0,"#FFFFFF"],jF=[0,[2,0,[12,58,[4,0,0,0,[2,0,[11,"   (",[4,0,0,0,[11," lines)",0]]]]]]],"%s:%d%s   (%d lines)"],jE=[0,[11,"wheel zoom   drag pan   click fly in, again open   right click up   t layout (",[2,0,[11,")   n tour (p back)   o glass (",[2,0,[11,")   0 all   esc back",0]]]]],"wheel zoom   drag pan   click fly in, again open   right click up   t layout (%s)   n tour (p back)   o glass (%s)   0 all   esc back"];function
+f5(e,b){var
 a=e?e[1]:1;return function(j){var
-p=j[7],l=p[4],q=v(num_0_5,s(3.,1.)),i=caml_equal(j[13],[0,p]);j[13]=[0,p];j[14]=1-i;var
+p=j[7],l=p[4],q=w(num_0_5,s(3.,1.)),i=caml_equal(j[13],[0,p]);j[13]=[0,p];j[14]=1-i;var
 e=i?q:s(q,num_0_5),f=j[12];a:{if(f){f=f[1];var
-t=f[3],n=f[2];if(caml_equal(f[1],p)&&n===e)break a}t=fV(i,j,bA(p,e));j[12]=[0,[0,p,e,t]]}e=b[1];i=dF(l,e[1]);e=dG(l,e[2]);f=by(p,i);n=bz(p,e);i=dH(l,i,e)?dI(j,f,n):0;function
-w(e,g,a){var
+t=f[3],n=f[2];if(caml_equal(f[1],p)&&n===e)break a}t=fX(i,j,bA(p,e));j[12]=[0,[0,p,e,t]]}e=b[1];i=dG(l,e[1]);e=dH(l,e[2]);f=by(p,i);n=bz(p,e);i=dI(l,i,e)?dJ(j,f,n):0;function
+x(e,g,a){var
 h=a[4],i=a[3],j=a[2],a=a[1],m=i-a,b=h-j,n=aT(l,(a+i)/2.),c=bc(l,(j+h)/2.),f=k(e,g,b),f=[0,d(aT(l,i),c,f),0],b=k(e,g,b),c=[0,d(aT(l,a),c,b),f],b=k(e,m,g),c=[0,d(n,bc(l,h),b),c],e=k(e,m,g);return[0,d(n,bc(l,j),e),c]}var
 e=bW(j[5]),u=0;for(;;){if(!e)break;var
-m=e[1],r=m[4];a:{e=e[2];if(0!==r[0]&&z(r[3][1],j[2])){m=cn(p,m[1]);if(m){m=w(dL,3.,m[1]);break a}m=0;break a}m=0}u=O(m,u)}a:{u=o(u);if(i){e=i[1];i=caml_check_bound(j[5],e)[e+1];m=cn(p,i[1]);m=m?w(a_,num_1_5,m[1]):0;r=i[4];e=caml_check_bound(j[6],e)[e+1];if(0!==r[0]&&e){r=r[3];i=fU(e[1],i[1],f,n);if(bQ(r[3])){e=r[3];f=caml_obj_tag(e);f=num_250===f?e[1]:num_246===f?X(e):e;f=f[5];e=0;for(;;){if(!f)break;n=f[2];f=f[1];var
-x=f[2];if(f[1]<=i){f=n;e=[0,x]}else
+m=e[1],r=m[4];a:{e=e[2];if(0!==r[0]&&v(r[3][1],j[2])){m=cn(p,m[1]);if(m){m=x(dM,3.,m[1]);break a}m=0;break a}m=0}u=O(m,u)}a:{u=o(u);if(i){e=i[1];i=caml_check_bound(j[5],e)[e+1];m=cn(p,i[1]);m=m?x(a_,num_1_5,m[1]):0;r=i[4];e=caml_check_bound(j[6],e)[e+1];if(0!==r[0]&&e){r=r[3];i=fW(e[1],i[1],f,n);if(bQ(r[3])){e=r[3];f=caml_obj_tag(e);f=num_250===f?e[1]:num_246===f?X(e):e;f=f[5];e=0;for(;;){if(!f)break;n=f[2];f=f[1];var
+y=f[2];if(f[1]<=i){f=n;e=[0,y]}else
 f=n}}else
-e=0;f=r[2];e=e?str$1+e[1]:str;n=r[1];i=caml_call4(g(jD),n,i+1|0,e,f);break a}i=i[3]}else{i=str;m=0}}f=j[4]?"slice and dice":"squarified";e=b[3];if(a){n=fY(0);f=ab(num_1_2,ai(jw,caml_call2(g(jC),f,n)));f=[0,d(0.,e[6]+num_18,f),0];n=ab(num_1_4,ai(fZ,i));f=[0,d(0.,e[6]+num_45,n),f];i=ab(2.2,ai(dL,j[1]));f=c(m,[0,d(0.,e[3]-num_45,i),f])}else
-f=0;f=c(u,f);f=c(jx(j,p,q),f);t=bu(l[3],l[4],t);q=bc(l,l[4]/2.);t=c([0,d(aT(l,l[3]/2.),q,t),0],f);if(a){j=e[2];q=e[1];q=[0,k(h(12,10,28),q,j),0]}else
+e=0;f=r[2];e=e?str$1+e[1]:str;n=r[1];i=caml_call4(g(jF),n,i+1|0,e,f);break a}i=i[3]}else{i=str;m=0}}f=j[4]?"slice and dice":"squarified";e=b[3];if(a){n=f0(0);f=ab(num_1_2,ai(jy,caml_call2(g(jE),f,n)));f=[0,d(0.,e[6]+num_18,f),0];n=ab(num_1_4,ai(f1,i));f=[0,d(0.,e[6]+num_45,n),f];i=ab(2.2,ai(dM,j[1]));f=c(m,[0,d(0.,e[3]-num_45,i),f])}else
+f=0;f=c(u,f);f=c(jz(j,p,q),f);t=bu(l[3],l[4],t);q=bc(l,l[4]/2.);t=c([0,d(aT(l,l[3]/2.),q,t),0],f);if(a){j=e[2];q=e[1];q=[0,k(h(12,10,28),q,j),0]}else
 q=0;return c(q,t)}}function
-f4(b,f){var
-c=f[7],a=c[4],b=b[1],d=dF(a,b[1]),b=dG(a,b[2]);if(!dH(a,d,b))return 0;d=by(c,d);b=bz(c,b);a=dI(f,d,b);if(a){a=a[1];var
+f6(b,f){var
+c=f[7],a=c[4],b=b[1],d=dG(a,b[1]),b=dH(a,b[2]);if(!dI(a,d,b))return 0;d=by(c,d);b=bz(c,b);a=dJ(f,d,b);if(a){a=a[1];var
 e=caml_check_bound(f[6],a)[a+1];if(e){e=e[1];a=[0,[0,caml_check_bound(f[5],a)[a+1][1],e]]}else
 a=0}else
 a=0;c=a?num_16/(a[1][2][5]*c[3]):4.;return[0,[0,d,b,a,c]]}function
-f5(i,h,k){var
-c=v(num_0_5,s(3.,1.)),b=i[15];a:{if(b){b=b[1];var
-a=b[2];if(caml_equal(b[1],h)){b=bA(h,c)[4][3];if(a[1]===b)break a}}a=fV(1,i,bA(h,c));c=a[2]-1|0;b=a[1];var
+f7(i,h,k){var
+c=w(num_0_5,s(3.,1.)),b=i[15];a:{if(b){b=b[1];var
+a=b[2];if(caml_equal(b[1],h)){b=bA(h,c)[4][3];if(a[1]===b)break a}}a=fX(1,i,bA(h,c));c=a[2]-1|0;b=a[1];var
 j=a[2];if(c>=0){var
 d=0;for(;;){var
 f=a[1]-1|0;if(f>=0){var
 e=0;for(;;){var
 g=caml_call4(k,b,j,e+num_0_5,d+num_0_5);if(g)caml_ba_set_1(a[3],(4*(caml_mul(d,a[1])+e|0)|0)+3|0,g[1]);g=e+1|0;if(f===e)break;e=g}}f=d+1|0;if(c===d)break;d=f}}i[15]=[0,[0,h,a]]}return[0,a]}function
-f6(b,a){return a<=b-1.?num_255:b<=a?0:(b-a)*255.|0}function
-dN(f,e,c,a){var
+f8(b,a){return a<=b-1.?num_255:b<=a?0:(b-a)*255.|0}function
+dO(f,e,c,a){var
 b=[0,d(-(e/2.-a),-(c/2.-a),aP(f,a)),0],b=[0,d(e/2.-a,-(c/2.-a),aP(f,a)),b],b=[0,d(-(e/2.-a),c/2.-a,aP(f,a)),b],b=[0,d(e/2.-a,c/2.-a,aP(f,a)),b],b=[0,k(f,e-2.*a,c),b];return ba([0,k(f,e,c-2.*a),b])}var
-num_24=24.,num_320=320.,num_110$0=110.,num_120$0=120.,num_660=660,jF=[0,[12,num_120,[8,[0,0,0],0,[0,1],0]],"x%.1f"],jE=[0,[12,num_120,[8,[0,0,0],0,[0,0],0]],"x%.0f"];function
-f7(e,c){if(c[14])return 0;switch(cp[1]){case
+num_24=24.,num_320=320.,num_110$0=110.,num_120$0=120.,num_660=660,jH=[0,[12,num_120,[8,[0,0,0],0,[0,1],0]],"x%.1f"],jG=[0,[12,num_120,[8,[0,0,0],0,[0,0],0]],"x%.0f"];function
+f9(e,c){if(c[14])return 0;switch(cp[1]){case
 0:var
-b=f4(e,c);if(!b)return 0;b=b[1];var
-i=b[2],f=b[1],b=v(2.,s(num_10,b[4])),m=c[7][4],a=370,c=f5(c,[0,f,i,c[7][3]*b,[0,m[1],m[2],a,a]],function(a,d,c,b){a/=2.;c-=a;b-=a;return[0,f6(a,Math.sqrt(c*c+b*b))]})[1],a=e[1][1],e=e[1][2],b=caml_call1(g(jE),b),b=[0,d(a+114.7,e-157.25,ab(num_1_2,ai(h(num_190,num_190,num_205),b))),0],b=[0,aa(num_0_12,d(a-83.25,e+101.75000000000001,bv(35.,ff(a_,92.5,33.3)))),b],f=370.,c=[0,d(a,e,bu(f,f,c)),b],c=[0,d(a,e,aP(h(12,10,28),186.)),c],c=[0,d(a,e,aP(h(num_190,num_190,num_205),191.)),c],c=[0,d(a,e,aP(h(40,40,50),194.)),c],c=[0,d(a,e,bv(num_45,d(0.,-189.,k(h(num_150,num_150,160),26.,num_18)))),c];return[0,d(a,e,bv(num_45,d(0.,-235.,k(h(90,60,30),num_22,num_110$0)))),c];case
-1:a=f4(e,c);if(!a)return 0;a=a[1];f=a[3];b=a[1];m=a[2];a=v(num_1_5,s(num_10,a[4]));i=c[7];var
-q=i[4],n=e[1],o=i[3]*a,p=e[3],r=function(c,b,a){return v(c,s(b,a))},t=function(a){return r(p[4]+num_330+4.,p[5]-num_330-4.,a)},e=136.,j=r(p[6]+e+4.,p[3]-e-4.,n[2]);if(f){f=f[1];var
+b=f6(e,c);if(!b)return 0;b=b[1];var
+i=b[2],f=b[1],b=w(2.,s(num_10,b[4])),m=c[7][4],a=370,c=f7(c,[0,f,i,c[7][3]*b,[0,m[1],m[2],a,a]],function(a,d,c,b){a/=2.;c-=a;b-=a;return[0,f8(a,Math.sqrt(c*c+b*b))]})[1],a=e[1][1],e=e[1][2],b=caml_call1(g(jG),b),b=[0,d(a+114.7,e-157.25,ab(num_1_2,ai(h(num_190,num_190,num_205),b))),0],b=[0,aa(num_0_12,d(a-83.25,e+101.75000000000001,bv(35.,fh(a_,92.5,33.3)))),b],f=370.,c=[0,d(a,e,bu(f,f,c)),b],c=[0,d(a,e,aP(h(12,10,28),186.)),c],c=[0,d(a,e,aP(h(num_190,num_190,num_205),191.)),c],c=[0,d(a,e,aP(h(40,40,50),194.)),c],c=[0,d(a,e,bv(num_45,d(0.,-189.,k(h(num_150,num_150,160),26.,num_18)))),c];return[0,d(a,e,bv(num_45,d(0.,-235.,k(h(90,60,30),num_22,num_110$0)))),c];case
+1:a=f6(e,c);if(!a)return 0;a=a[1];f=a[3];b=a[1];m=a[2];a=w(num_1_5,s(num_10,a[4]));i=c[7];var
+q=i[4],n=e[1],o=i[3]*a,p=e[3],r=function(c,b,a){return w(c,s(b,a))},t=function(a){return r(p[4]+num_330+4.,p[5]-num_330-4.,a)},e=136.,j=r(p[6]+e+4.,p[3]-e-4.,n[2]);if(f){f=f[1];var
 l=f[2],f=f[1],b=f[1]+Math.floor((b-f[1])/l[3])*l[3],l=b+num_320/o,b=t(aT(q,bw(i,b))+num_330-num_10)}else{i=t(n[1]);l=b+(i-n[1])/o;b=i}var
-num_660$0=660.,l=f5(c,[0,l,m-(j-n[2])/o,o,[0,q[1],q[2],num_660,272]],function(b,e,d,a){var
-c=num_22*(b/num_660$0),b=v(0.,v(c-d,d-(b-c))),a=v(0.,v(c-a,a-(e-c)));if(0.<b&&0.<a)return[0,f6(c,Math.sqrt(b*b+a*a))];return 0})[1],a=caml_call1(g(jF),a),a=[0,d(b+num_330-num_24,j+e+1.,ab(num_1_2,ai(h(num_190,num_190,num_205),a))),0],a=[0,aa(num_0_1,d(b-184.8,j+97.92,bv(8.,ff(a_,198.,27.200000000000003)))),a],a=[0,d(b,j,bu(num_660$0,272.,l)),a],a=[0,d(b,j,dN(h(12,10,28),662.,274.,23.)),a],a=[0,d(b,j,dN(h(num_190,num_190,num_205),672.,284.,28.)),a],a=[0,d(b,j,dN(h(40,40,50),678.,290.,31.)),a];return[0,d(b+num_330-num_10,j-e+num_10,bv(num_45,d(0.,-60.,k(h(90,60,30),num_24,num_120$0)))),a];default:return 0}}var
+num_660$0=660.,l=f7(c,[0,l,m-(j-n[2])/o,o,[0,q[1],q[2],num_660,272]],function(b,e,d,a){var
+c=num_22*(b/num_660$0),b=w(0.,w(c-d,d-(b-c))),a=w(0.,w(c-a,a-(e-c)));if(0.<b&&0.<a)return[0,f8(c,Math.sqrt(b*b+a*a))];return 0})[1],a=caml_call1(g(jH),a),a=[0,d(b+num_330-num_24,j+e+1.,ab(num_1_2,ai(h(num_190,num_190,num_205),a))),0],a=[0,aa(num_0_1,d(b-184.8,j+97.92,bv(8.,fh(a_,198.,27.200000000000003)))),a],a=[0,d(b,j,bu(num_660$0,272.,l)),a],a=[0,d(b,j,dO(h(12,10,28),662.,274.,23.)),a],a=[0,d(b,j,dO(h(num_190,num_190,num_205),672.,284.,28.)),a],a=[0,d(b,j,dO(h(40,40,50),678.,290.,31.)),a];return[0,d(b+num_330-num_10,j-e+num_10,bv(num_45,d(0.,-60.,k(h(90,60,30),num_24,num_120$0)))),a];default:return 0}}var
 cg=[0,47,79,79];function
-f8(e,k,h){e=e?e[1]:0;var
-f=D(1,cj(h)),g=dn(80,f),f=f-1|0;if(f>=0){var
+f_(e,k,h){e=e?e[1]:0;var
+f=F(1,cj(h)),g=dn(80,f),f=f-1|0;if(f>=0){var
 d=0;a:for(;;){var
 b=0;for(;;){b:{if(0<=d&&cj(h)>d&&0<=b&&80>b){var
-a=caml_bytes_get(h[3],(d*80|0)+b|0);if(0===a){a=0;break b}a=a-1|0;a=[0,caml_check_bound(dA,a)[a+1]];break b}a=0}a=a?cf(a[1]):cg;var
-c=4*((d*80|0)+b|0)|0,i=a[3],j=a[2];caml_ba_set_1(g[3],c,a[1]);caml_ba_set_1(g[3],c+1|0,j);caml_ba_set_1(g[3],c+2|0,i);caml_ba_set_1(g[3],c+3|0,num_255);c=b+1|0;if(79===b){c=d+1|0;if(f===d)break a;d=c;break}b=c}}}b=h[2];e=k?e-2|0:e-26|0;return[0,h,b,g,D(0,u(b.length-54|0,e)),k,0]}function
+a=caml_bytes_get(h[3],(d*80|0)+b|0);if(0===a){a=0;break b}a=a-1|0;a=[0,caml_check_bound(dB,a)[a+1]];break b}a=0}a=a?cf(a[1]):cg;var
+c=4*((d*80|0)+b|0)|0,i=a[3],j=a[2];caml_ba_set_1(g[3],c,a[1]);caml_ba_set_1(g[3],c+1|0,j);caml_ba_set_1(g[3],c+2|0,i);caml_ba_set_1(g[3],c+3|0,num_255);c=b+1|0;if(79===b){c=d+1|0;if(f===d)break a;d=c;break}b=c}}}b=h[2];e=k?e-2|0:e-26|0;return[0,h,b,g,F(0,u(b.length-54|0,e)),k,0]}function
 aI(a,b){var
-c=a[6],d=a[5],b=D(0,u(a[2].length-54|0,b));return[0,a[1],a[2],a[3],b,d,c]}function
-f9(a){return s(848.,4.*(a[2].length-1))}var
-f_=h(L,L,bh),dO=h(num_255,aw,70),num_0_47=.47;function
+c=a[6],d=a[5],b=F(0,u(a[2].length-54|0,b));return[0,a[1],a[2],a[3],b,d,c]}function
+f$(a){return s(848.,4.*(a[2].length-1))}var
+ga=h(L,L,bh),dP=h(num_255,aw,70),num_0_47=.47;function
 cq(b,c){var
 a=b?b[1]:num_16;return function(f,e,b){return d(f+num_0_47*a*caml_ml_string_length(b)/2.,e,ab(a/num_10,ai(c,b)))}}var
-Z=225,jG=h(0,Z,num_255),ga=K(0,num_256),str_o="o",je=[0,cB,[0,str_mli,[0,aK,[0,aj,0]]]];function
-jd(q,n){a:{var
-b=je;for(;;){if(!b)break;var
-i=b[2],b=eT(q,b[1]);if(b)break a;b=i}b=0}if(b)try{i=0;b=iS(fF(n));for(;;){if(!b)break;var
-m=b[1],e=m[1];i=[0,[0,e[4],e[5],e[2],m[2]],i];b=b[2]}b=o(i);i=I(af(10,n));e=caml_make_vect(i,0);for(;;){if(!b){b=ag(o,e);var
+Z=225,jI=h(0,Z,num_255),gc=K(0,num_256),str_o="o",jg=[0,cB,[0,str_mli,[0,aK,[0,aj,0]]]];function
+jf(q,n){a:{var
+b=jg;for(;;){if(!b)break;var
+i=b[2],b=eV(q,b[1]);if(b)break a;b=i}b=0}if(b)try{i=0;b=iU(fH(n));for(;;){if(!b)break;var
+m=b[1],e=m[1];i=[0,[0,e[4],e[5],e[2],m[2]],i];b=b[2]}b=o(i);i=J(af(10,n));e=caml_make_vect(i,0);for(;;){if(!b){b=ag(o,e);var
 l=b;break}var
 d=b[1],b=b[2],a=d[4],m=d[2],j=d[1],d=af(10,d[3]),k=0;for(;;){if(!d)break;var
 c=d[1],g=(j-1|0)+k|0,h=c!==str,d=d[2];if(h){h=0<=g;h=h?g<i:h}if(h){h=caml_check_bound(e,g)[g+1];var
-p=0===k?m:0;caml_check_bound(e,g)[g+1]=[0,[0,p,c,a],h]}k=k+1|0}}}catch(a){l=fO(n)}else
-l=fO(n);i=l.length-1;n=_(i*80|0,0);b=_(i*80|0,0);m=l.length-2|0;e=0;if(m<0);else{j=0;a:for(;;){a=l[j+1];for(;;){if(!a){a=j+1|0;if(m!==j){j=a;break}break a}k=a[2];a=a[1];d=0;c=a[3];for(;;){if(caml_check_bound(dA,d)[d+1]===c)break;d=d+1|0}c=0;d=bl(1+d|0);for(;;){if(c>=caml_ml_string_length(a[2]))break;h=fz(a[2],c);p=a[1]+c|0;g=p<80;var
+p=0===k?m:0;caml_check_bound(e,g)[g+1]=[0,[0,p,c,a],h]}k=k+1|0}}}catch(a){l=fQ(n)}else
+l=fQ(n);i=l.length-1;n=_(i*80|0,0);b=_(i*80|0,0);m=l.length-2|0;e=0;if(m<0);else{j=0;a:for(;;){a=l[j+1];for(;;){if(!a){a=j+1|0;if(m!==j){j=a;break}break a}k=a[2];a=a[1];d=0;c=a[3];for(;;){if(caml_check_bound(dB,d)[d+1]===c)break;d=d+1|0}c=0;d=bl(1+d|0);for(;;){if(c>=caml_ml_string_length(a[2]))break;h=fB(a[2],c);p=a[1]+c|0;g=p<80;var
 r=h[2],h=h[1];if(g){g=32!==caml_string_get(a[2],c);g=g?9!==caml_string_get(a[2],c):g}if(g){caml_bytes_set(n,(j*80|0)+p|0,d);caml_bytes_set(b,(j*80|0)+p|0,bl(h))}c=c+r|0}c=a[3];if(5<=c)if(9<=c)a=k;else{e=[0,[0,j,a[2],a[3]],e];a=k}else if(1===c&&4<caml_ml_string_length(a[2])&&!(42===caml_string_get(a[2],3))){c=aq(f(a[2],2,caml_ml_string_length(a[2])-4|0));e=[0,[0,j,c,a[3]],e];a=k}else
 a=k}}}a=bS(i,function(a){return a});a=ao(function(e){var
 d=caml_check_bound(l,e)[e+1];for(;;){if(d){var
@@ -3023,289 +3025,295 @@ a=d[1],c=0===a[3],d=d[2],c=c||1===a[3];if(c){c=a[2];a=0;for(;;){var
 b=(a+22|0)<=caml_ml_string_length(c);if(!b)break;b=f(c,a,22)===str_the_trick_of_thi_abr;if(b){b=0===a;b||=34!==caml_string_get(c,a-1|0)}if(b)break;a=a+1|0}}else
 b=c;if(!b)continue}else
 b=0;return b?[0,e]:0}})(a);return[0,q,l,n,b,o(e),a]}function
-jv(j,i,d,a){j=j[1];var
-l=a[8][4],q=dF(l,j[1]),k=dG(l,j[2]),e=dH(l,q,k),m=a[8];function
+jx(j,i,d,a){j=j[1];var
+l=a[8][4],q=dG(l,j[1]),k=dH(l,j[2]),e=dI(l,q,k),m=a[8];function
 r(b,a){return[0,m[1]+b/m[3],m[2]+a/m[3],m[3],m[4]]}if(d){d=d[1];var
 b=-80.,b=d!==str_ArrowDown?d!==str_ArrowLeft?d!==str_ArrowRight?d!==str_ArrowUp?m:r(0.,b):r(num_80,0.):r(b,0.):r(0.,num_80)}else
-b=m;if(caml_call1(i,str_o))fX(0);d="t";if(caml_call1(i,d))var
-p=a[4]?0:1,f=fQ(l,p,a[3]),a=[0,a[1],a[2],a[3],p,f[1],f[2],a[7],a[8],a[9],a[10],a[11],0,a[13],a[14],a[15],a[16]];a:{if(!caml_call1(i,str_Home)&&!caml_call1(i,str_0)&&!caml_call1(i,d))break a;b=cl(l)}a:{if(!caml_call1(i,str_Backspace)&&(!j[5]||a[11]))break a;d=a[5];f=d.length-2|0;p=b[4][3]/b[3];var
+b=m;if(caml_call1(i,str_o))fZ(0);d="t";if(caml_call1(i,d))var
+p=a[4]?0:1,f=fS(l,p,a[3]),a=[0,a[1],a[2],a[3],p,f[1],f[2],a[7],a[8],a[9],a[10],a[11],0,a[13],a[14],a[15],a[16]];a:{if(!caml_call1(i,str_Home)&&!caml_call1(i,str_0)&&!caml_call1(i,d))break a;b=cl(l)}a:{if(!caml_call1(i,str_Backspace)&&(!j[5]||a[11]))break a;d=a[5];f=d.length-2|0;p=b[4][3]/b[3];var
 h=b[4][4]/b[3],c=0;if(f<0);else{var
 o=0;for(;;){var
-g=d[o+1];b:if(0===g[4][0]&&fT(g[1],b[1],b[2])){var
-n=1.3;if(!(p*n<g[1][3])&&!(h*n<g[1][4]))break b;if(c){n=c[1];if(n[1][3]*n[1][4]<=g[1][3]*g[1][4])break b}c=[0,g]}g=o+1|0;if(f===o)break;o=g}}if(c){c=c[1];if(0<c[2]){b=ck(b[4],c[1]);break a}}b=cl(b[4])}a:{if(!caml_call1(i,str$12)&&!caml_call1(i,str$15)){if(caml_call1(i,str$6)){b=[0,b[1],b[2],b[3]/num_1_5,b[4]];break a}break a}b=[0,b[1],b[2],b[3]*num_1_5,b[4]]}if(j[8]!==0.&&e){c=by(b,q);f=bz(b,k);h=fW([0,b[1],b[2],b[3]*Math.pow(1.25,j[8]),b[4]])[3];b=[0,c-(q-l[3]/2.)/h,f-(k-l[4]/2.)/h,h,b[4]]}c=a[9];a:{if(c){c=c[1];h=c[3];f=c[2];c=c[1];if(j[3]){c=j[1]-c;f=j[2]-f;d=a[10];d||=5.<Math.abs(c)+Math.abs(f)?1:0;b=d?[0,h[1]-c/h[3],h[2]+f/h[3],h[3],h[4]]:b;c=d;h=b;a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],d,a[11],a[12],a[13],a[14],a[15],a[16]];break a}}else if(j[3]&&e){c=0;h=b;a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],[0,[0,j[1],j[2],b]],0,a[11],a[12],a[13],a[14],a[15],a[16]];break a}c=0;h=b}f=j[4];b=f||j[9];b=b?e?1-a[10]:e:b;if(j[3]);else{f=a[16];d=a[15];e=a[14];p=a[13];g=a[12];o=a[11];n=j[4]?0:a[10];a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],0,n,o,g,p,e,d,f]}a:if(caml_call1(i,str_Escape))k=1;else{if(!b&&!caml_call1(i,str_Enter)){k=0;break a}d=by(a[7],q);k=bz(a[7],k);g=dI(a,d,k);if(g){e=g[1];g=caml_check_bound(a[5],e)[e+1];f=g[4];e=caml_check_bound(a[6],e)[e+1];if(0===f[0]){k=0;h=ck(l,g[1])}else if(e){e=e[1];b=f[3];f=ck(l,g[1]);l=dK(bA(a[7],1.),e);l||=Math.abs(Math.log(a[7][3]/f[3]))<num_0_1;if(!l&&!j[9]&&!caml_call1(i,str_Enter)){k=0;h=f;break a}k=fU(e,g[1],d,k);d=b[3];b=caml_obj_tag(d);d=num_250===b?d[1]:num_246===b?X(d):d;k=[0,d,k]}else
+g=d[o+1];b:if(0===g[4][0]&&fV(g[1],b[1],b[2])){var
+n=1.3;if(!(p*n<g[1][3])&&!(h*n<g[1][4]))break b;if(c){n=c[1];if(n[1][3]*n[1][4]<=g[1][3]*g[1][4])break b}c=[0,g]}g=o+1|0;if(f===o)break;o=g}}if(c){c=c[1];if(0<c[2]){b=ck(b[4],c[1]);break a}}b=cl(b[4])}a:{if(!caml_call1(i,str$12)&&!caml_call1(i,str$15)){if(caml_call1(i,str$6)){b=[0,b[1],b[2],b[3]/num_1_5,b[4]];break a}break a}b=[0,b[1],b[2],b[3]*num_1_5,b[4]]}if(j[8]!==0.&&e){c=by(b,q);f=bz(b,k);h=fY([0,b[1],b[2],b[3]*Math.pow(1.25,j[8]),b[4]])[3];b=[0,c-(q-l[3]/2.)/h,f-(k-l[4]/2.)/h,h,b[4]]}c=a[9];a:{if(c){c=c[1];h=c[3];f=c[2];c=c[1];if(j[3]){c=j[1]-c;f=j[2]-f;d=a[10];d||=5.<Math.abs(c)+Math.abs(f)?1:0;b=d?[0,h[1]-c/h[3],h[2]+f/h[3],h[3],h[4]]:b;c=d;h=b;a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],d,a[11],a[12],a[13],a[14],a[15],a[16]];break a}}else if(j[3]&&e){c=0;h=b;a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],[0,[0,j[1],j[2],b]],0,a[11],a[12],a[13],a[14],a[15],a[16]];break a}c=0;h=b}f=j[4];b=f||j[9];b=b?e?1-a[10]:e:b;if(j[3]);else{f=a[16];d=a[15];e=a[14];p=a[13];g=a[12];o=a[11];n=j[4]?0:a[10];a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],0,n,o,g,p,e,d,f]}a:if(caml_call1(i,str_Escape))k=1;else{if(!b&&!caml_call1(i,str_Enter)){k=0;break a}d=by(a[7],q);k=bz(a[7],k);g=dJ(a,d,k);if(g){e=g[1];g=caml_check_bound(a[5],e)[e+1];f=g[4];e=caml_check_bound(a[6],e)[e+1];if(0===f[0]){k=0;h=ck(l,g[1])}else if(e){e=e[1];b=f[3];f=ck(l,g[1]);l=dL(bA(a[7],1.),e);l||=Math.abs(Math.log(a[7][3]/f[3]))<num_0_1;if(!l&&!j[9]&&!caml_call1(i,str_Enter)){k=0;h=f;break a}k=fW(e,g[1],d,k);d=b[3];b=caml_obj_tag(d);d=num_250===b?d[1]:num_246===b?X(d):d;k=[0,d,k]}else
 k=0}else
-k=0}d=fW(h);if(c)c=d;else{c=a[7];e=Math.exp(Math.log(c[3])+num_0_22*(Math.log(d[3])-Math.log(c[3])));i=Math.abs(Math.log(e/d[3]))<.002;if(i){i=Math.abs(c[1]-d[1])*e<num_0_3;i=i?Math.abs(c[2]-d[2])*e<num_0_3:i}c=i?d:[0,c[1]+num_0_22*(d[1]-c[1]),c[2]+num_0_22*(d[2]-c[2]),e,c[4]]}return[0,[0,a[1],a[2],a[3],a[4],a[5],a[6],c,d,a[9],a[10],j[5],a[12],a[13],a[14],a[15],a[16]],k]}function
-jP(d,e){var
-a=aB(ga,d);if(a)a=a[1];else{a=[num_246,function(a){return jd(d,e)}];$(ga,d,a)}var
+k=0}d=fY(h);if(c)c=d;else{c=a[7];e=Math.exp(Math.log(c[3])+num_0_22*(Math.log(d[3])-Math.log(c[3])));i=Math.abs(Math.log(e/d[3]))<.002;if(i){i=Math.abs(c[1]-d[1])*e<num_0_3;i=i?Math.abs(c[2]-d[2])*e<num_0_3:i}c=i?d:[0,c[1]+num_0_22*(d[1]-c[1]),c[2]+num_0_22*(d[2]-c[2]),e,c[4]]}return[0,[0,a[1],a[2],a[3],a[4],a[5],a[6],c,d,a[9],a[10],j[5],a[12],a[13],a[14],a[15],a[16]],k]}function
+jR(d,e){var
+a=aB(gc,d);if(a)a=a[1];else{a=[num_246,function(a){return jf(d,e)}];$(gc,d,a)}var
 f=caml_ml_string_length(e)-1|0,b=1;if(f<0);else{var
 c=0;for(;;){b=10===caml_string_unsafe_get(e,c)?b+1|0:b;var
 g=c+1|0;if(f===c)break;c=g}}return[0,d,b,a]}var
-jU=[0,[4,0,0,0,[11," files",0]],"%d files"],jQ=[0,[2,0,[11,str$2,[2,0,0]]],"%s, %s"],jR=[0,[2,0,[11,": its code, ",[2,0,[11,"   (w: with what it uses)",0]]]],"%s: its code, %s   (w: with what it uses)"],jS=[0,[2,0,[11," and what it uses: ",[2,0,[11,"   (w: the whole repository)",0]]]],"%s and what it uses: %s   (w: the whole repository)"],jT=[0,[11,"the whole repository: ",[2,0,[11,"   (w: ",[2,0,[11,"'s code)",0]]]]],"the whole repository: %s   (w: %s's code)"];function
-dP(b,c,i,e,h,d){switch(d){case
-0:b=fJ([0,b],i)(h);break;case
-1:b=fJ(0,i)(h);break;default:b=p(function(a){return a[1]},i)}b=ao(function(b){var
-a=cI(b,i);return a?[0,jP(b,a[1])]:0})(b);var
-a=I(b),j=dE(fR(b)),a=1===a?"1 file":caml_call1(g(jU),a),a=caml_call2(g(jQ),a,j);switch(d){case
-0:a=caml_call2(g(jR),e,a);break;case
-1:a=caml_call2(g(jS),e,a);break;default:a=caml_call2(g(jT),a,e)}e=[0,c[1],c[2],c[3],c[4]];c=fQ(e,0,b);j=c[2];c=c[1];var
+jW=[0,[4,0,0,0,[11," files",0]],"%d files"],jS=[0,[2,0,[11,str$2,[2,0,0]]],"%s, %s"],jT=[0,[2,0,[11,": its code, ",[2,0,[11,"   (w: with what it uses)",0]]]],"%s: its code, %s   (w: with what it uses)"],jU=[0,[2,0,[11," and what it uses: ",[2,0,[11,"   (w: the whole repository)",0]]]],"%s and what it uses: %s   (w: the whole repository)"],jV=[0,[11,"the whole repository: ",[2,0,[11,"   (w: ",[2,0,[11,"'s code)",0]]]]],"the whole repository: %s   (w: %s's code)"];function
+dQ(b,c,i,e,h,d){switch(d){case
+0:b=fL([0,b],i)(h);break;case
+1:b=fL(0,i)(h);break;default:b=p(function(a){return a[1]},i)}b=ao(function(b){var
+a=cI(b,i);return a?[0,jR(b,a[1])]:0})(b);var
+a=J(b),j=dF(fT(b)),a=1===a?"1 file":caml_call1(g(jW),a),a=caml_call2(g(jS),a,j);switch(d){case
+0:a=caml_call2(g(jT),e,a);break;case
+1:a=caml_call2(g(jU),e,a);break;default:a=caml_call2(g(jV),a,e)}e=[0,c[1],c[2],c[3],c[4]];c=fS(e,0,b);j=c[2];c=c[1];var
 k=K(0,64),h=[0,h,0];if(2!==d){d=b;var
 f=0;for(;;){if(!d)break;var
 l=d[2];$(k,d[1][1],f+1|0);d=l;f=f+1|0}}f=cl(e);return[0,a,h,b,0,c,j,cl(e),f,0,0,0,0,0,0,0,k]}function
-gb(e,d,c,b,a){return[0,b,a,c,0,d,dP(e,d,c,b,a,0),0,0,e]}function
-cr(b,a){return d4(b[6][3],a)}function
-gc(b,e){if(!e)return b;var
-a=e[1],c=a[2],a=cr(b,a[1]),c=bR(co(a),c),c=c?c[1][1]:0,a=a[3],f=b[9],d=caml_obj_tag(a),d=num_250===d?a[1]:num_246===d?X(a):a,d=[0,f8([0,c],[0,c],d)];return[0,b[1],b[2],b[3],b[4],b[5],b[6],d,e,f]}function
-gd(a){return 0!==a[7]?1:0}var
-Y="# Catalogue of the games and apps\n\nEvery program in this repository that you can play or use, sorted by\ngenre: the video games of `games/`, one directory per section below\n(`games/shmup/`, ..., `games/rhythm/`), and the applications of\n`apps/`, one directory per category (`apps/office/` so far). The **Dir** column says how a game is drawn: 2D, 2.5D (a 3D\nlook drawn by the game itself on the 2D playground) or 3D (drawn by\nplayground3d). The demos of one feature (`examples/`) and the unit\nprograms are not listed here.\n\nMost programs are a toy version of a famous one; the **After** column\nnames it, with its authors and year (mostly as the program's header\ngives them), or names the program here it is a twin of. **In one line**\nsays what the program is, short enough to become a tooltip. **What it\nbrought** is what the original introduced, or the technique the toy\nhad to write out to be that game -- each program's header comment\nsays it at length, with what it uses and what it leaves as exercises.\n\n**Year**, **Platform** and **Players** are what tinybox's menu filters\nand groups by (after the retro front ends, Batocera and RetroBox):\n- **Year**: the original's, the first year its After gives (a twin,\n  after another program here, takes that one's). A section's rows are\n  in its order, the oldest first (a new row goes in its place).\n- **Platform**: what the original ran on -- `arcade`, `console`,\n  `handheld`, `computer` (the home computers: Apple II, C64, Amiga,\n  Atari ST, BBC Micro, MSX), `PC`, `Mac`, `workstation` (the Alto, Sun,\n  Unix and X), `mainframe` (and the minicomputers: the PDP-1, PDP-10,\n  TX-2, timesharing), `web`, `phone`, `tabletop` (a board game),\n  `instrument` (a synthesizer, an organ), `analog` (an analog computer).\n- **Players**: how many play *here*, not in the original: `1`, `2`, or\n  `1-2` (alone against the computer, or two on one keyboard); ` (net)`\n  when it also plays over the network (`net=host`, see `Multiplayer.mli`).\n  An app has `1`.\n\nEach entry follows the same conventions, so a web page can be built from\nthis list without more information:\n\n- **Source**: the link on the name, `<dir>/<Name>.ml`.\n- **Screenshot**: the golden frame `tests/2d/golden/<Name>.png` (for\n  2D, 2.5D and apps) or `tests/3d/golden/<Name>.png` (for 3D); other\n  frames of the same program are next to it, as `<Name>_<scene>.png`.\n- **Run online**: `<dir>/web/<Name>.html` (on WebGL for a 3D game),\n  once built with `make js`.\n- **Run natively**: `dune exec <dir>/<Name>.exe`.\n\nA game that has two looks draws, by default, in the medium its\noriginal really used: Pac-Man's ghosts and Mario were sprites, while\nAsteroids and Battlezone were vector displays and Pong was\nrectangles. The flag `artwork` changes it -- `artwork=shapes` for the\nplayground's plain shapes, where the whole game is in the code and\nnothing hides behind a picture, `artwork=sprites` for the pixel art\n(see `Sprite.mli`):\n\n    dune exec games/platform/TinyCeleste.exe -- artwork=shapes\n\nA **2.5D** or **3D** game with a twin says so: TinyDoom and TinyDoom3d\nare the same level, drawn once by the game's own trick and once by\nplayground3d, side by side in `games/fps/` (see `games/README-2.5d.md`).\n\n# Games\n\nEach section, and its directory under `games/`, starts with its\ndefinition. A game goes where its design puts it -- what the player\ndoes, what the game is about -- and not where the original ran (half\nof these were arcade cabinets) nor how it is drawn (that is the Dir\ncolumn).\n\n## Shoot 'em up\n\n`games/shmup/`: a ship, or a gun, against waves of enemies, the screen\nscrolling past or the enemies coming down at you; you shoot and dodge,\nand a level is a timeline of waves. Not a deathmatch against other\nfighters in one arena (arcade and party).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyInvaders](games/shmup/TinyInvaders.ml) | 2D | 1978 | arcade | 1 | Space Invaders (Tomohiro Nishikado, Taito, 1978) | A formation of aliens marching down, and a cannon under four bunkers. | Difficulty that rises by itself: one alien moved per frame, so the fewer left, the faster they march. Bunkers as tile maps eroded by shots. |\n| [Asteroid](games/shmup/Asteroid.ml) | 2D | 1979 | arcade | 1 | Asteroids (Atari, 1979), via Haskell in Space | A ship with inertia, rocks breaking into smaller rocks. | Inertia and a wrap-around screen; two physics engines side by side (`physics=engine`: drag, exact polygon hits). |\n| [TinyMissileCommand](games/shmup/TinyMissileCommand.ml) | 2D | 1980 | arcade | 1 | Missile Command (Dave Theurer, Atari, 1980) | Missiles rain on six cities; aim counter-missiles where they will be. | Aiming at a point, not a target; explosions as growing circles, and chain reactions; warheads that split. |\n| [TinyGalaga](games/shmup/TinyGalaga.ml) | 2D | 1981 | arcade | 1 | Galaga (Namco, 1981) | A fixed shooter whose enemies fly in on paths and dive at you. | Enemies that fly: paths as Catmull-Rom splines, flown at constant speed by arc length. |\n| [TinyDefender](games/shmup/TinyDefender.ml) | 2D | 1981 | arcade | 1 | Defender (Eugene Jarvis and Larry DeMar, Williams, 1981) | A planet six screens wide, humanoids to save from the landers. | A world bigger than the screen that goes on without you: a cylinder world, and the scanner (a minimap is a second camera). |\n| [TinyRobotron](games/shmup/TinyRobotron.ml) | 2D | 1982 | arcade | 1 | Robotron: 2084 (Eugene Jarvis and Larry DeMar, Williams, 1982) | Two sticks, one to run and one to shoot, and a crowd of robots. | The twin-stick shooter: running and shooting in two independent directions; a swarm made of one-line robots. |\n| [TinyZaxxon](games/shmup/TinyZaxxon.ml) | 2.5D | 1982 | arcade | 1 | Zaxxon (Sega, 1982) | A fighter along an isometric fortress, over walls and between towers. | The first game seen from an angle: the isometric projection, the back-to-front sort, and the shadow that gives back the lost height. |\n| [TinyGradius](games/shmup/TinyGradius.ml) | 2D | 1985 | arcade | 1 | Gradius (Konami, 1985) | A cave scrolling by itself, waves of enemies, and the power-up bar. | The power-up bar; the level as a timeline of waves; options trailing where the ship was. |\n| [TinyRType](games/shmup/TinyRType.ml) | 2D | 1987 | arcade | 1 | R-Type (Irem, 1987) | The Force at your ship's nose, a beam to charge, a battleship at the end. | The Force, a pod you place (a five-state machine); the charged beam; the level itself as the boss. |\n| [TinyStarFox](games/shmup/TinyStarFox.ml) | 3D | 1993 | console | 1 | Star Fox (Nintendo and Argonaut, 1993) | An arwing down a canyon on rails: dodge and shoot. | Polygons on a SNES by staying on rails: the ship is two coordinates on a canyon ribbon, and Galaga's 2D paths fly across it. |\n\n## Beat 'em up and fighting\n\n`games/fighting/`: the fighters' own mechanics are the game -- moves\ntimed in frames, hitboxes against hurtboxes, blocks, combos, a body\nas a skeleton of joints; one against one, or one against waves of\nthugs down a street.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyFinalFight](games/fighting/TinyFinalFight.ml) | 2D | 1989 | arcade | 1 | Final Fight (Capcom, 1989) | Walk down a street beating up wave after wave of thugs, then their boss. | The belt: depth along a street, and fighters drawn sorted by it; combos by chaining; the screen that locks until the wave is down. |\n| [TinyStreetFighter](games/fighting/TinyStreetFighter.ml) | 2D | 1991 | arcade | 1-2 | Street Fighter II (Capcom, 1991) | Two fighters, one screen, best of three rounds, and a fireball. | Moves measured in frames (startup, active, recovery); hitboxes against hurtboxes; high and low blocks; special moves read from the input history; hitstop. |\n| [TinyVirtuaFighter](games/fighting/TinyVirtuaFighter.ml) | 3D | 1993 | arcade | 1 | Virtua Fighter (Yu Suzuki, Sega AM2, 1993) | Two fighters of flat-shaded boxes on a ring you can be knocked out of. | The fighter as a skeleton: hierarchical transforms and keyframed poses; the ring-out; a camera framing two subjects. |\n\n## Platform\n\n`games/platform/`: crossing a level by running, jumping and climbing,\ngravity and the ground being the challenge; the level bigger than the\nscreen, or cut into rooms to go through.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyDonkeyKong](games/platform/TinyDonkeyKong.ml) | 2D | 1981 | arcade | 1 | Donkey Kong (Shigeru Miyamoto, Nintendo, 1981) | Slanted girders, ladders, and barrels rolling down at you. | Jumping as the point of a game; the hero as a state machine (walk, jump, climb, fall); slanted girders as segments. |\n| [TinyJoust](games/platform/TinyJoust.ml) | 2D | 1982 | arcade | 1 | Joust (John Newcomer, Williams, 1982) | Flap an ostrich over lava; the higher lance wins. | A flap that adds lift; a whole arcade game in about 200 lines, the physics layer doing the flight and every collision. |\n| [TinyLodeRunner](games/platform/TinyLodeRunner.ml) | 2D | 1983 | computer | 1 | Lode Runner (Doug Smith, Broderbund, 1983) | Take all the gold, no jumping and no fighting: dig holes instead. | A map that changes: holes dug that grow back; guards' greedy pursuit; one of the first level editors. |\n| [TinyMario](games/platform/TinyMario.ml) | 2D | 1985 | console | 1 | Super Mario Bros. (Shigeru Miyamoto, Nintendo, 1985) | Run, jump, stomp, and scroll to the flag. | The side-scroller: a level bigger than the screen, typed as strings; three camera modes; parallax; sounds and music. |\n| [TinyMetroid](games/platform/TinyMetroid.ml) | 2D | 1986 | console | 1 | Metroid (Yoshio Sakamoto, Makoto Kano, Gunpei Yokoi, Nintendo, 1986) | One closed world of caves: the morph ball, the missiles, the boots, the bombs, and Kraid. | The world as locks and keys, and a checker (a search over her poses) proving it can be finished, in one order only; the map of the areas been to. |\n| [TinyRick](games/platform/TinyRick.ml) | 2D | 1989 | computer | 1 | Rick Dangerous (Simon Phipps, Core Design, 1989) | A temple full of traps, starting with a boulder rolling after you. | Traps as tiles in the level's data; flip-screen rooms instead of scrolling. |\n| [TinyPrinceOfPersia](games/platform/TinyPrinceOfPersia.ml) | 2D | 1989 | computer | 1 | Prince of Persia (Jordan Mechner, Broderbund, 1989) | Run, jump, hang and climb through a dungeon of ledges, spikes and a gate. | Movement driven by the animation: each move a table of rotoscoped frames, played to its end, the keys read only where it allows. |\n| [TinyTurrican](games/platform/TinyTurrican.ml) | 2D | 1990 | computer | 1 | Turrican (Manfred Trenz, Rainbow Arts, 1990) | Run and gun through a world bigger than the screen: spread and laser, the lightning beam, the gyroscope wheel, and a secret cave. | A weapon aimed by an angle you steer: a ray cast through the tile map, enemies hurt by their distance to the segment; a body that changes its box, and opens only where there is room. |\n| [TinyMarioWorld](games/platform/TinyMarioWorld.ml) | 2D | 1990 | console | 1 | Super Mario World (Takashi Tezuka and Shigeru Miyamoto, Nintendo, 1990) | Cape Mario on hills, in the sky, and on a map with a secret exit. | Slopes felt by sensors, and the slide; the cape's flight as speed traded for height; the world map as a graph with secret exits. |\n| [TinySonic](games/platform/TinySonic.ml) | 2D | 1991 | console | 1 | Sonic the Hedgehog (Yuji Naka, Hirokazu Yasuhara, Naoto Ohshima, Sega, 1991) | Keep your speed, take the hill, go round the loop. | Speed along a surface: shaped tiles, one ground speed, gravity as a slope factor, the loop as ordinary tiles; the spindash. |\n| [TinyVikings](games/platform/TinyVikings.ml) | 2D | 1992 | console | 1 | The Lost Vikings (Silicon & Synapse, Interplay, 1992) | Three vikings, one keyboard: Erik jumps and headbutts walls, Baleog fights and shoots, Olaf's shield is a glider and a step; all three to the exit. | The party as the puzzle: heroes each with one ability, switched with Tab, the waiting ones part of the level; a hero as a moving one-way platform. |\n| [TinyMario64](games/platform/TinyMario64.ml) | 3D | 1996 | console | 1 | Super Mario 64 (Shigeru Miyamoto, Nintendo, 1996) | Floating platforms and five stars, running and jumping in 3D. | The platformer in 3D: controls relative to the camera, a camera you steer, a shadow to judge landings. |\n| [TinyMarioGalaxy2D](games/platform/TinyMarioGalaxy2D.ml) | 2D | 2007 | console | 1 | Super Mario Galaxy (Yoshiaki Koizumi, Nintendo, 2007) | Run round planetoids, stand underneath them, jump from one into the pull of the next, to the Power Star. | Gravity as level design: zones with a down each and a priority, not Newton; up as local, the velocity split along the ground and up; the camera turned with it, and the arrow kept while held. |\n| [TinyMarioGalaxy](games/platform/TinyMarioGalaxy.ml) | 3D | 2007 | console | 1 | Super Mario Galaxy (Yoshiaki Koizumi, Nintendo, 2007) | Round a planet, over a cube's edges, down onto a platform from under the planet, and on to the tiny planet of the Power Star. | The 2D twin's gravity zones in 3D, a box's giving cube gravity for free; directions carried along the ground as it turns; a camera that rolls after Mario's up; the world turned so the sun stays over his head. |\n| [TinyBraid](games/platform/TinyBraid.ml) | 2D | 2008 | console | 1 | Braid (Jonathan Blow, 2008) | Run, jump, die, and hold shift: time runs backwards, and each room bends it another way. | Rewind as a list of past models (the puzzle kit's Puzzle_undo, sixty a second); Braid's worlds as rules over that list: green things out of time, time as position, a shadow replaying what was rewound. |\n| [TinySuperMeatBoy](games/platform/TinySuperMeatBoy.ml) | 2D | 2010 | console | 1 | Super Meat Boy (Edmund McMillen and Tommy Refenes, Team Meat, 2010) | Run, jump and wall-jump past saws to Bandage Girl, die a lot, and watch every try at once. | Death that costs nothing; the room smeared by every try; the replay of all tries, each kept as its inputs and played again through a pure step. |\n| [TinyVVVVVV](games/platform/TinyVVVVVV.ml) | 2D | 2010 | PC | 1 | VVVVVV (Terry Cavanagh, 2010) | You cannot jump: flip gravity and walk on the ceiling, past spikes on both sides. | The jump replaced by one bit: a flip goes all the way and only from a surface; gravity as a sign; gravity lines, and a room that wraps top to bottom. |\n| [TinyCeleste](games/platform/TinyCeleste.ml) | 2D | 2018 | PC | 1 | Celeste (Maddy Thorson and Noel Berry, 2018) | Climb a mountain a screen at a time, with a jump, a dash, and the walls. | Game feel as small named lies, each switchable: coyote time, jump buffering, variable jump, corner correction; the dash and the wall jump. |\n\n## Arcade and party games\n\n`games/arcade/`: one screen, or one arena (or a screen wrapping round),\nwith nothing to explore and no level to cross; one rule learned in\nseconds; short rounds, played again at once, for a score, the last\none standing or the first to five; nothing carried from one round to\nthe next; often several players in the same arena.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinySpacewar](games/arcade/TinySpacewar.ml) | 2D | 1962 | mainframe | 2 (net) | Spacewar! (MIT, 1962) | Two ships duelling around a star whose gravity pulls them in. | The first game with physics: inertia and gravitation, orbits and slingshots; exact hits on the ships' outlines. |\n| [Pong](games/arcade/Pong.ml) | 2D | 1972 | arcade | 2 | Pong (Atari, 1972), via Elm's \"Making Pong\" | The first port: two paddles and a ball, by the rules. | The project's first game: Model-View-Update on the simplest game there is. |\n| [TinyPong](games/arcade/TinyPong.ml) | 2D | 1972 | arcade | 1-2 | Pong (Allan Alcorn, Atari, 1972) | Pong again, the ball, walls and paddles as bodies of the physics engine. | Rules replaced by physics: a moving paddle drags the ball (friction), corners deflect it; a speed cap against tunnelling. |\n| [TinyBreakout](games/arcade/TinyBreakout.ml) | 2D | 1976 | arcade | 1 | Breakout (Atari, 1976) | Pong on its side, played alone against a wall of bricks. | The paddle aims by where the ball lands (a rule, not physics); the wall as a Tilemap; the original's speed-ups. |\n| [Snake](games/arcade/Snake.ml) | 2D | 1976 | arcade | 1 | Snake (Blockade, Gremlin, 1976), via elm snek | Eat, grow longer, don't bite yourself. | Movement on a grid and a body that grows; a port from Elm. |\n| [TinyLunarLander](games/arcade/TinyLunarLander.ml) | 2D | 1979 | arcade | 1 | Lunar Lander (Howard Delman and Rich Moore, Atari, 1979) | Turn, fire the engine, and set a module down on a pad of the moon. | A landing judged, not a collision: two speeds and an angle within tolerances, narrower pads worth more; one tank of fuel as the game's only clock; the camera zooming in near the ground. |\n| [TinyPacman](games/arcade/TinyPacman.ml) | 2D | 1980 | arcade | 1 | Pac-Man (Toru Iwatani, Namco, 1980) | Eat the dots, avoid four ghosts, eat a pellet and turn the tables. | Ghosts with personalities, each a choice of target tile; moving in corridors, the turn asked for remembered. |\n| [TinyFrogger](games/arcade/TinyFrogger.ml) | 2D | 1981 | arcade | 1 | Frogger (Konami, 1981) | Hop a frog across a road of cars and a river of logs, into five bays. | Obstacles that need no state: each lane a pattern repeating at a constant speed, where everything is a formula of time; riding a log is being carried by the lane's speed. |\n| [TinyTron](games/arcade/TinyTron.ml) | 2D | 1982 | arcade | 1-2 | Tron's light cycles (Bally Midway, 1982) | Two to four cycles leaving walls of light, on arenas with obstacles: the last one riding wins. | A computer at three levels, up to a search: alpha-beta scored by the Voronoi partition, as the 2010 Google AI Challenge's winners did; the rules in a kit, shared with a 3D view. |\n| [TinyTron3d](games/arcade/TinyTron3d.ml) | 3D | 1982 | arcade | 1-2 | TinyTron | The same light cycles, the trails as walls you can look at from behind. | The Elm architecture's promise: the same model, another view, with four cameras. |\n| [TinyBomberman](games/arcade/TinyBomberman.ml) | 2D | 1983 | computer | 1 | Bomberman (Hudson Soft, 1983) | The NES's stage, and the battle: you against three computer bombers, the last one standing wins. | Fire spreading tile by tile, and chain reactions; computer bombers that know where the fire will be. |\n| [TinyMarbleMadness](games/arcade/TinyMarbleMadness.ml) | 3D | 1984 | arcade | 1 | Marble Madness (Mark Cerny, Atari Games, 1984) | Roll a marble down a course floating in space, against the clock. | A ball rolling on a height map (5/7 of g sin a), falls that break it, collisions between balls; a far, nearly isometric camera. |\n| [TinyCameltry](games/arcade/TinyCameltry.ml) | 2D | 1989 | arcade | 1 | Cameltry (Taito, 1989) | You don't move the ball, you turn the maze. | Turning the maze is turning gravity; rotation, so the ball rolls instead of sliding (`rotation=off` to compare). |\n| [TinyPang](games/arcade/TinyPang.ml) | 2D | 1989 | arcade | 1 | Pang (Mitchell, 1989) | Shoot a harpoon up at bouncing balloons: each bursts into two smaller ones, round the world's landmarks. | A bounce that is a rule, not physics: each size bounces to its own height forever; splitting as recursion, one big balloon fifteen hits. |\n| [TinyTronscroll](games/arcade/TinyTronscroll.ml) | 2D | 1997 | workstation | 2 (net) | tron v0.1 (Yoann Padioleau, INSA Rennes, 1997) | Light cycles on a map bigger than the screen, each player's window scrolling with them, options to take. | The author's first network game, its three netcodes side by side: 1997's wait for every answer, lockstep, rollback. |\n| [TinySoldat](games/arcade/TinySoldat.ml) | 2D | 2002 | PC | 1 | Soldat (Micha\xc5\x82 Marcinkowski, 2002) | A side-view deathmatch on jet boots against two bots, and ragdolls. | The 2D physics engine's capstone: a stacking world, swept bullets against tunnelling, grenade blasts, particle ragdolls. |\n| [TinyFlappyBird](games/arcade/TinyFlappyBird.ml) | 2D | 2013 | phone | 1 | Flappy Bird (Dong Nguyen, .GEARS, 2013) | One button: flap through the gaps between pipes. | A flap that sets the velocity; an endless world made and dropped as you fly; randomness from an LFSR kept in the model. |\n| [TinyBoomerangFu](games/arcade/TinyBoomerangFu.ml) | 3D | 2020 | console | 1 | Boomerang Fu (Cranky Watermelon, 2020) | Four foods on floating islands, one boomerang each, one hit kills. | Your only weapon leaves your hand: a return arc homing on its owner; two arenas written as text, with holes, water, a terrace and bridges, and a jump; a camera zooming to frame everybody, and shadows to read height. |\n\n## Puzzle and board games\n\n`games/puzzle/`: thinking over reflexes -- a set of rules to master, a\nlevel to solve or a board to win; time pressure, when there is some\n(Tetris), only adds to the thinking.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [AiChess](games/puzzle/AiChess.ml) | 2D | 1950 | tabletop | 1 | Chess, as Claude Shannon's \"Programming a Computer for Playing Chess\" (1950) set it for computers | Chess against a computer thinking 3 moves ahead with alpha-beta. | Rules checked by perft; move ordering (most valuable victim first); quiescence, the captures played out at the leaves against the horizon effect. |\n| [AiOthello](games/puzzle/AiOthello.ml) | 2D | 1971 | tabletop | 1 | Othello (Goro Hasegawa, 1971) | Othello against a computer thinking 4 moves ahead with alpha-beta. | Game-tree search: alpha-beta, an evaluation table, and its cuts counted against plain minimax. |\n| [AiConnect4](games/puzzle/AiConnect4.ml) | 2D | 1974 | tabletop | 1 | Connect Four (Milton Bradley, 1974; solved by Allen and by Allis, 1988) | Connect 4 against a computer that searches deeper by iterative deepening, move ordering and a transposition table, and says what each saved. | Iterative deepening, ordering (the middle columns first) and Zobrist keys, with the node counts they save. |\n| [TinySokoban](games/puzzle/TinySokoban.ml) | 2D | 1982 | computer | 1 | Sokoban (Hiroyuki Imabayashi, Thinking Rabbit, 1982) | Push every box onto a goal, one at a time, never pulling. | Deep puzzles from a few rules (PSPACE-complete); undo for free, since the model is a value; levels checked by breadth-first search. |\n| [TinySokobanEd](games/puzzle/TinySokobanEd.ml) | 2D | 1983 | computer | 1 | the level editors games shipped with (Lode Runner's, Doug Smith, Broderbund, 1983) | TinySokoban's levels: type them, check them, play them, export the file the game is built with. | A game's tool: the rules, format and solver in the kit, the level a text file embedded at build time; a text editor on a grid, with the checks a text editor cannot do. |\n| [Tetris](games/puzzle/Tetris.ml) | 2D | 1984 | computer | 1 | Tetris (Alexey Pajitnov, 1984), via elm-flatris | Falling pieces, full lines cleared. | Falling pieces and cleared lines on a grid; a port from Elm. |\n| [TinyTetris](games/puzzle/TinyTetris.ml) | 2D | 1984 | computer | 1 | Tetris (Alexey Pajitnov, 1984), with the Nintendo version's scores (1989) and the later bag of seven | Falling pieces, full lines cleared, juiced: lines burst into their colors, drops knock the well. | The seven-piece bag, the ghost, the lock delay; juice from the start, in a section of its own watching the rules (juice=off: the dry game). |\n| [TinyBlockout](games/puzzle/TinyBlockout.ml) | 3D | 1989 | PC | 1 | BlockOut (P.Z.Karen Co., California Dreams, 1989) | Tetris down a well, seen from above, with pieces turning in 3D. | Tetris with one more index; depth cues (shading, the landing ring); quarter turns of polycubes in integers. |\n| [TinyLemmings](games/puzzle/TinyLemmings.ml) | 2D | 1991 | computer | 1 | Lemmings (DMA Design, Psygnosis, 1991) | Creatures walk mindlessly; give them jobs to save them. | Indirect control; the terrain as a bitmap in the model, dug and built; creatures as tiny state machines reading the pixels. |\n| [TinyStoneAge](games/puzzle/TinyStoneAge.ml) | 2D | 1992 | computer | 1 | Stone Age (Stonehenge Soft Art, Eclipse Software, 1992) | Take a dinosaur across stones over the void to the cave: cracked ones fall behind you, arrow blocks carry you, keys open locks. | A puzzle of moves that can't be undone, so of their order; a level as a graph of states, and a breadth-first search proving each level can be done in time. |\n| [TinyIncredibleMachine](games/puzzle/TinyIncredibleMachine.ml) | 2D | 1993 | PC | 1 | The Incredible Machine (Kevin Ryan, Jeff Tunnell, Dynamix / Sierra, 1993) | Build a Rube Goldberg machine from a bin of parts, then watch it put a ball in a basket. | Building, then watching: physics that must be deterministic; joints (a seesaw's pin, a pulley's ropes); parts acting on each other, a switch turning on a fan. |\n| [TinyPuzzleBobble](games/puzzle/TinyPuzzleBobble.ml) | 2D | 1994 | arcade | 1 | Puzzle Bobble (Taito, 1994) | Shoot a bubble off the walls; three of a colour pop. | A hexagonal grid stored as offset rows; snapping to it; two flood fills (the pop, then the fall); the aiming guide as the shot flown ahead. |\n| [AiGo](games/puzzle/AiGo.ml) | 2D | 2006 | tabletop | 1 | Go on 9x9, and the Monte Carlo programs of 2006 that first played it decently | Go against a computer with no evaluation function at all: it judges a position by playing it out at random, hundreds of times. | Monte Carlo tree search (UCT), the playouts and the tree, anytime: it thinks while the game draws. |\n| [TinyPortal2D](games/puzzle/TinyPortal2D.ml) | 2D | 2007 | web | 1 | Portal: The Flash Version (We Create Stuff, 2007) | A platformer where the way through is a pair of holes you shoot. | A portal is a rigid transform: position and velocity rotated, never scaled -- the fling -- on the physics layer. |\n| [TinyPortal](games/puzzle/TinyPortal.ml) | 3D | 2007 | PC | 1 | Portal (Valve, 2007) | One test chamber, a cube on a ledge, and a portal gun: fling yourself. | The portal in 3D: a rigid motion carrying orientation and spin; seeing through by taking the chamber through it and clipping, no stencil. |\n| [TinyCrush](games/puzzle/TinyCrush.ml) | 2.5D | 2007 | handheld | 1 | Crush (Zo\xc3\xab Mode, Sega, 2007) | Crush a level flat along your line of sight, and walk across what was far apart in depth. | The projection as the puzzle: a stack of slices, crushed into their union; the same platformer on either plane; the crush drawn as a cabinet projection losing its depth. |\n| [TinySlingshot](games/puzzle/TinySlingshot.ml) | 2D | 2009 | phone | 1 | Angry Birds (Rovio, 2009) | Pull back the slingshot and knock down a tower of physics bodies. | The whole 2D engine at once: a solver for stacking, rotation, friction; targets broken by impulse; the arc predicted by the engine's own steps. |\n| [TinyCrush3d](games/puzzle/TinyCrush3d.ml) | 3D | 2012 | handheld | 1 | Crush3D (Zo\xc3\xab Mode, Sega, 2012) | TinyCrush with real cubes: crush, and watch the level fold onto your plane as the camera turns straight on. | The same rules drawn twice (`gamekits/crush`): the crush as the slices sliding in depth and the camera swinging from three-quarters to straight on; why the crushed level is drawn as its plane (z-fighting). |\n| [TinyFez](games/puzzle/TinyFez.ml) | 2.5D | 2012 | console | 1 | Fez (Phil Fish, Polytron, 2012) | A flat world you can turn a quarter at a time: what lines up on the screen is next to each other. | Depth thrown away, four ways: any top a floor, only what is at your depth a wall; the turn drawn as each cube's two faces squashed to the cosine and the sine; pixel art from XPM files. |\n| [TinyPerspective](games/puzzle/TinyPerspective.ml) | 3D | 2012 | PC | 1 | Perspective (DigiPen, a student game, 2012) | Place a camera in a 3D world, then run a 2D platformer on the picture it takes. | The projection with perspective: far is small, near is big, so the camera builds the level; the runner's world the boxes' silhouettes filled into a grid of the screen; the camera turning round the point under his feet, found by undoing the projection. |\n| [TinyMonumentValley](games/puzzle/TinyMonumentValley.ml) | 3D | 2014 | phone | 1 | Monument Valley (ustwo, 2014) | Walk over architecture that cannot exist, trusting the picture. | An orthographic camera's ambiguity as the rule: blocks that look adjacent are walkable; a search over the picture's graph. |\n| [TinyWitness](games/puzzle/TinyWitness.ml) | 2D | 2016 | PC | 1 | The Witness (Jonathan Blow, Thekla, 2016) | Draw one line across each panel of an island: mazes, dots, and black and white squares to keep apart, taught without a word. | Rules about regions: the line cuts the grid, a flood fill finds the regions, a rule is a check on each; a panel typed as text; a rule taught by a row of panels. |\n| [TinyBabaIsYou](games/puzzle/TinyBabaIsYou.ml) | 2D | 2019 | PC | 1 | Baba Is You (Arvi Teikari, 2019) | The rules are words on the board, and you can push them. | The rules as data in the world they rule, rewritten by the player: a game that is its own level editor. |\n\n## Card games\n\n`games/cards/`: a deck of cards and the rules of a game played with\nit -- patience alone, or a table of players; what shows and what is\nhidden, and the luck of the deal, are the game. Every deal has a\nnumber (Microsoft's, the cards kit's), so a game can be played again.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyFreeCell](games/cards/TinyFreeCell.ml) | 2D | 1978 | mainframe | 1 | FreeCell (Paul Alfille, 1978; Windows, 1995) | All 52 cards face up on eight columns, and four free cells to park them. | Numbered deals, the same on every computer (Microsoft's random generator, written out); the supermove, a run moved at once as the single moves it stands for. |\n| [TinySolitaire](games/cards/TinySolitaire.ml) | 2D | 1990 | PC | 1 | Solitaire, Klondike (Wes Cherry, Microsoft, 1990) | Seven columns, the stock, and four foundations to build, ace to king. | The patience that taught a generation the mouse; face-down cards turned over as they are uncovered, and the luck of what is hidden. |\n\n## Action-adventure and horror\n\n`games/adventure/`: a world explored -- in words and turns at first\n(the text adventure), then in pictures, then in real time -- whose\nrooms, items and keys open the way on; the hero does not grow, the player's\nknowledge of the world does. In horror, the camera and the dark are\npart of the game.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyWumpus](games/adventure/TinyWumpus.ml) | 2D | 1973 | mainframe | 1 | Hunt the Wumpus (Gregory Yob, 1973) | Twenty rooms in the dark, a smell, a draft, a rustle of bats, and five crooked arrows. | The cave a dodecahedron, the first game off the grid, a table of tunnels mapped in the player's head; an arrow told the rooms it flies through, around corners; the game a conversation (Teletype, Tty_wumpus), the same value a command of TinyTerminal's shell. |\n| [TinyZork](games/adventure/TinyZork.ml) | 2D | 1977 | mainframe | 1 | Zork (Tim Anderson, Marc Blank, Bruce Daniels and Dave Lebling, MIT, 1977; Infocom, 1980) | A white house, a trap door, a troll, and a grue in the dark, in words only. | The text adventure: the world as data and a rule per thing to try (the adventure kit), a parser of whole sentences, the dark; the game nearly all model, a terminal for its view. |\n| [TinyZelda](games/adventure/TinyZelda.ml) | 2D | 1986 | console | 1 | The Legend of Zelda (Shigeru Miyamoto and Takashi Tezuka, Nintendo, 1986) | An overworld of screens, a sword, a key, and a dungeon. | A land to explore in any order: rooms that slide in, an inventory as locks and keys, monsters wandering on a generator in the model. |\n| [TinyManiacMansion](games/adventure/TinyManiacMansion.ml) | 2D | 1987 | computer | 1 | Maniac Mansion (Ron Gilbert and Gary Winnick, Lucasfilm Games, 1987) | Past the purple tentacle and into Dr. Fred's lab, a verb and a click at a time. | The parser become a menu: SCUMM's verbs and sentence line, on the same world model as TinyZork; walkboxes, the floor as boxes and a path through them; a script per object. |\n| [TinyZeldaLinkPast](games/adventure/TinyZeldaLinkPast.ml) | 2.5D | 1991 | console | 1 | The Legend of Zelda: A Link to the Past (Nintendo, 1991), after TinyZelda | Hyrule scrolling past, soldiers and bushes to cut, three pendants, and the Master Sword in the Lost Woods. | The three-quarter view: the ground from above, what stands on it from the front, drawn farthest first by its base line -- walking behind a tree's canopy with no height anywhere in the model; pixel art in XPM files, a sprite sheet cut into frames, each picture painted colour over colour in few rectangles. |\n| [TinyAloneInTheDark](games/adventure/TinyAloneInTheDark.ml) | 3D | 1992 | PC | 1 | Alone in the Dark (Fr\xc3\xa9d\xc3\xa9rick Raynal, Infogrames, 1992) | A house at night seen by fixed cameras, a locked study, and something in the corridor. | Fixed cameras that cut between rooms (cinematography); tank controls, the only ones that survive a cut; a doorway's hysteresis. |\n| [TinyMyst](games/adventure/TinyMyst.ml) | 2D | 1993 | Mac | 1 | Myst (Rand and Robyn Miller, Cyan, 1993) | A deserted island, four marker switches, a library, two brothers trapped in two books, and a secret behind the shelf. | The slideshow: every picture ray traced before (our ray tracer, the Povray way), a click only choosing the next; a HyperCard stack, its cards and buttons scripted in HyperTalk; a button a solid, found by casting a ray through the pixel clicked. |\n| [TinyTombRaider](games/adventure/TinyTombRaider.ml) | 3D | 1996 | console | 1 | Tomb Raider (Toby Gard, Core Design, 1996) | A raider in a tomb dug into a cave: a chasm, a slide, ledges, a block, an idol, a boulder. | A level as a grid of floor and ceiling heights, slopes and rough caves as triangles; free running but committed jumps and grid-snapped grabs; Lara as rigid meshes on a keyframed skeleton. |\n| [TinyGTA](games/adventure/TinyGTA.ml) | 2.5D | 1997 | PC | 1 | Grand Theft Auto (DMA Design, 1997) | A city from above: any car is yours, phones ring with work, and the police count your crimes in stars. | The open world: a city that runs without you (traffic and people on a road graph), any car taken, the wanted level; the camera rising with speed; buildings leaning out of the screen. |\n| [TinyMetalGearSolid](games/adventure/TinyMetalGearSolid.ml) | 2D | 1998 | console | 1 | Metal Gear Solid (Hideo Kojima, Konami, 1998), after Metal Gear (1987) | Across an enemy base to the elevator, unseen, with a radar, a knock and a cardboard box. | Stealth: cones of vision stopped by walls, shown only on the radar, which jams in an alert; guards as a state machine written as data (patrol, \"?\", \"!\", evasion), walking by A*. |\n| [TinyZeldaOcarina](games/adventure/TinyZeldaOcarina.ml) | 3D | 1998 | console | 1 | The Legend of Zelda: Ocarina of Time (Nintendo EAD, 1998) | Across Hyrule Field by day and by night to a temple, and a Stalfos whose shield must be got round. | Z-targeting: the lock-on, the controls re-read around the enemy held (sideways is an orbit) and the camera over the shoulder on the line through the two; an enemy that blocks and opens after its telegraphed chop. The field as a hub: loading zones to places with their own coordinates, a clock that runs only there, a night with its own monsters, the light baked in. |\n| [TinyIco](games/adventure/TinyIco.ml) | 2D | 2001 | console | 1 | Ico (Fumito Ueda, Team Ico, Sony, 2001) | Lead Yorda by the hand out of a castle: pull her up ledges, call her over gaps, beat off the shadows that come for her. | The companion you look after: an AI with limits of her own, a hand as a kept distance, obstacles that are hers not yours; enemies after her, not you. |\n| [TinyJourney](games/adventure/TinyJourney.ml) | 2D | 2012 | console | 1 | Journey (Jenova Chen, thatgamecompany, 2012) | Walk, slide and fly across a desert to the light on the mountain, a stranger in white at your side. | Cooperation without words: one verb, the chirp, and nearness; the scarf as the only resource; the ground a smooth function, its slope the sliding. |\n\n## Role-playing and dungeons\n\n`games/rpg/`: a character who grows -- hit points, levels, items --\nthrough a dungeon of many rooms or levels, often generated, fought in\nturns or in real time.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyRogue](games/rpg/TinyRogue.ml) | 2D | 1980 | mainframe | 1 | Rogue (Michael Toy, Glenn Wichman, Ken Arnold, 1980) | A dungeon made anew each game, down to the Amulet of Yendor. | Time in turns; a dungeon generated from a seed; what you see, and what you have seen. |\n| [TinyGauntlet2](games/rpg/TinyGauntlet2.ml) | 2D | 1986 | arcade | 1 | Gauntlet II (Ed Logg, Atari Games, 1986) | Four heroes, a dungeon seen from above, and generators spawning crowds. | Generators (monsters as a flow, not a set); health as the clock; greedy chasers or one flow field (`chase=field`). |\n| [TinyDungeonMaster](games/rpg/TinyDungeonMaster.ml) | 2.5D | 1987 | computer | 1 | Dungeon Master (FTL Games, 1987) | One hero underground, a step at a time, with a torch and no map. | Real time on a grid; a view with no projection at all: nested frames at fixed places, drawn farthest first. |\n| [TinyDiablo](games/rpg/TinyDiablo.ml) | 2.5D | 1996 | PC | 1 | Diablo (Blizzard North, 1996) | Click to walk and kill in a dungeon drawn from one fixed angle. | Rogue in real time: click to walk (the isometric projection inverted, then A*); a dungeon from an LFSR; the dark. |\n| [TinyHades](games/rpg/TinyHades.ml) | 3D | 2020 | PC | 1 | Hades (Supergiant, 2020) | Out of the underworld a chamber at a time, a boon from a god after each. | The roguelite: death pays for the next run; boons as numbers changed for a run; the invulnerable dash. |\n\n## First-person\n\n`games/fps/`: the world seen through the eyes of whoever you play, on\nfoot -- shooting, building or breaking; and each game here is also\nabout its view, from a raycaster to a real 3D renderer.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyMazeWar](games/fps/TinyMazeWar.ml) | 2.5D | 1973 | mainframe | 1 | Maze War (Steve Colley, Greg Thompson and Howard Palmer, NASA Ames, 1973-74) | Eyeballs hunting each other down the corridors of a maze, in lines. | The first first-person game and shooter: nested frames, a cell at a time, in lines only; every player a command per tick, the shape of lockstep networking; robots. |\n| [TinyBattlezone](games/fps/TinyBattlezone.ml) | 2.5D | 1980 | arcade | 1 | Battlezone (Ed Rotberg, Atari, 1980) | A tank's periscope over a plain of wireframe pyramids and blocks. | The first 3D arcade hit: wireframes taken into the eye's coordinates, clipped at the near plane, divided by the depth. |\n| [TinyBattlezone3d](games/fps/TinyBattlezone3d.ml) | 3D | 1980 | arcade | 1 | TinyBattlezone | The same plain and the same enemy, with solid faces. | A z-buffer turns obstacles into cover. |\n| [TinyWolfenstein](games/fps/TinyWolfenstein.ml) | 2.5D | 1992 | PC | 1 | Wolfenstein 3D (id Software, 1992) | A maze walked in first person. | The raycaster: one ray per screen column through a grid (DDA); billboards hidden by a one-dimensional z-buffer. |\n| [TinyWolfenstein3d](games/fps/TinyWolfenstein3d.ml) | 3D | 1992 | PC | 1 | TinyWolfenstein | The same maze, each wall cell a box. | What 3D costs and buys: every box projected and filled, nothing assumed about the walls. |\n| [TinyCyberSled](games/fps/TinyCyberSled.ml) | 3D | 1993 | arcade | 1-2 (net) | Cyber Sled (Namco, 1993) | Two hover-tanks duel in a closed arena of flat-shaded polygons. | Twin-stick tank controls, one stick per tread, plus strafing: two sticks read as a speed, a turn and a slide; homing missiles, ramps, a split screen, 3D juice (Juice3d) and play over the network (Multiplayer3d) as flags. |\n| [TinyDoom](games/fps/TinyDoom.ml) | 2.5D | 1993 | PC | 1 | Doom (id Software, 1993) | A level of sectors: stairs, a pillar, a window onto a dark room. | The BSP tree: walls nearest first, per-column clip arrays, floors and ceilings at any height, and no z-buffer. |\n| [TinyDoom3d](games/fps/TinyDoom3d.ml) | 3D | 1993 | PC | 1 | TinyDoom | The same level, drawn as any 3D scene. | What a z-buffer makes unnecessary: no tree, no order, every polygon every frame. |\n| [TinyQuake](games/fps/TinyQuake.ml) | 3D | 1996 | PC | 1 | Quake (id Software, 1996) | Three rooms, three runes, and the exit, in true 3D. | The level prepared before the game: qbsp (CSG and a BSP of solid space), vis (potentially visible sets), light (lightmaps). |\n| [TinyHalfLife2](games/fps/TinyHalfLife2.ml) | 3D | 2004 | PC | 1 | Half-Life 2 (Valve, 2004) | A yard of Ravenholm, two zombies, and the gravity gun. | Physics as the game: the gravity gun, a hinged seesaw, floating barrels, zombies that go limp as ragdolls. |\n| [TinyMinecraft](games/fps/TinyMinecraft.ml) | 3D | 2009 | PC | 1 | Minecraft (Markus Persson, 2009) | Walk, jump, fly, and remove and place blocks. | A voxel world in a hash table: chunks cached on the GPU, hidden faces culled, blocks picked by a ray, one texture atlas. |\n| [TinyFortnite](games/fps/TinyFortnite.ml) | 3D | 2017 | PC | 1 | Fortnite Battle Royale (Epic Games, 2017) | Sixteen out of a flying bus onto an island, a storm closing in, and walls, floors and ramps built in a second. | A battle royale: the bus, the glide, chests and a storm that shrinks on a timetable; building snapped to a grid, structural integrity as a flood fill over the pieces' shared edges; bots on libs/ai's Bot and Sense that wall up when shot. |\n| [TinyTeardown](games/fps/TinyTeardown.ml) | 3D | 2020 | PC | 1 | Teardown (Dennis Gustafsson, Tuxedo Labs, 2020) | A heist in a level of voxels, every one of which can be knocked out. | Destructible voxels: greedy meshing, a flood fill finding what is loose, and loose pieces turned into rigid bodies of the 3D engine. |\n\n## Flight and space\n\n`games/flight/`: flying a craft in three dimensions (or its top-down\nshadow), over terrain, through space or down a mine; the controls of\na vehicle that is not on the ground.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyElite](games/flight/TinyElite.ml) | 2.5D | 1984 | computer | 1 | Elite (David Braben and Ian Bell, Acornsoft, 1984) | A Cobra in orbit round Lave, pirates, and docking in the Coriolis station. | Full 3D in 32 KB: the universe turning round a ship that never moves, small-angle rotations, hidden lines on convex hulls, a generated galaxy. |\n| [TinyElite3d](games/flight/TinyElite3d.ml) | 3D | 1984 | computer | 1 | TinyElite | The same flight, with solid ships. | Backface culling and a z-buffer take over the hidden lines, and hide ships behind ships. |\n| [TinyXpilot](games/flight/TinyXpilot.ml) | 2D | 1991 | workstation | 2 | XPilot (Bj\xc3\xb8rn Stabell and Ken Ronny Schouten, 1991) | Ships with inertia and gravity in a cave, cannons and fuel stations. | Newton's third law by hand (a rope between ship and ball); a crash judged by the jolt; cannons that lead their target; the split screen by clipping. |\n| [TinyComanche](games/flight/TinyComanche.ml) | 2.5D | 1992 | PC | 1 | Comanche: Maximum Overkill (NovaLogic, 1992) | A helicopter over a voxel island, popping balloons. | Voxel Space: a height map drawn column by column, nearest first, with a y-buffer. |\n| [TinyComanche3d](games/flight/TinyComanche3d.ml) | 3D | 1992 | PC | 1 | TinyComanche | The same island as triangles and a z-buffer. | The flight simulators' way, then the GPUs': the terrain as a mesh, the camera free to roll. |\n| [TinyDescent](games/flight/TinyDescent.ml) | 2.5D | 1995 | PC | 1 | Descent (Parallax Software, 1995) | A ship flying any way up through a mine, to the robots and the exit. | Six degrees of freedom; a mine drawn through the portals between its convex cells, farthest first, with no z-buffer. |\n| [TinyDescent3d](games/flight/TinyDescent3d.ml) | 3D | 1995 | PC | 1 | TinyDescent | The same mine, drawn by playground3d. | The trade the GPUs won: a depth test per pixel instead of a portal walk. |\n\n## Racing\n\n`games/racing/`: a course driven round against the clock or against\nother drivers; the road, the track or the map, and the car on it.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyGranTrak10](games/racing/TinyGranTrak10.ml) | 2D | 1974 | arcade | 1 | Gran Trak 10 (Atari, 1974) | One white car on a black track, alone against the clock, a gear lever and oil slicks. | The first racer from above: a four-speed gearbox heard in the engine's pitch; the track as its center line, walls where it's too far. |\n| [TinyOutRun](games/racing/TinyOutRun.ml) | 2.5D | 1986 | arcade | 1 | Out Run (Yu Suzuki, Sega, 1986) | A red convertible on a road of curves and hills, palm trees going by. | The pseudo-3D road: segments projected as trapezoids, curves as shifts that add up, hills that hide, fog. |\n| [TinySuperSprint](games/racing/TinySuperSprint.ml) | 2D | 1986 | arcade | 1-2 | Super Sprint (Atari Games, 1986) | Four little cars on a figure eight with a bridge, golden wrenches buying upgrades. | Cars that bump and bounce off walls; a track crossing itself, each car's walls measured around where it is, the bridge drawn between the two levels. |\n| [TinySuperOffRoad](games/racing/TinySuperOffRoad.ml) | 2.5D | 1989 | arcade | 1-2 | Ironman Ivan Stewart's Super Off Road (Leland, 1989) | Four trucks in a dirt stadium seen from the stands, over a jump, the whoops, a hill and a mud hole. | Ground with a height: slower up, faster down, flying off a crest when the ground falls away faster than gravity; the stadium as lifted quads, sorted with the trucks. |\n| [TinySupercars](games/racing/TinySupercars.ml) | 2D | 1990 | computer | 1 | Supercars (Magnetic Fields, Gremlin, 1990) | Three laps against three cars on a scrolling track, missiles, and a shop between races. | A career: prize money, damage, repairs and upgrades; the camera following ahead, and the whole track again as a minimap. |\n| [TinyMicroMachines](games/racing/TinyMicroMachines.ml) | 2D | 1991 | console | 1-2 | Micro Machines (Codemasters, 1991) | Tiny cars racing seen from above on a breakfast table. | Cars that drift (the velocity turning towards the heading by a grip); a camera looking ahead of the leader; the screen's edge as the finish line. |\n| [TinyMarioKart](games/racing/TinyMarioKart.ml) | 2.5D | 1992 | console | 1-2 | Super Mario Kart (Nintendo, 1992) | A kart race on a Mode 7 floor, and the balloon battle on Battle Course 1, alone or two in a split screen. | Mode 7: the floor sampled a screen row at a time; karts, shells and item boxes as billboards; the split screen. |\n| [TinyVirtuaRacing](games/racing/TinyVirtuaRacing.ml) | 3D | 1992 | arcade | 1 | Virtua Racing (Yu Suzuki, Sega AM2, 1992) | Five laps of Big Forest, Bay Bridge or Acropolis against fifteen formula cars and the clock (or TinyOutRun's coast), chosen on a turning model of each course. | The first great polygon racer: its three courses traced from their maps, hills of flat-shaded facets, a suspension bridge, an overpass and a tunnel, checkpoints, four views, a seven-speed V12. |\n| [TinyMarioKart64](games/racing/TinyMarioKart64.ml) | 3D | 1996 | console | 1-2 | Mario Kart 64 (Nintendo, 1996) | Three laps against seven karts, item boxes, and a four-player battle. | Polygons for the world and sprites for the karts; four players on one screen; a battle arena with two heights. |\n| [TinyBigRedRacing](games/racing/TinyBigRedRacing.ml) | 3D | 1996 | PC | 1 | Big Red Racing (Big Red Software, Domark, 1996) | Three laps against three drivers over the Highlands, down a red canyon and on the Moon, a vehicle per course. | The course in the terrain, not on it: the road painted quads, the canyon's walls the ground raised; a wall is ground too steep to climb; the Moon's sixth of gravity, every crater a ramp. |\n| [TinyIgnition](games/racing/TinyIgnition.ml) | 3D | 1997 | PC | 1-2 | Ignition (UDS, Virgin, 1997) | A sports car, a police car and a school bus racing a country road seen from above, over two ramps; two players side by side. | Micro Machines' view and driving on ground with a height: the racing kit's Offroad (the slope's pull, the takeoff when the ground falls away faster than the car falls, the landing), the ground a function made from the road (Track3d.locate), the screen split down the middle. |\n| [TinySSX](games/racing/TinySSX.ml) | 3D | 2000 | console | 1 | SSX (EA Canada, 2000) | A snowboard race down a mountain against three riders; off the kickers, spins, flips and grabs, landed straight or wiped out, filling the boost meter. | Tricks as the race's fuel: in the air the keys turn the rider, and on landing the angles are checked, named and scored; the rider a car without an engine (the racing kit's Offroad, gravity along the slope), the mountain the racing kit's Road going down, walked into space by Track3d.of_road, its profile smoothed so the riders don't hop off every sample. |\n\n## Sports and tables\n\n`games/sports/`: a sport or a table game played on the screen as it is\nplayed off it -- a ball or a puck, a pitch or a table, its physics and\nits rules (or, like Speedball's, rules it could have), and a team or\nan opponent to beat. The table games count: pinball and air hockey\n(Shufflepuck) are simulated tables. Pong is not here: it only borrowed\ntennis's idea, two paddles and a ball, and is an arcade game.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyTennisForTwo](games/sports/TinyTennisForTwo.ml) | 2D | 1958 | analog | 1-2 | Tennis for Two (William Higinbotham and Robert Dvorak, Brookhaven National Laboratory, 1958) | Tennis from the side on an oscilloscope, a knob and a button each. | The first video game made to entertain: a ballistic trajectory, its bounces, a net; the volley; the phosphor's trail. |\n| [TinyShufflePuck](games/sports/TinyShufflePuck.ml) | 2.5D | 1988 | Mac | 1 | Shufflepuck Caf\xc3\xa9 (Christopher Gross, Br\xc3\xb8derbund, 1988) | Air hockey down a table in perspective against a bar's regulars. | The table seen from your end: one division of perspective, and its inverse for the mouse; opponents as a few knobs; substeps against tunnelling. |\n| [TinyKickOff2](games/sports/TinyKickOff2.ml) | 2D | 1990 | computer | 1 | Kick Off 2 (Dino Dini, Anco, 1990) | Football from above, where the ball is not glued to your feet. | The free ball (`ball=glued` to compare); aftertouch; a team as a formation pulled towards the ball. |\n| [TinySpeedball2](games/sports/TinySpeedball2.ml) | 2D | 1990 | computer | 1 | Speedball 2: Brutal Deluxe (The Bitmap Brothers, 1990) | Handball, ice hockey and a fist fight on a sheet of metal. | The ball carried; an arena that scores like a pinball table; walls instead of touchlines; the tackle as a move. |\n| [TinySensibleSoccer](games/sports/TinySensibleSoccer.ml) | 2D | 1992 | computer | 1 | Sensible Soccer (Jon Hare and Chris Yates, Sensible Software, 1992) | Football with aftertouch, the third answer to the ball question. | Close control, between glued and free; the ball's height and its shadow; a pulled-back view; lofted aftertouch. |\n| [TinyPinball](games/sports/TinyPinball.ml) | 2D | 1992 | computer | 1 | Pinball Dreams (Digital Illusions, 1992) | A table from above: plunger, flippers, bumpers, targets, and tilt. | The flipper carries the ball (its surface speed, w r); the table as data; substeps against tunnelling; two engines. |\n| [TinyPinball3d](games/sports/TinyPinball3d.ml) | 3D | 1992 | computer | 1 | TinyPinball | The same table in 3D, on the physics engine. | Continuous collision: the ball swept by conservative advancement, even against flippers moving and turning. |\n| [TinyTonyHawk](games/sports/TinyTonyHawk.ml) | 2D | 1999 | console | 1 | Tony Hawk's Pro Skater (Neversoft, Activision, 1999) | Two minutes on a half-pipe seen from the side: pump, fly, flip, grab, and chain it all. | The combo: a chain's tricks summed and multiplied by its length, a repeat worth half; the revert and the manual as its links; the landing judged by the board's angle; the skater as a point on a curve. |\n\n## Strategy and simulation\n\n`games/strategy/`: planning over reflexes, at a scale above one\ncharacter -- an army, a squad in turns, a city, a civilization -- or a\nsystem to run and keep alive.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyHamurabi](games/strategy/TinyHamurabi.ml) | 2D | 1968 | mainframe | 1 | Hamurabi (Doug Dyment, 1968, after The Sumer Game, Mabel Addis and William McKay, IBM, 1964) | Ten years of ancient Sumer, a harvest at a time, typed on a teletype. | The first simulation game, and the first designed by a woman: a city of five numbers, a year one function of three answers and four dice; the rules as David Ahl's BASIC printed them. |\n| [TinySimCity](games/strategy/TinySimCity.ml) | 2D | 1989 | computer | 1 | SimCity (Will Wright, Maxis, 1989) | Lay out roads, power and zones, and the city builds itself. | The game is the simulation: zones that need each other (the RCI bars), power as a flood fill, pollution as a blur. |\n| [TinyCivilization](games/strategy/TinyCivilization.ml) | 2D | 1991 | PC | 1 | Civilization (Sid Meier and Bruce Shelley, MicroProse, 1991) | Found cities from 4000 BC and climb a tree of technologies. | The tech tree as a DAG; a city as an economy of food, shields and trade; a world made from noise; a rival playing by the same rules. |\n| [TinyDune2](games/strategy/TinyDune2.ml) | 2D | 1992 | PC | 1 | Dune II (Westwood Studios, 1992) | Harvest, build, and order units by pointing: real-time strategy. | Real-time strategy's loop (harvest, build, fight); orders as A* paths; a search whose goal is a question. |\n| [TinyXCOM](games/strategy/TinyXCOM.ml) | 2D | 1994 | PC | 1 | X-COM: UFO Defense (Julian Gollop, Mythos Games / MicroProse, 1994) | Four soldiers, a crashed UFO, and a fight in turns. | Time units spent on every step and shot; the chance to hit shown before shooting; a vision cone per soldier; reaction fire in the enemy's turn. |\n| [TinyWarcraft2](games/strategy/TinyWarcraft2.ml) | 2D | 1995 | PC | 1 | Warcraft II (Blizzard, 1995) | Peasants mine gold and chop wood; footmen fight orcs. | One flow field for a whole crowd; the fog of war; two resources. |\n| [TinyWorms](games/strategy/TinyWorms.ml) | 2D | 1995 | computer | 2 | Worms (Andy Davidson, Team17, 1995) | Artillery for two: angle, power, the wind, and craters. | Projectiles under gravity and wind; a height-map terrain carved by craters. |\n| [TinyTowerDefense](games/strategy/TinyTowerDefense.ml) | 2D | 2007 | web | 1 | Desktop Tower Defense (Paul Preece, 2007) | Build the maze the monsters must walk, out of towers. | The player builds the maze: A* redone at every tower, and the search as a referee that forbids closing the way. |\n\n## Rhythm\n\n`games/rhythm/`: pressing in time with music, judged by the music's\nclock rather than the screen's.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyDDR](games/rhythm/TinyDDR.ml) | 2D | 1998 | arcade | 1 | Dance Dance Revolution (Konami, 1998) | Press each arrow as it reaches the top, in time with the music. | What time is it? Steps judged by the music's clock, the calibration measured from the player; charts computed from the melody. |\n| [TinyGuitarHero](games/rhythm/TinyGuitarHero.ml) | 2.5D | 2005 | console | 1 | Guitar Hero (Harmonix, 2005) | Hold the fret and strum as each note reaches the line. | The instrument: fret and strum, long notes, a difficulty as the same song reduced; the highway as Out Run's road straightened. |\n| [TinyRockBand](games/rhythm/TinyRockBand.ml) | 3D | 2007 | console | 1 | Rock Band (Harmonix, 2007) | A band on four highways: play guitar, bass, drums or keys. | The band: four parts from a tune's four voices, four ways of pressing, drums from a percussion voice, one crowd meter. |\n\n## Programming games\n\n`games/programming/`: you win by writing the program that plays --\nthe player is a programmer, the game a machine and its rules, and a\nmatch is programs run against the machine or against each other.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyKarel](games/programming/TinyKarel.ml) | 2D | 1981 | mainframe | 1 | Karel the Robot (Richard E. Pattis, Stanford, 1981) | Type a program in Pattis's language and watch the robot run it: the newspaper, the harvest, the stairs, the maze. | Teaching a robot new words before any variable; a recursive-descent parser with its mistakes on their lines; the right-hand rule, a program for a world it has never seen. |\n| [TinyCoreWar](games/programming/TinyCoreWar.ml) | 2D | 1984 | computer | 1 | Core War (A. K. Dewdney and D. G. Jones, 1984) | Write two programs in its editor, then watch them fight in one circular memory, each trying to make the other execute a DAT. | A virtual machine and its assembler, a page each (Redcode, MARS), the assembler's mistakes shown on their lines; the classic warriors to start from -- the Imp, the Dwarf, the Mice -- and why each beats the next. |\n\n# Apps\n\nIn `apps/office/`, the sections below up to Graphics (excluded) being\nits kinds of program, and in `apps/gamedev/`, the tools making what any\ngame can use (a genre's level editor is with its games instead, as\nTinySokobanEd is: see `games/README-tools.md`). The other categories\neach have a section, which names their directory.\n\n## Word processing and publishing\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyBravo](apps/office/TinyBravo.ml) | app | 1974 | workstation | 1 | Bravo (Butler Lampson and Charles Simonyi, Xerox PARC, 1974) | The first editor where the screen looked like the page. | WYSIWYG, and the piece table; modal commands, with their famous \"edit\" trap. |\n| [TinyWord](apps/office/TinyWord.ml) | app | 1983 | PC | 1 | Microsoft Word (1983 on DOS, 1985 on the Macintosh) | The same text as TinyBravo, with no modes. | No modes: a caret wherever you click, cut, copy and paste, menus you can read, undo by name. |\n| [TinyFrameMaker](apps/office/TinyFrameMaker.ml) | app | 1986 | workstation | 1 | FrameMaker (Charles Corfield, Frame Technology, 1986) | A long document that lays itself out in columns and pages. | Text flowing through a chain of frames over pages; master pages; anchored frames carrying parts along with the text. |\n\n## Spreadsheets\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyVisiCalc](apps/office/TinyVisiCalc.ml) | app | 1979 | computer | 1 | VisiCalc (Dan Bricklin and Bob Frankston, 1979) | The program that sold the Apple II: cells and formulas. | The spreadsheet on a 40-column screen with no mouse: the cursor as the interface, slash commands, recalculation in row or column order. |\n| [TinyExcel](apps/office/TinyExcel.ml) | app | 1985 | Mac | 1 | Excel (Microsoft, 1985, on the Macintosh) | The same spreadsheet six years later, with the mouse. | The same engine with 1985's answers: ranges, menus, a formula bar, Fill Down's relative references, a dependency graph. |\n\n## Presentations\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyPowerPoint](apps/office/TinyPowerPoint.ml) | app | 1987 | Mac | 1 | PowerPoint (Robert Gaskins and Dennis Austin, Forethought, 1987) | Slides, an outline, a master, a sorter, and the show. | A talk written before it is drawn: four views of one outline, and a master slide, a style sheet for pages. |\n\n## Authoring and compound documents\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyHyperCard](apps/office/TinyHyperCard.ml) | app | 1987 | Mac | 1 | HyperCard (Bill Atkinson, Apple, 1987) | Cards, buttons and scripts: programming for non-programmers. | Using and building as one: backgrounds as a database's columns, the message path, HyperTalk. |\n| [TinyOpenDoc](apps/office/TinyOpenDoc.ml) | app | 1994 | Mac | 1 | OpenDoc (Apple, IBM and CI Labs, 1994-97) | A document with no application: text, sheet, picture and drawing parts. | Parts edited in place, the menu bar becoming theirs; unknown parts kept byte for byte; sizes negotiated or scaled. |\n| [TinyOffice](apps/office/TinyOffice.ml) | app | 2020 | PC | 1 | today's office suites (Microsoft 365, iWork, LibreOffice) | Choose a document, sheet, presentation, picture or drawing; each holds the others. | A start screen; every kind a host; objects floating anywhere, dragged and resized; text running round them, each object its own way; pages with headers, footers and page numbers; objects that move with the text; a chart linked to a sheet; a slide show; OLE's menu merging. |\n\n## Graphics\n\n`apps/graphics/`: the programs pictures are made with -- the two ways\nof keeping one, as dots (TinyMacPaint) and as objects (TinyMacDraw),\nboth Apple's of 1984; the Amiga's dots, each a colour's number in a\npalette that can turn (TinyDeluxePaint); and what the dots became with\n24 bits each (TinyPhotoshop, over `libs/graphics/imaging`:\n`plan_photoshop.md`); and a 3D scene built and ray traced\n(TinyBlender, over `appkits/modeler` and the Povray way).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyMacPaint](apps/graphics/TinyMacPaint.ml) | app | 1984 | Mac | 1 | MacPaint (Bill Atkinson, Apple, 1984) | Paint with dots: pencil, brush, shapes, bucket, and a selection to move. | The picture as bits: palettes of tools and patterns, the seed fill, marching ants, one undo per stroke. |\n| [TinyMacDraw](apps/graphics/TinyMacDraw.ml) | app | 1984 | Mac | 1 | MacDraw (Apple, 1984) | A picture made of objects you can select, move and group. | The picture as a list of objects: the order is the depth, handles, grouping, hollow shapes clicked through. |\n| [TinyDeluxePaint](apps/graphics/TinyDeluxePaint.ml) | app | 1985 | computer | 1 | Deluxe Paint (Dan Silva, Electronic Arts, 1985, on the Amiga) | A picture of 32 colours whose waterfall and fire move by the palette alone: Tab, and the colours cycle. | Indexed colour, a dot the number of a colour in a palette of the Amiga's 12 bits; colour cycling, a range of the palette turning at each frame, the picture untouched; the brush cut from the picture, its transparent colour the background's; symmetry; its file IFF ILBM, chunks (RIFF's ancestor), bitplanes, ByteRun1 (MacPaint's PackBits) and the cycling ranges. |\n| [TinyPhotoshop](apps/graphics/TinyPhotoshop.ml) | app | 1990 | Mac | 1 | Photoshop 1.0 (Thomas and John Knoll, Adobe, 1990) | NASA's Blue Marble to retouch: select with the magic wand, adjust Levels or Hue/Saturation, filter, paint. | A photograph's 24 bits a dot and image processing as menus: point operations as tables of 256 (Levels with its histogram, Curves, Hue/Saturation in HSL), convolutions (blur, sharpen, emboss; the Gaussian separable; unsharp mask), Sobel's Find Edges, the median, interpolation (nearest, bilinear, bicubic); the selection as a mask a byte a dot, every operation applied through it, the wand a flood fill with a tolerance, feathering a blur of the mask; brushes as dabs with a hardness, a stroke's opacity uniform, the airbrush, rubber stamp and smudge; dialogs with a live preview; the picture drawn as tiles, only the changed ones sent again; and Photoshop 3.0's layers, each with its opacity and blend mode (Multiply, Screen, Overlay, Color...), flattened by Porter and Duff's over, a Layers palette, a photograph placed as a layer. |\n| [TinyBlender](apps/graphics/TinyBlender.ml) | app | 1994 | PC | 1 | Blender 2.8 (Ton Roosendaal, NeoGeo 1994, open source 2002; 2.8 in 2019) | Blender's default cube in the quad view, moved with G, R and S, the camera's view ray traced live. | The quad view, three plans and the camera (Sketchpad III's four); objects as primitives placed by location, rotation and scale; modal transforms locked to an axis, a number typed; the Boolean modifier as the ray tracer's exact CSG; the rendered viewport sharpening as you watch, its wires on the solids by the ray tracer's own projection; materials (mirror, glass, solid textures); F12. |\n\n## CAD\n\n`apps/cad/`: the drawings that are models rather than pictures --\ngeometry that keeps its own rules, constraints the program maintains,\nparts placed as instances of other drawings (`plan_cad.md`), faces that\nappear where lines close a loop.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinySketchpad](apps/cad/TinySketchpad.ml) | app | 1963 | mainframe | 1 | Sketchpad (Ivan Sutherland, MIT Lincoln Laboratory's TX-2, 1963) | Draw with the light pen, then tell the drawing its rules: a rough hexagon becomes regular, a linkage moves. | The first interactive graphics program: the pen aiming at points and lines; items sharing their points; constraints kept by relaxation, one point at a time by least squares on numerical derivatives; masters and instances, a honeycomb of one hexagon; the window zoomed over a sheet bigger than the screen; the scope's dots. |\n| [TinyAutoCAD](apps/cad/TinyAutoCAD.ml) | app | 1992 | PC | 1 | AutoCAD Release 12 (Autodesk, 1992; AutoCAD 1982) | A bracket drawn on layers, by a command line that asks and a crosshair that snaps. | Drafting by conversation: commands asking for points typed (absolute, @relative, @polar) or picked; object snaps and ORTHO; TRIM, EXTEND, OFFSET and FILLET as crossings of lines and circles; window and crossing selection; layers; blocks inserted; dimensions that measure; undo by command; DXF, the drawing as text read and written. |\n| [TinySketchup](apps/cad/TinySketchup.ml) | app | 2000 | PC | 1 | SketchUp (Brad Schell and Joe Esch, @Last Software, 2000; Google SketchUp 8, 2010) | A house pushed and pulled out of a rectangle: draw a line across a face, pull the face, lift the ridge. | 3D for everyone: the model as edges and the faces they close, found by themselves in a plane; sticky geometry, vertices shared and edges split; push/pull, a face swept along its normal, sliding, extruding, merging into its neighbours or notching them; holes, the Euler-Poincare formula kept; the inference engine, a 3D point guessed from the screen (endpoint, midpoint, on edge, on face, the red, green and blue axes) and said; the Measurements box; soft edges; orbit, pan, zoom; the faces ordered by a BSP tree, no z-buffer. |\n\n## Education\n\n`apps/education/`: the programs made for a learner of a subject -- the\nsky, geometry, logic, typing -- rather than for getting work done.\nLearning to program is elsewhere (the programming games, the ways, the\nprogramming tools), and so are the educational games, which are played.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyInteractivePhysics](apps/education/TinyInteractivePhysics.ml) | app | 1989 | Mac | 1 | Interactive Physics (Knowledge Revolution: David Baszucki and Erik Cassel, 1989) and Working Model (1993) | Draw disks and blocks, tie them with springs, ropes, rods and pins, press Run: the meters plot the energies, the tape rewinds. | The physics lab as a drawing that moves: the conservation of energy measured (kinetic, turning included, against potential, of height and of springs), friction and inelastic landings taking it away, momentum kept by collisions; SI units over a pixel world; the tape as the list of the simulation's values, rewound and run again from any frame. |\n| [TinyStellarium](apps/education/TinyStellarium.ml) | app | 2001 | PC | 1 | Stellarium (Fabien Chereau, 2001), after the planetarium projector (Zeiss Mark I, 1923) | The sky of a place at an instant, as you would see it standing there; time runs as fast as you like, the sky turns, the Moon waxes and the planets wander. | The celestial sphere turned by the sidereal time and tilted by the latitude; precession, Thuban the pole star of the pyramids; the Sun and the planets by Kepler's ellipses seen from the Earth, and Mars's retrograde loop; the Moon's disturbances and its phase; magnitudes, spectral classes as colours, the sky's brightness hiding the stars; the stereographic projection, the horizon a circle and the ground its outside. |\n\n## PIM\n\n`apps/pim/`: the personal information managers -- the time, the\ncalendar, and the Palm Pilot's address book and to-do list to come\n(`plan_pim.md`), over core's `Civil` and `Clock`.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyCalendar](apps/pim/TinyCalendar.ml) | app | 1971 | mainframe | 1 | cal (Unix, 1971), iCal (Apple, 2002) | A month or a week of events, dragged, stretched and repeated; September 1752 as England lived it. | The calendar computed, not looked up (a date a day number); the Julian calendar before the switch, cal's eleven missing days; a repetition as a rule (RRULE), its occurrences computed for the days shown; iCalendar files, read and written. |\n| [TinyClock](apps/pim/TinyClock.ml) | app | 1984 | Mac | 1 | the Alarm Clock (Apple, Macintosh, 1984), xclock (X Window System, mid-1980s) | The time here and in six cities, on hands or in a strip, and an alarm. | The wall clock's time, seconds since 1970 and the offset only the platform knows; hands keeping every fraction where the strip truncates; cities with no daylight saving, so one offset all year. |\n| [TinyPalmPilot](apps/pim/TinyPalmPilot.ml) | app | 1996 | handheld | 1 | the Pilot (Jeff Hawkins, Donna Dubinsky and Ed Colligan, Palm Computing, 1996) | A Date Book, an Address book, a To Do list and a Memo Pad behind four buttons, on a 160 x 160 screen. | Four things done and nothing else; no Save and no waiting, every change kept at once; written straight on the screen (an event on its hour, a name in the Look Up line); the data in the world's formats, iCalendar and vCard, for HotSync. |\n\n## Game making\n\n`apps/gamedev/`: the tools making what any game can use -- sprites,\nmaps, sounds -- written in the format of the playground layer that\nreads them, in files the games embed at build time.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyAseprite](apps/gamedev/TinyAseprite.ml) | app | 2001 | PC | 1 | Aseprite (David Capello, 2001) | TinyMario's hero, four frames of pixel art: paint them, play them, export them. | The sprite as text: XPM files (a palette and rows of characters) that GIMP opens and a game embeds; the onion skin; the keys as the file's own characters. |\n| [TinyTiled](apps/gamedev/TinyTiled.ml) | app | 2008 | PC | 1 | Tiled (Thorbjorn Lindeijer, 2008) | TinyMario's level, a cell at a time, the camera following the cursor along it. | The same file as a sprite, a character per cell (Tilemap.of_xpm); an editor that knows the level and not the game, so a cell is its palette color and its character; a minimap, and a keyboard's repeat written out. |\n\n## Music\n\n`apps/music/`: instruments played live, their voices built from\n`audio/`'s blocks (`plan_synth_teaching.md`), and the tracker.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyHammond](apps/music/TinyHammond.ml) | app | 1955 | instrument | 1 | Hammond B-3 (1955) and its Leslie 122 (1965) | Nine drawbars pulled into a registration, chords on the computer's keys, the Leslie's horn and drum turning slow or fast. | Additive synthesis: sines added, from 91 tonewheels on gears (their harmonics tempered, a cent off); a voice per key, freed once silent; the percussion single-triggered; the Leslie modelled from its geometry, the Doppler made by a moving delay. |\n| [TinyRhodes](apps/music/TinyRhodes.ml) | app | 1970 | instrument | 1 | Fender Rhodes Mark I (1970) and its Suitcase; the Wurlitzer 200A (1974) and the Clavinet D6 (1971) | The electric pianos: a Rhodes to play softly or hard, its pickup's curve drawn with the tine's swing across it, the Suitcase's tremolo moving between its speakers. | Physical modelling: the tine as struck resonators (its modes at 1, 6.27, 17.55), read by a pickup whose curve makes the bark as the velocity grows; the Wurlitzer's reed and its capacitor; the Clavinet's string. |\n| [TinyMinimoog](apps/music/TinyMinimoog.ml) | app | 1970 | instrument | 1 | Minimoog Model D (Moog Music, 1970) | Three oscillators, the ladder filter and two contours, played from the computer's keys. | Subtractive synthesis in a fixed signal path read left to right; the ladder filter's resonance, overdriven by the mixer, played by the keyboard; low-note priority and legato; a patch as the panel's positions. |\n| [TinyCS80](apps/music/TinyCS80.ml) | app | 1977 | instrument | 1 | Yamaha CS-80 (1977) | Vangelis's synthesizer: two synthesizers per key, a chord held and one of its notes pressed harder to open it alone, a ribbon to bend them. | Polyphonic aftertouch, each key's pressure its own, into its filters and its level; two layers per voice; a filter envelope with an initial and an attack level; the ring modulator. |\n| [TinyTR808](apps/music/TinyTR808.ml) | app | 1980 | instrument | 1 | Roland TR-808 Rhythm Composer (1980) | The drum machine of electro, hip hop and house: eleven drums with their knobs, the 16 coloured step buttons, the whole pattern shown as a grid. | Drums synthesized, not sampled: a ringing filter struck (the kick's punch and sigh), six square waves through band-passes for the metal, the closed hat choking the open; the sequencer's hits at their samples. |\n| [TinyTB303](apps/music/TinyTB303.ml) | app | 1981 | instrument | 1 | Roland TB-303 Bass Line (1981) | A 16-step bass line playing itself, its pattern a grid to click, its knobs turned while it plays: acid. | The sequencer in the audio clock, its steps at the sample, not the frame; the diode ladder, its poles coupled (the \"18 dB\"); the accent sweep, a capacitor's charge climbing over accents in a row; slides; parameter locks, Elektron's and the OP-XY's. |\n| [TinyDX7](apps/music/TinyDX7.ml) | app | 1983 | instrument | 1 | Yamaha DX7 (1983) | The FM synthesizer of the 1980s: 145 parameters edited one at a time on its LCD, as the DX7 made you, beside what it hid -- the algorithm drawn as a graph lit as it plays, the six envelopes; its cartridges read. | FM with six operators: 32 algorithms, feedback from a sine to a sawtooth to noise; the envelopes' rates and levels in decibels; 16 voices, one stolen when they're all taken; velocity changing the timbre. |\n| [TinyJuno](apps/music/TinyJuno.ml) | app | 1984 | instrument | 1 | Roland Juno-106 (1984) | The polyphonic synthesizer everyone could afford: its sliders in their sections, six voices, and the chorus that makes one oscillator sound like an orchestra. | A DCO, in tune by a digital clock; one envelope for filter and amplifier (measured curves); one high-pass for all the voices; the chorus's two bucket-brigade lines, the right one's modulation inverted, at its measured rates. |\n| [TinySoundtracker](apps/music/TinySoundtracker.ml) | app | 1987 | computer | 1 | Ultimate Soundtracker (Karsten Obarski, Amiga, 1987) | A song as a grid of notes in four channels, typed on a piano of letters, played as it's edited. | The tracker: time going down the screen, a cell a note, an instrument and an effect in hex; a song that carries its own instruments (the MOD file, read and written by audio/formats/mod), played on the Amiga's four channels. |\n| [TinyReBirth](apps/music/TinyReBirth.ml) | app | 1997 | PC | 1 | ReBirth RB-338 (Propellerhead, 1997) | The techno studio in a computer: two TB-303s, a TR-808 and a TR-909 playing together, each machine's pattern chosen, mixed, through distortion, delay, compressor and the pattern controlled filter. | One clock: four sample-exact sequencers started on the same sample stay together for ever; a hub over the machines' own voices; a filter whose cutoff is a pattern. |\n| [TinyOp1](apps/music/TinyOp1.ml) | app | 2011 | instrument | 1 | OP-1 (Teenage Engineering, 2011) | The synthesizer and four-track studio the size of a keyboard: six engines, an envelope, an effect and an LFO, each on the same four coloured encoders, eight sounds, and a tape recording what you play over what it plays back. | Four encoders for everything, the screen saying what they turn; FM, supersaw, waveguide, pulse, phase distortion and bit crushing behind one interface; overdubbing on a tape. |\n| [TinyReface](apps/music/TinyReface.ml) | app | 2015 | instrument | 1 | Reface YC, CP, DX and CS (Yamaha, 2015) | Four small keyboards in one case: a switch for the combo organ, the electric piano, FM and virtual analog, each our original behind it -- the Hammond, the Rhodes, the DX7, the CS-80 -- on 37 mini keys. | A hub made thin by an interface: each voice gives its knobs by name, so a face is a list of labels and names, its controls drawn from the knobs' kinds; one voice playing at a time. |\n| [TinyOpxy](apps/music/TinyOpxy.ml) | app | 2024 | instrument | 1 | OP-XY (Teenage Engineering, 2024) | The groovebox: eight tracks stepping together -- an 808 kit sampled, a bass, sampled electric piano chords, a lead -- their 16 steps, parameter locks, scenes switched at the bar, and the brain moving the song into another key and scale. | A step holds a chord and its knobs' locks, points the value glides through; the sampler, a recording played as an instrument; scenes on the bar; transposing by scale degree, not by interval. |\n\n## Media\n\n`apps/media/`: programs for files of every kind -- sounds, tunes,\npictures, and videos as `graphics/videos/` comes\n(`plan_video_teaching.md`).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyMediaPlayer](apps/media/TinyMediaPlayer.ml) | app | 1991 | PC | 1 | Media Player (Microsoft, 1991), VLC (VideoLAN, 2001) | One player for every file this repository reads: recordings (WAV, MP2, MP3), tunes, modules, pictures, an animation, a video, and an .mpg with its sound. | A file's kind found from its bytes (magic numbers), not its name; each kind shown as what it is: a piano roll, a wave, a tracker's rows, a picture; a playlist, a scope and a spectrum. |\n| [TinyWinamp](apps/media/TinyWinamp.ml) | app | 1998 | PC | 1 | Winamp 2 (Nullsoft, 1998) | The MP3 player of the MP3 years in its three windows: the LCD time, the title scrolling, the analyzer, the ten-band equalizer and the playlist. | A song's title from its ID3 tags, not its name; a graphic EQ heard as it is dragged, its curve the real response; the analyzer's bars in decibels on a log scale of frequencies, with falling peaks; the skin as data, its 5 x 6 font. |\n\n## Internet\n\n`apps/internet/`: programs that talk to other computers, over\n`networking/`, the servers they talk to small enough to run beside\nthem.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyEudora](apps/internet/TinyEudora.ml) | app | 1988 | Mac | 1 | Eudora (Steve Dorner, University of Illinois, 1988) | Mailboxes and a message: the list with Eudora's columns, a message read under it, its headers all shown with b, its attachment saved; a reply written, queued in Out, and sent; Check Mail; your own Gmail; the list by conversation, filters. | Mail as bytes (networking/mail): a message as RFC 822's header fields, folded lines, addresses and dates (Mail); MIME's parts, base64, quoted-printable and encoded words, read and written (Mime); a mailbox as one mbox file, its \">From\" lines quoted the reversible way (Mbox); a built-in mailbox of messages written for what they show -- a thread, a forged sender given away by the envelope, a digest, a picture attached; composing as Eudora did on a modem, a message queued rather than sent, a reply quoted and threaded by In-Reply-To and References, nicknames as vCards, the mailboxes kept as mbox files in the store; SMTP and POP3 as pure state machines fed the server's lines (Smtp, Pop3), and its own server, networking/maild's tiny_maild (Mail_server: not a relay, deletions at QUIT only), over WebSocket so that a browser checks mail too and over plain TCP so that telnet and any mail client do; and Gmail's servers, natively, the same machines inside our own TLS 1.3 (networking/tls: X25519, ChaCha20-Poly1305, the certificates' ECDSA and RSA checked, plan_tls.md), SMTP logging in (AUTH PLAIN); conversations threaded by Jamie Zawinski's algorithm (Mail_thread), Eudora 1.4's filters (plan_tiny_eudora.md). |\n| [TinyIRC](apps/internet/TinyIRC.ml) | app | 1989 | workstation | 1 | ircII (Michael Sandrof, 1989), for IRC (Jarkko Oikarinen, 1988) | Channels and nicks: join #tiny, type a line, everyone in it reads it. | A protocol a person can read, a line of text a message (Irc); its own server (networking/ircd), over WebSocket so that a browser joins too; /raw to type the protocol itself. |\n| [TinyMosaic](apps/internet/TinyMosaic.ml) | app | 1993 | workstation | 1 | NCSA Mosaic (Marc Andreessen and Eric Bina, 1993) | A web browser: a page fetched, read and drawn, its links followed. | Built stage by stage as every browser's pipeline (plan_browser_teaching.md); all of them now, in a first form: a page's bytes fetched (a built-in about: page, or http://) and decoded, its encoding decided (web's Charset), cut into tokens (Html_lexer, the WHATWG's state machine), built into a tree, its mistakes repaired (Html_tree, over MMM's DTD-as-data), given Mosaic's looks (Looks), laid out in blocks and lines (Html_layout; lines broken greedily or by Knuth and Plass, w) and drawn by Hershey's pen (Stroke_text); pictures in the text, fetched one after the other as Mosaic did and decoded by our own GIF, PNG and JPEG readers; fill-out forms in Motif's look, sent with GET or POST, answered by the browser (about:echo) or by tiny_httpd's CGI; and back, a click to its link (Hit), a history of two stacks, visited links purple; http:// by our own client, https:// by our own TLS 1.3 (networking/tls, plan_tls.md), and its own web server, networking/httpd's tiny_httpd; a view per stage, one the 1991 Line Mode Browser's, links followed by their number. |\n| [TinyNetscape](apps/internet/TinyNetscape.ml) | app | 1994 | PC | 1 | Netscape Navigator 1.0 (Marc Andreessen and the Mosaic Communications team, 1994) | Mosaic's successor: a toolbar, a Location field to type in, pictures arriving four at a time. | The same engine as TinyMosaic (appkits/browser), in Netscape's window: the Location field typed into, the toolbar's buttons, the status bar's progress and the \"N\" whose meteors fall while a page loads; pictures fetched over four connections at once instead of one after the other, the page readable before they arrive, Stop and Images (images=off) to not wait; and threads for what still blocks, a host's name resolved and the https:// fetches on a pool of four (Worker), the window going on meanwhile (threads=off: Mosaic's frozen window); and Netscape's extensions to HTML, marked as such in the tokens and the tree (not HTML 2.0's) and honoured here, not by TinyMosaic: colours, fonts, centring, rules, pictures the text flows around (floats), tables, their columns as wide as their cells need (each cell laid out twice to measure it); and CSS1's style sheets, the cascade by specificity over the browser's own looks, c to see a page without them (plan_browser_teaching.md). |\n| [TinyFirefox](apps/internet/TinyFirefox.ml) | app | 2004 | PC | 1 | Firefox 1.0 (the Mozilla Foundation, 2004), and Firebug (Joe Hewitt, 2006) | A browser that runs the page's own program: click, type, and watch the console and the page's tree change. | The page's JavaScript run by an engine written from scratch (languages/javascript: a lexer, a Pratt parser -- and why not yacc --, a tree walker with closures and JavaScript's coercions) over the page's tree (Browser_script: the DOM, a click bubbling to the document, timers on the frame clock, one reflow per task), all of TinyNetscape's looks (extensions, tables, CSS), and a panel after Firebug: the console, with a command line into the page's world, and the tree as the scripts leave it; its home page leads to a counter, a to-do list, a stopwatch and tic-tac-toe, each a small program (plan_tiny_firefox.md). |\n| [TinyChrome](apps/internet/TinyChrome.ml) | app | 2008 | PC | 1 | Google Chrome (2008) | A small browser for the real web: Hacker News, Wikipedia (its search from the omnibox), Google's home page, GitHub, drawn mostly as their authors meant, in tabs, with developer tools; Hacker News' own script run, a thread folded; TinyTube, a video site of our own. | CSS's own engine, from scratch (languages/css, appkits/browser/layout): a cascade with @media, custom properties and var(), calc(), the attributes' hints, quirks mode, a record of computed values per element, and CSS 2.1's box model -- margins, borders and paddings, auto margins centring, collapsing margins, floats, inline-blocks shrunk to fit, relative and absolute positioning, tables and lists, and flexbox -- and SVG drawn by our own rasterizer (files, inline <svg>, backgrounds, masks) -- an ES5 engine (prototypes, new, call and apply, var hoisted, ==, regular expressions by a backtracking matcher of its own) running a few sites' scripts, Hacker News' comment folding with its own hn.js; <video> and <audio> played by our own readers (MPEG-1 and MP2, AVI, FLC, Y4M, GIF, MP3), in about:tube; and developer tools after Chrome's: an element inspected, each of its winning declarations with the rule and the sheet it came from, the network -- over the browser's own style sheet written in CSS (ua.css), the pages' linked sheets and their @imports fetched with their pictures; its home page, about:chrome, a page in today's CSS (plan_tiny_chrome.md). |\n\n## System\n\n`apps/system/`: the programs a computer is used through before any\napplication -- so far the terminal and its shell, over the\nplayground's Teletype way and `libs/terminal/` (`plan_terminal.md`).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyTerminal](apps/system/TinyTerminal.ml) | app | 1978 | mainframe | 1 | the VT100 (DEC, 1978), the Unix shell (Ken Thompson, 1971; Stephen Bourne, 1979) | A screen of 80 by 24 and a prompt: type a command, run Hangman, stop it with Control-C; basic, then RUN MANDEL. | A terminal as three machines: the screen reading bytes and escape sequences (Vt), the tty editing the line (Line_discipline), the shell reading it and running programs written as conversations (Teletype), a spawn being Unix's fork, exec and wait, and Control-C interrupting only the program the shell waits for. |\n\n## Programming tools\n\n`apps/devtools/`: the programs programs are written with -- so far a\nBASIC as a home computer had it, over `languages/basic`\n(`plan_terminal.md`, section 5), and the two text editors, full-screen\nprograms of the terminal over `appkits/editor` (section 6), Emacs's\nLisp over `languages/lisp`, Turbo Pascal's IDE over\n`languages/pascal`, Smalltalk-80's environment over\n`languages/smalltalk` (`plan_tiny_smalltalk.md`), and Scratch's\nblocks and Snap!'s over `languages/scratch` and `appkits/blocks`.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyBasic](apps/devtools/TinyBasic.ml) | app | 1975 | computer | 1 | Tiny BASIC (Dennis Allison, 1975; Li-Chen Wang, Palo Alto, 1976) and Applesoft (Microsoft, 1978), on the Apple II's screen (Steve Wozniak's Integer BASIC, 1977) | Type a program a numbered line at a time, LIST it, RUN it; FP for floating point; Guess the Number is typed in already. | The prompt as the whole environment, editor, calculator and shell; a recursive-descent parser reading characters, finding keywords inside names as Microsoft's cruncher did (SCORE is SC OR E); two arithmetics, 16-bit integers wrapping and Applesoft's floating point; strings, arrays, FOR loops, DATA; the interpreter a Teletype conversation, INPUT's continuation the rest of the program, a step per statement so that 10 GOTO 10 runs and Control-C breaks it; a disk of our own listings, Apple DOS's CATALOG and RUN name: Guess checked against Tty_guess, Bagels, 23 Matches, Animal (a program that learns), Lunar, the Mandelbrot set checked against the same loop in OCaml, Sierpinski's triangle from Pascal's, each crediting its sources in REMs. |\n| [TinyVi](apps/devtools/TinyVi.ml) | app | 1976 | mainframe | 1 | vi (Bill Joy, Berkeley, 1976), on ex and ed (Ken Thompson, 1969) | A screen editor with modes: keys are commands until i, text until Escape; README says them. | Modes; commands as sentences, an operator and a motion with counts that multiply (d2w, 3dd, cw), parsed by a grammar; \".\" repeating the last change, its keys typed again; vi's one level of undo, u again redoing; ex under the colon (:w, :e, :%s/old/new/g, :12); the lines an array of strings, ed's view of a file; the same program in a real terminal, curses' bytes counted. |\n| [TinySmalltalk80](apps/devtools/TinySmalltalk80.ml) | app | 1980 | workstation | 1 | Smalltalk-80 (Alan Kay, Dan Ingalls, Adele Goldberg, Xerox PARC, 1980; Byte, August 1981; the Blue Book, 1983) | A System Browser, a Workspace and a Transcript on a grey screen: print it on 100 factorial, accept a method into Point, and when a message is not understood, define it in the debugger and proceed. | The language as its own live environment: the Blue Book's Smalltalk from scratch, compiled to its own bytecodes (Rectangle>>center is 0 1 176 119 185 124) and run by its interpreter over an object table, become: and all; contexts as objects, so the debugger only reads them -- step, send, restart, a method fixed and the frame restarted; the metaclass knot; the kernel written in Smalltalk and bootstrapped from its text, large integers over bytes, exact fractions; the image saved and loaded; BitBlt, and the Pen's dragon drawn over the windows; a budget of bytecodes a frame, Control-C the user interrupt. |\n| [TinyTurboPascal](apps/devtools/TinyTurboPascal.ml) | app | 1983 | PC | 1 | Turbo Pascal (Anders Hejlsberg, Borland, 1983), in the look of Turbo Pascal 7 (1992) | Wirth's eight queens in a blue window: F9 compiles, Ctrl-F9 runs, the error in a red bar with the cursor on it. | The editor, the compiler and the program one keystroke apart; the PC's text screen, its sixteen CGA colours and its box-drawing characters, menus and dialogs with shadows drawn cell by cell; Pascal compiled in one pass to P-code, Wirth's Pascal-P scheme (languages/pascal), run by the P-machine on the user screen, a run-time error bringing the cursor to its line; the P-code of the cursor's line shown, static links and array bounds checks readable in it; and Turbo's debugger: F7 and F8 a line at a time, the execution bar, breakpoints, watches, the call stack with each frame's static and dynamic links, over the compiler's debug information and a P-machine that pauses. |\n| [TinyEmacs](apps/devtools/TinyEmacs.ml) | app | 1985 | workstation | 1 | GNU Emacs (Richard Stallman, 1985), after EMACS on TECO (1976) | An editor that is a Lisp machine: type (+ 1 2) then C-j in *scratch*, or C-h k and a key to see what it runs. | Every key a Lisp function looked up in a keymap that is a Lisp variable, most commands written in that Lisp, .emacs loaded at start and changeable while it runs; a small Emacs Lisp of our own, dynamically scoped with its specpdl, macros, condition-case; the command loop reading (interactive) specs through the minibuffer, TAB completing; the text in a gap buffer, persistent; the undo list, undo undoable; the kill ring, C-k's appended; incremental search; the same program in a real terminal. |\n| [TinyScratch](apps/devtools/TinyScratch.ml) | app | 2007 | PC | 1 | Scratch (Mitchel Resnick, John Maloney, Natalie Rusk and the Lifelong Kindergarten group, MIT Media Lab, 2007), in the look of Scratch 2.0 (2013) | Click the green flag: the cat walks and bounces while the pencil draws a flower; drag blocks from the palette to change them, click a script to run it. | Programming without syntax errors: blocks whose shapes say where they fit (notches, tabs, mouths, round and pointed slots), one table of specs read by the palette, the layout, the runtime and the text; every script a green thread yielding at the end of each loop's turn and in waits, so a forever is an animation and two sprites move at once without locks; tinkering, a script clicked runs even while the project does; Scratch's values, numbers and texts turning into each other; Logo's turtle as a sprite with a pen; the same scripts as text, the forums' scratchblocks notation, read and printed back. |\n| [TinySnap](apps/devtools/TinySnap.ml) | app | 2011 | web | 1 | Snap! (Jens M\xc3\xb6nig and Brian Harvey, UC Berkeley, 2011; BYOB, 2008), in the look of Snap! 4 (2015) | Click the green flag: the turtle draws a tree by a recursive block of its own, then says the squares of one to six, by map; click it for 10 factorial. | Scheme with Scratch's face: blocks of one's own, defined by a script under a \"define\" hat and called like any other, recursion and report; rings, the lambda, their empty slots the parameters, closures keeping their variables' cells; first-class lists on a heap, objects with identity, map, keep and combine, a list said shown as a table; a reporter clicked says its value; zebra colouring; the same environment as TinyScratch, laid out and coloured by a configuration. |",ge=aN(fv(Y)),M=bW(ge),b=0,num_53=53.,num_360=-360.,num_420=420.,jH=[0,num_110,L,L],f$=[0,0];function
-jI(i,g){var
-m=v(num_0_5,s(3.,1.)),a=g[6];a:{if(a){a=a[1];var
+gd(e,d,c,b,a){return[0,b,a,c,0,d,dQ(e,d,c,b,a,0),0,0,e]}function
+cr(b,a){return d5(b[6][3],a)}function
+ge(b,e){if(!e)return b;var
+a=e[1],c=a[2],a=cr(b,a[1]),c=bR(co(a),c),c=c?c[1][1]:0,a=a[3],f=b[9],d=caml_obj_tag(a),d=num_250===d?a[1]:num_246===d?X(a):a,d=[0,f_([0,c],[0,c],d)];return[0,b[1],b[2],b[3],b[4],b[5],b[6],d,e,f]}function
+gf(a){return 0!==a[7]?1:0}var
+Y="# Catalogue of the games and apps\n\nEvery program in this repository that you can play or use, sorted by\ngenre: the video games of `games/`, one directory per section below\n(`games/shmup/`, ..., `games/rhythm/`), and the applications of\n`apps/`, one directory per category (`apps/office/` so far). The **Dir** column says how a game is drawn: 2D, 2.5D (a 3D\nlook drawn by the game itself on the 2D playground) or 3D (drawn by\nplayground3d). The demos of one feature (`examples/`) and the unit\nprograms are not listed here.\n\nMost programs are a toy version of a famous one; the **After** column\nnames it, with its authors and year (mostly as the program's header\ngives them), or names the program here it is a twin of. **In one line**\nsays what the program is, short enough to become a tooltip. **What it\nbrought** is what the original introduced, or the technique the toy\nhad to write out to be that game -- each program's header comment\nsays it at length, with what it uses and what it leaves as exercises.\n\n**Year**, **Platform** and **Players** are what tinybox's menu filters\nand groups by (after the retro front ends, Batocera and RetroBox):\n- **Year**: the original's, the first year its After gives (a twin,\n  after another program here, takes that one's). A section's rows are\n  in its order, the oldest first (a new row goes in its place).\n- **Platform**: what the original ran on -- `arcade`, `console`,\n  `handheld`, `computer` (the home computers: Apple II, C64, Amiga,\n  Atari ST, BBC Micro, MSX), `PC`, `Mac`, `workstation` (the Alto, Sun,\n  Unix and X), `mainframe` (and the minicomputers: the PDP-1, PDP-10,\n  TX-2, timesharing), `web`, `phone`, `tabletop` (a board game),\n  `instrument` (a synthesizer, an organ), `analog` (an analog computer).\n- **Players**: how many play *here*, not in the original: `1`, `2`, or\n  `1-2` (alone against the computer, or two on one keyboard); ` (net)`\n  when it also plays over the network (`net=host`, see `Multiplayer.mli`).\n  An app has `1`.\n\nEach entry follows the same conventions, so a web page can be built from\nthis list without more information:\n\n- **Source**: the link on the name, `<dir>/<Name>.ml`.\n- **Screenshot**: the golden frame `tests/2d/golden/<Name>.png` (for\n  2D, 2.5D and apps) or `tests/3d/golden/<Name>.png` (for 3D); other\n  frames of the same program are next to it, as `<Name>_<scene>.png`.\n- **Run online**: `<dir>/web/<Name>.html` (on WebGL for a 3D game),\n  once built with `make js`.\n- **Run natively**: `dune exec <dir>/<Name>.exe`.\n\nA game that has two looks draws, by default, in the medium its\noriginal really used: Pac-Man's ghosts and Mario were sprites, while\nAsteroids and Battlezone were vector displays and Pong was\nrectangles. The flag `artwork` changes it -- `artwork=shapes` for the\nplayground's plain shapes, where the whole game is in the code and\nnothing hides behind a picture, `artwork=sprites` for the pixel art\n(see `Sprite.mli`):\n\n    dune exec games/platform/TinyCeleste.exe -- artwork=shapes\n\nA **2.5D** or **3D** game with a twin says so: TinyDoom and TinyDoom3d\nare the same level, drawn once by the game's own trick and once by\nplayground3d, side by side in `games/fps/` (see `games/README-2.5d.md`).\n\n# Games\n\nEach section, and its directory under `games/`, starts with its\ndefinition. A game goes where its design puts it -- what the player\ndoes, what the game is about -- and not where the original ran (half\nof these were arcade cabinets) nor how it is drawn (that is the Dir\ncolumn).\n\n## Shoot 'em up\n\n`games/shmup/`: a ship, or a gun, against waves of enemies, the screen\nscrolling past or the enemies coming down at you; you shoot and dodge,\nand a level is a timeline of waves. Not a deathmatch against other\nfighters in one arena (arcade and party).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyInvaders](games/shmup/TinyInvaders.ml) | 2D | 1978 | arcade | 1 | Space Invaders (Tomohiro Nishikado, Taito, 1978) | A formation of aliens marching down, and a cannon under four bunkers. | Difficulty that rises by itself: one alien moved per frame, so the fewer left, the faster they march. Bunkers as tile maps eroded by shots. |\n| [Asteroid](games/shmup/Asteroid.ml) | 2D | 1979 | arcade | 1 | Asteroids (Atari, 1979), via Haskell in Space | A ship with inertia, rocks breaking into smaller rocks. | Inertia and a wrap-around screen; two physics engines side by side (`physics=engine`: drag, exact polygon hits). |\n| [TinyMissileCommand](games/shmup/TinyMissileCommand.ml) | 2D | 1980 | arcade | 1 | Missile Command (Dave Theurer, Atari, 1980) | Missiles rain on six cities; aim counter-missiles where they will be. | Aiming at a point, not a target; explosions as growing circles, and chain reactions; warheads that split. |\n| [TinyGalaga](games/shmup/TinyGalaga.ml) | 2D | 1981 | arcade | 1 | Galaga (Namco, 1981) | A fixed shooter whose enemies fly in on paths and dive at you. | Enemies that fly: paths as Catmull-Rom splines, flown at constant speed by arc length. |\n| [TinyDefender](games/shmup/TinyDefender.ml) | 2D | 1981 | arcade | 1 | Defender (Eugene Jarvis and Larry DeMar, Williams, 1981) | A planet six screens wide, humanoids to save from the landers. | A world bigger than the screen that goes on without you: a cylinder world, and the scanner (a minimap is a second camera). |\n| [TinyRobotron](games/shmup/TinyRobotron.ml) | 2D | 1982 | arcade | 1 | Robotron: 2084 (Eugene Jarvis and Larry DeMar, Williams, 1982) | Two sticks, one to run and one to shoot, and a crowd of robots. | The twin-stick shooter: running and shooting in two independent directions; a swarm made of one-line robots. |\n| [TinyZaxxon](games/shmup/TinyZaxxon.ml) | 2.5D | 1982 | arcade | 1 | Zaxxon (Sega, 1982) | A fighter along an isometric fortress, over walls and between towers. | The first game seen from an angle: the isometric projection, the back-to-front sort, and the shadow that gives back the lost height. |\n| [TinyGradius](games/shmup/TinyGradius.ml) | 2D | 1985 | arcade | 1 | Gradius (Konami, 1985) | A cave scrolling by itself, waves of enemies, and the power-up bar. | The power-up bar; the level as a timeline of waves; options trailing where the ship was. |\n| [TinyRType](games/shmup/TinyRType.ml) | 2D | 1987 | arcade | 1 | R-Type (Irem, 1987) | The Force at your ship's nose, a beam to charge, a battleship at the end. | The Force, a pod you place (a five-state machine); the charged beam; the level itself as the boss. |\n| [TinyStarFox](games/shmup/TinyStarFox.ml) | 3D | 1993 | console | 1 | Star Fox (Nintendo and Argonaut, 1993) | An arwing down a canyon on rails: dodge and shoot. | Polygons on a SNES by staying on rails: the ship is two coordinates on a canyon ribbon, and Galaga's 2D paths fly across it. |\n\n## Beat 'em up and fighting\n\n`games/fighting/`: the fighters' own mechanics are the game -- moves\ntimed in frames, hitboxes against hurtboxes, blocks, combos, a body\nas a skeleton of joints; one against one, or one against waves of\nthugs down a street.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyFinalFight](games/fighting/TinyFinalFight.ml) | 2D | 1989 | arcade | 1 | Final Fight (Capcom, 1989) | Walk down a street beating up wave after wave of thugs, then their boss. | The belt: depth along a street, and fighters drawn sorted by it; combos by chaining; the screen that locks until the wave is down. |\n| [TinyStreetFighter](games/fighting/TinyStreetFighter.ml) | 2D | 1991 | arcade | 1-2 | Street Fighter II (Capcom, 1991) | Two fighters, one screen, best of three rounds, and a fireball. | Moves measured in frames (startup, active, recovery); hitboxes against hurtboxes; high and low blocks; special moves read from the input history; hitstop. |\n| [TinyVirtuaFighter](games/fighting/TinyVirtuaFighter.ml) | 3D | 1993 | arcade | 1 | Virtua Fighter (Yu Suzuki, Sega AM2, 1993) | Two fighters of flat-shaded boxes on a ring you can be knocked out of. | The fighter as a skeleton: hierarchical transforms and keyframed poses; the ring-out; a camera framing two subjects. |\n\n## Platform\n\n`games/platform/`: crossing a level by running, jumping and climbing,\ngravity and the ground being the challenge; the level bigger than the\nscreen, or cut into rooms to go through.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyDonkeyKong](games/platform/TinyDonkeyKong.ml) | 2D | 1981 | arcade | 1 | Donkey Kong (Shigeru Miyamoto, Nintendo, 1981) | Slanted girders, ladders, and barrels rolling down at you. | Jumping as the point of a game; the hero as a state machine (walk, jump, climb, fall); slanted girders as segments. |\n| [TinyJoust](games/platform/TinyJoust.ml) | 2D | 1982 | arcade | 1 | Joust (John Newcomer, Williams, 1982) | Flap an ostrich over lava; the higher lance wins. | A flap that adds lift; a whole arcade game in about 200 lines, the physics layer doing the flight and every collision. |\n| [TinyLodeRunner](games/platform/TinyLodeRunner.ml) | 2D | 1983 | computer | 1 | Lode Runner (Doug Smith, Broderbund, 1983) | Take all the gold, no jumping and no fighting: dig holes instead. | A map that changes: holes dug that grow back; guards' greedy pursuit; one of the first level editors. |\n| [TinyMario](games/platform/TinyMario.ml) | 2D | 1985 | console | 1 | Super Mario Bros. (Shigeru Miyamoto, Nintendo, 1985) | Run, jump, stomp, and scroll to the flag. | The side-scroller: a level bigger than the screen, typed as strings; three camera modes; parallax; sounds and music. |\n| [TinyMetroid](games/platform/TinyMetroid.ml) | 2D | 1986 | console | 1 | Metroid (Yoshio Sakamoto, Makoto Kano, Gunpei Yokoi, Nintendo, 1986) | One closed world of caves: the morph ball, the missiles, the boots, the bombs, and Kraid. | The world as locks and keys, and a checker (a search over her poses) proving it can be finished, in one order only; the map of the areas been to. |\n| [TinyRick](games/platform/TinyRick.ml) | 2D | 1989 | computer | 1 | Rick Dangerous (Simon Phipps, Core Design, 1989) | A temple full of traps, starting with a boulder rolling after you. | Traps as tiles in the level's data; flip-screen rooms instead of scrolling. |\n| [TinyPrinceOfPersia](games/platform/TinyPrinceOfPersia.ml) | 2D | 1989 | computer | 1 | Prince of Persia (Jordan Mechner, Broderbund, 1989) | Run, jump, hang and climb through a dungeon of ledges, spikes and a gate. | Movement driven by the animation: each move a table of rotoscoped frames, played to its end, the keys read only where it allows. |\n| [TinyTurrican](games/platform/TinyTurrican.ml) | 2D | 1990 | computer | 1 | Turrican (Manfred Trenz, Rainbow Arts, 1990) | Run and gun through a world bigger than the screen: spread and laser, the lightning beam, the gyroscope wheel, and a secret cave. | A weapon aimed by an angle you steer: a ray cast through the tile map, enemies hurt by their distance to the segment; a body that changes its box, and opens only where there is room. |\n| [TinyMarioWorld](games/platform/TinyMarioWorld.ml) | 2D | 1990 | console | 1 | Super Mario World (Takashi Tezuka and Shigeru Miyamoto, Nintendo, 1990) | Cape Mario on hills, in the sky, and on a map with a secret exit. | Slopes felt by sensors, and the slide; the cape's flight as speed traded for height; the world map as a graph with secret exits. |\n| [TinySonic](games/platform/TinySonic.ml) | 2D | 1991 | console | 1 | Sonic the Hedgehog (Yuji Naka, Hirokazu Yasuhara, Naoto Ohshima, Sega, 1991) | Keep your speed, take the hill, go round the loop. | Speed along a surface: shaped tiles, one ground speed, gravity as a slope factor, the loop as ordinary tiles; the spindash. |\n| [TinyVikings](games/platform/TinyVikings.ml) | 2D | 1992 | console | 1 | The Lost Vikings (Silicon & Synapse, Interplay, 1992) | Three vikings, one keyboard: Erik jumps and headbutts walls, Baleog fights and shoots, Olaf's shield is a glider and a step; all three to the exit. | The party as the puzzle: heroes each with one ability, switched with Tab, the waiting ones part of the level; a hero as a moving one-way platform. |\n| [TinyMario64](games/platform/TinyMario64.ml) | 3D | 1996 | console | 1 | Super Mario 64 (Shigeru Miyamoto, Nintendo, 1996) | Floating platforms and five stars, running and jumping in 3D. | The platformer in 3D: controls relative to the camera, a camera you steer, a shadow to judge landings. |\n| [TinyMarioGalaxy2D](games/platform/TinyMarioGalaxy2D.ml) | 2D | 2007 | console | 1 | Super Mario Galaxy (Yoshiaki Koizumi, Nintendo, 2007) | Run round planetoids, stand underneath them, jump from one into the pull of the next, to the Power Star. | Gravity as level design: zones with a down each and a priority, not Newton; up as local, the velocity split along the ground and up; the camera turned with it, and the arrow kept while held. |\n| [TinyMarioGalaxy](games/platform/TinyMarioGalaxy.ml) | 3D | 2007 | console | 1 | Super Mario Galaxy (Yoshiaki Koizumi, Nintendo, 2007) | Round a planet, over a cube's edges, down onto a platform from under the planet, and on to the tiny planet of the Power Star. | The 2D twin's gravity zones in 3D, a box's giving cube gravity for free; directions carried along the ground as it turns; a camera that rolls after Mario's up; the world turned so the sun stays over his head. |\n| [TinyBraid](games/platform/TinyBraid.ml) | 2D | 2008 | console | 1 | Braid (Jonathan Blow, 2008) | Run, jump, die, and hold shift: time runs backwards, and each room bends it another way. | Rewind as a list of past models (the puzzle kit's Puzzle_undo, sixty a second); Braid's worlds as rules over that list: green things out of time, time as position, a shadow replaying what was rewound. |\n| [TinySuperMeatBoy](games/platform/TinySuperMeatBoy.ml) | 2D | 2010 | console | 1 | Super Meat Boy (Edmund McMillen and Tommy Refenes, Team Meat, 2010) | Run, jump and wall-jump past saws to Bandage Girl, die a lot, and watch every try at once. | Death that costs nothing; the room smeared by every try; the replay of all tries, each kept as its inputs and played again through a pure step. |\n| [TinyVVVVVV](games/platform/TinyVVVVVV.ml) | 2D | 2010 | PC | 1 | VVVVVV (Terry Cavanagh, 2010) | You cannot jump: flip gravity and walk on the ceiling, past spikes on both sides. | The jump replaced by one bit: a flip goes all the way and only from a surface; gravity as a sign; gravity lines, and a room that wraps top to bottom. |\n| [TinyCeleste](games/platform/TinyCeleste.ml) | 2D | 2018 | PC | 1 | Celeste (Maddy Thorson and Noel Berry, 2018) | Climb a mountain a screen at a time, with a jump, a dash, and the walls. | Game feel as small named lies, each switchable: coyote time, jump buffering, variable jump, corner correction; the dash and the wall jump. |\n\n## Arcade and party games\n\n`games/arcade/`: one screen, or one arena (or a screen wrapping round),\nwith nothing to explore and no level to cross; one rule learned in\nseconds; short rounds, played again at once, for a score, the last\none standing or the first to five; nothing carried from one round to\nthe next; often several players in the same arena.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinySpacewar](games/arcade/TinySpacewar.ml) | 2D | 1962 | mainframe | 2 (net) | Spacewar! (MIT, 1962) | Two ships duelling around a star whose gravity pulls them in. | The first game with physics: inertia and gravitation, orbits and slingshots; exact hits on the ships' outlines. |\n| [Pong](games/arcade/Pong.ml) | 2D | 1972 | arcade | 2 | Pong (Atari, 1972), via Elm's \"Making Pong\" | The first port: two paddles and a ball, by the rules. | The project's first game: Model-View-Update on the simplest game there is. |\n| [TinyPong](games/arcade/TinyPong.ml) | 2D | 1972 | arcade | 1-2 | Pong (Allan Alcorn, Atari, 1972) | Pong again, the ball, walls and paddles as bodies of the physics engine. | Rules replaced by physics: a moving paddle drags the ball (friction), corners deflect it; a speed cap against tunnelling. |\n| [TinyBreakout](games/arcade/TinyBreakout.ml) | 2D | 1976 | arcade | 1 | Breakout (Atari, 1976) | Pong on its side, played alone against a wall of bricks. | The paddle aims by where the ball lands (a rule, not physics); the wall as a Tilemap; the original's speed-ups. |\n| [Snake](games/arcade/Snake.ml) | 2D | 1976 | arcade | 1 | Snake (Blockade, Gremlin, 1976), via elm snek | Eat, grow longer, don't bite yourself. | Movement on a grid and a body that grows; a port from Elm. |\n| [TinyLunarLander](games/arcade/TinyLunarLander.ml) | 2D | 1979 | arcade | 1 | Lunar Lander (Howard Delman and Rich Moore, Atari, 1979) | Turn, fire the engine, and set a module down on a pad of the moon. | A landing judged, not a collision: two speeds and an angle within tolerances, narrower pads worth more; one tank of fuel as the game's only clock; the camera zooming in near the ground. |\n| [TinyPacman](games/arcade/TinyPacman.ml) | 2D | 1980 | arcade | 1 | Pac-Man (Toru Iwatani, Namco, 1980) | Eat the dots, avoid four ghosts, eat a pellet and turn the tables. | Ghosts with personalities, each a choice of target tile; moving in corridors, the turn asked for remembered. |\n| [TinyFrogger](games/arcade/TinyFrogger.ml) | 2D | 1981 | arcade | 1 | Frogger (Konami, 1981) | Hop a frog across a road of cars and a river of logs, into five bays. | Obstacles that need no state: each lane a pattern repeating at a constant speed, where everything is a formula of time; riding a log is being carried by the lane's speed. |\n| [TinyTron](games/arcade/TinyTron.ml) | 2D | 1982 | arcade | 1-2 | Tron's light cycles (Bally Midway, 1982) | Two to four cycles leaving walls of light, on arenas with obstacles: the last one riding wins. | A computer at three levels, up to a search: alpha-beta scored by the Voronoi partition, as the 2010 Google AI Challenge's winners did; the rules in a kit, shared with a 3D view. |\n| [TinyTron3d](games/arcade/TinyTron3d.ml) | 3D | 1982 | arcade | 1-2 | TinyTron | The same light cycles, the trails as walls you can look at from behind. | The Elm architecture's promise: the same model, another view, with four cameras. |\n| [TinyBomberman](games/arcade/TinyBomberman.ml) | 2D | 1983 | computer | 1 | Bomberman (Hudson Soft, 1983) | The NES's stage, and the battle: you against three computer bombers, the last one standing wins. | Fire spreading tile by tile, and chain reactions; computer bombers that know where the fire will be. |\n| [TinyMarbleMadness](games/arcade/TinyMarbleMadness.ml) | 3D | 1984 | arcade | 1 | Marble Madness (Mark Cerny, Atari Games, 1984) | Roll a marble down a course floating in space, against the clock. | A ball rolling on a height map (5/7 of g sin a), falls that break it, collisions between balls; a far, nearly isometric camera. |\n| [TinyCameltry](games/arcade/TinyCameltry.ml) | 2D | 1989 | arcade | 1 | Cameltry (Taito, 1989) | You don't move the ball, you turn the maze. | Turning the maze is turning gravity; rotation, so the ball rolls instead of sliding (`rotation=off` to compare). |\n| [TinyPang](games/arcade/TinyPang.ml) | 2D | 1989 | arcade | 1 | Pang (Mitchell, 1989) | Shoot a harpoon up at bouncing balloons: each bursts into two smaller ones, round the world's landmarks. | A bounce that is a rule, not physics: each size bounces to its own height forever; splitting as recursion, one big balloon fifteen hits. |\n| [TinyTronscroll](games/arcade/TinyTronscroll.ml) | 2D | 1997 | workstation | 2 (net) | tron v0.1 (Yoann Padioleau, INSA Rennes, 1997) | Light cycles on a map bigger than the screen, each player's window scrolling with them, options to take. | The author's first network game, its three netcodes side by side: 1997's wait for every answer, lockstep, rollback. |\n| [TinySoldat](games/arcade/TinySoldat.ml) | 2D | 2002 | PC | 1 | Soldat (Micha\xc5\x82 Marcinkowski, 2002) | A side-view deathmatch on jet boots against two bots, and ragdolls. | The 2D physics engine's capstone: a stacking world, swept bullets against tunnelling, grenade blasts, particle ragdolls. |\n| [TinyFlappyBird](games/arcade/TinyFlappyBird.ml) | 2D | 2013 | phone | 1 | Flappy Bird (Dong Nguyen, .GEARS, 2013) | One button: flap through the gaps between pipes. | A flap that sets the velocity; an endless world made and dropped as you fly; randomness from an LFSR kept in the model. |\n| [TinyBoomerangFu](games/arcade/TinyBoomerangFu.ml) | 3D | 2020 | console | 1 | Boomerang Fu (Cranky Watermelon, 2020) | Four foods on floating islands, one boomerang each, one hit kills. | Your only weapon leaves your hand: a return arc homing on its owner; two arenas written as text, with holes, water, a terrace and bridges, and a jump; a camera zooming to frame everybody, and shadows to read height. |\n\n## Puzzle and board games\n\n`games/puzzle/`: thinking over reflexes -- a set of rules to master, a\nlevel to solve or a board to win; time pressure, when there is some\n(Tetris), only adds to the thinking.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [AiChess](games/puzzle/AiChess.ml) | 2D | 1950 | tabletop | 1 | Chess, as Claude Shannon's \"Programming a Computer for Playing Chess\" (1950) set it for computers | Chess against a computer thinking 3 moves ahead with alpha-beta. | Rules checked by perft; move ordering (most valuable victim first); quiescence, the captures played out at the leaves against the horizon effect. |\n| [AiOthello](games/puzzle/AiOthello.ml) | 2D | 1971 | tabletop | 1 | Othello (Goro Hasegawa, 1971) | Othello against a computer thinking 4 moves ahead with alpha-beta. | Game-tree search: alpha-beta, an evaluation table, and its cuts counted against plain minimax. |\n| [AiConnect4](games/puzzle/AiConnect4.ml) | 2D | 1974 | tabletop | 1 | Connect Four (Milton Bradley, 1974; solved by Allen and by Allis, 1988) | Connect 4 against a computer that searches deeper by iterative deepening, move ordering and a transposition table, and says what each saved. | Iterative deepening, ordering (the middle columns first) and Zobrist keys, with the node counts they save. |\n| [TinySokoban](games/puzzle/TinySokoban.ml) | 2D | 1982 | computer | 1 | Sokoban (Hiroyuki Imabayashi, Thinking Rabbit, 1982) | Push every box onto a goal, one at a time, never pulling. | Deep puzzles from a few rules (PSPACE-complete); undo for free, since the model is a value; levels checked by breadth-first search. |\n| [TinySokobanEd](games/puzzle/TinySokobanEd.ml) | 2D | 1983 | computer | 1 | the level editors games shipped with (Lode Runner's, Doug Smith, Broderbund, 1983) | TinySokoban's levels: type them, check them, play them, export the file the game is built with. | A game's tool: the rules, format and solver in the kit, the level a text file embedded at build time; a text editor on a grid, with the checks a text editor cannot do. |\n| [Tetris](games/puzzle/Tetris.ml) | 2D | 1984 | computer | 1 | Tetris (Alexey Pajitnov, 1984), via elm-flatris | Falling pieces, full lines cleared. | Falling pieces and cleared lines on a grid; a port from Elm. |\n| [TinyTetris](games/puzzle/TinyTetris.ml) | 2D | 1984 | computer | 1 | Tetris (Alexey Pajitnov, 1984), with the Nintendo version's scores (1989) and the later bag of seven | Falling pieces, full lines cleared, juiced: lines burst into their colors, drops knock the well. | The seven-piece bag, the ghost, the lock delay; juice from the start, in a section of its own watching the rules (juice=off: the dry game). |\n| [TinyBlockout](games/puzzle/TinyBlockout.ml) | 3D | 1989 | PC | 1 | BlockOut (P.Z.Karen Co., California Dreams, 1989) | Tetris down a well, seen from above, with pieces turning in 3D. | Tetris with one more index; depth cues (shading, the landing ring); quarter turns of polycubes in integers. |\n| [TinyLemmings](games/puzzle/TinyLemmings.ml) | 2D | 1991 | computer | 1 | Lemmings (DMA Design, Psygnosis, 1991) | Creatures walk mindlessly; give them jobs to save them. | Indirect control; the terrain as a bitmap in the model, dug and built; creatures as tiny state machines reading the pixels. |\n| [TinyStoneAge](games/puzzle/TinyStoneAge.ml) | 2D | 1992 | computer | 1 | Stone Age (Stonehenge Soft Art, Eclipse Software, 1992) | Take a dinosaur across stones over the void to the cave: cracked ones fall behind you, arrow blocks carry you, keys open locks. | A puzzle of moves that can't be undone, so of their order; a level as a graph of states, and a breadth-first search proving each level can be done in time. |\n| [TinyIncredibleMachine](games/puzzle/TinyIncredibleMachine.ml) | 2D | 1993 | PC | 1 | The Incredible Machine (Kevin Ryan, Jeff Tunnell, Dynamix / Sierra, 1993) | Build a Rube Goldberg machine from a bin of parts, then watch it put a ball in a basket. | Building, then watching: physics that must be deterministic; joints (a seesaw's pin, a pulley's ropes); parts acting on each other, a switch turning on a fan. |\n| [TinyPuzzleBobble](games/puzzle/TinyPuzzleBobble.ml) | 2D | 1994 | arcade | 1 | Puzzle Bobble (Taito, 1994) | Shoot a bubble off the walls; three of a colour pop. | A hexagonal grid stored as offset rows; snapping to it; two flood fills (the pop, then the fall); the aiming guide as the shot flown ahead. |\n| [AiGo](games/puzzle/AiGo.ml) | 2D | 2006 | tabletop | 1 | Go on 9x9, and the Monte Carlo programs of 2006 that first played it decently | Go against a computer with no evaluation function at all: it judges a position by playing it out at random, hundreds of times. | Monte Carlo tree search (UCT), the playouts and the tree, anytime: it thinks while the game draws. |\n| [TinyPortal2D](games/puzzle/TinyPortal2D.ml) | 2D | 2007 | web | 1 | Portal: The Flash Version (We Create Stuff, 2007) | A platformer where the way through is a pair of holes you shoot. | A portal is a rigid transform: position and velocity rotated, never scaled -- the fling -- on the physics layer. |\n| [TinyPortal](games/puzzle/TinyPortal.ml) | 3D | 2007 | PC | 1 | Portal (Valve, 2007) | One test chamber, a cube on a ledge, and a portal gun: fling yourself. | The portal in 3D: a rigid motion carrying orientation and spin; seeing through by taking the chamber through it and clipping, no stencil. |\n| [TinyCrush](games/puzzle/TinyCrush.ml) | 2.5D | 2007 | handheld | 1 | Crush (Zo\xc3\xab Mode, Sega, 2007) | Crush a level flat along your line of sight, and walk across what was far apart in depth. | The projection as the puzzle: a stack of slices, crushed into their union; the same platformer on either plane; the crush drawn as a cabinet projection losing its depth. |\n| [TinySlingshot](games/puzzle/TinySlingshot.ml) | 2D | 2009 | phone | 1 | Angry Birds (Rovio, 2009) | Pull back the slingshot and knock down a tower of physics bodies. | The whole 2D engine at once: a solver for stacking, rotation, friction; targets broken by impulse; the arc predicted by the engine's own steps. |\n| [TinyCrush3d](games/puzzle/TinyCrush3d.ml) | 3D | 2012 | handheld | 1 | Crush3D (Zo\xc3\xab Mode, Sega, 2012) | TinyCrush with real cubes: crush, and watch the level fold onto your plane as the camera turns straight on. | The same rules drawn twice (`gamekits/crush`): the crush as the slices sliding in depth and the camera swinging from three-quarters to straight on; why the crushed level is drawn as its plane (z-fighting). |\n| [TinyFez](games/puzzle/TinyFez.ml) | 2.5D | 2012 | console | 1 | Fez (Phil Fish, Polytron, 2012) | A flat world you can turn a quarter at a time: what lines up on the screen is next to each other. | Depth thrown away, four ways: any top a floor, only what is at your depth a wall; the turn drawn as each cube's two faces squashed to the cosine and the sine; pixel art from XPM files. |\n| [TinyPerspective](games/puzzle/TinyPerspective.ml) | 3D | 2012 | PC | 1 | Perspective (DigiPen, a student game, 2012) | Place a camera in a 3D world, then run a 2D platformer on the picture it takes. | The projection with perspective: far is small, near is big, so the camera builds the level; the runner's world the boxes' silhouettes filled into a grid of the screen; the camera turning round the point under his feet, found by undoing the projection. |\n| [TinyMonumentValley](games/puzzle/TinyMonumentValley.ml) | 3D | 2014 | phone | 1 | Monument Valley (ustwo, 2014) | Walk over architecture that cannot exist, trusting the picture. | An orthographic camera's ambiguity as the rule: blocks that look adjacent are walkable; a search over the picture's graph. |\n| [TinyWitness](games/puzzle/TinyWitness.ml) | 2D | 2016 | PC | 1 | The Witness (Jonathan Blow, Thekla, 2016) | Draw one line across each panel of an island: mazes, dots, and black and white squares to keep apart, taught without a word. | Rules about regions: the line cuts the grid, a flood fill finds the regions, a rule is a check on each; a panel typed as text; a rule taught by a row of panels. |\n| [TinyBabaIsYou](games/puzzle/TinyBabaIsYou.ml) | 2D | 2019 | PC | 1 | Baba Is You (Arvi Teikari, 2019) | The rules are words on the board, and you can push them. | The rules as data in the world they rule, rewritten by the player: a game that is its own level editor. |\n\n## Card games\n\n`games/cards/`: a deck of cards and the rules of a game played with\nit -- patience alone, or a table of players; what shows and what is\nhidden, and the luck of the deal, are the game. Every deal has a\nnumber (Microsoft's, the cards kit's), so a game can be played again.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyFreeCell](games/cards/TinyFreeCell.ml) | 2D | 1978 | mainframe | 1 | FreeCell (Paul Alfille, 1978; Windows, 1995) | All 52 cards face up on eight columns, and four free cells to park them. | Numbered deals, the same on every computer (Microsoft's random generator, written out); the supermove, a run moved at once as the single moves it stands for. |\n| [TinySolitaire](games/cards/TinySolitaire.ml) | 2D | 1990 | PC | 1 | Solitaire, Klondike (Wes Cherry, Microsoft, 1990) | Seven columns, the stock, and four foundations to build, ace to king. | The patience that taught a generation the mouse; face-down cards turned over as they are uncovered, and the luck of what is hidden. |\n\n## Action-adventure and horror\n\n`games/adventure/`: a world explored -- in words and turns at first\n(the text adventure), then in pictures, then in real time -- whose\nrooms, items and keys open the way on; the hero does not grow, the player's\nknowledge of the world does. In horror, the camera and the dark are\npart of the game.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyWumpus](games/adventure/TinyWumpus.ml) | 2D | 1973 | mainframe | 1 | Hunt the Wumpus (Gregory Yob, 1973) | Twenty rooms in the dark, a smell, a draft, a rustle of bats, and five crooked arrows. | The cave a dodecahedron, the first game off the grid, a table of tunnels mapped in the player's head; an arrow told the rooms it flies through, around corners; the game a conversation (Teletype, Tty_wumpus), the same value a command of TinyTerminal's shell. |\n| [TinyZork](games/adventure/TinyZork.ml) | 2D | 1977 | mainframe | 1 | Zork (Tim Anderson, Marc Blank, Bruce Daniels and Dave Lebling, MIT, 1977; Infocom, 1980) | A white house, a trap door, a troll, and a grue in the dark, in words only. | The text adventure: the world as data and a rule per thing to try (the adventure kit), a parser of whole sentences, the dark; the game nearly all model, a terminal for its view. |\n| [TinyZelda](games/adventure/TinyZelda.ml) | 2D | 1986 | console | 1 | The Legend of Zelda (Shigeru Miyamoto and Takashi Tezuka, Nintendo, 1986) | An overworld of screens, a sword, a key, and a dungeon. | A land to explore in any order: rooms that slide in, an inventory as locks and keys, monsters wandering on a generator in the model. |\n| [TinyManiacMansion](games/adventure/TinyManiacMansion.ml) | 2D | 1987 | computer | 1 | Maniac Mansion (Ron Gilbert and Gary Winnick, Lucasfilm Games, 1987) | Past the purple tentacle and into Dr. Fred's lab, a verb and a click at a time. | The parser become a menu: SCUMM's verbs and sentence line, on the same world model as TinyZork; walkboxes, the floor as boxes and a path through them; a script per object. |\n| [TinyZeldaLinkPast](games/adventure/TinyZeldaLinkPast.ml) | 2.5D | 1991 | console | 1 | The Legend of Zelda: A Link to the Past (Nintendo, 1991), after TinyZelda | Hyrule scrolling past, soldiers and bushes to cut, three pendants, and the Master Sword in the Lost Woods. | The three-quarter view: the ground from above, what stands on it from the front, drawn farthest first by its base line -- walking behind a tree's canopy with no height anywhere in the model; pixel art in XPM files, a sprite sheet cut into frames, each picture painted colour over colour in few rectangles. |\n| [TinyAloneInTheDark](games/adventure/TinyAloneInTheDark.ml) | 3D | 1992 | PC | 1 | Alone in the Dark (Fr\xc3\xa9d\xc3\xa9rick Raynal, Infogrames, 1992) | A house at night seen by fixed cameras, a locked study, and something in the corridor. | Fixed cameras that cut between rooms (cinematography); tank controls, the only ones that survive a cut; a doorway's hysteresis. |\n| [TinyMyst](games/adventure/TinyMyst.ml) | 2D | 1993 | Mac | 1 | Myst (Rand and Robyn Miller, Cyan, 1993) | A deserted island, four marker switches, a library, two brothers trapped in two books, and a secret behind the shelf. | The slideshow: every picture ray traced before (our ray tracer, the Povray way), a click only choosing the next; a HyperCard stack, its cards and buttons scripted in HyperTalk; a button a solid, found by casting a ray through the pixel clicked. |\n| [TinyTombRaider](games/adventure/TinyTombRaider.ml) | 3D | 1996 | console | 1 | Tomb Raider (Toby Gard, Core Design, 1996) | A raider in a tomb dug into a cave: a chasm, a slide, ledges, a block, an idol, a boulder. | A level as a grid of floor and ceiling heights, slopes and rough caves as triangles; free running but committed jumps and grid-snapped grabs; Lara as rigid meshes on a keyframed skeleton. |\n| [TinyGTA](games/adventure/TinyGTA.ml) | 2.5D | 1997 | PC | 1 | Grand Theft Auto (DMA Design, 1997) | A city from above: any car is yours, phones ring with work, and the police count your crimes in stars. | The open world: a city that runs without you (traffic and people on a road graph), any car taken, the wanted level; the camera rising with speed; buildings leaning out of the screen. |\n| [TinyMetalGearSolid](games/adventure/TinyMetalGearSolid.ml) | 2D | 1998 | console | 1 | Metal Gear Solid (Hideo Kojima, Konami, 1998), after Metal Gear (1987) | Across an enemy base to the elevator, unseen, with a radar, a knock and a cardboard box. | Stealth: cones of vision stopped by walls, shown only on the radar, which jams in an alert; guards as a state machine written as data (patrol, \"?\", \"!\", evasion), walking by A*. |\n| [TinyZeldaOcarina](games/adventure/TinyZeldaOcarina.ml) | 3D | 1998 | console | 1 | The Legend of Zelda: Ocarina of Time (Nintendo EAD, 1998) | Across Hyrule Field by day and by night to a temple, and a Stalfos whose shield must be got round. | Z-targeting: the lock-on, the controls re-read around the enemy held (sideways is an orbit) and the camera over the shoulder on the line through the two; an enemy that blocks and opens after its telegraphed chop. The field as a hub: loading zones to places with their own coordinates, a clock that runs only there, a night with its own monsters, the light baked in. |\n| [TinyIco](games/adventure/TinyIco.ml) | 2D | 2001 | console | 1 | Ico (Fumito Ueda, Team Ico, Sony, 2001) | Lead Yorda by the hand out of a castle: pull her up ledges, call her over gaps, beat off the shadows that come for her. | The companion you look after: an AI with limits of her own, a hand as a kept distance, obstacles that are hers not yours; enemies after her, not you. |\n| [TinyJourney](games/adventure/TinyJourney.ml) | 2D | 2012 | console | 1 | Journey (Jenova Chen, thatgamecompany, 2012) | Walk, slide and fly across a desert to the light on the mountain, a stranger in white at your side. | Cooperation without words: one verb, the chirp, and nearness; the scarf as the only resource; the ground a smooth function, its slope the sliding. |\n\n## Role-playing and dungeons\n\n`games/rpg/`: a character who grows -- hit points, levels, items --\nthrough a dungeon of many rooms or levels, often generated, fought in\nturns or in real time.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyRogue](games/rpg/TinyRogue.ml) | 2D | 1980 | mainframe | 1 | Rogue (Michael Toy, Glenn Wichman, Ken Arnold, 1980) | A dungeon made anew each game, down to the Amulet of Yendor. | Time in turns; a dungeon generated from a seed; what you see, and what you have seen. |\n| [TinyGauntlet2](games/rpg/TinyGauntlet2.ml) | 2D | 1986 | arcade | 1 | Gauntlet II (Ed Logg, Atari Games, 1986) | Four heroes, a dungeon seen from above, and generators spawning crowds. | Generators (monsters as a flow, not a set); health as the clock; greedy chasers or one flow field (`chase=field`). |\n| [TinyDungeonMaster](games/rpg/TinyDungeonMaster.ml) | 2.5D | 1987 | computer | 1 | Dungeon Master (FTL Games, 1987) | One hero underground, a step at a time, with a torch and no map. | Real time on a grid; a view with no projection at all: nested frames at fixed places, drawn farthest first. |\n| [TinyDiablo](games/rpg/TinyDiablo.ml) | 2.5D | 1996 | PC | 1 | Diablo (Blizzard North, 1996) | Click to walk and kill in a dungeon drawn from one fixed angle. | Rogue in real time: click to walk (the isometric projection inverted, then A*); a dungeon from an LFSR; the dark. |\n| [TinyHades](games/rpg/TinyHades.ml) | 3D | 2020 | PC | 1 | Hades (Supergiant, 2020) | Out of the underworld a chamber at a time, a boon from a god after each. | The roguelite: death pays for the next run; boons as numbers changed for a run; the invulnerable dash. |\n\n## First-person\n\n`games/fps/`: the world seen through the eyes of whoever you play, on\nfoot -- shooting, building or breaking; and each game here is also\nabout its view, from a raycaster to a real 3D renderer.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyMazeWar](games/fps/TinyMazeWar.ml) | 2.5D | 1973 | mainframe | 1 | Maze War (Steve Colley, Greg Thompson and Howard Palmer, NASA Ames, 1973-74) | Eyeballs hunting each other down the corridors of a maze, in lines. | The first first-person game and shooter: nested frames, a cell at a time, in lines only; every player a command per tick, the shape of lockstep networking; robots. |\n| [TinyBattlezone](games/fps/TinyBattlezone.ml) | 2.5D | 1980 | arcade | 1 | Battlezone (Ed Rotberg, Atari, 1980) | A tank's periscope over a plain of wireframe pyramids and blocks. | The first 3D arcade hit: wireframes taken into the eye's coordinates, clipped at the near plane, divided by the depth. |\n| [TinyBattlezone3d](games/fps/TinyBattlezone3d.ml) | 3D | 1980 | arcade | 1 | TinyBattlezone | The same plain and the same enemy, with solid faces. | A z-buffer turns obstacles into cover. |\n| [TinyWolfenstein](games/fps/TinyWolfenstein.ml) | 2.5D | 1992 | PC | 1 | Wolfenstein 3D (id Software, 1992) | A maze walked in first person. | The raycaster: one ray per screen column through a grid (DDA); billboards hidden by a one-dimensional z-buffer. |\n| [TinyWolfenstein3d](games/fps/TinyWolfenstein3d.ml) | 3D | 1992 | PC | 1 | TinyWolfenstein | The same maze, each wall cell a box. | What 3D costs and buys: every box projected and filled, nothing assumed about the walls. |\n| [TinyCyberSled](games/fps/TinyCyberSled.ml) | 3D | 1993 | arcade | 1-2 (net) | Cyber Sled (Namco, 1993) | Two hover-tanks duel in a closed arena of flat-shaded polygons. | Twin-stick tank controls, one stick per tread, plus strafing: two sticks read as a speed, a turn and a slide; homing missiles, ramps, a split screen, 3D juice (Juice3d) and play over the network (Multiplayer3d) as flags. |\n| [TinyDoom](games/fps/TinyDoom.ml) | 2.5D | 1993 | PC | 1 | Doom (id Software, 1993) | A level of sectors: stairs, a pillar, a window onto a dark room. | The BSP tree: walls nearest first, per-column clip arrays, floors and ceilings at any height, and no z-buffer. |\n| [TinyDoom3d](games/fps/TinyDoom3d.ml) | 3D | 1993 | PC | 1 | TinyDoom | The same level, drawn as any 3D scene. | What a z-buffer makes unnecessary: no tree, no order, every polygon every frame. |\n| [TinyQuake](games/fps/TinyQuake.ml) | 3D | 1996 | PC | 1 | Quake (id Software, 1996) | Three rooms, three runes, and the exit, in true 3D. | The level prepared before the game: qbsp (CSG and a BSP of solid space), vis (potentially visible sets), light (lightmaps). |\n| [TinyHalfLife2](games/fps/TinyHalfLife2.ml) | 3D | 2004 | PC | 1 | Half-Life 2 (Valve, 2004) | A yard of Ravenholm, two zombies, and the gravity gun. | Physics as the game: the gravity gun, a hinged seesaw, floating barrels, zombies that go limp as ragdolls. |\n| [TinyMinecraft](games/fps/TinyMinecraft.ml) | 3D | 2009 | PC | 1 | Minecraft (Markus Persson, 2009) | Walk, jump, fly, and remove and place blocks. | A voxel world in a hash table: chunks cached on the GPU, hidden faces culled, blocks picked by a ray, one texture atlas. |\n| [TinyFortnite](games/fps/TinyFortnite.ml) | 3D | 2017 | PC | 1 | Fortnite Battle Royale (Epic Games, 2017) | Sixteen out of a flying bus onto an island, a storm closing in, and walls, floors and ramps built in a second. | A battle royale: the bus, the glide, chests and a storm that shrinks on a timetable; building snapped to a grid, structural integrity as a flood fill over the pieces' shared edges; bots on libs/ai's Bot and Sense that wall up when shot. |\n| [TinyTeardown](games/fps/TinyTeardown.ml) | 3D | 2020 | PC | 1 | Teardown (Dennis Gustafsson, Tuxedo Labs, 2020) | A heist in a level of voxels, every one of which can be knocked out. | Destructible voxels: greedy meshing, a flood fill finding what is loose, and loose pieces turned into rigid bodies of the 3D engine. |\n\n## Flight and space\n\n`games/flight/`: flying a craft in three dimensions (or its top-down\nshadow), over terrain, through space or down a mine; the controls of\na vehicle that is not on the ground.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyElite](games/flight/TinyElite.ml) | 2.5D | 1984 | computer | 1 | Elite (David Braben and Ian Bell, Acornsoft, 1984) | A Cobra in orbit round Lave, pirates, and docking in the Coriolis station. | Full 3D in 32 KB: the universe turning round a ship that never moves, small-angle rotations, hidden lines on convex hulls, a generated galaxy. |\n| [TinyElite3d](games/flight/TinyElite3d.ml) | 3D | 1984 | computer | 1 | TinyElite | The same flight, with solid ships. | Backface culling and a z-buffer take over the hidden lines, and hide ships behind ships. |\n| [TinyXpilot](games/flight/TinyXpilot.ml) | 2D | 1991 | workstation | 2 | XPilot (Bj\xc3\xb8rn Stabell and Ken Ronny Schouten, 1991) | Ships with inertia and gravity in a cave, cannons and fuel stations. | Newton's third law by hand (a rope between ship and ball); a crash judged by the jolt; cannons that lead their target; the split screen by clipping. |\n| [TinyComanche](games/flight/TinyComanche.ml) | 2.5D | 1992 | PC | 1 | Comanche: Maximum Overkill (NovaLogic, 1992) | A helicopter over a voxel island, popping balloons. | Voxel Space: a height map drawn column by column, nearest first, with a y-buffer. |\n| [TinyComanche3d](games/flight/TinyComanche3d.ml) | 3D | 1992 | PC | 1 | TinyComanche | The same island as triangles and a z-buffer. | The flight simulators' way, then the GPUs': the terrain as a mesh, the camera free to roll. |\n| [TinyDescent](games/flight/TinyDescent.ml) | 2.5D | 1995 | PC | 1 | Descent (Parallax Software, 1995) | A ship flying any way up through a mine, to the robots and the exit. | Six degrees of freedom; a mine drawn through the portals between its convex cells, farthest first, with no z-buffer. |\n| [TinyDescent3d](games/flight/TinyDescent3d.ml) | 3D | 1995 | PC | 1 | TinyDescent | The same mine, drawn by playground3d. | The trade the GPUs won: a depth test per pixel instead of a portal walk. |\n\n## Racing\n\n`games/racing/`: a course driven round against the clock or against\nother drivers; the road, the track or the map, and the car on it.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyGranTrak10](games/racing/TinyGranTrak10.ml) | 2D | 1974 | arcade | 1 | Gran Trak 10 (Atari, 1974) | One white car on a black track, alone against the clock, a gear lever and oil slicks. | The first racer from above: a four-speed gearbox heard in the engine's pitch; the track as its center line, walls where it's too far. |\n| [TinyOutRun](games/racing/TinyOutRun.ml) | 2.5D | 1986 | arcade | 1 | Out Run (Yu Suzuki, Sega, 1986) | A red convertible on a road of curves and hills, palm trees going by. | The pseudo-3D road: segments projected as trapezoids, curves as shifts that add up, hills that hide, fog. |\n| [TinySuperSprint](games/racing/TinySuperSprint.ml) | 2D | 1986 | arcade | 1-2 | Super Sprint (Atari Games, 1986) | Four little cars on a figure eight with a bridge, golden wrenches buying upgrades. | Cars that bump and bounce off walls; a track crossing itself, each car's walls measured around where it is, the bridge drawn between the two levels. |\n| [TinySuperOffRoad](games/racing/TinySuperOffRoad.ml) | 2.5D | 1989 | arcade | 1-2 | Ironman Ivan Stewart's Super Off Road (Leland, 1989) | Four trucks in a dirt stadium seen from the stands, over a jump, the whoops, a hill and a mud hole. | Ground with a height: slower up, faster down, flying off a crest when the ground falls away faster than gravity; the stadium as lifted quads, sorted with the trucks. |\n| [TinySupercars](games/racing/TinySupercars.ml) | 2D | 1990 | computer | 1 | Supercars (Magnetic Fields, Gremlin, 1990) | Three laps against three cars on a scrolling track, missiles, and a shop between races. | A career: prize money, damage, repairs and upgrades; the camera following ahead, and the whole track again as a minimap. |\n| [TinyMicroMachines](games/racing/TinyMicroMachines.ml) | 2D | 1991 | console | 1-2 | Micro Machines (Codemasters, 1991) | Tiny cars racing seen from above on a breakfast table. | Cars that drift (the velocity turning towards the heading by a grip); a camera looking ahead of the leader; the screen's edge as the finish line. |\n| [TinyMarioKart](games/racing/TinyMarioKart.ml) | 2.5D | 1992 | console | 1-2 | Super Mario Kart (Nintendo, 1992) | A kart race on a Mode 7 floor, and the balloon battle on Battle Course 1, alone or two in a split screen. | Mode 7: the floor sampled a screen row at a time; karts, shells and item boxes as billboards; the split screen. |\n| [TinyVirtuaRacing](games/racing/TinyVirtuaRacing.ml) | 3D | 1992 | arcade | 1 | Virtua Racing (Yu Suzuki, Sega AM2, 1992) | Five laps of Big Forest, Bay Bridge or Acropolis against fifteen formula cars and the clock (or TinyOutRun's coast), chosen on a turning model of each course. | The first great polygon racer: its three courses traced from their maps, hills of flat-shaded facets, a suspension bridge, an overpass and a tunnel, checkpoints, four views, a seven-speed V12. |\n| [TinyMarioKart64](games/racing/TinyMarioKart64.ml) | 3D | 1996 | console | 1-2 | Mario Kart 64 (Nintendo, 1996) | Three laps against seven karts, item boxes, and a four-player battle. | Polygons for the world and sprites for the karts; four players on one screen; a battle arena with two heights. |\n| [TinyBigRedRacing](games/racing/TinyBigRedRacing.ml) | 3D | 1996 | PC | 1 | Big Red Racing (Big Red Software, Domark, 1996) | Three laps against three drivers over the Highlands, down a red canyon and on the Moon, a vehicle per course. | The course in the terrain, not on it: the road painted quads, the canyon's walls the ground raised; a wall is ground too steep to climb; the Moon's sixth of gravity, every crater a ramp. |\n| [TinyIgnition](games/racing/TinyIgnition.ml) | 3D | 1997 | PC | 1-2 | Ignition (UDS, Virgin, 1997) | A sports car, a police car and a school bus racing a country road seen from above, over two ramps; two players side by side. | Micro Machines' view and driving on ground with a height: the racing kit's Offroad (the slope's pull, the takeoff when the ground falls away faster than the car falls, the landing), the ground a function made from the road (Track3d.locate), the screen split down the middle. |\n| [TinySSX](games/racing/TinySSX.ml) | 3D | 2000 | console | 1 | SSX (EA Canada, 2000) | A snowboard race down a mountain against three riders; off the kickers, spins, flips and grabs, landed straight or wiped out, filling the boost meter. | Tricks as the race's fuel: in the air the keys turn the rider, and on landing the angles are checked, named and scored; the rider a car without an engine (the racing kit's Offroad, gravity along the slope), the mountain the racing kit's Road going down, walked into space by Track3d.of_road, its profile smoothed so the riders don't hop off every sample. |\n\n## Sports and tables\n\n`games/sports/`: a sport or a table game played on the screen as it is\nplayed off it -- a ball or a puck, a pitch or a table, its physics and\nits rules (or, like Speedball's, rules it could have), and a team or\nan opponent to beat. The table games count: pinball and air hockey\n(Shufflepuck) are simulated tables. Pong is not here: it only borrowed\ntennis's idea, two paddles and a ball, and is an arcade game.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyTennisForTwo](games/sports/TinyTennisForTwo.ml) | 2D | 1958 | analog | 1-2 | Tennis for Two (William Higinbotham and Robert Dvorak, Brookhaven National Laboratory, 1958) | Tennis from the side on an oscilloscope, a knob and a button each. | The first video game made to entertain: a ballistic trajectory, its bounces, a net; the volley; the phosphor's trail. |\n| [TinyShufflePuck](games/sports/TinyShufflePuck.ml) | 2.5D | 1988 | Mac | 1 | Shufflepuck Caf\xc3\xa9 (Christopher Gross, Br\xc3\xb8derbund, 1988) | Air hockey down a table in perspective against a bar's regulars. | The table seen from your end: one division of perspective, and its inverse for the mouse; opponents as a few knobs; substeps against tunnelling. |\n| [TinyKickOff2](games/sports/TinyKickOff2.ml) | 2D | 1990 | computer | 1 | Kick Off 2 (Dino Dini, Anco, 1990) | Football from above, where the ball is not glued to your feet. | The free ball (`ball=glued` to compare); aftertouch; a team as a formation pulled towards the ball. |\n| [TinySpeedball2](games/sports/TinySpeedball2.ml) | 2D | 1990 | computer | 1 | Speedball 2: Brutal Deluxe (The Bitmap Brothers, 1990) | Handball, ice hockey and a fist fight on a sheet of metal. | The ball carried; an arena that scores like a pinball table; walls instead of touchlines; the tackle as a move. |\n| [TinySensibleSoccer](games/sports/TinySensibleSoccer.ml) | 2D | 1992 | computer | 1 | Sensible Soccer (Jon Hare and Chris Yates, Sensible Software, 1992) | Football with aftertouch, the third answer to the ball question. | Close control, between glued and free; the ball's height and its shadow; a pulled-back view; lofted aftertouch. |\n| [TinyPinball](games/sports/TinyPinball.ml) | 2D | 1992 | computer | 1 | Pinball Dreams (Digital Illusions, 1992) | A table from above: plunger, flippers, bumpers, targets, and tilt. | The flipper carries the ball (its surface speed, w r); the table as data; substeps against tunnelling; two engines. |\n| [TinyPinball3d](games/sports/TinyPinball3d.ml) | 3D | 1992 | computer | 1 | TinyPinball | The same table in 3D, on the physics engine. | Continuous collision: the ball swept by conservative advancement, even against flippers moving and turning. |\n| [TinyTonyHawk](games/sports/TinyTonyHawk.ml) | 2D | 1999 | console | 1 | Tony Hawk's Pro Skater (Neversoft, Activision, 1999) | Two minutes on a half-pipe seen from the side: pump, fly, flip, grab, and chain it all. | The combo: a chain's tricks summed and multiplied by its length, a repeat worth half; the revert and the manual as its links; the landing judged by the board's angle; the skater as a point on a curve. |\n\n## Strategy and simulation\n\n`games/strategy/`: planning over reflexes, at a scale above one\ncharacter -- an army, a squad in turns, a city, a civilization -- or a\nsystem to run and keep alive.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyHamurabi](games/strategy/TinyHamurabi.ml) | 2D | 1968 | mainframe | 1 | Hamurabi (Doug Dyment, 1968, after The Sumer Game, Mabel Addis and William McKay, IBM, 1964) | Ten years of ancient Sumer, a harvest at a time, typed on a teletype. | The first simulation game, and the first designed by a woman: a city of five numbers, a year one function of three answers and four dice; the rules as David Ahl's BASIC printed them. |\n| [TinySimCity](games/strategy/TinySimCity.ml) | 2D | 1989 | computer | 1 | SimCity (Will Wright, Maxis, 1989) | Lay out roads, power and zones, and the city builds itself. | The game is the simulation: zones that need each other (the RCI bars), power as a flood fill, pollution as a blur. |\n| [TinyCivilization](games/strategy/TinyCivilization.ml) | 2D | 1991 | PC | 1 | Civilization (Sid Meier and Bruce Shelley, MicroProse, 1991) | Found cities from 4000 BC and climb a tree of technologies. | The tech tree as a DAG; a city as an economy of food, shields and trade; a world made from noise; a rival playing by the same rules. |\n| [TinyDune2](games/strategy/TinyDune2.ml) | 2D | 1992 | PC | 1 | Dune II (Westwood Studios, 1992) | Harvest, build, and order units by pointing: real-time strategy. | Real-time strategy's loop (harvest, build, fight); orders as A* paths; a search whose goal is a question. |\n| [TinyXCOM](games/strategy/TinyXCOM.ml) | 2D | 1994 | PC | 1 | X-COM: UFO Defense (Julian Gollop, Mythos Games / MicroProse, 1994) | Four soldiers, a crashed UFO, and a fight in turns. | Time units spent on every step and shot; the chance to hit shown before shooting; a vision cone per soldier; reaction fire in the enemy's turn. |\n| [TinyWarcraft2](games/strategy/TinyWarcraft2.ml) | 2D | 1995 | PC | 1 | Warcraft II (Blizzard, 1995) | Peasants mine gold and chop wood; footmen fight orcs. | One flow field for a whole crowd; the fog of war; two resources. |\n| [TinyWorms](games/strategy/TinyWorms.ml) | 2D | 1995 | computer | 2 | Worms (Andy Davidson, Team17, 1995) | Artillery for two: angle, power, the wind, and craters. | Projectiles under gravity and wind; a height-map terrain carved by craters. |\n| [TinyTowerDefense](games/strategy/TinyTowerDefense.ml) | 2D | 2007 | web | 1 | Desktop Tower Defense (Paul Preece, 2007) | Build the maze the monsters must walk, out of towers. | The player builds the maze: A* redone at every tower, and the search as a referee that forbids closing the way. |\n\n## Rhythm\n\n`games/rhythm/`: pressing in time with music, judged by the music's\nclock rather than the screen's.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyDDR](games/rhythm/TinyDDR.ml) | 2D | 1998 | arcade | 1 | Dance Dance Revolution (Konami, 1998) | Press each arrow as it reaches the top, in time with the music. | What time is it? Steps judged by the music's clock, the calibration measured from the player; charts computed from the melody. |\n| [TinyGuitarHero](games/rhythm/TinyGuitarHero.ml) | 2.5D | 2005 | console | 1 | Guitar Hero (Harmonix, 2005) | Hold the fret and strum as each note reaches the line. | The instrument: fret and strum, long notes, a difficulty as the same song reduced; the highway as Out Run's road straightened. |\n| [TinyRockBand](games/rhythm/TinyRockBand.ml) | 3D | 2007 | console | 1 | Rock Band (Harmonix, 2007) | A band on four highways: play guitar, bass, drums or keys. | The band: four parts from a tune's four voices, four ways of pressing, drums from a percussion voice, one crowd meter. |\n\n## Programming games\n\n`games/programming/`: you win by writing the program that plays --\nthe player is a programmer, the game a machine and its rules, and a\nmatch is programs run against the machine or against each other.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyKarel](games/programming/TinyKarel.ml) | 2D | 1981 | mainframe | 1 | Karel the Robot (Richard E. Pattis, Stanford, 1981) | Type a program in Pattis's language and watch the robot run it: the newspaper, the harvest, the stairs, the maze. | Teaching a robot new words before any variable; a recursive-descent parser with its mistakes on their lines; the right-hand rule, a program for a world it has never seen. |\n| [TinyCoreWar](games/programming/TinyCoreWar.ml) | 2D | 1984 | computer | 1 | Core War (A. K. Dewdney and D. G. Jones, 1984) | Write two programs in its editor, then watch them fight in one circular memory, each trying to make the other execute a DAT. | A virtual machine and its assembler, a page each (Redcode, MARS), the assembler's mistakes shown on their lines; the classic warriors to start from -- the Imp, the Dwarf, the Mice -- and why each beats the next. |\n\n# Apps\n\nIn `apps/office/`, the sections below up to Graphics (excluded) being\nits kinds of program, and in `apps/gamedev/`, the tools making what any\ngame can use (a genre's level editor is with its games instead, as\nTinySokobanEd is: see `games/README-tools.md`). The other categories\neach have a section, which names their directory.\n\n## Word processing and publishing\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyBravo](apps/office/TinyBravo.ml) | app | 1974 | workstation | 1 | Bravo (Butler Lampson and Charles Simonyi, Xerox PARC, 1974) | The first editor where the screen looked like the page. | WYSIWYG, and the piece table; modal commands, with their famous \"edit\" trap. |\n| [TinyWord](apps/office/TinyWord.ml) | app | 1983 | PC | 1 | Microsoft Word (1983 on DOS, 1985 on the Macintosh) | The same text as TinyBravo, with no modes. | No modes: a caret wherever you click, cut, copy and paste, menus you can read, undo by name. |\n| [TinyFrameMaker](apps/office/TinyFrameMaker.ml) | app | 1986 | workstation | 1 | FrameMaker (Charles Corfield, Frame Technology, 1986) | A long document that lays itself out in columns and pages. | Text flowing through a chain of frames over pages; master pages; anchored frames carrying parts along with the text. |\n\n## Spreadsheets\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyVisiCalc](apps/office/TinyVisiCalc.ml) | app | 1979 | computer | 1 | VisiCalc (Dan Bricklin and Bob Frankston, 1979) | The program that sold the Apple II: cells and formulas. | The spreadsheet on a 40-column screen with no mouse: the cursor as the interface, slash commands, recalculation in row or column order. |\n| [TinyExcel](apps/office/TinyExcel.ml) | app | 1985 | Mac | 1 | Excel (Microsoft, 1985, on the Macintosh) | The same spreadsheet six years later, with the mouse. | The same engine with 1985's answers: ranges, menus, a formula bar, Fill Down's relative references, a dependency graph. |\n\n## Presentations\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyPowerPoint](apps/office/TinyPowerPoint.ml) | app | 1987 | Mac | 1 | PowerPoint (Robert Gaskins and Dennis Austin, Forethought, 1987) | Slides, an outline, a master, a sorter, and the show. | A talk written before it is drawn: four views of one outline, and a master slide, a style sheet for pages. |\n\n## Authoring and compound documents\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyHyperCard](apps/office/TinyHyperCard.ml) | app | 1987 | Mac | 1 | HyperCard (Bill Atkinson, Apple, 1987) | Cards, buttons and scripts: programming for non-programmers. | Using and building as one: backgrounds as a database's columns, the message path, HyperTalk. |\n| [TinyOpenDoc](apps/office/TinyOpenDoc.ml) | app | 1994 | Mac | 1 | OpenDoc (Apple, IBM and CI Labs, 1994-97) | A document with no application: text, sheet, picture and drawing parts. | Parts edited in place, the menu bar becoming theirs; unknown parts kept byte for byte; sizes negotiated or scaled. |\n| [TinyOffice](apps/office/TinyOffice.ml) | app | 2020 | PC | 1 | today's office suites (Microsoft 365, iWork, LibreOffice) | Choose a document, sheet, presentation, picture or drawing; each holds the others. | A start screen; every kind a host; objects floating anywhere, dragged and resized; text running round them, each object its own way; pages with headers, footers and page numbers; objects that move with the text; a chart linked to a sheet; a slide show; OLE's menu merging. |\n\n## Graphics\n\n`apps/graphics/`: the programs pictures are made with -- the two ways\nof keeping one, as dots (TinyMacPaint) and as objects (TinyMacDraw),\nboth Apple's of 1984; the Amiga's dots, each a colour's number in a\npalette that can turn (TinyDeluxePaint); and what the dots became with\n24 bits each (TinyPhotoshop, over `libs/graphics/imaging`:\n`plan_photoshop.md`); and a 3D scene built and ray traced\n(TinyBlender, over `appkits/modeler` and the Povray way).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyMacPaint](apps/graphics/TinyMacPaint.ml) | app | 1984 | Mac | 1 | MacPaint (Bill Atkinson, Apple, 1984) | Paint with dots: pencil, brush, shapes, bucket, and a selection to move. | The picture as bits: palettes of tools and patterns, the seed fill, marching ants, one undo per stroke. |\n| [TinyMacDraw](apps/graphics/TinyMacDraw.ml) | app | 1984 | Mac | 1 | MacDraw (Apple, 1984) | A picture made of objects you can select, move and group. | The picture as a list of objects: the order is the depth, handles, grouping, hollow shapes clicked through. |\n| [TinyDeluxePaint](apps/graphics/TinyDeluxePaint.ml) | app | 1985 | computer | 1 | Deluxe Paint (Dan Silva, Electronic Arts, 1985, on the Amiga) | A picture of 32 colours whose waterfall and fire move by the palette alone: Tab, and the colours cycle. | Indexed colour, a dot the number of a colour in a palette of the Amiga's 12 bits; colour cycling, a range of the palette turning at each frame, the picture untouched; the brush cut from the picture, its transparent colour the background's; symmetry; its file IFF ILBM, chunks (RIFF's ancestor), bitplanes, ByteRun1 (MacPaint's PackBits) and the cycling ranges. |\n| [TinyPhotoshop](apps/graphics/TinyPhotoshop.ml) | app | 1990 | Mac | 1 | Photoshop 1.0 (Thomas and John Knoll, Adobe, 1990) | NASA's Blue Marble to retouch: select with the magic wand, adjust Levels or Hue/Saturation, filter, paint. | A photograph's 24 bits a dot and image processing as menus: point operations as tables of 256 (Levels with its histogram, Curves, Hue/Saturation in HSL), convolutions (blur, sharpen, emboss; the Gaussian separable; unsharp mask), Sobel's Find Edges, the median, interpolation (nearest, bilinear, bicubic); the selection as a mask a byte a dot, every operation applied through it, the wand a flood fill with a tolerance, feathering a blur of the mask; brushes as dabs with a hardness, a stroke's opacity uniform, the airbrush, rubber stamp and smudge; dialogs with a live preview; the picture drawn as tiles, only the changed ones sent again; and Photoshop 3.0's layers, each with its opacity and blend mode (Multiply, Screen, Overlay, Color...), flattened by Porter and Duff's over, a Layers palette, a photograph placed as a layer. |\n| [TinyBlender](apps/graphics/TinyBlender.ml) | app | 1994 | PC | 1 | Blender 2.8 (Ton Roosendaal, NeoGeo 1994, open source 2002; 2.8 in 2019) | Blender's default cube in the quad view, moved with G, R and S, the camera's view ray traced live. | The quad view, three plans and the camera (Sketchpad III's four); objects as primitives placed by location, rotation and scale; modal transforms locked to an axis, a number typed; the Boolean modifier as the ray tracer's exact CSG; the rendered viewport sharpening as you watch, its wires on the solids by the ray tracer's own projection; materials (mirror, glass, solid textures); F12. |\n\n## CAD\n\n`apps/cad/`: the drawings that are models rather than pictures --\ngeometry that keeps its own rules, constraints the program maintains,\nparts placed as instances of other drawings (`plan_cad.md`), faces that\nappear where lines close a loop.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinySketchpad](apps/cad/TinySketchpad.ml) | app | 1963 | mainframe | 1 | Sketchpad (Ivan Sutherland, MIT Lincoln Laboratory's TX-2, 1963) | Draw with the light pen, then tell the drawing its rules: a rough hexagon becomes regular, a linkage moves. | The first interactive graphics program: the pen aiming at points and lines; items sharing their points; constraints kept by relaxation, one point at a time by least squares on numerical derivatives; masters and instances, a honeycomb of one hexagon; the window zoomed over a sheet bigger than the screen; the scope's dots. |\n| [TinyAutoCAD](apps/cad/TinyAutoCAD.ml) | app | 1992 | PC | 1 | AutoCAD Release 12 (Autodesk, 1992; AutoCAD 1982) | A bracket drawn on layers, by a command line that asks and a crosshair that snaps. | Drafting by conversation: commands asking for points typed (absolute, @relative, @polar) or picked; object snaps and ORTHO; TRIM, EXTEND, OFFSET and FILLET as crossings of lines and circles; window and crossing selection; layers; blocks inserted; dimensions that measure; undo by command; DXF, the drawing as text read and written. |\n| [TinySketchup](apps/cad/TinySketchup.ml) | app | 2000 | PC | 1 | SketchUp (Brad Schell and Joe Esch, @Last Software, 2000; Google SketchUp 8, 2010) | A house pushed and pulled out of a rectangle: draw a line across a face, pull the face, lift the ridge. | 3D for everyone: the model as edges and the faces they close, found by themselves in a plane; sticky geometry, vertices shared and edges split; push/pull, a face swept along its normal, sliding, extruding, merging into its neighbours or notching them; holes, the Euler-Poincare formula kept; the inference engine, a 3D point guessed from the screen (endpoint, midpoint, on edge, on face, the red, green and blue axes) and said; the Measurements box; soft edges; orbit, pan, zoom; the faces ordered by a BSP tree, no z-buffer. |\n\n## Education\n\n`apps/education/`: the programs made for a learner of a subject -- the\nsky, geometry, logic, typing -- rather than for getting work done.\nLearning to program is elsewhere (the programming games, the ways, the\nprogramming tools), and so are the educational games, which are played.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyInteractivePhysics](apps/education/TinyInteractivePhysics.ml) | app | 1989 | Mac | 1 | Interactive Physics (Knowledge Revolution: David Baszucki and Erik Cassel, 1989) and Working Model (1993) | Draw disks and blocks, tie them with springs, ropes, rods and pins, press Run: the meters plot the energies, the tape rewinds. | The physics lab as a drawing that moves: the conservation of energy measured (kinetic, turning included, against potential, of height and of springs), friction and inelastic landings taking it away, momentum kept by collisions; SI units over a pixel world; the tape as the list of the simulation's values, rewound and run again from any frame. |\n| [TinyStellarium](apps/education/TinyStellarium.ml) | app | 2001 | PC | 1 | Stellarium (Fabien Chereau, 2001), after the planetarium projector (Zeiss Mark I, 1923) | The sky of a place at an instant, as you would see it standing there; time runs as fast as you like, the sky turns, the Moon waxes and the planets wander. | The celestial sphere turned by the sidereal time and tilted by the latitude; precession, Thuban the pole star of the pyramids; the Sun and the planets by Kepler's ellipses seen from the Earth, and Mars's retrograde loop; the Moon's disturbances and its phase; magnitudes, spectral classes as colours, the sky's brightness hiding the stars; the stereographic projection, the horizon a circle and the ground its outside. |\n\n## PIM\n\n`apps/pim/`: the personal information managers -- the time, the\ncalendar, and the Palm Pilot's address book and to-do list to come\n(`plan_pim.md`), over core's `Civil` and `Clock`.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyCalendar](apps/pim/TinyCalendar.ml) | app | 1971 | mainframe | 1 | cal (Unix, 1971), iCal (Apple, 2002) | A month or a week of events, dragged, stretched and repeated; September 1752 as England lived it. | The calendar computed, not looked up (a date a day number); the Julian calendar before the switch, cal's eleven missing days; a repetition as a rule (RRULE), its occurrences computed for the days shown; iCalendar files, read and written. |\n| [TinyClock](apps/pim/TinyClock.ml) | app | 1984 | Mac | 1 | the Alarm Clock (Apple, Macintosh, 1984), xclock (X Window System, mid-1980s) | The time here and in six cities, on hands or in a strip, and an alarm. | The wall clock's time, seconds since 1970 and the offset only the platform knows; hands keeping every fraction where the strip truncates; cities with no daylight saving, so one offset all year. |\n| [TinyPalmPilot](apps/pim/TinyPalmPilot.ml) | app | 1996 | handheld | 1 | the Pilot (Jeff Hawkins, Donna Dubinsky and Ed Colligan, Palm Computing, 1996) | A Date Book, an Address book, a To Do list and a Memo Pad behind four buttons, on a 160 x 160 screen. | Four things done and nothing else; no Save and no waiting, every change kept at once; written straight on the screen (an event on its hour, a name in the Look Up line); the data in the world's formats, iCalendar and vCard, for HotSync. |\n\n## Game making\n\n`apps/gamedev/`: the tools making what any game can use -- sprites,\nmaps, sounds -- written in the format of the playground layer that\nreads them, in files the games embed at build time.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyAseprite](apps/gamedev/TinyAseprite.ml) | app | 2001 | PC | 1 | Aseprite (David Capello, 2001) | TinyMario's hero, four frames of pixel art: paint them, play them, export them. | The sprite as text: XPM files (a palette and rows of characters) that GIMP opens and a game embeds; the onion skin; the keys as the file's own characters. |\n| [TinyTiled](apps/gamedev/TinyTiled.ml) | app | 2008 | PC | 1 | Tiled (Thorbjorn Lindeijer, 2008) | TinyMario's level, a cell at a time, the camera following the cursor along it. | The same file as a sprite, a character per cell (Tilemap.of_xpm); an editor that knows the level and not the game, so a cell is its palette color and its character; a minimap, and a keyboard's repeat written out. |\n\n## Music\n\n`apps/music/`: instruments played live, their voices built from\n`audio/`'s blocks (`plan_synth_teaching.md`), and the tracker.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyHammond](apps/music/TinyHammond.ml) | app | 1955 | instrument | 1 | Hammond B-3 (1955) and its Leslie 122 (1965) | Nine drawbars pulled into a registration, chords on the computer's keys, the Leslie's horn and drum turning slow or fast. | Additive synthesis: sines added, from 91 tonewheels on gears (their harmonics tempered, a cent off); a voice per key, freed once silent; the percussion single-triggered; the Leslie modelled from its geometry, the Doppler made by a moving delay. |\n| [TinyRhodes](apps/music/TinyRhodes.ml) | app | 1970 | instrument | 1 | Fender Rhodes Mark I (1970) and its Suitcase; the Wurlitzer 200A (1974) and the Clavinet D6 (1971) | The electric pianos: a Rhodes to play softly or hard, its pickup's curve drawn with the tine's swing across it, the Suitcase's tremolo moving between its speakers. | Physical modelling: the tine as struck resonators (its modes at 1, 6.27, 17.55), read by a pickup whose curve makes the bark as the velocity grows; the Wurlitzer's reed and its capacitor; the Clavinet's string. |\n| [TinyMinimoog](apps/music/TinyMinimoog.ml) | app | 1970 | instrument | 1 | Minimoog Model D (Moog Music, 1970) | Three oscillators, the ladder filter and two contours, played from the computer's keys. | Subtractive synthesis in a fixed signal path read left to right; the ladder filter's resonance, overdriven by the mixer, played by the keyboard; low-note priority and legato; a patch as the panel's positions. |\n| [TinyCS80](apps/music/TinyCS80.ml) | app | 1977 | instrument | 1 | Yamaha CS-80 (1977) | Vangelis's synthesizer: two synthesizers per key, a chord held and one of its notes pressed harder to open it alone, a ribbon to bend them. | Polyphonic aftertouch, each key's pressure its own, into its filters and its level; two layers per voice; a filter envelope with an initial and an attack level; the ring modulator. |\n| [TinyTR808](apps/music/TinyTR808.ml) | app | 1980 | instrument | 1 | Roland TR-808 Rhythm Composer (1980) | The drum machine of electro, hip hop and house: eleven drums with their knobs, the 16 coloured step buttons, the whole pattern shown as a grid. | Drums synthesized, not sampled: a ringing filter struck (the kick's punch and sigh), six square waves through band-passes for the metal, the closed hat choking the open; the sequencer's hits at their samples. |\n| [TinyTB303](apps/music/TinyTB303.ml) | app | 1981 | instrument | 1 | Roland TB-303 Bass Line (1981) | A 16-step bass line playing itself, its pattern a grid to click, its knobs turned while it plays: acid. | The sequencer in the audio clock, its steps at the sample, not the frame; the diode ladder, its poles coupled (the \"18 dB\"); the accent sweep, a capacitor's charge climbing over accents in a row; slides; parameter locks, Elektron's and the OP-XY's. |\n| [TinyDX7](apps/music/TinyDX7.ml) | app | 1983 | instrument | 1 | Yamaha DX7 (1983) | The FM synthesizer of the 1980s: 145 parameters edited one at a time on its LCD, as the DX7 made you, beside what it hid -- the algorithm drawn as a graph lit as it plays, the six envelopes; its cartridges read. | FM with six operators: 32 algorithms, feedback from a sine to a sawtooth to noise; the envelopes' rates and levels in decibels; 16 voices, one stolen when they're all taken; velocity changing the timbre. |\n| [TinyJuno](apps/music/TinyJuno.ml) | app | 1984 | instrument | 1 | Roland Juno-106 (1984) | The polyphonic synthesizer everyone could afford: its sliders in their sections, six voices, and the chorus that makes one oscillator sound like an orchestra. | A DCO, in tune by a digital clock; one envelope for filter and amplifier (measured curves); one high-pass for all the voices; the chorus's two bucket-brigade lines, the right one's modulation inverted, at its measured rates. |\n| [TinySoundtracker](apps/music/TinySoundtracker.ml) | app | 1987 | computer | 1 | Ultimate Soundtracker (Karsten Obarski, Amiga, 1987) | A song as a grid of notes in four channels, typed on a piano of letters, played as it's edited. | The tracker: time going down the screen, a cell a note, an instrument and an effect in hex; a song that carries its own instruments (the MOD file, read and written by audio/formats/mod), played on the Amiga's four channels. |\n| [TinyReBirth](apps/music/TinyReBirth.ml) | app | 1997 | PC | 1 | ReBirth RB-338 (Propellerhead, 1997) | The techno studio in a computer: two TB-303s, a TR-808 and a TR-909 playing together, each machine's pattern chosen, mixed, through distortion, delay, compressor and the pattern controlled filter. | One clock: four sample-exact sequencers started on the same sample stay together for ever; a hub over the machines' own voices; a filter whose cutoff is a pattern. |\n| [TinyOp1](apps/music/TinyOp1.ml) | app | 2011 | instrument | 1 | OP-1 (Teenage Engineering, 2011) | The synthesizer and four-track studio the size of a keyboard: six engines, an envelope, an effect and an LFO, each on the same four coloured encoders, eight sounds, and a tape recording what you play over what it plays back. | Four encoders for everything, the screen saying what they turn; FM, supersaw, waveguide, pulse, phase distortion and bit crushing behind one interface; overdubbing on a tape. |\n| [TinyReface](apps/music/TinyReface.ml) | app | 2015 | instrument | 1 | Reface YC, CP, DX and CS (Yamaha, 2015) | Four small keyboards in one case: a switch for the combo organ, the electric piano, FM and virtual analog, each our original behind it -- the Hammond, the Rhodes, the DX7, the CS-80 -- on 37 mini keys. | A hub made thin by an interface: each voice gives its knobs by name, so a face is a list of labels and names, its controls drawn from the knobs' kinds; one voice playing at a time. |\n| [TinyOpxy](apps/music/TinyOpxy.ml) | app | 2024 | instrument | 1 | OP-XY (Teenage Engineering, 2024) | The groovebox: eight tracks stepping together -- an 808 kit sampled, a bass, sampled electric piano chords, a lead -- their 16 steps, parameter locks, scenes switched at the bar, and the brain moving the song into another key and scale. | A step holds a chord and its knobs' locks, points the value glides through; the sampler, a recording played as an instrument; scenes on the bar; transposing by scale degree, not by interval. |\n\n## Media\n\n`apps/media/`: programs for files of every kind -- sounds, tunes,\npictures, and videos as `graphics/videos/` comes\n(`plan_video_teaching.md`).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyMediaPlayer](apps/media/TinyMediaPlayer.ml) | app | 1991 | PC | 1 | Media Player (Microsoft, 1991), VLC (VideoLAN, 2001) | One player for every file this repository reads: recordings (WAV, MP2, MP3), tunes, modules, pictures, an animation, a video, and an .mpg with its sound. | A file's kind found from its bytes (magic numbers), not its name; each kind shown as what it is: a piano roll, a wave, a tracker's rows, a picture; a playlist, a scope and a spectrum. |\n| [TinyWinamp](apps/media/TinyWinamp.ml) | app | 1998 | PC | 1 | Winamp 2 (Nullsoft, 1998) | The MP3 player of the MP3 years in its three windows: the LCD time, the title scrolling, the analyzer, the ten-band equalizer and the playlist. | A song's title from its ID3 tags, not its name; a graphic EQ heard as it is dragged, its curve the real response; the analyzer's bars in decibels on a log scale of frequencies, with falling peaks; the skin as data, its 5 x 6 font. |\n\n## Internet\n\n`apps/internet/`: programs that talk to other computers, over\n`networking/`, the servers they talk to small enough to run beside\nthem.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyEudora](apps/internet/TinyEudora.ml) | app | 1988 | Mac | 1 | Eudora (Steve Dorner, University of Illinois, 1988) | Mailboxes and a message: the list with Eudora's columns, a message read under it, its headers all shown with b, its attachment saved; a reply written, queued in Out, and sent; Check Mail; your own Gmail; the list by conversation, filters. | Mail as bytes (networking/mail): a message as RFC 822's header fields, folded lines, addresses and dates (Mail); MIME's parts, base64, quoted-printable and encoded words, read and written (Mime); a mailbox as one mbox file, its \">From\" lines quoted the reversible way (Mbox); a built-in mailbox of messages written for what they show -- a thread, a forged sender given away by the envelope, a digest, a picture attached; composing as Eudora did on a modem, a message queued rather than sent, a reply quoted and threaded by In-Reply-To and References, nicknames as vCards, the mailboxes kept as mbox files in the store; SMTP and POP3 as pure state machines fed the server's lines (Smtp, Pop3), and its own server, networking/maild's tiny_maild (Mail_server: not a relay, deletions at QUIT only), over WebSocket so that a browser checks mail too and over plain TCP so that telnet and any mail client do; and Gmail's servers, natively, the same machines inside our own TLS 1.3 (networking/tls: X25519, ChaCha20-Poly1305, the certificates' ECDSA and RSA checked, plan_tls.md), SMTP logging in (AUTH PLAIN); conversations threaded by Jamie Zawinski's algorithm (Mail_thread), Eudora 1.4's filters (plan_tiny_eudora.md). |\n| [TinyIRC](apps/internet/TinyIRC.ml) | app | 1989 | workstation | 1 | ircII (Michael Sandrof, 1989), for IRC (Jarkko Oikarinen, 1988) | Channels and nicks: join #tiny, type a line, everyone in it reads it. | A protocol a person can read, a line of text a message (Irc); its own server (networking/ircd), over WebSocket so that a browser joins too; /raw to type the protocol itself. |\n| [TinyMosaic](apps/internet/TinyMosaic.ml) | app | 1993 | workstation | 1 | NCSA Mosaic (Marc Andreessen and Eric Bina, 1993) | A web browser: a page fetched, read and drawn, its links followed. | Built stage by stage as every browser's pipeline (plan_browser_teaching.md); all of them now, in a first form: a page's bytes fetched (a built-in about: page, or http://) and decoded, its encoding decided (web's Charset), cut into tokens (Html_lexer, the WHATWG's state machine), built into a tree, its mistakes repaired (Html_tree, over MMM's DTD-as-data), given Mosaic's looks (Looks), laid out in blocks and lines (Html_layout; lines broken greedily or by Knuth and Plass, w) and drawn by Hershey's pen (Stroke_text); pictures in the text, fetched one after the other as Mosaic did and decoded by our own GIF, PNG and JPEG readers; fill-out forms in Motif's look, sent with GET or POST, answered by the browser (about:echo) or by tiny_httpd's CGI; and back, a click to its link (Hit), a history of two stacks, visited links purple; http:// by our own client, https:// by our own TLS 1.3 (networking/tls, plan_tls.md), and its own web server, networking/httpd's tiny_httpd; a view per stage, one the 1991 Line Mode Browser's, links followed by their number. |\n| [TinyNetscape](apps/internet/TinyNetscape.ml) | app | 1994 | PC | 1 | Netscape Navigator 1.0 (Marc Andreessen and the Mosaic Communications team, 1994) | Mosaic's successor: a toolbar, a Location field to type in, pictures arriving four at a time. | The same engine as TinyMosaic (appkits/browser), in Netscape's window: the Location field typed into, the toolbar's buttons, the status bar's progress and the \"N\" whose meteors fall while a page loads; pictures fetched over four connections at once instead of one after the other, the page readable before they arrive, Stop and Images (images=off) to not wait; and threads for what still blocks, a host's name resolved and the https:// fetches on a pool of four (Worker), the window going on meanwhile (threads=off: Mosaic's frozen window); and Netscape's extensions to HTML, marked as such in the tokens and the tree (not HTML 2.0's) and honoured here, not by TinyMosaic: colours, fonts, centring, rules, pictures the text flows around (floats), tables, their columns as wide as their cells need (each cell laid out twice to measure it); and CSS1's style sheets, the cascade by specificity over the browser's own looks, c to see a page without them (plan_browser_teaching.md). |\n| [TinyFirefox](apps/internet/TinyFirefox.ml) | app | 2004 | PC | 1 | Firefox 1.0 (the Mozilla Foundation, 2004), and Firebug (Joe Hewitt, 2006) | A browser that runs the page's own program: click, type, and watch the console and the page's tree change. | The page's JavaScript run by an engine written from scratch (languages/javascript: a lexer, a Pratt parser -- and why not yacc --, a tree walker with closures and JavaScript's coercions) over the page's tree (Browser_script: the DOM, a click bubbling to the document, timers on the frame clock, one reflow per task), all of TinyNetscape's looks (extensions, tables, CSS), and a panel after Firebug: the console, with a command line into the page's world, and the tree as the scripts leave it; its home page leads to a counter, a to-do list, a stopwatch and tic-tac-toe, each a small program (plan_tiny_firefox.md). |\n| [TinyChrome](apps/internet/TinyChrome.ml) | app | 2008 | PC | 1 | Google Chrome (2008) | A small browser for the real web: Hacker News, Wikipedia (its search from the omnibox), Google's home page, GitHub, drawn mostly as their authors meant, in tabs, with developer tools; Hacker News' own script run, a thread folded; TinyTube, a video site of our own. | CSS's own engine, from scratch (languages/css, appkits/browser/layout): a cascade with @media, custom properties and var(), calc(), the attributes' hints, quirks mode, a record of computed values per element, and CSS 2.1's box model -- margins, borders and paddings, auto margins centring, collapsing margins, floats, inline-blocks shrunk to fit, relative and absolute positioning, tables and lists, and flexbox -- and SVG drawn by our own rasterizer (files, inline <svg>, backgrounds, masks) -- an ES5 engine (prototypes, new, call and apply, var hoisted, ==, regular expressions by a backtracking matcher of its own) running a few sites' scripts, Hacker News' comment folding with its own hn.js; <video> and <audio> played by our own readers (MPEG-1 and MP2, AVI, FLC, Y4M, GIF, MP3), in about:tube; and developer tools after Chrome's: an element inspected, each of its winning declarations with the rule and the sheet it came from, the network -- over the browser's own style sheet written in CSS (ua.css), the pages' linked sheets and their @imports fetched with their pictures; its home page, about:chrome, a page in today's CSS (plan_tiny_chrome.md). |\n\n## System\n\n`apps/system/`: the programs a computer is used through before any\napplication -- so far the terminal and its shell, over the\nplayground's Teletype way and `libs/terminal/` (`plan_terminal.md`).\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyTerminal](apps/system/TinyTerminal.ml) | app | 1978 | mainframe | 1 | the VT100 (DEC, 1978), the Unix shell (Ken Thompson, 1971; Stephen Bourne, 1979) | A screen of 80 by 24 and a prompt: type a command, run Hangman, stop it with Control-C; basic, then RUN MANDEL. | A terminal as three machines: the screen reading bytes and escape sequences (Vt), the tty editing the line (Line_discipline), the shell reading it and running programs written as conversations (Teletype), a spawn being Unix's fork, exec and wait, and Control-C interrupting only the program the shell waits for. |\n\n## Programming tools\n\n`apps/devtools/`: the programs programs are written with -- so far a\nBASIC as a home computer had it, over `languages/basic`\n(`plan_terminal.md`, section 5), and the two text editors, full-screen\nprograms of the terminal over `appkits/editor` (section 6), Emacs's\nLisp over `languages/lisp`, Turbo Pascal's IDE over\n`languages/pascal`, Smalltalk-80's environment over\n`languages/smalltalk` (`plan_tiny_smalltalk.md`), and Scratch's\nblocks and Snap!'s over `languages/scratch` and `appkits/blocks`.\n\n| Program | Dir | Year | Platform | Players | After | In one line | What it brought |\n|---|---|---|---|---|---|---|---|\n| [TinyBasic](apps/devtools/TinyBasic.ml) | app | 1975 | computer | 1 | Tiny BASIC (Dennis Allison, 1975; Li-Chen Wang, Palo Alto, 1976) and Applesoft (Microsoft, 1978), on the Apple II's screen (Steve Wozniak's Integer BASIC, 1977) | Type a program a numbered line at a time, LIST it, RUN it; FP for floating point; Guess the Number is typed in already. | The prompt as the whole environment, editor, calculator and shell; a recursive-descent parser reading characters, finding keywords inside names as Microsoft's cruncher did (SCORE is SC OR E); two arithmetics, 16-bit integers wrapping and Applesoft's floating point; strings, arrays, FOR loops, DATA; the interpreter a Teletype conversation, INPUT's continuation the rest of the program, a step per statement so that 10 GOTO 10 runs and Control-C breaks it; a disk of our own listings, Apple DOS's CATALOG and RUN name: Guess checked against Tty_guess, Bagels, 23 Matches, Animal (a program that learns), Lunar, the Mandelbrot set checked against the same loop in OCaml, Sierpinski's triangle from Pascal's, each crediting its sources in REMs. |\n| [TinyVi](apps/devtools/TinyVi.ml) | app | 1976 | mainframe | 1 | vi (Bill Joy, Berkeley, 1976), on ex and ed (Ken Thompson, 1969) | A screen editor with modes: keys are commands until i, text until Escape; README says them. | Modes; commands as sentences, an operator and a motion with counts that multiply (d2w, 3dd, cw), parsed by a grammar; \".\" repeating the last change, its keys typed again; vi's one level of undo, u again redoing; ex under the colon (:w, :e, :%s/old/new/g, :12); the lines an array of strings, ed's view of a file; the same program in a real terminal, curses' bytes counted. |\n| [TinySmalltalk80](apps/devtools/TinySmalltalk80.ml) | app | 1980 | workstation | 1 | Smalltalk-80 (Alan Kay, Dan Ingalls, Adele Goldberg, Xerox PARC, 1980; Byte, August 1981; the Blue Book, 1983) | A System Browser, a Workspace and a Transcript on a grey screen: print it on 100 factorial, accept a method into Point, and when a message is not understood, define it in the debugger and proceed. | The language as its own live environment: the Blue Book's Smalltalk from scratch, compiled to its own bytecodes (Rectangle>>center is 0 1 176 119 185 124) and run by its interpreter over an object table, become: and all; contexts as objects, so the debugger only reads them -- step, send, restart, a method fixed and the frame restarted; the metaclass knot; the kernel written in Smalltalk and bootstrapped from its text, large integers over bytes, exact fractions; the image saved and loaded; BitBlt, and the Pen's dragon drawn over the windows; a budget of bytecodes a frame, Control-C the user interrupt. |\n| [TinyTurboPascal](apps/devtools/TinyTurboPascal.ml) | app | 1983 | PC | 1 | Turbo Pascal (Anders Hejlsberg, Borland, 1983), in the look of Turbo Pascal 7 (1992) | Wirth's eight queens in a blue window: F9 compiles, Ctrl-F9 runs, the error in a red bar with the cursor on it. | The editor, the compiler and the program one keystroke apart; the PC's text screen, its sixteen CGA colours and its box-drawing characters, menus and dialogs with shadows drawn cell by cell; Pascal compiled in one pass to P-code, Wirth's Pascal-P scheme (languages/pascal), run by the P-machine on the user screen, a run-time error bringing the cursor to its line; the P-code of the cursor's line shown, static links and array bounds checks readable in it; and Turbo's debugger: F7 and F8 a line at a time, the execution bar, breakpoints, watches, the call stack with each frame's static and dynamic links, over the compiler's debug information and a P-machine that pauses. |\n| [TinyEmacs](apps/devtools/TinyEmacs.ml) | app | 1985 | workstation | 1 | GNU Emacs (Richard Stallman, 1985), after EMACS on TECO (1976) | An editor that is a Lisp machine: type (+ 1 2) then C-j in *scratch*, or C-h k and a key to see what it runs. | Every key a Lisp function looked up in a keymap that is a Lisp variable, most commands written in that Lisp, .emacs loaded at start and changeable while it runs; a small Emacs Lisp of our own, dynamically scoped with its specpdl, macros, condition-case; the command loop reading (interactive) specs through the minibuffer, TAB completing; the text in a gap buffer, persistent; the undo list, undo undoable; the kill ring, C-k's appended; incremental search; the same program in a real terminal. |\n| [TinyScratch](apps/devtools/TinyScratch.ml) | app | 2007 | PC | 1 | Scratch (Mitchel Resnick, John Maloney, Natalie Rusk and the Lifelong Kindergarten group, MIT Media Lab, 2007), in the look of Scratch 2.0 (2013) | Click the green flag: the cat walks and bounces while the pencil draws a flower; drag blocks from the palette to change them, click a script to run it. | Programming without syntax errors: blocks whose shapes say where they fit (notches, tabs, mouths, round and pointed slots), one table of specs read by the palette, the layout, the runtime and the text; every script a green thread yielding at the end of each loop's turn and in waits, so a forever is an animation and two sprites move at once without locks; tinkering, a script clicked runs even while the project does; Scratch's values, numbers and texts turning into each other; Logo's turtle as a sprite with a pen; the same scripts as text, the forums' scratchblocks notation, read and printed back. |\n| [TinySnap](apps/devtools/TinySnap.ml) | app | 2011 | web | 1 | Snap! (Jens M\xc3\xb6nig and Brian Harvey, UC Berkeley, 2011; BYOB, 2008), in the look of Snap! 4 (2015) | Click the green flag: the turtle draws a tree by a recursive block of its own, then says the squares of one to six, by map; click it for 10 factorial. | Scheme with Scratch's face: blocks of one's own, defined by a script under a \"define\" hat and called like any other, recursion and report; rings, the lambda, their empty slots the parameters, closures keeping their variables' cells; first-class lists on a heap, objects with identity, map, keep and combine, a list said shown as a table; a reporter clicked says its value; zebra colouring; the same environment as TinyScratch, laid out and coloured by a configuration. |",gg=aN(fx(Y)),M=bW(gg),b=0,num_53=53.,num_360=-360.,num_420=420.,jJ=[0,num_110,L,L],gb=[0,0];function
+jK(i,g){var
+m=w(num_0_5,s(3.,1.)),a=g[6];a:{if(a){a=a[1];var
 b=a[3],j=a[2];if(a[1]===g[4]&&j===m)break a}var
-q=D(1,caml_round_float(num_16*m)|0),l=D(1,caml_round_float(8.*m)|0),num_106=106,w=num_106*l|0,b=53*q|0,j=dn(w,b),r=j[3],x=cg[3],y=cg[2],z=cg[1],b=caml_mul(w,b)-1|0;if(b>=0){a=0;for(;;){caml_ba_set_1(r,4*a|0,z);caml_ba_set_1(r,(4*a|0)+1|0,y);caml_ba_set_1(r,(4*a|0)+2|0,x);caml_ba_set_1(r,(4*a|0)+3|0,num_255);var
-f=a+1|0;if(b===a)break;a=f}}b=f$[1];b:{if(b){b=b[1];f=b[2];if(caml_equal(b[1],[0,l,q])){var
+q=F(1,caml_round_float(num_16*m)|0),l=F(1,caml_round_float(8.*m)|0),num_106=106,v=num_106*l|0,b=53*q|0,j=dn(v,b),r=j[3],x=cg[3],y=cg[2],z=cg[1],b=caml_mul(v,b)-1|0;if(b>=0){a=0;for(;;){caml_ba_set_1(r,4*a|0,z);caml_ba_set_1(r,(4*a|0)+1|0,y);caml_ba_set_1(r,(4*a|0)+2|0,x);caml_ba_set_1(r,(4*a|0)+3|0,num_255);var
+f=a+1|0;if(b===a)break;a=f}}b=gb[1];b:{if(b){b=b[1];f=b[2];if(caml_equal(b[1],[0,l,q])){var
 A=f;break b}}var
-E=8./l,F=num_16/q,b=eh(num_256,function(j){var
+D=8./l,E=num_16/q,b=ej(num_256,function(j){var
 g=_(caml_mul(l,q),0),h=q-1|0;if(h>=0){var
 c=0;for(;;){var
 i=l-1|0;if(i>=0){var
 d=0;a:for(;;){var
 f=0,e=0;b:for(;;){var
 b=0;for(;;){var
-a=u(15,(c+(e+num_0_5)/2.)*F|0),f=fy(j,u(7,(d+(b+num_0_5)/2.)*E|0),a)?f+1|0:f,a=b+1|0;if(1===b){a=e+1|0;if(1!==e){e=a;break}caml_bytes_set(g,caml_mul(c,l)+d|0,bl(f));a=d+1|0;if(i===d)break a;d=a;break b}b=a}}}}b=c+1|0;if(h===c)break;c=b}}return g});f$[1]=[0,[0,[0,l,q],b]];A=b}var
+a=u(15,(c+(e+num_0_5)/2.)*E|0),f=fA(j,u(7,(d+(b+num_0_5)/2.)*D|0),a)?f+1|0:f,a=b+1|0;if(1===b){a=e+1|0;if(1!==e){e=a;break}caml_bytes_set(g,caml_mul(c,l)+d|0,bl(f));a=d+1|0;if(i===d)break a;d=a;break b}b=a}}}}b=c+1|0;if(h===c)break;c=b}}return g});gb[1]=[0,[0,[0,l,q],b]];A=b}var
 B=function(i,n,f,b){var
 a=0<=i,j=f[3],k=f[2],f=f[1];if(a){a=i<num_106;if(a){a=0!==b;a=a?32!==b:a}}if(a){b&=num_255;a=q-1|0;b=caml_check_bound(A,b)[b+1];if(a>=0){var
 c=0;for(;;){var
-g=l-1|0,m=(caml_mul(caml_mul(n,q)+c|0,w)+caml_mul(i,l)|0)*4|0;if(g>=0){var
+g=l-1|0,m=(caml_mul(caml_mul(n,q)+c|0,v)+caml_mul(i,l)|0)*4|0;if(g>=0){var
 d=0;for(;;){var
 h=caml_bytes_unsafe_get(b,caml_mul(c,l)+d|0);if(0<h){var
 e=m+(4*d|0)|0;caml_ba_set_1(r,e,z+(caml_mul(f-z|0,h)/4|0)|0);caml_ba_set_1(r,e+1|0,y+(caml_mul(k-y|0,h)/4|0)|0);caml_ba_set_1(r,e+2|0,x+(caml_mul(j-x|0,h)/4|0)|0)}e=d+1|0;if(g===d)break;d=e}}g=c+1|0;if(a===c)break;c=g}}}},b=u(53,g[2].length-1-g[4]|0)-1|0;if(b>=0){f=0;b:for(;;){a=g[4]+f|0;var
 o=str+(a+1|0),e=caml_ml_string_length(o)-1|0;if(e>=0){var
-n=0;for(;;){B((5-caml_ml_string_length(o)|0)+n|0,f,jH,caml_string_unsafe_get(o,n));var
-p=n+1|0;if(e===n)break;n=p}}a=caml_check_bound(g[2],a)[a+1];for(;;){if(!a){a=f+1|0;if(b===f)break b;f=a;break}e=a[1];a=a[2];o=0;p=cf(e[3]);for(;;){if(o>=caml_ml_string_length(e[2]))break;n=fz(e[2],o);var
+n=0;for(;;){B((5-caml_ml_string_length(o)|0)+n|0,f,jJ,caml_string_unsafe_get(o,n));var
+p=n+1|0;if(e===n)break;n=p}}a=caml_check_bound(g[2],a)[a+1];for(;;){if(!a){a=f+1|0;if(b===f)break b;f=a;break}e=a[1];a=a[2];o=0;p=cf(e[3]);for(;;){if(o>=caml_ml_string_length(e[2]))break;n=fB(e[2],o);var
 C=e[1]+o|0,t=C<num_100,G=n[2],n=n[1],t=t?9!==caml_string_get(e[2],o):t;if(t)B(6+C|0,f,p,n);o=o+G|0}}}}g[6]=[0,[0,g[4],m,j]];b=j}j=b[1]/m;m=b[2]/m;p=m/num_53;i=i[1];f=num_360+j/2.;e=(num_420-i[2])/p|0;a:{if(num_360<=i[1]&&i[1]<=num_360+j&&i[2]<=num_420&&0<=e&&e<53){e=[0,aa(num_0_12,d(f,num_420-(e+num_0_5)*p,k(a_,j,p))),0];break a}e=0}i=g[5];a:{if(i){i=i[1];if(g[4]<=i&&i<(g[4]+53|0)){a=k(h(90,num_210,num_120),j,p);g=[0,aa(num_0_22,d(f,num_420-((i-g[4]|0)+num_0_5)*p,a)),0];break a}}g=0}e=c(g,e);return c([0,d(f,num_420-m/2.,bu(j,m,b)),0],e)}var
-num_480=-480.,jV=[0,[0,0,0]];function
-jW(e,c,d,a){if(caml_call1(c,"n")){c=I(a[6][3]);d=a[8];if(d){d=d[1];e=d[2];d=d[1];c=(e+1|0)<I(co(cr(a,d)))?[0,[0,d,e+1|0]]:(d+1|0)<c?[0,[0,d+1|0,0]]:a[8]}else
-c=0<c?jV:0;return[0,gc(a,c)]}if(caml_call1(c,str_p)&&0!==a[8]){e=a[8];if(e){e=e[1];d=e[2];e=e[1];e=0<d?[0,[0,e,d-1|0]]:0<e?[0,[0,e-1|0,I(co(cr(a,e-1|0)))-1|0]]:a[8]}else
-e=0;return[0,gc(a,e)]}var
+num_480=-480.,jX=[0,[0,0,0]];function
+jY(e,c,d,a){if(caml_call1(c,"n")){c=J(a[6][3]);d=a[8];if(d){d=d[1];e=d[2];d=d[1];c=(e+1|0)<J(co(cr(a,d)))?[0,[0,d,e+1|0]]:(d+1|0)<c?[0,[0,d+1|0,0]]:a[8]}else
+c=0<c?jX:0;return[0,ge(a,c)]}if(caml_call1(c,str_p)&&0!==a[8]){e=a[8];if(e){e=e[1];d=e[2];e=e[1];e=0<d?[0,[0,e,d-1|0]]:0<e?[0,[0,e-1|0,J(co(cr(a,e-1|0)))-1|0]]:a[8]}else
+e=0;return[0,ge(a,e)]}var
 b=a[7];if(!b){if(caml_call1(c,str_w)){switch(a[4]){case
 0:d=1;break;case
-1:d=2;break;default:d=0}c=a[9];e=a[7];b=dP(a[9],a[5],a[3],a[1],a[2],d);return[0,[0,a[1],a[2],a[3],d,a[5],b,e,0,c]]}c=jv(e,c,d,a[6]);b=c[2];c=c[1];if(typeof
-b==="number")return b?0:[0,[0,a[1],a[2],a[3],a[4],a[5],c,a[7],a[8],a[9]]];e=a[9];d=[0,f8([0,b[2]],0,b[1])];return[0,[0,a[1],a[2],a[3],a[4],a[5],c,d,0,e]]}b=b[1];if(!caml_call1(c,str_Escape)&&!caml_call1(c,str_Backspace)){var
-f=a[9],g=a[8];if(d){d=d[1];b=d!==str_ArrowDown?d!==str_ArrowUp?b:aI(b,b[4]-1|0):aI(b,b[4]+1|0)}a:{if(!caml_call1(c,str_PageDown)&&!caml_call1(c,str$16)){if(caml_call1(c,str_PageUp)){b=aI(b,(b[4]-53|0)+2|0);break a}if(caml_call1(c,str_Home)){b=aI(b,0);break a}if(caml_call1(c,str_End)){b=aI(b,cE);break a}break a}b=aI(b,(b[4]+53|0)-2|0)}c=e[1];b=c[8]!==0.?aI(b,b[4]-(caml_round_float(c[8]*3.)|0)|0):b;e=f9(b);a:{if(!c[3]&&!c[4])break a;b=num_480<=c[1]?c[1]<=-370.?c[2]<=num_420?num_420-e<=c[2]?aI(b,((num_420-c[2])/e*(b[2].length-1)|0)-26|0):b:b:b:b}return[0,[0,a[1],a[2],a[3],a[4],a[5],a[6],[0,b],g,f]]}return[0,[0,a[1],a[2],a[3],a[4],a[5],a[6],0,a[8],a[9]]]}for(;;){if(!M)break;am=M[2];b=O(M[1][4],b);M=am}var
+1:d=2;break;default:d=0}c=a[9];e=a[7];b=dQ(a[9],a[5],a[3],a[1],a[2],d);return[0,[0,a[1],a[2],a[3],d,a[5],b,e,0,c]]}c=jx(e,c,d,a[6]);b=c[2];c=c[1];if(typeof
+b==="number")return b?0:[0,[0,a[1],a[2],a[3],a[4],a[5],c,a[7],a[8],a[9]]];e=a[9];d=[0,f_([0,b[2]],0,b[1])];return[0,[0,a[1],a[2],a[3],a[4],a[5],c,d,0,e]]}b=b[1];if(!caml_call1(c,str_Escape)&&!caml_call1(c,str_Backspace)){var
+f=a[9],g=a[8];if(d){d=d[1];b=d!==str_ArrowDown?d!==str_ArrowUp?b:aI(b,b[4]-1|0):aI(b,b[4]+1|0)}a:{if(!caml_call1(c,str_PageDown)&&!caml_call1(c,str$16)){if(caml_call1(c,str_PageUp)){b=aI(b,(b[4]-53|0)+2|0);break a}if(caml_call1(c,str_Home)){b=aI(b,0);break a}if(caml_call1(c,str_End)){b=aI(b,cE);break a}break a}b=aI(b,(b[4]+53|0)-2|0)}c=e[1];b=c[8]!==0.?aI(b,b[4]-(caml_round_float(c[8]*3.)|0)|0):b;e=f$(b);a:{if(!c[3]&&!c[4])break a;b=num_480<=c[1]?c[1]<=-370.?c[2]<=num_420?num_420-e<=c[2]?aI(b,((num_420-c[2])/e*(b[2].length-1)|0)-26|0):b:b:b:b}return[0,[0,a[1],a[2],a[3],a[4],a[5],a[6],[0,b],g,f]]}return[0,[0,a[1],a[2],a[3],a[4],a[5],a[6],0,a[8],a[9]]]}for(;;){if(!M)break;am=M[2];b=O(M[1][4],b);M=am}var
 ak=o(b),str_net="net";function
-gf(c,b){var
-a=c[1];if(a){a=a[1];a=a!==str_2?a!==str_net?ce(b,1):dy(b):ce(b,2)}else
-a=1;if(a){a=c[2];if(a){a=a[1];a=dz(b)===a?1:0}else
+gh(c,b){var
+a=c[1];if(a){a=a[1];a=a!==str_2?a!==str_net?ce(b,1):dz(b):ce(b,2)}else
+a=1;if(a){a=c[2];if(a){a=a[1];a=dA(b)===a?1:0}else
 a=1;if(a){a=c[3];a=a?b[5]===a[1]?1:0:1;if(a){a=c[4];if(a)return b[3]===a[1]?1:0;a=1}}}return a}var
-gg=bU(caml_int_compare,p(dz,ak)),str_PC="PC",str_handheld="handheld",str_workstation="workstation",str_Mac="Mac",str_web="web",str_tabletop="tabletop",str_arcade="arcade",str_console="console",str_mainframe="mainframe",str_computer="computer",str_instrument="instrument",str_phone="phone",gh=J(function(c){var
+gi=bU(caml_int_compare,p(dA,ak)),str_PC="PC",str_handheld="handheld",str_workstation="workstation",str_Mac="Mac",str_web="web",str_tabletop="tabletop",str_arcade="arcade",str_console="console",str_mainframe="mainframe",str_computer="computer",str_instrument="instrument",str_phone="phone",gj=A(function(c){var
 a=ak;for(;;){if(!a)return 0;var
 b=a[1][5]===c?1:0,a=a[2];if(b)return b}})(caml_list_of_js_array([str_arcade,str_console,str_handheld,str_computer,str_PC,str_Mac,str_workstation,str_mainframe,str_web,str_phone,str_tabletop,str_instrument,"analog"]));function
 be(a){return bT(function(b,a){return caml_int_compare(b[4],a[4])},a)}var
-M=2708,b=909,a=629,V=528,ay=645,am=318,j=619,y=480,aj=533,H=817,bM=607,aL=492,e=466,B=307,ax=511,jZ=caml_list_of_js_array([[0,"TinyInvaders",[0,3,aL]],[0,"Asteroid",[0,1,ay]],[0,"TinyMissileCommand",[0,3,340]],[0,"TinyGalaga",[0,5,aj]],[0,"TinyDefender",[0,3,a]],[0,"TinyRobotron",[0,3,557]],[0,"TinyZaxxon",[0,3,759]],[0,"TinyGradius",[0,5,bM]],[0,"TinyRType",[0,5,666]],[0,"TinyStarFox",[0,9,1295]],[0,"TinyFinalFight",[0,7,668]],[0,"TinyStreetFighter",[0,7,738]],[0,"TinyVirtuaFighter",[0,7,892]],[0,"TinyDonkeyKong",[0,1,385]],[0,"TinyJoust",[0,1,404]],[0,"TinyLodeRunner",[0,5,490]],[0,"TinyMario",[0,3,419]],[0,"TinyMetroid",[0,3,746]],[0,"TinyRick",[0,7,num_660]],[0,"TinyPrinceOfPersia",[0,3,ay]],[0,"TinyTurrican",[0,5,665]],[0,"TinyMarioWorld",[0,3,913]],[0,"TinySonic",[0,3,883]],[0,"TinyVikings",[0,7,758]],[0,"TinyMario64",[0,1,314]],[0,"TinyMarioGalaxy2D",[0,1,510]],[0,"TinyMarioGalaxy",[0,1,553]],[0,"TinyBraid",[0,5,620]],[0,"TinySuperMeatBoy",[0,3,538]],[0,"TinyVVVVVV",[0,3,y]],[0,"TinyCeleste",[0,3,507]],[0,"TinySpacewar",[0,1,242]],[0,"Pong",[0,1,241]],[0,"TinyPong",[0,1,186]],[0,"TinyBreakout",[0,1,525]],[0,"Snake",[0,1,289]],[0,"TinyLunarLander",[0,1,aL]],[0,"TinyPacman",[0,5,859]],[0,"TinyFrogger",[0,1,y]],[0,"TinyTron",[0,3,bO]],[0,"TinyTron3d",[0,3,732]],[0,"TinyBomberman",[0,5,1261]],[0,"TinyMarbleMadness",[0,1,767]],[0,"TinyCameltry",[0,1,num_252]],[0,"TinyPang",[0,1,369]],[0,"TinyTronscroll",[0,3,1034]],[0,"TinySoldat",[0,1,589]],[0,"TinyFlappyBird",[0,1,539]],[0,"TinyBoomerangFu",[0,1,1550]],[0,"AiChess",[0,1,a]],[0,"AiOthello",[0,1,258]],[0,"AiConnect4",[0,1,306]],[0,"TinySokoban",[0,7,aj]],[0,"TinySokobanEd",[0,7,686]],[0,"Tetris",[0,1,551]],[0,"TinyTetris",[0,1,394]],[0,"TinyBlockout",[0,1,416]],[0,"TinyLemmings",[0,1,ax]],[0,"TinyStoneAge",[0,1,363]],[0,"TinyIncredibleMachine",[0,1,400]],[0,"TinyPuzzleBobble",[0,1,324]],[0,"AiGo",[0,1,417]],[0,"TinyPortal2D",[0,1,561]],[0,"TinyPortal",[0,1,432]],[0,"TinyCrush",[0,5,j]],[0,"TinySlingshot",[0,1,283]],[0,"TinyCrush3d",[0,5,615]],[0,"TinyFez",[0,3,546]],[0,"TinyPerspective",[0,3,470]],[0,"TinyMonumentValley",[0,1,379]],[0,"TinyWitness",[0,1,384]],[0,"TinyBabaIsYou",[0,5,367]],[0,"TinyFreeCell",[0,3,458]],[0,"TinySolitaire",[0,3,477]],[0,"TinyWumpus",[0,3,315]],[0,"TinyZork",[0,3,635]],[0,"TinyZelda",[0,5,535]],[0,"TinyManiacMansion",[0,3,677]],[0,"TinyZeldaLinkPast",[0,3,728]],[0,"TinyAloneInTheDark",[0,3,705]],[0,"TinyMyst",[0,3,794]],[0,"TinyTombRaider",[0,5,1380]],[0,"TinyGTA",[0,3,798]],[0,"TinyMetalGearSolid",[0,3,584]],[0,"TinyZeldaOcarina",[0,9,1618]],[0,"TinyIco",[0,3,464]],[0,"TinyJourney",[0,1,329]],[0,"TinyRogue",[0,1,444]],[0,"TinyGauntlet2",[0,3,807]],[0,"TinyDungeonMaster",[0,1,j]],[0,"TinyDiablo",[0,3,H]],[0,"TinyHades",[0,1,405]],[0,"TinyMazeWar",[0,1,342]],[0,"TinyBattlezone",[0,1,421]],[0,"TinyBattlezone3d",[0,1,am]],[0,"TinyWolfenstein",[0,1,B]],[0,"TinyWolfenstein3d",[0,1,136]],[0,"TinyCyberSled",[0,1,711]],[0,"TinyDoom",[0,3,806]],[0,"TinyDoom3d",[0,3,484]],[0,"TinyQuake",[0,1,623]],[0,"TinyHalfLife2",[0,1,362]],[0,"TinyMinecraft",[0,1,775]],[0,"TinyFortnite",[0,3,1416]],[0,"TinyTeardown",[0,1,693]],[0,"TinyElite",[0,1,bM]],[0,"TinyElite3d",[0,1,479]],[0,"TinyXpilot",[0,1,H]],[0,"TinyComanche",[0,3,549]],[0,"TinyComanche3d",[0,3,e]],[0,"TinyDescent",[0,5,930]],[0,"TinyDescent3d",[0,5,num_735]],[0,"TinyGranTrak10",[0,3,519]],[0,"TinyOutRun",[0,5,547]],[0,"TinySuperSprint",[0,3,612]],[0,"TinySuperOffRoad",[0,5,1009]],[0,"TinySupercars",[0,3,ay]],[0,"TinyMicroMachines",[0,3,V]],[0,"TinyMarioKart",[0,3,1319]],[0,"TinyVirtuaRacing",[0,9,2803]],[0,"TinyMarioKart64",[0,7,2631]],[0,"TinyBigRedRacing",[0,5,1091]],[0,"TinyIgnition",[0,9,1563]],[0,"TinySSX",[0,9,1542]],[0,"TinyTennisForTwo",[0,1,260]],[0,"TinyShufflePuck",[0,1,446]],[0,"TinyKickOff2",[0,5,606]],[0,"TinySpeedball2",[0,5,720]],[0,"TinySensibleSoccer",[0,5,610]],[0,"TinyPinball",[0,1,634]],[0,"TinyPinball3d",[0,1,449]],[0,"TinyTonyHawk",[0,1,451]],[0,"TinyHamurabi",[0,1,am]],[0,"TinySimCity",[0,1,V]],[0,"TinyCivilization",[0,1,801]],[0,"TinyDune2",[0,3,572]],[0,"TinyXCOM",[0,1,568]],[0,"TinyWarcraft2",[0,3,651]],[0,"TinyWorms",[0,1,515]],[0,"TinyTowerDefense",[0,1,334]],[0,"TinyDDR",[0,3,689]],[0,"TinyGuitarHero",[0,3,num_735]],[0,"TinyRockBand",[0,3,940]],[0,"TinyKarel",[0,1,e]],[0,"TinyCoreWar",[0,1,418]],[0,"TinyBravo",[0,11,1235]],[0,"TinyWord",[0,17,1771]],[0,"TinyFrameMaker",[0,47,4607]],[0,"TinyVisiCalc",[0,7,1192]],[0,"TinyExcel",[0,11,1587]],[0,"TinyPowerPoint",[0,47,4712]],[0,"TinyHyperCard",[0,21,2712]],[0,"TinyOpenDoc",[0,47,4792]],[0,"TinyOffice",[0,47,5155]],[0,"TinyMacPaint",[0,17,1526]],[0,"TinyMacDraw",[0,17,1566]],[0,"TinyDeluxePaint",[0,11,1148]],[0,"TinyPhotoshop",[0,7,1349]],[0,"TinyBlender",[0,7,1185]],[0,"TinySketchpad",[0,5,1153]],[0,"TinyAutoCAD",[0,3,534]],[0,"TinySketchup",[0,5,924]],[0,"TinyInteractivePhysics",[0,1,653]],[0,"TinyStellarium",[0,9,1272]],[0,"TinyCalendar",[0,7,num_1252]],[0,"TinyClock",[0,1,R]],[0,"TinyPalmPilot",[0,17,1801]],[0,"TinyAseprite",[0,1,B]],[0,"TinyTiled",[0,1,al]],[0,"TinyHammond",[0,7,903]],[0,"TinyRhodes",[0,5,724]],[0,"TinyMinimoog",[0,5,1367]],[0,"TinyCS80",[0,5,1095]],[0,"TinyTR808",[0,5,1167]],[0,"TinyTB303",[0,5,917]],[0,"TinyDX7",[0,5,1417]],[0,"TinyJuno",[0,5,b]],[0,"TinySoundtracker",[0,3,393]],[0,"TinyReBirth",[0,9,1851]],[0,"TinyOp1",[0,5,1434]],[0,"TinyReface",[0,13,M]],[0,"TinyOpxy",[0,15,3590]],[0,"TinyMediaPlayer",[0,5,990]],[0,"TinyWinamp",[0,9,1717]],[0,"TinyEudora",[0,11,2031]],[0,"TinyIRC",[0,1,239]],[0,"TinyMosaic",[0,65,10192]],[0,"TinyNetscape",[0,83,14295]],[0,"TinyFirefox",[0,83,14333]],[0,"TinyChrome",[0,89,14991]],[0,"TinyTerminal",[0,15,2198]],[0,"TinyBasic",[0,9,1679]],[0,"TinyVi",[0,3,774]],[0,"TinySmalltalk80",[0,23,5146]],[0,"TinyTurboPascal",[0,15,3213]],[0,"TinyEmacs",[0,17,M]],[0,"TinyScratch",[0,3,509]],[0,"TinySnap",[0,3,ax]]]),cs=[num_246,function(b){b=K(0,num_256);var
-a=jZ;for(;;){if(!a)return b;var
-c=a[1],a=a[2];$(b,c[1],c[2])}}],j2=[0,0,0];function
+M=2708,b=909,a=629,V=528,ay=645,am=318,j=619,z=480,aj=533,I=817,bM=607,aL=492,e=466,D=307,ax=511,j1=caml_list_of_js_array([[0,"TinyInvaders",[0,3,aL]],[0,"Asteroid",[0,1,ay]],[0,"TinyMissileCommand",[0,3,340]],[0,"TinyGalaga",[0,5,aj]],[0,"TinyDefender",[0,3,a]],[0,"TinyRobotron",[0,3,557]],[0,"TinyZaxxon",[0,3,759]],[0,"TinyGradius",[0,5,bM]],[0,"TinyRType",[0,5,666]],[0,"TinyStarFox",[0,9,1295]],[0,"TinyFinalFight",[0,7,668]],[0,"TinyStreetFighter",[0,7,738]],[0,"TinyVirtuaFighter",[0,7,892]],[0,"TinyDonkeyKong",[0,1,385]],[0,"TinyJoust",[0,1,404]],[0,"TinyLodeRunner",[0,5,490]],[0,"TinyMario",[0,3,419]],[0,"TinyMetroid",[0,3,746]],[0,"TinyRick",[0,7,num_660]],[0,"TinyPrinceOfPersia",[0,3,ay]],[0,"TinyTurrican",[0,5,665]],[0,"TinyMarioWorld",[0,3,913]],[0,"TinySonic",[0,3,883]],[0,"TinyVikings",[0,7,758]],[0,"TinyMario64",[0,1,314]],[0,"TinyMarioGalaxy2D",[0,1,510]],[0,"TinyMarioGalaxy",[0,1,553]],[0,"TinyBraid",[0,5,620]],[0,"TinySuperMeatBoy",[0,3,538]],[0,"TinyVVVVVV",[0,3,z]],[0,"TinyCeleste",[0,3,507]],[0,"TinySpacewar",[0,1,242]],[0,"Pong",[0,1,241]],[0,"TinyPong",[0,1,186]],[0,"TinyBreakout",[0,1,525]],[0,"Snake",[0,1,289]],[0,"TinyLunarLander",[0,1,aL]],[0,"TinyPacman",[0,5,859]],[0,"TinyFrogger",[0,1,z]],[0,"TinyTron",[0,3,bO]],[0,"TinyTron3d",[0,3,732]],[0,"TinyBomberman",[0,5,1261]],[0,"TinyMarbleMadness",[0,1,767]],[0,"TinyCameltry",[0,1,num_252]],[0,"TinyPang",[0,1,369]],[0,"TinyTronscroll",[0,3,1034]],[0,"TinySoldat",[0,1,589]],[0,"TinyFlappyBird",[0,1,539]],[0,"TinyBoomerangFu",[0,1,1550]],[0,"AiChess",[0,1,a]],[0,"AiOthello",[0,1,258]],[0,"AiConnect4",[0,1,306]],[0,"TinySokoban",[0,7,aj]],[0,"TinySokobanEd",[0,7,686]],[0,"Tetris",[0,1,551]],[0,"TinyTetris",[0,1,394]],[0,"TinyBlockout",[0,1,416]],[0,"TinyLemmings",[0,1,ax]],[0,"TinyStoneAge",[0,1,363]],[0,"TinyIncredibleMachine",[0,1,400]],[0,"TinyPuzzleBobble",[0,1,326]],[0,"AiGo",[0,1,417]],[0,"TinyPortal2D",[0,1,561]],[0,"TinyPortal",[0,1,432]],[0,"TinyCrush",[0,5,j]],[0,"TinySlingshot",[0,1,283]],[0,"TinyCrush3d",[0,5,615]],[0,"TinyFez",[0,3,546]],[0,"TinyPerspective",[0,3,470]],[0,"TinyMonumentValley",[0,1,379]],[0,"TinyWitness",[0,1,384]],[0,"TinyBabaIsYou",[0,5,367]],[0,"TinyFreeCell",[0,3,458]],[0,"TinySolitaire",[0,3,477]],[0,"TinyWumpus",[0,3,315]],[0,"TinyZork",[0,3,635]],[0,"TinyZelda",[0,5,535]],[0,"TinyManiacMansion",[0,3,677]],[0,"TinyZeldaLinkPast",[0,3,728]],[0,"TinyAloneInTheDark",[0,3,705]],[0,"TinyMyst",[0,3,794]],[0,"TinyTombRaider",[0,5,1380]],[0,"TinyGTA",[0,3,798]],[0,"TinyMetalGearSolid",[0,3,584]],[0,"TinyZeldaOcarina",[0,9,1618]],[0,"TinyIco",[0,3,464]],[0,"TinyJourney",[0,1,329]],[0,"TinyRogue",[0,1,444]],[0,"TinyGauntlet2",[0,3,807]],[0,"TinyDungeonMaster",[0,1,j]],[0,"TinyDiablo",[0,3,I]],[0,"TinyHades",[0,1,405]],[0,"TinyMazeWar",[0,1,342]],[0,"TinyBattlezone",[0,1,421]],[0,"TinyBattlezone3d",[0,1,am]],[0,"TinyWolfenstein",[0,1,D]],[0,"TinyWolfenstein3d",[0,1,136]],[0,"TinyCyberSled",[0,1,711]],[0,"TinyDoom",[0,3,806]],[0,"TinyDoom3d",[0,3,484]],[0,"TinyQuake",[0,1,623]],[0,"TinyHalfLife2",[0,1,362]],[0,"TinyMinecraft",[0,1,775]],[0,"TinyFortnite",[0,3,1416]],[0,"TinyTeardown",[0,1,693]],[0,"TinyElite",[0,1,bM]],[0,"TinyElite3d",[0,1,479]],[0,"TinyXpilot",[0,1,I]],[0,"TinyComanche",[0,3,549]],[0,"TinyComanche3d",[0,3,e]],[0,"TinyDescent",[0,5,930]],[0,"TinyDescent3d",[0,5,num_735]],[0,"TinyGranTrak10",[0,3,519]],[0,"TinyOutRun",[0,5,547]],[0,"TinySuperSprint",[0,3,612]],[0,"TinySuperOffRoad",[0,5,1009]],[0,"TinySupercars",[0,3,ay]],[0,"TinyMicroMachines",[0,3,V]],[0,"TinyMarioKart",[0,3,1319]],[0,"TinyVirtuaRacing",[0,9,2803]],[0,"TinyMarioKart64",[0,7,2631]],[0,"TinyBigRedRacing",[0,5,1091]],[0,"TinyIgnition",[0,9,1563]],[0,"TinySSX",[0,9,1542]],[0,"TinyTennisForTwo",[0,1,260]],[0,"TinyShufflePuck",[0,1,446]],[0,"TinyKickOff2",[0,5,606]],[0,"TinySpeedball2",[0,5,720]],[0,"TinySensibleSoccer",[0,5,610]],[0,"TinyPinball",[0,1,634]],[0,"TinyPinball3d",[0,1,449]],[0,"TinyTonyHawk",[0,1,451]],[0,"TinyHamurabi",[0,1,am]],[0,"TinySimCity",[0,1,V]],[0,"TinyCivilization",[0,1,801]],[0,"TinyDune2",[0,3,572]],[0,"TinyXCOM",[0,1,568]],[0,"TinyWarcraft2",[0,3,651]],[0,"TinyWorms",[0,1,515]],[0,"TinyTowerDefense",[0,1,334]],[0,"TinyDDR",[0,3,689]],[0,"TinyGuitarHero",[0,3,num_735]],[0,"TinyRockBand",[0,3,940]],[0,"TinyKarel",[0,1,e]],[0,"TinyCoreWar",[0,1,418]],[0,"TinyBravo",[0,11,1235]],[0,"TinyWord",[0,17,1771]],[0,"TinyFrameMaker",[0,47,4607]],[0,"TinyVisiCalc",[0,7,1192]],[0,"TinyExcel",[0,11,1587]],[0,"TinyPowerPoint",[0,47,4712]],[0,"TinyHyperCard",[0,21,2712]],[0,"TinyOpenDoc",[0,47,4792]],[0,"TinyOffice",[0,47,5155]],[0,"TinyMacPaint",[0,17,1526]],[0,"TinyMacDraw",[0,17,1566]],[0,"TinyDeluxePaint",[0,11,1148]],[0,"TinyPhotoshop",[0,7,1349]],[0,"TinyBlender",[0,7,1185]],[0,"TinySketchpad",[0,5,1153]],[0,"TinyAutoCAD",[0,3,534]],[0,"TinySketchup",[0,5,924]],[0,"TinyInteractivePhysics",[0,1,653]],[0,"TinyStellarium",[0,9,1272]],[0,"TinyCalendar",[0,7,num_1252]],[0,"TinyClock",[0,1,R]],[0,"TinyPalmPilot",[0,17,1801]],[0,"TinyAseprite",[0,1,D]],[0,"TinyTiled",[0,1,al]],[0,"TinyHammond",[0,7,903]],[0,"TinyRhodes",[0,5,724]],[0,"TinyMinimoog",[0,5,1367]],[0,"TinyCS80",[0,5,1095]],[0,"TinyTR808",[0,5,1167]],[0,"TinyTB303",[0,5,917]],[0,"TinyDX7",[0,5,1417]],[0,"TinyJuno",[0,5,b]],[0,"TinySoundtracker",[0,3,393]],[0,"TinyReBirth",[0,9,1851]],[0,"TinyOp1",[0,5,1434]],[0,"TinyReface",[0,13,M]],[0,"TinyOpxy",[0,15,3590]],[0,"TinyMediaPlayer",[0,5,990]],[0,"TinyWinamp",[0,9,1717]],[0,"TinyEudora",[0,11,2031]],[0,"TinyIRC",[0,1,239]],[0,"TinyMosaic",[0,65,10194]],[0,"TinyNetscape",[0,83,14297]],[0,"TinyFirefox",[0,83,14335]],[0,"TinyChrome",[0,89,14993]],[0,"TinyTerminal",[0,15,2198]],[0,"TinyBasic",[0,9,1679]],[0,"TinyVi",[0,3,774]],[0,"TinySmalltalk80",[0,23,5147]],[0,"TinyTurboPascal",[0,15,3252]],[0,"TinyEmacs",[0,17,M]],[0,"TinyScratch",[0,3,509]],[0,"TinySnap",[0,3,ax]]]),cs=[num_246,function(b){b=K(0,num_256);var
+a=j1;for(;;){if(!a)return b;var
+c=a[1],a=a[2];$(b,c[1],c[2])}}],j4=[0,0,0];function
 bB(b){b=b[1];var
-a=caml_obj_tag(cs),a=num_250===a?cs[1]:num_246===a?X(cs):cs;return bk(aB(a,b),j2)[2]}function
-gi(a){return bT(function(b,a){a=bB(a);return caml_int_compare(bB(b),a)},a)}var
-num_500=500,R=115,j6=[0,[11,"The programs whose original ran on: ",[2,0,[11,". The oldest first.",0]]],"The programs whose original ran on: %s. The oldest first."],j4=[0,[11,"The programs whose original came out in the ",[4,0,0,0,[11,"s, the oldest first.",0]]],"The programs whose original came out in the %ds, the oldest first."],j5=[0,[11,"The ",[4,0,0,0,[12,R,0]]],"The %ds"],j7=[0,0,0],j3=[0,[0,"Under 500 lines",num_500],[0,[0,"500 to 1,000 lines",num_1000],[0,[0,"1,000 to 2,000 lines",2000],[0,[0,"2,000 to 5,000 lines",5000],[0,[0,"Over 5,000 lines",cE],0]]]]];function
+a=caml_obj_tag(cs),a=num_250===a?cs[1]:num_246===a?X(cs):cs;return bk(aB(a,b),j4)[2]}function
+gk(a){return bT(function(b,a){a=bB(a);return caml_int_compare(bB(b),a)},a)}var
+num_500=500,R=115,j8=[0,[11,"The programs whose original ran on: ",[2,0,[11,". The oldest first.",0]]],"The programs whose original ran on: %s. The oldest first."],j6=[0,[11,"The programs whose original came out in the ",[4,0,0,0,[11,"s, the oldest first.",0]]],"The programs whose original came out in the %ds, the oldest first."],j7=[0,[11,"The ",[4,0,0,0,[12,R,0]]],"The %ds"],j9=[0,0,0],j5=[0,[0,"Under 500 lines",num_500],[0,[0,"500 to 1,000 lines",num_1000],[0,[0,"1,000 to 2,000 lines",2000],[0,[0,"2,000 to 5,000 lines",5000],[0,[0,"Over 5,000 lines",cE],0]]]]];function
 bC(a,i){function
-b(a){return J(function(a){return gf(i,a)})(a)}function
+b(a){return A(function(a){return gh(i,a)})(a)}function
 d(c,b,a){return[0,c,b,0,a]}switch(a){case
 0:a=p(function(a){var
-c=be(b(a[4]));return[0,a[1],a[3],[0,a[2]],c]},bW(ge));break;case
+c=be(b(a[4]));return[0,a[1],a[3],[0,a[2]],c]},bW(gg));break;case
 1:a=p(function(a){var
-c=be(b(J(function(b){return dz(b)===a?1:0})(ak))),e=caml_call1(g(j4),a);return d(caml_call1(g(j5),a),e,c)},gg);break;case
+c=be(b(A(function(b){return dA(b)===a?1:0})(ak))),e=caml_call1(g(j6),a);return d(caml_call1(g(j7),a),e,c)},gi);break;case
 2:a=p(function(c){var
-e=be(b(J(function(a){return a[5]===c?1:0})(ak))),a=caml_string_compare(c,str_instrument);a:{var
-f=caml_call1(g(j6),c);if(0<=a){if(0>=a){a="Instruments";break a}if(c===str_mainframe){a="Mainframes and minicomputers";break a}if(c===str_phone){a="Phones";break a}if(c===str_tabletop){a="Tabletop";break a}if(c===str_web){a="The web";break a}if(c===str_workstation){a="Workstations";break a}}else{if(c===str_Mac){a="The Macintosh";break a}if(c===str_PC){a="The PC";break a}if(c===str_arcade){a="Arcade";break a}if(c===str_computer){a="Home computers";break a}if(c===str_console){a="Consoles";break a}if(c===str_handheld){a="Handhelds";break a}}a=ef(c)}return d(a,f,e)},gh);break;case
-3:a=[0,d("Over the network","Two computers, one game: net=host on one, net=join on the other (Multiplayer).",be(b(J(dy)(ak)))),0];a=[0,d("Two players","Two on one keyboard (or split screen).",be(b(J(function(a){return ce(a,2)})(ak)))),a];a=[0,d("One player","Alone, or against the computer.",be(b(J(function(a){return ce(a,1)})(ak)))),a];break;default:a=j3;var
-e=j7;for(;;){if(!a){a=e[2];break}var
+e=be(b(A(function(a){return a[5]===c?1:0})(ak))),a=caml_string_compare(c,str_instrument);a:{var
+f=caml_call1(g(j8),c);if(0<=a){if(0>=a){a="Instruments";break a}if(c===str_mainframe){a="Mainframes and minicomputers";break a}if(c===str_phone){a="Phones";break a}if(c===str_tabletop){a="Tabletop";break a}if(c===str_web){a="The web";break a}if(c===str_workstation){a="Workstations";break a}}else{if(c===str_Mac){a="The Macintosh";break a}if(c===str_PC){a="The PC";break a}if(c===str_arcade){a="Arcade";break a}if(c===str_computer){a="Home computers";break a}if(c===str_console){a="Consoles";break a}if(c===str_handheld){a="Handhelds";break a}}a=eh(c)}return d(a,f,e)},gj);break;case
+3:a=[0,d("Over the network","Two computers, one game: net=host on one, net=join on the other (Multiplayer).",be(b(A(dz)(ak)))),0];a=[0,d("Two players","Two on one keyboard (or split screen).",be(b(A(function(a){return ce(a,2)})(ak)))),a];a=[0,d("One player","Alone, or against the computer.",be(b(A(function(a){return ce(a,1)})(ak)))),a];break;default:a=j5;var
+e=j9;for(;;){if(!a){a=e[2];break}var
 f=a[1],h=f[2];let
-g=h,i=e[1];a=a[2];f=f[1];e=e[2];e=[0,h,c(e,[0,d(f,"The programs by the size of their own code (its files and kits', as the code map shows it), the smallest first: the first to read.",gi(b(J(function(a){a=bB(a);var
-b=i<a?1:0,a=b?a<=g?1:0:b;return a})(ak)))),0])]}}return aN(J(function(a){return 0!==a[4]?1:0})(a))}function
+g=h,i=e[1];a=a[2];f=f[1];e=e[2];e=[0,h,c(e,[0,d(f,"The programs by the size of their own code (its files and kits', as the code map shows it), the smallest first: the first to read.",gk(b(A(function(a){a=bB(a);var
+b=i<a?1:0,a=b?a<=g?1:0:b;return a})(ak)))),0])]}}return aN(A(function(a){return 0!==a[4]?1:0})(a))}function
 bD(a,b){if(!b)return bR(a,0);b=b[1];for(;;){if(a){var
 c=a[2];if(c){var
 d=c[1];if(caml_equal(a[1],b))return[0,d];a=c;continue}}return 0}}function
-dR(d,c){d=aM(d);c=aM(c);var
+dS(d,c){d=aM(d);c=aM(c);var
 e=caml_ml_string_length(c),a=0;for(;;){var
 b=(a+e|0)<=caml_ml_string_length(d)?1:0;if(b){b=f(d,a,e)===c?1:0;if(!b){a=a+1|0;continue}}return b}}function
 ct(a){var
 b=bC(a[1],a[2]);if(caml_equal(b,[0]))return 0;a=u(a[3],b.length-2|0);return[0,caml_check_bound(b,a)[a+1]]}function
 aV(c){var
 a=c[5];if(a){var
-b=a[1];if(b!==str)return J(function(d){var
-a=gf(c[2],d);if(a){a=dR(d[1],b);if(a);else{a=dR(d[7],b);if(!a)return dR(d[8],b)}}return a})(ak)}a=ct(c);return a?a[1][4]:0}function
+b=a[1];if(b!==str)return A(function(d){var
+a=gh(c[2],d);if(a){a=dS(d[1],b);if(a);else{a=dS(d[7],b);if(!a)return dS(d[8],b)}}return a})(ak)}a=ct(c);return a?a[1][4]:0}function
 aW(a){var
 b=a[4];return bR(aV(a),b)}var
 num_160=160.,num_66=66.,num_869=-869.;function
-gj(a,b){a=(b/5|0)-D(0,((a[4]/5|0)-4|0)+1|0)|0;if(0<=a&&4>a)return[0,[0,num_869+(b%5|0)*num_160+num_66,285.-a*172.-num_66]];return 0}function
+gl(a,b){a=(b/5|0)-F(0,((a[4]/5|0)-4|0)+1|0)|0;if(0<=a&&4>a)return[0,[0,num_869+(b%5|0)*num_160+num_66,285.-a*172.-num_66]];return 0}function
 aZ(c,a,b,d){b=Math.abs(a[1]-c[1])<=b/2.?1:0;a=a[2];c=c[2];a=b?Math.abs(a-c)<=d/2.?1:0:b;return a}function
 cw(a){return a[4][1]}function
 bG(b,c){var
-a=D(1,bC(b[1],b[2]).length-1);return caml_mod((u(b[3],a-1|0)+c|0)+a|0,a)}function
+a=F(1,bC(b[1],b[2]).length-1);return caml_mod((u(b[3],a-1|0)+c|0)+a|0,a)}function
 cx(b,j){var
-c=bC(0,b[2]),d=b[10],e=b[9],f=b[8],g=b[7],h=b[6],a=0,i=D(0,c.length-2|0);for(;;){if(c.length-1>a&&!caml_equal(caml_check_bound(c,a)[a+1][3],[0,j])){a=a+1|0;continue}a=u(a,i);return[0,0,b[2],a,0,0,h,g,f,e,d]}}function
-gn(e,a){var
+c=bC(0,b[2]),d=b[10],e=b[9],f=b[8],g=b[7],h=b[6],a=0,i=F(0,c.length-2|0);for(;;){if(c.length-1>a&&!caml_equal(caml_check_bound(c,a)[a+1][3],[0,j])){a=a+1|0;continue}a=u(a,i);return[0,0,b[2],a,0,0,h,g,f,e,d]}}function
+gp(e,a){var
 b=aW(a);if(!b)return a;var
 c=a[10],d=a[9],b=caml_call1(e[3],b[1]);return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],b,d,c]}var
-j8=[0,str_ArrowLeft,[0,str_ArrowRight,[0,str_ArrowUp,[0,str_ArrowDown,0]]]],j9=[0,0,0];function
-go(c,f){var
+j_=[0,str_ArrowLeft,[0,str_ArrowRight,[0,str_ArrowUp,[0,str_ArrowDown,0]]]],j$=[0,0,0];function
+gq(c,f){var
 d=c[2][13],c=cw(c);a:{b:{var
-a=j8;for(;;){if(!a)break b;var
-b=a[1],a=a[2],e=aC(b,d),e=e?1-aC(b,f[6]):e;if(e)break}a=[0,b];break a}a=0}if(a){d=a[1];return[0,[0,d],[0,[0,d,c+num_0_4]]]}a=f[7];if(a){a=a[1];b=a[1];a=a[2];if(aC(b,d))return a<=c?[0,[0,b],[0,[0,b,c+num_0_08]]]:[0,0,f[7]]}return j9}function
-dU(a,b){var
-c=I(aV(a)),b=b!==str_ArrowDown?b!==str_ArrowLeft?b!==str_ArrowRight?b!==str_ArrowUp?a[4]:a[4]-5|0:a[4]+1|0:a[4]-1|0:a[4]+5|0,d=a[10],e=a[9],f=a[8],g=a[7],h=a[6],i=a[5],c=D(0,u(c-1|0,b));return[0,a[1],a[2],a[3],c,i,h,g,f,e,d]}function
+a=j_;for(;;){if(!a)break b;var
+b=a[1],a=a[2],e=aC(b,d),e=e?1-aC(b,f[6]):e;if(e)break}a=[0,b];break a}a=0}if(a){d=a[1];return[0,[0,d],[0,[0,d,c+num_0_4]]]}a=f[7];if(a){a=a[1];b=a[1];a=a[2];if(aC(b,d))return a<=c?[0,[0,b],[0,[0,b,c+num_0_08]]]:[0,0,f[7]]}return j$}function
+dV(a,b){var
+c=J(aV(a)),b=b!==str_ArrowDown?b!==str_ArrowLeft?b!==str_ArrowRight?b!==str_ArrowUp?a[4]:a[4]-5|0:a[4]+1|0:a[4]-1|0:a[4]+5|0,d=a[10],e=a[9],f=a[8],g=a[7],h=a[6],i=a[5],c=F(0,u(c-1|0,b));return[0,a[1],a[2],a[3],c,i,h,g,f,e,d]}function
 bH(a,b){return[0,a[1],a[2],b,0,0,a[6],a[7],a[8],a[9],a[10]]}var
-str_m="m",str_c="c",str_l="l",dQ=[0,0,0,0,0],j_=[0,str_1,[0,str_2,[0,str_net,0]]],j0=[0,0,[0,4,[0,1,[0,2,[0,3,0]]]]],j1=[0,"2D",[0,"2.5D",[0,"3D",[0,"app",0]]]];function
-gp(d,a,c){var
+str_m="m",str_c="c",str_l="l",dR=[0,0,0,0,0],ka=[0,str_1,[0,str_2,[0,str_net,0]]],j2=[0,0,[0,4,[0,1,[0,2,[0,3,0]]]]],j3=[0,"2D",[0,"2.5D",[0,"3D",[0,"app",0]]]];function
+gr(d,a,c){var
 b=a[2];function
 f(b){return[0,a[1],b,0,0,a[5],a[6],a[7],a[8],a[9],a[10]]}if(c===str_b){d=a[10];c=a[9];b=a[8];var
-g=a[7],h=a[6],i=a[5],e=a[2];return[0,bk(bD(j0,[0,a[1]]),0),e,0,0,i,h,g,b,c,d]}if(c===str_c)return f(dQ);if(c===str_e){c=b[4];d=b[3];e=bD(gg,b[2]);return f([0,b[1],e,d,c])}if(c===str_l){d=bD(j1,b[4]);return f([0,b[1],b[2],b[3],d])}if(c===str_m){d=b[4];c=bD(gh,b[3]);return f([0,b[1],b[2],c,d])}if(c===str_p){d=b[4];c=b[3];e=b[2];return f([0,bD(j_,b[1]),e,c,d])}if(c!==str_r)return a;c=I(aV(a));if(0===c)return a;b=a[10];e=a[9];h=a[8];i=a[7];g=a[6];var
+g=a[7],h=a[6],i=a[5],e=a[2];return[0,bk(bD(j2,[0,a[1]]),0),e,0,0,i,h,g,b,c,d]}if(c===str_c)return f(dR);if(c===str_e){c=b[4];d=b[3];e=bD(gi,b[2]);return f([0,b[1],e,d,c])}if(c===str_l){d=bD(j3,b[4]);return f([0,b[1],b[2],b[3],d])}if(c===str_m){d=b[4];c=bD(gj,b[3]);return f([0,b[1],b[2],c,d])}if(c===str_p){d=b[4];c=b[3];e=b[2];return f([0,bD(ka,b[1]),e,c,d])}if(c!==str_r)return a;c=J(aV(a));if(0===c)return a;b=a[10];e=a[9];h=a[8];i=a[7];g=a[6];var
 j=a[5],c=caml_mod(caml_hash(10,num_100,0,cw(d)*num_1000$0|0),c);return[0,a[1],a[2],a[3],c,j,g,i,h,e,b]}function
-gq(a){return[0,a[4]+20.,a[3]-92.,(a[1]|0)-40|0,(a[2]|0)-162|0]}function
+gs(a){return[0,a[4]+20.,a[3]-92.,(a[1]|0)-40|0,(a[2]|0)-162|0]}function
 bI(a){return typeof
 a==="number"?"its code: on its way...":0===a[0]?str:"its code: "+a[1]}function
-dV(b,f,a){var
+dW(b,f,a){var
 c=aW(a),b=caml_call1(b[6],0);if(!c)return a;c=c[1];if(typeof
 b!=="number"&&0===b[0]){var
-e=c[2],b=b[1],d=a[10],c=c[1],b=[0,gb(function(a){return fH(e,a)},gq(f),b,c,e)];return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],b,d]}d=a[10];c=a[9];b=bI(b);return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],b,c,d]}var
-gr=h(12,10,28),dW=h(26,22,56),ac=h(0,Z,num_255),bJ=h(num_255,60,C),ad=h(num_255,aw,70),cy=h(P,P,num_240),T=h(L,L,bh),gs=h(80,80,num_100);function
+e=c[2],b=b[1],d=a[10],c=c[1],b=[0,gd(function(a){return fJ(e,a)},gs(f),b,c,e)];return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],b,d]}d=a[10];c=a[9];b=bI(b);return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],b,c,d]}var
+gt=h(12,10,28),dX=h(26,22,56),ac=h(0,Z,num_255),bJ=h(num_255,60,E),ad=h(num_255,aw,70),cy=h(P,P,num_240),T=h(L,L,bh),gu=h(80,80,num_100);function
 q(b,c){var
 a=b?b[1]:num_16;return function(f,e,b){return d(f+num_0_47*a*caml_ml_string_length(b)/2.,e,ab(a/num_10,ai(c,b)))}}function
 ae(a,c){var
 b=a?a[1]:num_16;return function(f,e,a){return d(f,e,ab(b/num_10,ai(c,a)))}}function
-aJ(a,c,b){a=c/(num_0_47*a)|0;return caml_ml_string_length(b)<=a?b:f(b,0,D(0,a-3|0))+"..."}function
-kc(g,j,h,b){var
-e=D(1,j/(num_0_47*g)|0),b=af(32,b),d=0,a=str,b=J(function(a){return str!==a?1:0})(b);for(;;){if(!b)break;var
-f=b[2],b=b[1],i=a===str?b:a+str$16+b;if(caml_ml_string_length(i)<=e||a===str){a=i;b=f}else{d=[0,a,d];a=b;b=f}}a=a===str?d:[0,a,d];a=o(a);if(I(a)<=h)return a;d=0;b=0;e=a;for(;;){if(!e)break;f=e[2];e=e[1];b=(h-1|0)<=d?[0,e,b]:b;d=d+1|0;e=f}d=0;e=0;g=[0,aJ(g,j,cM(str$16,o(b))),0];for(;;){if(!a)return c(o(d),g);b=a[2];a=a[1];d=e<(h-1|0)?[0,a,d]:d;a=b;e=e+1|0}}function
+aJ(a,c,b){a=c/(num_0_47*a)|0;return caml_ml_string_length(b)<=a?b:f(b,0,F(0,a-3|0))+"..."}function
+ke(h,g,i,b){var
+e=F(1,g/(num_0_47*h)|0),b=af(32,b),d=0,a=str,b=A(function(a){return str!==a?1:0})(b);for(;;){if(!b)break;var
+f=b[2],b=b[1],j=a===str?b:a+str$16+b;if(caml_ml_string_length(j)<=e||a===str){a=j;b=f}else{d=[0,a,d];a=b;b=f}}a=a===str?d:[0,a,d];a=o(a);if(J(a)<=i)return a;d=0;b=0;e=a;for(;;){if(!e)break;f=e[2];e=e[1];b=(i-1|0)<=d?[0,e,b]:b;d=d+1|0;e=f}d=0;e=0;g=[0,aJ(h,g,cM(str$16,o(b))),0];for(;;){if(!a)return c(o(d),g);h=a[2];a=a[1];d=e<(i-1|0)?[0,a,d]:d;a=h;e=e+1|0}}function
 cz(b,c){var
-a=b?b[1]:num_14;return function(g,f,e,d,b){return cH(function(d,b){return q([0,a],c)(g,f-d*a*1.45,b)},kc(a,e,d,b))}}function
+a=b?b[1]:num_14;return function(g,f,e,d,b){return cH(function(d,b){return q([0,a],c)(g,f-d*a*1.45,b)},ke(a,e,d,b))}}function
 bK(e,d,c,a){var
-b=[0,fg((d+a)/2.,k(e,a,c)),0],b=[0,fg(-(d+a)/2.,k(e,a,c)),b],b=[0,dt(-(c+a)/2.,k(e,d+2.*a,a)),b];return ba([0,dt((c+a)/2.,k(e,d+2.*a,a)),b])}function
-gt(a,c,b){a=caml_call2(a[2],c,b);if(a)return a[1];a=[0,ae(0,T)(0.,0.,"no picture"),0];return ba([0,k(dW,b,b),a])}function
-gu(a,b){a=a[7];return a?caml_call1(a[1][2],b):0}function
-gv(a){var
-b=a[1],c=a[5],a=aV(a);if(!b&&!c&&a&&a[2]){a=gi(a);a=a?a[1]:bP("hd");return[0,a[1]]}return 0}var
-num_40$0=-40.,av=[0,num_40$0,num_10,b,440],cu=[0,0],bE=[0,[0,str,0]],gw=[0,0];function
-dX(e,c){var
-b=gw[1];if(b){b=b[1];var
+b=[0,fi((d+a)/2.,k(e,a,c)),0],b=[0,fi(-(d+a)/2.,k(e,a,c)),b],b=[0,dt(-(c+a)/2.,k(e,d+2.*a,a)),b];return ba([0,dt((c+a)/2.,k(e,d+2.*a,a)),b])}function
+gv(a,c,b){a=caml_call2(a[2],c,b);if(a)return a[1];a=[0,ae(0,T)(0.,0.,"no picture"),0];return ba([0,k(dX,b,b),a])}function
+gw(a,b){a=a[7];return a?caml_call1(a[1][2],b):0}function
+gx(a){var
+b=a[1],c=a[5],a=aV(a);if(!b&&!c&&a&&a[2]){a=gk(a);a=a?a[1]:bP("hd");return[0,a[1]]}return 0}var
+num_40$0=-40.,av=[0,num_40$0,num_10,b,440],cu=[0,0],bE=[0,[0,str,0]],gy=[0,0];function
+dY(e,c){var
+b=gy[1];if(b){b=b[1];var
 a=b[2];if(b[1]===c[1])return[0,a]}if(bE[1][1]===c[1]&&20<=(cu[1]-bE[1][2]|0)){a=caml_call1(e[6],0);if(typeof
 a!=="number"&&0===a[0]){var
-d=c[2],a=dP(function(a){return fH(d,a)},av,a[1],c[1],d,0);gw[1]=[0,[0,c[1],a]];return[0,a]}return 0}return 0}var
-P=11.,bO=" (",num_230=230.,kV=[0,num_14],kL=[0,num_12],kM=[0,num_14],kN=[0,num_14],kO=[0,P],kP=[0,[11,"start here: the smallest in ",[2,0,[11," (its own code: libs/ not counted)",0]]],"start here: the smallest in %s (its own code: libs/ not counted)"],kQ=[0,num_12],kR=[0,[4,0,0,0,[11,str$1,[2,0,[11,str$1,[2,0,[11,str$1,[2,0,0]]]]]]],"%d   %s   %s   %s"],kS=[0,num_13],kT=[0,num_16],kU=[0,num_24],kW=[0,num_18],kG=[0,[11,bO,[4,0,0,0,[11," file",[2,0,[11,str$2,[2,0,[12,41,0]]]]]]]," (%d file%s, %s)"],kH=[0,num_12],kI=[0,0],kJ=[0,num_14],kF=[0,num_14],aX=num_400,bF=num_160,aY=num_230;function
-kK(o,r,l){var
-e=aW(l);if(!e)return[0,ae(kW,T)(bF,aY,"nothing here"),0];e=e[1];var
-n=z(e[1],r[1]),s=av[2],t=av[1],m=av[3],b=av[4],i=t+m/2.,j=s-b/2.,a=caml_call1(r[6],0);a:{if(typeof
-a!=="number"&&0===a[0]){a=dX(r,e);if(a){a=a[1];var
-p=dE(fR(a[3])),u=1===fS(a)?str:str_s,a=fS(a),a=caml_call3(g(kG),a,u,p)}else
-a=str;p=dX(r,e);p=p?f7(o,p[1]):0;a="its code"+a+": a click, or s, to read it   o: the glass ("+fY(0)+str$11;a=[0,q(kH,ac)(t,s-b-num_16,a),0];a=c([0,d(i,j,bK(ac,m,b,2.)),a],p);p=dX(r,e);if(p){i=p[1];i=f3(kI,o)(i)}else{o=[0,ae(kJ,T)(i,j,"its code..."),0];i=[0,d(i,j,k(dW,m,b)),o]}b=c(i,a);break a}o=[0,d(i,j,bK(ac,m,b,2.)),0];a=bI(a);a=[0,ae(kF,T)(i,j,a),o];b=[0,d(i,j,k(dW,m,b)),a]}i=385.;n=n?0:[0,q(kV,bJ)(i,num_45,"not in this tinybox"),0];n=c(n,b);b=e[9];j=480.;n=c(cz(kL,T)(i,210.,j,9,b),n);b=e[8];b=c(cz(kM,cy)(i,280.,j,3,b),n);n="After "+e[7];n=c(cz(kN,ac)(i,num_330,j,2,n),b);b=r[7];b=b?caml_call1(b[1][3],e):0;a=358.;if(b){b=b[1];b=[0,q(kO,T)(i,a,b),0]}else
-b=0;n=c(b,n);b=gv(l);l=ct(l);a:{if(b&&l){l=l[1];if(b[1]===e[1]){l=l[1];l=aJ(num_12,j,caml_call1(g(kP),l));a=[0,q(kQ,h(90,num_210,num_120))(i,a,l),0];break a}}a=0}n=c(a,n);a=dE(bB(e));l=az(e[6],32);l=l?f(e[6],0,l[1]):e[6];j=dy(e)?", over the network":str;b=l===str_1?" player":" players";m=e[5];o=e[4];j=caml_call4(g(kR),o,m,l+b+j,a);j=[0,q(kS,ad)(i,380.,j),0];m=e[3];o=410.;j=[0,q(kT,ad)(825.,o,m),j];m=aJ(num_24,num_420,e[1]);m=c([0,q(kU,cy)(i,o,m),j],n);r=gu(r,e)?0:[0,d(bF,aY,gt(r,e,aX)),0];m=c(r,m);return c([0,d(bF,aY,bK(bJ,aX,aX,3.)),0],m)}var
-gx=[0,0];function
-gy(a){return bk(gx[1],"https://aryx.github.io/assets")}var
-b=fv(Y),C=0,num_452=452.,M=455.,str_tinybox="tinybox",gk=[0,-560.,M],gl=[0,-460.,M],dS=[0,-859.,num_400],dT=[0,-499.,num_400],gm=[0,[0,str_b,num_869],[0,[0,str_p,-709.],[0,[0,str_e,-559.],[0,[0,str_m,-434.],[0,[0,str_l,-284.],[0,[0,str_c,-164.],0]]]]]],ka=[0,str],kb=[0,str_b,[0,str_p,[0,str_e,[0,str_m,[0,str_l,[0,str_c,[0,str_r,0]]]]]]],bf=132.,cv=322.;function
-j$(i,j,c){var
+d=c[2],a=dQ(function(a){return fJ(d,a)},av,a[1],c[1],d,0);gy[1]=[0,[0,c[1],a]];return[0,a]}return 0}return 0}var
+P=11.,bO=" (",num_230=230.,kX=[0,num_14],kN=[0,num_12],kO=[0,num_14],kP=[0,num_14],kQ=[0,P],kR=[0,[11,"start here: the smallest in ",[2,0,[11," (its own code: libs/ not counted)",0]]],"start here: the smallest in %s (its own code: libs/ not counted)"],kS=[0,num_12],kT=[0,[4,0,0,0,[11,str$1,[2,0,[11,str$1,[2,0,[11,str$1,[2,0,0]]]]]]],"%d   %s   %s   %s"],kU=[0,num_13],kV=[0,num_16],kW=[0,num_24],kY=[0,num_18],kI=[0,[11,bO,[4,0,0,0,[11," file",[2,0,[11,str$2,[2,0,[12,41,0]]]]]]]," (%d file%s, %s)"],kJ=[0,num_12],kK=[0,0],kL=[0,num_14],kH=[0,num_14],aX=num_400,bF=num_160,aY=num_230;function
+kM(o,r,l){var
+e=aW(l);if(!e)return[0,ae(kY,T)(bF,aY,"nothing here"),0];e=e[1];var
+n=v(e[1],r[1]),s=av[2],t=av[1],m=av[3],b=av[4],i=t+m/2.,j=s-b/2.,a=caml_call1(r[6],0);a:{if(typeof
+a!=="number"&&0===a[0]){a=dY(r,e);if(a){a=a[1];var
+p=dF(fT(a[3])),u=1===fU(a)?str:str_s,a=fU(a),a=caml_call3(g(kI),a,u,p)}else
+a=str;p=dY(r,e);p=p?f9(o,p[1]):0;a="its code"+a+": a click, or s, to read it   o: the glass ("+f0(0)+str$11;a=[0,q(kJ,ac)(t,s-b-num_16,a),0];a=c([0,d(i,j,bK(ac,m,b,2.)),a],p);p=dY(r,e);if(p){i=p[1];i=f5(kK,o)(i)}else{o=[0,ae(kL,T)(i,j,"its code..."),0];i=[0,d(i,j,k(dX,m,b)),o]}b=c(i,a);break a}o=[0,d(i,j,bK(ac,m,b,2.)),0];a=bI(a);a=[0,ae(kH,T)(i,j,a),o];b=[0,d(i,j,k(dX,m,b)),a]}i=385.;n=n?0:[0,q(kX,bJ)(i,num_45,"not in this tinybox"),0];n=c(n,b);b=e[9];j=480.;n=c(cz(kN,T)(i,210.,j,9,b),n);b=e[8];b=c(cz(kO,cy)(i,280.,j,3,b),n);n="After "+e[7];n=c(cz(kP,ac)(i,num_330,j,2,n),b);b=r[7];b=b?caml_call1(b[1][3],e):0;a=358.;if(b){b=b[1];b=[0,q(kQ,T)(i,a,b),0]}else
+b=0;n=c(b,n);b=gx(l);l=ct(l);a:{if(b&&l){l=l[1];if(b[1]===e[1]){l=l[1];l=aJ(num_12,j,caml_call1(g(kR),l));a=[0,q(kS,h(90,num_210,num_120))(i,a,l),0];break a}}a=0}n=c(a,n);a=dF(bB(e));l=az(e[6],32);l=l?f(e[6],0,l[1]):e[6];j=dz(e)?", over the network":str;b=l===str_1?" player":" players";m=e[5];o=e[4];j=caml_call4(g(kT),o,m,l+b+j,a);j=[0,q(kU,ad)(i,380.,j),0];m=e[3];o=410.;j=[0,q(kV,ad)(825.,o,m),j];m=aJ(num_24,num_420,e[1]);m=c([0,q(kW,cy)(i,o,m),j],n);r=gw(r,e)?0:[0,d(bF,aY,gv(r,e,aX)),0];m=c(r,m);return c([0,d(bF,aY,bK(bJ,aX,aX,3.)),0],m)}var
+gz=[0,0];function
+gA(a){return bk(gz[1],"https://aryx.github.io/assets")}var
+b=fx(Y),E=0,num_452=452.,M=455.,str_tinybox="tinybox",gm=[0,-560.,M],gn=[0,-460.,M],dT=[0,-859.,num_400],dU=[0,-499.,num_400],go=[0,[0,str_b,num_869],[0,[0,str_p,-709.],[0,[0,str_e,-559.],[0,[0,str_m,-434.],[0,[0,str_l,-284.],[0,[0,str_c,-164.],0]]]]]],kc=[0,str],kd=[0,str_b,[0,str_p,[0,str_e,[0,str_m,[0,str_l,[0,str_c,[0,str_r,0]]]]]]],bf=132.,cv=322.;function
+kb(i,j,c){var
 b=caml_call1(i[5],0),c=b?[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],b[1],c[9],c[10]]:c;if(c[10]){b=caml_call1(i[6],0);if(typeof
 b==="number")var
-a=c[10],h=c[9],b=bI(b),g=[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],b,h,a];else if(0===b[0]){b=dV(i,j[3],c);g=[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],str,b[9],0]}else{a=c[9];b=bI(b);g=[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],b,a,0]}}else
+a=c[10],h=c[9],b=bI(b),g=[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],b,h,a];else if(0===b[0]){b=dW(i,j[3],c);g=[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],str,b[9],0]}else{a=c[9];b=bI(b);g=[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],b,a,0]}}else
 g=c;b=g[9];if(b){var
-u=j[2][13],i=b[1],b=go(j,g),a=b[2],c=g[10],i=jW(j,function(a){var
+u=j[2][13],i=b[1],b=gq(j,g),a=b[2],c=g[10],i=jY(j,function(a){var
 b=aC(a,u),a=b?1-aC(a,g[6]):b;return a},b[1],i);return[0,g[1],g[2],g[3],g[4],g[5],u,a,g[8],i,c]}var
 r=j[2][13];function
 k(a){var
 b=aC(a,r),a=b?1-aC(a,g[6]):b;return a}var
-c=aC(str_Shift,r),a=go(j,g),b=a[1],a=[0,g[1],g[2],g[3],g[4],g[5],g[6],a[2],g[8],g[9],g[10]],a=b?dU(a,b[1]):a,b=a[5];a:if(b){c=b[1];var
+c=aC(str_Shift,r),a=gq(j,g),b=a[1],a=[0,g[1],g[2],g[3],g[4],g[5],g[6],a[2],g[8],g[9],g[10]],a=b?dV(a,b[1]):a,b=a[5];a:if(b){c=b[1];var
 v=caml_bytes_of_string(j[2][14]),t=function(a,c){if(a===caml_ml_bytes_length(v))return 0;var
 b=a+1|0;return[0,caml_bytes_get(v,a),function(a){return t(b,a)}]},s=function(b,a){if(0!==b){a=caml_call1(a,0);if(!a)return 0;var
-c=a[1];return[0,c,s(b-1|0,a[2])]}c=0;for(;;){b=caml_call1(a,0);if(!b)return o(c);a=b[2];c=[0,b[1],c]}},b=s(num_500,function(a){return t(0,a)}),b=cM(str,p(function(a){return cL(1,a)},J(function(a){var
+c=a[1];return[0,c,s(b-1|0,a[2])]}c=0;for(;;){b=caml_call1(a,0);if(!b)return o(c);a=b[2];c=[0,b[1],c]}},b=s(num_500,function(a){return t(0,a)}),b=cM(str,p(function(a){return cL(1,a)},A(function(a){var
 b=32<=a?1:0,a=b?47!==a?1:0:b;return a})(b)));if(k(str_Escape))a=[0,a[1],a[2],a[3],0,0,a[6],a[7],a[8],a[9],a[10]];else{if(k(str_Backspace)&&c!==str){b=a[10];h=a[9];var
-d=a[8],m=a[7],n=a[6],c=[0,f(c,0,caml_ml_string_length(c)-1|0)],a=[0,a[1],a[2],a[3],0,c,n,m,d,h,b];break a}a=b!==str?[0,a[1],a[2],a[3],0,[0,c+b],a[6],a[7],a[8],a[9],a[10]]:a}}else if(k(str$7))a=[0,a[1],a[2],a[3],0,ka,a[6],a[7],a[8],a[9],a[10]];else if(k(str_Tab)){b=c?-1:1;a=bH(a,bG(a,b))}else if(k(str_PageDown))a=bH(a,bG(a,1));else if(k(str_PageUp))a=bH(a,bG(a,-1));else if(k(str_g))a=cx(a,1);else if(k(str_a))a=cx(a,0);else if(k(str_s))a=dV(i,j[3],a);else if(k(str_o))fX(0);else{b=kb;for(;;){if(b){d=b[1];b=b[2];if(!k(d))continue;b=[0,d]}else
-b=0;if(b){a=gp(j,a,b[1]);break}break}}a=k(str_Enter)?gn(i,a):a;b=j[1];d=[0,b[1],b[2]];a=0.<b[8]?dU(a,str_ArrowUp):b[8]<0.?dU(a,str_ArrowDown):a;a:{if(!b[4]&&!b[9])break a;if(aZ([0,-779.,num_452],d,190.,44.)){var
+d=a[8],m=a[7],n=a[6],c=[0,f(c,0,caml_ml_string_length(c)-1|0)],a=[0,a[1],a[2],a[3],0,c,n,m,d,h,b];break a}a=b!==str?[0,a[1],a[2],a[3],0,[0,c+b],a[6],a[7],a[8],a[9],a[10]]:a}}else if(k(str$7))a=[0,a[1],a[2],a[3],0,kc,a[6],a[7],a[8],a[9],a[10]];else if(k(str_Tab)){b=c?-1:1;a=bH(a,bG(a,b))}else if(k(str_PageDown))a=bH(a,bG(a,1));else if(k(str_PageUp))a=bH(a,bG(a,-1));else if(k(str_g))a=cx(a,1);else if(k(str_a))a=cx(a,0);else if(k(str_s))a=dW(i,j[3],a);else if(k(str_o))fZ(0);else{b=kd;for(;;){if(b){d=b[1];b=b[2];if(!k(d))continue;b=[0,d]}else
+b=0;if(b){a=gr(j,a,b[1]);break}break}}a=k(str_Enter)?gp(i,a):a;b=j[1];d=[0,b[1],b[2]];a=0.<b[8]?dV(a,str_ArrowUp):b[8]<0.?dV(a,str_ArrowDown):a;a:{if(!b[4]&&!b[9])break a;if(aZ([0,-779.,num_452],d,190.,44.)){var
 q=function(b,c){var
 a=caml_ml_string_length(b)<=caml_ml_string_length(c)?1:0,a=a?f(c,0,caml_ml_string_length(b))===b?1:0:a;return a},d=j[3],b=caml_call1(i[6],0),x=function(b){var
 a=q("launcher/",b);if(a);else{a=q(str_languages,b);if(!a)return q("libs/code/",b)}return a};if(typeof
-b!=="number"&&0===b[0]){b=b[1];h=a[10];b=[0,gb(x,gq(d),b,str_tinybox,"launcher/native/Tinybox.ml")];a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],b,h];break a}d=a[10];h=a[9];b=bI(b);a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],b,h,d]}else{h=36.;if(aZ(gk,d,num_90,h))a=cx(a,1);else if(aZ(gl,d,num_80,h))a=cx(a,0);else{h=d[2];m=d[1];c=av[2];n=av[1];var
-e=n<=m,l=av[4],w=av[3];if(e){e=m<=n+w;if(e){e=h<=c;e=e?c-l<=h:e}}if(e)a=dV(i,j[3],a);else if(aZ(dS,d,num_40,num_40))a=bH(a,bG(a,-1));else{b:{c:{if(aZ(dT,d,num_40,num_40)){a=bH(a,bG(a,1));break a}e=gm;for(;;){if(!e)break c;h=e[1];e=e[2];if(aZ([0,h[2]+num_60,cv],d,num_120$0,num_24))break}e=[0,h];break b}e=0}if(e)a=gp(j,a,e[1][1]);else{b:{c:{e=bS(I(aV(a)),function(a){return a});for(;;){if(!e)break c;h=e[1];e=e[2];l=gj(a,h);l=l?aZ(l[1],d,bf,162.):0;if(l)break}d=[0,h];break b}d=0}if(d){d=d[1];a=b[9]?gn(i,[0,a[1],a[2],a[3],d,a[5],a[6],a[7],a[8],a[9],a[10]]):[0,a[1],a[2],a[3],d,a[5],a[6],a[7],a[8],a[9],a[10]]}}}}}}d=aW(a);cu[1]++;if(d){d=d[1];if(bE[1][1]!==d[1])bE[1]=[0,d[1],cu[1]]}d=i[7];b=cu[1]-bE[1][2]|0;if(d){d=d[1];i=aW(a);e=cw(j);caml_call3(d[1],e,b,i)}return[0,a[1],a[2],a[3],a[4],a[5],r,a[7],a[8],a[9],a[10]]}var
-dh=[0,"#000000"],jJ=[0,[4,0,0,0,[12,45,[4,0,0,0,0]]],"%d-%d"],jK=[0,P],jL=[0,num_13],jM=[0,[4,0,0,0,[11,str_lines,0]],"%d lines"],jN=[0,num_14],jO=[0,num_22],jX=[0,[4,0,0,0,[12,32,[2,0,0]]],"%d %s"],jY=[0,[11,"tour: ",[2,0,[11," (file ",[4,0,0,0,[11," of ",[4,0,0,0,[11,"), ",[2,0,[11,bO,[4,0,0,0,[12,47,[4,0,0,0,[11,")   n next  p back  esc the map",0]]]]]]]]]]]]],"tour: %s (file %d of %d), %s (%d/%d)   n next  p back  esc the map"],k2=[0,num_13],k1=[0,num_13],kX=[0,num_18],kZ=[0,num_16],kY=[0,num_13],kC=[0,num_13],kD=[0,num_12],kE=[0,num_12],kz=[0,num_13],kA=[0,num_13],kB=[0,num_13],ky=[0,[4,0,0,0,[12,R,0]],"%ds"],kx=[0,"clear  r random",[0,str,0]],kw=[0,"any",0],kk=[0,[4,0,0,0,[11," found",0]],"%d found"],kl=[0,num_14],km=[0,[11,"Search: ",[2,0,0]],"Search: %s"],kn=[0,num_24],ko=[0,num_13],kp=[0,[4,0,0,0,[11," / ",[4,0,0,0,0]]],"%d / %d"],kq=[0,num_14],kr=[0,num_24],ks=[0,num_24],kt=[0,num_24],ku=[0,num_13],kv=[0,num_24],kf=[0,num_22],kd=[0,1],ke=[0,0],kg=[0,num_18],kj=[0,num_14],kh=[0,num_40],ki=[0,num_40];function
-k0(m,j,b){var
-v=j[3],i=b[9];if(i){m=i[1];b=aW(b);a:{i=72.;if(m[1]===str_tinybox&&!gd(m)){i=v[3]-i;i=[0,ae(k2,ac)(0.,i,"every program in one binary (after BusyBox), its menu (after Batocera's), and this code map (after codemap and SeeSoft)"),0];break a}if(b){b=b[1];if(!gd(m)){b=aJ(num_13,v[1]-num_80,b[9]);i=v[3]-i;i=[0,ae(k1,ac)(0.,i,b),0];break a}}i=0}b=m[7];if(b){b=b[1];var
+b!=="number"&&0===b[0]){b=b[1];h=a[10];b=[0,gd(x,gs(d),b,str_tinybox,"launcher/native/Tinybox.ml")];a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],b,h];break a}d=a[10];h=a[9];b=bI(b);a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],b,h,d]}else{h=36.;if(aZ(gm,d,num_90,h))a=cx(a,1);else if(aZ(gn,d,num_80,h))a=cx(a,0);else{h=d[2];m=d[1];c=av[2];n=av[1];var
+e=n<=m,l=av[4],w=av[3];if(e){e=m<=n+w;if(e){e=h<=c;e=e?c-l<=h:e}}if(e)a=dW(i,j[3],a);else if(aZ(dT,d,num_40,num_40))a=bH(a,bG(a,-1));else{b:{c:{if(aZ(dU,d,num_40,num_40)){a=bH(a,bG(a,1));break a}e=go;for(;;){if(!e)break c;h=e[1];e=e[2];if(aZ([0,h[2]+num_60,cv],d,num_120$0,num_24))break}e=[0,h];break b}e=0}if(e)a=gr(j,a,e[1][1]);else{b:{c:{e=bS(J(aV(a)),function(a){return a});for(;;){if(!e)break c;h=e[1];e=e[2];l=gl(a,h);l=l?aZ(l[1],d,bf,162.):0;if(l)break}d=[0,h];break b}d=0}if(d){d=d[1];a=b[9]?gp(i,[0,a[1],a[2],a[3],d,a[5],a[6],a[7],a[8],a[9],a[10]]):[0,a[1],a[2],a[3],d,a[5],a[6],a[7],a[8],a[9],a[10]]}}}}}}d=aW(a);cu[1]++;if(d){d=d[1];if(bE[1][1]!==d[1])bE[1]=[0,d[1],cu[1]]}d=i[7];b=cu[1]-bE[1][2]|0;if(d){d=d[1];i=aW(a);e=cw(j);caml_call3(d[1],e,b,i)}return[0,a[1],a[2],a[3],a[4],a[5],r,a[7],a[8],a[9],a[10]]}var
+dh=[0,"#000000"],jL=[0,[4,0,0,0,[12,45,[4,0,0,0,0]]],"%d-%d"],jM=[0,P],jN=[0,num_13],jO=[0,[4,0,0,0,[11,str_lines,0]],"%d lines"],jP=[0,num_14],jQ=[0,num_22],jZ=[0,[4,0,0,0,[12,32,[2,0,0]]],"%d %s"],j0=[0,[11,"tour: ",[2,0,[11," (file ",[4,0,0,0,[11," of ",[4,0,0,0,[11,"), ",[2,0,[11,bO,[4,0,0,0,[12,47,[4,0,0,0,[11,")   n next  p back  esc the map",0]]]]]]]]]]]]],"tour: %s (file %d of %d), %s (%d/%d)   n next  p back  esc the map"],k4=[0,num_13],k3=[0,num_13],kZ=[0,num_18],k1=[0,num_16],k0=[0,num_13],kE=[0,num_13],kF=[0,num_12],kG=[0,num_12],kB=[0,num_13],kC=[0,num_13],kD=[0,num_13],kA=[0,[4,0,0,0,[12,R,0]],"%ds"],kz=[0,"clear  r random",[0,str,0]],ky=[0,"any",0],km=[0,[4,0,0,0,[11," found",0]],"%d found"],kn=[0,num_14],ko=[0,[11,"Search: ",[2,0,0]],"Search: %s"],kp=[0,num_24],kq=[0,num_13],kr=[0,[4,0,0,0,[11," / ",[4,0,0,0,0]]],"%d / %d"],ks=[0,num_14],kt=[0,num_24],ku=[0,num_24],kv=[0,num_24],kw=[0,num_13],kx=[0,num_24],kh=[0,num_22],kf=[0,1],kg=[0,0],ki=[0,num_18],kl=[0,num_14],kj=[0,num_40],kk=[0,num_40];function
+k2(m,j,b){var
+w=j[3],i=b[9];if(i){m=i[1];b=aW(b);a:{i=72.;if(m[1]===str_tinybox&&!gf(m)){i=w[3]-i;i=[0,ae(k4,ac)(0.,i,"every program in one binary (after BusyBox), its menu (after Batocera's), and this code map (after codemap and SeeSoft)"),0];break a}if(b){b=b[1];if(!gf(m)){b=aJ(num_13,w[1]-num_80,b[9]);i=w[3]-i;i=[0,ae(k3,ac)(0.,i,b),0];break a}}i=0}b=m[7];if(b){b=b[1];var
 a=m[8];if(a){a=a[1];var
-f=a[2],a=a[1],l=cr(m,a),w=co(l),p=I(m[6][3]),m=aB(m[6][16],l[1]);if(m){m=m[1];l=eU(l[1]);l=caml_call2(g(jX),m,l)}else
-l=l[1];m=bR(w,f);m=m?m[1][2]:str;w=I(w);m=caml_call6(g(jY),l,a+1|0,p,m,f+1|0,w);m=[0,d(0.,-448.,ab(num_1_4,ai(h(90,num_210,num_120),m))),0]}else
-m=0;f=j[3];w=u(b[2].length-1,b[4]+53|0);a=b[4]+1|0;a=caml_call2(g(jJ),a,w);a=[0,cq(jK,jG)(num_360,-442.,a),0];w=num_480;a=[0,cq(jL,f_)(w,-470.,"arrows wheel pgup pgdn home end scroll   click the overview to go there   esc back to the map"),a];j=c(jI(j,b),a);a=f9(b);p=D(1,b[2].length-1);l=num_420-b[4]/p*a;p=s(a,num_53/p*a);var
-e=num_110$0,r=-425.,n=[0,d(r,l-p,k(dO,e,2.)),0],n=[0,d(r,l,k(dO,e,2.)),n],p=[0,aa(num_0_2,d(r,l-p/2.,k(a_,e,p))),n],j=c([0,d(r,num_420-a/2.,bu(e,a,b[3])),p],j),e=b[2].length-1,e=caml_call1(g(jM),e),e=[0,cq(jN,f_)(num_330,num_452,e),0],b=b[1][1],b=[0,cq(jO,dO)(w,num_452,b),e],e=f[2],f=f[1],j=c(c([0,k(h(12,10,28),f,e),b],j),m)}else{b=f7(j,m[6]);m=m[6];j=c(f3(0,j)(m),b)}return c(j,i)}i=bS(v[2]/4.|0,function(b){var
-a=k(dh,v[1],num_1_5);return aa(num_0_18,dt(v[3]-b*4.,a))});f=caml_call1(m[4],0);e=-440.;w=num_869;if(f){f="> "+f[1]+" is running";f=[0,q(kX,ad)(w,e,f),0]}else
-f=0;if(b[8]===str)e=0;else{p=aJ(num_16,340.,b[8]);e=[0,q(kZ,bJ)(-400.,e,p),0]}f=c(f,e);f=c(c([0,q(kY,T)(w,-475.,"arrows move   tab section   g/a games/apps   b group   p e m l filter   / search   s read its code   enter play it"),0],f),i);f=c(kK(j,m,b),f);i=gv(b);e=cH(function(b,a){return[0,b,a]},aV(b));p=0;var
-num_17=17.;for(;;){if(!e)break;r=e[1];l=r[2];r=r[1];e=e[2];a=gj(b,r);if(a){a=a[1];var
-t=a[2],a=a[1],r=r===b[4],n=z(l[1],m[1]),A=num_0_35+.65*(1.+Math.cos(num_6_283185307179586*(caml_round_float(j[4][1]*num_1000$0)%num_1200/num_1200)))/2.,y=aJ(num_13,num_160,l[1]),x=t-num_66-num_16,B=r?ad:n?cy:gs,B=[0,ae(kC,B)(a,x,y),0];a:{if(4===b[1]&&0===b[5]){y=str+bB(l);x=7.*caml_ml_string_length(y)+8.;var
-F=-55.5,y=[0,ae(kD,ad)(num_66-x/2.-2.,F,y),0],x=[0,d(num_66-x/2.-2.,F,aa(.8,k(dh,x,num_17))),y];break a}if(caml_equal(i,[0,l[1]])){x=55.5;y=-27.;F=[0,ae(kE,a_)(y,x,"start here"),0];x=[0,d(y,x,k(h(30,num_150,70),74.,num_17)),F]}else
-x=0}l=gt(m,l,bf);n=n?1.:num_0_35;x=c([0,aa(n,l),0],x);A=r?[0,aa(A,bK(ac,bf,bf,4.)),0]:[0,bK(gs,bf,bf,1.),0];B=[0,d(a,t,ba(c(A,x))),B]}else
+f=a[2],a=a[1],l=cr(m,a),x=co(l),p=J(m[6][3]),m=aB(m[6][16],l[1]);if(m){m=m[1];l=eW(l[1]);l=caml_call2(g(jZ),m,l)}else
+l=l[1];m=bR(x,f);m=m?m[1][2]:str;x=J(x);m=caml_call6(g(j0),l,a+1|0,p,m,f+1|0,x);m=[0,d(0.,-448.,ab(num_1_4,ai(h(90,num_210,num_120),m))),0]}else
+m=0;f=j[3];x=u(b[2].length-1,b[4]+53|0);a=b[4]+1|0;a=caml_call2(g(jL),a,x);a=[0,cq(jM,jI)(num_360,-442.,a),0];x=num_480;a=[0,cq(jN,ga)(x,-470.,"arrows wheel pgup pgdn home end scroll   click the overview to go there   esc back to the map"),a];j=c(jK(j,b),a);a=f$(b);p=F(1,b[2].length-1);l=num_420-b[4]/p*a;p=s(a,num_53/p*a);var
+e=num_110$0,r=-425.,n=[0,d(r,l-p,k(dP,e,2.)),0],n=[0,d(r,l,k(dP,e,2.)),n],p=[0,aa(num_0_2,d(r,l-p/2.,k(a_,e,p))),n],j=c([0,d(r,num_420-a/2.,bu(e,a,b[3])),p],j),e=b[2].length-1,e=caml_call1(g(jO),e),e=[0,cq(jP,ga)(num_330,num_452,e),0],b=b[1][1],b=[0,cq(jQ,dP)(x,num_452,b),e],e=f[2],f=f[1],j=c(c([0,k(h(12,10,28),f,e),b],j),m)}else{b=f9(j,m[6]);m=m[6];j=c(f5(0,j)(m),b)}return c(j,i)}i=bS(w[2]/4.|0,function(b){var
+a=k(dh,w[1],num_1_5);return aa(num_0_18,dt(w[3]-b*4.,a))});f=caml_call1(m[4],0);e=-440.;x=num_869;if(f){f="> "+f[1]+" is running";f=[0,q(kZ,ad)(x,e,f),0]}else
+f=0;if(b[8]===str)e=0;else{p=aJ(num_16,340.,b[8]);e=[0,q(k1,bJ)(-400.,e,p),0]}f=c(f,e);f=c(c([0,q(k0,T)(x,-475.,"arrows move   tab section   g/a games/apps   b group   p e m l filter   / search   s read its code   enter play it"),0],f),i);f=c(kM(j,m,b),f);i=gx(b);e=cH(function(b,a){return[0,b,a]},aV(b));p=0;var
+num_17=17.;for(;;){if(!e)break;r=e[1];l=r[2];r=r[1];e=e[2];a=gl(b,r);if(a){a=a[1];var
+t=a[2],a=a[1],r=r===b[4],n=v(l[1],m[1]),A=num_0_35+.65*(1.+Math.cos(num_6_283185307179586*(caml_round_float(j[4][1]*num_1000$0)%num_1200/num_1200)))/2.,z=aJ(num_13,num_160,l[1]),y=t-num_66-num_16,B=r?ad:n?cy:gu,B=[0,ae(kE,B)(a,y,z),0];a:{if(4===b[1]&&0===b[5]){z=str+bB(l);y=7.*caml_ml_string_length(z)+8.;var
+E=-55.5,z=[0,ae(kF,ad)(num_66-y/2.-2.,E,z),0],y=[0,d(num_66-y/2.-2.,E,aa(.8,k(dh,y,num_17))),z];break a}if(caml_equal(i,[0,l[1]])){y=55.5;z=-27.;E=[0,ae(kG,a_)(z,y,"start here"),0];y=[0,d(z,y,k(h(30,num_150,70),74.,num_17)),E]}else
+y=0}l=gv(m,l,bf);n=n?1.:num_0_35;y=c([0,aa(n,l),0],y);A=r?[0,aa(A,bK(ac,bf,bf,4.)),0]:[0,bK(gu,bf,bf,1.),0];B=[0,d(a,t,ba(c(A,y))),B]}else
 B=0;p=O(B,p)}p=c(o(p),f);i=b[2];function
-C(a){return a?[0,a[1],1]:kw}var
-e=gm,f=0;for(;;){if(!e)break;a=e[1];r=a[2];a=a[1];e=e[2];n="machine";l="players";t="era";if(a!==str_b)if(a!==str_e)t=a!==str_l?a!==str_m?a!==str_p?kx:[0,l,C(i[1])]:[0,n,C(i[3])]:[0,"look",C(i[4])];else{n=i[2];if(n){n=n[1];n=[0,caml_call1(g(ky),n)]}else
+C(a){return a?[0,a[1],1]:ky}var
+e=go,f=0;for(;;){if(!e)break;a=e[1];r=a[2];a=a[1];e=e[2];n="machine";l="players";t="era";if(a!==str_b)if(a!==str_e)t=a!==str_l?a!==str_m?a!==str_p?kz:[0,l,C(i[1])]:[0,n,C(i[3])]:[0,"look",C(i[4])];else{n=i[2];if(n){n=n[1];n=[0,caml_call1(g(kA),n)]}else
 n=0;t=[0,t,C(n)]}else{A=0!==b[1]?1:0;switch(b[1]){case
 0:t="genre";break;case
 1:break;case
 2:t=n;break;case
-3:t=l;break;default:t="size"}t=[0,"group",[0,t,A]]}l=t[2];n=l[1];t=t[1];A=r+num_24+8.*caml_ml_string_length(t);l=l[2]?ad:cy;l=[0,q(kz,l)(A,cv,n),0];t=n===str?t:t+str$4;l=[0,q(kA,T)(r+num_16,cv,t),l];f=O([0,q(kB,ac)(r,cv,a),l],f)}f=c(o(f),p);i=I(aV(b));e=b[5];p=360.;a=-150.;if(e){e=e[1];i=caml_call1(g(kk),i);a=[0,q(kl,T)(a,num_400,i),0];i=caml_call1(g(km),e);a=[0,q(kn,ad)(w,num_400,i),a]}else{i=bC(b[1],b[2]);e=ct(b);if(e){e=e[1];r=e[2];r=cz(ko,T)(w,p,num_800,1,r);n=u(b[3],i.length-2|0)+1|0;i=caml_call2(g(kp),n,i.length-1);a=[0,q(kq,T)(a,num_400,i),0];i=dT[2];n=dT[1];a=[0,ae(kr,ac)(n,i,str$21),a];i=aJ(num_24,num_320,e[1]);a=[0,q(ks,ad)(-834.,num_400,i),a];i=dS[2];e=dS[1];a=c([0,ae(kt,ac)(e,i,str$0),a],r)}else{a=[0,q(ku,T)(w,p,"c clears them"),0];a=[0,q(kv,bJ)(w,num_400,"Nothing passes the filters"),a]}}i=c(a,f);e=b[5];f=ct(b);a:{if(!e&&f){f=f[1][3];break a}f=0}e=caml_equal(f,kd);function
+3:t=l;break;default:t="size"}t=[0,"group",[0,t,A]]}l=t[2];n=l[1];t=t[1];A=r+num_24+8.*caml_ml_string_length(t);l=l[2]?ad:cy;l=[0,q(kB,l)(A,cv,n),0];t=n===str?t:t+str$4;l=[0,q(kC,T)(r+num_16,cv,t),l];f=O([0,q(kD,ac)(r,cv,a),l],f)}f=c(o(f),p);i=J(aV(b));e=b[5];p=360.;a=-150.;if(e){e=e[1];i=caml_call1(g(km),i);a=[0,q(kn,T)(a,num_400,i),0];i=caml_call1(g(ko),e);a=[0,q(kp,ad)(x,num_400,i),a]}else{i=bC(b[1],b[2]);e=ct(b);if(e){e=e[1];r=e[2];r=cz(kq,T)(x,p,num_800,1,r);n=u(b[3],i.length-2|0)+1|0;i=caml_call2(g(kr),n,i.length-1);a=[0,q(ks,T)(a,num_400,i),0];i=dU[2];n=dU[1];a=[0,ae(kt,ac)(n,i,str$21),a];i=aJ(num_24,num_320,e[1]);a=[0,q(ku,ad)(-834.,num_400,i),a];i=dT[2];e=dT[1];a=c([0,ae(kv,ac)(e,i,str$0),a],r)}else{a=[0,q(kw,T)(x,p,"c clears them"),0];a=[0,q(kx,bJ)(x,num_400,"Nothing passes the filters"),a]}}i=c(a,f);e=b[5];f=ct(b);a:{if(!e&&f){f=f[1][3];break a}f=0}e=caml_equal(f,kf);function
 G(b,a,g){var
-e=a[2],a=a[1],f=b?[0,d(a-2.,e-num_17,k(ad,70.,3.)),0]:0,a=a-num_40,b=b?ad:T;return c([0,q(kf,b)(a,e,g),0],f)}var
-f=caml_equal(f,ke),a=b[5];if(a){a=a[1];j=cw(j)%1.<num_0_5?str$9:str$16;j=aJ(num_18,250.,str$7+a+j);j=q(kg,ad)(-340.,num_452,j)}else
-j=q(kj,T)(-330.,num_452,"/ to search   click TINYBOX: its own code");f=c(G(f,gl,"APPS"),[0,j,0]);f=c(G(e,gk,"GAMES"),f);e=[0,q(kh,ac)(-773.,num_452,"BOX"),0];f=c(c([0,q(ki,bJ)(w,num_452,"TINY"),e],f),i);j=aW(b);j=j?gu(m,j[1]):0;if(j)var
-E=function(e,c,b,a){return d(b,a,k(gr,e,c))},i=j[1],j=[0,E(v[5]-p,aX,(v[5]+num_160+num_200)/2.,aY),0],j=[0,E(num_40$0-v[4],aX,(v[4]+num_160-num_200)/2.,aY),j],j=[0,E(v[1],num_30-v[6],0.,(v[6]+num_230-num_200)/2.),j],j=[0,E(v[1],v[3]-430.,0.,(v[3]+num_230+num_200)/2.),j],j=[0,d(bF,aY,ab(num_0_4,ba(i))),j],j=[0,d(bF,aY,k(dh,aX,aX)),j];else
-j=0;f=c(j,f);return c([0,k(gr,v[1],v[2]),0],f)}for(;;){if(!b)break;R=b[2];C=O(b[1][4],C);b=R}function
-k3(c){var
+e=a[2],a=a[1],f=b?[0,d(a-2.,e-num_17,k(ad,70.,3.)),0]:0,a=a-num_40,b=b?ad:T;return c([0,q(kh,b)(a,e,g),0],f)}var
+f=caml_equal(f,kg),a=b[5];if(a){a=a[1];j=cw(j)%1.<num_0_5?str$9:str$16;j=aJ(num_18,250.,str$7+a+j);j=q(ki,ad)(-340.,num_452,j)}else
+j=q(kl,T)(-330.,num_452,"/ to search   click TINYBOX: its own code");f=c(G(f,gn,"APPS"),[0,j,0]);f=c(G(e,gm,"GAMES"),f);e=[0,q(kj,ac)(-773.,num_452,"BOX"),0];f=c(c([0,q(kk,bJ)(x,num_452,"TINY"),e],f),i);j=aW(b);j=j?gw(m,j[1]):0;if(j)var
+D=function(e,c,b,a){return d(b,a,k(gt,e,c))},i=j[1],j=[0,D(w[5]-p,aX,(w[5]+num_160+num_200)/2.,aY),0],j=[0,D(num_40$0-w[4],aX,(w[4]+num_160-num_200)/2.,aY),j],j=[0,D(w[1],num_30-w[6],0.,(w[6]+num_230-num_200)/2.),j],j=[0,D(w[1],w[3]-430.,0.,(w[3]+num_230+num_200)/2.),j],j=[0,d(bF,aY,ab(num_0_4,ba(i))),j],j=[0,d(bF,aY,k(dh,aX,aX)),j];else
+j=0;f=c(j,f);return c([0,k(gt,w[1],w[2]),0],f)}for(;;){if(!b)break;R=b[2];E=O(b[1][4],E);b=R}function
+k5(c){var
 e=new
-G.Uint8Array(c),f=e.length,h=G.String.fromCharCode,num_32768=32768,c=aN(bS(((f+num_32768|0)-1|0)/num_32768|0,function(a){return h.apply(dp,e.subarray(a*num_32768|0,u(f,(a+1|0)*num_32768|0)))})),b=c.length-1,d=new
-G.Array(b),b=b-1|0;function
+C.Uint8Array(c),f=e.length,h=C.String.fromCharCode,num_32768=32768,c=aN(bS(((f+num_32768|0)-1|0)/num_32768|0,function(a){return h.apply(dp,e.subarray(a*num_32768|0,u(f,(a+1|0)*num_32768|0)))})),b=c.length-1,d=new
+C.Array(b),b=b-1|0;function
 i(a){return a}if(b>=0){var
 a=0;for(;;){d[a]=i(caml_check_bound(c,a)[a+1]);var
 g=a+1|0;if(b===a)break;a=g}}return caml_string_of_jsbytes(d.join(str))}var
-k6=[0,[2,0,[11,"/pngs/",[2,0,[11,".png",0]]]],"%s/pngs/%s.png"],k5=[0,[11,"not found (",[4,0,0,0,[12,41,0]]],"not found (%d)"],k4=[0,0],cA=[0,0],gz=[0,p(function(a){return a[1]},o(C)),function(a,b){a=a[1];var
-c=gy(0);return[0,[0,0.,0.,0.,1.,1.,[5,b,b,caml_call2(g(k6),c,a)]]]},function(a){G.history.replaceState(dp,str,caml_js_from_string("?chosen="+a[1]));var
-b=str$7+a[1]+".html",a=caml_js_from_string(dd(a[2])+b);G.location.href=a;return str},function(a){return 0},function(a){return 0},function(c){c=cA[1];if(c)return c[1];cA[1]=k4;var
+k8=[0,[2,0,[11,"/pngs/",[2,0,[11,".png",0]]]],"%s/pngs/%s.png"],k7=[0,[11,"not found (",[4,0,0,0,[12,41,0]]],"not found (%d)"],k6=[0,0],cA=[0,0],gB=[0,p(function(a){return a[1]},o(E)),function(a,b){a=a[1];var
+c=gA(0);return[0,[0,0.,0.,0.,1.,1.,[5,b,b,caml_call2(g(k8),c,a)]]]},function(a){C.history.replaceState(dp,str,caml_js_from_string("?chosen="+a[1]));var
+b=str$7+a[1]+".html",a=caml_js_from_string(dd(a[2])+b);C.location.href=a;return str},function(a){return 0},function(a){return 0},function(c){c=cA[1];if(c)return c[1];cA[1]=k6;var
 a=new
-G.XMLHttpRequest;a.open(str_GET,caml_js_from_string(gy(0)+"/js/launcher/tinybox_sources.txt"));a.responseType=str_arraybuffer;function
+C.XMLHttpRequest;a.open(str_GET,caml_js_from_string(gA(0)+"/js/launcher/tinybox_sources.txt"));a.responseType=str_arraybuffer;function
 b(a){cA[1]=[0,[1,a]];return 0}a.onload=caml_js_wrap_callback_strict(1,function(c){c=a.status;if(num_200$0<=c&&300>c){try{var
-d=k3(a.response),c=0,h=0;for(;;){if(caml_ml_string_length(d)<=c){d=o(h);break}var
-e=cN(d,c,10),i=cN(d,e+1|0,10),j=f(d,c,e-c|0),e=caml_int_of_string(f(d,e+1|0,(i-e|0)-1|0));c=(i+1|0)+e|0;h=[0,[0,j,f(d,i+1|0,e)],h]}}catch(a){return b("not read")}cA[1]=[0,[0,d]];return 0}return b(caml_call1(g(k5),c))});a.onerror=caml_js_wrap_callback_strict(1,function(a){return b("no answer")});a.send();return 0},0],fj=[0,1,1],h0=[5,1],hZ=[5,0],hY=[6,1],hX=[6,0],hV=[0,0.,0.,0,0,0,0.,0.,0.,0],h9=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],h_=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],h3=[0,[4,0]],h4=[0,[4,1]],h5=[0,0],eX=[0,0],C=0,hR=[0,0,0,0,0,0,0,0,0,0,0,0,0,C,str],hT=[0,1.],au=[0,0,dQ,0,0,0,C,0,str,0,0];(function(m){gx[1]=cI("assets",fr(0));if(eX[1])return bP("Cap.main() already called");eX[1]=1;var
-k=fr(0);function
+d=k5(a.response),c=0,h=0;for(;;){if(caml_ml_string_length(d)<=c){d=o(h);break}var
+e=cN(d,c,10),i=cN(d,e+1|0,10),j=f(d,c,e-c|0),e=caml_int_of_string(f(d,e+1|0,(i-e|0)-1|0));c=(i+1|0)+e|0;h=[0,[0,j,f(d,i+1|0,e)],h]}}catch(a){return b("not read")}cA[1]=[0,[0,d]];return 0}return b(caml_call1(g(k7),c))});a.onerror=caml_js_wrap_callback_strict(1,function(a){return b("no answer")});a.send();return 0},0],fl=[0,1,1],dy=[0,[0,str_Control,"ctrlKey"],[0,[0,str_Alt,"altKey"],[0,[0,str_Shift,"shiftKey"],[0,[0,"Meta","metaKey"],0]]]],h2=[5,1],h1=[5,0],h0=[6,1],hZ=[6,0],hX=[0,0.,0.,0,0,0,0.,0.,0.,0],h$=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],ia=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],h5=[0,[4,0]],h6=[0,[4,1]],h7=[0,0],eZ=[0,0],E=0,hT=[0,0,0,0,0,0,0,0,0,0,0,0,0,E,str],hV=[0,1.],au=[0,0,dR,0,0,0,E,0,str,0,0];(function(m){gz[1]=cI("assets",ft(0));if(eZ[1])return bP("Cap.main() already called");eZ[1]=1;var
+k=ft(0);function
 i(a){a=cI(a,k);if(!a)return 0;a=aM(a[1]);var
 b=ak;for(;;){if(!b)return 0;var
 d=b[1],b=b[2],c=aM(d[1])===a,c=c||aM(d[1])==="tiny"+a;if(c)return[0,d]}}var
 m="code",e=i(m),a=i("chosen");a:{if(e)a=e[1];else{if(!a){var
-l=au;break a}a=a[1]}e=bC(0,dQ);b:{var
+l=au;break a}a=a[1]}e=bC(0,dR);b:{var
 b=0;c:for(;;){if(e.length-1<=b){a=au;break b}var
 d=0,h=caml_check_bound(e,b)[b+1][4];for(;;){if(h){var
 n=h[2];if(h[1][1]!==a[1]){d=d+1|0;h=n;continue}d=[0,d]}else
 d=0;if(d)break c;b=b+1|0;break}}a=[0,au[1],au[2],b,d[1],au[5],au[6],au[7],au[8],au[9]]}b=0!==i(m)?1:0;l=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],b]}function
-o(a,b){return j$(gz,a,b)}function
-j(a){return d6([0,[0,[12,function(b,a){return[1,b,a]}],0],[0,[0,[0,function(a){return[0,a]}],0],[0,[0,[1,function(a){return[3,a]}],0],[0,[0,[2,function(a){return[4,a]}],0],[0,[0,[3,function(a){return h0}],0],[0,[0,[4,function(a){return hZ}],0],[0,[0,[5,function(a){return hY}],0],[0,[0,[6,function(a){return hX}],0],[0,[0,[7,function(a){return[2,1,a]}],0],[0,[0,[8,function(a){return[2,0,a]}],0],[0,[0,[9,function(a){return[7,a]}],0],[0,[0,[10,function(a){return[8,a]}],0],[0,[0,[11,function(a){return 1}],0],0]]]]]]]]]]]]])}a$.onload=caml_js_wrap_callback_strict(1,function(a){var
-h=du(1778.,num_1000$0),d=[0,[0,l,[0,hV,hR,hU,hT,k]]],r=0;function
-e(a){d[1]=hW(o,a,d[1]);return s(r)}var
-i=[0,0];function
-s(a){a=e1(a);for(;;){if(!a)return 0;var
+o(a,b){return kb(gB,a,b)}function
+j(a){return d7([0,[0,[12,function(b,a){return[1,b,a]}],0],[0,[0,[0,function(a){return[0,a]}],0],[0,[0,[1,function(a){return[3,a]}],0],[0,[0,[2,function(a){return[4,a]}],0],[0,[0,[3,function(a){return h2}],0],[0,[0,[4,function(a){return h1}],0],[0,[0,[5,function(a){return h0}],0],[0,[0,[6,function(a){return hZ}],0],[0,[0,[7,function(a){return[2,1,a]}],0],[0,[0,[8,function(a){return[2,0,a]}],0],[0,[0,[9,function(a){return[7,a]}],0],[0,[0,[10,function(a){return[8,a]}],0],[0,[0,[11,function(a){return 1}],0],0]]]]]]]]]]]]])}a$.onload=caml_js_wrap_callback_strict(1,function(b){var
+m=du(1778.,num_1000$0),e=[0,[0,l,[0,hX,hT,hW,hV,k]]],s=0;function
+h(a){e[1]=hY(o,a,e[1]);return u(s)}var
+n=[0,0];function
+u(a){a=e3(a);for(;;){if(!a)return 0;var
 b=a[2],a=a[1];if(typeof
 a==="number")a=b;else
 switch(a[0]){case
 3:a=b;break;case
-0:i[1]=c(i[1],[0,a[1],0]);a=b;break;case
+0:n[1]=c(n[1],[0,a[1],0]);a=b;break;case
 1:let
-f=a[3];fu(0,a[2],function(a){return e(caml_call1(f,a))});a=b;break;default:let
-d=a[4];fu([0,a[3]],a[2],function(a){return e(caml_call1(d,a))});a=b}}}s(r);a=eY([8,[0,1778,num_1000]],j(d[1]));if(a)e(a[1]);function
-m(a){a=eY(a,j(d[1]));if(a)return e(a[1])}var
-u=[0,0],b=[0,0.],v=[0,0],q=[0,0],n=[0,0];function
-w(a){a/=num_1000$0;var
-j=v[1];if(j){j=j[1];q[1]++;if(num_120===q[1]){j=q[1]/(a-j);fk(caml_call1(g(h9),j))}}else
-v[1]=[0,a];j=u[1];var
-k=.016666666666666666,f=k;b[1]=j?b[1]+(a-j[1]):f;u[1]=[0,a];if(num_0_25<b[1])b[1]=f;f=G.Date.now()/num_1000$0;a=i[1];i[1]=0;for(;;){if(!a)break;var
-l=a[2];e(a[1]);a=l}a=0;for(;;){if(!(.014666666666666666<=b[1]))break;m([0,f]);b[1]=b[1]-k;a=a+1|0}h6(a);a=d[1];a=k0(gz,a[2],a[1]);k=t(h[1]);f=t(h[2]);j=t(h[4]);var
-o=t(h[6]),a=p(fp,a),r=fj[2]?0:[0,[1,"image-rendering","pixelated"],0],l=fj[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",a=[0,"svg",c([0,[0,"viewBox",j+str$16+o+str$16+k+str$16+f],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,dv,str_100],[0,[0,dw,str_100],0]]]]]],c(l,r)),a],k=fb.body,f=n[1];if(f){f=f[1];n[1]=[0,[0,a,fl(k,f[2],f[1],a)]]}else{f=k.firstChild;for(;;){if(caml_equal(f,dp)){f=cc(a);dr(k,f);n[1]=[0,[0,a,f]];break}e$(k,f);f=k.firstChild}}return fa(a$,w)}fa(a$,w);a=h_;function
-x(b){var
-c=caml_obj_tag(aG),c=num_250===c?aG[1]:num_246===c?X(aG):aG;if(c){c=c[1];if(fs(c)==="suspended")c.resume()}c=n[1];c=c?[0,c[1][2]]:0;var
-a=dq(b);a:if(a!==str_dblclick)if(a!==str_keydown)if(a!==str_keyup){if(a!==str_mousedown){if(a===str_mousemove){if(c){a=c[1];c=b.clientY;var
-e=b.clientX,d=a.createSVGPoint();d.x=e;d.y=c;a=d.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;d=b.deltaMode|0;a=0===d?a/num_100$0:1===d?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=h3;break a}}else if(2===b.button){a=h4;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
-a=[0,[5,[0,0,fq(ca(b))]]];else
-a=[0,[5,[0,1,fq(ca(b))]]];else
-a=h5;if(a)m(a[1]);if(dq(b)===str_mousemove)m([2,[0,b.movementX,-b.movementY]]);if(dq(b)===str_keydown){b=ca(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)m([6,b[1]])}return 0}for(;;){if(!a)break;var
-y=a[2];ds(a$,a[1],x,1);a=y}ds(a$,28,e_,1);return ds(a$,76,function(c){var
-b=ca(c),a=b===str_Tab?1:0;if(a);else{a=2<=caml_ml_string_length(b)?1:0;if(a){a=70===caml_string_get(b,0)?1:0;if(a){a=d1(f(b,1,caml_ml_string_length(b)-1|0));if(a){a=a[1];b=1<=a?1:0;a=b?a<=10?1:0:b}else
-a=0}}}return a?e_(c):a},1)})}(0));cF(0);return}(globalThis));
+e=a[3];fw(0,a[2],function(a){return h(caml_call1(e,a))});a=b;break;default:let
+d=a[4];fw([0,a[3]],a[2],function(a){return h(caml_call1(d,a))});a=b}}}u(s);b=e0([8,[0,1778,num_1000]],j(e[1]));if(b)h(b[1]);function
+i(a){a=e0(a,j(e[1]));return a?h(a[1]):0}var
+w=[0,0],d=[0,0.],x=[0,0],r=[0,0],q=[0,0];function
+y(b){b/=num_1000$0;var
+j=x[1];if(j){j=j[1];r[1]++;if(num_120===r[1]){j=r[1]/(b-j);fm(caml_call1(g(h$),j))}}else
+x[1]=[0,b];j=w[1];var
+f=.016666666666666666,a=f;d[1]=j?d[1]+(b-j[1]):a;w[1]=[0,b];if(num_0_25<d[1])d[1]=a;a=C.Date.now()/num_1000$0;b=n[1];n[1]=0;d9(h,b);b=0;for(;;){if(!(.014666666666666666<=d[1]))break;i([0,a]);d[1]=d[1]-f;b=b+1|0}h8(b);f=e[1];f=k2(gB,f[2],f[1]);a=t(m[1]);b=t(m[2]);j=t(m[4]);var
+k=t(m[6]),f=p(fr,f),l=fl[2]?0:[0,[1,"image-rendering","pixelated"],0],o=fl[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",b=[0,"svg",c([0,[0,"viewBox",j+str$16+k+str$16+a+str$16+b],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,dv,str_100],[0,[0,dw,str_100],0]]]]]],c(o,l)),f],f=fd.body,a=q[1];if(a){a=a[1];q[1]=[0,[0,b,fn(f,a[2],a[1],b)]]}else{a=f.firstChild;for(;;){if(caml_equal(a,dp)){a=cc(b);dr(f,a);q[1]=[0,[0,b,a]];break}fb(f,a);a=f.firstChild}}return fc(a$,y)}fc(a$,y);var
+a=[0,0];function
+z(c){var
+b=v(c,a[1]);if(!b)return b;b=a[1];a[1]=A(function(a){return a!==c?1:0})(b);return i([5,[0,0,c]])}C.addEventListener(str_blur,caml_js_wrap_callback_strict(1,function(b){return d9(z,a[1])}));b=ia;function
+B(d){var
+b=caml_obj_tag(aG),b=num_250===b?aG[1]:num_246===b?X(aG):aG;if(b){b=b[1];b=fu(b)==="suspended"?(b.resume(),dy):dy}else
+b=dy;for(;;){if(!b)break;var
+c=b[2],b=b[1],e=b[1],b=b[2],f=v(e,a[1]),b=f?1-(d[b]|0):f;if(b){z(e);b=c}else
+b=c}b=q[1];b=b?[0,b[1][2]]:0;c=dq(d);a:if(c!==str_dblclick)if(c!==str_keydown)if(c!==str_keyup){if(c!==str_mousedown){if(c===str_mousemove){if(b){c=b[1];b=d.clientY;f=d.clientX;e=c.createSVGPoint();e.x=f;e.y=b;c=e.matrixTransform(c.getScreenCTM().inverse());c=[0,[1,[0,c.x|0,-c.y|0]]];break a}c=0;break a}if(c!==str_mouseup){if(c!==str_wheel){c=0;break a}c=d.deltaY;b=d.deltaMode|0;c=0===b?c/num_100$0:1===b?c/3.:c;c=[0,[7,-c]];break a}if(2===d.button){c=h5;break a}}else if(2===d.button){c=h6;break a}c=[0,[3,0!==(d.buttons&1)?1:0]]}else
+c=[0,[5,[0,0,fs(ca(d))]]];else
+c=[0,[5,[0,1,fs(ca(d))]]];else
+c=h7;if(c){b=c[1];if(typeof
+b!=="number"&&5===b[0]){c=b[1];if(c[1]){c=c[2];if(1-v(c,a[1]))a[1]=[0,c,a[1]]}else{var
+g=c[2],c=a[1];a[1]=A(function(a){return a!==g?1:0})(c)}}i(b)}if(dq(d)===str_mousemove)i([2,[0,d.movementX,-d.movementY]]);if(dq(d)===str_keydown){b=ca(d);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)i([6,b[1]])}return 0}for(;;){if(!b)break;var
+D=b[2];ds(a$,b[1],B,1);b=D}ds(a$,28,fa,1);return ds(a$,76,function(d){var
+b=ca(d),a=b===str_Tab?1:0;if(a);else{a=2<=caml_ml_string_length(b)?1:0;if(a){a=70===caml_string_get(b,0)?1:0;if(a){a=d2(f(b,1,caml_ml_string_length(b)-1|0));if(a){a=a[1];var
+c=1<=a?1:0,a=c?a<=10?1:0:c}else
+a=0}}}if(a);else{a=d.ctrlKey|0;if(a){a=1===caml_ml_string_length(b)?1:0;if(a){a=48<=caml_string_get(b,0)?1:0;a=a?caml_string_get(b,0)<=57?1:0:a}}}return a?fa(d):a},1)})}(0));cF(0);return}(globalThis));

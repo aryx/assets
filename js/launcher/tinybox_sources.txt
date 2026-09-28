@@ -38170,7 +38170,7 @@ let view (computer : computer) (s : model) : shape list =
 let app = game view update initial_model
 let main = Program.main __MODULE__ (fun () -> Playground_platform.run_app app)
 games/puzzle/AiGo.ml
-17693
+17685
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -38404,7 +38404,7 @@ let own_eye (p : position) (i : int) : bool = p.board.(i) = Empty && all_around 
  * playout asks for it at every step of every one of a thousand games.
  * A first version did it the plain way and took 15 seconds a move
  * where this takes a fifth of one. *)
-let playout (st : Random.State.t) (_ : (position, move) Minimax.game) (p : position) : position =
+let playout (st : Lehmer.state) (_ : (position, move) Minimax.game) (p : position) : position =
   let rec go p steps =
     if over p || steps > 300 then p
     else begin
@@ -38416,7 +38416,7 @@ let playout (st : Random.State.t) (_ : (position, move) Minimax.game) (p : posit
       let rec try_from k =
         if k >= n then go (play p Pass) (steps +.. 1)
         else begin
-          let j = k +.. Random.State.int st (n -.. k) in
+          let j = k +.. Lehmer.int st (n -.. k) in
           let i = candidates.(j) in
           candidates.(j) <- candidates.(k);
           match put p i with Some p' -> go p' (steps +.. 1) | None -> try_from (k +.. 1)
@@ -43596,7 +43596,7 @@ let main = Program.main __MODULE__ (fun () ->
   print_string help;
   Playground_platform.run_app app)
 games/puzzle/TinyPuzzleBobble.ml
-15659
+15773
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -43666,7 +43666,9 @@ type cell = int * int (* row, column *)
 (* a bubble on the move: the shot, or a popped or falling one *)
 type flying = { x : number; y : number; vx : number; vy : number; color : int }
 
-type effect = { b : flying; age : int; falls : bool }
+(* claude: a bubble leaving the board, popped or falling (leaving, not
+ * effect: a keyword since OCaml 5.3) *)
+type leaving = { b : flying; age : int; falls : bool }
 
 type game = {
   board : (cell * int) list; (* the bubbles hanging, and their color *)
@@ -43674,7 +43676,7 @@ type game = {
   shot : flying option;
   current : int; (* the colors of the bubble in the launcher, and the next *)
   next : int;
-  effects : effect list;
+  effects : leaving list;
   shots : int; (* since the ceiling last came down *)
   drop : int; (* rows the ceiling came down *)
   round : int;
@@ -74297,7 +74299,7 @@ let project () =
 
 let main = Program.main __MODULE__ (fun () -> Playground_platform.run_app ~flags:(Playground_platform.flags ()) (Ide.app config (project ()) ~current:"Turtle"))
 apps/devtools/TinyTurboPascal.ml
-2991
+3263
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -74314,6 +74316,10 @@ apps/devtools/TinyTurboPascal.ml
  *   type; F9 compiles, Ctrl-F9 runs (a key comes back from the program's
  *   screen), Alt-F5 shows that screen again; F10 or Alt and a letter
  *   for the menus (Compile / P-code: the code of the cursor's line);
+ *   no F keys (a laptop's top row the volume's, a browser keeping
+ *   them)? Esc then 1 to 0 are F1 to F10, Midnight Commander's way (or
+ *   Alt and the digit, but for a Mac's Option, which types a letter),
+ *   and Ctrl and the digit Ctrl and the F key (Ctrl+9 runs);
  *   F2 saves, F3 opens, Alt-X quits; the editor's keys are WordStar's
  *   too (Ctrl-E X S D, Ctrl-Y); the debugger: F7 trace into, F8 step
  *   over, F4 go to the cursor, Ctrl-F8 a breakpoint, Ctrl-F7 a watch,
@@ -79737,7 +79743,7 @@ apps/internet/Site.mli
  * as Hacker News writes it), and picture.gif, .png, .jpg *)
 val about : string -> (string * string) option
 apps/internet/TinyChrome.ml
-32782
+32785
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -80094,8 +80100,8 @@ let edit_omnibox (network : < Cap.network ; .. >) (key : string) (m : model) : m
   | "backspace" -> ({ m with omnibox = (if m.fresh then "" else backspace m.omnibox); fresh = false }, Cmd.none)
   | _ -> (m, Cmd.none)
 
-let form (network : < Cap.network ; .. >) ~(keep_focus : bool) (effect : Browser_forms.effect) (m : model) : model * msg Cmd.t =
-  on_current m (fun cfg tab -> Browser_tab.form_effect cfg network ~keep_focus effect tab)
+let form (network : < Cap.network ; .. >) ~(keep_focus : bool) (outcome : Browser_forms.outcome) (m : model) : model * msg Cmd.t =
+  on_current m (fun cfg tab -> Browser_tab.form_effect cfg network ~keep_focus outcome tab)
 
 (* a task of the page's scripts done by [f], then the page laid out
  * again if its tree changed (Browser_tab.after_task) *)
@@ -81565,7 +81571,7 @@ let view (_ : computer) (m : model) : shape list =
 let app (caps : caps) = game view (update caps) initial
 let main = Program.main __MODULE__ (fun () -> Cap.main (fun caps -> Playground_platform.run_app ~flags:(Playground_platform.flags ()) (app (caps :> caps))))
 apps/internet/TinyFirefox.ml
-24657
+24660
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -81834,8 +81840,8 @@ let edit_command (network : < Cap.network ; .. >) (key : string) (m : model) : m
   | "backspace" -> ({ m with command = backspace m.command }, Cmd.none)
   | _ -> (m, Cmd.none)
 
-let form (network : < Cap.network ; .. >) ~(keep_focus : bool) (effect : Browser_forms.effect) (m : model) : model * msg Cmd.t =
-  with_tab m (Browser_tab.form_effect (config m) network ~keep_focus effect m.tab)
+let form (network : < Cap.network ; .. >) ~(keep_focus : bool) (outcome : Browser_forms.outcome) (m : model) : model * msg Cmd.t =
+  with_tab m (Browser_tab.form_effect (config m) network ~keep_focus outcome m.tab)
 
 (* a click on the page: the scripts first (the element under the
  * pointer, bubbling); then, unless one prevented it, what the browser
@@ -82302,7 +82308,7 @@ let app (network : < Cap.network ; .. >) =
 
 let main = Program.main __MODULE__ (fun () -> Cap.main (fun caps -> Playground_platform.run_app ~flags:(Playground_platform.flags ()) (app caps)))
 apps/internet/TinyMosaic.ml
-32514
+32517
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -82673,9 +82679,9 @@ let visit ?post (network : < Cap.network ; .. >) (url : string) (m : model) : mo
   | _ -> load ?post network target m
 
 (* what a click or a key did to a form (Browser_forms), done *)
-let form_effect (network : < Cap.network ; .. >) ~(keep_focus : bool) (effect : Browser_forms.effect) (m : model) :
+let form_effect (network : < Cap.network ; .. >) ~(keep_focus : bool) (outcome : Browser_forms.outcome) (m : model) :
     model * msg Cmd.t =
-  match effect with
+  match outcome with
   | Nothing -> (m, Cmd.none)
   | Focus e -> ({ m with focus = Some e }, Cmd.none)
   | Unfocus -> ({ m with focus = None }, Cmd.none)
@@ -82999,7 +83005,7 @@ let app (network : < Cap.network ; .. >) =
 
 let main = Program.main __MODULE__ (fun () -> Cap.main (fun caps -> Playground_platform.run_app ~flags:(Playground_platform.flags ()) (app caps)))
 apps/internet/TinyNetscape.ml
-22506
+22509
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -83231,8 +83237,8 @@ let edit_location (network : < Cap.network ; .. >) (key : string) (m : model) : 
 (* the Location field clicked: what is there selected, to be typed over *)
 let start_editing (m : model) : model = { m with editing = true; fresh = true; location = current_url m }
 
-let form (network : < Cap.network ; .. >) ~(keep_focus : bool) (effect : Browser_forms.effect) (m : model) : model * msg Cmd.t =
-  with_tab m (Browser_tab.form_effect (config m) network ~keep_focus effect m.tab)
+let form (network : < Cap.network ; .. >) ~(keep_focus : bool) (outcome : Browser_forms.outcome) (m : model) : model * msg Cmd.t =
+  with_tab m (Browser_tab.form_effect (config m) network ~keep_focus outcome m.tab)
 
 let update (network : < Cap.network ; .. >) (msg : msg) (m : model) : model * msg Cmd.t =
   let cfg = config m in
@@ -84387,7 +84393,7 @@ val playlist : (string * string Lazy.t) list
  * FLC and AVI items hold, for the tests to compare with *)
 val clip : Rgba_image.t list Lazy.t
 apps/media/TinyMediaPlayer.ml
-26063
+26055
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -84736,7 +84742,7 @@ let tracker (song : Mod.song) : shape list =
       let pattern = song.patterns.(song.positions.(min position (Array.length song.positions -.. 1))) in
       let cell (c : Mod.cell) =
         Printf.sprintf "%s %s %s" (if c.period = 0 then "---" else Mod.note_name c.period) (if c.instrument = 0 then ".." else Printf.sprintf "%02d" c.instrument)
-          (if c.effect = 0 && c.param = 0 then "..." else Printf.sprintf "%X%02X" c.effect c.param)
+          (if c.fx = 0 && c.param = 0 then "..." else Printf.sprintf "%X%02X" c.fx c.param)
       in
       (rectangle (rgb 70 40 40) vw 34. |> move vx vy)
       :: List.concat
@@ -86689,7 +86695,7 @@ val all : Op1_engine.t list
 val tables : string list
 val registrations : (string * string) list
 apps/music/Our_songs.ml
-2946
+2942
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -86707,7 +86713,7 @@ let instrument name (a : float array) ~loop : Mod.instrument =
   { name; finetune = 0; volume = 64; loop_start = 0; loop_length = (if loop then String.length data else 0); data }
 
 let cell ?(i = 1) ?(e = 0) ?(x = 0) (n : string) : Mod.cell =
-  { instrument = i; period = Option.value (Mod.period_of_name n) ~default:0; effect = e; param = x }
+  { instrument = i; period = Option.value (Mod.period_of_name n) ~default:0; fx = e; param = x }
 
 let soundtracker_song : Mod.song =
   let pi2 = 2. *. Float.pi in
@@ -86847,7 +86853,7 @@ val to_string : 'p knob list -> 'p -> string
  * control: ...", "...: not a value: ...", "not \"name = value\": ..." *)
 val of_string : 'p knob list -> initial:'p -> string -> ('p, string) result
 apps/music/Studio_op1.ml
-12227
+12179
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -86882,7 +86888,7 @@ type sound = {
   engine_params : float array;
   envelope : float array;
   play_mode : int;
-  effect : int;
+  fx : int;
   effect_params : float array;
   effect_on : bool;
   lfo : int;
@@ -86894,30 +86900,30 @@ type sound = {
 type patch = { sounds : sound array; current : int; levels : float array; volume : float }
 
 (* ours: eight sounds, one or two per engine, as the OP-1 comes with *)
-let sound ?(effect = 0) ?(effect_on = false) ?(effect_params = [| 0.5; 0.5; 0.4; 0.3 |]) ?(lfo = 0) ?(lfo_on = false)
+let sound ?(fx = 0) ?(effect_on = false) ?(effect_params = [| 0.5; 0.5; 0.4; 0.3 |]) ?(lfo = 0) ?(lfo_on = false)
     ?(lfo_params = [| 0.4; 0.2; 0.3; 0.5 |]) ?(octave = 0) ?(play_mode = 0) engine engine_params envelope : sound =
-  { engine; engine_params; envelope; play_mode; effect; effect_params; effect_on; lfo; lfo_params; lfo_on; octave }
+  { engine; engine_params; envelope; play_mode; fx; effect_params; effect_on; lfo; lfo_params; lfo_on; octave }
 
 let initial : patch =
   {
     sounds =
       [|
         (* FM, two pairs, a bell *)
-        sound 0 [| 0.5; 0.25; 0.4; 0.3 |] [| 0.; 0.45; 0.; 0.55 |] ~effect:1 ~effect_on:true;
+        sound 0 [| 0.5; 0.25; 0.4; 0.3 |] [| 0.; 0.45; 0.; 0.55 |] ~fx:1 ~effect_on:true;
         (* the cluster, a pad *)
-        sound 1 [| 1.; 0.5; 0.5; 0.4 |] [| 0.55; 0.4; 0.8; 0.6 |] ~effect:1 ~effect_on:true ~lfo_on:true;
+        sound 1 [| 1.; 0.5; 0.5; 0.4 |] [| 0.55; 0.4; 0.8; 0.6 |] ~fx:1 ~effect_on:true ~lfo_on:true;
         (* the string, plucked *)
         sound 2 [| 0.7; 0.3; 0.3; 0.2 |] [| 0.; 0.5; 0.6; 0.4 |];
         (* pulse, a lead, mono *)
-        sound 3 [| 0.6; 0.4; 0.3; 0.5 |] [| 0.05; 0.4; 0.7; 0.3 |] ~play_mode:1 ~effect:0 ~effect_on:true;
+        sound 3 [| 0.6; 0.4; 0.3; 0.5 |] [| 0.05; 0.4; 0.7; 0.3 |] ~play_mode:1 ~fx:0 ~effect_on:true;
         (* phase, a bass an octave down *)
-        sound 4 [| 0.; 0.7; 0.3; 0.2 |] [| 0.; 0.35; 0.5; 0.25 |] ~octave:(-1) ~effect:2 ~effect_on:true;
+        sound 4 [| 0.; 0.7; 0.3; 0.2 |] [| 0.; 0.35; 0.5; 0.25 |] ~octave:(-1) ~fx:2 ~effect_on:true;
         (* digital, crunchy *)
         sound 5 [| 0.4; 0.5; 0.3; 0.6 |] [| 0.; 0.4; 0.5; 0.3 |];
         (* FM, the stack, bright *)
-        sound 0 [| 0.4; 0.5; 0.; 0.2 |] [| 0.02; 0.5; 0.6; 0.4 |] ~effect:3 ~effect_on:true;
+        sound 0 [| 0.4; 0.5; 0.; 0.2 |] [| 0.02; 0.5; 0.6; 0.4 |] ~fx:3 ~effect_on:true;
         (* the cluster, a supersaw lead through the delay *)
-        sound 1 [| 0.85; 0.; 0.7; 0.6 |] [| 0.02; 0.4; 0.7; 0.4 |] ~effect:0 ~effect_on:true ~octave:1;
+        sound 1 [| 0.85; 0.; 0.7; 0.6 |] [| 0.02; 0.4; 0.7; 0.4 |] ~fx:0 ~effect_on:true ~octave:1;
       |];
     current = 0;
     levels = [| 0.8; 0.8; 0.8; 0.8 |];
@@ -87041,13 +87047,13 @@ let modulated (s : sound) (lfo : float) : sound =
   end
 
 (* the effect on the live sound, both sides *)
-let effect (t : t) (s : sound) (out : Signal.stereo) : unit =
+let fx (t : t) (s : sound) (out : Signal.stereo) : unit =
   let p = s.effect_params and n = Array.length out.left in
   let lowpass (a : int) cutoff q =
     Svf.process t.filters.(a) Zero_delay Low_pass ~cutoff:(Array.make n cutoff) ~q out.left;
     Svf.process t.filters.(a + 1) Zero_delay Low_pass ~cutoff:(Array.make n cutoff) ~q out.right
   in
-  match s.effect with
+  match s.fx with
   | 0 -> Delay.process t.delay { time = 0.05 +. (0.95 *. p.(0)); feedback = 0.9 *. p.(2); tone = 500. *. Float.pow 40. p.(1); ping_pong = false; mix = p.(3) } out
   | 1 ->
       Reverb.process t.spring { kind = Freeverb; seconds = 0.3 +. (4. *. p.(1)); damping = p.(2); mix = p.(3) } out;
@@ -87111,7 +87117,7 @@ let fill (t : t) (out : Signal.stereo) : unit =
       t.live.left.(i) <- gain *. x;
       t.live.right.(i) <- gain *. x)
     t.mono;
-  if s.effect_on then effect t s t.live;
+  if s.effect_on then fx t s t.live;
   (* the tape: the live sound recorded on the armed track, the tracks
    * played back beside it *)
   let mono_live = Array.map2 (fun l r -> 0.5 *. (l +. r)) t.live.left t.live.right in
@@ -87141,7 +87147,7 @@ let instrument (t : t) : Instrument.t =
     fill = fill t;
   }
 apps/music/Studio_op1.mli
-4996
+5057
 (* The OP-1: a synthesizer made of four modules, eight sounds, and a
  * four-track tape (see notes_synth.md; plan_synth_teaching.md, TinyOp1,
  * O3).
@@ -87207,7 +87213,7 @@ type sound = {
   engine_params : float array; (* its four encoders, 0 to 1 *)
   envelope : float array; (* attack, decay, sustain, release, 0 to 1 *)
   play_mode : int;
-  effect : int; (* an index in [effects] *)
+  fx : int; (* the effect, an index in [effects] (claude: fx, effect being a keyword since OCaml 5.3) *)
   effect_params : float array;
   effect_on : bool;
   lfo : int; (* an index in [lfos] *)
@@ -90206,7 +90212,7 @@ let view (computer : computer) (m : model) : shape list =
 let app = game view update initial_model
 let main = Program.main __MODULE__ (fun () -> Playground_platform.run_app app)
 apps/music/TinyOp1.ml
-22573
+22557
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -90319,7 +90325,7 @@ let page_names (s : Studio_op1.sound) (page : int) : string array =
   match page with
   | 0 -> (List.nth Op1_engine.all s.engine).encoders
   | 1 -> Studio_op1.envelope_encoders
-  | 2 -> Studio_op1.effect_encoders s.effect
+  | 2 -> Studio_op1.effect_encoders s.fx
   | _ -> Studio_op1.lfo_encoders s.lfo
 
 let page_values (s : Studio_op1.sound) (page : int) : float array =
@@ -90340,8 +90346,8 @@ let next_kind (s : Studio_op1.sound) (page : int) : Studio_op1.sound =
   | 0 -> { s with engine = (s.engine +.. 1) mod List.length Op1_engine.all }
   | 1 -> { s with play_mode = (s.play_mode +.. 1) mod List.length Studio_op1.play_modes }
   | 2 ->
-      let k = cycle s.effect s.effect_on in
-      if k >= List.length Studio_op1.effects then { s with effect_on = false } else { s with effect = k; effect_on = true }
+      let k = cycle s.fx s.effect_on in
+      if k >= List.length Studio_op1.effects then { s with effect_on = false } else { s with fx = k; effect_on = true }
   | _ ->
       let k = cycle s.lfo s.lfo_on in
       if k >= List.length Studio_op1.lfos then { s with lfo_on = false } else { s with lfo = k; lfo_on = true }
@@ -90545,7 +90551,7 @@ let synth_screen (m : model) : shape list =
     match m.page with
     | 0 -> "T1 " ^ String.uppercase_ascii engine.name
     | 1 -> Printf.sprintf "T2 ENVELOPE  %s" (String.uppercase_ascii (List.nth Studio_op1.play_modes s.play_mode))
-    | 2 -> if s.effect_on then "T3 " ^ String.uppercase_ascii (List.nth Studio_op1.effects s.effect) else "T3 NO EFFECT"
+    | 2 -> if s.effect_on then "T3 " ^ String.uppercase_ascii (List.nth Studio_op1.effects s.fx) else "T3 NO EFFECT"
     | _ -> if s.lfo_on then "T4 " ^ String.uppercase_ascii (List.nth Studio_op1.lfos s.lfo) else "T4 NO LFO"
   in
   let middle =
@@ -91929,7 +91935,7 @@ let view (computer : computer) (m : model) : shape list =
 let app = game view update initial_model
 let main = Program.main __MODULE__ (fun () -> Playground_platform.run_app app)
 apps/music/TinySoundtracker.ml
-15437
+15421
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -92052,7 +92058,7 @@ let type_digit (m : model) (d : int) : model =
   let c = cell_at m in
   let c : Mod.cell =
     match m.column with
-    | 1 -> { c with effect = d }
+    | 1 -> { c with fx = d }
     | 2 -> { c with param = (d lsl 4) lor (c.param land 0x0F) }
     | _ -> { c with param = (c.param land 0xF0) lor d }
   in
@@ -92115,7 +92121,7 @@ let keys (caps : < Cap.open_out >) (computer : computer) (m : model) : model =
       { m with song = { m.song with positions }; position = at }
   | Some _ when pressed "Backspace" ->
       let c = cell_at m in
-      with_cell m (if m.column = 0 then { c with period = 0; instrument = 0 } else { c with effect = 0; param = 0 })
+      with_cell m (if m.column = 0 then { c with period = 0; instrument = 0 } else { c with fx = 0; param = 0 })
   | Some k -> (
       match (m.column, piano k, hex k) with
       | 0, Some s, _ ->
@@ -92174,7 +92180,7 @@ let cell_view (c : Mod.cell) (x : number) (y : number) (bright : bool) : shape l
   [
     txt cell_size col (if c.period = 0 then "---" else Mod.note_name c.period) |> move (x - 55.) y;
     txt cell_size col (if c.instrument = 0 then ".." else Printf.sprintf "%02d" c.instrument) |> move (x + 5.) y;
-    txt cell_size col (if c.effect = 0 && c.param = 0 then "..." else Printf.sprintf "%X%02X" c.effect c.param) |> move (x + 60.) y;
+    txt cell_size col (if c.fx = 0 && c.param = 0 then "..." else Printf.sprintf "%X%02X" c.fx c.param) |> move (x + 60.) y;
   ]
 
 let pattern_view (m : model) : shape list =
@@ -113522,7 +113528,7 @@ val controls_drawn : value:(Dom.element -> Forms.value) -> focus:Dom.element opt
  * blue, the anonymous boxes of inline content green, their lines grey *)
 val outlines : Html_layout.box -> drawn
 appkits/browser/Browser_forms.ml
-3631
+3635
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -113535,7 +113541,7 @@ appkits/browser/Browser_forms.ml
 
 (* See Browser_forms.mli *)
 
-type effect =
+type outcome =
   | Nothing
   | Focus of Dom.element
   | Unfocus
@@ -113551,11 +113557,11 @@ let submission (p : Browser_page.t) (form : Forms.form) ~(submitter : Dom.elemen
   if form.post then (action, Some ("application/x-www-form-urlencoded", fields))
   else (fst (Browser_url.split_query (fst (Browser_url.split_fragment action))) ^ "?" ^ fields, None)
 
-let submit (p : Browser_page.t) (form : Forms.form) ~(submitter : Dom.element option) : effect =
+let submit (p : Browser_page.t) (form : Forms.form) ~(submitter : Dom.element option) : outcome =
   let url, post = submission p form ~submitter in
   Submit { url; post; page = p }
 
-let click (p : Browser_page.t) (e : Dom.element) : effect =
+let click (p : Browser_page.t) (e : Dom.element) : outcome =
   match Forms.control e with
   | None -> Nothing
   | Some control -> (
@@ -113589,7 +113595,7 @@ let click (p : Browser_page.t) (e : Dom.element) : effect =
       (* a script's business: Browser_script.click *)
       | Button | Hidden -> Nothing)
 
-let key (p : Browser_page.t) (e : Dom.element) (key : string) : effect =
+let key (p : Browser_page.t) (e : Dom.element) (key : string) : outcome =
   let v = value_of p e in
   let is_textarea = match Forms.control e with Some { kind = Textarea; _ } -> true | _ -> false in
   match key with
@@ -113605,7 +113611,7 @@ let typed (p : Browser_page.t) (e : Dom.element) (s : string) : Browser_page.t =
   let v = value_of p e in
   with_value p e { v with text = v.text ^ s }
 appkits/browser/Browser_forms.mli
-2049
+2155
 (* Browser_forms: what a person does to a page's form, and what it
  * makes the browser do.
  *
@@ -113624,7 +113630,9 @@ appkits/browser/Browser_forms.mli
  * The values are the page's (Browser_page.values), kept with it, so
  * that the history gives a half-filled form back half filled. *)
 
-type effect =
+(* claude: what a click or a key does to a form (outcome, not effect: a
+ * keyword since OCaml 5.3) *)
+type outcome =
   | Nothing
   | Focus of Dom.element (* the field takes the keys *)
   | Unfocus (* it gives them up *)
@@ -113637,11 +113645,11 @@ type effect =
 val submission : Browser_page.t -> Forms.form -> submitter:Dom.element option -> string * (string * string) option
 
 (* a click on a control *)
-val click : Browser_page.t -> Dom.element -> effect
+val click : Browser_page.t -> Dom.element -> outcome
 
 (* a key (its name lowercased: "backspace", "enter"...) while a field
  * has the keys *)
-val key : Browser_page.t -> Dom.element -> string -> effect
+val key : Browser_page.t -> Dom.element -> string -> outcome
 
 (* text typed while a field has the keys: the page with it added *)
 val typed : Browser_page.t -> Dom.element -> string -> Browser_page.t
@@ -115135,7 +115143,7 @@ val print : t -> string -> unit
  * function *)
 val engine : t -> Js_eval.t
 appkits/browser/Browser_tab.ml
-24339
+24342
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -115585,9 +115593,9 @@ let after_task (cfg : 'msg config) (network : < Cap.network ; .. >) (tab : t) : 
         with_pictures cfg network ({ tab with state = Shown (Browser_page.with_tree (cfg.settings tab) p tree); focus }, Cmd.none)
     | _ -> (tab, Cmd.none))
 
-let form_effect (cfg : 'msg config) (network : < Cap.network ; .. >) ~(keep_focus : bool) (effect : Browser_forms.effect) (tab : t) :
+let form_effect (cfg : 'msg config) (network : < Cap.network ; .. >) ~(keep_focus : bool) (outcome : Browser_forms.outcome) (tab : t) :
     t * 'msg Cmd.t =
-  match effect with
+  match outcome with
   | Nothing -> (tab, Cmd.none)
   | Focus e -> ({ tab with focus = Some e }, Cmd.none)
   | Unfocus -> ({ tab with focus = None }, Cmd.none)
@@ -115601,7 +115609,7 @@ let form_effect (cfg : 'msg config) (network : < Cap.network ; .. >) ~(keep_focu
       | _ -> (tab, Cmd.none))
   | Submit { url; post; page } -> visit ?post cfg network url { tab with state = Shown page; focus = None }
 appkits/browser/Browser_tab.mli
-7884
+7885
 (* Browser_tab: one page being browsed, and how it goes elsewhere --
    what a browser's window holds in each of its tabs.
 
@@ -115743,7 +115751,7 @@ val got_picture : 'msg config -> < Cap.network ; .. > -> string -> (Playground.H
 (* what a form's click or key did (Browser_forms): the focus moved, the
  * page's values changed (its script told, if it has one), or the form
  * sent *)
-val form_effect : 'msg config -> < Cap.network ; .. > -> keep_focus:bool -> Browser_forms.effect -> t -> t * 'msg Cmd.t
+val form_effect : 'msg config -> < Cap.network ; .. > -> keep_focus:bool -> Browser_forms.outcome -> t -> t * 'msg Cmd.t
 
 (* after a script's task (a click, a key, a timer): if the tree changed,
  * the page laid out again from it, the field in focus found again in
@@ -123128,7 +123136,7 @@ val point : model -> int
 val message : model -> string
 val file : model -> string -> string option
 appkits/editor/Tui_turbo.ml
-41001
+42935
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -123221,6 +123229,7 @@ type model = {
   breakpoints : int list; (* lines, from 1 *)
   watches : string list;
   quit : bool;
+  escaped : bool; (* claude: a lone Esc just typed in the editor: a digit next is an F key *)
 }
 
 (* the Watches window's height, when there are watches: at the bottom,
@@ -123511,7 +123520,8 @@ let act (m : model) (a : action) : model =
             ( "Keys",
               [ "F9 Make   Alt+F9 Compile   Ctrl+F9 Run"; "Alt+F5 User screen   F2 Save   F3 Open"; "F10 or Alt+letter: the menus   Alt+X Exit"; "";
                 "F7 Trace into   F8 Step over   F4 Go to cursor"; "Ctrl+F8 Breakpoint   Ctrl+F7 Watch   Ctrl+F3 Calls"; "Ctrl+F2 Reset   Ctrl+C Break"; "";
-                "Arrows, or Ctrl+E X S D    Ctrl+A F words"; "Ctrl+Y delete a line    Insert: overwrite"; "Ctrl+L search again" ] ) }
+                "Arrows, or Ctrl+E X S D    Ctrl+A F words"; "Ctrl+Y delete a line    Insert: overwrite"; "Ctrl+L search again"; "";
+                "No F keys? Esc then 1 to 0 (or Alt+1 to Alt+0): F1 to F10,"; "Ctrl+1 to Ctrl+0: Ctrl+F1 to Ctrl+F10 (Ctrl+9 Run)" ] ) }
   | About ->
       { m with
         mode =
@@ -123563,7 +123573,39 @@ let input_key (m : model) (title, label, text, purpose) (k : string) : model =
 (* Update *)
 (*****************************************************************************)
 
-let key (m : model) (k : string) : model =
+(* claude: Esc then a digit, F1 to F10 (0 for F10): the convention of
+ * Midnight Commander and the terminals without function keys, for the
+ * keyboards whose top row is the volume's and the screen's, the
+ * desktop's or the browser's. Two keys typed one after the other, or
+ * Alt and the digit at once (Escape and the digit, the same bytes) --
+ * though not on a Mac, where Option and a digit types another
+ * character (Option-9, "ª"): there, Esc and then the digit *)
+let digit (k : string) : bool = String.length k = 1 && k.[0] >= '0' && k.[0] <= '9'
+
+let f_of_digit (d : char) : string = if d = '0' then "F10" else "F" ^ String.make 1 d
+
+(* and Control and a digit (Vt.key's ESC [ 27 ; 5 ; <code> ~), Control
+ * and that F key: Ctrl-9, Ctrl-F9, Run *)
+let function_key (k : string) : string =
+  let n = String.length k in
+  if n = 2 && k.[0] = '\x1b' && digit (String.sub k 1 1) then Option.value ~default:k (Vt.key ~ctrl:false (f_of_digit k.[1]))
+  else if n = 10 && String.sub k 0 7 = "\x1b[27;5;" && k.[9] = '~' then
+    match int_of_string_opt (String.sub k 7 2) with
+    | Some c when c >= 48 && c <= 57 -> Option.value ~default:k (Vt.key ~ctrl:true (f_of_digit (Char.chr c)))
+    | _ -> k
+  else k
+
+let rec key (m : model) (k : string) : model =
+  match (m.mode, k) with
+  (* in the editor, a lone Esc waits for its digit (else it does
+   * nothing, as before) *)
+  | Editing, "\x1b" -> { m with escaped = true }
+  | Editing, _ when m.escaped && digit k -> key { m with escaped = false } ("\x1b" ^ k)
+  | _ -> key_now { m with escaped = false } k
+
+and key_now (m : model) (k : string) : model =
+  (* the running program's keys are its own *)
+  let k = match m.mode with Executing -> k | _ -> function_key k in
   match m.mode with
   | Executing -> ( match m.session with Some s -> executing_key m s k | None -> { m with mode = Editing })
   | Finished (_, err) -> (
@@ -123952,7 +123994,8 @@ let init : model =
   load
     { lines = [| "" |]; row = 0; col = 0; top = 0; left = 0; file = noname; modified = false; overwrite = false; disk = Pascal_disk.files;
       mode = Editing; error = None; compiled = None; last_screen = None; search = ""; runs = 0; session = None; breakpoints = []; watches = [];
-      quit = false }
+      quit = false;
+      escaped = false }
     "QUEENS.PAS"
 
 let program : model Tui.program = { init; update; view; over = (fun m -> m.quit) }
@@ -148033,7 +148076,7 @@ val define_class :
 (* a new, empty MethodDictionary *)
 val new_method_dict : St_memory.t -> oop
 languages/smalltalk/St_compile.ml
-19264
+19336
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -148467,7 +148510,7 @@ and statements (st : st) (c : code) (body : stmt list) ~(value : bool) : unit =
     | Return (x, _) :: _ -> gen_return st c x
     | [ Expr x ] when value -> gen st c x
     | Expr x :: rest ->
-        effect st c x;
+        for_effect st c x;
         if rest = [] && value then begin
           emit c 115;
           push_depth st 1
@@ -148487,8 +148530,9 @@ and gen_return (st : st) (c : code) (x : expr) : unit =
       emit c 124;
       push_depth st (-1)
 
-(* an expression whose value is not wanted *)
-and effect (st : st) (c : code) (x : expr) : unit =
+(* an expression whose value is not wanted (claude: for_effect, effect
+ * being a keyword since OCaml 5.3) *)
+and for_effect (st : st) (c : code) (x : expr) : unit =
   match x.e with
   | Assign (v, y) ->
       gen st c y;
@@ -169926,7 +169970,7 @@ val zero : t -> unit
  * the cost above is about *)
 val nodes : t -> int
 libs/ai/learning/Matrix.ml
-4616
+4598
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -169960,8 +170004,8 @@ let to_lists (m : t) : float list list =
 let identity (n : int) : t = init n n (fun r c -> if r = c then 1. else 0.)
 
 let random ~(seed : int) ?(spread = 1.) (rows : int) (cols : int) : t =
-  let st = Random.State.make [| seed |] in
-  { rows; cols; data = Array.init (rows * cols) (fun _ -> Random.State.float st (2. *. spread) -. spread) }
+  let st = Lehmer.make seed in
+  { rows; cols; data = Array.init (rows * cols) (fun _ -> Lehmer.float st (2. *. spread) -. spread) }
 
 let vector (a : float array) : t = { rows = Array.length a; cols = 1; data = Array.copy a }
 let to_vector (m : t) : float array = Array.copy m.data
@@ -170357,7 +170401,7 @@ type pass = {
 val forward_pass : t -> float array -> pass
 val output : pass -> float array
 libs/ai/learning/Neuron.ml
-2550
+2532
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -170374,8 +170418,8 @@ type t = { weights : float array; bias : float }
 type example = float array * float
 
 let make ~(inputs : int) ~(seed : int) : t =
-  let st = Random.State.make [| seed |] in
-  { weights = Array.init inputs (fun _ -> Random.State.float st 0.2 -. 0.1); bias = 0. }
+  let st = Lehmer.make seed in
+  { weights = Array.init inputs (fun _ -> Lehmer.float st 0.2 -. 0.1); bias = 0. }
 
 let sum (n : t) (x : float array) : float =
   if Array.length x <> Array.length n.weights then invalid_arg "Neuron: wrong number of inputs";
@@ -170766,7 +170810,7 @@ val known : ('state, 'action) t -> int
  * puts them in the four corners of each cell) *)
 val values : ('state, 'action) t -> 'state -> 'action list -> ('action * float) list
 libs/ai/learning/Train.ml
-2795
+2777
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -170791,9 +170835,9 @@ let split ?(part = 0.2) (examples : Backprop.example list) : Backprop.example li
 (* a shuffle that repeats: Fisher-Yates from a seed *)
 let shuffled (seed : int) (examples : Backprop.example list) : Backprop.example array =
   let a = Array.of_list examples in
-  let st = Random.State.make [| seed |] in
+  let st = Lehmer.make seed in
   for i = Array.length a - 1 downto 1 do
-    let j = Random.State.int st (i + 1) in
+    let j = Lehmer.int st (i + 1) in
     let t = a.(i) in
     a.(i) <- a.(j);
     a.(j) <- t
@@ -171861,7 +171905,7 @@ val think : nodes:int -> ('state, 'move) thinking -> ('state, 'move) thinking
 val plan : ('state, 'move) thinking -> 'move plan
 val done_ : ('state, 'move) thinking -> bool
 libs/ai/search/Mcts.ml
-7529
+7499
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -171897,11 +171941,11 @@ let outcome (game : ('state, 'move) Minimax.game) (state : 'state) : float =
   if s > 0. then 1. else if s < 0. then 0. else 0.5
 
 (* the default playout: uniformly random moves to the end *)
-let random_playout (st : Random.State.t) (game : ('state, 'move) Minimax.game) (state : 'state) : 'state =
+let random_playout (st : Lehmer.state) (game : ('state, 'move) Minimax.game) (state : 'state) : 'state =
   let rec go state =
     match game.moves state with
     | [] -> state
-    | moves -> go (game.play state (List.nth moves (Random.State.int st (List.length moves))))
+    | moves -> go (game.play state (List.nth moves (Lehmer.int st (List.length moves))))
   in
   go state
 
@@ -171929,12 +171973,12 @@ type ('state, 'move) thinking = {
   root_state : 'state;
   root : 'move node;
   exploration : float;
-  playout : Random.State.t -> ('state, 'move) Minimax.game -> 'state -> 'state;
+  playout : Lehmer.state -> ('state, 'move) Minimax.game -> 'state -> 'state;
   (* AlphaGo's two: what the moves are worth before trying them, and
    * what a position is worth without playing it out *)
   prior : ('state -> ('move * float) list) option;
   evaluate : ('state -> float) option;
-  st : Random.State.t;
+  st : Lehmer.state;
   mutable played : int;
   mutable nodes : int;
 }
@@ -171951,7 +171995,7 @@ let start ?exploration ?(seed = 0) ?(playout = random_playout) ?prior ?evaluate
     playout;
     prior;
     evaluate;
-    st = Random.State.make [| seed |];
+    st = Lehmer.make seed;
     played = 0;
     nodes = 1;
   }
@@ -171962,7 +172006,7 @@ let rec descend (t : ('state, 'move) thinking) (n : 'move node) (state : 'state)
     'move node list * 'state =
   if n.untried <> [] then (
     (* expand: one of the moves never tried here *)
-    let i = Random.State.int t.st (List.length n.untried) in
+    let i = Lehmer.int t.st (List.length n.untried) in
     let move = List.nth n.untried i in
     n.untried <- List.filteri (fun j _ -> j <> i) n.untried;
     let child_state = t.game.play state move in
@@ -172043,7 +172087,7 @@ let search ?exploration ?seed ?playout ?prior ?evaluate (game : ('state, 'move) 
     (state : 'state) : 'move result =
   plan (think ~playouts (start ?exploration ?seed ?playout ?prior ?evaluate game state))
 libs/ai/search/Mcts.mli
-6898
+6894
 (* Searching without an evaluation function: Monte Carlo tree search
  * (see notes_ai.md section 10).
  *
@@ -172159,7 +172203,7 @@ type 'move result = {
 val search :
   ?exploration:float ->
   ?seed:int ->
-  ?playout:(Random.State.t -> ('state, 'move) Minimax.game -> 'state -> 'state) ->
+  ?playout:(Lehmer.state -> ('state, 'move) Minimax.game -> 'state -> 'state) ->
   ?prior:('state -> ('move * float) list) ->
   ?evaluate:('state -> float) ->
   ('state, 'move) Minimax.game ->
@@ -172186,7 +172230,7 @@ type ('state, 'move) thinking
 val start :
   ?exploration:float ->
   ?seed:int ->
-  ?playout:(Random.State.t -> ('state, 'move) Minimax.game -> 'state -> 'state) ->
+  ?playout:(Lehmer.state -> ('state, 'move) Minimax.game -> 'state -> 'state) ->
   ?prior:('state -> ('move * float) list) ->
   ?evaluate:('state -> float) ->
   ('state, 'move) Minimax.game ->
@@ -173843,7 +173887,7 @@ val air_cutoff : float -> float
 val doppler :
   speed_of_sound:float -> listener:vec -> listener_velocity:vec -> source:vec -> source_velocity:vec -> float
 libs/audio/Synth.ml
-12828
+12830
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -173906,14 +173950,14 @@ let sliding (target : float) = map_voices (fun v -> { v with slide = Some target
 let with_effect (e : Pitch_effect.t) = map_voices (fun v -> { v with effects = v.effects @ [ e ] })
 
 let rec faster (k : float) (s : t) : t =
-  let effect (e : Pitch_effect.t) : Pitch_effect.t =
+  let quicker (e : Pitch_effect.t) : Pitch_effect.t =
     match e with
     | Vibrato { rate; depth } -> Vibrato { rate = rate *. k; depth }
     | Jump { semitones; at } -> Jump { semitones; at = at /. k }
     | Arpeggio { semitones; step } -> Arpeggio { semitones; step = step /. k }
   in
   match s with
-  | Voice v -> Voice { v with seconds = v.seconds /. k; effects = List.map effect v.effects }
+  | Voice v -> Voice { v with seconds = v.seconds /. k; effects = List.map quicker v.effects }
   | Together l -> Together (List.map (faster k) l)
   | After l -> After (List.map (faster k) l)
   | Samples s -> Samples s
@@ -174572,7 +174616,7 @@ val process : t -> input:Signal.t -> Signal.t -> unit
 val lift : t -> int -> from:int -> until:int -> unit
 val drop : t -> int -> unit
 libs/audio/effects/Delay.ml
-4126
+4122
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -174658,7 +174702,7 @@ let knobs : Effect.knob list =
     { name = "mix"; control = Knob (0., 1.); initial = 0.3 };
   ]
 
-let effect () : Effect.t =
+let fx () : Effect.t =
   let t = create () and s = ref { time = 0.; feedback = 0.; tone = 0.; ping_pong = false; mix = 0. } in
   let set (knob : string) (x : float) =
     match knob with
@@ -174672,7 +174716,7 @@ let effect () : Effect.t =
   List.iter (fun (k : Effect.knob) -> set k.name k.initial) knobs;
   { name = "delay"; knobs; set; process = (fun out -> process t !s out); meters = (fun () -> []) }
 libs/audio/effects/Delay.mli
-3505
+3497
 (* Delay: the echo, live, the way a tape echo makes it (see
  * notes_synth.md section 8.5).
  *
@@ -174750,10 +174794,10 @@ val process : t -> settings -> Signal.stereo -> unit
  * (0 to 1: 0.3) *)
 val knobs : Effect.knob list
 
-(* [effect ()]: "delay" *)
-val effect : unit -> Effect.t
+(* [fx ()]: "delay" *)
+val fx : unit -> Effect.t
 libs/audio/effects/Drive.ml
-4332
+4328
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -174853,7 +174897,7 @@ let knobs : Effect.knob list =
     { name = "oversampling"; control = Switch; initial = 1. };
   ]
 
-let effect () : Effect.t =
+let fx () : Effect.t =
   (* a drive per channel and per oversampling, each keeping its filters'
    * state while the other is used *)
   let plain = (create ~oversampling:1 (), create ~oversampling:1 ()) and oversampled = (create ~oversampling:4 (), create ~oversampling:4 ()) in
@@ -174873,7 +174917,7 @@ let effect () : Effect.t =
   in
   { name = "drive"; knobs; set; process; meters = (fun () -> []) }
 libs/audio/effects/Drive.mli
-4118
+4110
 (* Drive: a sound pushed into a curve that flattens its loud parts, the
  * distortion of an overdriven amplifier (see notes_synth.md section
  * 8.1).
@@ -174961,10 +175005,10 @@ val process : t -> shape -> drive:float -> mix:float -> Signal.t -> unit
  * drive, 0 to 36 dB: 12), oversampling (a switch: x4 or none, on) *)
 val knobs : Effect.knob list
 
-(* [effect ()]: "drive", both channels, the dry sound gone (mix 1) *)
-val effect : unit -> Effect.t
+(* [fx ()]: "drive", both channels, the dry sound gone (mix 1) *)
+val fx : unit -> Effect.t
 libs/audio/effects/Dynamics.ml
-6152
+6148
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -175109,7 +175153,7 @@ let knobs : Effect.knob list =
     { name = "makeup"; control = Knob (0., 24.); initial = 0. };
   ]
 
-let effect () : Effect.t =
+let fx () : Effect.t =
   let t = create () and s = ref compressor in
   let set (knob : string) (x : float) =
     match knob with
@@ -175128,7 +175172,7 @@ let effect () : Effect.t =
   List.iter (fun (k : Effect.knob) -> set k.name k.initial) knobs;
   { name = "dynamics"; knobs; set; process = (fun out -> process t !s out); meters = (fun () -> [ ("reduction", t.reduction) ]) }
 libs/audio/effects/Dynamics.mli
-6360
+6352
 (* Dynamics: the compressor, the limiter and the noise gate, one machine
  * with three settings (see notes_synth.md section 8.7).
  *
@@ -175272,8 +175316,8 @@ val reduction : t -> float
  * [gate]) *)
 val knobs : Effect.knob list
 
-(* [effect ()]: "dynamics", its meter "reduction" (dB) *)
-val effect : unit -> Effect.t
+(* [fx ()]: "dynamics", its meter "reduction" (dB) *)
+val fx : unit -> Effect.t
 libs/audio/effects/Effect.ml
 717
 (* Claude Code
@@ -175299,7 +175343,7 @@ type t = {
 
 let ramp (last : float) (now : float) (i : int) (n : int) : float = last +. ((now -. last) *. float_of_int (i + 1) /. float_of_int n)
 libs/audio/effects/Effect.mli
-2249
+2245
 (* An effect as a rack sees it: a sound going through, block after
  * block, and knobs turned by their names (see notes_synth.md section 8).
  *
@@ -175310,7 +175354,7 @@ libs/audio/effects/Effect.mli
  * patch, which stores numbers by name. So each module also makes an
  * [Effect.t], its settings kept inside:
  *
- *     Delay.effect () : Effect.t
+ *     Delay.fx () : Effect.t
  *
  *        knobs    time, feedback, tone, pingpong, mix: what a panel
  *                 draws and a patch stores (Control.mli)
@@ -175349,7 +175393,7 @@ type t = {
  * [now] at the block's end *)
 val ramp : float -> float -> int -> int -> float
 libs/audio/effects/Eq.ml
-2331
+2327
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -175406,7 +175450,7 @@ let process (t : t) ~(bass : float) ~(middle : float) ~(treble : float) (s : Sig
 let knobs : Effect.knob list =
   List.map (fun name : Effect.knob -> { name; control = Knob (-12., 12.); initial = 0. }) [ "bass"; "middle"; "treble" ]
 
-let effect () : Effect.t =
+let fx () : Effect.t =
   let t = create () and gains = [| 0.; 0.; 0. |] in
   let set (knob : string) (x : float) =
     match knob with "bass" -> gains.(0) <- x | "middle" -> gains.(1) <- x | "treble" -> gains.(2) <- x | _ -> ()
@@ -175419,7 +175463,7 @@ let effect () : Effect.t =
     meters = (fun () -> []);
   }
 libs/audio/effects/Eq.mli
-1226
+1218
 (* The EQ: the three bands of a hi-fi's tone controls, the bass, the
  * middle and the treble (see notes_synth.md section 8.2).
  *
@@ -175449,10 +175493,10 @@ val process : t -> bass:float -> middle:float -> treble:float -> Signal.stereo -
 (* bass, middle, treble: -12 to 12 dB, 0 at first *)
 val knobs : Effect.knob list
 
-(* [effect ()]: "eq" *)
-val effect : unit -> Effect.t
+(* [fx ()]: "eq" *)
+val fx : unit -> Effect.t
 libs/audio/effects/Leslie.ml
-4468
+4464
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -175563,7 +175607,7 @@ let process (t : t) ~(fast : bool) (s : Signal.stereo) : unit = process_mix t ~f
 let knobs : Effect.knob list =
   [ { name = "fast"; control = Switch; initial = 0. }; { name = "mix"; control = Knob (0., 1.); initial = 1. } ]
 
-let effect () : Effect.t =
+let fx () : Effect.t =
   let t = create () and fast = ref false and mix = ref 1. and last_mix = ref 1. in
   let set (knob : string) (x : float) =
     match knob with "fast" -> fast := Control.on x | "mix" -> mix := x | _ -> ()
@@ -175574,7 +175618,7 @@ let effect () : Effect.t =
   in
   { name = "leslie"; knobs; set; process; meters = (fun () -> [ ("horn", horn t); ("drum", drum t) ]) }
 libs/audio/effects/Leslie.mli
-3911
+3903
 (* The Leslie speaker: a sound turned around, the Hammond's other half
  * (see notes_synth.md; plan_synth_teaching.md, TinyHammond, H3).
  *
@@ -175661,9 +175705,9 @@ val drum_seconds : float
  * share, 1 at first) *)
 val knobs : Effect.knob list
 
-(* [effect ()]: "leslie", its meters the rotors' speeds, "horn" and
+(* [fx ()]: "leslie", its meters the rotors' speeds, "horn" and
  * "drum" (turns a second) *)
-val effect : unit -> Effect.t
+val fx : unit -> Effect.t
 libs/audio/effects/Modulated_delay.ml
 2940
 (* Claude Code
@@ -175819,7 +175863,7 @@ val create : unit -> t
 (* [process t settings s]: [s] in place, both channels *)
 val process : t -> settings -> Signal.stereo -> unit
 libs/audio/effects/Modulation.ml
-2161
+2157
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -175846,7 +175890,7 @@ let knobs : Effect.knob list =
     { name = "mix"; control = Knob (0., 1.); initial = 0.5 };
   ]
 
-let effect () : Effect.t =
+let fx () : Effect.t =
   (* each kind keeps its own state: switching back finds it as it was *)
   let delay = Modulated_delay.create () and phaser = Phaser.create () in
   let kind = ref Chorus and rate = ref 0. and depth = ref 0. and feedback = ref 0. and mix = ref 0. in
@@ -175875,7 +175919,7 @@ let effect () : Effect.t =
   in
   { name = "modulation"; knobs; set; process; meters = (fun () -> []) }
 libs/audio/effects/Modulation.mli
-1186
+1178
 (* The rack's modulation slot: a chorus, a flanger or a phaser, one at
  * a time, behind the same knobs (see notes_synth.md sections 8.3 and
  * 8.4).
@@ -175902,9 +175946,9 @@ val name : kind -> string
  * depth (0 to 1: 0.5), feedback (0 to 0.9: 0), mix (0 to 1: 0.5) *)
 val knobs : Effect.knob list
 
-(* [effect ()]: "modulation" (not "mod": a synthesizer's own panel has
+(* [fx ()]: "modulation" (not "mod": a synthesizer's own panel has
  * a modulation section, the Minimoog's "mod.mix") *)
-val effect : unit -> Effect.t
+val fx : unit -> Effect.t
 libs/audio/effects/Phaser.ml
 2494
 (* Claude Code
@@ -176055,12 +176099,13 @@ libs/audio/effects/Rack.ml
 
 (* See Rack.mli *)
 
-type stage = { effect : Effect.t; mutable on : bool }
+(* claude: fx, not effect: a keyword since OCaml 5.3 (effect handlers) *)
+type stage = { fx : Effect.t; mutable on : bool }
 type t = { mutable stages : stage list }
 
-let create (effects : Effect.t list) : t = { stages = List.map (fun effect -> { effect; on = false }) effects }
+let create (effects : Effect.t list) : t = { stages = List.map (fun fx -> { fx; on = false }) effects }
 let standard () : t =
-  create [ Drive.effect (); Eq.effect (); Modulation.effect (); Delay.effect (); Reverb.effect (); Dynamics.effect () ]
+  create [ Drive.fx (); Eq.fx (); Modulation.fx (); Delay.fx (); Reverb.fx (); Dynamics.fx () ]
 
 (* an effect's knobs under its name, its switch first *)
 let prefixed (name : string) (knobs : Effect.knob list) : Effect.knob list =
@@ -176079,28 +176124,28 @@ let standard_knobs : Effect.knob list =
       ("dynamics", Dynamics.knobs);
     ]
 
-let knobs (t : t) : Effect.knob list = List.concat_map (fun s -> prefixed s.effect.name s.effect.knobs) t.stages
+let knobs (t : t) : Effect.knob list = List.concat_map (fun s -> prefixed s.fx.name s.fx.knobs) t.stages
 
 let set (t : t) (name : string) (x : float) : unit =
   match String.index_opt name '.' with
   | None -> ()
   | Some i ->
-      let effect = String.sub name 0 i and knob = String.sub name (i + 1) (String.length name - i - 1) in
+      let stage = String.sub name 0 i and knob = String.sub name (i + 1) (String.length name - i - 1) in
       List.iter
-        (fun s -> if s.effect.name = effect then if knob = "on" then s.on <- Control.on x else s.effect.set knob x)
+        (fun s -> if s.fx.name = stage then if knob = "on" then s.on <- Control.on x else s.fx.set knob x)
         t.stages
 
-let order (t : t) : string list = List.map (fun s -> s.effect.name) t.stages
+let order (t : t) : string list = List.map (fun s -> s.fx.name) t.stages
 
 let reorder (t : t) (names : string list) : unit =
-  let named = List.filter_map (fun n -> List.find_opt (fun s -> s.effect.name = n) t.stages) names in
+  let named = List.filter_map (fun n -> List.find_opt (fun s -> s.fx.name = n) t.stages) names in
   t.stages <- named @ List.filter (fun s -> not (List.memq s named)) t.stages
 
-let process (t : t) (out : Signal.stereo) : unit = List.iter (fun s -> if s.on then s.effect.process out) t.stages
+let process (t : t) (out : Signal.stereo) : unit = List.iter (fun s -> if s.on then s.fx.process out) t.stages
 
 let meter (t : t) (name : string) : float =
   List.find_map
-    (fun s -> List.find_map (fun (m, x) -> if s.effect.name ^ "." ^ m = name then Some x else None) (s.effect.meters ()))
+    (fun s -> List.find_map (fun (m, x) -> if s.fx.name ^ "." ^ m = name then Some x else None) (s.fx.meters ()))
     t.stages
   |> Option.value ~default:0.
 libs/audio/effects/Rack.mli
@@ -176164,7 +176209,7 @@ val process : t -> Signal.stereo -> unit
  * there's no such meter) *)
 val meter : t -> string -> float
 libs/audio/effects/Reverb.ml
-10730
+10726
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -176424,7 +176469,7 @@ let knobs : Effect.knob list =
     { name = "mix"; control = Knob (0., 1.); initial = 0.25 };
   ]
 
-let effect () : Effect.t =
+let fx () : Effect.t =
   let t = create () and s = ref { kind = Plate; seconds = 0.; damping = 0.; mix = 0. } in
   let set (knob : string) (x : float) =
     match knob with
@@ -176437,7 +176482,7 @@ let effect () : Effect.t =
   List.iter (fun (k : Effect.knob) -> set k.name k.initial) knobs;
   { name = "reverb"; knobs; set; process = (fun out -> process t !s out); meters = (fun () -> []) }
 libs/audio/effects/Reverb.mli
-5388
+5380
 (* Reverb: a room's echoes, too many and too close to hear one by one
  * (see notes_synth.md section 8.6).
  *
@@ -176556,8 +176601,8 @@ val process : t -> settings -> Signal.stereo -> unit
  * damping (0 to 1: 0.3), mix (0 to 1: 0.25) *)
 val knobs : Effect.knob list
 
-(* [effect ()]: "reverb" *)
-val effect : unit -> Effect.t
+(* [fx ()]: "reverb" *)
+val fx : unit -> Effect.t
 libs/audio/formats/abc/Abc.ml
 11227
 (* Claude Code
@@ -177281,7 +177326,7 @@ val parse : string -> (score, string) result
  * playing an Abc.tune: ABC (or solfège) to MIDI *)
 val of_tune : ?program:int -> Abc.tune -> string
 libs/audio/formats/mod/Mod.ml
-8667
+8651
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -177299,7 +177344,7 @@ libs/audio/formats/mod/Mod.ml
 (*****************************************************************************)
 
 type instrument = { name : string; finetune : int; volume : int; loop_start : int; loop_length : int; data : string }
-type cell = { instrument : int; period : int; effect : int; param : int }
+type cell = { instrument : int; period : int; fx : int; param : int }
 
 type song = {
   title : string;
@@ -177310,7 +177355,7 @@ type song = {
   tag : string;
 }
 
-let empty_cell = { instrument = 0; period = 0; effect = 0; param = 0 }
+let empty_cell = { instrument = 0; period = 0; fx = 0; param = 0 }
 
 let channels_of_tag (tag : string) : int option =
   let digit c = if c >= '0' && c <= '9' then Some (Char.code c - Char.code '0') else None in
@@ -177334,7 +177379,7 @@ let cell_of_bytes (s : string) (i : int) : cell =
   {
     instrument = (b 0 land 0xF0) lor (b 2 lsr 4);
     period = ((b 0 land 0x0F) lsl 8) lor b 1;
-    effect = b 2 land 0x0F;
+    fx = b 2 land 0x0F;
     param = b 3;
   }
 
@@ -177343,7 +177388,7 @@ let cell_to_bytes (c : cell) : string =
   let set k v = Bytes.set b k (Char.chr (v land 0xFF)) in
   set 0 ((c.instrument land 0xF0) lor ((c.period lsr 8) land 0x0F));
   set 1 c.period;
-  set 2 (((c.instrument land 0x0F) lsl 4) lor (c.effect land 0x0F));
+  set 2 (((c.instrument land 0x0F) lsl 4) lor (c.fx land 0x0F));
   set 3 c.param;
   Bytes.to_string b
 
@@ -177490,7 +177535,7 @@ let to_string (song : song) : string =
     song.instruments;
   Buffer.contents b
 libs/audio/formats/mod/Mod.mli
-5708
+5769
 (* MOD: a song that carries its own instruments (see
  * notes_audio_formats.md section 1).
  *
@@ -177561,7 +177606,7 @@ type instrument = {
 type cell = {
   instrument : int; (* 1 to 31; 0: none *)
   period : int; (* 0: no new note *)
-  effect : int; (* 0 to 15 *)
+  fx : int; (* the effect, 0 to 15 (claude: fx, effect being a keyword since OCaml 5.3) *)
   param : int; (* 0 to 255 *)
 }
 
@@ -177633,7 +177678,7 @@ val sample : instrument -> int -> float
  * lengths are in words) *)
 val data_of_floats : float array -> string
 libs/audio/formats/mod/Mod_player.ml
-10410
+10386
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -177782,19 +177827,19 @@ let play_cell (p : t) (c : channel) (cell : Mod.cell) : unit =
    * slide goes *)
   if cell.period > 0 then (
     let period = bend cell.period ~finetune:c.finetune ~semitones:0 in
-    if cell.effect = 3 || cell.effect = 5 then c.target <- period
+    if cell.fx = 3 || cell.fx = 5 then c.target <- period
     else (
       c.period <- period;
       c.vibrato_pos <- 0;
       if c.instrument > 0 then (
         let k = c.instrument - 1 in
         let i = p.song.instruments.(k) in
-        let offset = if cell.effect = 9 then cell.param * 256 else 0 in
+        let offset = if cell.fx = 9 then cell.param * 256 else 0 in
         if Array.length p.samples.(k) > 0 then
           Paula.trigger c.paula p.samples.(k) ~loop_start:i.loop_start ~loop_length:i.loop_length ~offset)));
   (* the effects of the first tick *)
   let x = cell.param lsr 4 and y = cell.param land 0x0F in
-  match cell.effect with
+  match cell.fx with
   | 3 -> if cell.param > 0 then c.slide_speed <- cell.param
   | 4 ->
       if x > 0 then c.vibrato_speed <- x;
@@ -177830,7 +177875,7 @@ let vibrato_delta (c : channel) : int =
  * or the vibrato *)
 let heard_period (p : t) (c : channel) : int =
   let cell = c.cell in
-  match cell.effect with
+  match cell.fx with
   | 0 when cell.param > 0 ->
       let s = match p.tick mod 3 with 0 -> 0 | 1 -> cell.param lsr 4 | _ -> cell.param land 0x0F in
       bend c.period ~finetune:0 ~semitones:s
@@ -177840,7 +177885,7 @@ let heard_period (p : t) (c : channel) : int =
 let effect_tick (p : t) (c : channel) : unit =
   let cell = c.cell in
   let x = cell.param lsr 4 and y = cell.param land 0x0F in
-  match cell.effect with
+  match cell.fx with
   | 1 -> c.period <- clamp_period (c.period - cell.param)
   | 2 -> c.period <- clamp_period (c.period + cell.param)
   | 3 -> slide_to c
@@ -220273,7 +220318,7 @@ val reach : Hitbox3d.placed -> float
 val sphere :
   radius:float -> from:Vec3.t -> motion:Vec3.t -> ?moving:Vec3.t * Vec3.t -> Hitbox3d.placed -> float option
 libs/random/Lehmer.ml
-1218
+1509
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -220312,8 +220357,19 @@ let next (s : t) : t =
   if t > 0 then t else t + m
 
 let to_unit (s : t) : float = float_of_int (s - 1) /. float_of_int (m - 1)
+
+type state = t ref
+
+let make (seed : int) : state = ref (scramble seed)
+
+let draw (st : state) : float =
+  st := next !st;
+  to_unit !st
+
+let int (st : state) (n : int) : int = min (n - 1) (int_of_float (draw st *. float_of_int n))
+let float (st : state) (x : float) : float = draw st *. x
 libs/random/Lehmer.mli
-3707
+4315
 (* Lehmer: random numbers from a formula, the same ones every time.
 
    A computer can't flip a coin, so games use a *pseudo*-random
@@ -220392,6 +220448,23 @@ val next : t -> t
 
 (* the seed as a number in [0, 1) *)
 val to_unit : t -> float
+
+(* claude: the generator as a state that moves on at each draw, the
+ * shape of the stdlib's Random.State, for code drawing many numbers
+ * (a search's playouts, a network's first weights: libs/ai). Unlike
+ * Random.State, the same numbers on every OCaml: Random's algorithm
+ * changed in OCaml 5 (LXM), and a test's seed chosen on 4.14 drew
+ * other games and other weights on 5.2. *)
+type state
+
+(* from a seed, scrambled (a person's 1 and 2 unrelated) *)
+val make : int -> state
+
+(* a number in [0, n), n > 0 *)
+val int : state -> int -> int
+
+(* a number in [0, x) *)
+val float : state -> float -> float
 libs/terminal/Curses.ml
 5413
 (* Claude Code
@@ -221279,7 +221352,7 @@ type 'model program = {
   over : 'model -> bool;
 }
 libs/terminal/Vt.ml
-15421
+15938
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -221704,6 +221777,13 @@ let key ?(alt = false) ~(ctrl : bool) (name : string) : string option =
      (set the mark: NUL, C-@) and C-/ (undo: 0x1F, C-_) *)
   | " " | "space" | "Space" | "@" when ctrl -> Some "\x00"
   | "/" | "_" | "-" when ctrl -> Some "\x1f"
+  (* claude: Control and a digit, which ASCII has no code for: xterm's
+     modifyOtherKeys, ESC [ 27 ; 5 ; <the digit's code> ~ (Control-9
+     ESC [ 27 ; 5 ; 57 ~), one key to a program that does not know it
+     (Line_discipline.split_keys), Control and an F key to TinyTurboPascal
+     on a keyboard without them (Tui_turbo.function_key) *)
+  | _ when ctrl && String.length name = 1 && name.[0] >= '0' && name.[0] <= '9' ->
+      Some (Printf.sprintf "\x1b[27;%d;%d~" (if alt then 7 else 5) (Char.code name.[0]))
   | _ -> Option.map (with_modifiers ~ctrl ~alt) (named_key name)
 libs/terminal/Vt.mli
 7449
@@ -225682,7 +225762,7 @@ launcher/native/Tinybox_native.mli
  * authority to start one and wait for it. *)
 val host : < Cap.fork ; Cap.exec ; Cap.wait ; .. > -> string list -> Tinybox_menu.host
 launcher/website/make_website.ml
-9076
+9504
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -225760,6 +225840,7 @@ let page ~(title : string) (body : string) : string =
       .card img { width: 100%%; aspect-ratio: 1; display: block; }
       .card .name { font-weight: bold; }
       .card .meta, .card .src { color: #777; }
+      .card .note { color: #b8860b; }
       h2 a { color: inherit; text-decoration: none; }
       :target { scroll-margin-top: 12px; }
     </style>
@@ -225785,14 +225866,19 @@ let subdir (p : Catalogue.program) : string = Filename.basename (Filename.dirnam
 
 (* a card, as in tinybox's menu: several side by side, as many as the
  * window has room for; what it is after in its tooltip *)
+(* claude: a word on a card where a program needs one before it is run *)
+let notes : (string * string) list =
+  [ ("TinyTurboPascal", "No F keys (a laptop, a Mac, the browser)? Esc then a digit: Esc 9 is F9, Esc 0 is F10; Ctrl 9 runs.") ]
+
 let card ~(assets : string) ~(base : string) ~(meta : string) (p : Catalogue.program) : string =
   let play = Printf.sprintf "%s%s/%s.html" base (subdir p) p.name in
+  let note = match List.assoc_opt p.name notes with Some n -> Printf.sprintf {|<br/><span class="note">%s</span>|} (escape n) | None -> "" in
   Printf.sprintf
     {|<div class="card" id="%s" title="after %s"><a href="%s"><img loading="lazy" src="%s/pngs/%s.png" alt="%s"/>
 <span class="name">%s</span></a> <span class="meta">%s</span><br/>%s <a class="src" href="%s%s">source</a> &middot;
-<a class="src" href="../tinybox.html?code=%s">code map</a></div>
+<a class="src" href="../tinybox.html?code=%s">code map</a>%s</div>
 |}
-    p.name (escape p.after) play assets p.name p.name p.name meta (escape p.one_line) github p.source p.name
+    p.name (escape p.after) play assets p.name p.name p.name meta (escape p.one_line) github p.source p.name note
 
 (* "2D, 1978", "app, 1983" *)
 let look_year ~(games : bool) (p : Catalogue.program) : string =

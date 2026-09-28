@@ -1108,59 +1108,59 @@ b=a[2],d=a[1];return[4,d,b,e,D(a[4],c)];case
 21:b=a[1];return[21,b,D(a[2],c)];case
 22:return[22,D(a[1],c)];case
 23:b=a[1];return[23,b,D(a[2],c)];default:b=a[2];d=a[1];return[24,d,b,D(a[3],c)]}}function
-ds(a,c,b){return a[1]===c?(a[1]=b,1):0}function
+dt(a,c,b){return a[1]===c?(a[1]=b,1):0}function
 aj(a){throw caml_maybe_attach_backtrace([0,Failure,a],1)}function
 u(a){throw caml_maybe_attach_backtrace([0,Invalid_argument,a],1)}function
-O(b,a){return caml_lessequal(b,a)?b:a}function
+P(b,a){return caml_lessequal(b,a)?b:a}function
 $(b,a){return caml_greaterequal(b,a)?b:a}function
 bY(a){return 0<=a?a:-a|0}function
 n(a,b){if(!a)return b;var
 c=a[1];return[0,c,n(a[2],b)]}caml_ml_open_descriptor_in(0);j=caml_ml_open_descriptor_out(1);var
-aq=caml_ml_open_descriptor_out(2);function
+ar=caml_ml_open_descriptor_out(2);function
 bZ(b,a){caml_ml_output(b,a,0,caml_ml_string_length(a))}function
-eY(a){bZ(aq,a);caml_ml_output_char(aq,10);return caml_ml_flush(aq)}var
-dr=[0,function(a){a=caml_ml_out_channels_list(0);for(;;){if(!a)return 0;var
+eZ(a){bZ(ar,a);caml_ml_output_char(ar,10);return caml_ml_flush(ar)}var
+ds=[0,function(a){a=caml_ml_out_channels_list(0);for(;;){if(!a)return 0;var
 b=a[2],c=a[1];try{caml_ml_flush(c);a=b}catch(c){a=caml_wrap_exception(c);if(a[1]!==Sys_error)throw caml_maybe_attach_backtrace(a,0);a=b}}}];function
-dt(a){return caml_call1(dr[1],0)}caml_register_named_value(str_Pervasives_do_at_abr,dt);var
-du=caml_sys_const_max_wosize(0),bz=(4*du|0)-1|0,hy=[num_248,"CamlinternalLazy.Undefined",caml_fresh_oo_id(0)];function
-hz(a){throw caml_maybe_attach_backtrace(hy,1)}function
-dv(b){var
-a=b[1];b[1]=hz;try{a=caml_call1(a,0);caml_obj_make_forward(b,a);return a}catch(a){var
+du(a){return caml_call1(ds[1],0)}caml_register_named_value(str_Pervasives_do_at_abr,du);var
+dv=caml_sys_const_max_wosize(0),bz=(4*dv|0)-1|0,hz=[num_248,"CamlinternalLazy.Undefined",caml_fresh_oo_id(0)];function
+hA(a){throw caml_maybe_attach_backtrace(hz,1)}function
+dw(b){var
+a=b[1];b[1]=hA;try{a=caml_call1(a,0);caml_obj_make_forward(b,a);return a}catch(a){var
 c=caml_wrap_exception(a);b[1]=function(a){throw caml_maybe_attach_backtrace(c,0)};throw caml_maybe_attach_backtrace(c,0)}}function
-eZ(c,a,d){for(;;){a=caml_call1(a,0);if(!a)return 0;var
-b=a[2],a=a[1];if(caml_call1(c,a))break;a=b}return[0,a,function(a){return eZ(c,b,a)}]}function
+e0(c,a,d){for(;;){a=caml_call1(a,0);if(!a)return 0;var
+b=a[2],a=a[1];if(caml_call1(c,a))break;a=b}return[0,a,function(a){return e0(c,b,a)}]}function
 au(a,b){return a?a[1]:b}function
-P(a){if(0<=a&&num_255>=a)return a;return u("Char.chr")}function
+Q(a){if(0<=a&&num_255>=a)return a;return u("Char.chr")}function
 s(b){var
 a=0;for(;;){if(!b)return a;a=a+1|0;b=b[2]}}function
-e0(a){return a?a[1]:aj("hd")}var
+e1(a){return a?a[1]:aj("hd")}var
 str_List_nth="List.nth";function
-e1(a,b){if(0>b)return u(str_List_nth);for(;;){if(!a)return aj("nth");var
+e2(a,b){if(0>b)return u(str_List_nth);for(;;){if(!a)return aj("nth");var
 c=a[2],a=a[1];if(0===b)return a;a=c;b=b-1|0}}function
 ac(a,b){if(0>b)return u(str_List_nth);for(;;){if(!a)return 0;var
 c=a[2],a=a[1];if(0===b)return[0,a];a=c;b=b-1|0}}function
 M(a,b){for(;;){if(!a)return b;b=[0,a[1],b];a=a[2]}}function
 h(a){return M(a,0)}function
-e2(a,c,b){if(c<=a)return 0;var
-d=caml_call1(b,a);return[0,d,e2(a+1|0,c,b)]}function
-ar(c,d){if(0>c)return u("List.init");if(50>=c)return e2(0,c,d);var
+e3(a,c,b){if(c<=a)return 0;var
+d=caml_call1(b,a);return[0,d,e3(a+1|0,c,b)]}function
+as(c,d){if(0>c)return u("List.init");if(50>=c)return e3(0,c,d);var
 b=0,a=0;for(;;){if(c<=a)return h(b);b=[0,caml_call1(d,a),b];a=a+1|0}}function
 bA(a){if(!a)return 0;var
 b=a[1];return n(b,bA(a[2]))}function
 k(b,a){if(!a)return 0;var
 c=a[2],a=caml_call1(b,a[1]);return[0,a,k(b,c)]}function
-e3(c,b,a){if(!a)return 0;var
-d=a[2],a=caml_call2(b,c,a[1]);return[0,a,e3(c+1|0,b,d)]}function
-bd(b,a){return e3(0,b,a)}function
-dw(c,a){for(;;){if(!a)return;var
+e4(c,b,a){if(!a)return 0;var
+d=a[2],a=caml_call2(b,c,a[1]);return[0,a,e4(c+1|0,b,d)]}function
+be(b,a){return e4(0,b,a)}function
+cx(c,a){for(;;){if(!a)return 0;var
 b=a[2];caml_call1(c,a[1]);a=b}}function
-e4(c,b,a){if(b){if(a){var
-d=a[2],e=b[2],a=caml_call2(c,b[1],a[1]);return[0,a,e4(c,e,d)]}}else if(!a)return 0;return u("List.map2")}function
-be(c,a){for(;;){if(!a)return 0;var
+e5(c,b,a){if(b){if(a){var
+d=a[2],e=b[2],a=caml_call2(c,b[1],a[1]);return[0,a,e5(c,e,d)]}}else if(!a)return 0;return u("List.map2")}function
+aG(c,a){for(;;){if(!a)return 0;var
 b=a[2],a=0===caml_compare(a[1],c)?1:0;if(a)return a;a=b}}function
 b0(d,a){for(;;){if(!a)return 0;var
 b=a[1],a=a[2],c=b[2];if(0===caml_compare(b[1],d))return[0,c]}}function
-T(a){return function(b){var
+N(a){return function(b){var
 c=0;for(;;){if(!b)return h(c);var
 d=b[2],b=b[1];if(caml_call1(a,b)){c=[0,b,c];b=d}else
 b=d}}}function
@@ -1168,8 +1168,8 @@ b1(a){return function(b){var
 c=0;for(;;){if(!b)return h(c);var
 d=b[2],b=caml_call1(a,b[1]);if(b){c=[0,b[1],c];b=d}else
 b=d}}}function
-e5(b,a){if(b){if(a){var
-c=a[1],d=b[1];return[0,[0,d,c],e5(b[2],a[2])]}}else if(!a)return 0;return u("List.combine")}function
+e6(b,a){if(b){if(a){var
+c=a[1],d=b[1];return[0,[0,d,c],e6(b[2],a[2])]}}else if(!a)return 0;return u("List.combine")}function
 dx(a,c){function
 b(c,b){if(2===c){if(b){var
 e=b[2];if(e){c=e[1];b=b[1];e=e[2];b=0<caml_call2(a,b,c)?[0,c,[0,b,0]]:[0,b,[0,c,0]];return[0,b,e]}}}else if(3===c&&b){e=b[2];if(e){var
@@ -1182,29 +1182,29 @@ f=e[2];if(f){d=f[1];e=e[1];c=c[1];f=f[2];d=0<caml_call2(a,c,e)?0<caml_call2(a,e,
 g=d[1],h=e[1],i=d[2],j=e[2];if(0<caml_call2(a,h,g)){d=i;c=[0,g,c];continue}e=j;c=[0,h,c];continue}c=M(e,c)}else
 c=M(d,c);return[0,c,f]}}var
 e=s(c);return 2<=e?b(e,c)[1]:c}function
-e6(b,a){return b<=a?b:a}function
-e7(b,a){return a<=b?b:a}function
+e7(b,a){return b<=a?b:a}function
+e8(b,a){return a<=b?b:a}function
 av(b,c){var
 a=caml_create_bytes(b);caml_fill_bytes(a,0,b,c);return a}var
 dy=caml_create_bytes(0);function
-hA(a){return 25<a-65>>>0?a:a+32|0}function
+hB(a){return 25<a-65>>>0?a:a+32|0}function
 b2(c){var
 a=caml_ml_bytes_length(c),b=caml_create_bytes(a);caml_blit_bytes(c,0,b,0,a);return b}function
-e8(a){return caml_string_of_bytes(b2(a))}function
-cx(a){return b2(caml_bytes_of_string(a))}function
+e9(a){return caml_string_of_bytes(b2(a))}function
+cy(a){return b2(caml_bytes_of_string(a))}function
 bB(d,b,a){if(0<=b&&0<=a&&(caml_ml_bytes_length(d)-a|0)>=b){var
 c=caml_create_bytes(a);caml_blit_bytes(d,b,c,0,a);return c}return u("String.sub / Bytes.sub")}function
-e9(c,b,a){return caml_string_of_bytes(bB(c,b,a))}function
-cy(e,c,d,b,a){if(0<=a&&0<=c&&(caml_ml_bytes_length(e)-a|0)>=c&&0<=b&&(caml_ml_bytes_length(d)-a|0)>=b){caml_blit_bytes(e,c,d,b,a);return}return u("Bytes.blit")}function
-aO(e,c,d,b,a){if(0<=a&&0<=c&&(caml_ml_string_length(e)-a|0)>=c&&0<=b&&(caml_ml_bytes_length(d)-a|0)>=b){caml_blit_string(e,c,d,b,a);return}return u("String.blit / Bytes.blit_string")}function
-e_(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
+e_(c,b,a){return caml_string_of_bytes(bB(c,b,a))}function
+cz(e,c,d,b,a){if(0<=a&&0<=c&&(caml_ml_bytes_length(e)-a|0)>=c&&0<=b&&(caml_ml_bytes_length(d)-a|0)>=b){caml_blit_bytes(e,c,d,b,a);return}return u("Bytes.blit")}function
+aP(e,c,d,b,a){if(0<=a&&0<=c&&(caml_ml_string_length(e)-a|0)>=c&&0<=b&&(caml_ml_bytes_length(d)-a|0)>=b){caml_blit_string(e,c,d,b,a);return}return u("String.blit / Bytes.blit_string")}function
+e$(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
 dz(f,c){var
 a=caml_ml_bytes_length(c);if(0===a)return c;var
 d=caml_create_bytes(a),a=a-1|0;if(a>=0){var
 b=0;for(;;){caml_bytes_unsafe_set(d,b,caml_call1(f,caml_bytes_unsafe_get(c,b)));var
 e=b+1|0;if(a===b)break;b=e}}return d}function
 dA(b,a){return caml_string_of_bytes(av(b,a))}function
-e$(b,e){var
+fa(b,e){var
 c=caml_create_bytes(b),b=b-1|0;if(b>=0){var
 a=0;for(;;){caml_bytes_unsafe_set(c,a,caml_call1(e,a));var
 d=a+1|0;if(b===a)break;a=d}}return caml_string_of_bytes(c)}function
@@ -1214,18 +1214,18 @@ f=caml_ml_string_length(g);a:{var
 a=0,d=c,e=0;for(;;){if(!d)break a;var
 b=d[1];if(!d[2])break;d=d[2];b=(caml_ml_string_length(b)+f|0)+a|0;if(a<=b)a=b;else
 a=u("String.concat")}a=caml_ml_string_length(b)+a|0}b=caml_create_bytes(a);for(;;){if(c){a=c[1];if(c[2]){c=c[2];caml_blit_string(a,0,b,e,caml_ml_string_length(a));caml_blit_string(g,0,b,e+caml_ml_string_length(a)|0,f);e=(e+caml_ml_string_length(a)|0)+f|0;continue}caml_blit_string(a,0,b,e,caml_ml_string_length(a))}return caml_string_of_bytes(b)}}function
-fa(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
-cz(b){if(b===str)return b;if(!fa(caml_string_unsafe_get(b,0))&&!fa(caml_string_unsafe_get(b,caml_ml_string_length(b)-1|0)))return b;b=caml_bytes_of_string(b);var
-a=caml_ml_bytes_length(b),c=0;for(;;){if(c>=a)break;if(!e_(caml_bytes_unsafe_get(b,c)))break;c=c+1|0}a=a-1|0;for(;;){if(c<=a&&e_(caml_bytes_unsafe_get(b,a))){a=a-1|0;continue}a=c<=a?bB(b,c,(a-c|0)+1|0):dy;return caml_string_of_bytes(a)}}function
-fb(b,c,a,d){for(;;){if(c<=a)return 0;if(caml_string_unsafe_get(b,a)===d)return[0,a];a=a+1|0}}function
-cA(a,b){return fb(a,caml_ml_string_length(a),0,b)}function
-cB(c,a,d){var
-b=caml_ml_string_length(c);if(0<=a&&b>=a)return fb(c,b,a,d);return u("String.index_from_opt / Bytes.index_from_opt")}function
-as(c,d){var
+fb(a){a=a-9|0;a:{if(4<a>>>0){if(23!==a)break a}else if(2===a)break a;return 1}return 0}function
+cA(b){if(b===str)return b;if(!fb(caml_string_unsafe_get(b,0))&&!fb(caml_string_unsafe_get(b,caml_ml_string_length(b)-1|0)))return b;b=caml_bytes_of_string(b);var
+a=caml_ml_bytes_length(b),c=0;for(;;){if(c>=a)break;if(!e$(caml_bytes_unsafe_get(b,c)))break;c=c+1|0}a=a-1|0;for(;;){if(c<=a&&e$(caml_bytes_unsafe_get(b,a))){a=a-1|0;continue}a=c<=a?bB(b,c,(a-c|0)+1|0):dy;return caml_string_of_bytes(a)}}function
+fc(b,c,a,d){for(;;){if(c<=a)return 0;if(caml_string_unsafe_get(b,a)===d)return[0,a];a=a+1|0}}function
+cB(a,b){return fc(a,caml_ml_string_length(a),0,b)}function
+cC(c,a,d){var
+b=caml_ml_string_length(c);if(0<=a&&b>=a)return fc(c,b,a,d);return u("String.index_from_opt / Bytes.index_from_opt")}function
+at(c,d){var
 a=caml_ml_string_length(c);if(a<0)return u("String.contains_from / Bytes.contains_from");try{var
 b=0;for(;;){if(a<=b)throw caml_maybe_attach_backtrace(Not_found,1);if(caml_string_unsafe_get(c,b)===d)return 1;b=b+1|0}}catch(b){a=caml_wrap_exception(b);if(a===Not_found)return 0;throw caml_maybe_attach_backtrace(a,0)}}function
-fc(a){return caml_string_of_bytes(dz(hA,caml_bytes_of_string(a)))}function
-aG(g,c){var
+fd(a){return caml_string_of_bytes(dz(hB,caml_bytes_of_string(a)))}function
+aH(g,c){var
 b=caml_ml_string_length(c),a=caml_ml_string_length(c)-1|0,d=0;if(a<0);else
 for(;;){if(caml_string_unsafe_get(c,a)===g)var
 e=a,d=[0,F(c,a+1|0,(b-a|0)-1|0),d];else
@@ -1239,13 +1239,13 @@ dC(b){var
 a=b.length-1;return 0===a?[0]:caml_array_sub(b,0,a)}function
 dD(b,a){var
 c=b.length-1;return 0===c?dC(a):0===a.length-1?caml_array_sub(b,0,c):caml_array_append(b,a)}function
-fd(c,b,a,d){if(0<=b&&0<=a&&(c.length-1-a|0)>=b){caml_array_fill(c,b,a,d);return}return u("Array.fill")}function
+fe(c,b,a,d){if(0<=b&&0<=a&&(c.length-1-a|0)>=b){caml_array_fill(c,b,a,d);return}return u("Array.fill")}function
 b4(e,c,d,b,a){if(0<=a&&0<=c&&(e.length-1-a|0)>=c&&0<=b&&(d.length-1-a|0)>=b){caml_array_blit(e,c,d,b,a);return}return u("Array.blit")}function
 dE(e,c){var
 b=c.length-2|0;if(b>=0){var
 a=0;for(;;){caml_call1(e,c[a+1]);var
 d=a+1|0;if(b===a)break;a=d}}}function
-aY(e,c){var
+aZ(e,c){var
 a=c.length-1;if(0===a)return[0];var
 d=caml_make_vect(a,caml_call1(e,c[1])),a=a-1|0;if(a>=1){var
 b=1;for(;;){d[b+1]=caml_call1(e,c[b+1]);var
@@ -1254,7 +1254,7 @@ aa(c){var
 a=c.length-2|0,b=0;for(;;){if(0>a)return b;b=[0,c[a+1],b];a=a-1|0}}function
 Y(a){if(!a)return[0];var
 c=0,b=a,d=a[2],a=a[1];for(;;){if(!b)break;c=c+1|0;b=b[2]}a=caml_make_vect(c,a);b=1;for(;;){if(!d)return a;c=d[2];a[b+1]=d[1];b=b+1|0;d=c}}function
-fe(a){return a-a===0.?1:0}function
+ff(a){return a-a===0.?1:0}function
 bC(b,a){a:if(!(b<a)){if(!caml_signbit_float(a)&&caml_signbit_float(b))break a;return b!==b?b:a}return a!==a?a:b}function
 dF(b,a){a:if(!(b<a)){if(!caml_signbit_float(a)&&caml_signbit_float(b))break a;return a!==a?a:b}return b!==b?b:a}function
 dG(e){function
@@ -1276,33 +1276,33 @@ b=a[1];if(!b)return 0;var
 c=b[1];a[1]=b[2];a[2]=a[2]-1|0;return[0,c]}function
 bF(a){a=a[1];return a?[0,a[1]]:0}function
 dH(a){a[1]=0;a[2]=0;a[3]=0}function
-ff(b,a){b=[0,b,0];var
+fg(b,a){b=[0,b,0];var
 c=a[3];if(c){a[1]=a[1]+1|0;c[2]=b;a[3]=b;return}a[1]=1;a[2]=b;a[3]=b}function
 ak(a){a=1<=a?a:1;a=bz<a?bz:a;var
 b=caml_create_bytes(a);return[0,b,0,a,b]}function
-aw(a){return e9(a[1],0,a[2])}var
-i="buffer.ml",hE=[0,i,94,2],hF=[0,i,93,2];function
+aw(a){return e_(a[1],0,a[2])}var
+i="buffer.ml",hF=[0,i,94,2],hG=[0,i,93,2];function
 dI(b,c){var
 d=b[2],a=b[3];for(;;){if(a>=(d+c|0))break;a=2*a|0}a=bz<a?(d+c|0)<=bz?bz:(aj("Buffer.add: cannot grow buffer"),a):a;var
-e=caml_create_bytes(a);cy(b[1],0,e,0,b[2]);b[1]=e;b[3]=a;if((b[2]+c|0)>b[3])throw caml_maybe_attach_backtrace([0,Assert_failure,hF],1);if((d+c|0)<=b[3])return;throw caml_maybe_attach_backtrace([0,Assert_failure,hE],1)}function
+e=caml_create_bytes(a);cz(b[1],0,e,0,b[2]);b[1]=e;b[3]=a;if((b[2]+c|0)>b[3])throw caml_maybe_attach_backtrace([0,Assert_failure,hG],1);if((d+c|0)<=b[3])return;throw caml_maybe_attach_backtrace([0,Assert_failure,hF],1)}function
 I(a,c){var
 b=a[2];if(a[3]<=b)dI(a,1);caml_bytes_unsafe_set(a[1],b,c);a[2]=b+1|0}function
-fg(a,f,d,b){var
+fh(a,f,d,b){var
 c=d<0;if(c);else{c=b<0;c||=(caml_ml_string_length(f)-b|0)<d}if(c)u("Buffer.add_substring/add_subbytes");var
 e=a[2]+b|0;if(a[3]<e)dI(a,b);caml_blit_string(f,d,a[1],a[2],b);a[2]=e;return 0}function
 ad(a,d){var
 b=caml_ml_string_length(d),c=a[2]+b|0;if(a[3]<c)dI(a,b);caml_blit_string(d,0,a[1],a[2],b);a[2]=c}function
-fh(b,a){return ad(b,caml_string_of_bytes(a))}function
+fi(b,a){return ad(b,caml_string_of_bytes(a))}function
 dJ(a){return 5===a[2]?12:-6}function
-fi(a){return[0,0,caml_create_bytes(a)]}function
-fj(b,a){var
-c=caml_ml_bytes_length(b[2]),a=b[1]+a|0;if(c<a){a=caml_create_bytes(e7(c*2|0,a));cy(b[2],0,a,0,c);b[2]=a}}function
-bG(a,b){fj(a,1);caml_bytes_set(a[2],a[1],b);a[1]=a[1]+1|0}function
+fj(a){return[0,0,caml_create_bytes(a)]}function
+fk(b,a){var
+c=caml_ml_bytes_length(b[2]),a=b[1]+a|0;if(c<a){a=caml_create_bytes(e8(c*2|0,a));cz(b[2],0,a,0,c);b[2]=a}}function
+bG(a,b){fk(a,1);caml_bytes_set(a[2],a[1],b);a[1]=a[1]+1|0}function
 U(a,c){var
-b=caml_ml_string_length(c);fj(a,b);aO(c,0,a[2],a[1],b);a[1]=a[1]+b|0}function
-fk(a){return e9(a[2],0,a[1])}var
+b=caml_ml_string_length(c);fk(a,b);aP(c,0,a[2],a[1],b);a[1]=a[1]+b|0}function
+fl(a){return e_(a[2],0,a[1])}var
 str$23="@";function
-fl(a){if(typeof
+fm(a){if(typeof
 a==="number")switch(a){case
 0:return"@]";case
 1:return"@}";case
@@ -1367,7 +1367,7 @@ i=a[2];return[0,,function(a){i(0)},,a[4]];case
 8:a=V(a[2]);var
 j=a[2];return[0,,function(a){j(0)},,a[4]];case
 9:var
-k=a[2],l=a[1],a=V(a[3]),m=a[4],n=a[2],a=V(N(L(l),k)),o=a[4],p=a[2];return[0,,function(a){p(0);n(0)},,function(a){o(0);m(0)}];case
+k=a[2],l=a[1],a=V(a[3]),m=a[4],n=a[2],a=V(O(L(l),k)),o=a[4],p=a[2];return[0,,function(a){p(0);n(0)},,function(a){o(0);m(0)}];case
 10:a=V(a[1]);var
 q=a[2];return[0,,function(a){q(0)},,a[4]];case
 11:a=V(a[1]);var
@@ -1377,12 +1377,12 @@ s=a[2];return[0,,function(a){s(0)},,a[4]];case
 13:a=V(a[1]);var
 t=a[4],u=a[2];return[0,,function(a){u(0)},,function(a){t(0)}];default:a=V(a[1]);var
 v=a[4],w=a[2];return[0,,function(a){w(0)},,function(a){v(0)}]}}var
-i="camlinternalFormat.ml",hG=[0,i,850,23],hH=[0,i,837,26],hI=[0,i,847,28],hJ=[0,i,815,21],hK=[0,i,819,21],hL=[0,i,823,19],hM=[0,i,827,22],hN=[0,i,832,30],hO=[0,i,851,23],hP=[0,i,836,26],hQ=[0,i,846,28],hR=[0,i,814,21],hS=[0,i,818,21],hT=[0,i,822,19],hU=[0,i,826,22],hV=[0,i,831,30];function
-N(b,a){a:{b:{c:{d:{e:{f:{g:{if(typeof
+i="camlinternalFormat.ml",hH=[0,i,850,23],hI=[0,i,837,26],hJ=[0,i,847,28],hK=[0,i,815,21],hL=[0,i,819,21],hM=[0,i,823,19],hN=[0,i,827,22],hO=[0,i,832,30],hP=[0,i,851,23],hQ=[0,i,836,26],hR=[0,i,846,28],hS=[0,i,814,21],hT=[0,i,818,21],hU=[0,i,822,19],hV=[0,i,826,22],hW=[0,i,831,30];function
+O(b,a){a:{b:{c:{d:{e:{f:{g:{if(typeof
 b!=="number"){switch(b[0]){case
 0:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-0:return[0,N(b,a[1])];case
+0:return[0,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1392,7 +1392,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 1:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-1:return[1,N(b,a[1])];case
+1:return[1,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1402,7 +1402,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 2:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-2:return[2,N(b,a[1])];case
+2:return[2,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1412,7 +1412,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 3:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-3:return[3,N(b,a[1])];case
+3:return[3,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1422,7 +1422,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 4:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-4:return[4,N(b,a[1])];case
+4:return[4,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1432,7 +1432,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 5:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-5:return[5,N(b,a[1])];case
+5:return[5,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1442,7 +1442,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 6:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-6:return[6,N(b,a[1])];case
+6:return[6,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1452,7 +1452,7 @@ a!=="number")switch(a[0]){case
 9:break g}break;case
 7:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-7:return[7,N(b,a[1])];case
+7:return[7,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
@@ -1464,45 +1464,45 @@ a!=="number")switch(a[0]){case
 c=b[2],b=b[1];if(typeof
 a!=="number")switch(a[0]){case
 8:var
-d=a[1],a=N(c,a[2]);return[8,N(b,d),a];case
+d=a[1],a=O(c,a[2]);return[8,O(b,d),a];case
 10:break a;case
 11:break b;case
 12:break c;case
 13:break d;case
-14:break e}throw caml_maybe_attach_backtrace([0,Assert_failure,hP],1);case
+14:break e}throw caml_maybe_attach_backtrace([0,Assert_failure,hQ],1);case
 9:d=b[3];c=b[2];b=b[1];if(typeof
 a!=="number")switch(a[0]){case
 9:var
-e=a[3],f=a[2],a=a[1],a=V(N(L(c),a)),c=a[4];a[2].call(null,0);c(0);return[9,b,f,N(d,e)];case
+e=a[3],f=a[2],a=a[1],a=V(O(L(c),a)),c=a[4];a[2].call(null,0);c(0);return[9,b,f,O(d,e)];case
 10:break a;case
 11:break b;case
 12:break c;case
 13:break d;case
 14:break e;case
-8:break f}throw caml_maybe_attach_backtrace([0,Assert_failure,hQ],1);case
+8:break f}throw caml_maybe_attach_backtrace([0,Assert_failure,hR],1);case
 10:b=b[1];if(typeof
-a!=="number"&&10===a[0])return[10,N(b,a[1])];throw caml_maybe_attach_backtrace([0,Assert_failure,hR],1);case
+a!=="number"&&10===a[0])return[10,O(b,a[1])];throw caml_maybe_attach_backtrace([0,Assert_failure,hS],1);case
 11:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-11:return[11,N(b,a[1])];case
-10:break a}throw caml_maybe_attach_backtrace([0,Assert_failure,hS],1);case
+11:return[11,O(b,a[1])];case
+10:break a}throw caml_maybe_attach_backtrace([0,Assert_failure,hT],1);case
 12:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-12:return[12,N(b,a[1])];case
+12:return[12,O(b,a[1])];case
 10:break a;case
-11:break b}throw caml_maybe_attach_backtrace([0,Assert_failure,hT],1);case
+11:break b}throw caml_maybe_attach_backtrace([0,Assert_failure,hU],1);case
 13:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-13:return[13,N(b,a[1])];case
+13:return[13,O(b,a[1])];case
 10:break a;case
 11:break b;case
-12:break c}throw caml_maybe_attach_backtrace([0,Assert_failure,hU],1);default:b=b[1];if(typeof
+12:break c}throw caml_maybe_attach_backtrace([0,Assert_failure,hV],1);default:b=b[1];if(typeof
 a!=="number")switch(a[0]){case
-14:return[14,N(b,a[1])];case
+14:return[14,O(b,a[1])];case
 10:break a;case
 11:break b;case
 12:break c;case
-13:break d}throw caml_maybe_attach_backtrace([0,Assert_failure,hV],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hO],1)}if(typeof
+13:break d}throw caml_maybe_attach_backtrace([0,Assert_failure,hW],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hP],1)}if(typeof
 a==="number")return 0;switch(a[0]){case
 10:break a;case
 11:break b;case
@@ -1510,16 +1510,16 @@ a==="number")return 0;switch(a[0]){case
 13:break d;case
 14:break e;case
 8:break f;case
-9:break;default:throw caml_maybe_attach_backtrace([0,Assert_failure,hG],1)}}throw caml_maybe_attach_backtrace([0,Assert_failure,hI],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hH],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hN],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hM],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hL],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hK],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hJ],1)}var
-Q=[num_248,"CamlinternalFormat.Type_mismatch",caml_fresh_oo_id(0)],num_32=-32,str_true="true",str_false="false",num_97=-97;function
-hw(a){return a?str_true:str_false}function
-hB(a){return 25<a+num_97>>>0?a:a+num_32|0}function
-cC(b,a){if(typeof
+9:break;default:throw caml_maybe_attach_backtrace([0,Assert_failure,hH],1)}}throw caml_maybe_attach_backtrace([0,Assert_failure,hJ],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hI],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hO],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hN],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hM],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hL],1)}throw caml_maybe_attach_backtrace([0,Assert_failure,hK],1)}var
+R=[num_248,"CamlinternalFormat.Type_mismatch",caml_fresh_oo_id(0)],num_32=-32,str_true="true",str_false="false",num_97=-97;function
+hx(a){return a?str_true:str_false}function
+hC(a){return 25<a+num_97>>>0?a:a+num_32|0}function
+cD(b,a){if(typeof
 b==="number")return[0,0,a];if(0===b[0])return[0,[0,b[1],b[2]],a];if(typeof
-a!=="number"&&2===a[0])return[0,[1,b[1]],a[1]];throw caml_maybe_attach_backtrace(Q,1)}function
-b7(c,b,a){a=cC(c,a);if(typeof
+a!=="number"&&2===a[0])return[0,[1,b[1]],a[1]];throw caml_maybe_attach_backtrace(R,1)}function
+b7(c,b,a){a=cD(c,a);if(typeof
 b!=="number")return[0,a[1],[0,b[1]],a[2]];if(!b)return[0,a[1],0,a[2]];b=a[2];if(typeof
-b!=="number"&&2===b[0])return[0,a[1],1,b[1]];throw caml_maybe_attach_backtrace(Q,1)}function
+b!=="number"&&2===b[0])return[0,a[1],1,b[1]];throw caml_maybe_attach_backtrace(R,1)}function
 y(a,b){if(typeof
 a==="number")return[0,0,b];switch(a[0]){case
 0:if(typeof
@@ -1527,31 +1527,31 @@ b!=="number"&&0===b[0]){b=y(a[1],b[1]);return[0,[0,b[1]],b[2]]}break;case
 1:if(typeof
 b!=="number"&&0===b[0]){b=y(a[1],b[1]);return[0,[1,b[1]],b[2]]}break;case
 2:var
-c=a[2],b=cC(a[1],b),a=b[2],b=b[1];if(typeof
-a!=="number"&&1===a[0]){a=y(c,a[1]);return[0,[2,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(Q,1);case
-3:c=a[2];a=cC(a[1],b);b=a[2];a=a[1];if(typeof
-b!=="number"&&1===b[0]){b=y(c,b[1]);return[0,[3,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(Q,1);case
+c=a[2],b=cD(a[1],b),a=b[2],b=b[1];if(typeof
+a!=="number"&&1===a[0]){a=y(c,a[1]);return[0,[2,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(R,1);case
+3:c=a[2];a=cD(a[1],b);b=a[2];a=a[1];if(typeof
+b!=="number"&&1===b[0]){b=y(c,b[1]);return[0,[3,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(R,1);case
 4:c=a[4];var
 e=a[1],b=b7(a[2],a[3],b),a=b[3],d=b[1];if(typeof
-a!=="number"&&2===a[0]){b=b[2];a=y(c,a[1]);return[0,[4,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(Q,1);case
+a!=="number"&&2===a[0]){b=b[2];a=y(c,a[1]);return[0,[4,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(R,1);case
 5:d=a[4];e=a[1];a=b7(a[2],a[3],b);b=a[3];c=a[1];if(typeof
-b!=="number"&&3===b[0]){a=a[2];b=y(d,b[1]);return[0,[5,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(Q,1);case
+b!=="number"&&3===b[0]){a=a[2];b=y(d,b[1]);return[0,[5,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(R,1);case
 6:c=a[4];e=a[1];b=b7(a[2],a[3],b);a=b[3];d=b[1];if(typeof
-a!=="number"&&4===a[0]){b=b[2];a=y(c,a[1]);return[0,[6,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(Q,1);case
+a!=="number"&&4===a[0]){b=b[2];a=y(c,a[1]);return[0,[6,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(R,1);case
 7:d=a[4];e=a[1];a=b7(a[2],a[3],b);b=a[3];c=a[1];if(typeof
-b!=="number"&&5===b[0]){a=a[2];b=y(d,b[1]);return[0,[7,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(Q,1);case
+b!=="number"&&5===b[0]){a=a[2];b=y(d,b[1]);return[0,[7,e,c,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(R,1);case
 8:c=a[4];e=a[1];b=b7(a[2],a[3],b);a=b[3];d=b[1];if(typeof
-a!=="number"&&6===a[0]){b=b[2];a=y(c,a[1]);return[0,[8,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(Q,1);case
-9:d=a[2];a=cC(a[1],b);b=a[2];a=a[1];if(typeof
-b!=="number"&&7===b[0]){b=y(d,b[1]);return[0,[9,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(Q,1);case
+a!=="number"&&6===a[0]){b=b[2];a=y(c,a[1]);return[0,[8,e,d,b,a[1]],a[2]]}throw caml_maybe_attach_backtrace(R,1);case
+9:d=a[2];a=cD(a[1],b);b=a[2];a=a[1];if(typeof
+b!=="number"&&7===b[0]){b=y(d,b[1]);return[0,[9,a,b[1]],b[2]]}throw caml_maybe_attach_backtrace(R,1);case
 10:a=y(a[1],b);return[0,[10,a[1]],a[2]];case
 11:d=a[1];a=y(a[2],b);return[0,[11,d,a[1]],a[2]];case
 12:d=a[1];a=y(a[2],b);return[0,[12,d,a[1]],a[2]];case
 13:if(typeof
-b!=="number"&&8===b[0]){d=b[1];b=b[2];e=a[3];c=a[1];if(caml_notequal([0,a[2]],[0,d]))throw caml_maybe_attach_backtrace(Q,1);a=y(e,b);return[0,[13,c,d,a[1]],a[2]]}break;case
+b!=="number"&&8===b[0]){d=b[1];b=b[2];e=a[3];c=a[1];if(caml_notequal([0,a[2]],[0,d]))throw caml_maybe_attach_backtrace(R,1);a=y(e,b);return[0,[13,c,d,a[1]],a[2]]}break;case
 14:if(typeof
 b!=="number"&&9===b[0]){d=b[1];b=b[3];c=a[3];e=a[2];a=a[1];var
-f=[0,H(d)];if(caml_notequal([0,H(e)],f))throw caml_maybe_attach_backtrace(Q,1);b=y(c,H(b));return[0,[14,a,d,b[1]],b[2]]}break;case
+f=[0,H(d)];if(caml_notequal([0,H(e)],f))throw caml_maybe_attach_backtrace(R,1);b=y(c,H(b));return[0,[14,a,d,b[1]],b[2]]}break;case
 15:if(typeof
 b!=="number"&&10===b[0]){b=y(a[1],b[1]);return[0,[15,b[1]],b[2]]}break;case
 16:if(typeof
@@ -1568,7 +1568,7 @@ b!=="number"&&2===b[0]){c=a[1];a=y(a[2],b[1]);return[0,[21,c,a[1]],a[2]]}break;c
 a!=="number")switch(a[0]){case
 8:return dL([8,a[1],a[2]],c,b);case
 9:d=a[1];b=ae(a[2],c,b);a=b[2];return[0,[23,[9,d,b[1]],a[1]],a[2]];default:return dL(a,c,b)}if(2!==a)return dL(a,c,b);if(typeof
-b!=="number"&&14===b[0]){c=y(c,b[1]);return[0,[23,2,c[1]],c[2]]}throw caml_maybe_attach_backtrace(Q,1)}throw caml_maybe_attach_backtrace(Q,1)}function
+b!=="number"&&14===b[0]){c=y(c,b[1]);return[0,[23,2,c[1]],c[2]]}throw caml_maybe_attach_backtrace(R,1)}throw caml_maybe_attach_backtrace(R,1)}function
 dL(c,b,a){a=y(b,a);return[0,[23,c,a[1]],a[2]]}function
 ae(b,c,a){if(typeof
 b==="number")return[0,0,y(c,a)];switch(b[0]){case
@@ -1590,10 +1590,10 @@ a!=="number"&&6===a[0]){a=ae(b[1],c,a[1]);return[0,[6,a[1]],a[2]]}break;case
 a!=="number"&&7===a[0]){c=ae(b[1],c,a[1]);return[0,[7,c[1]],c[2]]}break;case
 8:if(typeof
 a!=="number"&&8===a[0]){var
-d=a[1],a=a[2],e=b[2];if(caml_notequal([0,b[1]],[0,d]))throw caml_maybe_attach_backtrace(Q,1);a=ae(e,c,a);return[0,[8,d,a[1]],a[2]]}break;case
+d=a[1],a=a[2],e=b[2];if(caml_notequal([0,b[1]],[0,d]))throw caml_maybe_attach_backtrace(R,1);a=ae(e,c,a);return[0,[8,d,a[1]],a[2]]}break;case
 9:if(typeof
 a!=="number"&&9===a[0]){d=a[2];e=a[1];a=a[3];var
-g=b[3],f=b[2],b=b[1],h=[0,H(e)];if(caml_notequal([0,H(b)],h))throw caml_maybe_attach_backtrace(Q,1);b=[0,H(d)];if(caml_notequal([0,H(f)],b))throw caml_maybe_attach_backtrace(Q,1);b=V(N(L(e),d));f=b[4];b[2].call(null,0);f(0);b=ae(H(g),c,a);a=b[2];return[0,[9,e,d,L(b[1])],a]}break;case
+g=b[3],f=b[2],b=b[1],h=[0,H(e)];if(caml_notequal([0,H(b)],h))throw caml_maybe_attach_backtrace(R,1);b=[0,H(d)];if(caml_notequal([0,H(f)],b))throw caml_maybe_attach_backtrace(R,1);b=V(O(L(e),d));f=b[4];b[2].call(null,0);f(0);b=ae(H(g),c,a);a=b[2];return[0,[9,e,d,L(b[1])],a]}break;case
 10:if(typeof
 a!=="number"&&10===a[0]){b=ae(b[1],c,a[1]);return[0,[10,b[1]],b[2]]}break;case
 11:if(typeof
@@ -1601,24 +1601,24 @@ a!=="number"&&11===a[0]){b=ae(b[1],c,a[1]);return[0,[11,b[1]],b[2]]}break;case
 13:if(typeof
 a!=="number"&&13===a[0]){a=ae(b[1],c,a[1]);return[0,[13,a[1]],a[2]]}break;case
 14:if(typeof
-a!=="number"&&14===a[0]){c=ae(b[1],c,a[1]);return[0,[14,c[1]],c[2]]}break}throw caml_maybe_attach_backtrace(Q,1)}var
+a!=="number"&&14===a[0]){c=ae(b[1],c,a[1]);return[0,[14,c[1]],c[2]]}break}throw caml_maybe_attach_backtrace(R,1)}var
 num_120=120;function
 ag(e,d,a){var
 b=caml_ml_string_length(a),e=0<=d?e:0,d=bY(d);if(d<=b)return a;var
 c=2===e?48:32,c=av(d,c);switch(e){case
-0:aO(a,0,c,0,b);break;case
-1:aO(a,0,c,d-b|0,b);break;default:a:if(0<b){if(43!==caml_string_get(a,0)&&45!==caml_string_get(a,0)&&32!==caml_string_get(a,0))break a;caml_bytes_set(c,0,caml_string_get(a,0));aO(a,1,c,(d-b|0)+1|0,b-1|0);break}a:if(1<b&&48===caml_string_get(a,0)){if(num_120!==caml_string_get(a,1)&&88!==caml_string_get(a,1))break a;caml_bytes_set(c,1,caml_string_get(a,1));aO(a,2,c,(d-b|0)+2|0,b-2|0);break}aO(a,0,c,d-b|0,b)}return caml_string_of_bytes(c)}function
+0:aP(a,0,c,0,b);break;case
+1:aP(a,0,c,d-b|0,b);break;default:a:if(0<b){if(43!==caml_string_get(a,0)&&45!==caml_string_get(a,0)&&32!==caml_string_get(a,0))break a;caml_bytes_set(c,0,caml_string_get(a,0));aP(a,1,c,(d-b|0)+1|0,b-1|0);break}a:if(1<b&&48===caml_string_get(a,0)){if(num_120!==caml_string_get(a,1)&&88!==caml_string_get(a,1))break a;caml_bytes_set(c,1,caml_string_get(a,1));aP(a,2,c,(d-b|0)+2|0,b-2|0);break}aP(a,0,c,d-b|0,b)}return caml_string_of_bytes(c)}function
 bH(b,d){b=bY(b);var
 c=caml_ml_string_length(d),a=caml_string_get(d,0);a:{b:{if(58>a){if(32!==a){if(43>a)break a;switch(a-43|0){case
-5:if(c>=(b+2|0))break b;if(1>=c)break b;if(num_120!==caml_string_get(d,1)&&88!==caml_string_get(d,1))break b;a=av(b+2|0,48);caml_bytes_set(a,1,caml_string_get(d,1));aO(d,2,a,(b-c|0)+4|0,c-2|0);return caml_string_of_bytes(a);case
+5:if(c>=(b+2|0))break b;if(1>=c)break b;if(num_120!==caml_string_get(d,1)&&88!==caml_string_get(d,1))break b;a=av(b+2|0,48);caml_bytes_set(a,1,caml_string_get(d,1));aP(d,2,a,(b-c|0)+4|0,c-2|0);return caml_string_of_bytes(a);case
 0:case
 2:break;case
 1:case
 3:case
 4:break a;default:break b}}if(c>=(b+1|0))break a;var
-e=av(b+1|0,48);caml_bytes_set(e,0,a);aO(d,1,e,(b-c|0)+2|0,c-1|0);return caml_string_of_bytes(e)}if(71<=a){if(5<a+num_97>>>0)break a}else if(65>a)break a}if(c<b){e=av(b,48);aO(d,0,e,b-c|0,c);return caml_string_of_bytes(e)}}return d}var
+e=av(b+1|0,48);caml_bytes_set(e,0,a);aP(d,1,e,(b-c|0)+2|0,c-1|0);return caml_string_of_bytes(e)}if(71<=a){if(5<a+num_97>>>0)break a}else if(65>a)break a}if(c<b){e=av(b,48);aP(d,0,e,b-c|0,c);return caml_string_of_bytes(e)}}return d}var
 num_114=114,num_110=110,num_116=116;function
-hW(f){a:{var
+hX(f){a:{var
 a=0,b=caml_ml_string_length(f);for(;;){if(b<=a)break a;var
 e=caml_string_unsafe_get(f,a)+num_32|0;if(59<e>>>0){if(33<e-61>>>0)break}else if(2===e)break;a=a+1|0}f=caml_bytes_of_string(f);a=caml_ml_bytes_length(f)-1|0;b=0;if(a<0);else{e=0;for(;;){var
 c=caml_bytes_unsafe_get(f,e);b:{c:{d:{if(32<=c){c=c-34|0;if(58<c>>>0){if(93<=c)break d}else if(56<c-1>>>0)break c;c=1;break b}if(11<=c){if(13===c)break c}else if(8<=c)break c}c=4;break b}c=2}b=b+c|0;c=e+1|0;if(a===e)break;e=c}}if(b===caml_ml_bytes_length(f))b=b2(f);else{b=caml_create_bytes(b);c=caml_ml_bytes_length(f)-1|0;if(c<0);else{a=0;e=0;for(;;){var
@@ -1627,9 +1627,9 @@ d=caml_bytes_unsafe_get(f,e);b:{c:{d:{if(35<=d){if(92!==d){if(num_127<=d)break c
 9:caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,num_116);break b;case
 10:caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,num_110);break b;case
 13:caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,num_114);break b;default:break c}}if(34>d)break d}caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,d);break b}caml_bytes_unsafe_set(b,a,d);break b}caml_bytes_unsafe_set(b,a,92);a=a+1|0;caml_bytes_unsafe_set(b,a,48+(d/num_100|0)|0);a=a+1|0;caml_bytes_unsafe_set(b,a,48+((d/10|0)%10|0)|0);a=a+1|0;caml_bytes_unsafe_set(b,a,48+(d%10|0)|0)}a=a+1|0;d=e+1|0;if(c===e)break;e=d}}}f=caml_string_of_bytes(b)}a=caml_ml_string_length(f);b=av(a+2|0,34);caml_blit_string(f,0,b,1,a);return caml_string_of_bytes(b)}var
-num_102=102,num_104=104,num_103=103,num_101=101,hX=[0,num_103];function
-fm(d,c){c=bY(c);var
-a=hX[1];switch(d[2]){case
+num_102=102,num_104=104,num_103=103,num_101=101,hY=[0,num_103];function
+fn(d,c){c=bY(c);var
+a=hY[1];switch(d[2]){case
 0:a=num_102;break;case
 1:a=num_101;break;case
 2:a=69;break;case
@@ -1638,10 +1638,10 @@ a=hX[1];switch(d[2]){case
 6:a=num_104;break;case
 7:a=72;break;case
 8:a=70;break}var
-b=fi(16);bG(b,37);switch(d[1]){case
+b=fj(16);bG(b,37);switch(d[1]){case
 1:bG(b,43);break;case
-2:bG(b,32);break}if(8<=d[2])bG(b,35);bG(b,46);U(b,str+c);bG(b,a);return fk(b)}function
-cD(c,e){if(13>c)return e;c=caml_ml_string_length(e)-1|0;var
+2:bG(b,32);break}if(8<=d[2])bG(b,35);bG(b,46);U(b,str+c);bG(b,a);return fl(b)}function
+cE(c,e){if(13>c)return e;c=caml_ml_string_length(e)-1|0;var
 num_48=-48,a=0;if(c<0);else{var
 b=0;for(;;){a=9<caml_string_unsafe_get(e,b)+num_48>>>0?a:a+1|0;var
 d=b+1|0;if(c===b)break;b=d}}var
@@ -1649,7 +1649,7 @@ g=caml_create_bytes(caml_ml_string_length(e)+((a-1|0)/3|0)|0),h=[0,0];function
 f(a){caml_bytes_set(g,h[1],a);h[1]++}var
 c=caml_ml_string_length(e)-1|0,a=((a-1|0)%3|0)+1|0;if(c>=0){d=0;for(;;){b=caml_string_unsafe_get(e,d);if(9<b+num_48>>>0)f(b);else{a=0===a?(f(95),3):a;f(b);a=a-1|0}b=d+1|0;if(c===d)break;d=b}}return caml_string_of_bytes(g)}var
 str_u="%u";function
-hY(b,c){switch(b){case
+hZ(b,c){switch(b){case
 1:var
 a="%+d";break;case
 2:a="% d";break;case
@@ -1664,8 +1664,8 @@ a="%+d";break;case
 0:case
 13:a=str_d;break;case
 3:case
-14:a=str_i;break;default:a=str_u}return cD(b,caml_format_int(a,c))}function
-hZ(b,c){switch(b){case
+14:a=str_i;break;default:a=str_u}return cE(b,caml_format_int(a,c))}function
+h0(b,c){switch(b){case
 1:var
 a="%+ld";break;case
 2:a="% ld";break;case
@@ -1680,8 +1680,8 @@ a="%+ld";break;case
 0:case
 13:a="%ld";break;case
 3:case
-14:a=str_li;break;default:a="%lu"}return cD(b,caml_format_int(a,c))}function
-h0(b,c){switch(b){case
+14:a=str_li;break;default:a="%lu"}return cE(b,caml_format_int(a,c))}function
+h1(b,c){switch(b){case
 1:var
 a="%+nd";break;case
 2:a="% nd";break;case
@@ -1696,8 +1696,8 @@ a="%+nd";break;case
 0:case
 13:a="%nd";break;case
 3:case
-14:a=str_ni;break;default:a="%nu"}return cD(b,caml_format_int(a,c))}function
-h1(b,c){switch(b){case
+14:a=str_ni;break;default:a="%nu"}return cE(b,caml_format_int(a,c))}function
+h2(b,c){switch(b){case
 1:var
 a="%+Ld";break;case
 2:a="% Ld";break;case
@@ -1712,20 +1712,20 @@ a="%+Ld";break;case
 0:case
 13:a="%Ld";break;case
 3:case
-14:a=str_Li;break;default:a="%Lu"}return cD(b,caml_int64_format(a,c))}function
-aP(e,h,b){function
+14:a=str_Li;break;default:a="%Lu"}return cE(b,caml_int64_format(a,c))}function
+aQ(e,h,b){function
 f(a){switch(e[1]){case
 0:a=45;break;case
 1:a=43;break;default:a=32}return caml_hexstring_of_float(b,h,a)}function
 i(c){var
 a=caml_classify_float(b);return 3===a?b<0.?"neg_infinity":str_infinity:4<=a?str_nan:c}switch(e[2]){case
 5:var
-a=caml_format_float(fm(e,h),b),d=0,c=caml_ml_string_length(a);for(;;){a:{if(d!==c){var
+a=caml_format_float(fn(e,h),b),d=0,c=caml_ml_string_length(a);for(;;){a:{if(d!==c){var
 g=caml_string_get(a,d)-46|0;b:{if(23<g>>>0){if(55!==g)break b}else if(21>=g-1>>>0)break b;c=1;break a}d=d+1|0;continue}c=0}a=c?a:a+str$12;return i(a)}case
 6:return f(0);case
-7:return caml_string_of_bytes(dz(hB,caml_bytes_of_string(f(0))));case
-8:return i(f(0));default:return caml_format_float(fm(e,h),b)}}var
-str$9="\\\\",h3=[0,i,1558,4],h4=[0,i,1626,39];function
+7:return caml_string_of_bytes(dz(hC,caml_bytes_of_string(f(0))));case
+8:return i(f(0));default:return caml_format_float(fn(e,h),b)}}var
+str$9="\\\\",h4=[0,i,1558,4],h5=[0,i,1626,39];function
 cv(counter,f,i,h){var
 d=0;a:for(;;)switch(d){case
 0:var
@@ -1734,13 +1734,13 @@ a==="number")return caml_call1(c,b);switch(a[0]){case
 0:d=1;continue a;case
 1:d=2;continue a;case
 2:d=3;continue a;case
-3:return dM(c,b,a[2],a[1],hW);case
-4:return cE(c,b,a[4],a[2],a[3],hY,a[1]);case
-5:return cE(c,b,a[4],a[2],a[3],hZ,a[1]);case
-6:return cE(c,b,a[4],a[2],a[3],h0,a[1]);case
-7:return cE(c,b,a[4],a[2],a[3],h1,a[1]);case
+3:return dM(c,b,a[2],a[1],hX);case
+4:return cF(c,b,a[4],a[2],a[3],hZ,a[1]);case
+5:return cF(c,b,a[4],a[2],a[3],h0,a[1]);case
+6:return cF(c,b,a[4],a[2],a[3],h1,a[1]);case
+7:return cF(c,b,a[4],a[2],a[3],h2,a[1]);case
 8:d=4;continue a;case
-9:return dM(c,b,a[2],a[1],hw);case
+9:return dM(c,b,a[2],a[1],hx);case
 10:b=[7,b];a=a[1];break;case
 11:b=[2,b,a[1]];a=a[2];break;case
 12:b=[3,b,a[1]];a=a[2];break;case
@@ -1752,13 +1752,13 @@ a==="number")return caml_call1(c,b);switch(a[0]){case
 18:d=a[1];if(0===d[0]){let
 e=b,f=c,g=a[2];c=function(a){return p(f,[1,e,[0,a]],g)};b=0;a=d[1][1]}else{let
 e=b,f=c,g=a[2];c=function(a){return p(f,[1,e,[1,a]],g)};b=0;a=d[1][1]}break;case
-19:throw caml_maybe_attach_backtrace([0,Assert_failure,h3],1);case
+19:throw caml_maybe_attach_backtrace([0,Assert_failure,h4],1);case
 20:d=9;continue a;case
 21:d=10;continue a;case
 22:d=11;continue a;case
-23:break b;default:d=a[3];f=a[1];h=caml_call1(a[2],0);return counter<50?eW(counter+1|0,c,b,d,f,h):caml_trampoline_return(eW,[0,c,b,d,f,h])}}case
+23:break b;default:d=a[3];f=a[1];h=caml_call1(a[2],0);return counter<50?eX(counter+1|0,c,b,d,f,h):caml_trampoline_return(eX,[0,c,b,d,f,h])}}case
 12:i=a[2];h=a[1];if(typeof
-h==="number"){if(2===h)throw caml_maybe_attach_backtrace([0,Assert_failure,h4],1);return counter<50?bX(counter+1|0,c,b,i):caml_trampoline_return(bX,[0,c,b,i])}if(9!==h[0])return counter<50?bX(counter+1|0,c,b,i):caml_trampoline_return(bX,[0,c,b,i]);f=h[2];return counter<50?eX(counter+1|0,c,b,f,i):caml_trampoline_return(eX,[0,c,b,f,i]);case
+h==="number"){if(2===h)throw caml_maybe_attach_backtrace([0,Assert_failure,h5],1);return counter<50?bX(counter+1|0,c,b,i):caml_trampoline_return(bX,[0,c,b,i])}if(9!==h[0])return counter<50?bX(counter+1|0,c,b,i):caml_trampoline_return(bX,[0,c,b,i]);f=h[2];return counter<50?eY(counter+1|0,c,b,f,i):caml_trampoline_return(eY,[0,c,b,f,i]);case
 11:var
 z=a[1];return function(a){return p(c,[5,b,a],z)};case
 10:var
@@ -1771,21 +1771,21 @@ u=a[1];return function(a){return p(c,[6,b,a],u)};case
 t=a[1];return function(d,a){return p(c,[6,b,function(b){return caml_call2(d,b,a)}],t)};case
 6:var
 r=a[3],s=a[2];return function(a){a=a[1];a=y(a,H(L(s)));if(typeof
-a[2]==="number")return p(c,b,D(a[1],r));throw caml_maybe_attach_backtrace(Q,1)};case
+a[2]==="number")return p(c,b,D(a[1],r));throw caml_maybe_attach_backtrace(R,1)};case
 5:var
-q=a[3],d=a[2],a=fi(16);dK(a,d);var
-m=fk(a);return function(a){return p(c,[4,b,m],q)};case
+q=a[3],d=a[2],a=fj(16);dK(a,d);var
+m=fl(a);return function(a){return p(c,[4,b,m],q)};case
 4:var
 g=a[4],d=a[3],f=a[2],e=a[1];if(typeof
 f==="number"){if(typeof
-d==="number")return d?function(d,a){return p(c,[4,b,aP(e,d,a)],g)}:function(a){return p(c,[4,b,aP(e,dJ(e),a)],g)};var
-A=d[1];return function(a){return p(c,[4,b,aP(e,A,a)],g)}}if(0===f[0]){var
+d==="number")return d?function(d,a){return p(c,[4,b,aQ(e,d,a)],g)}:function(a){return p(c,[4,b,aQ(e,dJ(e),a)],g)};var
+A=d[1];return function(a){return p(c,[4,b,aQ(e,A,a)],g)}}if(0===f[0]){var
 j=f[2],k=f[1];if(typeof
-d==="number")return d?function(d,a){return p(c,[4,b,ag(k,j,aP(e,d,a))],g)}:function(a){return p(c,[4,b,ag(k,j,aP(e,dJ(e),a))],g)};var
-B=d[1];return function(a){return p(c,[4,b,ag(k,j,aP(e,B,a))],g)}}var
+d==="number")return d?function(d,a){return p(c,[4,b,ag(k,j,aQ(e,d,a))],g)}:function(a){return p(c,[4,b,ag(k,j,aQ(e,dJ(e),a))],g)};var
+B=d[1];return function(a){return p(c,[4,b,ag(k,j,aQ(e,B,a))],g)}}var
 l=f[1];if(typeof
-d==="number")return d?function(f,d,a){return p(c,[4,b,ag(l,f,aP(e,d,a))],g)}:function(d,a){return p(c,[4,b,ag(l,d,aP(e,dJ(e),a))],g)};var
-C=d[1];return function(d,a){return p(c,[4,b,ag(l,d,aP(e,C,a))],g)};case
+d==="number")return d?function(f,d,a){return p(c,[4,b,ag(l,f,aQ(e,d,a))],g)}:function(d,a){return p(c,[4,b,ag(l,d,aQ(e,dJ(e),a))],g)};var
+C=d[1];return function(d,a){return p(c,[4,b,ag(l,d,aQ(e,C,a))],g)};case
 3:return dM(c,b,a[2],a[1],function(a){return a});case
 2:var
 o=a[1];return function(a){a:{b:{if(40<=a){if(92===a){a=str$9;break a}if(num_127<=a)break b}else{if(32>a){if(14<=a)break b;switch(a){case
@@ -1798,8 +1798,8 @@ e=av(d+2|0,39);caml_blit_string(a,0,e,1,d);return p(c,[4,b,caml_string_of_bytes(
 1:var
 n=a[1];return function(a){return p(c,[5,b,a],n)}}}function
 p(a,b,c){return caml_trampoline(cv(0,a,b,c))}var
-h5=[0,i,1649,31],h6=[0,i,1650,31];function
-eX(e,d,c,a,b){if(typeof
+h6=[0,i,1649,31],h7=[0,i,1650,31];function
+eY(e,d,c,a,b){if(typeof
 a==="number")return e<50?bX(e+1|0,d,c,b):caml_trampoline_return(bX,[0,d,c,b]);switch(a[0]){case
 0:var
 f=a[1];return function(a){return al(d,c,f,b)};case
@@ -1820,21 +1820,21 @@ m=a[1];return function(a){return al(d,c,m,b)};case
 8:var
 n=a[2];return function(a){return al(d,c,n,b)};case
 9:var
-o=a[3],e=a[2],p=N(L(a[1]),e);return function(a){return al(d,c,_(p,o),b)};case
+o=a[3],e=a[2],p=O(L(a[1]),e);return function(a){return al(d,c,_(p,o),b)};case
 10:var
 q=a[1];return function(e,a){return al(d,c,q,b)};case
 11:var
 r=a[1];return function(a){return al(d,c,r,b)};case
 12:var
 s=a[1];return function(a){return al(d,c,s,b)};case
-13:throw caml_maybe_attach_backtrace([0,Assert_failure,h5],1);default:throw caml_maybe_attach_backtrace([0,Assert_failure,h6],1)}}function
-al(a,b,c,d){return caml_trampoline(eX(0,a,b,c,d))}function
+13:throw caml_maybe_attach_backtrace([0,Assert_failure,h6],1);default:throw caml_maybe_attach_backtrace([0,Assert_failure,h7],1)}}function
+al(a,b,c,d){return caml_trampoline(eY(0,a,b,c,d))}function
 bX(counter,c,a,b){a=[8,a,"Printf: bad conversion %_"];return counter<50?cv(counter+1|0,c,a,b):caml_trampoline_return(cv,[0,c,a,b])}function
 dM(e,d,c,a,b){if(typeof
 a==="number")return function(a){return p(e,[4,d,caml_call1(b,a)],c)};if(0===a[0]){var
 f=a[2],g=a[1];return function(a){return p(e,[4,d,ag(g,f,caml_call1(b,a))],c)}}var
 h=a[1];return function(f,a){return p(e,[4,d,ag(h,f,caml_call1(b,a))],c)}}function
-cE(f,e,d,g,c,b,a){if(typeof
+cF(f,e,d,g,c,b,a){if(typeof
 g==="number"){if(typeof
 c==="number")return c?function(g,c){return p(f,[4,e,bH(g,caml_call2(b,a,c))],d)}:function(c){return p(f,[4,e,caml_call2(b,a,c)],d)};var
 k=c[1];return function(c){return p(f,[4,e,bH(k,caml_call2(b,a,c))],d)}}if(0===g[0]){var
@@ -1844,128 +1844,128 @@ l=c[1];return function(c){return p(f,[4,e,ag(i,h,bH(l,caml_call2(b,a,c)))],d)}}v
 j=g[1];if(typeof
 c==="number")return c?function(h,g,c){return p(f,[4,e,ag(j,h,bH(g,caml_call2(b,a,c)))],d)}:function(g,c){return p(f,[4,e,ag(j,g,caml_call2(b,a,c))],d)};var
 m=c[1];return function(g,c){return p(f,[4,e,ag(j,g,bH(m,caml_call2(b,a,c)))],d)}}function
-eW(counter,c,e,b,a,d){if(a){var
-f=a[1];return function(a){return h2(c,e,b,f,caml_call1(d,a))}}a=[4,e,d];return counter<50?cv(counter+1|0,c,a,b):caml_trampoline_return(cv,[0,c,a,b])}function
-h2(a,b,c,d,e){return caml_trampoline(eW(0,a,b,c,d,e))}var
+eX(counter,c,e,b,a,d){if(a){var
+f=a[1];return function(a){return h3(c,e,b,f,caml_call1(d,a))}}a=[4,e,d];return counter<50?cv(counter+1|0,c,a,b):caml_trampoline_return(cv,[0,c,a,b])}function
+h3(a,b,c,d,e){return caml_trampoline(eX(0,a,b,c,d,e))}var
 str$13="@{",str$18="@[";function
-aQ(c,a){for(;;){if(typeof
+aR(c,a){for(;;){if(typeof
 a==="number")return;switch(a[0]){case
 0:var
-b=a[1],a=fl(a[2]);aQ(c,b);return bZ(c,a);case
-1:b=a[2];a=a[1];if(0===b[0]){b=b[1];aQ(c,a);bZ(c,str$13);a=b}else{b=b[1];aQ(c,a);bZ(c,str$18);a=b}break;case
-6:b=a[2];aQ(c,a[1]);return caml_call1(b,c);case
-7:aQ(c,a[1]);caml_ml_flush(c);return;case
-8:b=a[2];aQ(c,a[1]);return u(b);case
+b=a[1],a=fm(a[2]);aR(c,b);return bZ(c,a);case
+1:b=a[2];a=a[1];if(0===b[0]){b=b[1];aR(c,a);bZ(c,str$13);a=b}else{b=b[1];aR(c,a);bZ(c,str$18);a=b}break;case
+6:b=a[2];aR(c,a[1]);return caml_call1(b,c);case
+7:aR(c,a[1]);caml_ml_flush(c);return;case
+8:b=a[2];aR(c,a[1]);return u(b);case
 2:case
-4:b=a[2];aQ(c,a[1]);return bZ(c,b);default:b=a[2];aQ(c,a[1]);caml_ml_output_char(c,b);return}}}function
-aZ(c,a){for(;;){if(typeof
+4:b=a[2];aR(c,a[1]);return bZ(c,b);default:b=a[2];aR(c,a[1]);caml_ml_output_char(c,b);return}}}function
+a0(c,a){for(;;){if(typeof
 a==="number")return;switch(a[0]){case
 0:var
-b=a[1],a=fl(a[2]);aZ(c,b);return ad(c,a);case
-1:b=a[2];a=a[1];if(0===b[0]){b=b[1];aZ(c,a);ad(c,str$13);a=b}else{b=b[1];aZ(c,a);ad(c,str$18);a=b}break;case
-6:b=a[2];aZ(c,a[1]);return ad(c,caml_call1(b,0));case
+b=a[1],a=fm(a[2]);a0(c,b);return ad(c,a);case
+1:b=a[2];a=a[1];if(0===b[0]){b=b[1];a0(c,a);ad(c,str$13);a=b}else{b=b[1];a0(c,a);ad(c,str$18);a=b}break;case
+6:b=a[2];a0(c,a[1]);return ad(c,caml_call1(b,0));case
 7:a=a[1];break;case
-8:b=a[2];aZ(c,a[1]);return u(b);case
+8:b=a[2];a0(c,a[1]);return u(b);case
 2:case
-4:b=a[2];aZ(c,a[1]);return ad(c,b);default:b=a[2];aZ(c,a[1]);return I(c,b)}}}function
-cF(b,a){return p(function(a){aQ(b,a);return 0},0,a[1])}function
+4:b=a[2];a0(c,a[1]);return ad(c,b);default:b=a[2];a0(c,a[1]);return I(c,b)}}}function
+cG(b,a){return p(function(a){aR(b,a);return 0},0,a[1])}function
 G(a){return p(function(b){var
-a=ak(64);aZ(a,b);return aw(a)},0,a[1])}var
-h7=[0,[3,0,0],"%S"],h8=[0,[4,0,0,0,0],str_d];function
+a=ak(64);a0(a,b);return aw(a)},0,a[1])}var
+h8=[0,[3,0,0],"%S"],h9=[0,[4,0,0,0,0],str_d];function
 dO(a,b){a=a[b+1];if(!(1-(typeof
-a==="number")))return caml_call1(G(h8),a);if(caml_obj_tag(a)===num_252)return caml_call1(G(h7),a);if(caml_obj_tag(a)!==253)return str$10;a=caml_format_float("%.12g",a);b=0;var
+a==="number")))return caml_call1(G(h9),a);if(caml_obj_tag(a)===num_252)return caml_call1(G(h8),a);if(caml_obj_tag(a)!==253)return str$10;a=caml_format_float("%.12g",a);b=0;var
 d=caml_ml_string_length(a);for(;;){if(d<=b)return a+str$12;var
 c=caml_string_get(a,b);a:{if(48<=c){if(58<=c)break a}else if(45!==c)break a;b=b+1|0;continue}return a}}var
-h9=[0,[11,str$1,[2,0,[2,0,0]]],", %s%s"];function
-fn(b,a){if(b.length-1<=a)return str;var
-c=fn(b,a+1|0),a=dO(b,a);return caml_call2(G(h9),a,c)}var
-i=", characters ",dN=[0,[11,'File "',[2,0,[11,'", line ',[4,0,0,0,[11,i,[4,0,0,0,[12,45,[4,0,0,0,[11,str$19,[2,0,0]]]]]]]]]],'File "%s", line %d, characters %d-%d: %s'],eV=[0,0],h_=[0,[12,40,[2,0,[2,0,[12,41,0]]]],"(%s%s)"],h$=[0,[12,40,[2,0,[12,41,0]]],"(%s)"];function
-cG(a){a:{b:{var
-c=eV[1];for(;;){if(!c)break;var
+h_=[0,[11,str$1,[2,0,[2,0,0]]],", %s%s"];function
+fo(b,a){if(b.length-1<=a)return str;var
+c=fo(b,a+1|0),a=dO(b,a);return caml_call2(G(h_),a,c)}var
+i=", characters ",dN=[0,[11,'File "',[2,0,[11,'", line ',[4,0,0,0,[11,i,[4,0,0,0,[12,45,[4,0,0,0,[11,str$19,[2,0,0]]]]]]]]]],'File "%s", line %d, characters %d-%d: %s'],eW=[0,0],h$=[0,[12,40,[2,0,[2,0,[12,41,0]]]],"(%s%s)"],ia=[0,[12,40,[2,0,[12,41,0]]],"(%s)"];function
+cH(a){a:{b:{var
+c=eW[1];for(;;){if(!c)break;var
 d=c[2],c=c[1];try{var
-b=caml_call1(c,a)}catch(a){c=d;continue}if(b)break b;c=d}c=0;break a}c=[0,b[1]]}if(c)return c[1];if(a===Out_of_memory)return"Out of memory";if(a===Stack_overflow)return"Stack overflow";if(a[1]===Match_failure){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(G(dN),a,d,b,b+5|0,"Pattern matching failed")}if(a[1]===Assert_failure){a=a[2];d=a[3];b=a[2];a=a[1];return caml_call5(G(dN),a,b,d,d+6|0,"Assertion failed")}if(a[1]===Undefined_recursive_module){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(G(dN),a,d,b,b+6|0,"Undefined recursive module")}if(0!==caml_obj_tag(a))return a[1];b=a.length-1;d=a[1][1];if(2<b>>>0){b=fn(a,2);a=dO(a,1);a=caml_call2(G(h_),a,b)}else
+b=caml_call1(c,a)}catch(a){c=d;continue}if(b)break b;c=d}c=0;break a}c=[0,b[1]]}if(c)return c[1];if(a===Out_of_memory)return"Out of memory";if(a===Stack_overflow)return"Stack overflow";if(a[1]===Match_failure){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(G(dN),a,d,b,b+5|0,"Pattern matching failed")}if(a[1]===Assert_failure){a=a[2];d=a[3];b=a[2];a=a[1];return caml_call5(G(dN),a,b,d,d+6|0,"Assertion failed")}if(a[1]===Undefined_recursive_module){a=a[2];b=a[3];d=a[2];a=a[1];return caml_call5(G(dN),a,d,b,b+6|0,"Undefined recursive module")}if(0!==caml_obj_tag(a))return a[1];b=a.length-1;d=a[1][1];if(2<b>>>0){b=fo(a,2);a=dO(a,1);a=caml_call2(G(h$),a,b)}else
 switch(b){case
-2:a=dO(a,1);a=caml_call1(G(h$),a);break;case
+2:a=dO(a,1);a=caml_call1(G(ia),a);break;case
 0:a=str;break;default:a=str}return d+a}var
-ia=[0,[2,0,[12,32,[2,0,[11,' in file "',[2,0,[12,34,[2,0,[11,", line ",[4,0,0,0,[11,i,[4,0,0,0,[12,45,[4,0,0,0,0]]]]]]]]]]]]],'%s %s in file "%s"%s, line %d, characters %d-%d'],ib=[0,[2,0,[11," unknown location",0]],"%s unknown location"],ic=[0,[2,0,[12,10,0]],"%s\n"];function
+ib=[0,[2,0,[12,32,[2,0,[11,' in file "',[2,0,[12,34,[2,0,[11,", line ",[4,0,0,0,[11,i,[4,0,0,0,[12,45,[4,0,0,0,0]]]]]]]]]]]]],'%s %s in file "%s"%s, line %d, characters %d-%d'],ic=[0,[2,0,[11," unknown location",0]],"%s unknown location"],id=[0,[2,0,[12,10,0]],"%s\n"];function
 dP(l,c){c=caml_convert_raw_backtrace(c);var
 e=c.length-2|0;if(e>=0){var
 b=0;for(;;){var
 a=caml_check_bound(c,b)[b+1];let
 m=b;var
 d=function(a){return a?0===m?"Raised at":"Re-raised at":0===m?"Raised by primitive operation at":"Called from"};if(0===a[0])var
-f=a[5],g=a[4],h=a[3],i=a[6]?" (inlined)":str,j=a[2],k=a[7],a=d(a[1]),a=[0,caml_call7(G(ia),a,k,j,i,h,g,f)];else if(a[1])a=0;else{a=d(0);a=[0,caml_call1(G(ib),a)]}if(a){a=a[1];caml_call1(cF(l,ic),a)}a=b+1|0;if(e===b)break;b=a}}}function
+f=a[5],g=a[4],h=a[3],i=a[6]?" (inlined)":str,j=a[2],k=a[7],a=d(a[1]),a=[0,caml_call7(G(ib),a,k,j,i,h,g,f)];else if(a[1])a=0;else{a=d(0);a=[0,caml_call1(G(ic),a)]}if(a){a=a[1];caml_call1(cG(l,id),a)}a=b+1|0;if(e===b)break;b=a}}}function
 dQ(b){for(;;){var
-a=eV[1],a=1-ds(eV,a,[0,b,a]);if(!a)return a}}var
-id=caml_obj_dup([0,str,"(Cannot print locations:\n bytecode executable program file not found)","(Cannot print locations:\n bytecode executable program file appears to be corrupt)","(Cannot print locations:\n bytecode executable program file has wrong magic number)","(Cannot print locations:\n bytecode executable program file cannot be opened;\n -- too many open files. Try running with OCAMLRUNPARAM=b=2)"]),i="Fatal error: exception %s\n",ie=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],i],ig=[0],ih=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],i],ii=[0,[11,"Fatal error in uncaught exception handler: exception ",[2,0,[12,10,0]]],"Fatal error in uncaught exception handler: exception %s\n"];caml_register_named_value(str_Printexc_handle_abr,function(c,d){try{try{var
-b=d?ig:caml_get_exception_raw_backtrace(0);try{dt(0)}catch(a){}try{var
-a=cG(c);caml_call1(cF(aq,ie),a);dP(aq,b);a=caml_ml_debug_info_status(0);if(a<0){a=bY(a);eY(caml_check_bound(id,a)[a+1])}a=caml_ml_flush(aq)}catch(d){a=caml_wrap_exception(d);c=cG(c);caml_call1(cF(aq,ih),c);dP(aq,b);a=cG(a);caml_call1(cF(aq,ii),a);dP(aq,caml_get_exception_raw_backtrace(0));a=caml_ml_flush(aq)}b=a}catch(a){b=caml_wrap_exception(a);if(b!==Out_of_memory)throw caml_maybe_attach_backtrace(b,0);b=eY("Fatal error: out of memory in uncaught exception handler")}return b}catch(a){return 0}});var
-ij=[num_248,"Stdlib.Fun.Finally_raised",caml_fresh_oo_id(0)];dQ(function(a){return a[1]===ij?[0,"Fun.Finally_raised: "+cG(a[2])]:0});function
-fo(a){var
+a=eW[1],a=1-dt(eW,a,[0,b,a]);if(!a)return a}}var
+ie=caml_obj_dup([0,str,"(Cannot print locations:\n bytecode executable program file not found)","(Cannot print locations:\n bytecode executable program file appears to be corrupt)","(Cannot print locations:\n bytecode executable program file has wrong magic number)","(Cannot print locations:\n bytecode executable program file cannot be opened;\n -- too many open files. Try running with OCAMLRUNPARAM=b=2)"]),i="Fatal error: exception %s\n",ig=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],i],ih=[0],ii=[0,[11,str_Fatal_error_exc_abr,[2,0,[12,10,0]]],i],ij=[0,[11,"Fatal error in uncaught exception handler: exception ",[2,0,[12,10,0]]],"Fatal error in uncaught exception handler: exception %s\n"];caml_register_named_value(str_Printexc_handle_abr,function(c,d){try{try{var
+b=d?ih:caml_get_exception_raw_backtrace(0);try{du(0)}catch(a){}try{var
+a=cH(c);caml_call1(cG(ar,ig),a);dP(ar,b);a=caml_ml_debug_info_status(0);if(a<0){a=bY(a);eZ(caml_check_bound(ie,a)[a+1])}a=caml_ml_flush(ar)}catch(d){a=caml_wrap_exception(d);c=cH(c);caml_call1(cG(ar,ii),c);dP(ar,b);a=cH(a);caml_call1(cG(ar,ij),a);dP(ar,caml_get_exception_raw_backtrace(0));a=caml_ml_flush(ar)}b=a}catch(a){b=caml_wrap_exception(a);if(b!==Out_of_memory)throw caml_maybe_attach_backtrace(b,0);b=eZ("Fatal error: out of memory in uncaught exception handler")}return b}catch(a){return 0}});var
+ik=[num_248,"Stdlib.Fun.Finally_raised",caml_fresh_oo_id(0)];dQ(function(a){return a[1]===ik?[0,"Fun.Finally_raised: "+cH(a[2])]:0});function
+fp(a){var
 b=a.length-1<4?1:0,a=b||(a[4]<0?1:0);return a}function
 dR(a){a[4]=-a[4]|0}function
-hx(b){for(;;){var
-a=dr[1];let
-c=a,d=[0,1];a=1-ds(dr,a,function(a){if(ds(d,1,0))caml_call1(b,0);return caml_call1(c,0)});if(!a)return a}}function
-hC(d,a){var
+hy(b){for(;;){var
+a=ds[1];let
+c=a,d=[0,1];a=1-dt(ds,a,function(a){if(dt(d,1,0))caml_call1(b,0);return caml_call1(c,0)});if(!a)return a}}function
+hD(d,a){var
 b=0;for(;;){if(!a)return h(b);var
 c=a[2];b=M(caml_call1(d,a[1]),b);a=c}}var
-hD=[num_248,"Stdlib.Queue.Empty",caml_fresh_oo_id(0)];try{i=caml_sys_getenv(str_OCAMLRUNPARAM);var
+hE=[num_248,"Stdlib.Queue.Empty",caml_fresh_oo_id(0)];try{i=caml_sys_getenv(str_OCAMLRUNPARAM);var
 A=i}catch(a){i=caml_wrap_exception(a);if(i!==Not_found)throw caml_maybe_attach_backtrace(i,0);try{A=caml_sys_getenv("CAMLRUNPARAM")}catch(a){A=caml_wrap_exception(a);if(A!==Not_found)throw caml_maybe_attach_backtrace(A,0);A=str}}var
-num_246=246,str_x="x",num_1073741823=1073741823,cH=[num_246,function(f){f=caml_sys_random_seed(0);var
+num_246=246,str_x="x",num_1073741823=1073741823,cI=[num_246,function(f){f=caml_sys_random_seed(0);var
 c=[0,caml_make_vect(55,0),0],f=0===f.length-1?[0,0]:f,i=f.length-1,a=0;for(;;){caml_check_bound(c[1],a)[a+1]=a;var
-h=a+1|0;if(54===a)break;a=h}h=54+e7(55,i)|0;if(h>=0){a=str_x;var
+h=a+1|0;if(54===a)break;a=h}h=54+e8(55,i)|0;if(h>=0){a=str_x;var
 e=0;for(;;){var
-b=e%55|0,g=caml_mod(e,i),a=a+str+caml_check_bound(f,g)[g+1],a=caml_md5_string(a,0,caml_ml_string_length(a)),g=caml_string_get(a,3)<<24,d=caml_string_get(a,2)<<16,j=caml_string_get(a,1)<<8,d=((caml_string_get(a,0)+j|0)+d|0)+g|0,d=(caml_check_bound(c[1],b)[b+1]^d)&num_1073741823;caml_check_bound(c[1],b)[b+1]=d;b=e+1|0;if(h===e)break;e=b}}c[2]=0;return c}],ik=as(A,82);function
-aH(a,b){a=a?a[1]:ik;var
-c=16;for(;;){if(b<=c)break;if(du<(c*2|0))break;c=c*2|0}if(a){a=caml_obj_tag(cH);a=num_250===a?cH[1]:num_246===a?dv(cH):cH;a[2]=(a[2]+1|0)%55|0;b=a[2];b=caml_check_bound(a[1],b)[b+1];var
+b=e%55|0,g=caml_mod(e,i),a=a+str+caml_check_bound(f,g)[g+1],a=caml_md5_string(a,0,caml_ml_string_length(a)),g=caml_string_get(a,3)<<24,d=caml_string_get(a,2)<<16,j=caml_string_get(a,1)<<8,d=((caml_string_get(a,0)+j|0)+d|0)+g|0,d=(caml_check_bound(c[1],b)[b+1]^d)&num_1073741823;caml_check_bound(c[1],b)[b+1]=d;b=e+1|0;if(h===e)break;e=b}}c[2]=0;return c}],il=at(A,82);function
+aI(a,b){a=a?a[1]:il;var
+c=16;for(;;){if(b<=c)break;if(dv<(c*2|0))break;c=c*2|0}if(a){a=caml_obj_tag(cI);a=num_250===a?cI[1]:num_246===a?dw(cI):cI;a[2]=(a[2]+1|0)%55|0;b=a[2];b=caml_check_bound(a[1],b)[b+1];var
 d=(a[2]+24|0)%55|0,b=(caml_check_bound(a[1],d)[d+1]+(b^(b>>>25|0)&31)|0)&num_1073741823,d=a[2];caml_check_bound(a[1],d)[d+1]=b}else
 b=0;return[0,0,caml_make_vect(c,0),b,c]}function
-cI(h,c){var
-d=fo(c);if(1-d)dR(c);try{var
+cJ(h,c){var
+d=fp(c);if(1-d)dR(c);try{var
 e=c[2],f=e.length-2|0;if(f>=0){var
 a=0;a:for(;;){var
 b=caml_check_bound(e,a)[a+1];for(;;){if(!b){b=a+1|0;if(f===a)break a;a=b;break}var
 g=b[3];caml_call2(h,b[1],b[2]);b=g}}}if(1-d)dR(c);return}catch(b){a=caml_wrap_exception(b);if(d)throw caml_maybe_attach_backtrace(a,0);dR(c);throw caml_maybe_attach_backtrace(a,0)}}function
-cJ(a,b){return 4<=a.length-1?caml_hash(10,num_100,a[3],b)&(a[2].length-2|0):u("Hashtbl: unsupported hash table format")}function
+cK(a,b){return 4<=a.length-1?caml_hash(10,num_100,a[3],b)&(a[2].length-2|0):u("Hashtbl: unsupported hash table format")}function
 dS(b,f){var
-c=cJ(b,f),d=0,a=caml_check_bound(b[2],c)[c+1];for(;;){if(!a)return;var
+c=cK(b,f),d=0,a=caml_check_bound(b[2],c)[c+1];for(;;){if(!a)return;var
 e=a[3];if(0===caml_compare(a[1],f)){b[1]=b[1]-1|0;if(d){d[3]=e;return}caml_check_bound(b[2],c)[c+1]=e;return}d=a;a=e}}function
-fp(b,d){var
-a=cJ(b,d),a=caml_check_bound(b[2],a)[a+1];if(!a)return 0;b=a[3];var
+fq(b,d){var
+a=cK(b,d),a=caml_check_bound(b[2],a)[a+1];if(!a)return 0;b=a[3];var
 c=a[2];if(0===caml_compare(d,a[1]))return[0,c];if(!b)return 0;c=b[3];a=b[2];if(0===caml_compare(d,b[1]))return[0,a];if(!c)return 0;a=c[2];b=c[3];if(0===caml_compare(d,c[1]))return[0,a];for(;;){if(!b)return 0;a=b[2];c=b[3];if(0===caml_compare(d,b[1]))return[0,a];b=c}}function
 dT(e,i,d){var
-a=cJ(e,i),f=caml_check_bound(e[2],a)[a+1];a:{b:{var
+a=cK(e,i),f=caml_check_bound(e[2],a)[a+1];a:{b:{var
 c=f;for(;;){if(!c)break;var
-h=c[3];if(0===caml_compare(c[1],i))break b;c=h}c=1;break a}c[1]=i;c[2]=d;c=0}if(c){caml_check_bound(e[2],a)[a+1]=[0,i,d,f];e[1]=e[1]+1|0;if(e[2].length-1<<1<e[1]){d=e[2];h=(d.length-1)*2|0;a=h<du?1:0;if(!a)return a;a=caml_make_vect(h,0);h=1-fo(e);e[2]=a;f=a.length-1;i=caml_make_vect(f,0);c=d.length-2|0;if(c>=0){var
+h=c[3];if(0===caml_compare(c[1],i))break b;c=h}c=1;break a}c[1]=i;c[2]=d;c=0}if(c){caml_check_bound(e[2],a)[a+1]=[0,i,d,f];e[1]=e[1]+1|0;if(e[2].length-1<<1<e[1]){d=e[2];h=(d.length-1)*2|0;a=h<dv?1:0;if(!a)return a;a=caml_make_vect(h,0);h=1-fp(e);e[2]=a;f=a.length-1;i=caml_make_vect(f,0);c=d.length-2|0;if(c>=0){var
 j=0;a:for(;;){var
 b=caml_check_bound(d,j)[j+1];for(;;){if(!b){b=j+1|0;if(c===j)break a;j=b;break}var
-g=b[1],k=b[2],l=b[3],b=h?b:[0,g,k,0],g=cJ(e,g),k=caml_check_bound(i,g)[g+1];if(k)k[3]=b;else
+g=b[1],k=b[2],l=b[3],b=h?b:[0,g,k,0],g=cK(e,g),k=caml_check_bound(i,g)[g+1];if(k)k[3]=b;else
 caml_check_bound(a,g)[g+1]=b;caml_check_bound(i,g)[g+1]=b;b=l}}}if(h){a=f-1|0;if(a>=0){d=0;for(;;){f=caml_check_bound(i,d)[d+1];if(f)f[3]=0;f=d+1|0;if(a===d)break;d=f}}}return}}}var
-fr=[num_248,"Stdlib.Format.String_tag",caml_fresh_oo_id(0)];function
-cK(a,b){a[13]=a[13]+b[3]|0;return ff(b,a[28])}function
+fs=[num_248,"Stdlib.Format.String_tag",caml_fresh_oo_id(0)];function
+cL(a,b){a[13]=a[13]+b[3]|0;return fg(b,a[28])}function
 dU(b,a){return caml_call3(b[17],a,0,caml_ml_string_length(a))}function
 dV(a){return caml_call1(a[19],0)}function
-ft(a,c,b){a[9]=a[9]-c|0;dU(a,b);a[11]=0}function
-cL(c,a){var
-b=a!==str?1:0;return b?ft(c,caml_ml_string_length(a),a):b}function
+fu(a,c,b){a[9]=a[9]-c|0;dU(a,b);a[11]=0}function
+cM(c,a){var
+b=a!==str?1:0;return b?fu(c,caml_ml_string_length(a),a):b}function
 bf(a,b,e){var
-c=b[3],d=b[2];cL(a,b[1]);dV(a);a[11]=1;a[10]=e6(a[8],(a[6]-e|0)+d|0);a[9]=a[6]-a[10]|0;caml_call1(a[21],a[10]);return cL(a,c)}function
+c=b[3],d=b[2];cM(a,b[1]);dV(a);a[11]=1;a[10]=e7(a[8],(a[6]-e|0)+d|0);a[9]=a[6]-a[10]|0;caml_call1(a[21],a[10]);return cM(a,c)}function
 b8(a,b){var
-c=b[2],d=b[3];cL(a,b[1]);a[9]=a[9]-c|0;caml_call1(a[20],c);return cL(a,d)}var
-fu=[0,str,0,str];function
-il(a,c,b){if(typeof
+c=b[2],d=b[3];cM(a,b[1]);a[9]=a[9]-c|0;caml_call1(a[20],c);return cM(a,d)}var
+fv=[0,str,0,str];function
+im(a,c,b){if(typeof
 b==="number")switch(b){case
 0:b=bF(a[3]);if(!b)return;b=b[1][1];var
 i=function(b,a){if(!a)return[0,b,0];var
 c=a[1],d=a[2];return caml_lessthan(b,c)?[0,b,a]:[0,c,i(b,d)]};b[1]=i(a[6]-a[9]|0,b[1]);return;case
 1:bE(a[2]);return;case
 2:bE(a[3]);return;case
-3:b=bF(a[2]);return b?bf(a,fu,b[1][2]):dV(a);case
+3:b=bF(a[2]);return b?bf(a,fv,b[1][2]):dV(a);case
 4:b=a[10]!==(a[6]-a[9]|0)?1:0;if(!b)return b;b=a[28];c=b[2];if(c){var
 d=c[1];if(c[2]){c=c[2];b[1]=b[1]-1|0;b[2]=c;d=[0,d]}else{dH(b);d=[0,d]}}else
 d=0;if(!d)return;c=d[1];b=c[1];a[12]=a[12]-c[3]|0;a[9]=a[9]+b|0;return;default:c=bE(a[5]);if(c)return dU(a,caml_call1(a[25],c[1]));return}switch(b[0]){case
-0:return ft(a,c,b[1]);case
+0:return fu(a,c,b[1]);case
 1:d=b[2];b=b[1];var
 f=d[1],g=d[2],h=bF(a[2]);if(!h)return;h=h[1];var
 e=h[2];switch(h[1]){case
@@ -1975,70 +1975,70 @@ e=h[2];switch(h[1]){case
 5:return b8(a,b);default:return bf(a,d,e)}case
 2:c=a[6]-a[9]|0;e=b[2];b=b[1];d=bF(a[3]);if(!d)return;d=d[1][1];f=d[1];if(f){d=d[1];f=f[1];for(;;){if(!d)break;g=d[1];d=d[2];if(c<=g){f=g;break}}}else
 f=c;c=f-c|0;return 0<=c?b8(a,[0,str,c+b|0,str]):bf(a,[0,str,f+e|0,str],a[6]);case
-3:f=b[2];b=b[1];if(a[8]<(a[6]-a[9]|0)){e=bF(a[2]);if(e){e=e[1];g=e[2];e=e[1];if(a[9]<g&&3>=e-1>>>0)bf(a,fu,g)}else
+3:f=b[2];b=b[1];if(a[8]<(a[6]-a[9]|0)){e=bF(a[2]);if(e){e=e[1];g=e[2];e=e[1];if(a[9]<g&&3>=e-1>>>0)bf(a,fv,g)}else
 dV(a)}b=a[9]-b|0;c=1===f?1:a[9]<c?f:5;return bD([0,c,b],a[2]);case
 4:return bD(b[1],a[3]);default:c=b[1];dU(a,caml_call1(a[24],c));return bD(c,a[5])}}var
-fs=1000000010;function
-fv(d){for(;;){var
+ft=1000000010;function
+fw(d){for(;;){var
 a=d[28][2],a=a?[0,a[1]]:0;if(!a)return;a=a[1];var
-e=a[1],c=0<=e?1:0,f=a[3],a=a[2],b=d[13]-d[12]|0,b=c||(d[9]<=b?1:0);if(!b)return b;b=d[28];c=b[2];if(!c)throw caml_maybe_attach_backtrace(hD,1);if(c[2]){c=c[2];b[1]=b[1]-1|0;b[2]=c}else
-dH(b);e=0<=e?e:fs;il(d,e,a);d[12]=f+d[12]|0}}var
-im=[0,str],fq=-1;function
-dW(a){b6(a);return bD([0,-1,[0,fq,im,0]],a)}function
-fw(b,e){var
+e=a[1],c=0<=e?1:0,f=a[3],a=a[2],b=d[13]-d[12]|0,b=c||(d[9]<=b?1:0);if(!b)return b;b=d[28];c=b[2];if(!c)throw caml_maybe_attach_backtrace(hE,1);if(c[2]){c=c[2];b[1]=b[1]-1|0;b[2]=c}else
+dH(b);e=0<=e?e:ft;im(d,e,a);d[12]=f+d[12]|0}}var
+io=[0,str],fr=-1;function
+dW(a){b6(a);return bD([0,-1,[0,fr,io,0]],a)}function
+fx(b,e){var
 a=bF(b[1]);if(!a)return;a=a[1];var
 c=a[2],d=c[1];if(a[1]<b[12])return dW(b[1]);a=c[2];if(typeof
 a!=="number")switch(a[0]){case
 3:if(1-e){c[1]=b[13]+d|0;bE(b[1])}return;case
 1:case
 2:if(e){c[1]=b[13]+d|0;bE(b[1])}return}}function
-fx(a,c){c=a[4][1];var
-b=0;for(;;){if(!c)break;c=c[2];if(a[23])cK(a,[0,b,5,0]);if(a[22]){var
-d=bE(a[4]);if(d)caml_call1(a[27],d[1])}}for(;;){if(1>=a[14])break;if(1<a[14]){if(a[14]<a[15]){cK(a,[0,b,1,0]);fw(a,1);fw(a,0)}a[14]=a[14]-1|0}}a[13]=fs;fv(a);a[12]=1;a[13]=1;dH(a[28]);dW(a[1]);b6(a[2]);b6(a[3]);b6(a[4]);b6(a[5]);a[10]=0;a[14]=0;a[9]=a[6];a[14]=a[14]+1|0;if(a[14]<a[15]){b=[0,-a[13]|0,[3,0,3],0];cK(a,b);bD([0,a[13],b],a[1])}else if(a[14]===a[15]){b=a[16];c=caml_ml_string_length(b);cK(a,[0,c,[0,b],c]);fv(a)}return caml_call1(a[18],0)}var
-fy=dA(80,32);function
-fz(c,a){for(;;){var
-b=0<a?1:0;if(!b)return b;if(80>=a)return caml_call3(c[17],fy,0,a);caml_call3(c[17],fy,0,80);a=a-80|0}}var
+fy(a,c){c=a[4][1];var
+b=0;for(;;){if(!c)break;c=c[2];if(a[23])cL(a,[0,b,5,0]);if(a[22]){var
+d=bE(a[4]);if(d)caml_call1(a[27],d[1])}}for(;;){if(1>=a[14])break;if(1<a[14]){if(a[14]<a[15]){cL(a,[0,b,1,0]);fx(a,1);fx(a,0)}a[14]=a[14]-1|0}}a[13]=ft;fw(a);a[12]=1;a[13]=1;dH(a[28]);dW(a[1]);b6(a[2]);b6(a[3]);b6(a[4]);b6(a[5]);a[10]=0;a[14]=0;a[9]=a[6];a[14]=a[14]+1|0;if(a[14]<a[15]){b=[0,-a[13]|0,[3,0,3],0];cL(a,b);bD([0,a[13],b],a[1])}else if(a[14]===a[15]){b=a[16];c=caml_ml_string_length(b);cL(a,[0,c,[0,b],c]);fw(a)}return caml_call1(a[18],0)}var
+fz=dA(80,32);function
+fA(c,a){for(;;){var
+b=0<a?1:0;if(!b)return b;if(80>=a)return caml_call3(c[17],fz,0,a);caml_call3(c[17],fz,0,80);a=a-80|0}}var
 str$22=">",str$0="<";function
-io(a){return a[1]===fr?str$0+a[2]+str$22:str}function
-ip(a){return a[1]===fr?"<\/"+a[2]+str$22:str}function
-iq(a){return 0}function
-ir(a){return 0}var
-str$14="\n",num_2147483647=2147483647,is=[3,0,3];function
-fA(i,h){var
-d=[0,0,0,0],b=[0,fq,is,0];ff(b,d);var
+ip(a){return a[1]===fs?str$0+a[2]+str$22:str}function
+iq(a){return a[1]===fs?"<\/"+a[2]+str$22:str}function
+ir(a){return 0}function
+is(a){return 0}var
+str$14="\n",num_2147483647=2147483647,it=[3,0,3];function
+fB(i,h){var
+d=[0,0,0,0],b=[0,fr,it,0];fg(b,d);var
 c=b5(0);dW(c);bD([0,1,b],c);b=b5(0);var
-f=b5(0),g=b5(0),e=78,a=[0,c,b5(0),g,f,b,e,10,68,e,0,1,1,1,1,num_2147483647,str$12,i,h,function(a){return 0},function(a){return 0},function(a){return 0},0,0,io,ip,iq,ir,d];a[19]=function(b){return caml_call3(a[17],str$14,0,1)};a[20]=function(b){return fz(a,b)};a[21]=function(b){return fz(a,b)};return a}function
-fB(a){return fA(function(d,b,c){if(0<=b&&0<=c&&(caml_ml_string_length(d)-c|0)>=b)return caml_ml_output(a,d,b,c);return u("output_substring")},function(b){return caml_ml_flush(a)})}var
-num_512=512,it=ak(num_512),iu=fB(j),iv=fB(aq);fA(function(a,b,c){return fg(it,a,b,c)},function(a){return 0});hx(function(a){fx(iu,0);return fx(iv,0)});function
-fC(b,a){a=caml_obj_tag(a)===num_248?a:a[1];caml_register_named_value(b,a)}var
-fD=dG([0,caml_string_compare]),cM=dG([0,caml_string_compare]),cN=dG([0,caml_int_compare]),fE=caml_obj_block(0,0);function
-fF(a){return 2<a?fF((a+1|0)/2|0)*2|0:a}var
-ix=[0,0];function
-fG(e){ix[1]++;var
-b=e.length-1,c=caml_make_vect((b*2|0)+2|0,fE);caml_check_bound(c,0)[1]=b;var
-a=((fF(b)*32|0)/8|0)-1|0;caml_check_bound(c,1)[2]=a;b=b-1|0;if(b>=0){a=0;for(;;){var
-d=(a*2|0)+3|0,f=caml_check_bound(e,a)[a+1];caml_check_bound(c,d)[d+1]=f;d=a+1|0;if(b===a)break;a=d}}return[0,2,c,cM[1],cN[1],0,0,fD[1],0]}function
+f=b5(0),g=b5(0),e=78,a=[0,c,b5(0),g,f,b,e,10,68,e,0,1,1,1,1,num_2147483647,str$12,i,h,function(a){return 0},function(a){return 0},function(a){return 0},0,0,ip,iq,ir,is,d];a[19]=function(b){return caml_call3(a[17],str$14,0,1)};a[20]=function(b){return fA(a,b)};a[21]=function(b){return fA(a,b)};return a}function
+fC(a){return fB(function(d,b,c){if(0<=b&&0<=c&&(caml_ml_string_length(d)-c|0)>=b)return caml_ml_output(a,d,b,c);return u("output_substring")},function(b){return caml_ml_flush(a)})}var
+num_512=512,iu=ak(num_512),iv=fC(j),iw=fC(ar);fB(function(a,b,c){return fh(iu,a,b,c)},function(a){return 0});hy(function(a){fy(iv,0);return fy(iw,0)});function
+fD(b,a){a=caml_obj_tag(a)===num_248?a:a[1];caml_register_named_value(b,a)}var
+fE=dG([0,caml_string_compare]),cN=dG([0,caml_string_compare]),cO=dG([0,caml_int_compare]),fF=caml_obj_block(0,0);function
+fG(a){return 2<a?fG((a+1|0)/2|0)*2|0:a}var
+iy=[0,0];function
+fH(e){iy[1]++;var
+b=e.length-1,c=caml_make_vect((b*2|0)+2|0,fF);caml_check_bound(c,0)[1]=b;var
+a=((fG(b)*32|0)/8|0)-1|0;caml_check_bound(c,1)[2]=a;b=b-1|0;if(b>=0){a=0;for(;;){var
+d=(a*2|0)+3|0,f=caml_check_bound(e,a)[a+1];caml_check_bound(c,d)[d+1]=f;d=a+1|0;if(b===a)break;a=d}}return[0,2,c,cN[1],cO[1],0,0,fE[1],0]}function
 dX(b,a){var
-c=b[2].length-1;if(c<a){a=caml_make_vect(a,fE);b4(b[2],0,a,0,c);b[2]=a}}function
-iw(d){var
+c=b[2].length-1;if(c<a){a=caml_make_vect(a,fF);b4(b[2],0,a,0,c);b[2]=a}}function
+ix(d){var
 c=caml_ml_string_length(d)-1|0,a=0;if(c<0);else{var
 b=0;for(;;){a=(223*a|0)+caml_string_get(d,b)|0;var
 e=b+1|0;if(c===b)break;b=e}}a&=num_2147483647;a=num_1073741823<a?a+2147483648|0:a;return a}function
 dY(b){var
 a=b[2].length-1;dX(b,a+1|0);return a}function
-fH(b,c){try{var
-a=cM[28].call(null,c,b[3]);return a}catch(d){a=caml_wrap_exception(d);if(a!==Not_found)throw caml_maybe_attach_backtrace(a,0);a=dY(b);b[3]=cM[4].call(null,c,a,b[3]);b[4]=cN[4].call(null,a,1,b[4]);return a}}var
-iy=[0,0];function
-fI(b,a,c){iy[1]++;if(cN[28].call(null,a,b[4])){dX(b,a+1|0);caml_check_bound(b[2],a)[a+1]=c;return}b[6]=[0,[0,a,c],b[6]]}function
-dZ(d){if(0===d)return fG([0]);var
-a=fG(aY(iw,d)),e=d.length-2|0;if(e>=0){var
+fI(b,c){try{var
+a=cN[28].call(null,c,b[3]);return a}catch(d){a=caml_wrap_exception(d);if(a!==Not_found)throw caml_maybe_attach_backtrace(a,0);a=dY(b);b[3]=cN[4].call(null,c,a,b[3]);b[4]=cO[4].call(null,a,1,b[4]);return a}}var
+iz=[0,0];function
+fJ(b,a,c){iz[1]++;if(cO[28].call(null,a,b[4])){dX(b,a+1|0);caml_check_bound(b[2],a)[a+1]=c;return}b[6]=[0,[0,a,c],b[6]]}function
+dZ(d){if(0===d)return fH([0]);var
+a=fH(aZ(ix,d)),e=d.length-2|0;if(e>=0){var
 b=0;for(;;){var
-c=(b*2|0)+2|0;a[3]=cM[4].call(null,d[b+1],c,a[3]);a[4]=cN[4].call(null,c,1,a[4]);c=b+1|0;if(e===b)break;b=c}}return a}function
+c=(b*2|0)+2|0;a[3]=cN[4].call(null,d[b+1],c,a[3]);a[4]=cO[4].call(null,c,1,a[4]);c=b+1|0;if(e===b)break;b=c}}return a}function
 d0(a){a[8]=h(a[8]);return dX(a,3+((caml_check_bound(a[2],1)[2]*16|0)/32|0)|0)}function
-fJ(a,b){if(a)return a;a=caml_obj_block(num_248,b[1]);a[1]=b[2];return caml_set_oo_id(a)}function
-cO(b){var
+fK(a,b){if(a)return a;a=caml_obj_block(num_248,b[1]);a[1]=b[2];return caml_set_oo_id(a)}function
+cP(b){var
 a=dY(b),a=0===(a%2|0)?a:(2+((caml_check_bound(b[2],1)[2]*16|0)/32|0)|0)<a?a:dY(b);caml_check_bound(b[2],a)[a+1]=0;return a}function
-iz(b,e,ag){function
+iA(b,e,ag){function
 a(a){e[1]++;a=e[1];return caml_check_bound(ag,a)[a+1]}var
 c=a(0);if(typeof
 c==="number")switch(c){case
@@ -2084,82 +2084,82 @@ V=a(0),W=a(0),X=a(0);return function(a){return caml_call2(a[1][V+1],a,a[W+1][X+1
 Y=a(0),Z=a(0);return function(a){var
 b=caml_call1(a[1][Z+1],a);return caml_call2(a[1][Y+1],a,b)};case
 20:var
-_=a(0),d=a(0);cO(b);return function(a){return caml_call1(caml_get_public_method(d,_),d)};case
+_=a(0),d=a(0);cP(b);return function(a){return caml_call1(caml_get_public_method(d,_),d)};case
 21:var
-$=a(0),aa=a(0);cO(b);return function(a){a=a[aa+1];return caml_call1(caml_get_public_method(a,$),a)};case
+$=a(0),aa=a(0);cP(b);return function(a){a=a[aa+1];return caml_call1(caml_get_public_method(a,$),a)};case
 22:var
-ab=a(0),ac=a(0),ad=a(0);cO(b);return function(a){a=a[ac+1][ad+1];return caml_call1(caml_get_public_method(a,ab),a)};default:var
-ae=a(0),af=a(0);cO(b);return function(a){a=caml_call1(a[1][af+1],a);return caml_call1(caml_get_public_method(a,ae),a)}}return c}function
-iA(d,c){var
+ab=a(0),ac=a(0),ad=a(0);cP(b);return function(a){a=a[ac+1][ad+1];return caml_call1(caml_get_public_method(a,ab),a)};default:var
+ae=a(0),af=a(0);cP(b);return function(a){a=caml_call1(a[1][af+1],a);return caml_call1(caml_get_public_method(a,ae),a)}}return c}function
+iB(d,c){var
 e=c.length-1,a=[0,0];for(;;){if(a[1]>=e)return;var
-b=a[1],b=caml_check_bound(c,b)[b+1];fI(d,b,iz(d,a,c));a[1]++}}try{caml_sys_getenv("TMPDIR")}catch(a){A=caml_wrap_exception(a);if(A!==Not_found)throw caml_maybe_attach_backtrace(A,0)}try{caml_sys_getenv("TEMP")}catch(a){A=caml_wrap_exception(a);if(A!==Not_found)throw caml_maybe_attach_backtrace(A,0)}function
+b=a[1],b=caml_check_bound(c,b)[b+1];fJ(d,b,iA(d,a,c));a[1]++}}try{caml_sys_getenv("TMPDIR")}catch(a){A=caml_wrap_exception(a);if(A!==Not_found)throw caml_maybe_attach_backtrace(A,0)}try{caml_sys_getenv("TEMP")}catch(a){A=caml_wrap_exception(a);if(A!==Not_found)throw caml_maybe_attach_backtrace(A,0)}function
 d1(a){var
 e=caml_bytes_of_string(a),d=caml_ml_bytes_length(e)-1|0,b=0;if(d<0);else{var
 c=0;for(;;){b=58===caml_bytes_unsafe_get(e,c)?b+1|0:b;var
 f=c+1|0;if(d===c)break;c=f}}if(0<b)return b;a:if(a!==str){if(97<=caml_string_get(a,0)&&num_122>=caml_string_get(a,0))break a;if(65<=caml_string_get(a,0)&&90>=caml_string_get(a,0))break a;return 1}return 0}var
 bg=[num_248,"St_lexer.Error",caml_fresh_oo_id(0)];function
-fK(d,c,b){function
+fL(d,c,b){function
 a(d,b){if(!d)return 0===b?0:[0,b&num_255,a(0,b>>>8|0)];b=caml_mul(d[1],c)+b|0;return[0,b&num_255,a(d[2],b>>>8|0)]}return a(d,b)}function
 d2(d,a){a=h(a);for(;;){if(!a)break;if(0!==a[1])break;a=a[2]}if(4<s(a))return 0;var
 c=s(a),b=a?a[1]:0;a:if(4===c&&64<=b){if(d&&64===b){b=a?a[2]:aj("tl");for(;;){if(b){c=0===b[1];b=b[2];if(c)continue}else
 c=1;if(c)break a;break}}return 0}b=0;for(;;){if(!a){b=d?-b|0:b;return[0,b]}b=b<<8|a[1];a=a[2]}}function
-cP(b){var
+cQ(b){var
 a=97<=b?1:0,a=a?b<=num_122?1:0:a;if(a);else{a=65<=b?1:0;a=a?b<=90?1:0:a}return a}function
 am(a){var
 b=48<=a?1:0,a=b?a<=57?1:0:b;return a}function
-cQ(a){if(am(a))return a-48|0;if(65<=a&&90>=a)return(a-65|0)+10|0;return 99}function
+cR(a){if(am(a))return a-48|0;if(65<=a&&90>=a)return(a-65|0)+10|0;return 99}function
 g(a){return 1===(a&1)?1:0}function
 m(a){return a<<1|1}function
-cR(a){var
+cS(a){var
 b=-1073741824<=a?1:0,a=b?a<=num_1073741823?1:0:b;return a}function
 x(a,f,e){var
 c=a[3];if(c){var
 b=c[1];a[3]=c[2]}else{if(a[1].length-1<=a[4]){b=a[1].length-1;c=caml_make_vect(2*b|0,0);var
 d=caml_make_vect(2*b|0,0);b4(a[1],0,c,0,b);b4(a[2],0,d,0,b);a[1]=c;a[2]=d}b=a[4];a[4]=a[4]+1|0}caml_check_bound(a[1],b)[b+1]=f;caml_check_bound(a[2],b)[b+1]=e;a[5]=a[5]+1|0;a[6]=a[6]+1|0;return b<<1}function
 o(b,a){if(g(a))return b[8][1];a=a>>>1|0;return caml_check_bound(b[1],a)[a+1]}function
-fL(c,a,b){a=a>>>1|0;caml_check_bound(c[1],a)[a+1]=b}function
+fM(c,a,b){a=a>>>1|0;caml_check_bound(c[1],a)[a+1]=b}function
 t(b,a){if(g(a))return 0;a=a>>>1|0;return caml_check_bound(b[2],a)[a+1]}function
 z(a,b){a=t(a,b);if(typeof
 a!=="number"&&a[0]-1>>>0>=2)return a[1];return[0]}function
 b(c,b,a){return caml_check_bound(z(c,b),a)[a+1]}function
 ax(d,c,a,b){caml_check_bound(z(d,c),a)[a+1]=b}function
-a0(a,b){a=t(a,b);if(typeof
+a1(a,b){a=t(a,b);if(typeof
 a!=="number")switch(a[0]){case
 1:return caml_ml_bytes_length(a[1]);case
 2:break;default:return a[1].length-1}return 0}function
 r(a,b){a=t(a,b);if(typeof
-a!=="number"&&1===a[0])return e8(a[1]);return str}function
-a1(b,a){a=[1,cx(a)];return x(b,b[8][2],a)}function
-R(a,b){return x(a,a[8][4],[0,b])}function
-a2(a,b){return x(a,a[8][5],[2,b])}function
+a!=="number"&&1===a[0])return e9(a[1]);return str}function
+a2(b,a){a=[1,cy(a)];return x(b,b[8][2],a)}function
+S(a,b){return x(a,a[8][4],[0,b])}function
+a3(a,b){return x(a,a[8][5],[2,b])}function
 J(b,c){var
-a=fp(b[7],c);if(a)return a[1];a=[1,cx(c)];a=x(b,b[8][3],a);dT(b[7],c,a);return a}function
-fM(c,b,a){b=b>>>1|0;a=a>>>1|0;var
+a=fq(b[7],c);if(a)return a[1];a=[1,cy(c)];a=x(b,b[8][3],a);dT(b[7],c,a);return a}function
+fN(c,b,a){b=b>>>1|0;a=a>>>1|0;var
 e=caml_check_bound(c[1],b)[b+1],f=caml_check_bound(c[2],b)[b+1],d=caml_check_bound(c[1],a)[a+1];caml_check_bound(c[1],b)[b+1]=d;d=caml_check_bound(c[2],a)[a+1];caml_check_bound(c[2],b)[b+1]=d;caml_check_bound(c[1],a)[a+1]=e;caml_check_bound(c[2],a)[a+1]=f}function
 an(c,d,a){a=b(c,d,a);if(g(a))return[0,a>>1];a=t(c,a);if(typeof
 a!=="number"&&2===a[0])return[0,caml_round_float(a[1])|0];return 0}function
-cS(a,c){if(!g(c)&&c!==0&&3<=a0(a,c)){var
+cT(a,c){if(!g(c)&&c!==0&&3<=a1(a,c)){var
 d=t(a,b(a,c,0)),e=an(a,c,1),a=an(a,c,2);if(typeof
 d!=="number"&&1===d[0]&&e&&a){a=a[1];e=e[1];d=d[1];c=((e+15|0)/16|0)*2|0;if(0<=e&&0<=a&&caml_mul(c,a)<=caml_ml_bytes_length(d))return[0,[0,d,e,a,c]];return 0}return 0}return 0}function
-cT(b,a,c){if(0<=a&&0<=c&&b[2]>a&&b[3]>c)return(caml_bytes_get(b[1],caml_mul(c,b[4])+(a>>>3|0)|0)>>>(7-(a&7)|0)|0)&1;return 0}var
+cU(b,a,c){if(0<=a&&0<=c&&b[2]>a&&b[3]>c)return(caml_bytes_get(b[1],caml_mul(c,b[4])+(a>>>3|0)|0)>>>(7-(a&7)|0)|0)&1;return 0}var
 str$21=">=",str_class="class",str$17="<=",d3=caml_obj_dup([0,str$15,str$7,str$0,str$22,str$17,str$21,"=","~=","*",str$8,str$9,str$23,"bitShift:","//","bitAnd:","bitOr:","at:","at:put:","size","next","nextPut:","atEnd","==",str_class,"blockCopy:","value","value:","do:","new","new:",str_x,"y"]);function
-fO(a,f,p,o,n,d,i,e,l){var
-c=0,i=a1(a,i);for(;;){if(!e)break;var
-b=e[1],e=e[2],g=b[2],j=b[1],b=[0,m(b[3]),0],g=[0,m(g),b];c=M([0,m(j),g],c)}c=R(a,Y(h(c)));d=[0,p,[0,[0,n,d,i,c,R(a,Y(k(function(b){return a1(a,b)},l)))],0]];d=[3,caml_array_concat([0,[0,m(f[1]|f[2]<<9|f[3]<<14|f[4]<<20)],d]),o];return x(a,a[8][7],d)}function
-fP(a,b){a=t(a,b);if(typeof
-a!=="number"&&3===a[0])return a[1];return[0]}function
-cU(a,b){a=caml_check_bound(fP(a,b),0)[1]>>1;return[0,a&511,(a>>>9|0)&31,(a>>>14|0)&63,(a>>>20|0)&num_255]}function
+fP(b,f,p,o,n,l,a,e,j){var
+d=0,a=a2(b,a);for(;;){if(!e)break;var
+c=e[1],e=e[2],g=c[2],i=c[1],c=[0,m(c[3]),0],g=[0,m(g),c];d=M([0,m(i),g],d)}d=S(b,Y(h(d)));a=[0,p,[0,[0,n,l,a,d,S(b,Y(k(function(a){return a2(b,a)},j)))],0]];a=[3,caml_array_concat([0,[0,m(f[1]|f[2]<<9|f[3]<<14|f[4]<<20)],a]),o];return x(b,b[8][7],a)}function
 fQ(a,b){a=t(a,b);if(typeof
+a!=="number"&&3===a[0])return a[1];return[0]}function
+cV(a,b){a=caml_check_bound(fQ(a,b),0)[1]>>1;return[0,a&511,(a>>>9|0)&31,(a>>>14|0)&63,(a>>>20|0)&num_255]}function
+fR(a,b){a=t(a,b);if(typeof
 a!=="number"&&3===a[0])return a[2];return dy}function
-b9(b,c,a){b=fP(b,c);a=(b.length-6|0)+a|0;return caml_check_bound(b,a)[a+1]}function
+b9(b,c,a){b=fQ(b,c);a=(b.length-6|0)+a|0;return caml_check_bound(b,a)[a+1]}function
 b_(b,a){return b9(b,a,0)}function
 b$(b,a){return b9(b,a,1)}function
 ca(a,b){return r(a,b9(a,b,2))}function
-fR(b,c){var
-a=z(b,b9(b,c,3));return ar((a.length-1)/3|0,function(b){var
+fS(b,c){var
+a=z(b,b9(b,c,3));return as((a.length-1)/3|0,function(b){var
 c=(3*b|0)+2|0,d=(3*b|0)+1|0,c=caml_check_bound(a,c)[c+1]>>1,b=3*b|0,d=caml_check_bound(a,d)[d+1]>>1;return[0,caml_check_bound(a,b)[b+1]>>1,d,c]})}var
-iD=caml_obj_dup([0,0,1,2,3,4]),cV=2;function
-bi(c,a){c=b(c,a,cV)>>1;a=c&7;return[0,c>>>3|0,caml_check_bound(iD,a)[a+1]]}function
+iE=caml_obj_dup([0,0,1,2,3,4]),cW=2;function
+bi(c,a){c=b(c,a,cW)>>1;a=c&7;return[0,c>>>3|0,caml_check_bound(iE,a)[a+1]]}function
 d5(b,a){switch(a){case
 0:a=0;break;case
 1:a=1;break;case
@@ -2172,90 +2172,90 @@ bk(c,a){return bj(c,a)?b(c,a,cb):a}var
 str_nil="nil",str_class$0=" class";function
 ah(a,c){return c===0?str_nil:bj(a,c)?r(a,b(a,bk(a,c),cb))+str_class$0:r(a,b(a,c,cb))}var
 d4=3;function
-cW(c,a){a=b(c,a,d4);return a===0?0:aa(aY(function(a){return r(c,a)},z(c,a)))}var
-aI=0;function
+cX(c,a){a=b(c,a,d4);return a===0?0:aa(aZ(function(a){return r(c,a)},z(c,a)))}var
+aJ=0;function
 d6(c,a){if(a===0)return 0;var
-d=cW(c,a);return n(d6(c,b(c,a,aI)),d)}var
-fT=6;function
-cX(c,a){a=b(c,bk(c,a),fT);return a===0?str:r(c,a)}function
+d=cX(c,a);return n(d6(c,b(c,a,aJ)),d)}var
+fU=6;function
+cY(c,a){a=b(c,bk(c,a),fU);return a===0?str:r(c,a)}function
 d7(a,c,b){return x(a,a[8][11],[0,[0,c,b]])}function
 d8(a){var
 c=a[8][19];return c===0?[0]:z(a,b(a,c,0))}function
-fU(f,e,c){var
+fV(f,e,c){var
 a=0,c=J(f,c),g=e.length-1;for(;;){if(a===g)return 0;var
 d=e[a+1];if(b(f,d,0)===c)return[0,d];a=a+1|0}}function
-bI(a,b){return fU(a,d8(a),b)}function
-cY(b,a,c){var
-d=bI(b,a);if(d){a=d[1];ax(b,a,1,c);return a}a=d7(b,J(b,a),c);c=b[8][19];ax(b,c,0,R(b,dD(d8(b),[0,a])));return a}function
+bI(a,b){return fV(a,d8(a),b)}function
+cZ(b,a,c){var
+d=bI(b,a);if(d){a=d[1];ax(b,a,1,c);return a}a=d7(b,J(b,a),c);c=b[8][19];ax(b,c,0,S(b,dD(d8(b),[0,a])));return a}function
 d9(a){var
 c=k(function(c){var
-d=b(a,c,1);return[0,r(a,b(a,c,0)),d]},aa(d8(a)));return k(function(a){return a[2]},dx(function(b,a){return caml_string_compare(b[1],a[1])},T(function(d){var
+d=b(a,c,1);return[0,r(a,b(a,c,0)),d]},aa(d8(a)));return k(function(a){return a[2]},dx(function(b,a){return caml_string_compare(b[1],a[1])},N(function(d){var
 c=d[2],d=d[1],b=1-g(c);if(b){b=c!==0?1:0;if(b){b=bj(a,o(a,c));b=b?ah(a,c)===d?1:0:b}}return b})(c)))}var
-iE=[0,[2,0,[12,32,[2,0,[11," #",[2,0,[11,"\n\tinstanceVariableNames: '",[2,0,[11,"'\n\tclassVariableNames: '",[2,0,[11,"'\n\tpoolDictionaries: ''\n\tcategory: '",[2,0,[12,39,0]]]]]]]]]]]],"%s %s #%s\n\tinstanceVariableNames: '%s'\n\tclassVariableNames: '%s'\n\tpoolDictionaries: ''\n\tcategory: '%s'"],cc=7;function
-fV(a,c){c=bk(a,c);var
-e=b(a,c,aI),f=bi(a,c)[2],g="subclass:";if(3<=f);else
+iF=[0,[2,0,[12,32,[2,0,[11," #",[2,0,[11,"\n\tinstanceVariableNames: '",[2,0,[11,"'\n\tclassVariableNames: '",[2,0,[11,"'\n\tpoolDictionaries: ''\n\tcategory: '",[2,0,[12,39,0]]]]]]]]]]]],"%s %s #%s\n\tinstanceVariableNames: '%s'\n\tclassVariableNames: '%s'\n\tpoolDictionaries: ''\n\tcategory: '%s'"],cc=7;function
+fW(a,c){c=bk(a,c);var
+e=b(a,c,aJ),f=bi(a,c)[2],g="subclass:";if(3<=f);else
 switch(f){case
 0:break;case
-1:g="variableSubclass:";break;default:g="variableByteSubclass:"}f=cX(a,c);var
-d=b(a,bk(a,c),cc),d=d===0?0:k(function(c){return r(a,b(a,c,0))},aa(z(a,d))),d=b3(str$16,d),h=b3(str$16,cW(a,c)),c=ah(a,c),e=e===0?str_nil:ah(a,e);return caml_call6(G(iE),e,g,c,h,d,f)}var
+1:g="variableSubclass:";break;default:g="variableByteSubclass:"}f=cY(a,c);var
+d=b(a,bk(a,c),cc),d=d===0?0:k(function(c){return r(a,b(a,c,0))},aa(z(a,d))),d=b3(str$16,d),h=b3(str$16,cX(a,c)),c=ah(a,c),e=e===0?str_nil:ah(a,e);return caml_call6(G(iF),e,g,c,h,d,f)}var
 bh=1;function
-cZ(a,c){c=b(a,c,bh);var
+c0(a,c){c=b(a,c,bh);var
 d=z(a,b(a,c,1));return[0,z(a,b(a,c,0)),d]}function
-bl(b,c,d){b=cZ(b,c);c=b[1];var
+bl(b,c,d){b=c0(b,c);c=b[1];var
 a=0,b=b[2];for(;;){if(c.length-1<=a)return 0;if(caml_check_bound(c,a)[a+1]===d)return[0,caml_check_bound(b,a)[a+1]];a=a+1|0}}function
-fW(d,a,e){for(;;){if(a===0)return 0;var
-c=bl(d,a,e);if(c)return[0,c[1]];a=b(d,a,aI)}}function
-fX(a,b){return dx(caml_string_compare,k(function(b){return r(a,b)},aa(cZ(a,b)[1])))}var
-fS=4;function
-cd(a,c){c=b(a,c,fS);return c===0?0:k(function(c){var
+fX(d,a,e){for(;;){if(a===0)return 0;var
+c=bl(d,a,e);if(c)return[0,c[1]];a=b(d,a,aJ)}}function
+fY(a,b){return dx(caml_string_compare,k(function(b){return r(a,b)},aa(c0(a,b)[1])))}var
+fT=4;function
+cd(a,c){c=b(a,c,fT);return c===0?0:k(function(c){var
 d=k(function(b){return r(a,b)},aa(z(a,b(a,c,1))));return[0,r(a,b(a,c,0)),d]},aa(z(a,c)))}function
-fY(a,c,b){return ax(a,c,fS,R(a,Y(k(function(b){var
-c=b[1],b=R(a,Y(k(function(b){return J(a,b)},dx(caml_string_compare,b[2]))));return d7(a,a1(a,c),b)},T(function(a){return 0!==a[2]?1:0})(b)))))}function
-fZ(b,a){return k(function(a){return a[1]},cd(b,a))}function
-f0(a,c,d){try{a=cd(a,c);for(;;){if(!a)throw caml_maybe_attach_backtrace(Not_found,1);c=a[1];a=a[2];var
+fZ(a,c,b){return ax(a,c,fT,S(a,Y(k(function(b){var
+c=b[1],b=S(a,Y(k(function(b){return J(a,b)},dx(caml_string_compare,b[2]))));return d7(a,a2(a,c),b)},N(function(a){return 0!==a[2]?1:0})(b)))))}function
+f0(b,a){return k(function(a){return a[1]},cd(b,a))}function
+f1(a,c,d){try{a=cd(a,c);for(;;){if(!a)throw caml_maybe_attach_backtrace(Not_found,1);c=a[1];a=a[2];var
 b=c[2];if(0===caml_compare(c[1],d))return b}}catch(a){b=caml_wrap_exception(a);if(b===Not_found)return 0;throw caml_maybe_attach_backtrace(b,0)}}function
-f1(a,b,d){b=cd(a,b);for(;;){if(!b)return 0;a=b[1];b=b[2];var
-c=a[1],a=be(d,a[2])?[0,c]:0;if(a)return a}}function
-f2(a){var
-b=R(a,[0]),b=[0,[0,R(a,[0]),b]];return x(a,a[8][16],b)}function
-f3(a,d){var
-c=d9(a);return T(function(c){return b(a,c,aI)===d?1:0})(c)}function
-f4(c,a){var
-d=b(c,a,aI),d=d===0?0:bi(c,d)[1],e=bi(c,a)[2];ax(c,a,cV,m(d5(d+s(cW(c,a))|0,e)));a=f3(c,a);for(;;){if(!a)return;d=a[2];f4(c,a[1]);a=d}}var
+f2(b,a,d){b=cd(b,a);for(;;){if(!b)return 0;a=b[1];b=b[2];var
+c=a[1],a=aG(d,a[2])?[0,c]:0;if(a)return a}}function
+f3(a){var
+b=S(a,[0]),b=[0,[0,S(a,[0]),b]];return x(a,a[8][16],b)}function
+f4(a,d){var
+c=d9(a);return N(function(c){return b(a,c,aJ)===d?1:0})(c)}function
+f5(c,a){var
+d=b(c,a,aJ),d=d===0?0:bi(c,d)[1],e=bi(c,a)[2];ax(c,a,cW,m(d5(d+s(cX(c,a))|0,e)));a=f4(c,a);for(;;){if(!a)return;d=a[2];f5(c,a[1]);a=d}}var
 q=0;function
-f5(a,d,j,n,l,i,p){var
+f6(a,d,j,n,l,i,p){var
 h=a[8],e=bI(a,j);a:{if(e){e=e[1];var
-f=b(a,e,1),c=1-g(f);if(c){c=f!==0;c=c?bj(a,o(a,f)):c}if(c){e=[0,b(a,e,1)];break a}}e=0}if(e){h=e[1];e=caml_notequal(cW(a,h),l);if(e);else{e=d!==b(a,h,aI)?1:0;e||=bi(a,h)[2]!==n?1:0}c=o(a,h)}else{c=x(a,h[15],[0,caml_make_vect(6,0)]);h=x(a,c,[0,caml_make_vect(9,0)]);cY(a,j,h);e=0}f=z(a,h);c=z(a,c);caml_check_bound(f,0)[aI+1]=d;if(caml_check_bound(f,1)[bh+1]===0){var
-t=f2(a);caml_check_bound(f,1)[bh+1]=t}n=m(d5(0,n));caml_check_bound(f,2)[cV+1]=n;l=R(a,Y(k(function(b){return a1(a,b)},l)));caml_check_bound(f,3)[d4+1]=l;j=J(a,j);caml_check_bound(f,5)[cb+1]=j;p=a1(a,p);caml_check_bound(f,6)[fT+1]=p;var
+f=b(a,e,1),c=1-g(f);if(c){c=f!==0;c=c?bj(a,o(a,f)):c}if(c){e=[0,b(a,e,1)];break a}}e=0}if(e){h=e[1];e=caml_notequal(cX(a,h),l);if(e);else{e=d!==b(a,h,aJ)?1:0;e||=bi(a,h)[2]!==n?1:0}c=o(a,h)}else{c=x(a,h[15],[0,caml_make_vect(6,0)]);h=x(a,c,[0,caml_make_vect(9,0)]);cZ(a,j,h);e=0}f=z(a,h);c=z(a,c);caml_check_bound(f,0)[aJ+1]=d;if(caml_check_bound(f,1)[bh+1]===0){var
+t=f3(a);caml_check_bound(f,1)[bh+1]=t}n=m(d5(0,n));caml_check_bound(f,2)[cW+1]=n;l=S(a,Y(k(function(b){return a2(a,b)},l)));caml_check_bound(f,3)[d4+1]=l;j=J(a,j);caml_check_bound(f,5)[cb+1]=j;p=a2(a,p);caml_check_bound(f,6)[fU+1]=p;var
 s=caml_check_bound(f,7)[cc+1]===0?[0]:z(a,caml_check_bound(f,7)[cc+1]),i=k(function(f){var
 d=0,c=s.length-1;for(;;){if(d===c)c=0;else{var
-e=s[d+1];if(r(a,b(a,e,0))!==f){d=d+1|0;continue}c=[0,e]}return c?c[1]:d7(a,J(a,f),q)}},i),i=0===i?q:R(a,Y(i));caml_check_bound(f,7)[cc+1]=i;if(d===0){d=bI(a,"Class");d=d?b(a,d[1],1):q}else
-d=o(a,d);caml_check_bound(c,0)[aI+1]=d;if(caml_check_bound(c,1)[bh+1]===0){d=f2(a);caml_check_bound(c,1)[bh+1]=d}d=m(d5(9,0));caml_check_bound(c,2)[cV+1]=d;d=R(a,[0]);caml_check_bound(c,3)[d4+1]=d;caml_check_bound(c,5)[cb+1]=h;f4(a,h);return[0,h,e]}var
-a3=[num_248,"St_parse.Error",caml_fresh_oo_id(0)];function
+e=s[d+1];if(r(a,b(a,e,0))!==f){d=d+1|0;continue}c=[0,e]}return c?c[1]:d7(a,J(a,f),q)}},i),i=0===i?q:S(a,Y(i));caml_check_bound(f,7)[cc+1]=i;if(d===0){d=bI(a,"Class");d=d?b(a,d[1],1):q}else
+d=o(a,d);caml_check_bound(c,0)[aJ+1]=d;if(caml_check_bound(c,1)[bh+1]===0){d=f3(a);caml_check_bound(c,1)[bh+1]=d}d=m(d5(9,0));caml_check_bound(c,2)[cW+1]=d;d=S(a,[0]);caml_check_bound(c,3)[d4+1]=d;caml_check_bound(c,5)[cb+1]=h;f5(a,h);return[0,h,e]}var
+a4=[num_248,"St_parse.Error",caml_fresh_oo_id(0)];function
 v(b){var
 a=b[2];return caml_check_bound(b[1],a)[a+1][1]}function
-f6(a){if((a[2]+1|0)>=a[1].length-1)return 11;var
+f7(a){if((a[2]+1|0)>=a[1].length-1)return 11;var
 b=a[2]+1|0;return caml_check_bound(a[1],b)[b+1][1]}function
 ay(b){var
 a=b[2];return caml_check_bound(b[1],a)[a+1]}function
 f(a){if(a[2]<(a[1].length-2|0))a[2]=a[2]+1|0}function
-ao(b,a){throw caml_maybe_attach_backtrace([0,a3,ay(b)[2],a],1)}function
-aJ(a){if(0===a[2])return 0;var
+ao(b,a){throw caml_maybe_attach_backtrace([0,a4,ay(b)[2],a],1)}function
+aK(a){if(0===a[2])return 0;var
 b=a[2]-1|0;return caml_check_bound(a[1],b)[b+1][3]}function
-c0(a,c,b){return caml_equal(v(a),c)?f(a):ao(a,b)}function
+c1(a,c,b){return caml_equal(v(a),c)?f(a):ao(a,b)}function
 ce(c,b){var
 a=v(c);if(typeof
 a!=="number"&&0===a[0]){b=a[1];f(c);return b}return ao(c,b)}var
-str_expected=") expected",str$5="|",iF=[5,str$5];function
-f7(b){var
+str_expected=") expected",str$5="|",iG=[5,str$5];function
+f8(b){var
 e=0;for(;;){var
 c=v(b);a:if(typeof
 c==="number"){if(2===c)f(b);else{if(11>c)break a;ao(b,str_expected)}return[6,h(e)]}c=ay(b);var
 a=c[1];if(typeof
 a==="number")switch(a){case
-9:f(b);a=iF;break;case
+9:f(b);a=iG;break;case
 0:case
-1:f(b);a=f7(b);break;default:a=ao(b,"literal expected")}else
+1:f(b);a=f8(b);break;default:a=ao(b,"literal expected")}else
 switch(a[0]){case
 0:a=a[1];a=a!==str_false?a!==str_nil?a!==str_true?(f(b),[5,a]):(f(b),1):(f(b),0):(f(b),2);break;case
 1:a=a[1];f(b);c=c[3];for(;;){var
@@ -2266,9 +2266,9 @@ d!=="number"&&1===d[0]){d=d[1];if(ay(b)[2]===c){c=ay(b)[3];f(b);a+=d;continue}}a
 5:a=a[1];f(b);a=[2,a];break;case
 6:a=a[1];f(b);a=[3,a];break;case
 7:a=a[1];f(b);a=[4,a];break;default:a=a[1];f(b);a=[5,a]}e=[0,a,e]}}function
-f8(b){var
+f9(b){var
 a=v(b);if(typeof
-a==="number"){if(0===a){f(b);return[0,f7(b)]}}else
+a==="number"){if(0===a){f(b);return[0,f8(b)]}}else
 switch(a[0]){case
 3:a=a[1];f(b);return[0,[0,a]];case
 4:var
@@ -2277,110 +2277,110 @@ c=a[2],a=a[1];f(b);return[0,[1,a,c]];case
 6:a=a[1];f(b);return[0,[3,a]];case
 7:a=a[1];f(b);return[0,[4,a]];case
 8:a=a[1];f(b);return[0,[5,a]]}return 0}function
-aR(c,b,a){return[0,c,[0,b,a]]}function
-c1(a){var
-c=v(a),d=f6(a);if(typeof
+aS(c,b,a){return[0,c,[0,b,a]]}function
+c2(a){var
+c=v(a),d=f7(a);if(typeof
 c!=="number"&&0===c[0]&&typeof
-d==="number"&&6===d){c=c[1];d=ay(a)[2];f(a);f(a);a=c1(a);return aR([2,c,a],d,a[2][2])}d=d_(a);c=v(a);if(typeof
+d==="number"&&6===d){c=c[1];d=ay(a)[2];f(a);f(a);a=c2(a);return aS([2,c,a],d,a[2][2])}d=d_(a);c=v(a);if(typeof
 c==="number"||!(1===c[0]));else{c=ak(16);var
 g=0;for(;;){var
 e=v(a);a:{if(typeof
-e!=="number"&&1===e[0]){e=1;break a}e=0}if(!e){e=aJ(a);var
-b=d[2][1],g=h(g),d=aR([3,d,aw(c),g],b,e);break}var
+e!=="number"&&1===e[0]){e=1;break a}e=0}if(!e){e=aK(a);var
+b=d[2][1],g=h(g),d=aS([3,d,aw(c),g],b,e);break}var
 i=v(a);if(typeof
-i!=="number"&&1===i[0])ad(c,i[1]);f(a);g=[0,d_(a),g]}}if(8!==v(a))return d;g=d[1];if(3!==g[0])return ao(a,"Cascading not expected");c=[0,[0,g[2],g[3],d[2]],0];g=g[1];for(;;){if(8!==v(a)){a=aJ(a);d=d[2][1];return aR([4,g,h(c)],d,a)}f(a);e=ay(a)[2];b=v(a);a:{if(typeof
-b==="number"){if(9===b){f(a);b=cf(a);b=[0,str$5,[0,b,0],[0,e,aJ(a)]];break a}}else
+i!=="number"&&1===i[0])ad(c,i[1]);f(a);g=[0,d_(a),g]}}if(8!==v(a))return d;g=d[1];if(3!==g[0])return ao(a,"Cascading not expected");c=[0,[0,g[2],g[3],d[2]],0];g=g[1];for(;;){if(8!==v(a)){a=aK(a);d=d[2][1];return aS([4,g,h(c)],d,a)}f(a);e=ay(a)[2];b=v(a);a:{if(typeof
+b==="number"){if(9===b){f(a);b=cf(a);b=[0,str$5,[0,b,0],[0,e,aK(a)]];break a}}else
 switch(b[0]){case
-0:b=b[1];f(a);b=[0,b,0,[0,e,aJ(a)]];break a;case
+0:b=b[1];f(a);b=[0,b,0,[0,e,aK(a)]];break a;case
 1:b=ak(16);i=0;for(;;){var
 j=v(a);b:{if(typeof
-j!=="number"&&1===j[0]){j=1;break b}j=0}if(!j){e=[0,e,aJ(a)];i=h(i);b=[0,aw(b),i,e];break a}j=v(a);if(typeof
+j!=="number"&&1===j[0]){j=1;break b}j=0}if(!j){e=[0,e,aK(a)];i=h(i);b=[0,aw(b),i,e];break a}j=v(a);if(typeof
 j!=="number"&&1===j[0])ad(b,j[1]);f(a);i=[0,d_(a),i]}break;case
-2:b=b[1];f(a);i=cf(a);b=[0,b,[0,i,0],[0,e,aJ(a)]];break a}b=ao(a,"Message expected")}c=[0,b,c]}}function
+2:b=b[1];f(a);i=cf(a);b=[0,b,[0,i,0],[0,e,aK(a)]];break a}b=ao(a,"Message expected")}c=[0,b,c]}}function
 d_(c){var
 b=cf(c);for(;;){var
 a=v(c);if(typeof
-a==="number"){if(9===a){f(c);a=cf(c);b=aR([3,b,str$5,[0,a,0]],b[2][1],a[2][2]);continue}}else if(2===a[0]){a=a[1];f(c);var
-d=cf(c);b=aR([3,b,a,[0,d,0]],b[2][1],d[2][2]);continue}return b}}var
+a==="number"){if(9===a){f(c);a=cf(c);b=aS([3,b,str$5,[0,a,0]],b[2][1],a[2][2]);continue}}else if(2===a[0]){a=a[1];f(c);var
+d=cf(c);b=aS([3,b,a,[0,d,0]],b[2][1],d[2][2]);continue}return b}}var
 str_Vertical_bar_exp_abr="Vertical bar expected",str_Argument_name_ex_abr="Argument name expected";function
 cf(a){var
-c=ay(a)[2],b=f8(a);a:if(b){b=b[1];c=aR([0,b],c,aJ(a))}else{b=v(a);if(typeof
+c=ay(a)[2],b=f9(a);a:if(b){b=b[1];c=aS([0,b],c,aK(a))}else{b=v(a);if(typeof
 b==="number")switch(b){case
-1:f(a);b=c1(a);c0(a,2,str_expected);c=[0,c,aJ(a)];c=[0,b[1],c];break a;case
+1:f(a);b=c2(a);c1(a,2,str_expected);c=[0,c,aK(a)];c=[0,b[1],c];break a;case
 3:c=ay(a)[2];f(a);b=0;for(;;){if(10!==v(a))break;f(a);b=[0,ce(a,str_Argument_name_ex_abr),b]}b:if(0!==b){var
 d=v(a);if(typeof
-d==="number"){if(4===d)break b;if(9===d){f(a);break b}}ao(a,str_Vertical_bar_exp_abr)}d=f9(a);var
-e=f_(a);c0(a,4,"Period or right bracket expected");var
-g=aJ(a),c=aR([5,h(b),d,e],c,g);break a}else if(0===b[0]){b=b[1];f(a);c=aR([1,b],c,aJ(a));break a}c=ao(a,"Argument expected")}for(;;){b=v(a);if(typeof
-b!=="number"&&0===b[0]){b=b[1];e=ay(a)[3];f(a);c=aR([3,c,b,0],c[2][1],e);continue}return c}}function
-f9(b){if(9!==v(b))return 0;f(b);var
+d==="number"){if(4===d)break b;if(9===d){f(a);break b}}ao(a,str_Vertical_bar_exp_abr)}d=f_(a);var
+e=f$(a);c1(a,4,"Period or right bracket expected");var
+g=aK(a),c=aS([5,h(b),d,e],c,g);break a}else if(0===b[0]){b=b[1];f(a);c=aS([1,b],c,aK(a));break a}c=ao(a,"Argument expected")}for(;;){b=v(a);if(typeof
+b!=="number"&&0===b[0]){b=b[1];e=ay(a)[3];f(a);c=aS([3,c,b,0],c[2][1],e);continue}return c}}function
+f_(b){if(9!==v(b))return 0;f(b);var
 c=0;for(;;){var
 a=v(b);a:{if(typeof
-a!=="number"&&0===a[0]){a=1;break a}a=0}if(!a){c0(b,9,str_Vertical_bar_exp_abr);return h(c)}c=[0,ce(b,str),c]}}var
+a!=="number"&&0===a[0]){a=1;break a}a=0}if(!a){c1(b,9,str_Vertical_bar_exp_abr);return h(c)}c=[0,ce(b,str),c]}}var
 str_Nothing_more_exp_abr="Nothing more expected";function
-f_(a){var
+f$(a){var
 d=0;a:for(;;){var
 b=v(a);if(typeof
 b==="number")switch(b){case
 5:break a;case
 4:case
-11:return h(d)}b=c1(a);var
+11:return h(d)}b=c2(a);var
 c=v(a);if(typeof
 c==="number")switch(c){case
 7:f(a);d=[0,[0,b],d];continue;case
 4:case
-11:return h([0,[0,b],d])}return ao(a,str_Nothing_more_exp_abr)}b=ay(a)[2];f(a);c=c1(a);b=[1,c,[0,b,c[2][2]]];if(7===v(a))f(a);c=v(a);a:{if(typeof
+11:return h([0,[0,b],d])}return ao(a,str_Nothing_more_exp_abr)}b=ay(a)[2];f(a);c=c2(a);b=[1,c,[0,b,c[2][2]]];if(7===v(a))f(a);c=v(a);a:{if(typeof
 c==="number"&&(4===c||11<=c))break a;ao(a,str_Nothing_more_exp_abr)}return h([0,b,d])}var
-iG=[2,str$22];function
-f$(b){var
-c=v(b),a=f6(b);if(typeof
+iH=[2,str$22];function
+ga(b){var
+c=v(b),a=f7(b);if(typeof
 c!=="number"&&2===c[0]&&c[1]===str$0&&typeof
 a!=="number"&&1===a[0]&&a[1]==="primitive:"){f(b);f(b);a=v(b);if(typeof
-a!=="number"&&3===a[0]){a=a[1];f(b);c0(b,iG,"> expected");return[0,a]}return ao(b,"Integer expected")}return 0}var
-num_144=144,num_134=134,num_124=124,num_145=145,iB=[0,[11,"unexpected character ",[1,0]],"unexpected character %C"];function
+a!=="number"&&3===a[0]){a=a[1];f(b);c1(b,iH,"> expected");return[0,a]}return ao(b,"Integer expected")}return 0}var
+num_144=144,num_134=134,num_124=124,num_145=145,iC=[0,[11,"unexpected character ",[1,0]],"unexpected character %C"];function
 d$(c){try{var
 d=caml_ml_string_length(c),a=function(a){return a<d?caml_string_get(c,a):0},e=[0,0],b=function(c,b,a){e[1]=[0,[0,c,b,a],e[1]]},g=function(g,m,e){function
 k(a,e){var
-b=0;for(;;){if(a<d&&cQ(caml_string_get(c,a))<e){b=fK(b,e,cQ(caml_string_get(c,a)));a=a+1|0;continue}return[0,a,b]}}var
-e=k(e,10),f=e[2],e=e[1];a:{if(num_114===a(e)&&36>cQ(a(e+1|0))){f=d2(0,f);if(f){f=f[1];if(2<=f&&36>=f){e=k(e+1|0,f);var
+b=0;for(;;){if(a<d&&cR(caml_string_get(c,a))<e){b=fL(b,e,cR(caml_string_get(c,a)));a=a+1|0;continue}return[0,a,b]}}var
+e=k(e,10),f=e[2],e=e[1];a:{if(num_114===a(e)&&36>cR(a(e+1|0))){f=d2(0,f);if(f){f=f[1];if(2<=f&&36>=f){e=k(e+1|0,f);var
 i=f,f=e[2],e=e[1];break a}}throw caml_maybe_attach_backtrace([0,bg,e,"bad radix"],1)}i=10}function
 l(d,c){var
 a=d2(m,c);return a?b([3,a[1]],g,d):b([4,m,c],g,d)}if(10===i&&46===a(e)&&am(a(e+1|0))){f=e+1|0;for(;;){if(!am(a(f)))break;f=f+1|0}e=num_101===a(f);if(e){e=am(a(f+1|0));if(e);else{e=45===a(f+1|0);e=e?am(a(f+2|0)):e}}if(e){f=f+2|0;for(;;){if(!am(a(f)))break;f=f+1|0}}return b([5,caml_float_of_string(F(c,g,f-g|0))],g,f)}if(num_101===a(e)&&am(a(e+1|0))){var
-h=0,e=e+1|0;for(;;){if(!am(a(e)))break;h=(h*10|0)+cQ(caml_string_get(c,e))|0;e=e+1|0}if(h<1);else{var
-j=1;for(;;){f=fK(f,i,0);var
+h=0,e=e+1|0;for(;;){if(!am(a(e)))break;h=(h*10|0)+cR(caml_string_get(c,e))|0;e=e+1|0}if(h<1);else{var
+j=1;for(;;){f=fL(f,i,0);var
 n=j+1|0;if(h===j)break;j=n}}return l(e,f)}return l(e,f)};(function(h){a:for(;;){b:if(d>h){var
 f=caml_string_get(c,h)-9|0;if(4<f>>>0){f=f-23|0;if(2<f>>>0)break b;switch(f){case
-2:f=cB(c,h+1|0,34);if(!f)throw caml_maybe_attach_backtrace([0,bg,h,"unmatched comment quote"],1);h=f[1]+1|0;continue;case
-0:break;default:break b}}else if(2===f)break b;h=h+1|0;continue}if(d<=h)return b(11,d,d);f=caml_string_get(c,h);if(cP(f)){f=h;for(;;){if(!cP(a(f))&&!am(a(f))){var
-i=F(c,h,f-h|0);if(58===a(f)&&61!==a(f+1|0)){b([1,i+str$4],h,f+1|0);h=f+1|0;break}b([0,i],h,f);h=f;break}f=f+1|0}}else if(am(f)){g(h,0,h);h=e0(e[1])[3]}else{if(45===f&&am(a(h+1|0))){i=e[1];b:{c:if(i){i=i[1][1];if(typeof
+2:f=cC(c,h+1|0,34);if(!f)throw caml_maybe_attach_backtrace([0,bg,h,"unmatched comment quote"],1);h=f[1]+1|0;continue;case
+0:break;default:break b}}else if(2===f)break b;h=h+1|0;continue}if(d<=h)return b(11,d,d);f=caml_string_get(c,h);if(cQ(f)){f=h;for(;;){if(!cQ(a(f))&&!am(a(f))){var
+i=F(c,h,f-h|0);if(58===a(f)&&61!==a(f+1|0)){b([1,i+str$4],h,f+1|0);h=f+1|0;break}b([0,i],h,f);h=f;break}f=f+1|0}}else if(am(f)){g(h,0,h);h=e1(e[1])[3]}else{if(45===f&&am(a(h+1|0))){i=e[1];b:{c:if(i){i=i[1][1];if(typeof
 i==="number")switch(i){case
 2:case
-4:break;default:break c}else if(i[0]-1>>>0<2)break c;i=1;break b}i=0}if(!i){g(h,1,h+1|0);h=e0(e[1])[3];continue}}if(36===f){if(d<=(h+1|0))throw caml_maybe_attach_backtrace([0,bg,h,"a character expected after $"],1);b([6,caml_string_get(c,h+1|0)],h,h+2|0);h=h+2|0}else if(39===f){f=ak(16);i=h+1|0;for(;;){if(d<=i)throw caml_maybe_attach_backtrace([0,bg,h,"unmatched string quote"],1);if(39===caml_string_get(c,i)){if(39!==a(i+1|0)){i=i+1|0;b([7,aw(f)],h,i);h=i;break}I(f,39);i=i+2|0}else{I(f,caml_string_get(c,i));i=i+1|0}}}else{i="+-*/\\<>=~@%&?,";if(35===f){f=a(h+1|0);if(40===f){b(0,h,h+2|0);h=h+2|0}else if(cP(f)){i=h+1|0;for(;;){if(!cP(a(i))&&!am(a(i))&&58!==a(i)){b([8,F(c,h+1|0,(i-h|0)-1|0)],h,i);h=i;break}i=i+1|0}}else if(39===f)h=h+1|0;else{if(!as(i,f)&&num_124!==f)throw caml_maybe_attach_backtrace([0,bg,h,"a literal expected after #"],1);f=h+1|0;for(;;){if(!as(i,a(f))&&num_124!==a(f)){b([8,F(c,h+1|0,(f-h|0)-1|0)],h,f);h=f;break}f=f+1|0}}}else{if(58===f&&61===a(h+1|0)){b(6,h,h+2|0);h=h+2|0;continue}if(95===f){b(6,h,h+1|0);h=h+1|0}else{var
-num_226=226;if(num_226===f&&num_134===a(h+1|0)&&num_144===a(h+2|0)){b(6,h,h+3|0);h=h+3|0;continue}b:if(94!==f){if(num_226===f&&num_134===a(h+1|0)&&num_145===a(h+2|0))break b;if(as(i,f)){f=h+1|0;for(;;){c:if(as(i,a(f))){if(45===a(f)&&am(a(f+1|0)))break c;f=f+1|0;continue}b([2,F(c,h,f-h|0)],h,f);h=f;continue a}}c:{if(60<=f){if(94<=f){if(num_124===f){f=9;break c}}else if(91<=f)switch(f-91|0){case
+4:break;default:break c}else if(i[0]-1>>>0<2)break c;i=1;break b}i=0}if(!i){g(h,1,h+1|0);h=e1(e[1])[3];continue}}if(36===f){if(d<=(h+1|0))throw caml_maybe_attach_backtrace([0,bg,h,"a character expected after $"],1);b([6,caml_string_get(c,h+1|0)],h,h+2|0);h=h+2|0}else if(39===f){f=ak(16);i=h+1|0;for(;;){if(d<=i)throw caml_maybe_attach_backtrace([0,bg,h,"unmatched string quote"],1);if(39===caml_string_get(c,i)){if(39!==a(i+1|0)){i=i+1|0;b([7,aw(f)],h,i);h=i;break}I(f,39);i=i+2|0}else{I(f,caml_string_get(c,i));i=i+1|0}}}else{i="+-*/\\<>=~@%&?,";if(35===f){f=a(h+1|0);if(40===f){b(0,h,h+2|0);h=h+2|0}else if(cQ(f)){i=h+1|0;for(;;){if(!cQ(a(i))&&!am(a(i))&&58!==a(i)){b([8,F(c,h+1|0,(i-h|0)-1|0)],h,i);h=i;break}i=i+1|0}}else if(39===f)h=h+1|0;else{if(!at(i,f)&&num_124!==f)throw caml_maybe_attach_backtrace([0,bg,h,"a literal expected after #"],1);f=h+1|0;for(;;){if(!at(i,a(f))&&num_124!==a(f)){b([8,F(c,h+1|0,(f-h|0)-1|0)],h,f);h=f;break}f=f+1|0}}}else{if(58===f&&61===a(h+1|0)){b(6,h,h+2|0);h=h+2|0;continue}if(95===f){b(6,h,h+1|0);h=h+1|0}else{var
+num_226=226;if(num_226===f&&num_134===a(h+1|0)&&num_144===a(h+2|0)){b(6,h,h+3|0);h=h+3|0;continue}b:if(94!==f){if(num_226===f&&num_134===a(h+1|0)&&num_145===a(h+2|0))break b;if(at(i,f)){f=h+1|0;for(;;){c:if(at(i,a(f))){if(45===a(f)&&am(a(f+1|0)))break c;f=f+1|0;continue}b([2,F(c,h,f-h|0)],h,f);h=f;continue a}}c:{if(60<=f){if(94<=f){if(num_124===f){f=9;break c}}else if(91<=f)switch(f-91|0){case
 0:f=3;break c;case
 2:f=4;break c}}else{if(58<=f){if(59<=f){f=8;break c}f=10;break c}i=f-40|0;if(6>=i>>>0)switch(i){case
 0:f=1;break c;case
 1:f=2;break c;case
-6:f=7;break c}}throw caml_maybe_attach_backtrace([0,bg,h,caml_call1(G(iB),f)],1)}b(f,h,h+1|0);h=h+1|0;continue}f=94===f?1:3;b(5,h,h+f|0);h=h+f|0}}}}}}(0));var
-f=[0,aY(function(a){var
+6:f=7;break c}}throw caml_maybe_attach_backtrace([0,bg,h,caml_call1(G(iC),f)],1)}b(f,h,h+1|0);h=h+1|0;continue}f=94===f?1:3;b(5,h,h+f|0);h=h+f|0}}}}}}(0));var
+f=[0,aZ(function(a){var
 b=a[1];if(typeof
-b!=="number"&&7===b[0]){b=b[1];if(0<a[2]&&35===caml_string_get(c,a[2]-1|0))return[0,[8,b],a[2]-1|0,a[3]]}return a},Y(h(e[1]))),0];return f}catch(a){f=caml_wrap_exception(a);if(f[1]===bg)throw caml_maybe_attach_backtrace([0,a3,f[2],f[3]],1);throw caml_maybe_attach_backtrace(f,0)}}function
-ga(a,g,f){var
-c=f$(a),d=f9(a),b=f$(a),e=f_(a);if(11!==v(a))ao(a,str_Nothing_more_exp_abr);b=c||b;return[0,g,f,d,b,e]}function
-ea(a){return ga(d$(a),"DoIt",0)}var
+b!=="number"&&7===b[0]){b=b[1];if(0<a[2]&&35===caml_string_get(c,a[2]-1|0))return[0,[8,b],a[2]-1|0,a[3]]}return a},Y(h(e[1]))),0];return f}catch(a){f=caml_wrap_exception(a);if(f[1]===bg)throw caml_maybe_attach_backtrace([0,a4,f[2],f[3]],1);throw caml_maybe_attach_backtrace(f,0)}}function
+gb(a,g,f){var
+c=ga(a),d=f_(a),b=ga(a),e=f$(a);if(11!==v(a))ao(a,str_Nothing_more_exp_abr);b=c||b;return[0,g,f,d,b,e]}function
+ea(a){return gb(d$(a),"DoIt",0)}var
 az=[num_248,"St_compile.Error",caml_fresh_oo_id(0)];function
-a4(a){return[0,ak(64),0]}function
+a5(a){return[0,ak(64),0]}function
 Z(a){return a[1][2]}function
-c(b,a){a=P(a);return I(b[1],a)}function
+c(b,a){a=Q(a);return I(b[1],a)}function
 bm(b,d){var
-e=Z(b),c=d[1],f=b[1],a=c[2];fg(f,caml_string_of_bytes(c[1]),0,a);a=b[2];b[2]=n(k(function(a){return[0,a[1]+e|0,a[2],a[3]]},d[2]),a)}function
+e=Z(b),c=d[1],f=b[1],a=c[2];fh(f,caml_string_of_bytes(c[1]),0,a);a=b[2];b[2]=n(k(function(a){return[0,a[1]+e|0,a[2],a[3]]},d[2]),a)}function
 bJ(b,a){throw caml_maybe_attach_backtrace([0,az,b[1],a],1)}function
 B(a,b){a[11]=a[11]+b|0;if(a[12]<a[11])a[12]=a[11]}function
-c2(b,d){var
+c3(b,d){var
 a=b[6]-1|0,c=b[5];for(;;){if(c){var
 e=c[2];if(c[1]!==d){a=a-1|0;c=e;continue}a=[0,a]}else
 a=0;return a?a[1]:(b[5]=[0,d,b[5]],b[6]=b[6]+1|0,b[6]-1|0)}}function
-a5(a,d,c){var
+a6(a,d,c){var
 b=a[9];if(63<=b)bJ(d,"Too many temporaries");a[9]=a[9]+1|0;a[10]=[0,c,a[10]];a[7]=[0,[0,c,b],a[7]];return b}function
 eb(b,a){var
 c=b[8];if(typeof
@@ -2389,91 +2389,91 @@ a==="number")switch(a){case
 1:return c[17];default:return c[18]}switch(a[0]){case
 0:return m(a[1]);case
 1:var
-d=a[2],a=a[1],e=[1,cx(e$(s(d),function(a){return P(e1(d,a))}))],a=a?c[14]:c[13];return x(b,a,e);case
-2:return a2(b,a[1]);case
+d=a[2],a=a[1],e=[1,cy(fa(s(d),function(a){return Q(e2(d,a))}))],a=a?c[14]:c[13];return x(b,a,e);case
+2:return a3(b,a[1]);case
 3:a=a[1];return caml_check_bound(c[20],a)[a+1];case
-4:return a1(b,a[1]);case
-5:return J(b,a[1]);default:return R(b,Y(k(function(a){return eb(b,a)},a[1])))}}function
+4:return a2(b,a[1]);case
+5:return J(b,a[1]);default:return S(b,Y(k(function(a){return eb(b,a)},a[1])))}}function
 aA(g,b,f,e,a,d){if(63<a)bJ(d,"Too many literals or variables");c(b,f);c(b,e<<6|a)}function
 ec(e,b,d,f){a:{if(typeof
 d!=="number"&&0===d[0]){var
 a=d[1]+1|0;if(3>=a>>>0)switch(a){case
 0:c(b,num_116);break a;case
 1:c(b,117);break a;case
-2:c(b,118);break a;default:c(b,119);break a}}a=c2(e,eb(e[1],d));if(32<=a)aA(e,b,num_128,2,a,f);else
+2:c(b,118);break a;default:c(b,119);break a}}a=c3(e,eb(e[1],d));if(32<=a)aA(e,b,num_128,2,a,f);else
 c(b,32+a|0)}return B(e,1)}function
-gb(f,e,g){var
+gc(f,e,g){var
 a=b0(e,f[7]);if(a)return[0,a[1]];a:{b:{a=0;var
 c=h(f[4]);for(;;){if(!c)break;var
-d=c[2];if(c[1]===e)break b;a=a+1|0;c=d}c=0;break a}c=[0,a]}if(c){e=c[1];return[1,(s(f[4])-1|0)-e|0]}d=f[1];a=f[2];for(;;){if(a===0)d=0;else{a=bk(d,a);c=b(d,a,cc);c=c===0?0:fU(d,z(d,c),e);if(!c){a=b(d,a,aI);continue}d=[0,c[1]]}if(d)return[2,d[1]];a=bI(f[1],e);return a?[2,a[1]]:f[3]?[2,cY(f[1],e,q)]:bJ(g,"Undeclared variable "+e)}}var
-str_self="self",num_130=130,str_super="super",str_thisContext="thisContext",iH=[0,str_self,[0,str_super,[0,str_true,[0,str_false,[0,str_nil,[0,str_thisContext,0]]]]]];function
-gc(e,g,a,f,d){var
-b=be(a,iH),b=b||be(a,e[8]);if(b)bJ(f,"Cannot store into "+a);a=gb(e,a,f);b=129;switch(a[0]){case
+d=c[2];if(c[1]===e)break b;a=a+1|0;c=d}c=0;break a}c=[0,a]}if(c){e=c[1];return[1,(s(f[4])-1|0)-e|0]}d=f[1];a=f[2];for(;;){if(a===0)d=0;else{a=bk(d,a);c=b(d,a,cc);c=c===0?0:fV(d,z(d,c),e);if(!c){a=b(d,a,aJ);continue}d=[0,c[1]]}if(d)return[2,d[1]];a=bI(f[1],e);return a?[2,a[1]]:f[3]?[2,cZ(f[1],e,q)]:bJ(g,"Undeclared variable "+e)}}var
+str_self="self",num_130=130,str_super="super",str_thisContext="thisContext",iI=[0,str_self,[0,str_super,[0,str_true,[0,str_false,[0,str_nil,[0,str_thisContext,0]]]]]];function
+gd(e,g,a,f,d){var
+b=aG(a,iI),b=b||aG(a,e[8]);if(b)bJ(f,"Cannot store into "+a);a=gc(e,a,f);b=129;switch(a[0]){case
 0:a=a[1];if(d&&8>a){c(g,num_104+a|0);break}b=d?num_130:b;aA(e,g,b,1,a,f);break;case
-1:a=a[1];if(d&&8>a){c(g,96+a|0);break}b=d?num_130:b;aA(e,g,b,0,a,f);break;default:a=c2(e,a[1]);b=d?num_130:b;aA(e,g,b,3,a,f)}return d?B(e,-1):d}var
+1:a=a[1];if(d&&8>a){c(g,96+a|0);break}b=d?num_130:b;aA(e,g,b,0,a,f);break;default:a=c3(e,a[1]);b=d?num_130:b;aA(e,g,b,3,a,f)}return d?B(e,-1):d}var
 num_208=208,num_176=176,num_132=132,num_131=131;function
-c3(f,b,h,d,g,e){var
-i=e[2],j=e[1],a=b[2];b[2]=[0,[0,Z(b),j,i],a];if(g)a=0;else{a=0;for(;;){if(d3.length-1<=a){a=0;break}if(caml_check_bound(d3,a)[a+1]===h){a=[0,a];break}a=a+1|0}}a:if(a)c(b,num_176+a[1]|0);else{a=c2(f,J(f[1],h));if(g){if(8>d&&32>a){c(b,133);c(b,d<<5|a);break a}c(b,num_134);c(b,d);c(b,a)}else{if(2>=d&&16>a){c(b,(num_208+(d*16|0)|0)+a|0);break a}if(8>d&&32>a){c(b,num_131);c(b,d<<5|a);break a}if(num_255<a)bJ(e,"Too many literals");c(b,num_132);c(b,d);c(b,a)}}return B(f,-d|0)}var
+c4(f,b,h,d,g,e){var
+i=e[2],j=e[1],a=b[2];b[2]=[0,[0,Z(b),j,i],a];if(g)a=0;else{a=0;for(;;){if(d3.length-1<=a){a=0;break}if(caml_check_bound(d3,a)[a+1]===h){a=[0,a];break}a=a+1|0}}a:if(a)c(b,num_176+a[1]|0);else{a=c3(f,J(f[1],h));if(g){if(8>d&&32>a){c(b,133);c(b,d<<5|a);break a}c(b,num_134);c(b,d);c(b,a)}else{if(2>=d&&16>a){c(b,(num_208+(d*16|0)|0)+a|0);break a}if(8>d&&32>a){c(b,num_131);c(b,d<<5|a);break a}if(num_255<a)bJ(e,"Too many literals");c(b,num_132);c(b,d);c(b,a)}}return B(f,-d|0)}var
 num_164=164,num_143=143;function
 ed(b,a){if(1<=a&&8>=a)return c(b,num_143+a|0);c(b,num_164+(a>>8)|0);return c(b,a&num_255)}var
 num_151=151,num_172=172;function
 bK(b,a){if(1<=a&&8>=a)return c(b,num_151+a|0);c(b,num_172+(a>>>8|0)|0);return c(b,a&num_255)}var
 num_168=168;function
-c4(b,a){c(b,num_168+(a>>>8|0)|0);return c(b,a&num_255)}function
+c5(b,a){c(b,num_168+(a>>>8|0)|0);return c(b,a&num_255)}function
 ee(b,a){a=a-(Z(b)+2|0)|0;c(b,num_164+(a>>8)|0);return c(b,a&num_255)}function
 bn(a){a=a[1];if(5===a[0]&&!a[1])return 1;return 0}var
 num_113=113,num_135=135,num_125=125,num_115=115,num_112=112,num_200$0=200;function
 af(b,e,f){var
 a=f[1],d=137;switch(a[0]){case
 0:return ec(b,e,a[1],f[2]);case
-1:a=a[1];f=f[2];a:if(a!==str_false)if(a!==str_nil){if(a!==str_self&&a!==str_super){if(a===str_thisContext){c(e,d);break a}if(a===str_true){c(e,num_113);break a}d=gb(b,a,f);switch(d[0]){case
+1:a=a[1];f=f[2];a:if(a!==str_false)if(a!==str_nil){if(a!==str_self&&a!==str_super){if(a===str_thisContext){c(e,d);break a}if(a===str_true){c(e,num_113);break a}d=gc(b,a,f);switch(d[0]){case
 0:d=d[1];if(16<=d){aA(b,e,num_128,1,d,f);break a}c(e,16+d|0);break a;case
-1:d=d[1];if(16<=d){aA(b,e,num_128,0,d,f);break a}c(e,d);break a;default:d=c2(b,d[1]);if(32<=d){aA(b,e,num_128,3,d,f);break a}c(e,64+d|0);break a}}c(e,num_112)}else
+1:d=d[1];if(16<=d){aA(b,e,num_128,0,d,f);break a}c(e,d);break a;default:d=c3(b,d[1]);if(32<=d){aA(b,e,num_128,3,d,f);break a}c(e,64+d|0);break a}}c(e,num_112)}else
 c(e,num_115);else
 c(e,num_114);return B(b,1);case
-2:d=a[1];af(b,e,a[2]);return gc(b,e,d,f[2],0);case
-3:return iI(b,e,a[1],a[2],a[3],f[2]);case
+2:d=a[1];af(b,e,a[2]);return gd(b,e,d,f[2],0);case
+3:return iJ(b,e,a[1],a[2],a[3],f[2]);case
 4:d=a[2];a=a[1];f=a[1];a:{if(1===f[0]&&f[1]===str_super){f=1;break a}f=0}af(b,e,a);a=s(d);var
 i=0;for(;;){if(!d)return;var
-g=d[1],j=g[2],d=d[2],p=g[3],g=g[1],m=i<(a-1|0)?(c(e,136),B(b,1),j):j;for(;;){if(!m){c3(b,e,g,s(j),f,p);if(i<(a-1|0)){c(e,num_135);B(b,-1)}i=i+1|0;break}var
+g=d[1],j=g[2],d=d[2],p=g[3],g=g[1],m=i<(a-1|0)?(c(e,136),B(b,1),j):j;for(;;){if(!m){c4(b,e,g,s(j),f,p);if(i<(a-1|0)){c(e,num_135);B(b,-1)}i=i+1|0;break}var
 o=m[2];af(b,e,m[1]);m=o}}break;default:g=a[1];var
-l=f[2],f=a[3],a=a[2];c(e,d);B(b,1);ec(b,e,[0,s(g)],l);c(e,num_200$0);B(b,-1);d=b[7];p=b[8];i=b[11];j=k(function(a){return a5(b,l,a)},g);b[8]=n(g,b[8]);for(;;){if(!a)break;o=a[2];a5(b,l,a[1]);a=o}b[11]=0;B(b,s(g));g=a4(0);a=h(j);for(;;){if(!a)break;j=a[1];a=a[2];if(8<=j)aA(b,g,num_130,1,j,l);else
-c(g,num_104+j|0);B(b,-1)}c5(b,g,f,1);c(g,num_125);b[7]=d;b[8]=p;b[11]=i;i=Z(g);if(num_1023<i)bJ(l,"Block too long");c(e,num_164+(i>>8)|0);c(e,i&num_255);return bm(e,g)}}function
-iI(d,b,j,i,g,f){var
+l=f[2],f=a[3],a=a[2];c(e,d);B(b,1);ec(b,e,[0,s(g)],l);c(e,num_200$0);B(b,-1);d=b[7];p=b[8];i=b[11];j=k(function(a){return a6(b,l,a)},g);b[8]=n(g,b[8]);for(;;){if(!a)break;o=a[2];a6(b,l,a[1]);a=o}b[11]=0;B(b,s(g));g=a5(0);a=h(j);for(;;){if(!a)break;j=a[1];a=a[2];if(8<=j)aA(b,g,num_130,1,j,l);else
+c(g,num_104+j|0);B(b,-1)}c6(b,g,f,1);c(g,num_125);b[7]=d;b[8]=p;b[11]=i;i=Z(g);if(num_1023<i)bJ(l,"Block too long");c(e,num_164+(i>>8)|0);c(e,i&num_255);return bm(e,g)}}function
+iJ(d,b,j,i,g,f){var
 a=caml_string_compare(i,"to:by:do:");a:{var
-h=d[11];if(0<=a){if(0<a){if(i!=="to:do:"){h="whileTrue";b:if(i!=="whileFalse"){a="whileTrue:";if(i!=="whileFalse:"){if(i===h)break b;if(i!==a)break a}if(!g)break a;if(g[2])break a;h=g[1];if(!bn(j))break a;if(!bn(h))break a;g=Z(b);bo(d,b,j);B(d,-1);f=a4(0);bo(d,f,h);c(f,num_135);B(d,-1);if(i===a)bK(b,Z(f)+2|0);else
-c4(b,Z(f)+2|0);bm(b,f);ee(b,g);c(b,num_115);return B(d,1)}if(!g&&bn(j)){g=Z(b);bo(d,b,j);B(d,-1);if(i===h)bK(b,2);else
-c4(b,2);ee(b,g);c(b,num_115);return B(d,1)}}else if(g){h=g[2];if(h){a=h[1];var
-e=a[1];if(5===e[0]){e=e[1];if(e&&!e[2]&&!h[2])return gd(d,b,j,g[1],1,a,f)}}}}else if(g){h=g[2];if(h){a=h[1][1];if(0===a[0]){a=a[1];if(typeof
+h=d[11];if(0<=a){if(0<a){if(i!=="to:do:"){h="whileTrue";b:if(i!=="whileFalse"){a="whileTrue:";if(i!=="whileFalse:"){if(i===h)break b;if(i!==a)break a}if(!g)break a;if(g[2])break a;h=g[1];if(!bn(j))break a;if(!bn(h))break a;g=Z(b);bo(d,b,j);B(d,-1);f=a5(0);bo(d,f,h);c(f,num_135);B(d,-1);if(i===a)bK(b,Z(f)+2|0);else
+c5(b,Z(f)+2|0);bm(b,f);ee(b,g);c(b,num_115);return B(d,1)}if(!g&&bn(j)){g=Z(b);bo(d,b,j);B(d,-1);if(i===h)bK(b,2);else
+c5(b,2);ee(b,g);c(b,num_115);return B(d,1)}}else if(g){h=g[2];if(h){a=h[1];var
+e=a[1];if(5===e[0]){e=e[1];if(e&&!e[2]&&!h[2])return ge(d,b,j,g[1],1,a,f)}}}}else if(g){h=g[2];if(h){a=h[1][1];if(0===a[0]){a=a[1];if(typeof
 a!=="number"&&0===a[0]){h=h[2];if(h){e=h[1];var
-k=e[1];if(5===k[0]){k=k[1];if(k&&!k[2]&&!h[2]){h=a[1];a=g[1];if(0!==h)return gd(d,b,j,a,h,e,f)}}}}}}}}else{e="and:";b:if(i!==e){a="ifTrue:";c:if(i!=="ifFalse:"){k="ifTrue:ifFalse:";if(i!=="ifFalse:ifTrue:"){if(i===a)break c;if(i!==k){if(i!=="or:")break a;break b}}if(!g)break a;a=g[2];if(!a)break a;if(a[2])break a;a=a[1];e=g[1];if(!bn(e))break a;if(!bn(a))break a;if(i===k)f=a;else{f=e;e=a}af(d,b,j);B(d,-1);a=a4(0);bo(d,a,e);d[11]=h;j=a4(0);bo(d,j,f);i=Z(j);d:{if(1<=i&&8>=i){f=1;break d}f=2}bK(b,Z(a)+f|0);bm(b,a);ed(b,Z(j));return bm(b,j)}if(!g)break a;if(g[2])break a;e=g[1];if(!bn(e))break a;af(d,b,j);B(d,-1);f=a4(0);bo(d,f,e);if(i===a)bK(b,Z(f)+1|0);else
-c4(b,Z(f)+1|0);bm(b,f);ed(b,1);return c(b,num_115)}if(g&&!g[2]){a=g[1];if(bn(a)){af(d,b,j);B(d,-1);f=a4(0);bo(d,f,a);if(i===e)bK(b,Z(f)+1|0);else
-c4(b,Z(f)+1|0);bm(b,f);ed(b,1);d=i===e?num_114:num_113;return c(b,d)}}}}e=j[1];a:{if(1===e[0]&&e[1]===str_super){e=1;break a}e=0}af(d,b,j);j=g;for(;;){if(!j)return c3(d,b,i,s(g),e,f);a=j[2];af(d,b,j[1]);j=a}}var
-iJ=[0,"languages/smalltalk/St_compile.ml",376,9];function
-gd(a,d,q,p,l,h,g){var
+k=e[1];if(5===k[0]){k=k[1];if(k&&!k[2]&&!h[2]){h=a[1];a=g[1];if(0!==h)return ge(d,b,j,a,h,e,f)}}}}}}}}else{e="and:";b:if(i!==e){a="ifTrue:";c:if(i!=="ifFalse:"){k="ifTrue:ifFalse:";if(i!=="ifFalse:ifTrue:"){if(i===a)break c;if(i!==k){if(i!=="or:")break a;break b}}if(!g)break a;a=g[2];if(!a)break a;if(a[2])break a;a=a[1];e=g[1];if(!bn(e))break a;if(!bn(a))break a;if(i===k)f=a;else{f=e;e=a}af(d,b,j);B(d,-1);a=a5(0);bo(d,a,e);d[11]=h;j=a5(0);bo(d,j,f);i=Z(j);d:{if(1<=i&&8>=i){f=1;break d}f=2}bK(b,Z(a)+f|0);bm(b,a);ed(b,Z(j));return bm(b,j)}if(!g)break a;if(g[2])break a;e=g[1];if(!bn(e))break a;af(d,b,j);B(d,-1);f=a5(0);bo(d,f,e);if(i===a)bK(b,Z(f)+1|0);else
+c5(b,Z(f)+1|0);bm(b,f);ed(b,1);return c(b,num_115)}if(g&&!g[2]){a=g[1];if(bn(a)){af(d,b,j);B(d,-1);f=a5(0);bo(d,f,a);if(i===e)bK(b,Z(f)+1|0);else
+c5(b,Z(f)+1|0);bm(b,f);ed(b,1);d=i===e?num_114:num_113;return c(b,d)}}}}e=j[1];a:{if(1===e[0]&&e[1]===str_super){e=1;break a}e=0}af(d,b,j);j=g;for(;;){if(!j)return c4(d,b,i,s(g),e,f);a=j[2];af(d,b,j[1]);j=a}}var
+iK=[0,"languages/smalltalk/St_compile.ml",376,9];function
+ge(a,d,q,p,l,h,g){var
 b=h[1];if(5===b[0]){var
 e=b[1];if(e&&!e[2]){e=e[1];var
-m=b[3],b=b[2],n=a[7],o=a[8],f=a5(a,h[2],e),j=a5(a,h[2]," limit"),k=function(b){if(8<=b)aA(a,d,num_130,1,b,g);else
+m=b[3],b=b[2],n=a[7],o=a[8],f=a6(a,h[2],e),j=a6(a,h[2]," limit"),k=function(b){if(8<=b)aA(a,d,num_130,1,b,g);else
 c(d,num_104+b|0);return B(a,-1)},i=function(d,b){if(16<=b)aA(a,d,num_128,1,b,g);else
-c(d,16+b|0);return B(a,1)};af(a,d,q);k(f);af(a,d,p);k(j);a[8]=[0,e,a[8]];for(;;){if(!b)break;e=b[2];a5(a,h[2],b[1]);b=e}h=Z(d);i(d,f);i(d,j);b=0<l?str$17:str$21;c3(a,d,b,1,0,g);B(a,-1);b=a4(0);c5(a,b,m,0);i(b,f);ec(a,b,[0,l],g);c3(a,b,str$15,1,0,g);if(8<=f)aA(a,b,num_130,1,f,g);else
-c(b,num_104+f|0);B(a,-1);bK(d,Z(b)+2|0);bm(d,b);ee(d,h);c(d,num_115);B(a,1);a[7]=n;a[8]=o;return}}throw caml_maybe_attach_backtrace([0,Assert_failure,iJ],1)}function
+c(d,16+b|0);return B(a,1)};af(a,d,q);k(f);af(a,d,p);k(j);a[8]=[0,e,a[8]];for(;;){if(!b)break;e=b[2];a6(a,h[2],b[1]);b=e}h=Z(d);i(d,f);i(d,j);b=0<l?str$17:str$21;c4(a,d,b,1,0,g);B(a,-1);b=a5(0);c6(a,b,m,0);i(b,f);ec(a,b,[0,l],g);c4(a,b,str$15,1,0,g);if(8<=f)aA(a,b,num_130,1,f,g);else
+c(b,num_104+f|0);B(a,-1);bK(d,Z(b)+2|0);bm(d,b);ee(d,h);c(d,num_115);B(a,1);a[7]=n;a[8]=o;return}}throw caml_maybe_attach_backtrace([0,Assert_failure,iK],1)}function
 bo(b,e,d){var
 a=d[1];if(5!==a[0])return af(b,e,d);var
-c=a[2],a=a[3],f=b[7];for(;;){if(!c){c5(b,e,a,1);b[7]=f;return}var
-g=c[2];a5(b,d[2],c[1]);c=g}}function
-c5(b,d,e,f){for(;;){if(!e)return f?(c(d,num_115),B(b,1)):f;var
-a=e[1];if(0!==a[0]){a=a[1];return e[2]?ge(b,d,a):(ge(b,d,a),f?B(b,1):f)}a=a[1];if(!e[2]&&f)return af(b,d,a);e=e[2];var
+c=a[2],a=a[3],f=b[7];for(;;){if(!c){c6(b,e,a,1);b[7]=f;return}var
+g=c[2];a6(b,d[2],c[1]);c=g}}function
+c6(b,d,e,f){for(;;){if(!e)return f?(c(d,num_115),B(b,1)):f;var
+a=e[1];if(0!==a[0]){a=a[1];return e[2]?gf(b,d,a):(gf(b,d,a),f?B(b,1):f)}a=a[1];if(!e[2]&&f)return af(b,d,a);e=e[2];var
 g=a[1];if(2===g[0]){var
-h=g[1];af(b,d,g[2]);gc(b,d,h,a[2],1)}else{af(b,d,a);c(d,num_135);B(b,-1)}if(0===e)if(f){c(d,num_115);return B(b,1)}}}var
+h=g[1];af(b,d,g[2]);gd(b,d,h,a[2],1)}else{af(b,d,a);c(d,num_135);B(b,-1)}if(0===e)if(f){c(d,num_115);return B(b,1)}}}var
 num_123=123;function
-ge(e,b,d){var
+gf(e,b,d){var
 a=d[1];if(1===a[0]){a=a[1];if(a===str_false)return c(b,num_122);if(a===str_nil)return c(b,num_123);if(a===str_self)return c(b,num_120);if(a===str_true)return c(b,121)}af(e,b,d);c(b,num_124);return B(e,-1)}var
-iL=[0,0,0],iK=[0,0,0];function
-gf(g,j,k,b,d){b=b?b[1]:0;var
+iM=[0,0,0],iL=[0,0,0];function
+gg(g,j,k,b,d){b=b?b[1]:0;var
 a=d[2],b=[0,g,j,b,d6(g,j),0,0,0,a,0,0,0,0],a=d[2];for(;;){if(!a)break;var
-f=a[2];a5(b,iK,a[1]);a=f}a=d[3];for(;;){if(!a)break;f=a[2];a5(b,iL,a[1]);a=f}a=a4(0);var
-e=h(d[5]);a:{if(e&&0!==e[1][0]){e=1;break a}e=0}c5(b,a,d[5],0);if(1-e)c(a,num_120);e=O(num_255,(b[9]+b[12]|0)+1|0);f=b[9];var
-i=s(d[2]),i=[0,au(d[4],0),i,f,e],e=h(b[10]),f=h(a[2]),d=J(g,d[1]),a=a[1],a=bB(a[1],0,a[2]);return fO(g,i,Y(h(b[5])),a,d,j,k,f,e)}function
+f=a[2];a6(b,iL,a[1]);a=f}a=d[3];for(;;){if(!a)break;f=a[2];a6(b,iM,a[1]);a=f}a=a5(0);var
+e=h(d[5]);a:{if(e&&0!==e[1][0]){e=1;break a}e=0}c6(b,a,d[5],0);if(1-e)c(a,num_120);e=P(num_255,(b[9]+b[12]|0)+1|0);f=b[9];var
+i=s(d[2]),i=[0,au(d[4],0),i,f,e],e=h(b[10]),f=h(a[2]),d=J(g,d[1]),a=a[1],a=bB(a[1],0,a[2]);return fP(g,i,Y(h(b[5])),a,d,j,k,f,e)}function
 bL(e,m,p,l,i){l=l?l[1]:0;try{var
 d=d$(i),a=v(d);a:{if(typeof
 a==="number"){if(9===a){f(d);a=[0,str$5,[0,ce(d,str_Argument_name_ex_abr),0]];break a}}else
@@ -2484,84 +2484,84 @@ g=0;for(;;){var
 c=v(d);b:{if(typeof
 c!=="number"&&1===c[0]){c=1;break b}c=0}if(!c){g=h(g);a=[0,aw(a),g];break a}c=v(d);if(typeof
 c!=="number"&&1===c[0])ad(a,c[1]);f(d);g=[0,ce(d,str_Argument_name_ex_abr),g]}break;case
-2:a=a[1];f(d);a=[0,a,[0,ce(d,str_Argument_name_ex_abr),0]];break a}a=ao(d,"Message pattern expected")}d=ga(d,a[1],a[2])}catch(a){e=caml_wrap_exception(a);if(e[1]===a3)throw caml_maybe_attach_backtrace([0,az,e[2],e[3]],1);throw caml_maybe_attach_backtrace(e,0)}l=gf(e,m,i,[0,l],d);i=J(e,d[1]);a=b(e,m,bh);g=cZ(e,m);c=g[2];g=g[1];a:{b:{var
-j=0;for(;;){if(g.length-1<=j)break b;if(caml_check_bound(g,j)[j+1]===i)break;j=j+1|0}j=[0,j];break a}j=0}if(j){g=j[1];caml_check_bound(c,g)[g+1]=l}else{ax(e,a,0,R(e,dD(g,[0,i])));ax(e,a,1,R(e,dD(c,[0,l])))}var
+2:a=a[1];f(d);a=[0,a,[0,ce(d,str_Argument_name_ex_abr),0]];break a}a=ao(d,"Message pattern expected")}d=gb(d,a[1],a[2])}catch(a){e=caml_wrap_exception(a);if(e[1]===a4)throw caml_maybe_attach_backtrace([0,az,e[2],e[3]],1);throw caml_maybe_attach_backtrace(e,0)}l=gg(e,m,i,[0,l],d);i=J(e,d[1]);a=b(e,m,bh);g=c0(e,m);c=g[2];g=g[1];a:{b:{var
+j=0;for(;;){if(g.length-1<=j)break b;if(caml_check_bound(g,j)[j+1]===i)break;j=j+1|0}j=[0,j];break a}j=0}if(j){g=j[1];caml_check_bound(c,g)[g+1]=l}else{ax(e,a,0,S(e,dD(g,[0,i])));ax(e,a,1,S(e,dD(c,[0,l])))}var
 o=r(e,i),a=k(function(a){var
-b=a[2],a=a[1];return[0,a,T(function(a){return o!==a?1:0})(b)]},cd(e,m));a:{i=a;for(;;){if(!i)break;c=i[2];i=0===caml_compare(i[1][1],p);if(i)break a;i=c}i=0}c=i?k(function(a){var
-b=a[2],a=a[1];return a===p?[0,a,[0,o,b]]:[0,a,b]},a):n(a,[0,[0,p,[0,o,0]],0]);fY(e,m,c);return d[1]}var
+b=a[2],a=a[1];return[0,a,N(function(a){return o!==a?1:0})(b)]},cd(e,m));a:{i=a;for(;;){if(!i)break;c=i[2];i=0===caml_compare(i[1][1],p);if(i)break a;i=c}i=0}c=i?k(function(a){var
+b=a[2],a=a[1];return a===p?[0,a,[0,o,b]]:[0,a,b]},a):n(a,[0,[0,p,[0,o,0]],0]);fZ(e,m,c);return d[1]}var
 str_as_yet_unclassified="as yet unclassified",str$3=">>";function
-gg(a,b){var
-d=fX(a,b),d=b1(function(e){var
+gh(a,b){var
+d=fY(a,b),d=b1(function(e){var
 d=bl(a,b,J(a,e));if(!d)return 0;d=ca(a,d[1]);var
-c=au(f1(a,b,e),str_as_yet_unclassified);try{bL(a,b,c,0,d);return 0}catch(d){c=caml_wrap_exception(d);if(c[1]!==az)throw caml_maybe_attach_backtrace(c,0);c=c[3];return[0,[0,ah(a,b)+str$3+e,c]]}})(d),c=f3(a,b),e=0;for(;;){if(!c)return n(d,h(e));var
-f=c[2],e=M(gg(a,c[1]),e);c=f}}var
-iM=[0,1];function
-gh(f,e,a){try{var
-b=ea(a)}catch(b){a=caml_wrap_exception(b);if(a[1]===a3)throw caml_maybe_attach_backtrace([0,az,a[2],a[3]],1);throw caml_maybe_attach_backtrace(a,0)}var
+c=au(f2(a,b,e),str_as_yet_unclassified);try{bL(a,b,c,0,d);return 0}catch(d){c=caml_wrap_exception(d);if(c[1]!==az)throw caml_maybe_attach_backtrace(c,0);c=c[3];return[0,[0,ah(a,b)+str$3+e,c]]}})(d),c=f4(a,b),e=0;for(;;){if(!c)return n(d,h(e));var
+f=c[2],e=M(gh(a,c[1]),e);c=f}}var
+iN=[0,1];function
+gi(f,e,a){try{var
+b=ea(a)}catch(b){a=caml_wrap_exception(b);if(a[1]===a4)throw caml_maybe_attach_backtrace([0,az,a[2],a[3]],1);throw caml_maybe_attach_backtrace(a,0)}var
 c=h(b[5]);a:{if(c){var
-d=c[1];if(0===d[0]){d=d[1];c=h([0,[1,d,d[2]],c[2]]);break a}}c=b[5]}return gf(f,e,a,iM,[0,b[1],b[2],b[3],b[4],c])}var
+d=c[1];if(0===d[0]){d=d[1];c=h([0,[1,d,d[2]],c[2]]);break a}}c=b[5]}return gg(f,e,a,iN,[0,b[1],b[2],b[3],b[4],c])}var
 cg=[num_248,"St_interp.Fatal",caml_fresh_oo_id(0)];function
-gj(b,a){return[0,b,a,caml_make_vect(num_512,0),function(a){return 0},0,1,q,[0],q,[0],q,[0],dy,q,0,0,0,0,caml_make_vect(num_1024,-1),caml_make_vect(num_1024,-1),caml_make_vect(num_1024,0),0,0,0]}function
-aU(b){var
-a=num_1024;fd(b[19],0,a,-1);return fd(b[20],0,a,-1)}function
-c6(a,c){var
+gk(b,a){return[0,b,a,caml_make_vect(num_512,0),function(a){return 0},0,1,q,[0],q,[0],q,[0],dy,q,0,0,0,0,caml_make_vect(num_1024,-1),caml_make_vect(num_1024,-1),caml_make_vect(num_1024,0),0,0,0]}function
+aV(b){var
+a=num_1024;fe(b[19],0,a,-1);return fe(b[20],0,a,-1)}function
+c7(a,c){var
 b=a[1][8][9];return o(a[1],c)===b?1:0}var
-gi=5;function
-a6(c,a){return c6(c,a)?b(c[1],a,gi):a}var
-aS=3;function
-c7(c,a){a=a6(c,a);return b(c[1],a,aS)}var
-aK=1,ch=2,aT=5;function
+gj=5;function
+a7(c,a){return c7(c,a)?b(c[1],a,gj):a}var
+aT=3;function
+c8(c,a){a=a7(c,a);return b(c[1],a,aT)}var
+aL=1,ch=2,aU=5;function
 ci(a,b){var
-c=z(a[1],b);a[7]=b;a[8]=c;b=c6(a,b)?caml_check_bound(c,5)[gi+1]:b;a[9]=b;a[10]=z(a[1],b);a[11]=caml_check_bound(a[10],3)[aS+1];a[12]=z(a[1],a[11]);a[13]=fQ(a[1],a[11]);a[14]=caml_check_bound(a[10],5)[aT+1];a[15]=caml_check_bound(c,1)[aK+1]>>1;a[16]=caml_check_bound(c,2)[ch+1]>>1}function
-c8(a){if(a[7]!==0){var
-b=m(a[15]);caml_check_bound(a[8],1)[aK+1]=b;b=m(a[16]);caml_check_bound(a[8],2)[ch+1]=b}}function
+c=z(a[1],b);a[7]=b;a[8]=c;b=c7(a,b)?caml_check_bound(c,5)[gj+1]:b;a[9]=b;a[10]=z(a[1],b);a[11]=caml_check_bound(a[10],3)[aT+1];a[12]=z(a[1],a[11]);a[13]=fR(a[1],a[11]);a[14]=caml_check_bound(a[10],5)[aU+1];a[15]=caml_check_bound(c,1)[aL+1]>>1;a[16]=caml_check_bound(c,2)[ch+1]>>1}function
+c9(a){if(a[7]!==0){var
+b=m(a[15]);caml_check_bound(a[8],1)[aL+1]=b;b=m(a[16]);caml_check_bound(a[8],2)[ch+1]=b}}function
 E(a,c){a[16]=a[16]+1|0;var
 b=a[16];caml_check_bound(a[8],b)[b+1]=c}function
 e(b,a){a=b[16]-a|0;return caml_check_bound(b[8],a)[a+1]}function
 ap(a,b){a[16]=a[16]-b|0}function
 cj(b){var
 a=b[16],a=caml_check_bound(b[8],a)[a+1];b[16]=b[16]-1|0;return a}function
-a7(a,b){return b?a[1][8][17]:a[1][8][18]}var
+a8(a,b){return b?a[1][8][17]:a[1][8][18]}var
 str_doesNotUnderstand="doesNotUnderstand:",bp=0;function
-gk(a,d,e,f){for(;;){var
+gl(a,d,e,f){for(;;){var
 c=((d^e<<3)>>>1|0)&num_1023;a:{if(caml_check_bound(a[19],c)[c+1]===d&&caml_check_bound(a[20],c)[c+1]===e){a[22]=a[22]+1|0;c=[0,caml_check_bound(a[21],c)[c+1]];break a}a[23]=a[23]+1|0;var
-b=fW(a[1],d,e);if(b){b=b[1];caml_check_bound(a[19],c)[c+1]=d;caml_check_bound(a[20],c)[c+1]=e;caml_check_bound(a[21],c)[c+1]=b;c=[0,b]}else
+b=fX(a[1],d,e);if(b){b=b[1];caml_check_bound(a[19],c)[c+1]=d;caml_check_bound(a[20],c)[c+1]=e;caml_check_bound(a[21],c)[c+1]=b;c=[0,b]}else
 c=0}if(c)break;let
-g=f;b=dB(f,function(b){b=((a[16]-g|0)+1|0)+b|0;return caml_check_bound(a[8],b)[b+1]});b=[0,[0,e,R(a[1],b)]];b=x(a[1],a[1][8][10],b);ap(a,f);E(a,b);f=J(a[1],str_doesNotUnderstand);if(e===f)throw caml_maybe_attach_backtrace([0,cg,"recursive doesNotUnderstand: in "+ah(a[1],d)],1);e=f;f=1}e=c[1];d=cU(a[1],e);b=0!==d[1];if(b){b=d[1];b=caml_check_bound(a[3],b)[b+1];b=b?caml_call2(b[1],a,f):0}d=1-b;if(!d)return d;d=cU(a[1],e);if(d[2]!==f)throw caml_maybe_attach_backtrace([0,cg,"wrong number of arguments"],1);b=caml_make_vect(6+d[4]|0,0);c=a[7];caml_check_bound(b,0)[bp+1]=c;c=m(0);caml_check_bound(b,1)[aK+1]=c;d=m((6+d[3]|0)-1|0);caml_check_bound(b,2)[ch+1]=d;caml_check_bound(b,3)[aS+1]=e;d=a[16]-f|0;d=caml_check_bound(a[8],d)[d+1];caml_check_bound(b,5)[aT+1]=d;d=f-1|0;if(d>=0){e=0;for(;;){c=((a[16]-f|0)+1|0)+e|0;var
-g=6+e|0,c=caml_check_bound(a[8],c)[c+1];caml_check_bound(b,g)[g+1]=c;g=e+1|0;if(d===e)break;e=g}}d=x(a[1],a[1][8][8],[0,b]);a[16]=(a[16]-f|0)-1|0;c8(a);return ci(a,d)}function
-a8(a,d,b){var
-c=e(a,b);return gk(a,o(a[1],c),d,b)}function
-gl(a,e,d){var
-c=b$(a[1],a[11]);return gk(a,b(a[1],c,aI),e,d)}function
-ef(c,a){return b(c[1],a,aK)===0?1:0}function
-ck(b,a){ax(b[1],a,bp,q);return ax(b[1],a,aK,q)}function
-eg(a,b){E(a,a[7]);E(a,b);return a8(a,J(a[1],"cannotReturn:"),1)}function
+g=f;b=dB(f,function(b){b=((a[16]-g|0)+1|0)+b|0;return caml_check_bound(a[8],b)[b+1]});b=[0,[0,e,S(a[1],b)]];b=x(a[1],a[1][8][10],b);ap(a,f);E(a,b);f=J(a[1],str_doesNotUnderstand);if(e===f)throw caml_maybe_attach_backtrace([0,cg,"recursive doesNotUnderstand: in "+ah(a[1],d)],1);e=f;f=1}e=c[1];d=cV(a[1],e);b=0!==d[1];if(b){b=d[1];b=caml_check_bound(a[3],b)[b+1];b=b?caml_call2(b[1],a,f):0}d=1-b;if(!d)return d;d=cV(a[1],e);if(d[2]!==f)throw caml_maybe_attach_backtrace([0,cg,"wrong number of arguments"],1);b=caml_make_vect(6+d[4]|0,0);c=a[7];caml_check_bound(b,0)[bp+1]=c;c=m(0);caml_check_bound(b,1)[aL+1]=c;d=m((6+d[3]|0)-1|0);caml_check_bound(b,2)[ch+1]=d;caml_check_bound(b,3)[aT+1]=e;d=a[16]-f|0;d=caml_check_bound(a[8],d)[d+1];caml_check_bound(b,5)[aU+1]=d;d=f-1|0;if(d>=0){e=0;for(;;){c=((a[16]-f|0)+1|0)+e|0;var
+g=6+e|0,c=caml_check_bound(a[8],c)[c+1];caml_check_bound(b,g)[g+1]=c;g=e+1|0;if(d===e)break;e=g}}d=x(a[1],a[1][8][8],[0,b]);a[16]=(a[16]-f|0)-1|0;c9(a);return ci(a,d)}function
+a9(a,d,b){var
+c=e(a,b);return gl(a,o(a[1],c),d,b)}function
+gm(a,e,d){var
+c=b$(a[1],a[11]);return gl(a,b(a[1],c,aJ),e,d)}function
+ef(c,a){return b(c[1],a,aL)===0?1:0}function
+ck(b,a){ax(b[1],a,bp,q);return ax(b[1],a,aL,q)}function
+eg(a,b){E(a,a[7]);E(a,b);return a9(a,J(a[1],"cannotReturn:"),1)}function
 cl(a,d){var
 c=a[9],e=b(a[1],c,bp);if(ef(a,c))return eg(a,d);if(e===0){ck(a,c);if(a[7]!==c)ck(a,a[7]);a[18]=[0,d];return}if(ef(a,e))return eg(a,d);ck(a,c);if(a[7]!==c)ck(a,a[7]);ci(a,e);return E(a,d)}var
-iN=caml_obj_dup([0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,1,0,1,0,1,0,1,1,0,1,0,0]);function
-gm(b,a){if((b<0?1:0)!==(a<0?1:0)&&0!==caml_mod(b,a))return caml_div(b,a)-1|0;return caml_div(b,a)}function
+iO=caml_obj_dup([0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,1,0,1,0,1,0,1,1,0,1,0,0]);function
+gn(b,a){if((b<0?1:0)!==(a<0?1:0)&&0!==caml_mod(b,a))return caml_div(b,a)-1|0;return caml_div(b,a)}function
 eh(a,e,d){var
-c=cj(a),b=a[1][8],f=e?b[17]:b[18];if(c===f){a[15]=a[15]+d|0;return}d=e?b[18]:b[17];if(c===d)return;E(a,c);return a8(a,J(a[1],"mustBeBoolean"),0)}function
+c=cj(a),b=a[1][8],f=e?b[17]:b[18];if(c===f){a[15]=a[15]+d|0;return}d=e?b[18]:b[17];if(c===d)return;E(a,c);return a9(a,J(a[1],"mustBeBoolean"),0)}function
 aB(a){var
 b=caml_bytes_unsafe_get(a[13],a[15]);a[15]=a[15]+1|0;return b}var
-num_160=160,num_1073741823$0=1073741823.,num_152=152,num_175=175,iP=[0,[11,"unknown bytecode ",[4,0,0,0,0]],"unknown bytecode %d"];function
-iO(a){var
+num_160=160,num_1073741823$0=1073741823.,num_152=152,num_175=175,iQ=[0,[11,"unknown bytecode ",[4,0,0,0,0]],"unknown bytecode %d"];function
+iP(a){var
 f=a[1],c=aB(a);if(16>c)return E(a,caml_check_bound(z(f,a[14]),c)[c+1]);if(32>c){f=(6+c|0)-16|0;return E(a,caml_check_bound(a[10],f)[f+1])}if(64>c){f=(1+c|0)+num_32|0;return E(a,caml_check_bound(a[12],f)[f+1])}if(96>c){c=(1+c|0)-64|0;return E(a,b(f,caml_check_bound(a[12],c)[c+1],1))}if(num_104>c){c=c-96|0;var
 d=cj(a);caml_check_bound(z(f,a[14]),c)[c+1]=d;return}if(num_112>c){c=(6+c|0)-104|0;f=cj(a);caml_check_bound(a[10],c)[c+1]=f;return}if(num_120>c){f=f[8];d=c-112|0;if(3<d>>>0)d=m(c-117|0);else
 switch(d){case
 0:d=a[14];break;case
 1:d=f[17];break;case
-2:d=f[18];break;default:d=q}return E(a,d)}if(num_208<=c){f=1+(c&15)|0;return a8(a,caml_check_bound(a[12],f)[f+1],(c-208|0)/16|0)}if(num_176>c){d=c-120|0;if(17>=d>>>0)switch(d){case
+2:d=f[18];break;default:d=q}return E(a,d)}if(num_208<=c){f=1+(c&15)|0;return a9(a,caml_check_bound(a[12],f)[f+1],(c-208|0)/16|0)}if(num_176>c){d=c-120|0;if(17>=d>>>0)switch(d){case
 0:return cl(a,a[14]);case
 1:return cl(a,f[8][17]);case
 2:return cl(a,f[8][18]);case
 3:return cl(a,q);case
 4:return cl(a,cj(a));case
 5:f=cj(a);c=caml_check_bound(a[8],0)[bp+1];if(c!==0&&!ef(a,c)){ck(a,a[7]);ci(a,c);return E(a,f)}return eg(a,f);case
-11:c=aB(a);f=1+(c&31)|0;return a8(a,caml_check_bound(a[12],f)[f+1],c>>>5|0);case
-12:c=aB(a);f=1+aB(a)|0;return a8(a,caml_check_bound(a[12],f)[f+1],c);case
-13:c=aB(a);f=1+(c&31)|0;return gl(a,caml_check_bound(a[12],f)[f+1],c>>>5|0);case
-14:c=aB(a);f=1+aB(a)|0;return gl(a,caml_check_bound(a[12],f)[f+1],c);case
+11:c=aB(a);f=1+(c&31)|0;return a9(a,caml_check_bound(a[12],f)[f+1],c>>>5|0);case
+12:c=aB(a);f=1+aB(a)|0;return a9(a,caml_check_bound(a[12],f)[f+1],c);case
+13:c=aB(a);f=1+(c&31)|0;return gm(a,caml_check_bound(a[12],f)[f+1],c>>>5|0);case
+14:c=aB(a);f=1+aB(a)|0;return gm(a,caml_check_bound(a[12],f)[f+1],c);case
 15:return ap(a,1);case
 16:return E(a,e(a,0));case
 17:return E(a,a[7]);case
@@ -2573,8 +2573,8 @@ h=d&63,d=d>>>6|0;if(num_128===c){if(2>=d>>>0)switch(d){case
 j=e(a,0);if(num_130===c)ap(a,1);if(3>=d>>>0)switch(d){case
 0:caml_check_bound(z(f,a[14]),h)[h+1]=j;return;case
 1:f=6+h|0;caml_check_bound(a[10],f)[f+1]=j;return;case
-3:c=1+h|0;return ax(f,caml_check_bound(a[12],c)[c+1],1,j)}throw caml_maybe_attach_backtrace([0,cg,"store into a literal"],1)}if(num_144<=c&&num_151>=c){a[15]=a[15]+(c-143|0)|0;return}if(num_152<=c&&159>=c)return eh(a,0,c-151|0);if(num_160<=c&&167>=c){c=((c-164|0)*num_256|0)+aB(a)|0;a[15]=a[15]+c|0;return}if(num_168<=c&&171>=c)return eh(a,1,((c-168|0)*num_256|0)+aB(a)|0);if(num_172<=c&&num_175>=c)return eh(a,0,((c-172|0)*num_256|0)+aB(a)|0);throw caml_maybe_attach_backtrace([0,cg,caml_call1(G(iP),c)],1)}c=c-176|0;j=f[8];if(16>c){h=e(a,1);d=e(a,0);a:{if(g(h)&&g(d)){h>>=1;d>>=1;var
-i=function(b){return cR(b)?(ap(a,2),E(a,m(b)),1):0},k=function(b){ap(a,2);E(a,a7(a,b));return 1};if(15>=c>>>0)switch(c){case
+3:c=1+h|0;return ax(f,caml_check_bound(a[12],c)[c+1],1,j)}throw caml_maybe_attach_backtrace([0,cg,"store into a literal"],1)}if(num_144<=c&&num_151>=c){a[15]=a[15]+(c-143|0)|0;return}if(num_152<=c&&159>=c)return eh(a,0,c-151|0);if(num_160<=c&&167>=c){c=((c-164|0)*num_256|0)+aB(a)|0;a[15]=a[15]+c|0;return}if(num_168<=c&&171>=c)return eh(a,1,((c-168|0)*num_256|0)+aB(a)|0);if(num_172<=c&&num_175>=c)return eh(a,0,((c-172|0)*num_256|0)+aB(a)|0);throw caml_maybe_attach_backtrace([0,cg,caml_call1(G(iQ),c)],1)}c=c-176|0;j=f[8];if(16>c){h=e(a,1);d=e(a,0);a:{if(g(h)&&g(d)){h>>=1;d>>=1;var
+i=function(b){return cS(b)?(ap(a,2),E(a,m(b)),1):0},k=function(b){ap(a,2);E(a,a8(a,b));return 1};if(15>=c>>>0)switch(c){case
 0:d=i(h+d|0);break a;case
 1:d=i(h-d|0);break a;case
 2:d=k(h<d?1:0);break a;case
@@ -2585,106 +2585,106 @@ i=function(b){return cR(b)?(ap(a,2),E(a,m(b)),1):0},k=function(b){ap(a,2);E(a,a7
 7:d=k(h!==d?1:0);break a;case
 8:if(Math.abs(h*d)<=num_1073741823$0){d=i(caml_mul(h,d));break a}d=0;break a;case
 9:if(0!==d&&0===caml_mod(h,d)){d=i(caml_div(h,d));break a}d=0;break a;case
-10:if(0===d){d=0;break a}d=i(h-caml_mul(d,gm(h,d))|0);break a;case
-13:if(0===d){d=0;break a}d=i(gm(h,d));break a;case
+10:if(0===d){d=0;break a}d=i(h-caml_mul(d,gn(h,d))|0);break a;case
+13:if(0===d){d=0;break a}d=i(gn(h,d));break a;case
 14:d=i(h&d);break a;case
-15:d=i(h|d);break a}d=0;break a}d=0}if(d)return}if(22===c){f=e(a,1);f=e(a,0)===f?1:0;ap(a,2);return E(a,a7(a,f))}if(23===c){j=o(f,e(a,0));ap(a,1);return E(a,j)}f=caml_check_bound(iN,c)[c+1];return a8(a,caml_check_bound(j[21],c)[c+1],f)}function
-gn(h){c8(h);var
+15:d=i(h|d);break a}d=0;break a}d=0}if(d)return}if(22===c){f=e(a,1);f=e(a,0)===f?1:0;ap(a,2);return E(a,a8(a,f))}if(23===c){j=o(f,e(a,0));ap(a,1);return E(a,j)}f=caml_check_bound(iO,c)[c+1];return a9(a,caml_check_bound(j[21],c)[c+1],f)}function
+go(h){c9(h);var
 e=caml_call1(h[4],0),b=k(function(a){return a[2]},h[5]),b=n([0,h[7],b],e),d=h[1],j=av(d[4],0),e=d[8],i=[0,0];function
 f(b){var
-a=1-g(b);if(a){a=(b>>>1|0)<d[4]?1:0;a=a?0===caml_bytes_get(j,b>>>1|0)?1:0:a}b=a?(caml_bytes_set(j,b>>>1|0,1),i[1]=[0,b,i[1]],0):a;return b}f(q);dw(f,[0,e[17],[0,e[18],[0,e[19],0]]]);dE(f,e[20]);dE(f,e[21]);cI(function(b,a){return f(a)},d[7]);dw(f,b);for(;;){b=i[1];if(!b)break;var
+a=1-g(b);if(a){a=(b>>>1|0)<d[4]?1:0;a=a?0===caml_bytes_get(j,b>>>1|0)?1:0:a}b=a?(caml_bytes_set(j,b>>>1|0,1),i[1]=[0,b,i[1]],0):a;return b}f(q);cx(f,[0,e[17],[0,e[18],[0,e[19],0]]]);dE(f,e[20]);dE(f,e[21]);cJ(function(b,a){return f(a)},d[7]);cx(f,b);for(;;){b=i[1];if(!b)break;var
 a=b[1];i[1]=b[2];a=a>>>1|0;f(caml_check_bound(d[1],a)[a+1]);b=caml_check_bound(d[2],a)[a+1];if(typeof
 b!=="number")switch(b[0]){case
-0:b=b[1];a=caml_check_bound(d[1],a)[a+1];a:{b:{if(a!==e[8]&&a!==e[9])break b;if(2<b.length-1&&g(caml_check_bound(b,2)[3])){a=O(b.length-2|0,caml_check_bound(b,2)[3]>>1);break a}}a=b.length-2|0}if(a>=0){var
+0:b=b[1];a=caml_check_bound(d[1],a)[a+1];a:{b:{if(a!==e[8]&&a!==e[9])break b;if(2<b.length-1&&g(caml_check_bound(b,2)[3])){a=P(b.length-2|0,caml_check_bound(b,2)[3]>>1);break a}}a=b.length-2|0}if(a>=0){var
 c=0;for(;;){f(caml_check_bound(b,c)[c+1]);var
 l=c+1|0;if(a===c)break;c=l}}break;case
-3:dE(f,b[1]);break}}b=d[4]-1|0;e=0;if(b<1);else{c=1;for(;;){a=0===caml_bytes_get(j,c);a=a?0!==caml_check_bound(d[2],c)[c+1]:a;e=a?(caml_check_bound(d[2],c)[c+1]=0,caml_check_bound(d[1],c)[c+1]=0,d[3]=[0,c,d[3]],e+1|0):e;a=c+1|0;if(b===c)break;c=a}}d[5]=d[5]-e|0;d[6]=0;return aU(h)}function
+3:dE(f,b[1]);break}}b=d[4]-1|0;e=0;if(b<1);else{c=1;for(;;){a=0===caml_bytes_get(j,c);a=a?0!==caml_check_bound(d[2],c)[c+1]:a;e=a?(caml_check_bound(d[2],c)[c+1]=0,caml_check_bound(d[1],c)[c+1]=0,d[3]=[0,c,d[3]],e+1|0):e;a=c+1|0;if(b===c)break;c=a}}d[5]=d[5]-e|0;d[6]=0;return aV(h)}function
 ei(b,d,f){var
-c=cU(b[1],d),a=caml_make_vect(6+c[4]|0,0),e=m(0);caml_check_bound(a,1)[aK+1]=e;c=m((6+c[3]|0)-1|0);caml_check_bound(a,2)[ch+1]=c;caml_check_bound(a,3)[aS+1]=d;caml_check_bound(a,5)[aT+1]=f;a=x(b[1],b[1][8][8],[0,a]);a=[0,b[6],a,0];b[6]=b[6]+1|0;b[5]=[0,a,b[5]];return a}function
+c=cV(b[1],d),a=caml_make_vect(6+c[4]|0,0),e=m(0);caml_check_bound(a,1)[aL+1]=e;c=m((6+c[3]|0)-1|0);caml_check_bound(a,2)[ch+1]=c;caml_check_bound(a,3)[aT+1]=d;caml_check_bound(a,5)[aU+1]=f;a=x(b[1],b[1][8][8],[0,a]);a=[0,b[6],a,0];b[6]=b[6]+1|0;b[5]=[0,a,b[5]];return a}function
 ej(a,c){var
-b=a[5];a[5]=T(function(a){return a!==c?1:0})(b)}var
-str_Step="Step",num_100000=100000,iR=[0,str_Step];function
+b=a[5];a[5]=N(function(a){return a!==c?1:0})(b)}var
+str_Step="Step",num_100000=100000,iS=[0,str_Step];function
 ek(c,a,d,f){var
 b=d[3];if(typeof
 b==="number"&&!b){a[17]=0;a[18]=0;ci(a,d[2]);b=[0,0];try{for(;;){if(b[1]<f&&0===a[17]&&0===a[18]){if(c){var
-e=c[1];if(0<b[1]&&caml_call1(e,a)){a[17]=iR;continue}}iO(a);b[1]++;e=0===(b[1]&num_1023);e=e?(num_100000+(a[1][5]/2|0)|0)<a[1][6]:e;if(!e)continue;gn(a);continue}break}}catch(b){c=caml_wrap_exception(b);f="Virtual machine: ";if(c[1]===cg)a[17]=[0,f+c[2]];else{if(c[1]!==Invalid_argument)throw caml_maybe_attach_backtrace(c,0);a[17]=[0,f+c[2]]}}a[24]=a[24]+b[1]|0;b=a[18];if(b){d[3]=[1,b[1]];d[2]=q;ej(a,d)}else{c8(a);d[2]=a[7];b=a[17];if(b)d[3]=[0,b[1]]}a[7]=q;return}}function
+e=c[1];if(0<b[1]&&caml_call1(e,a)){a[17]=iS;continue}}iP(a);b[1]++;e=0===(b[1]&num_1023);e=e?(num_100000+(a[1][5]/2|0)|0)<a[1][6]:e;if(!e)continue;go(a);continue}break}}catch(b){c=caml_wrap_exception(b);f="Virtual machine: ";if(c[1]===cg)a[17]=[0,f+c[2]];else{if(c[1]!==Invalid_argument)throw caml_maybe_attach_backtrace(c,0);a[17]=[0,f+c[2]]}}a[24]=a[24]+b[1]|0;b=a[18];if(b){d[3]=[1,b[1]];d[2]=q;ej(a,d)}else{c9(a);d[2]=a[7];b=a[17];if(b)d[3]=[0,b[1]]}a[7]=q;return}}function
 el(b){var
 a=b[3];if(typeof
 a!=="number"&&0===a[0]){b[3]=0;return}}function
-go(b,c){var
+gp(b,c){var
 a=b[3];if(typeof
 a==="number"&&!a){b[3]=[0,c];return}}var
-iS=[1,"Too long: stopped"],iT=[1,"Terminated"];function
-gp(c,b,a){ek(0,c,b,a);a=b[3];a=typeof
-a==="number"?0===a?iS:iT:0===a[0]?[1,a[1]]:[0,a[1]];ej(c,b);return a}var
+iT=[1,"Too long: stopped"],iU=[1,"Terminated"];function
+gq(c,b,a){ek(0,c,b,a);a=b[3];a=typeof
+a==="number"?0===a?iT:iU:0===a[0]?[1,a[1]]:[0,a[1]];ej(c,b);return a}var
 num_20000000=20000000;function
-c9(d,c,b,e){c=c?c[1]:num_20000000;b=b?b[1]:q;try{var
-a=o(d[1],b),a=gh(d[1],a,e)}catch(b){a=caml_wrap_exception(b);if(a[1]===az)return[1,a[3]];throw caml_maybe_attach_backtrace(a,0)}return gp(d,ei(d,a,b),c)}function
+c_(d,c,b,e){c=c?c[1]:num_20000000;b=b?b[1]:q;try{var
+a=o(d[1],b),a=gi(d[1],a,e)}catch(b){a=caml_wrap_exception(b);if(a[1]===az)return[1,a[3]];throw caml_maybe_attach_backtrace(a,0)}return gq(d,ei(d,a,b),c)}function
 l(c,b,a){return e(c,(b-1|0)-a|0)}function
 d(a,c,b){ap(a,c+1|0);E(a,b);return 1}function
-aL(c,b){var
+aM(c,b){var
 d=c[8],a=1-g(b);if(a){a=d[2];a=o(c,b)===a?1:0;if(a);else{a=d[3];a=o(c,b)===a?1:0}}return a}function
-c_(a,b){return bi(a,o(a,b))[1]}function
-c$(c,b){var
+c$(a,b){return bi(a,o(a,b))[1]}function
+da(c,b){var
 a=1-g(b);if(a){if(1<bi(c,o(c,b))[2]-1>>>0)return 0;a=1}return a}function
-gq(b,a){if((b<0?1:0)!==(a<0?1:0)&&0!==caml_mod(b,a))return caml_div(b,a)-1|0;return caml_div(b,a)}var
-num_3654863=3654863,num_781116926=781116926,num_365180284=365180284,num_737456202=737456202,fN=[0,0];function
-iC(c,a){var
-e=cS(c,b(c,a,0)),d=an(c,a,7),f=an(c,a,6),o=an(c,a,5),n=an(c,a,4),m=an(c,a,3),i=an(c,a,13),h=an(c,a,12),j=an(c,a,11),l=an(c,a,10),r=an(c,a,9),q=an(c,a,8);if(e&&m&&n&&o&&f&&d){o=o[1];n=n[1];m=m[1];e=e[1];d=d[1];f=f[1];if(0<=m&&16>m){var
-p=b(c,a,1),a=b(c,a,2),p=p===0?0:cS(c,p),a=a===0?0:cS(c,a),q=au(q,0),r=au(r,0),l=au(l,0),j=au(j,0),h=au(h,e[2]),i=au(i,e[3]),c=$(n,$(l,0)),g=$(o,$(j,0)),l=O(n+f|0,O(l+h|0,e[2])),j=O(o+d|0,O(j+i|0,e[3]))-1|0;if(j>=g)for(;;){i=l-1|0;if(i>=c){d=c;for(;;){f=p?cT(p[1],(q+d|0)-n|0,(r+g|0)-o|0):1;f=a?f&cT(a[1],d&15,g&15):f;f=(m>>>(3-((2*f|0)+cT(e,d,g)|0)|0)|0)&1;h=caml_mul(g,e[4])+(d>>>3|0)|0;var
-k=1<<(7-(d&7)|0),s=caml_bytes_get(e[1],h),k=1===f?s|k:s&(k^-1)&num_255,k=P(k);caml_bytes_set(e[1],h,k);h=d+1|0;if(i===d)break;d=h}}i=g+1|0;if(j===g)break;g=i}fN[1]++;return 1}}return 0}var
-iV=[0,[0,1,function(b,a){return[0,num_3654863,b+a|0]}],[0,[0,2,function(b,a){return[0,num_3654863,b-a|0]}],[0,[0,3,function(b,a){return[0,num_737456202,b<a?1:0]}],[0,[0,4,function(b,a){return[0,num_737456202,a<b?1:0]}],[0,[0,5,function(b,a){return[0,num_737456202,b<=a?1:0]}],[0,[0,6,function(b,a){return[0,num_737456202,a<=b?1:0]}],[0,[0,7,function(b,a){return[0,num_737456202,b===a?1:0]}],[0,[0,8,function(b,a){return[0,num_737456202,b!==a?1:0]}],[0,[0,9,function(b,a){return Math.abs(b*a)<=num_1073741823$0?[0,num_3654863,caml_mul(b,a)]:num_781116926}],[0,[0,10,function(b,a){if(0!==a&&0===caml_mod(b,a))return[0,num_3654863,caml_div(b,a)];return num_781116926}],[0,[0,11,function(b,a){return 0===a?num_781116926:[0,num_3654863,b-caml_mul(a,gq(b,a))|0]}],[0,[0,12,function(b,a){return 0===a?num_781116926:[0,num_3654863,gq(b,a)]}],[0,[0,13,function(b,a){return 0===a?num_781116926:[0,num_3654863,caml_div(b,a)]}],[0,[0,14,function(b,a){return[0,num_3654863,b&a]}],[0,[0,15,function(b,a){return[0,num_3654863,b|a]}],[0,[0,16,function(b,a){return[0,num_3654863,b^a]}],[0,[0,17,function(b,a){if(0>a)return[0,num_3654863,b>>O(31,-a|0)];if(31>a&&b<<a>>a===b&&cR(b<<a))return[0,num_3654863,b<<a];return num_781116926}],0]]]]]]]]]]]]]]]]],iW=[0,[0,41,function(b,a){return[0,num_365180284,b+a]}],[0,[0,42,function(b,a){return[0,num_365180284,b-a]}],[0,[0,43,function(b,a){return[0,num_737456202,b<a?1:0]}],[0,[0,44,function(b,a){return[0,num_737456202,a<b?1:0]}],[0,[0,45,function(b,a){return[0,num_737456202,b<=a?1:0]}],[0,[0,46,function(b,a){return[0,num_737456202,a<=b?1:0]}],[0,[0,47,function(b,a){return[0,num_737456202,b===a?1:0]}],[0,[0,48,function(b,a){return[0,num_737456202,b!==a?1:0]}],[0,[0,49,function(b,a){return[0,num_365180284,b*a]}],[0,[0,50,function(b,a){return a===0.?num_781116926:[0,num_365180284,b/a]}],0]]]]]]]]]];function
-gr(b,c,a){b=b[1];if(g(a)&&c$(b,c)){a>>=1;var
-d=c_(b,c);if(1<=a&&(d+a|0)<=a0(b,c))return[0,(d+a|0)-1|0];return 0}return 0}function
-i0(c,f){var
-b=c[1],g=e(c,f),a=gr(c,g,l(c,f,0));if(!a)return 0;a=a[1];b=t(b,g);if(typeof
+gr(b,a){if((b<0?1:0)!==(a<0?1:0)&&0!==caml_mod(b,a))return caml_div(b,a)-1|0;return caml_div(b,a)}var
+num_3654863=3654863,num_781116926=781116926,num_365180284=365180284,num_737456202=737456202,fO=[0,0];function
+iD(c,a){var
+e=cT(c,b(c,a,0)),d=an(c,a,7),f=an(c,a,6),o=an(c,a,5),n=an(c,a,4),m=an(c,a,3),i=an(c,a,13),h=an(c,a,12),j=an(c,a,11),l=an(c,a,10),r=an(c,a,9),q=an(c,a,8);if(e&&m&&n&&o&&f&&d){o=o[1];n=n[1];m=m[1];e=e[1];d=d[1];f=f[1];if(0<=m&&16>m){var
+p=b(c,a,1),a=b(c,a,2),p=p===0?0:cT(c,p),a=a===0?0:cT(c,a),q=au(q,0),r=au(r,0),l=au(l,0),j=au(j,0),h=au(h,e[2]),i=au(i,e[3]),c=$(n,$(l,0)),g=$(o,$(j,0)),l=P(n+f|0,P(l+h|0,e[2])),j=P(o+d|0,P(j+i|0,e[3]))-1|0;if(j>=g)for(;;){i=l-1|0;if(i>=c){d=c;for(;;){f=p?cU(p[1],(q+d|0)-n|0,(r+g|0)-o|0):1;f=a?f&cU(a[1],d&15,g&15):f;f=(m>>>(3-((2*f|0)+cU(e,d,g)|0)|0)|0)&1;h=caml_mul(g,e[4])+(d>>>3|0)|0;var
+k=1<<(7-(d&7)|0),s=caml_bytes_get(e[1],h),k=1===f?s|k:s&(k^-1)&num_255,k=Q(k);caml_bytes_set(e[1],h,k);h=d+1|0;if(i===d)break;d=h}}i=g+1|0;if(j===g)break;g=i}fO[1]++;return 1}}return 0}var
+iW=[0,[0,1,function(b,a){return[0,num_3654863,b+a|0]}],[0,[0,2,function(b,a){return[0,num_3654863,b-a|0]}],[0,[0,3,function(b,a){return[0,num_737456202,b<a?1:0]}],[0,[0,4,function(b,a){return[0,num_737456202,a<b?1:0]}],[0,[0,5,function(b,a){return[0,num_737456202,b<=a?1:0]}],[0,[0,6,function(b,a){return[0,num_737456202,a<=b?1:0]}],[0,[0,7,function(b,a){return[0,num_737456202,b===a?1:0]}],[0,[0,8,function(b,a){return[0,num_737456202,b!==a?1:0]}],[0,[0,9,function(b,a){return Math.abs(b*a)<=num_1073741823$0?[0,num_3654863,caml_mul(b,a)]:num_781116926}],[0,[0,10,function(b,a){if(0!==a&&0===caml_mod(b,a))return[0,num_3654863,caml_div(b,a)];return num_781116926}],[0,[0,11,function(b,a){return 0===a?num_781116926:[0,num_3654863,b-caml_mul(a,gr(b,a))|0]}],[0,[0,12,function(b,a){return 0===a?num_781116926:[0,num_3654863,gr(b,a)]}],[0,[0,13,function(b,a){return 0===a?num_781116926:[0,num_3654863,caml_div(b,a)]}],[0,[0,14,function(b,a){return[0,num_3654863,b&a]}],[0,[0,15,function(b,a){return[0,num_3654863,b|a]}],[0,[0,16,function(b,a){return[0,num_3654863,b^a]}],[0,[0,17,function(b,a){if(0>a)return[0,num_3654863,b>>P(31,-a|0)];if(31>a&&b<<a>>a===b&&cS(b<<a))return[0,num_3654863,b<<a];return num_781116926}],0]]]]]]]]]]]]]]]]],iX=[0,[0,41,function(b,a){return[0,num_365180284,b+a]}],[0,[0,42,function(b,a){return[0,num_365180284,b-a]}],[0,[0,43,function(b,a){return[0,num_737456202,b<a?1:0]}],[0,[0,44,function(b,a){return[0,num_737456202,a<b?1:0]}],[0,[0,45,function(b,a){return[0,num_737456202,b<=a?1:0]}],[0,[0,46,function(b,a){return[0,num_737456202,a<=b?1:0]}],[0,[0,47,function(b,a){return[0,num_737456202,b===a?1:0]}],[0,[0,48,function(b,a){return[0,num_737456202,b!==a?1:0]}],[0,[0,49,function(b,a){return[0,num_365180284,b*a]}],[0,[0,50,function(b,a){return a===0.?num_781116926:[0,num_365180284,b/a]}],0]]]]]]]]]];function
+gs(b,c,a){b=b[1];if(g(a)&&da(b,c)){a>>=1;var
+d=c$(b,c);if(1<=a&&(d+a|0)<=a1(b,c))return[0,(d+a|0)-1|0];return 0}return 0}function
+i1(c,f){var
+b=c[1],g=e(c,f),a=gs(c,g,l(c,f,0));if(!a)return 0;a=a[1];b=t(b,g);if(typeof
 b!=="number")switch(b[0]){case
 0:return d(c,f,caml_check_bound(b[1],a)[a+1]);case
 1:return d(c,f,m(caml_bytes_get(b[1],a)))}return 0}function
-i1(c,h){var
-a=c[1],i=e(c,h),b=l(c,h,1),f=gr(c,i,l(c,h,0));if(!f)return 0;f=f[1];a=t(a,i);if(typeof
+i2(c,h){var
+a=c[1],i=e(c,h),b=l(c,h,1),f=gs(c,i,l(c,h,0));if(!f)return 0;f=f[1];a=t(a,i);if(typeof
 a!=="number")switch(a[0]){case
 0:caml_check_bound(a[1],f)[f+1]=b;return d(c,h,b);case
-1:a=a[1];if(g(b)&&0<=b>>1&&num_256>b>>1){caml_bytes_set(a,f,P(b>>1));return d(c,h,b)}break}return 0}function
-i2(b,f){var
-c=b[1],a=e(b,f);if(g(a))return 0;if(!c$(c,a))return d(b,f,m(0));var
-h=c_(c,a);return d(b,f,m(a0(c,a)-h|0))}function
-i3(c,f){var
+1:a=a[1];if(g(b)&&0<=b>>1&&num_256>b>>1){caml_bytes_set(a,f,Q(b>>1));return d(c,h,b)}break}return 0}function
+i3(b,f){var
+c=b[1],a=e(b,f);if(g(a))return 0;if(!da(c,a))return d(b,f,m(0));var
+h=c$(c,a);return d(b,f,m(a1(c,a)-h|0))}function
+i4(c,f){var
 h=c[1],a=t(h,e(c,f)),b=l(c,f,0);if(typeof
 a!=="number"&&1===a[0]){a=a[1];if(g(b)&&1<=b>>1&&b>>1<=caml_ml_bytes_length(a)){a=caml_bytes_get(a,(b>>1)-1|0);return d(c,f,caml_check_bound(h[8][20],a)[a+1])}}return 0}function
-i4(h,k){var
+i5(h,k){var
 f=h[1],m=e(h,k),i=l(h,k,1),c=t(f,m),j=l(h,k,0);a:{if(!g(i)){var
 a=f[8][6];if(o(f,i)===a){a=b(f,i,0);if(g(a)&&0<=a>>1&&num_256>a>>1){a=[0,a>>1];break a}a=0;break a}}a=0}if(typeof
 c!=="number"&&1===c[0]&&a){c=c[1];a=a[1];var
-n=f[8][3];if(o(f,m)!==n&&g(j)&&1<=j>>1&&j>>1<=caml_ml_bytes_length(c)){caml_bytes_set(c,(j>>1)-1|0,P(a));return d(h,k,i)}}return 0}function
-i5(h,m){var
+n=f[8][3];if(o(f,m)!==n&&g(j)&&1<=j>>1&&j>>1<=caml_ml_bytes_length(c)){caml_bytes_set(c,(j>>1)-1|0,Q(a));return d(h,k,i)}}return 0}function
+i6(h,m){var
 f=h[1],n=e(h,m),i=l(h,m,0),c=l(h,m,1),b=l(h,m,2),j=l(h,m,3);a:{var
 a=[0,i,[0,c,[0,j,0]]];for(;;){if(!a)break;var
-k=a[2],a=g(a[1]);if(!a)break a;a=k}a=1}if(a&&c$(f,n)&&c$(f,b)){k=i>>1;c>>=1;i=j>>1;j=(c-k|0)+1|0;a=c_(f,n);var
-o=c_(f,b);if(0===a&&0===o){if(0<=j&&1<=k&&1<=i&&a0(f,n)>=(a+c|0)&&a0(f,b)>=(((o+i|0)+j|0)-1|0)){c=t(f,n);b=t(f,b);if(typeof
+k=a[2],a=g(a[1]);if(!a)break a;a=k}a=1}if(a&&da(f,n)&&da(f,b)){k=i>>1;c>>=1;i=j>>1;j=(c-k|0)+1|0;a=c$(f,n);var
+o=c$(f,b);if(0===a&&0===o){if(0<=j&&1<=k&&1<=i&&a1(f,n)>=(a+c|0)&&a1(f,b)>=(((o+i|0)+j|0)-1|0)){c=t(f,n);b=t(f,b);if(typeof
 c!=="number")switch(c[0]){case
 0:if(typeof
 b!=="number"&&0===b[0]){b4(b[1],(o+i|0)-1|0,c[1],(a+k|0)-1|0,j);return d(h,m,n)}break;case
 1:if(typeof
-b!=="number"&&1===b[0]){cy(b[1],i-1|0,c[1],k-1|0,j);return d(h,m,n)}break}return 0}return 0}return 0}return 0}var
-i6=[2,0.];function
-gs(a,b,c){a=a[1];if(!g(b)&&b!==0&&bj(a,o(a,b))){var
+b!=="number"&&1===b[0]){cz(b[1],i-1|0,c[1],k-1|0,j);return d(h,m,n)}break}return 0}return 0}return 0}return 0}var
+i7=[2,0.];function
+gt(a,b,c){a=a[1];if(!g(b)&&b!==0&&bj(a,o(a,b))){var
 d=bi(a,b),e=d[1];switch(d[2]){case
 0:if(0===c)return[0,x(a,b,[0,caml_make_vect(e,0)])];break;case
 1:return[0,x(a,b,[0,caml_make_vect(e+c|0,0)])];case
 2:return[0,x(a,b,[1,av(c,0)])];case
-3:if(0===c)return[0,x(a,b,i6)];break}return 0}return 0}function
-i7(a,c){var
-b=gs(a,e(a,c),0);return b?d(a,c,b[1]):0}function
-i8(b,c){var
-a=l(b,c,0);if(g(a)&&0<=a>>1){a=gs(b,e(b,c),a>>1);return a?d(b,c,a[1]):0}return 0}function
-i9(c,f){var
+3:if(0===c)return[0,x(a,b,i7)];break}return 0}return 0}function
+i8(a,c){var
+b=gt(a,e(a,c),0);return b?d(a,c,b[1]):0}function
+i9(b,c){var
+a=l(b,c,0);if(g(a)&&0<=a>>1){a=gt(b,e(b,c),a>>1);return a?d(b,c,a[1]):0}return 0}function
+i_(c,f){var
 a=c[1],h=e(c,f),b=l(c,f,0),a=t(a,h);if(typeof
 a!=="number"&&0===a[0]){a=a[1];if(g(b)&&1<=b>>1&&b>>1<=a.length-1){b=(b>>1)-1|0;return d(c,f,caml_check_bound(a,b)[b+1])}}return 0}function
-i_(c,f){var
+i$(c,f){var
 a=c[1],i=e(c,f),b=l(c,f,0),h=l(c,f,1),a=t(a,i);if(typeof
 a!=="number"&&0===a[0]){a=a[1];if(g(b)&&1<=b>>1&&b>>1<=a.length-1){b=(b>>1)-1|0;caml_check_bound(a,b)[b+1]=h;return d(c,f,h)}}return 0}function
-i$(c,h){var
+ja(c,h){var
 f=c[1],b=e(c,h);if(!g(b)&&b!==0){var
 a=t(f,b);if(typeof
 a==="number");else
@@ -2693,136 +2693,136 @@ switch(a[0]){case
 1:a=[1,b2(a[1])];break;case
 3:var
 i=a[1],a=b2(a[2]),a=[3,dC(i),a];break}return d(c,h,x(f,o(f,b),a))}return d(c,h,b)}function
-ja(b,g){var
-f=b[1],c=e(b,g),i=l(b,g,0),c=a6(b,c),a=caml_make_vect(a0(f,c),0),h=m(b[15]+2|0);caml_check_bound(a,1)[2]=h;var
+jb(b,g){var
+f=b[1],c=e(b,g),i=l(b,g,0),c=a7(b,c),a=caml_make_vect(a1(f,c),0),h=m(b[15]+2|0);caml_check_bound(a,1)[2]=h;var
 j=m(5);caml_check_bound(a,2)[3]=j;caml_check_bound(a,3)[4]=i;caml_check_bound(a,4)[5]=h;caml_check_bound(a,5)[6]=c;return d(b,g,x(f,f[8][9],[0,a]))}function
-gt(c,e,d){var
+gu(c,e,d){var
 b=c[1];if(!g(e)){var
 a=b[8][9];if(o(b,e)===a){b=z(b,e);a=s(d);if(caml_check_bound(b,3)[4]>>1!==a)return 0;a=d;var
 f=0;for(;;){if(!a)break;var
-h=6+f|0,i=a[2],a=a[1];caml_check_bound(b,h)[h+1]=a;a=i;f=f+1|0}a=m((6+s(d)|0)-1|0);caml_check_bound(b,2)[3]=a;a=caml_check_bound(b,4)[5];caml_check_bound(b,1)[2]=a;ap(c,s(d)+1|0);a=c[7];caml_check_bound(b,0)[1]=a;c8(c);ci(c,e);return 1}}return 0}function
-jb(b,a){var
-c=ar(a,function(c){return l(b,a,c)});return gt(b,e(b,a),c)}function
-jc(a,f){var
+h=6+f|0,i=a[2],a=a[1];caml_check_bound(b,h)[h+1]=a;a=i;f=f+1|0}a=m((6+s(d)|0)-1|0);caml_check_bound(b,2)[3]=a;a=caml_check_bound(b,4)[5];caml_check_bound(b,1)[2]=a;ap(c,s(d)+1|0);a=c[7];caml_check_bound(b,0)[1]=a;c9(c);ci(c,e);return 1}}return 0}function
+jc(b,a){var
+c=as(a,function(c){return l(b,a,c)});return gu(b,e(b,a),c)}function
+jd(a,f){var
 b=a[1],d=l(a,f,0);if(!g(d)){var
-c=b[8][4];if(o(b,d)===c){b=aa(z(b,d));f=e(a,f);ap(a,1);c=b;for(;;){if(!c)return gt(a,f,b)?1:(ap(a,s(b)),E(a,d),0);var
+c=b[8][4];if(o(b,d)===c){b=aa(z(b,d));f=e(a,f);ap(a,1);c=b;for(;;){if(!c)return gu(a,f,b)?1:(ap(a,s(b)),E(a,d),0);var
 h=c[2];E(a,c[1]);c=h}}}return 0}function
-jd(c,b){var
+je(c,b){var
 d=c[1],e=l(c,b,0);if(!g(e)){var
-a=d[8][3];if(o(d,e)===a&&d1(r(d,e))===(b-1|0)){a=ar(b-1|0,function(a){return l(c,b,a+1|0)});ap(c,b);for(;;){if(!a){a8(c,e,b-1|0);return 1}d=a[2];E(c,a[1]);a=d}}}return 0}function
-je(d,a){var
+a=d[8][3];if(o(d,e)===a&&d1(r(d,e))===(b-1|0)){a=as(b-1|0,function(a){return l(c,b,a+1|0)});ap(c,b);for(;;){if(!a){a9(c,e,b-1|0);return 1}d=a[2];E(c,a[1]);a=d}}}return 0}function
+jf(d,a){var
 c=d[1],e=l(d,a,0),a=l(d,a,1);if(!g(a)){var
-b=c[8][4];if(o(c,a)===b&&!g(e)){a=aa(z(c,a));b=s(a);if(d1(r(c,e))!==b)return 0;ap(d,2);b=a;for(;;){if(!b){a8(d,e,s(a));return 1}c=b[2];E(d,b[1]);b=c}}}return 0}function
-gu(h,a,f){var
-c=a[1],g=e(a,f),b=l(a,f,0);if(aL(c,g)&&aL(c,b)){b=r(c,b);return d(a,f,a7(a,caml_call2(h,r(c,g),b)[2]))}return 0}function
+b=c[8][4];if(o(c,a)===b&&!g(e)){a=aa(z(c,a));b=s(a);if(d1(r(c,e))!==b)return 0;ap(d,2);b=a;for(;;){if(!b){a9(d,e,s(a));return 1}c=b[2];E(d,b[1]);b=c}}}return 0}function
+gv(h,a,f){var
+c=a[1],g=e(a,f),b=l(a,f,0);if(aM(c,g)&&aM(c,b)){b=r(c,b);return d(a,f,a8(a,caml_call2(h,r(c,g),b)[2]))}return 0}function
 em(p,b,i){var
 g=b[1],a=e(b,i),j=l(b,i,0),n=l(b,i,1),k=l(b,i,2),m=l(b,i,4);a:{var
 c=[0,j,[0,n,[0,k,[0,m,0]]]];for(;;){if(!c)break;var
-f=c[2],c=aL(g,c[1]);if(!c)break a;c=f}c=1}if(!c)return 0;function
-o(a){a=aG(32,r(g,a));var
+f=c[2],c=aM(g,c[1]);if(!c)break a;c=f}c=1}if(!c)return 0;function
+o(a){a=aH(32,r(g,a));var
 b=0;for(;;){if(!a)break;var
-c=a[2],b=M(aG(9,a[1]),b);a=c}b=h(b);return T(function(a){return str!==a?1:0})(b)}var
-f=r(g,m),k=o(k),m=o(n),a=f5(g,a,r(g,j),p,m,k,f),f=a[1];if(a[2]){a=gg(g,f);for(;;){if(!a)break;j=a[1];a=a[2];caml_call1(b[2][1],j[1]+str$19+j[2]+str$14)}}aU(b);return d(b,i,f)}function
-jf(c,f){var
-b=c[1],i=e(c,f),g=l(c,f,0),h=l(c,f,1);if(aL(b,g)&&aL(b,h)){try{var
-a=r(b,g),a=bL(b,i,r(b,h),0,a)}catch(e){a=caml_wrap_exception(e);if(a[1]===az)return d(c,f,a1(b,a[3]));throw caml_maybe_attach_backtrace(a,0)}aU(c);return d(c,f,J(b,a))}return 0}function
-jg(c,h){var
-f=c[1],b=e(c,h);if(!aL(f,b))return 0;a:{b=cz(r(f,b));try{var
+c=a[2],b=M(aH(9,a[1]),b);a=c}b=h(b);return N(function(a){return str!==a?1:0})(b)}var
+f=r(g,m),k=o(k),m=o(n),a=f6(g,a,r(g,j),p,m,k,f),f=a[1];if(a[2]){a=gh(g,f);for(;;){if(!a)break;j=a[1];a=a[2];caml_call1(b[2][1],j[1]+str$19+j[2]+str$14)}}aV(b);return d(b,i,f)}function
+jg(c,f){var
+b=c[1],i=e(c,f),g=l(c,f,0),h=l(c,f,1);if(aM(b,g)&&aM(b,h)){try{var
+a=r(b,g),a=bL(b,i,r(b,h),0,a)}catch(e){a=caml_wrap_exception(e);if(a[1]===az)return d(c,f,a2(b,a[3]));throw caml_maybe_attach_backtrace(a,0)}aV(c);return d(c,f,J(b,a))}return 0}function
+jh(c,h){var
+f=c[1],b=e(c,h);if(!aM(f,b))return 0;a:{b=cA(r(f,b));try{var
 g=d$(b)}catch(b){var
-a=caml_wrap_exception(b);if(a[1]!==a3)throw caml_maybe_attach_backtrace(a,0);a=0;break a}try{a=f8(g)}catch(b){a=caml_wrap_exception(b);if(a[1]!==a3)throw caml_maybe_attach_backtrace(a,0);a=0;break a}if(a){a=a[1];if(11===v(g)){a=[0,a];break a}}a=0}if(a){a=a[1];if(typeof
+a=caml_wrap_exception(b);if(a[1]!==a4)throw caml_maybe_attach_backtrace(a,0);a=0;break a}try{a=f9(g)}catch(b){a=caml_wrap_exception(b);if(a[1]!==a4)throw caml_maybe_attach_backtrace(a,0);a=0;break a}if(a){a=a[1];if(11===v(g)){a=[0,a];break a}}a=0}if(a){a=a[1];if(typeof
 a!=="number"&&a[0]<3)return d(c,h,eb(f,a))}return d(c,h,q)}function
-jh(f,j){var
+ji(f,j){var
 i=f[1],a=e(f,j);if(!g(a))return 0;a>>=1;var
-h=caml_create_bytes(4),b=0,k=bY(a);for(;;){caml_bytes_unsafe_set(h,b,P((k>>>(8*b|0)|0)&num_255));var
+h=caml_create_bytes(4),b=0,k=bY(a);for(;;){caml_bytes_unsafe_set(h,b,Q((k>>>(8*b|0)|0)&num_255));var
 c=b+1|0;if(3===b){c=i[8];a=0<=a?c[13]:c[14];return d(f,j,x(i,a,[1,h]))}b=c}}function
-ji(b,g){var
+jj(b,g){var
 f=b[1],i=e(b,g),a=t(f,i);if(typeof
 a!=="number"&&1===a[0]){var
 c=a[1],a=caml_ml_bytes_length(c);for(;;){if(0>=a)break;if(0!==caml_bytes_get(c,a-1|0))break;a=a-1|0}var
-j=f[8][14],j=o(f,i)===j?1:0,h=ar(a,function(a){return caml_bytes_get(c,a)});if(0===a)return d(b,g,m(0));h=d2(j,h);if(h)return d(b,g,m(h[1]));if(a===caml_ml_bytes_length(c))return d(b,g,i);a=[1,bB(c,0,a)];return d(b,g,x(f,o(f,i),a))}return 0}var
-num_150$0=150,iX=[0,[8,[0,0,0],0,[0,1],0],"%.1f"],iY=[0,[8,[0,0,3],0,[0,15],0],"%.15g"],iZ=[0,[8,[0,0,3],0,[0,17],0],"%.17g"];function
-gv(b){var
+j=f[8][14],j=o(f,i)===j?1:0,h=as(a,function(a){return caml_bytes_get(c,a)});if(0===a)return d(b,g,m(0));h=d2(j,h);if(h)return d(b,g,m(h[1]));if(a===caml_ml_bytes_length(c))return d(b,g,i);a=[1,bB(c,0,a)];return d(b,g,x(f,o(f,i),a))}return 0}var
+num_150$0=150,iY=[0,[8,[0,0,0],0,[0,1],0],"%.1f"],iZ=[0,[8,[0,0,3],0,[0,15],0],"%.15g"],i0=[0,[8,[0,0,3],0,[0,17],0],"%.17g"];function
+gw(b){var
 f=b[3];function
 a(a,b){caml_check_bound(f,a)[a+1]=[0,b]}var
-b=iV;for(;;){if(!b)break;var
+b=iW;for(;;){if(!b)break;var
 c=b[1];let
 f=c[2];b=b[2];a(c[1],function(b,c){var
 a=e(b,c),h=l(b,c,0);if(g(a)&&g(h)){a=f(a>>1,h>>1);if(typeof
-a!=="number"){if(num_737456202<=a[1])return d(b,c,a7(b,a[2]));a=a[2];if(cR(a))return d(b,c,m(a))}return 0}return 0})}a(18,function(a,c){var
+a!=="number"){if(num_737456202<=a[1])return d(b,c,a8(b,a[2]));a=a[2];if(cS(a))return d(b,c,m(a))}return 0}return 0})}a(18,function(a,c){var
 f=a[1],b=l(a,c,0),b=[0,[0,e(a,c),b]];return d(a,c,x(f,f[8][12],b))});a(40,function(a,c){var
-b=e(a,c);return g(b)?d(a,c,a2(a[1],b>>1)):0});b=iW;for(;;){if(!b)break;c=b[1];let
+b=e(a,c);return g(b)?d(a,c,a3(a[1],b>>1)):0});b=iX;for(;;){if(!b)break;c=b[1];let
 f=c[2];b=b[2];a(c[1],function(c,j){var
 i=c[1],b=t(i,e(c,j)),a=l(c,j,0);a:if(g(a))a=[0,a>>1];else{var
 h=t(i,a);if(typeof
 h!=="number"&&2===h[0]){h=h[1];var
 k=i[8][5];if(o(i,a)===k){a=[0,h];break a}}a=0}if(typeof
 b!=="number"&&2===b[0]&&a){b=f(b[1],a[1]);return typeof
-b==="number"?0:num_737456202<=b[1]?d(c,j,a7(c,b[2])):d(c,j,a2(i,b[2]))}return 0})}a(51,function(b,c){var
+b==="number"?0:num_737456202<=b[1]?d(c,j,a8(c,b[2])):d(c,j,a3(i,b[2]))}return 0})}a(51,function(b,c){var
 a=e(b,c),a=t(b[1],a);if(typeof
-a!=="number"&&2===a[0]){a=a[1];if(fe(a)&&cR(a|0)&&Math.abs(a)<1073741824.)return d(b,c,m(a|0))}return 0});a(55,function(b,f){var
+a!=="number"&&2===a[0]){a=a[1];if(ff(a)&&cS(a|0)&&Math.abs(a)<1073741824.)return d(b,c,m(a|0))}return 0});a(55,function(b,f){var
 c=b[1],a=t(c,e(b,f));if(typeof
-a!=="number"&&2===a[0])return d(b,f,a2(c,Math.sqrt(a[1])));return 0});a(56,function(b,f){var
+a!=="number"&&2===a[0])return d(b,f,a3(c,Math.sqrt(a[1])));return 0});a(56,function(b,f){var
 c=b[1],a=t(c,e(b,f));if(typeof
-a!=="number"&&2===a[0])return d(b,f,a2(c,Math.sin(a[1])));return 0});a(57,function(b,f){var
+a!=="number"&&2===a[0])return d(b,f,a3(c,Math.sin(a[1])));return 0});a(57,function(b,f){var
 c=b[1],a=t(c,e(b,f));if(typeof
-a!=="number"&&2===a[0])return d(b,f,a2(c,Math.atan(a[1])));return 0});a(58,function(b,f){var
+a!=="number"&&2===a[0])return d(b,f,a3(c,Math.atan(a[1])));return 0});a(58,function(b,f){var
 c=b[1],a=t(c,e(b,f));if(typeof
-a!=="number"&&2===a[0])return d(b,f,a2(c,Math.log(a[1])));return 0});a(59,function(b,f){var
+a!=="number"&&2===a[0])return d(b,f,a3(c,Math.log(a[1])));return 0});a(59,function(b,f){var
 c=b[1],a=t(c,e(b,f));if(typeof
-a!=="number"&&2===a[0])return d(b,f,a2(c,Math.exp(a[1])));return 0});a(60,i0);a(61,i1);a(62,i2);a(63,i3);a(64,i4);a(68,function(c,f){var
+a!=="number"&&2===a[0])return d(b,f,a3(c,Math.exp(a[1])));return 0});a(60,i1);a(61,i2);a(62,i3);a(63,i4);a(64,i5);a(68,function(c,f){var
 a=c[1],h=e(c,f),b=l(c,f,0),a=t(a,h);if(typeof
 a!=="number"&&3===a[0]){a=a[1];if(g(b)&&1<=b>>1&&b>>1<=a.length-1){b=(b>>1)-1|0;return d(c,f,caml_check_bound(a,b)[b+1])}}return 0});a(69,function(c,f){var
 a=c[1],i=e(c,f),b=l(c,f,0),h=l(c,f,1),a=t(a,i);if(typeof
-a!=="number"&&3===a[0]){a=a[1];if(g(b)&&1<=b>>1&&b>>1<=a.length-1){b=(b>>1)-1|0;caml_check_bound(a,b)[b+1]=h;return d(c,f,h)}}return 0});a(70,i7);a(71,i8);a(72,function(a,f){var
-b=e(a,f),c=l(a,f,0);if(!g(b)&&!g(c)&&b!==0&&c!==0){fM(a[1],b,c);aU(a);return d(a,f,b)}return 0});a(73,i9);a(74,i_);a(75,function(c,b){var
-a=e(c,b),a=g(a)?a:m(a>>>1|0);return d(c,b,a)});a(80,ja);a(81,jb);a(82,jc);a(83,jd);a(84,je);var
-num_105=105;a(num_105,i5);a(num_110,function(a,b){var
-c=l(a,b,0);return d(a,b,a7(a,e(a,b)===c?1:0))});a(111,function(a,b){var
+a!=="number"&&3===a[0]){a=a[1];if(g(b)&&1<=b>>1&&b>>1<=a.length-1){b=(b>>1)-1|0;caml_check_bound(a,b)[b+1]=h;return d(c,f,h)}}return 0});a(70,i8);a(71,i9);a(72,function(a,f){var
+b=e(a,f),c=l(a,f,0);if(!g(b)&&!g(c)&&b!==0&&c!==0){fN(a[1],b,c);aV(a);return d(a,f,b)}return 0});a(73,i_);a(74,i$);a(75,function(c,b){var
+a=e(c,b),a=g(a)?a:m(a>>>1|0);return d(c,b,a)});a(80,jb);a(81,jc);a(82,jd);a(83,je);a(84,jf);var
+num_105=105;a(num_105,i6);a(num_110,function(a,b){var
+c=l(a,b,0);return d(a,b,a8(a,e(a,b)===c?1:0))});a(111,function(a,b){var
 c=e(a,b);return d(a,b,o(a[1],c))});a(num_120,function(b,c){var
 a=l(b,c,0);if(g(a)&&0<=a>>1&&num_256>a>>1){a>>=1;return d(b,c,caml_check_bound(b[1][8][20],a)[a+1])}return 0});a(num_122,function(b,f){var
-a=b[1],c=e(b,f);return aL(a,c)?d(b,f,J(a,r(a,c))):0});function
-h(b,a){return[0,num_737456202,b===a?1:0]}a(num_123,function(a,b){return gu(h,a,b)});function
-i(b,a){return[0,num_737456202,caml_string_lessthan(b,a)]}a(num_124,function(a,b){return gu(i,a,b)});a(num_125,function(a,f){var
-c=a[1],b=e(a,f);return aL(c,b)?d(a,f,m(caml_hash(10,num_100,0,r(c,b))&67108863)):0});a(num_130,function(f,g){var
+a=b[1],c=e(b,f);return aM(a,c)?d(b,f,J(a,r(a,c))):0});function
+h(b,a){return[0,num_737456202,b===a?1:0]}a(num_123,function(a,b){return gv(h,a,b)});function
+i(b,a){return[0,num_737456202,caml_string_lessthan(b,a)]}a(num_124,function(a,b){return gv(i,a,b)});a(num_125,function(a,f){var
+c=a[1],b=e(a,f);return aM(c,b)?d(a,f,m(caml_hash(10,num_100,0,r(c,b))&67108863)):0});a(num_130,function(f,g){var
 c=f[1],a=t(c,e(f,g));if(typeof
 a!=="number"&&2===a[0]){a=a[1];var
-b=a===caml_trunc_float(a),b=b?fe(a):b;a:{if(b&&Math.abs(a)<1000000000000000.){a=caml_call1(G(iX),a);break a}b=caml_call1(G(iY),a);a=caml_float_of_string(b)===a?b:caml_call1(G(iZ),a);a=as(a,46)?a:as(a,num_101)?a:as(a,num_110)?a:as(a,num_105)?a:a+".0"}return d(f,g,a1(c,a))}return 0});a(140,function(a,c){var
-b=a[1],f=l(a,c,0);if(!aL(b,f))return 0;b=r(b,f);caml_call1(a[2][1],b);return d(a,c,e(a,c))});a(141,function(b,e){var
-a=b[1],c=l(b,e,0),a=aL(a,c)?r(a,c):"Halt";b[17]=[0,a];return d(b,e,q)});a(142,jf);a(num_143,function(a,b){return em(0,a,b)});a(num_151,function(a,b){return em(1,a,b)});a(num_152,function(a,b){return em(2,a,b)});a(num_144,function(a,b){return d(a,b,m(caml_call1(a[2][2],0)&num_1073741823))});a(num_145,function(g,h){var
+b=a===caml_trunc_float(a),b=b?ff(a):b;a:{if(b&&Math.abs(a)<1000000000000000.){a=caml_call1(G(iY),a);break a}b=caml_call1(G(iZ),a);a=caml_float_of_string(b)===a?b:caml_call1(G(i0),a);a=at(a,46)?a:at(a,num_101)?a:at(a,num_110)?a:at(a,num_105)?a:a+".0"}return d(f,g,a2(c,a))}return 0});a(140,function(a,c){var
+b=a[1],f=l(a,c,0);if(!aM(b,f))return 0;b=r(b,f);caml_call1(a[2][1],b);return d(a,c,e(a,c))});a(141,function(b,e){var
+a=b[1],c=l(b,e,0),a=aM(a,c)?r(a,c):"Halt";b[17]=[0,a];return d(b,e,q)});a(142,jg);a(num_143,function(a,b){return em(0,a,b)});a(num_151,function(a,b){return em(1,a,b)});a(num_152,function(a,b){return em(2,a,b)});a(num_144,function(a,b){return d(a,b,m(caml_call1(a[2][2],0)&num_1073741823))});a(num_145,function(g,h){var
 f=g[1],i=e(g,h),a=f[4]-1|0,c=0;if(a<0);else
 for(;;){var
-b=caml_check_bound(f[1],a)[a+1]===i,b=b?0!==caml_check_bound(f[2],a)[a+1]:b,c=b?[0,a<<1,c]:c,b=a-1|0;if(0===a)break;a=b}return d(g,h,R(f,Y(c)))});a(146,function(a,c){var
-b=a[1][5];gn(a);return d(a,c,m(b-a[1][5]|0))});a(147,function(a,b){var
-f=a[1],c=l(a,b,0);return d(a,b,a7(a,0!==fW(f,e(a,b),c)?1:0))});a(148,function(a,b){var
-f=a[1],c=l(a,b,0);return d(a,b,a7(a,0!==bl(f,e(a,b),c)?1:0))});a(149,function(b,c){var
-a=b[1];return d(b,c,R(a,Y(k(function(b){return J(a,b)},fX(a,e(b,c))))))});a(num_150$0,jg);a(153,i$);a(154,jh);a(155,ji);a(156,function(a,b){var
+b=caml_check_bound(f[1],a)[a+1]===i,b=b?0!==caml_check_bound(f[2],a)[a+1]:b,c=b?[0,a<<1,c]:c,b=a-1|0;if(0===a)break;a=b}return d(g,h,S(f,Y(c)))});a(146,function(a,c){var
+b=a[1][5];go(a);return d(a,c,m(b-a[1][5]|0))});a(147,function(a,b){var
+f=a[1],c=l(a,b,0);return d(a,b,a8(a,0!==fX(f,e(a,b),c)?1:0))});a(148,function(a,b){var
+f=a[1],c=l(a,b,0);return d(a,b,a8(a,0!==bl(f,e(a,b),c)?1:0))});a(149,function(b,c){var
+a=b[1];return d(b,c,S(a,Y(k(function(b){return J(a,b)},fY(a,e(b,c))))))});a(num_150$0,jh);a(153,ja);a(154,ji);a(155,jj);a(156,function(a,b){var
 f=a[1],c=t(f,e(a,b));if(typeof
 c!=="number"&&3===c[0])return d(a,b,b_(f,e(a,b)));return 0});a(157,function(a,b){var
 f=a[1],c=t(f,e(a,b));if(typeof
 c!=="number"&&3===c[0])return d(a,b,b$(f,e(a,b)));return 0});a(90,function(b,f){var
 c=b[1],a=caml_call1(b[2][4],0),e=a[1],a=m(a[2]),a=[0,[0,m(e),a]];return d(b,f,x(c,c[8][12],a))});a(91,function(a,b){return d(a,b,m(caml_call1(a[2][4],0)[3]))});a(96,function(a,b){var
-c=e(a,b);return iC(a[1],c)?d(a,b,e(a,b)):0});return a(158,function(a,b){var
+c=e(a,b);return iD(a[1],c)?d(a,b,e(a,b)):0});return a(158,function(a,b){var
 c=e(a,b);caml_call1(a[2][3],c);return d(a,b,e(a,b))})}var
-jk=[num_248,"St_chunk.Error",caml_fresh_oo_id(0)];function
-gw(e){var
+jl=[num_248,"St_chunk.Error",caml_fresh_oo_id(0)];function
+gx(e){var
 c=ak(caml_ml_string_length(e)+2|0),d=caml_ml_string_length(e)-1|0;if(d>=0){var
 a=0;for(;;){var
 b=caml_string_unsafe_get(e,a);if(33===b)ad(c,"!!");else
 I(c,b);b=a+1|0;if(d===a)break;a=b}}I(c,33);return aw(c)}var
-en=[num_248,"St_boot.Error",caml_fresh_oo_id(0)],num_1000$0=1000.,jn=[0,0,0,0];function
-jl(d,g){var
-b=aG(32,d),a=0;for(;;){if(!b)break;var
-c=b[2],a=M(aG(10,b[1]),a);b=c}a=h(a);a=T(function(a){return str!==a?1:0})(a);function
-e(a){a=cA(d,39);if(!a)return str;a=a[1];var
-b=cB(d,a+1|0,39);return b?F(d,a+1|0,(b[1]-a|0)-1|0):str}if(a){b=a[2];if(b){var
-f=b[1],a=a[1],c="methodsFor:";if(f!==str_class){if(f===c)return[0,a,0,e(0)]}else{b=b[2];if(b&&b[1]===c)return[0,a,1,e(0)]}}}throw caml_maybe_attach_backtrace([0,jk,g,"methodsFor: expected"],1)}var
-jo=[0,function(a){return 0},function(a){return caml_sys_time(0)*num_1000$0|0},function(a){return 0},function(a){return jn}];function
-gx(a){a=aG(32,a);var
+en=[num_248,"St_boot.Error",caml_fresh_oo_id(0)],num_1000$0=1000.,jo=[0,0,0,0];function
+jm(d,g){var
+b=aH(32,d),a=0;for(;;){if(!b)break;var
+c=b[2],a=M(aH(10,b[1]),a);b=c}a=h(a);a=N(function(a){return str!==a?1:0})(a);function
+e(a){a=cB(d,39);if(!a)return str;a=a[1];var
+b=cC(d,a+1|0,39);return b?F(d,a+1|0,(b[1]-a|0)-1|0):str}if(a){b=a[2];if(b){var
+f=b[1],a=a[1],c="methodsFor:";if(f!==str_class){if(f===c)return[0,a,0,e(0)]}else{b=b[2];if(b&&b[1]===c)return[0,a,1,e(0)]}}}throw caml_maybe_attach_backtrace([0,jl,g,"methodsFor: expected"],1)}var
+jp=[0,function(a){return 0},function(a){return caml_sys_time(0)*num_1000$0|0},function(a){return 0},function(a){return jo}];function
+gy(a){a=aH(32,a);var
 b=0;for(;;){if(!a)break;var
-c=a[2],b=M(aG(9,a[1]),b);a=c}b=h(b);a=0;for(;;){if(!b)break;c=b[2];a=M(aG(10,b[1]),a);b=c}a=h(a);return T(function(a){return str!==a?1:0})(a)}var
-str_CompiledMethod="CompiledMethod",str_Float="Float",js=[0,3],jt=[0,4],jp=[0,1],jq=[0,2],jr=[0,0];function
-gy(b){try{var
-e=ea(b)}catch(a){e=caml_wrap_exception(a);if(e[1]===a3)return 0;throw caml_maybe_attach_backtrace(e,0)}e=e[5];if(e){b=e[1];if(0===b[0]){b=b[1][1];if(3===b[0]){var
+c=a[2],b=M(aH(9,a[1]),b);a=c}b=h(b);a=0;for(;;){if(!b)break;c=b[2];a=M(aH(10,b[1]),a);b=c}a=h(a);return N(function(a){return str!==a?1:0})(a)}var
+str_CompiledMethod="CompiledMethod",str_Float="Float",jt=[0,3],ju=[0,4],jq=[0,1],jr=[0,2],js=[0,0];function
+gz(b){try{var
+e=ea(b)}catch(a){e=caml_wrap_exception(a);if(e[1]===a4)return 0;throw caml_maybe_attach_backtrace(e,0)}e=e[5];if(e){b=e[1];if(0===b[0]){b=b[1][1];if(3===b[0]){var
 h=b[1][1];if(1===h[0]){var
 a=b[3];if(a){var
 c=a[1][1];if(0===c[0]){c=c[1];if(typeof
@@ -2832,45 +2832,45 @@ f!=="number"&&4===f[0]){a=a[2];if(a){var
 d=a[1][1];if(0===d[0]){d=d[1];if(typeof
 d!=="number"&&4===d[0]){a=a[2];if(a){a=a[2];if(a){var
 g=a[1][1];if(0===g[0]){g=g[1];if(typeof
-g!=="number"&&4===g[0]&&!a[2]&&!e[2]){c=c[1];b=b[2];g=g[1];d=d[1];f=f[1];h=h[1];b=c!==str_CompiledMethod?c!==str_Float?b!=="subclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?b!=="variableByteSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?b!=="variableSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?0:jp:jq:jr:js:jt;if(!b)return 0;b=b[1];d=gx(d);return[0,[0,h,c,b,gx(f),d,g]]}}}}}}}}}}}}}}}}}return 0}function
-gz(f,g){var
+g!=="number"&&4===g[0]&&!a[2]&&!e[2]){c=c[1];b=b[2];g=g[1];d=d[1];f=f[1];h=h[1];b=c!==str_CompiledMethod?c!==str_Float?b!=="subclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?b!=="variableByteSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?b!=="variableSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?0:jq:jr:js:jt:ju;if(!b)return 0;b=b[1];d=gy(d);return[0,[0,h,c,b,gy(f),d,g]]}}}}}}}}}}}}}}}}}return 0}function
+gA(f,g){var
 d=caml_ml_string_length(f)-1|0,c=1;if(d<0);else{var
 a=0;for(;;){var
 e=a<g,b=caml_string_unsafe_get(f,a),b=e?10===b:e,c=b?c+1|0:c,b=a+1|0;if(d===a)break;a=b}}return c}function
-bM(b,a){for(;;){if(num_128>a)return I(b,P(a));I(b,P(num_128|a&num_127));a=a>>>7|0}}function
-gA(c,a){if(g(a)){a>>=1;a=0<=a?2*a|0:(-2*a|0)-1|0;var
-b=1}else{a=a>>>1|0;b=0}b|=(a&63)<<1;return 0===(a>>>6|0)?I(c,P(b)):(I(c,P(b|num_128)),bM(c,a>>>6|0))}var
+bM(b,a){for(;;){if(num_128>a)return I(b,Q(a));I(b,Q(num_128|a&num_127));a=a>>>7|0}}function
+gB(c,a){if(g(a)){a>>=1;a=0<=a?2*a|0:(-2*a|0)-1|0;var
+b=1}else{a=a>>>1|0;b=0}b|=(a&63)<<1;return 0===(a>>>6|0)?I(c,Q(b)):(I(c,Q(b|num_128)),bM(c,a>>>6|0))}var
 str_truncated_image="truncated image";function
 bN(a){var
 b=0,c=0;for(;;){if(caml_ml_string_length(a[1])<=a[2])aj(str_truncated_image);var
 d=caml_string_get(a[1],a[2]);a[2]=a[2]+1|0;c|=(d&num_127)<<b;if(num_128>d)return c;b=b+7|0}}function
-gB(b){if(caml_ml_string_length(b[1])<=b[2])aj(str_truncated_image);var
+gC(b){if(caml_ml_string_length(b[1])<=b[2])aj(str_truncated_image);var
 c=caml_string_get(b[1],b[2]);b[2]=b[2]+1|0;var
 a=(c>>>1|0)&63,a=num_128<=c?a|bN(b)<<6:a;if(1!==(c&1))return a<<1;a=0===(a&1)?a/2|0:-((a+1|0)/2|0)|0;return m(a)}function
 eo(a,b){if(caml_ml_string_length(a[1])<(a[2]+b|0))aj(str_truncated_image);var
-c=cx(F(a[1],a[2],b));a[2]=a[2]+b|0;return c}function
-cm(c,a){return b(c[1],a,aK)===0?1:0}function
-gC(d,a){var
-c=d[1],d=a6(d,a),a=aa(aY(function(a){return r(c,a)},z(c,b9(c,b(c,d,aS),4)))),e=z(c,d),a=bd(function(a,b){if((6+a|0)<e.length-1){a=6+a|0;a=caml_check_bound(e,a)[a+1]}else
-a=q;return[0,b,a]},a),a=[0,[0,str_self,caml_check_bound(e,5)[aT+1]],a];return T(function(a){a=a[1];var
+c=cy(F(a[1],a[2],b));a[2]=a[2]+b|0;return c}function
+cm(c,a){return b(c[1],a,aL)===0?1:0}function
+gD(d,a){var
+c=d[1],d=a7(d,a),a=aa(aZ(function(a){return r(c,a)},z(c,b9(c,b(c,d,aT),4)))),e=z(c,d),a=be(function(a,b){if((6+a|0)<e.length-1){a=6+a|0;a=caml_check_bound(e,a)[a+1]}else
+a=q;return[0,b,a]},a),a=[0,[0,str_self,caml_check_bound(e,5)[aU+1]],a];return N(function(a){a=a[1];var
 b=a!==str?1:0,a=b?32!==caml_string_get(a,0)?1:0:b;return a})(a)}function
-gD(c,b,a){el(b);ek([0,a],c,b,num_20000000);a=b[3];if(typeof
-a==="number"&&!a)return go(b,"Step: still running")}function
-gE(d,a,e){var
-c=d[1],d=c7(d,e),f=fQ(c,d),h=k(function(a){return a[1]},fR(c,d)),c=b(c,e,aK),c=g(c)?c>>1:0;a:{b:{c:{if(a[2]!==e){c=[0,c];break a}a=h;for(;;){if(!a)break c;d=a[1];a=a[2];if(c<=d)break}a=[0,d];break b}a=0}if(a){c=a[1];f=caml_bytes_get(f,c);a=f-128|0;b:{if(5<a>>>0){if(6!==a){if(num_160<=f&&num_175>=f){a=2;break b}a=1;break b}}else if(4!==a){a=2;break b}a=3}c=[0,c+a|0]}else
+gE(c,b,a){el(b);ek([0,a],c,b,num_20000000);a=b[3];if(typeof
+a==="number"&&!a)return gp(b,"Step: still running")}function
+gF(d,a,e){var
+c=d[1],d=c8(d,e),f=fR(c,d),h=k(function(a){return a[1]},fS(c,d)),c=b(c,e,aL),c=g(c)?c>>1:0;a:{b:{c:{if(a[2]!==e){c=[0,c];break a}a=h;for(;;){if(!a)break c;d=a[1];a=a[2];if(c<=d)break}a=[0,d];break b}a=0}if(a){c=a[1];f=caml_bytes_get(f,c);a=f-128|0;b:{if(5<a>>>0){if(6!==a){if(num_160<=f&&num_175>=f){a=2;break b}a=1;break b}}else if(4!==a){a=2;break b}a=3}c=[0,c+a|0]}else
 c=0}if(!c)return function(a){return cm(a,e)};var
 j=c[1],i=[0,0];return function(a){if(cm(a,e))return 1;if(a[7]!==e)return 0;a=a[15];if(a===j)i[1]=1;var
-b=i[1];return b?be(a,h):b}}function
+b=i[1];return b?aG(a,h):b}}function
 ep(h,i,e){var
-a=h[1],e=a6(h,e);if(cm(h,e))return;var
-c=b(a,e,aS),d=b$(a,c),c=d===0?c:au(bl(a,d,b_(a,c)),c),d=cU(a,c),f=6+d[4]|0;if(a0(a,e)<f){var
-g=caml_make_vect(f,0),f=O(f,a0(a,e));b4(z(a,e),0,g,0,f);fM(a,e,x(a,a[8][8],[0,g]))}a=z(a,e);caml_check_bound(a,3)[aS+1]=c;c=m(0);caml_check_bound(a,1)[aK+1]=c;c=m((6+d[3]|0)-1|0);caml_check_bound(a,2)[ch+1]=c;d=6+d[2]|0;c=a.length-2|0;if(c>=d)for(;;){caml_check_bound(a,d)[d+1]=q;g=d+1|0;if(c===d)break;d=g}i[2]=e;aU(h)}function
-da(d,c){var
-a=d[1],c=c[2];if(c!==0&&!c6(d,c)){if(r(a,b_(a,b(a,c,aS)))!==str_doesNotUnderstand)return 0;d=b(a,c,6);var
-e=b(a,c,aT),c=b(a,c,bp);if(!g(d)){var
+a=h[1],e=a7(h,e);if(cm(h,e))return;var
+c=b(a,e,aT),d=b$(a,c),c=d===0?c:au(bl(a,d,b_(a,c)),c),d=cV(a,c),f=6+d[4]|0;if(a1(a,e)<f){var
+g=caml_make_vect(f,0),f=P(f,a1(a,e));b4(z(a,e),0,g,0,f);fN(a,e,x(a,a[8][8],[0,g]))}a=z(a,e);caml_check_bound(a,3)[aT+1]=c;c=m(0);caml_check_bound(a,1)[aL+1]=c;c=m((6+d[3]|0)-1|0);caml_check_bound(a,2)[ch+1]=c;d=6+d[2]|0;c=a.length-2|0;if(c>=d)for(;;){caml_check_bound(a,d)[d+1]=q;g=d+1|0;if(c===d)break;d=g}i[2]=e;aV(h)}function
+db(d,c){var
+a=d[1],c=c[2];if(c!==0&&!c7(d,c)){if(r(a,b_(a,b(a,c,aT)))!==str_doesNotUnderstand)return 0;d=b(a,c,6);var
+e=b(a,c,aU),c=b(a,c,bp);if(!g(d)){var
 f=a[8][10];if(o(a,d)===f){d=r(a,b(a,d,0));return[0,[0,o(a,e),d,c]]}}return 0}return 0}var
-gF=[num_248,str_Unix_Unix_error,caml_fresh_oo_id(0)];fC(str_Unix_Unix_error,[0,gF,0,str,str]);var
-jC=[0,[11,"EUNKNOWNERR ",[4,0,0,0,0]],"EUNKNOWNERR %d"],jB=[0,[11,"Unix.Unix_error(Unix.",[2,0,[11,str$1,[3,0,[11,str$1,[3,0,[12,41,0]]]]]]],"Unix.Unix_error(Unix.%s, %S, %S)"];dQ(function(b){if(b[1]!==gF)return 0;var
+gG=[num_248,str_Unix_Unix_error,caml_fresh_oo_id(0)];fD(str_Unix_Unix_error,[0,gG,0,str,str]);var
+jD=[0,[11,"EUNKNOWNERR ",[4,0,0,0,0]],"EUNKNOWNERR %d"],jC=[0,[11,"Unix.Unix_error(Unix.",[2,0,[11,str$1,[3,0,[11,str$1,[3,0,[12,41,0]]]]]]],"Unix.Unix_error(Unix.%s, %S, %S)"];dQ(function(b){if(b[1]!==gG)return 0;var
 a=b[2],c=b[4],b=b[3];if(typeof
 a==="number")if(34<=a)switch(a){case
 34:a=str_ESPIPE;break;case
@@ -2939,118 +2939,118 @@ switch(a){case
 29:a=str_ENXIO;break;case
 30:a=str_EPERM;break;case
 31:a=str_EPIPE;break;case
-32:a=str_ERANGE;break;default:a=str_EROFS}else{a=a[1];a=caml_call1(G(jC),a)}return[0,caml_call3(G(jB),a,b,c)]});aH(0,7);A=dZ(0);d0(A);fJ(0,A);A="stdout";j="open_out";i="stdin";var
-str_argv="argv",dp="exit",str_stderr="stderr",str_signal="signal",str_tmp="tmp",a="open_in",dq="memory_limit",str_mouse="mouse",str_time_limit="time_limit",str_wait="wait",str_env="env",aN="bind",str_random="random",by="draw",C="mount",bx="network",str_chdir="chdir",bw="fork",aM="keyboard",cw="kill",str_exec="exec",db=dZ([0,a,str_argv,aN,by,str_exec,dp,bw,str_chdir,cw,str_wait,bx,str_time_limit,aM,j,str_env,str_tmp,str_readdir,i,str_stderr,A,C,str_mouse,str_signal,str_random,dq]),a=aY(function(a){return fH(db,a)},[0,str_wait,str_tmp,str_time_limit,A,i,str_stderr,str_signal,str_readdir,str_random,j,a,bx,str_mouse,C,dq,cw,aM,bw,dp,str_exec,str_env,by,str_chdir,aN,str_argv]);iA(db,[0,a[8],function(b,a){return 0},a[2],function(a){return 0},a[11],function(b,a){return 0},a[10],function(b,a){return 0},a[5],function(a){return 0},a[4],function(a){return 0},a[6],function(a){return 0},a[22],function(a){return 0},a[17],function(a){return 0},a[13],function(a){return 0},a[25],function(a){return 0},a[21],function(a){return 0},a[23],function(a){return 0},a[7],function(a){return 0},a[3],function(a){return 0},a[15],function(a){return 0},a[18],function(a){return 0},a[1],function(a){return 0},a[16],function(a){return 0},a[19],function(a){return 0},a[14],function(a){return 0},a[24],function(a){return 0},a[9],function(a){return 0},a[20],function(b,a){return 0},a[12],function(b,a){return 0}]);d0(db);function
-dc(a){return a?a[4]:0}function
+32:a=str_ERANGE;break;default:a=str_EROFS}else{a=a[1];a=caml_call1(G(jD),a)}return[0,caml_call3(G(jC),a,b,c)]});aI(0,7);A=dZ(0);d0(A);fK(0,A);A="stdout";j="open_out";i="stdin";var
+str_argv="argv",dq="exit",str_stderr="stderr",str_signal="signal",str_tmp="tmp",a="open_in",dr="memory_limit",str_mouse="mouse",str_time_limit="time_limit",str_wait="wait",str_env="env",aO="bind",str_random="random",by="draw",C="mount",bx="network",str_chdir="chdir",bw="fork",aN="keyboard",cw="kill",str_exec="exec",dc=dZ([0,a,str_argv,aO,by,str_exec,dq,bw,str_chdir,cw,str_wait,bx,str_time_limit,aN,j,str_env,str_tmp,str_readdir,i,str_stderr,A,C,str_mouse,str_signal,str_random,dr]),a=aZ(function(a){return fI(dc,a)},[0,str_wait,str_tmp,str_time_limit,A,i,str_stderr,str_signal,str_readdir,str_random,j,a,bx,str_mouse,C,dr,cw,aN,bw,dq,str_exec,str_env,by,str_chdir,aO,str_argv]);iB(dc,[0,a[8],function(b,a){return 0},a[2],function(a){return 0},a[11],function(b,a){return 0},a[10],function(b,a){return 0},a[5],function(a){return 0},a[4],function(a){return 0},a[6],function(a){return 0},a[22],function(a){return 0},a[17],function(a){return 0},a[13],function(a){return 0},a[25],function(a){return 0},a[21],function(a){return 0},a[23],function(a){return 0},a[7],function(a){return 0},a[3],function(a){return 0},a[15],function(a){return 0},a[18],function(a){return 0},a[1],function(a){return 0},a[16],function(a){return 0},a[19],function(a){return 0},a[14],function(a){return 0},a[24],function(a){return 0},a[9],function(a){return 0},a[20],function(b,a){return 0},a[12],function(b,a){return 0}]);d0(dc);function
+dd(a){return a?a[4]:0}function
 aC(c,e,b){var
 d=c?c[4]:0,a=b?b[4]:0,a=a<=d?d+1|0:a+1|0;return[0,c,e,b,a]}function
-a9(c,g,b){var
+a_(c,g,b){var
 d=c?c[4]:0,a=b?b[4]:0,e="Set.bal";if((a+2|0)<d){if(!c)return u(e);a=c[3];d=c[2];c=c[1];var
-f=dc(a);if(f<=dc(c))return aC(c,d,aC(a,g,b));if(!a)return u(e);e=a[2];f=a[1];a=aC(a[3],g,b);return aC(aC(c,d,f),e,a)}if((d+2|0)>=a){e=a<=d?d+1|0:a+1|0;return[0,c,g,b,e]}if(!b)return u(e);a=b[3];f=b[2];b=b[1];d=dc(b);if(d<=dc(a))return aC(aC(c,g,b),f,a);if(!b)return u(e);e=b[2];d=b[1];f=aC(b[3],f,a);return aC(aC(c,g,d),e,f)}function
+f=dd(a);if(f<=dd(c))return aC(c,d,aC(a,g,b));if(!a)return u(e);e=a[2];f=a[1];a=aC(a[3],g,b);return aC(aC(c,d,f),e,a)}if((d+2|0)>=a){e=a<=d?d+1|0:a+1|0;return[0,c,g,b,e]}if(!b)return u(e);a=b[3];f=b[2];b=b[1];d=dd(b);if(d<=dd(a))return aC(aC(c,g,b),f,a);if(!b)return u(e);e=b[2];d=b[1];f=aC(b[3],f,a);return aC(aC(c,g,d),e,f)}function
 cn(b,a){if(!a)return[0,0,b,0,1];var
-d=a[3],c=a[2],e=a[1],f=caml_compare(b,c);return 0===f?a:0<=f?a9(e,c,cn(b,d)):a9(cn(b,e),c,d)}function
+d=a[3],c=a[2],e=a[1],f=caml_compare(b,c);return 0===f?a:0<=f?a_(e,c,cn(b,d)):a_(cn(b,e),c,d)}function
 bO(b,c,a){if(!b)return cn(c,a);if(!a)return cn(c,b);var
-d=a[4],e=b[4],f=a[3],g=a[2],h=a[1],i=b[3],j=b[2],k=b[1];return(d+2|0)<e?a9(k,j,bO(i,c,a)):(e+2|0)<d?a9(bO(b,c,h),g,f):aC(b,c,a)}function
-gG(a){for(;;){if(!a)throw caml_maybe_attach_backtrace(Not_found,1);var
+d=a[4],e=b[4],f=a[3],g=a[2],h=a[1],i=b[3],j=b[2],k=b[1];return(d+2|0)<e?a_(k,j,bO(i,c,a)):(e+2|0)<d?a_(bO(b,c,h),g,f):aC(b,c,a)}function
+gH(a){for(;;){if(!a)throw caml_maybe_attach_backtrace(Not_found,1);var
 b=a[1];if(!b)return a[2];a=b}}function
 eq(a){if(!a)return u("Set.remove_min_elt");var
 b=a[1];if(!b)return a[3];var
-c=a[3],a=a[2];return a9(eq(b),a,c)}var
-jF=[0,0,0,0];function
-er(c,a){if(!a)return jF;var
+c=a[3],a=a[2];return a_(eq(b),a,c)}var
+jG=[0,0,0,0];function
+er(c,a){if(!a)return jG;var
 b=a[3],e=a[2],a=a[1],d=caml_compare(c,e);if(0===d)return[0,a,1,b];if(0<=d){b=er(c,b);c=b[3];d=b[2];return[0,bO(a,e,b[1]),d,c]}a=er(c,a);d=a[2];c=a[1];return[0,c,d,bO(a[3],e,b)]}function
-gH(e,a){for(;;){if(!a)return 0;var
+gI(e,a){for(;;){if(!a)return 0;var
 c=a[3],d=a[1],a=caml_compare(e,a[2]),b=0===a?1:0;if(b)return b;a=0<=a?c:d}}function
 es(d,a){if(!a)return 0;var
-b=a[3],c=a[2],a=a[1],e=caml_compare(d,c);if(0!==e)return 0<=e?a9(a,c,es(d,b)):a9(es(d,a),c,b);if(!a)return b;if(!b)return a;c=eq(b);return a9(a,gG(b),c)}function
+b=a[3],c=a[2],a=a[1],e=caml_compare(d,c);if(0!==e)return 0<=e?a_(a,c,es(d,b)):a_(es(d,a),c,b);if(!a)return b;if(!b)return a;c=eq(b);return a_(a,gH(b),c)}function
 co(b,a){if(!b)return 0;if(!a)return b;var
-d=b[3],e=b[2],b=b[1],a=er(e,a),c=a[1];if(!a[2]){d=co(d,a[3]);return bO(co(b,c),e,d)}a=co(d,a[3]);c=co(b,c);if(!c)return a;if(!a)return c;b=eq(a);return bO(c,gG(a),b)}function
-gI(b,a){for(;;){if(!a)return b;var
-c=a[2],d=a[1];b=[0,c,gI(b,a[3])];a=d}}function
-gJ(c,b,a){return caml_lessthan(a,c)?c:caml_greaterthan(a,b)?b:a}function
-et(a){return gJ(0,num_255,a)}function
-gL(a){return typeof
-a==="number"?0:3===a[0]?hC(gL,a[1]):[0,a,0]}var
+d=b[3],e=b[2],b=b[1],a=er(e,a),c=a[1];if(!a[2]){d=co(d,a[3]);return bO(co(b,c),e,d)}a=co(d,a[3]);c=co(b,c);if(!c)return a;if(!a)return c;b=eq(a);return bO(c,gH(a),b)}function
+gJ(b,a){for(;;){if(!a)return b;var
+c=a[2],d=a[1];b=[0,c,gJ(b,a[3])];a=d}}function
+gK(c,b,a){return caml_lessthan(a,c)?c:caml_greaterthan(a,b)?b:a}function
+et(a){return gK(0,num_255,a)}function
+gM(a){return typeof
+a==="number"?0:3===a[0]?hD(gM,a[1]):[0,a,0]}var
 num_1=-1.;function
-jI(a){return dF(num_1,bC(1.,a))}var
-jJ=caml_tanh_float;function
-gM(a,b){a=a?a[1]:0;a=a?jJ:jI;return aY(a,b)}var
+jJ(a){return dF(num_1,bC(1.,a))}var
+jK=caml_tanh_float;function
+gN(a,b){a=a?a[1]:0;a=a?jK:jJ;return aZ(a,b)}var
 num_6_283185307179586=6.283185307179586,num_0_25=.25,num_0_75=.75;function
 cp(b,a){switch(b){case
 0:return Math.sin(num_6_283185307179586*a);case
 1:return a<num_0_5?1.:num_1;case
 2:return a<num_0_25?4.*a:a<num_0_75?2.-4.*a:4.*a-4.;default:return 2.*a-1.}}function
 eu(b,a){if(a<b){b=a/b;return 2.*b-b*b-1.}if(!(1.-b<a))return 0.;a=(a-1.)/b;return a*a+2.*a+1.}function
-gN(b,a){if(a<b){b=1.-a/b;return b*b*b/6.}if(!(1.-b<a))return 0.;a=(a-1.)/b+1.;return a*a*a/6.}function
+gO(b,a){if(a<b){b=1.-a/b;return b*b*b/6.}if(!(1.-b<a))return 0.;a=(a-1.)/b+1.;return a*a*a/6.}function
 ev(a){return a-Math.floor(a)}var
 num_12=12.;function
 ew(a){return Math.pow(2.,a/num_12)}function
-gO(a){a=(dF(num_1,bC(1.,a))+1.)*3.141592653589793/4.;var
+gP(a){a=(dF(num_1,bC(1.,a))+1.)*3.141592653589793/4.;var
 num_1_4142135623730951=1.4142135623730951;return[0,num_1_4142135623730951*Math.cos(a),num_1_4142135623730951*Math.sin(a)]}function
 ex(a){return a-Math.floor(a)}var
-num_44100=44100.,jL=[0,2];function
-gP(b,a){var
+num_44100=44100.,jM=[0,2];function
+gQ(b,a){var
 c=b?b[1]:1.;return function(e,b){if(typeof
 a!=="number"){if(2===a[0]){var
 g=Math.sin(num_6_283185307179586*b[1]+a[2]*c*Math.sin(num_6_283185307179586*b[2])),h=b[6],f=b[5],i=b[4],d=b[3],j=ex(b[2]+e*a[1]/num_44100);return[0,g,[0,ex(b[1]+e/num_44100),j,d,i,f,h]]}f=a[1];e/=num_44100;a:{if(typeof
 a!=="number"&&0===a[0]){d=b[1];switch(f){case
 0:d=cp(f,d);break a;case
 1:g=eu(e,ev(d+num_0_5));i=eu(e,d);d=cp(f,d)+i-g;break a;case
-2:g=8.*e*gN(e,ev(d-num_0_75));i=8.*e*gN(e,ev(d-num_0_25));d=cp(f,d)-i+g;break a;default:g=eu(e,d);d=cp(f,d)-g;break a}}d=cp(f,b[1])}g=b[6];f=b[5];i=b[4];h=b[3];j=b[2];return[0,d,[0,ex(b[1]+e),j,h,i,f,g]]}if(0!==a)return gP(0,jL)(e,b);f=1===(b[3]&1)?1.:num_1;h=b[3];e=b[4]+e/num_44100;for(;;){if(!(1.<=e))return[0,f,[0,b[1],b[2],h,e,b[5],b[6]]];h=h>>>1|0|(h&1^(h>>>1|0)&1)<<14;e-=1.}}}function
-gQ(d,b,f){var
+2:g=8.*e*gO(e,ev(d-num_0_75));i=8.*e*gO(e,ev(d-num_0_25));d=cp(f,d)-i+g;break a;default:g=eu(e,d);d=cp(f,d)-g;break a}}d=cp(f,b[1])}g=b[6];f=b[5];i=b[4];h=b[3];j=b[2];return[0,d,[0,ex(b[1]+e),j,h,i,f,g]]}if(0!==a)return gQ(0,jM)(e,b);f=1===(b[3]&1)?1.:num_1;h=b[3];e=b[4]+e/num_44100;for(;;){if(!(1.<=e))return[0,f,[0,b[1],b[2],h,e,b[5],b[6]]];h=h>>>1|0|(h&1^(h>>>1|0)&1)<<14;e-=1.}}}function
+gR(d,b,f){var
 c=[0,d],e=d[5],d=dB(f,function(k){var
 h=c[1][6],j=b[7],d=1.,g=c[1];for(;;){if(!j)break;var
 a=j[1],j=j[2];switch(a[0]){case
 0:a=ew(a[2]*Math.sin(num_6_283185307179586*a[1]*h));break;case
 1:var
-i=a[1],a=h<a[2]?1.:ew(i);break;default:i=a[1];if(i){a=a[2];a=ew(e1(i,caml_mod(h/a|0,s(i))))}else
-a=1.}d*=a}h=b[2]*d;g=gP(0,b[1])(h,g);d=g[2];g=g[1];c[1]=[0,d[1],d[2],d[3],d[4],d[5],d[6]+2.2675736961451248e-5];return g*(e+(b[5]-e)*(k+1|0)/f)}),a=c[1];return[0,d,[0,a[1],a[2],a[3],a[4],b[5],a[6]]]}function
-a_(a){var
+i=a[1],a=h<a[2]?1.:ew(i);break;default:i=a[1];if(i){a=a[2];a=ew(e2(i,caml_mod(h/a|0,s(i))))}else
+a=1.}d*=a}h=b[2]*d;g=gQ(0,b[1])(h,g);d=g[2];g=g[1];c[1]=[0,d[1],d[2],d[3],d[4],d[5],d[6]+2.2675736961451248e-5];return g*(e+(b[5]-e)*(k+1|0)/f)}),a=c[1];return[0,d,[0,a[1],a[2],a[3],a[4],b[5],a[6]]]}function
+a$(a){var
 b=a[9]!==0.?[0,[1,a[9],a[10]],0]:0,c=0.<a[8]?[0,[0,a[7],a[8]],0]:0;n(c,b);if(0.<a[16])return}var
-jD=fJ(0,db);function
+jE=fK(0,dc);function
 ey(a){return a[1].length-1}var
-a=440.,num_0_03=.03,aN=.1,bx=880.,bw=.04,a=[0,0,a,a,0.,aN,aN,0.,0.,0.,0.,0.,0.,.707,0.,0.,0.,num_0_5],bx=[0,a[1],bx,bx,a[4],num_0_03,bw,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17]],by=1047.,num_0_4=.4,by=[0,a[1],by,by,a[4],.08,.22,a[7],a[8],7.,.07,a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_300=300.,bw=[0,a[1],num_300,650.,a[4],bw,.14,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_200=200.,dq=[0,1,1200.,num_200,a[4],.02,.18,a[7],a[8],a[9],a[10],8000.,num_1000$0,a[13],a[14],a[15],a[16],a[17]],i=1500.,dp=[0,4,3000.,i,a[4],.01,.09,a[7],a[8],a[9],a[10],5000.,a[12],a[13],a[14],a[15],a[16],a[17]],num_150=150.,aN=[0,4,i,num_150,a[4],aN,.6,a[7],a[8],a[9],a[10],4000.,num_150,a[13],a[14],a[15],a[16],num_0_75],num_0_3=.3,i=.05,A=[0,2,num_150,90.,a[4],0.,i,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_3],num_0_35=.35,a=[0,a[1],330.,990.,a[4],num_0_25,.2,14.,num_0_5,a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_35];k(function(a){switch(a){case
+a=440.,num_0_03=.03,aO=.1,bx=880.,bw=.04,a=[0,0,a,a,0.,aO,aO,0.,0.,0.,0.,0.,0.,.707,0.,0.,0.,num_0_5],bx=[0,a[1],bx,bx,a[4],num_0_03,bw,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],a[17]],by=1047.,num_0_4=.4,by=[0,a[1],by,by,a[4],.08,.22,a[7],a[8],7.,.07,a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_300=300.,bw=[0,a[1],num_300,650.,a[4],bw,.14,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_4],num_200=200.,dr=[0,1,1200.,num_200,a[4],.02,.18,a[7],a[8],a[9],a[10],8000.,num_1000$0,a[13],a[14],a[15],a[16],a[17]],i=1500.,dq=[0,4,3000.,i,a[4],.01,.09,a[7],a[8],a[9],a[10],5000.,a[12],a[13],a[14],a[15],a[16],a[17]],num_150=150.,aO=[0,4,i,num_150,a[4],aO,.6,a[7],a[8],a[9],a[10],4000.,num_150,a[13],a[14],a[15],a[16],num_0_75],num_0_3=.3,i=.05,A=[0,2,num_150,90.,a[4],0.,i,a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_3],num_0_35=.35,a=[0,a[1],330.,990.,a[4],num_0_25,.2,14.,num_0_5,a[9],a[10],a[11],a[12],a[13],a[14],a[15],a[16],num_0_35];k(function(a){switch(a){case
 0:return"hard";case
 1:return"tanh";case
 2:return"cubic";default:return"asymmetric"}},[0,0,[0,1,[0,2,[0,3,0]]]]);k(function(a){switch(a){case
 0:return"compressor";case
 1:return"limiter";default:return"gate"}},[0,0,[0,1,[0,2,0]]]);var
-gR=[num_248,"Jsoo_runtime.Error.Exn",caml_fresh_oo_id(0)];fC(str_jsError,[0,gR,[0]]);function
-gS(a){return caml_js_to_string(typeof
+gS=[num_248,"Jsoo_runtime.Error.Exn",caml_fresh_oo_id(0)];fD(str_jsError,[0,gS,[0]]);function
+gT(a){return caml_js_to_string(typeof
 a)}var
-ez=null,at=globalThis,cw="to_js",C=dZ([0,cw]),str_send="send";function
-iQ(d,b,h,f){var
+ez=null,aq=globalThis,cw="to_js",C=dZ([0,cw]),str_send="send";function
+iR(d,b,h,f){var
 a=s(f),g=caml_create_bytes(a+4|0);if(a>=0){var
-c=0;for(;;){caml_bytes_set(g,c,P(16+c|0));var
-e=c+1|0;if(a===c)break;c=e}}caml_bytes_set(g,a+1|0,P(num_131));caml_bytes_set(g,a+2|0,P(a<<5));caml_bytes_set(g,a+3|0,P(num_124));h=J(d[1],h);e=ar(a+1|0,function(a){return 0===a?"receiver":"arg"+str+a});c=J(d[1],str_send);e=ei(d,fO(d[1],[0,0,a+1|0,a+1|0,(2*a|0)+4|0],[0,h],g,c,q,str,[0,[0,a+1|0,0,0],0],e),q);b=[0,b,f];f=0;d=z(d[1],e[2]);for(;;){if(!b)return e;a=6+f|0;h=b[2];b=b[1];caml_check_bound(d,a)[a+1]=b;b=h;f=f+1|0}}var
-jj=[0,[0,"Definitions.st",`"The kernel's classes, the Blue Book's hierarchy (its part two), a\nsubset. St_boot reads these definitions before anything can run: it\nmakes every class and its metaclass from them, ties the knot at the top\n(Object class superclass == Class, Metaclass class class == Metaclass),\nthen compiles the methods of the other files. The fields the virtual\nmachine reads -- a class's, a context's, a Character's value -- are in\nthe order St_class.mli and St_interp.mli say."!\n\nnil subclass: #Object\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Behavior\n\tinstanceVariableNames: 'superclass methodDict format'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nBehavior subclass: #ClassDescription\n\tinstanceVariableNames: 'instanceVariables organization'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Class\n\tinstanceVariableNames: 'name category classPool comment'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Metaclass\n\tinstanceVariableNames: 'thisClass'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nObject subclass: #UndefinedObject\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Boolean\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #True\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #False\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Association\n\tinstanceVariableNames: 'key value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Message\n\tinstanceVariableNames: 'selector arguments'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #Magnitude\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Character\n\tinstanceVariableNames: 'value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Number\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Integer\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger subclass: #SmallInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger variableByteSubclass: #LargePositiveInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nLargePositiveInteger variableByteSubclass: #LargeNegativeInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Float\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Fraction\n\tinstanceVariableNames: 'numerator denominator'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nObject subclass: #Point\n\tinstanceVariableNames: 'x y'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Rectangle\n\tinstanceVariableNames: 'origin corner'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Collection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nCollection subclass: #SequenceableCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nSequenceableCollection subclass: #ArrayedCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nArrayedCollection variableSubclass: #Array\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nArrayedCollection variableByteSubclass: #String\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nString variableByteSubclass: #Symbol\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nArrayedCollection variableByteSubclass: #ByteArray\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nSequenceableCollection subclass: #Interval\n\tinstanceVariableNames: 'start stop step'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nSequenceableCollection variableSubclass: #OrderedCollection\n\tinstanceVariableNames: 'firstIndex lastIndex'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nOrderedCollection variableSubclass: #SortedCollection\n\tinstanceVariableNames: 'sortBlock'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nCollection variableSubclass: #Set\n\tinstanceVariableNames: 'tally'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nSet variableSubclass: #Dictionary\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nCollection subclass: #Bag\n\tinstanceVariableNames: 'contents'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nObject subclass: #SystemDictionary\n\tinstanceVariableNames: 'associations'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Stream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nStream subclass: #PositionableStream\n\tinstanceVariableNames: 'collection position readLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #ReadStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #WriteStream\n\tinstanceVariableNames: 'writeLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nWriteStream subclass: #ReadWriteStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nObject subclass: #MethodDictionary\n\tinstanceVariableNames: 'selectors methods'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #CompiledMethod\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject variableSubclass: #ContextPart\n\tinstanceVariableNames: 'sender pc stackp'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #MethodContext\n\tinstanceVariableNames: 'method unused receiver'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #BlockContext\n\tinstanceVariableNames: 'nargs startpc home'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #TextCollector\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Interface-Transcript'!\n\nObject subclass: #Time\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Form\n\tinstanceVariableNames: 'bits width height'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Display Objects'!\n\nObject subclass: #BitBlt\n\tinstanceVariableNames: 'destForm sourceForm halftoneForm combinationRule destX destY width height sourceX sourceY clipX clipY clipWidth clipHeight'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Support'!\n\nBitBlt subclass: #Pen\n\tinstanceVariableNames: 'frame location direction penDown'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #InputSensor\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Processes'!\n`],[0,[0,"Objects.st",`"Object, nil, the Booleans, and the two small classes everything\nuses: Association (key -> value) and Message (what doesNotUnderstand:\nreceives)."!\n\n!Object methodsFor: 'comparing'!\n== anObject\n\t"The same object: the oops equal. Never fails."\n\t<primitive: 110>\n\tself primitiveFailed!\n\n= anObject\n\t"Equal: by default, the same object. Subclasses say more."\n\t^self == anObject!\n\n~= anObject\n\t^(self = anObject) == false!\n\n~~ anObject\n\t^(self == anObject) == false!\n\nhash\n\t"Equal objects must have equal hashes."\n\t^self identityHash!\n\nidentityHash\n\t<primitive: 75>\n\tself primitiveFailed! !\n\n!Object methodsFor: 'class membership'!\nclass\n\t<primitive: 111>\n\tself primitiveFailed!\n\nisKindOf: aClass\n\t| c |\n\tc := self class.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\nisMemberOf: aClass\n\t^self class == aClass!\n\nrespondsTo: aSymbol\n\t^self class canUnderstand: aSymbol! !\n\n!Object methodsFor: 'testing'!\nisNil\n\t^false!\n\nnotNil\n\t^true!\n\nisString\n\t^false!\n\nisSymbol\n\t^false!\n\nisNumber\n\t^false!\n\nisInteger\n\t^false!\n\nisSmallInteger\n\t^false!\n\nisCharacter\n\t^false!\n\nisClass\n\t^false!\n\nisArray\n\t^false!\n\nifNil: aBlock\n\t^self!\n\nifNotNil: aBlock\n\t^aBlock value: self! !\n\n!Object methodsFor: 'accessing'!\nat: index\n\t"The indexed field, from 1."\n\t<primitive: 60>\n\tself checkIndex: index!\n\nat: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nbasicAt: index\n\t<primitive: 60>\n\tself checkIndex: index!\n\nbasicAt: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nsize\n\t"How many indexed fields."\n\t<primitive: 62>\n\t^0!\n\nbasicSize\n\t<primitive: 62>\n\t^0!\n\ninstVarAt: index\n\t<primitive: 73>\n\tself error: 'Index out of bounds'!\n\ninstVarAt: index put: value\n\t<primitive: 74>\n\tself error: 'Index out of bounds'!\n\nyourself\n\t^self!\n\ncheckIndex: index\n\tindex isInteger ifFalse: [^self error: 'Index must be an integer'].\n\t(index < 1 or: [index > self basicSize])\n\t\tifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self error: 'Improper store into indexable object'! !\n\n!Object methodsFor: 'copying'!\nshallowCopy\n\t"A new object with the same fields: they are shared, not copied."\n\t<primitive: 153>\n\tself primitiveFailed!\n\ncopy\n\t^self shallowCopy!\n\ndeepCopy\n\t| new |\n\tnew := self shallowCopy.\n\t1 to: self class instSize do: [:i | new instVarAt: i put: (self instVarAt: i) copy].\n\t^new! !\n\n!Object methodsFor: 'printing'!\nprintString\n\t"What 'print it' shows: printOn: into a stream on a String."\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream.\n\t^aStream contents!\n\nprintOn: aStream\n\t"By default, the class's name with an article: a Point, an Object."\n\t| title |\n\ttitle := self class name.\n\taStream nextPutAll: ((title at: 1) isVowel ifTrue: ['an '] ifFalse: ['a ']).\n\taStream nextPutAll: title!\n\ndisplayString\n\t^self printString!\n\ndisplayNl\n\tTranscript show: self displayString; cr!\n\nprintNl\n\tTranscript show: self printString; cr! !\n\n!Object methodsFor: 'error handling'!\nerror: aString\n\t"Stop the process, a notifier titled aString: St_debug.mli.\n\tProceeding answers nil."\n\t<primitive: 141>!\n\ndoesNotUnderstand: aMessage\n\t"No method for aMessage selector, up the whole superclass chain."\n\t^self error: 'Message not understood: ', aMessage selector!\n\nhalt\n\t^self error: 'Halt'!\n\nprimitiveFailed\n\t^self error: 'Primitive failed'!\n\nsubclassResponsibility\n\t^self error: 'My subclass should have overridden one of my messages'!\n\nshouldNotImplement\n\t^self error: 'This message is not appropriate for this object'!\n\nmustBeBoolean\n\t^self error: 'NonBoolean receiver--proceed for truth'!\n\ncannotReturn: value\n\t^self error: 'Context cannot return'! !\n\n!Object methodsFor: 'message handling'!\nperform: aSymbol\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: anObject\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: first with: second\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol withArguments: anArray\n\t<primitive: 84>\n\t^self error: 'Wrong number of arguments'! !\n\n!Object methodsFor: 'system primitives'!\nbecome: otherObject\n\t"Swap the two objects: every reference to one now reaches the\n\tother (St_memory.mli)."\n\t<primitive: 72>\n\tself primitiveFailed!\n\ninspect\n\t"An Inspector on the receiver."\n\t<primitive: 158>!\n\n-> anObject\n\t^Association key: self value: anObject! !\n\n!UndefinedObject methodsFor: 'testing'!\nisNil\n\t^true!\n\nnotNil\n\t^false!\n\nifNil: aBlock\n\t^aBlock value!\n\nifNotNil: aBlock\n\t^self! !\n\n!UndefinedObject methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'nil'! !\n\n!UndefinedObject methodsFor: 'class definition'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t"A class with no superclass: Object's own definition."\n\t<primitive: 143>\n\tself primitiveFailed! !\n\n!Boolean methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: (self ifTrue: ['true'] ifFalse: ['false'])! !\n\n!Boolean methodsFor: 'copying'!\nshallowCopy\n\t"true and false are unique."\n\t^self! !\n\n!True methodsFor: 'controlling'!\nifTrue: trueBlock\n\t"Sent only when the argument is not a literal block: the compiler\n\tinlines the other cases into jumps (St_compile.mli)."\n\t^trueBlock value!\n\nifFalse: falseBlock\n\t^nil!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^trueBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^trueBlock value!\n\nand: aBlock\n\t^aBlock value!\n\nor: aBlock\n\t^true! !\n\n!True methodsFor: 'logical operations'!\n& aBoolean\n\t^aBoolean!\n\n| aBoolean\n\t^true!\n\nnot\n\t^false! !\n\n!False methodsFor: 'controlling'!\nifTrue: trueBlock\n\t^nil!\n\nifFalse: falseBlock\n\t^falseBlock value!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^falseBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^falseBlock value!\n\nand: aBlock\n\t^false!\n\nor: aBlock\n\t^aBlock value! !\n\n!False methodsFor: 'logical operations'!\n& aBoolean\n\t^false!\n\n| aBoolean\n\t^aBoolean!\n\nnot\n\t^true! !\n\n!Association class methodsFor: 'instance creation'!\nkey: aKey value: aValue\n\t^self new key: aKey value: aValue! !\n\n!Association methodsFor: 'accessing'!\nkey\n\t^key!\n\nvalue\n\t^value!\n\nkey: aKey value: aValue\n\tkey := aKey.\n\tvalue := aValue!\n\nvalue: aValue\n\tvalue := aValue! !\n\n!Association methodsFor: 'comparing'!\n= anAssociation\n\t^(anAssociation isKindOf: Association)\n\t\tand: [key = anAssociation key and: [value = anAssociation value]]!\n\nhash\n\t^key hash! !\n\n!Association methodsFor: 'printing'!\nprintOn: aStream\n\tkey printOn: aStream.\n\taStream nextPutAll: '->'.\n\tvalue printOn: aStream! !\n\n!Message methodsFor: 'accessing'!\nselector\n\t^selector!\n\narguments\n\t^arguments! !\n\n!Message methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Message ('; nextPutAll: selector.\n\targuments do: [:each | aStream space; print: each].\n\taStream nextPut: $)! !\n`],[0,[0,"Classes.st",`"Classes are objects: Behavior (what makes instances and finds\nmethods), ClassDescription (instance variables' names, the methods'\ncategories), Class and Metaclass. And the objects of the machine\nitself: the SystemDictionary Smalltalk, method dictionaries, compiled\nmethods, the contexts, and Time."!\n\n!Behavior methodsFor: 'instance creation'!\nnew\n\t<primitive: 70>\n\t^self error: 'This class cannot make instances with new'!\n\nnew: anInteger\n\t<primitive: 71>\n\t^self error: 'This class cannot make indexed instances'!\n\nbasicNew\n\t<primitive: 70>\n\tself primitiveFailed!\n\nbasicNew: anInteger\n\t<primitive: 71>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'accessing'!\nsuperclass\n\t^superclass!\n\nmethodDictionary\n\t^methodDict!\n\ninstSize\n\t"The named fields of an instance: the format's high bits."\n\t^format bitShift: -3!\n\nisVariable\n\t^(format bitAnd: 7) between: 1 and: 2!\n\ninstanceVariableNames\n\t| names |\n\tnames := superclass == nil ifTrue: [OrderedCollection new] ifFalse: [superclass instanceVariableNames].\n\tinstanceVariables == nil ifFalse: [instanceVariables do: [:each | names add: each]].\n\t^names!\n\nselectors\n\t<primitive: 149>\n\tself primitiveFailed!\n\nallInstances\n\t<primitive: 145>\n\tself primitiveFailed!\n\nsubclasses\n\t| result |\n\tresult := OrderedCollection new.\n\tSmalltalk classesDo: [:each | each superclass == self ifTrue: [result add: each]].\n\t^result!\n\nwithAllSuperclasses\n\t| result c |\n\tresult := OrderedCollection new.\n\tc := self.\n\t[c == nil] whileFalse: [result add: c. c := c superclass].\n\t^result! !\n\n!Behavior methodsFor: 'testing'!\nisClass\n\t^true!\n\ninheritsFrom: aClass\n\t| c |\n\tc := superclass.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\ncanUnderstand: aSymbol\n\t<primitive: 147>\n\tself primitiveFailed!\n\nincludesSelector: aSymbol\n\t<primitive: 148>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'compiling'!\ncompile: code classified: category\n\t"What the Browser's accept does: the selector, or the compiler's\n\tcomplaint, a String."\n\t<primitive: 142>\n\tself primitiveFailed!\n\ncompile: code\n\t^self compile: code classified: 'as yet unclassified'! !\n\n!Behavior methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self name! !\n\n!Class methodsFor: 'accessing'!\nname\n\t^name!\n\ncategory\n\t^category!\n\ncomment\n\t^comment!\n\ncomment: aString\n\tcomment := aString! !\n\n!Class methodsFor: 'subclass creation'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 143>\n\tself primitiveFailed!\n\nvariableSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 151>\n\tself primitiveFailed!\n\nvariableByteSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 152>\n\tself primitiveFailed! !\n\n!Metaclass methodsFor: 'accessing'!\nname\n\t^thisClass name , ' class'!\n\nsoleInstance\n\t^thisClass!\n\ncategory\n\t^thisClass category! !\n\n!SystemDictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key]!\n\nat: key ifAbsent: aBlock\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifTrue: [^aBlock value].\n\t^a value!\n\nat: key put: value\n\t"The same Association kept: the methods that use the global see\n\tits new value (St_class.mli)."\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifFalse: [a value: value. ^value].\n\tassociations := associations copyWith: (Association key: key asSymbol value: value).\n\t^value!\n\nassociationAt: key ifAbsent: aBlock\n\t| k |\n\tk := key asSymbol.\n\tassociations do: [:each | each key == k ifTrue: [^each]].\n\t^aBlock value!\n\nincludesKey: key\n\tself associationAt: key ifAbsent: [^false].\n\t^true!\n\nkeys\n\t^associations collect: [:each | each key]!\n\nclassesDo: aBlock\n\tassociations do: [:each | (each value isClass and: [each value name == each key]) ifTrue: [aBlock value: each value]]!\n\ngarbageCollect\n\t"The entries freed."\n\t<primitive: 146>\n\tself primitiveFailed! !\n\n!SystemDictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'Smalltalk'! !\n\n!MethodDictionary methodsFor: 'accessing'!\nkeys\n\t^selectors!\n\nat: aSymbol\n\t1 to: selectors size do: [:i | (selectors at: i) == aSymbol ifTrue: [^methods at: i]].\n\t^self error: 'Key not found'!\n\nsize\n\t^selectors size! !\n\n!CompiledMethod methodsFor: 'accessing'!\nselector\n\t<primitive: 156>\n\tself primitiveFailed!\n\nmethodClass\n\t<primitive: 157>\n\tself primitiveFailed! !\n\n!CompiledMethod methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self methodClass name; nextPutAll: '>>'; nextPutAll: self selector! !\n\n!ContextPart methodsFor: 'controlling'!\nblockCopy: numArgs\n\t"What the compiler sends for each [...]: a BlockContext that will\n\tstart after the jump that follows this send (St_compile.mli)."\n\t<primitive: 80>\n\tself primitiveFailed! !\n\n!ContextPart methodsFor: 'accessing'!\nsender\n\t^sender!\n\nmethod\n\t^self subclassResponsibility!\n\nreceiver\n\t^self subclassResponsibility! !\n\n!MethodContext methodsFor: 'accessing'!\nmethod\n\t^method!\n\nreceiver\n\t^receiver!\n\nhome\n\t^self! !\n\n!MethodContext methodsFor: 'printing'!\nprintOn: aStream\n\t"Point(Object)>>printString: the receiver's class, and the class\n\tthe method was found in if another"\n\t| mclass |\n\tmclass := method methodClass.\n\taStream nextPutAll: receiver class name.\n\tmclass == receiver class ifFalse: [aStream nextPut: $(; nextPutAll: mclass name; nextPut: $)].\n\taStream nextPutAll: '>>'; nextPutAll: method selector! !\n\n!BlockContext methodsFor: 'accessing'!\nmethod\n\t^home method!\n\nreceiver\n\t^home receiver!\n\nhome\n\t^home!\n\nnumArgs\n\t^nargs! !\n\n!BlockContext methodsFor: 'evaluating'!\nvalue\n\t"Evaluate the block. It runs in this same context each time: the\n\tBlue Book's blocks are not reentrant (St_compile.mli)."\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3 value: arg4\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalueWithArguments: anArray\n\t<primitive: 82>\n\t^self error: 'Wrong number of arguments'! !\n\n!BlockContext methodsFor: 'controlling'!\nwhileTrue: aBlock\n\t"Sent only when the compiler could not inline it."\n\t[self value] whileTrue: [aBlock value].\n\t^nil!\n\nwhileFalse: aBlock\n\t[self value] whileFalse: [aBlock value].\n\t^nil!\n\nwhileTrue\n\t[self value] whileTrue.\n\t^nil!\n\nrepeat\n\t[true] whileTrue: [self value]! !\n\n!BlockContext methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: '[] in '.\n\thome printOn: aStream! !\n\n!Time class methodsFor: 'general inquiries'!\nmillisecondClock\n\t<primitive: 144>\n\tself primitiveFailed!\n\nmillisecondsToRun: aBlock\n\t| start |\n\tstart := self millisecondClock.\n\taBlock value.\n\t^self millisecondClock - start! !\n\n!TextCollector methodsFor: 'accessing'!\nshow: aString\n\t"The Transcript's text, given to the host."\n\t<primitive: 140>\n\t^self show: aString printString!\n\nnextPutAll: aString\n\t^self show: aString!\n\nnextPut: aCharacter\n\t^self show: (String with: aCharacter)!\n\ncr\n\t^self nextPut: Character cr!\n\ntab\n\t^self nextPut: Character tab!\n\nspace\n\t^self nextPut: Character space!\n\nprint: anObject\n\t^self show: anObject printString!\n\ndisplay: anObject\n\t^self show: anObject displayString! !\n\n!TextCollector methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a TextCollector'! !\n`],[0,[0,"Numbers.st",`"The numbers. SmallInteger's arithmetic is primitives (and even the\nbytecodes' own, St_interp.mli); when one fails -- an overflow, or an\nargument of another kind -- the method's Smalltalk runs instead:\noverflows go on in LargePositiveInteger and LargeNegativeInteger,\nwritten here over their bytes as in the Blue Book, and mixed kinds are\ncoerced to the more general one (retry:coercing:, generality: a\nSmallInteger 20, a large one 40, a Fraction 60, a Float 80)."!\n\n!Magnitude methodsFor: 'comparing'!\n< aMagnitude\n\t^self subclassResponsibility!\n\n> aMagnitude\n\t^aMagnitude < self!\n\n<= aMagnitude\n\t^(aMagnitude < self) not!\n\n>= aMagnitude\n\t^(self < aMagnitude) not!\n\nbetween: min and: max\n\t^self >= min and: [self <= max]!\n\nmax: aMagnitude\n\t^self > aMagnitude ifTrue: [self] ifFalse: [aMagnitude]!\n\nmin: aMagnitude\n\t^self < aMagnitude ifTrue: [self] ifFalse: [aMagnitude]! !\n\n!Character class methodsFor: 'instance creation'!\nvalue: anInteger\n\t"The unique Character of a code: $a == (Character value: 97)."\n\t<primitive: 120>\n\t^self error: 'Not a character code'!\n\ndigitValue: anInteger\n\t^'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ' at: anInteger + 1!\n\ncr\n\t^self value: 13!\n\nlf\n\t^self value: 10!\n\ntab\n\t^self value: 9!\n\nspace\n\t^self value: 32! !\n\n!Character methodsFor: 'accessing'!\nvalue\n\t^value!\n\nasInteger\n\t^value!\n\nasCharacter\n\t^self!\n\ndigitValue\n\tvalue <= 57 ifTrue: [^value - 48].\n\tvalue <= 90 ifTrue: [^value - 55].\n\t^value - 87! !\n\n!Character methodsFor: 'comparing'!\n< aCharacter\n\t^value < aCharacter asInteger!\n\n= aCharacter\n\t^self == aCharacter!\n\nhash\n\t^value! !\n\n!Character methodsFor: 'testing'!\nisCharacter\n\t^true!\n\nisVowel\n\t^'aeiouAEIOU' includes: self!\n\nisLetter\n\t^self isUppercase or: [self isLowercase]!\n\nisUppercase\n\t^value between: 65 and: 90!\n\nisLowercase\n\t^value between: 97 and: 122!\n\nisDigit\n\t^value between: 48 and: 57!\n\nisSeparator\n\t^value = 32 or: [value = 13 or: [value = 9 or: [value = 10]]]! !\n\n!Character methodsFor: 'converting'!\nasUppercase\n\tself isLowercase ifTrue: [^Character value: value - 32].\n\t^self!\n\nasLowercase\n\tself isUppercase ifTrue: [^Character value: value + 32].\n\t^self!\n\nasString\n\t^String with: self! !\n\n!Character methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $$; nextPut: self!\n\ndisplayString\n\t^String with: self! !\n\n!Character methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!Number methodsFor: 'arithmetic'!\n+ aNumber\n\t^self subclassResponsibility!\n\n- aNumber\n\t^self + aNumber negated!\n\nnegated\n\t^0 - self!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self!\n\nreciprocal\n\t^1 / self!\n\nsquared\n\t^self * self!\n\n// aNumber\n\t^(self / aNumber) floor!\n\n\\\\ aNumber\n\t^self - (self // aNumber * aNumber)!\n\nquo: aNumber\n\t^(self / aNumber) truncated!\n\nrem: aNumber\n\t^self - ((self quo: aNumber) * aNumber)!\n\nraisedTo: anInteger\n\t| result |\n\tanInteger < 0 ifTrue: [^(self raisedTo: anInteger negated) reciprocal].\n\tresult := 1.\n\tanInteger timesRepeat: [result := result * self].\n\t^result!\n\nsqrt\n\t^self asFloat sqrt! !\n\n!Number methodsFor: 'testing'!\nisNumber\n\t^true!\n\nnegative\n\t^self < 0!\n\npositive\n\t^self >= 0!\n\nstrictlyPositive\n\t^self > 0!\n\nisZero\n\t^self = 0!\n\nsign\n\tself > 0 ifTrue: [^1].\n\tself < 0 ifTrue: [^-1].\n\t^0!\n\neven\n\t^self \\\\ 2 = 0!\n\nodd\n\t^self even not! !\n\n!Number methodsFor: 'truncation and round off'!\ntruncated\n\t^self subclassResponsibility!\n\nfloor\n\t| t |\n\tt := self truncated.\n\t(self < 0 and: [t ~= self]) ifTrue: [^t - 1].\n\t^t!\n\nceiling\n\t| t |\n\tt := self truncated.\n\t(self > 0 and: [t ~= self]) ifTrue: [^t + 1].\n\t^t!\n\nrounded\n\t^(self + (self sign / 2)) truncated!\n\nasInteger\n\t^self truncated! !\n\n!Number methodsFor: 'coercing'!\ngenerality\n\t^self subclassResponsibility!\n\ncoerce: aNumber\n\t^self subclassResponsibility!\n\nretry: aSymbol coercing: aNumber\n\t"Do the operation again, the less general number made like the\n\tother: 3 + (1/2) becomes (3/1) + (1/2)."\n\taNumber isNumber ifFalse: [\n\t\taSymbol == #= ifTrue: [^false].\n\t\taSymbol == #~= ifTrue: [^true].\n\t\t^self error: 'Not a number: ', aNumber printString].\n\tself generality < aNumber generality\n\t\tifTrue: [^(aNumber coerce: self) perform: aSymbol with: aNumber].\n\tself generality > aNumber generality\n\t\tifTrue: [^self perform: aSymbol with: (self coerce: aNumber)].\n\t^self error: 'Coercion failed'! !\n\n!Number methodsFor: 'intervals'!\nto: stop\n\t^Interval from: self to: stop by: 1!\n\nto: stop by: step\n\t^Interval from: self to: stop by: step!\n\nto: stop do: aBlock\n\t"Sent only when the compiler could not inline it."\n\t| i |\n\ti := self.\n\t[i <= stop] whileTrue: [aBlock value: i. i := i + 1]!\n\nto: stop by: step do: aBlock\n\t| i |\n\ti := self.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]! !\n\n!Number methodsFor: 'converting'!\n@ y\n\t"A Point."\n\t<primitive: 18>\n\t^Point x: self y: y!\n\nasPoint\n\t^self @ self! !\n\n!Number methodsFor: 'printing'!\nprintString: base\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream base: base.\n\t^aStream contents! !\n\n!Integer methodsFor: 'testing'!\nisInteger\n\t^true! !\n\n!Integer methodsFor: 'arithmetic'!\n+ anInteger\n\t"Here when a large integer is involved: SmallInteger's own + is a\n\tprimitive."\n\tanInteger isInteger ifFalse: [^self retry: #+ coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger asLargeInteger!\n\n- anInteger\n\tanInteger isInteger ifFalse: [^self retry: #- coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger negated asLargeInteger!\n\n* anInteger\n\tanInteger isInteger ifFalse: [^self retry: #* coercing: anInteger].\n\t^self asLargeInteger digitTimes: anInteger asLargeInteger!\n\n/ anInteger\n\t"An Integer if it divides exactly, else a Fraction."\n\tanInteger isInteger ifFalse: [^self retry: #/ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(Fraction numerator: self denominator: anInteger) reduced!\n\nquo: anInteger\n\t"Truncated towards zero."\n\tanInteger isInteger ifFalse: [^self retry: #quo: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 1!\n\nrem: anInteger\n\tanInteger isInteger ifFalse: [^self retry: #rem: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 2!\n\n// anInteger\n\t"Truncated towards minus infinity."\n\t| qr |\n\tanInteger isInteger ifFalse: [^self retry: #// coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tqr := self digitDivide: anInteger.\n\t((qr at: 2) ~= 0 and: [self negative ~~ anInteger negative]) ifTrue: [^(qr at: 1) - 1].\n\t^qr at: 1!\n\n\\\\ anInteger\n\t"The remainder of //: the sign of the divisor."\n\t| r |\n\tanInteger isInteger ifFalse: [^self retry: #\\\\ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tr := (self digitDivide: anInteger) at: 2.\n\t(r ~= 0 and: [r negative ~~ anInteger negative]) ifTrue: [^r + anInteger].\n\t^r!\n\n< anInteger\n\tanInteger isInteger ifFalse: [^self retry: #< coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) < 0!\n\n= anInteger\n\tanInteger isNumber ifFalse: [^false].\n\tanInteger isInteger ifFalse: [^self retry: #= coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) = 0!\n\nhash\n\t^(self \\\\ 1073741823) hash!\n\nnegated\n\t^0 - self!\n\ngcd: anInteger\n\t"Euclid's."\n\t| a b t |\n\ta := self abs.\n\tb := anInteger abs.\n\t[b = 0] whileFalse: [t := a \\\\ b. a := b. b := t].\n\t^a!\n\nlcm: anInteger\n\t^(self * anInteger) abs // (self gcd: anInteger)!\n\nfactorial\n\t"100 factorial printString size = 158."\n\t| result |\n\tself < 0 ifTrue: [^self error: 'Not valid for negative integers'].\n\tresult := 1.\n\t2 to: self do: [:i | result := result * i].\n\t^result!\n\ntimesRepeat: aBlock\n\t| i |\n\ti := 1.\n\t[i <= self] whileTrue: [aBlock value. i := i + 1]!\n\nisPrime\n\tself < 2 ifTrue: [^false].\n\t2 to: self sqrtFloor do: [:i | self \\\\ i = 0 ifTrue: [^false]].\n\t^true!\n\nsqrtFloor\n\t| r |\n\tr := self asFloat sqrt truncated.\n\t[r * r > self] whileTrue: [r := r - 1].\n\t[(r + 1) * (r + 1) <= self] whileTrue: [r := r + 1].\n\t^r! !\n\n!Integer methodsFor: 'coercing'!\ngenerality\n\t^40!\n\ncoerce: aNumber\n\t^aNumber asLargeInteger! !\n\n!Integer methodsFor: 'converting'!\nasFloat\n\t"A large integer's bytes, summed as floats."\n\t| f |\n\tf := 0.0.\n\tself digitLength to: 1 by: -1 do: [:i | f := f * 256.0 + (self digitAt: i)].\n\tself negative ifTrue: [^f negated].\n\t^f!\n\ntruncated\n\t^self!\n\nasCharacter\n\t^Character value: self!\n\ndigitDivide: anInteger\n\t"The quotient and the remainder truncated towards zero, an Array:\n\tby the schoolbook's short division when the divisor is small\n\tenough for a digit times it to stay a SmallInteger, else bit by\n\tbit."\n\t| a b qr q r |\n\ta := self abs asLargeInteger.\n\tb := anInteger abs.\n\tqr := (b isSmallInteger and: [b < 4194304])\n\t\tifTrue: [a shortDivide: b]\n\t\tifFalse: [a longDivide: b].\n\tq := qr at: 1.\n\tr := qr at: 2.\n\tself negative == anInteger negative ifFalse: [q := q negated].\n\tself negative ifTrue: [r := r negated].\n\t^Array with: q with: r! !\n\n!Integer methodsFor: 'printing'!\nprintOn: aStream\n\tself printOn: aStream base: 10!\n\nprintOn: aStream base: base\n\tself < 0 ifTrue: [aStream nextPut: $-. ^self negated printOn: aStream base: base].\n\tself >= base ifTrue: [self // base printOn: aStream base: base].\n\taStream nextPut: (Character digitValue: self \\\\ base)! !\n\n!SmallInteger class methodsFor: 'instance creation'!\nnew\n\t^self error: 'SmallIntegers are not made, they are'! !\n\n!SmallInteger methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 1>\n\t^super + aNumber!\n\n- aNumber\n\t<primitive: 2>\n\t^super - aNumber!\n\n< aNumber\n\t<primitive: 3>\n\t^super < aNumber!\n\n> aNumber\n\t<primitive: 4>\n\t^super > aNumber!\n\n<= aNumber\n\t<primitive: 5>\n\t^super <= aNumber!\n\n>= aNumber\n\t<primitive: 6>\n\t^super >= aNumber!\n\n= aNumber\n\t<primitive: 7>\n\t^super = aNumber!\n\n~= aNumber\n\t<primitive: 8>\n\t^super ~= aNumber!\n\n* aNumber\n\t<primitive: 9>\n\t^super * aNumber!\n\n/ aNumber\n\t<primitive: 10>\n\t^super / aNumber!\n\n\\\\ aNumber\n\t<primitive: 11>\n\t^super \\\\ aNumber!\n\n// aNumber\n\t<primitive: 12>\n\t^super // aNumber!\n\nquo: aNumber\n\t<primitive: 13>\n\t^super quo: aNumber!\n\nbitAnd: anInteger\n\t<primitive: 14>\n\t^self error: 'Not a SmallInteger'!\n\nbitOr: anInteger\n\t<primitive: 15>\n\t^self error: 'Not a SmallInteger'!\n\nbitXor: anInteger\n\t<primitive: 16>\n\t^self error: 'Not a SmallInteger'!\n\nbitShift: anInteger\n\t<primitive: 17>\n\tanInteger > 0 ifTrue: [^self asLargeInteger * (2 raisedTo: anInteger)].\n\t^self error: 'Not a SmallInteger'! !\n\n!SmallInteger methodsFor: 'testing'!\nisSmallInteger\n\t^true!\n\neven\n\t^(self bitAnd: 1) = 0! !\n\n!SmallInteger methodsFor: 'coercing'!\ngenerality\n\t^20!\n\ncoerce: aNumber\n\t^aNumber!\n\nasLargeInteger\n\t<primitive: 154>\n\tself primitiveFailed! !\n\n!SmallInteger methodsFor: 'converting'!\nasFloat\n\t<primitive: 40>\n\tself primitiveFailed!\n\nhash\n\t^self! !\n\n!SmallInteger methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digits'!\ndigitAt: index\n\t"A byte of the magnitude, least significant first; 0 past the end."\n\t<primitive: 60>\n\t^0!\n\ndigitAt: index put: value\n\t<primitive: 61>\n\tself primitiveFailed!\n\ndigitLength\n\t<primitive: 62>\n\tself primitiveFailed!\n\nnormalize\n\t"The leading zero bytes dropped, a SmallInteger if it fits."\n\t<primitive: 155>\n\tself primitiveFailed!\n\nasLargeInteger\n\t^self!\n\nnegative\n\t^false!\n\nnegated\n\t| result |\n\tresult := (self negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: self digitLength.\n\t1 to: self digitLength do: [:i | result digitAt: i put: (self digitAt: i)].\n\t^result normalize!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digit arithmetic'!\ndigitPlus: arg\n\t"The sum of two large integers of any signs."\n\tself negative == arg negative\n\t\tifTrue: [^(self magnitudeAdd: arg negative: self negative) normalize].\n\t(self magnitudeCompare: arg) >= 0\n\t\tifTrue: [^(self magnitudeSubtract: arg negative: self negative) normalize].\n\t^(arg magnitudeSubtract: self negative: arg negative) normalize!\n\nmagnitudeAdd: arg negative: aBoolean\n\t| len result carry sum |\n\tlen := (self digitLength max: arg digitLength) + 1.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tcarry := 0.\n\t1 to: len do: [:i |\n\t\tsum := (self digitAt: i) + (arg digitAt: i) + carry.\n\t\tresult digitAt: i put: (sum bitAnd: 255).\n\t\tcarry := sum bitShift: -8].\n\t^result!\n\nmagnitudeSubtract: arg negative: aBoolean\n\t"The receiver's magnitude is the larger."\n\t| len result borrow diff |\n\tlen := self digitLength.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tborrow := 0.\n\t1 to: len do: [:i |\n\t\tdiff := (self digitAt: i) - (arg digitAt: i) - borrow.\n\t\tdiff < 0\n\t\t\tifTrue: [diff := diff + 256. borrow := 1]\n\t\t\tifFalse: [borrow := 0].\n\t\tresult digitAt: i put: diff].\n\t^result!\n\nmagnitudeCompare: arg\n\t"-1, 0 or 1."\n\t| a b |\n\t(self digitLength max: arg digitLength) to: 1 by: -1 do: [:i |\n\t\ta := self digitAt: i.\n\t\tb := arg digitAt: i.\n\t\ta < b ifTrue: [^-1].\n\t\ta > b ifTrue: [^1]].\n\t^0!\n\ncompareWith: arg\n\tself negative == arg negative ifFalse: [self negative ifTrue: [^-1] ifFalse: [^1]].\n\tself negative ifTrue: [^arg magnitudeCompare: self].\n\t^self magnitudeCompare: arg!\n\ndigitTimes: arg\n\t"The schoolbook's: each digit of one by each of the other."\n\t| la lb result carry prod k |\n\tla := self digitLength.\n\tlb := arg digitLength.\n\tresult := (self negative == arg negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: la + lb.\n\t1 to: la do: [:i |\n\t\tcarry := 0.\n\t\t1 to: lb do: [:j |\n\t\t\tk := i + j - 1.\n\t\t\tprod := (self digitAt: i) * (arg digitAt: j) + (result digitAt: k) + carry.\n\t\t\tresult digitAt: k put: (prod bitAnd: 255).\n\t\t\tcarry := prod bitShift: -8].\n\t\tresult digitAt: i + lb put: carry].\n\t^result normalize!\n\nshortDivide: divisor\n\t"The magnitude by a small SmallInteger, a digit at a time from the\n\ttop: the quotient and the remainder."\n\t| len q r |\n\tlen := self digitLength.\n\tq := LargePositiveInteger new: len.\n\tr := 0.\n\tlen to: 1 by: -1 do: [:i |\n\t\tr := r * 256 + (self digitAt: i).\n\t\tq digitAt: i put: r // divisor.\n\t\tr := r \\\\ divisor].\n\t^Array with: q normalize with: r!\n\nlongDivide: divisor\n\t"A bit at a time: slow, but only for large divisors."\n\t| q r bit |\n\tq := 0.\n\tr := 0.\n\tself digitLength * 8 to: 1 by: -1 do: [:i |\n\t\tbit := ((self digitAt: i - 1 // 8 + 1) bitShift: 0 - (i - 1 \\\\ 8)) bitAnd: 1.\n\t\tr := r * 2 + bit.\n\t\tq := q * 2.\n\t\tr >= divisor ifTrue: [r := r - divisor. q := q + 1]].\n\t^Array with: q with: r! !\n\n!LargePositiveInteger methodsFor: 'bit manipulation'!\nbitShift: anInteger\n\tanInteger >= 0 ifTrue: [^self * (2 raisedTo: anInteger)].\n\t^self // (2 raisedTo: anInteger negated)!\n\nhash\n\t^self digitAt: 1! !\n\n!LargeNegativeInteger methodsFor: 'testing'!\nnegative\n\t^true! !\n\n!Fraction class methodsFor: 'instance creation'!\nnumerator: n denominator: d\n\t"Not reduced: Integer>>/ reduces it."\n\t^self new setNumerator: n denominator: d! !\n\n!Fraction methodsFor: 'private'!\nsetNumerator: n denominator: d\n\td < 0\n\t\tifTrue: [numerator := n negated. denominator := d negated]\n\t\tifFalse: [numerator := n. denominator := d]! !\n\n!Fraction methodsFor: 'accessing'!\nnumerator\n\t^numerator!\n\ndenominator\n\t^denominator! !\n\n!Fraction methodsFor: 'arithmetic'!\n+ aNumber\n\taNumber isNumber ifFalse: [^self retry: #+ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #+ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator + (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n- aNumber\n\taNumber isNumber ifFalse: [^self retry: #- coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #- coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator - (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n* aNumber\n\taNumber isNumber ifFalse: [^self retry: #* coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #* coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber numerator\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n/ aNumber\n\taNumber isNumber ifFalse: [^self retry: #/ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #/ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator\n\t\tdenominator: denominator * aNumber numerator) reduced!\n\nnegated\n\t^Fraction numerator: numerator negated denominator: denominator!\n\nreduced\n\t"Lowest terms, and an Integer when the denominator is 1."\n\t| g |\n\tnumerator = 0 ifTrue: [^0].\n\tg := numerator gcd: denominator.\n\tg = denominator ifTrue: [^numerator // g].\n\t^Fraction numerator: numerator // g denominator: denominator // g! !\n\n!Fraction methodsFor: 'comparing'!\n< aNumber\n\taNumber isNumber ifFalse: [^self retry: #< coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #< coercing: aNumber].\n\t^numerator * aNumber denominator < (aNumber numerator * denominator)!\n\n= aNumber\n\taNumber isNumber ifFalse: [^false].\n\taNumber generality = self generality ifFalse: [^self retry: #= coercing: aNumber].\n\t^numerator = aNumber numerator and: [denominator = aNumber denominator]!\n\nhash\n\t^numerator hash bitXor: denominator hash! !\n\n!Fraction methodsFor: 'truncation and round off'!\ntruncated\n\t^numerator quo: denominator! !\n\n!Fraction methodsFor: 'coercing'!\ngenerality\n\t^60!\n\ncoerce: aNumber\n\t^Fraction numerator: aNumber denominator: 1! !\n\n!Fraction methodsFor: 'converting'!\nasFloat\n\t^numerator asFloat / denominator asFloat! !\n\n!Fraction methodsFor: 'printing'!\nprintOn: aStream\n\taStream print: numerator; nextPut: $/; print: denominator! !\n\n!Float methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 41>\n\t^self retry: #+ coercing: aNumber!\n\n- aNumber\n\t<primitive: 42>\n\t^self retry: #- coercing: aNumber!\n\n< aNumber\n\t<primitive: 43>\n\t^self retry: #< coercing: aNumber!\n\n> aNumber\n\t<primitive: 44>\n\t^self retry: #> coercing: aNumber!\n\n<= aNumber\n\t<primitive: 45>\n\t^self retry: #<= coercing: aNumber!\n\n>= aNumber\n\t<primitive: 46>\n\t^self retry: #>= coercing: aNumber!\n\n= aNumber\n\t<primitive: 47>\n\t^self retry: #= coercing: aNumber!\n\n~= aNumber\n\t<primitive: 48>\n\t^self retry: #~= coercing: aNumber!\n\n* aNumber\n\t<primitive: 49>\n\t^self retry: #* coercing: aNumber!\n\n/ aNumber\n\t<primitive: 50>\n\taNumber = 0 ifTrue: [^self error: 'Division by zero'].\n\t^self retry: #/ coercing: aNumber!\n\nsqrt\n\t<primitive: 55>\n\tself primitiveFailed!\n\nsin\n\t<primitive: 56>\n\tself primitiveFailed!\n\ncos\n\t^(self + 1.5707963267948966) sin!\n\narcTan\n\t<primitive: 57>\n\tself primitiveFailed!\n\nln\n\t<primitive: 58>\n\tself primitiveFailed!\n\nexp\n\t<primitive: 59>\n\tself primitiveFailed! !\n\n!Float methodsFor: 'truncation and round off'!\ntruncated\n\t"Too large for a SmallInteger: the high part and the low part."\n\t| q |\n\t<primitive: 51>\n\tq := (self / 65536.0) truncated.\n\t^q * 65536 + (self - (q * 65536.0)) truncated! !\n\n!Float methodsFor: 'truncation and round off'!\nrounded\n\t^(self + (self sign * 0.5)) truncated! !\n\n!Float methodsFor: 'coercing'!\ngenerality\n\t^80!\n\ncoerce: aNumber\n\t^aNumber asFloat!\n\nasFloat\n\t^self!\n\nhash\n\t^self truncated hash! !\n\n!Float methodsFor: 'printing'!\nprintString\n\t<primitive: 130>\n\tself primitiveFailed!\n\nprintOn: aStream\n\taStream nextPutAll: self printString! !\n\n!Point class methodsFor: 'instance creation'!\nx: xInteger y: yInteger\n\t^self new setX: xInteger setY: yInteger! !\n\n!Point methodsFor: 'private'!\nsetX: xValue setY: yValue\n\tx := xValue.\n\ty := yValue! !\n\n!Point methodsFor: 'accessing'!\nx\n\t^x!\n\ny\n\t^y! !\n\n!Point methodsFor: 'arithmetic'!\n+ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x + p x) @ (y + p y)!\n\n- arg\n\t| p |\n\tp := arg asPoint.\n\t^(x - p x) @ (y - p y)!\n\n* arg\n\t| p |\n\tp := arg asPoint.\n\t^(x * p x) @ (y * p y)!\n\n/ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x / p x) @ (y / p y)!\n\n// arg\n\t| p |\n\tp := arg asPoint.\n\t^(x // p x) @ (y // p y)!\n\nabs\n\t^x abs @ y abs! !\n\n!Point methodsFor: 'comparing'!\n= aPoint\n\t^(aPoint isKindOf: Point) and: [x = aPoint x and: [y = aPoint y]]!\n\nhash\n\t^x hash bitXor: y hash!\n\n< aPoint\n\t^x < aPoint x and: [y < aPoint y]!\n\n> aPoint\n\t^x > aPoint x and: [y > aPoint y]!\n\n<= aPoint\n\t^x <= aPoint x and: [y <= aPoint y]!\n\n>= aPoint\n\t^x >= aPoint x and: [y >= aPoint y]!\n\nmax: aPoint\n\t^(x max: aPoint x) @ (y max: aPoint y)!\n\nmin: aPoint\n\t^(x min: aPoint x) @ (y min: aPoint y)! !\n\n!Point methodsFor: 'point functions'!\ndist: aPoint\n\t| dx dy |\n\tdx := aPoint x - x.\n\tdy := aPoint y - y.\n\t^(dx * dx + (dy * dy)) sqrt!\n\ntranspose\n\t^y @ x!\n\ncorner: aPoint\n\t^Rectangle origin: self corner: aPoint!\n\nextent: aPoint\n\t^Rectangle origin: self corner: self + aPoint! !\n\n!Point methodsFor: 'converting'!\nasPoint\n\t^self! !\n\n!Point methodsFor: 'printing'!\nprintOn: aStream\n\tx printOn: aStream.\n\taStream nextPut: $@.\n\ty printOn: aStream! !\n\n!Rectangle class methodsFor: 'instance creation'!\norigin: originPoint corner: cornerPoint\n\t^self new setOrigin: originPoint corner: cornerPoint! !\n\n!Rectangle methodsFor: 'private'!\nsetOrigin: originPoint corner: cornerPoint\n\torigin := originPoint.\n\tcorner := cornerPoint! !\n\n!Rectangle methodsFor: 'accessing'!\norigin\n\t^origin!\n\ncorner\n\t^corner!\n\nwidth\n\t^corner x - origin x!\n\nheight\n\t^corner y - origin y!\n\nextent\n\t^corner - origin!\n\narea\n\t^self width * self height! !\n\n!Rectangle methodsFor: 'rectangle functions'!\ncenter\n\t"The Blue Book's example of compiled code (St_bytecode.mli):\n\t0 1 176 119 185 124."\n\t^origin + corner / 2!\n\ncontainsPoint: aPoint\n\t^origin <= aPoint and: [aPoint < corner]!\n\nintersects: aRectangle\n\t^(origin max: aRectangle origin) < (corner min: aRectangle corner)! !\n\n!Rectangle methodsFor: 'comparing'!\n= aRectangle\n\t^(aRectangle isKindOf: Rectangle) and: [origin = aRectangle origin and: [corner = aRectangle corner]]!\n\nhash\n\t^origin hash bitXor: corner hash! !\n\n!Rectangle methodsFor: 'printing'!\nprintOn: aStream\n\torigin printOn: aStream.\n\taStream nextPutAll: ' corner: '.\n\tcorner printOn: aStream! !\n`],[0,[0,"Collections.st",`"The collections, and their iteration protocol -- do:, collect:,\nselect:, reject:, detect:, inject:into: -- the one the rest of the\nworld copied (Ruby's each, map, select, detect, inject; Python's\ncomprehensions). Every collection answers them once it has do:.\n\nOrderedCollection and Set grow the Blue Book's way: a bigger copy,\nthen 'self become: newSelf' (St_memory.mli), so that everything that\nknew the collection now knows the bigger one."!\n\n!Collection class methodsFor: 'instance creation'!\nwith: anObject\n\t^self new add: anObject; yourself!\n\nwith: first with: second\n\t^self new add: first; add: second; yourself!\n\nwith: first with: second with: third\n\t^self new add: first; add: second; add: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^self new add: first; add: second; add: third; add: fourth; yourself!\n\nwithAll: aCollection\n\t^self new addAll: aCollection; yourself! !\n\n!Collection methodsFor: 'adding'!\nadd: anObject\n\t^self subclassResponsibility!\n\naddAll: aCollection\n\taCollection do: [:each | self add: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'removing'!\nremove: oldObject\n\t^self remove: oldObject ifAbsent: [self error: 'Object is not in the collection']!\n\nremove: oldObject ifAbsent: aBlock\n\t^self subclassResponsibility!\n\nremoveAll: aCollection\n\taCollection do: [:each | self remove: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'testing'!\nincludes: anObject\n\tself do: [:each | anObject = each ifTrue: [^true]].\n\t^false!\n\nisEmpty\n\t^self size = 0!\n\nnotEmpty\n\t^self isEmpty not!\n\noccurrencesOf: anObject\n\t| tally |\n\ttally := 0.\n\tself do: [:each | anObject = each ifTrue: [tally := tally + 1]].\n\t^tally! !\n\n!Collection methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tself do: [:each | tally := tally + 1].\n\t^tally! !\n\n!Collection methodsFor: 'enumerating'!\ndo: aBlock\n\t^self subclassResponsibility!\n\ndo: aBlock separatedBy: separatorBlock\n\t| first |\n\tfirst := true.\n\tself do: [:each |\n\t\tfirst ifTrue: [first := false] ifFalse: [separatorBlock value].\n\t\taBlock value: each]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self species new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\nreject: aBlock\n\t^self select: [:each | (aBlock value: each) == false]!\n\ndetect: aBlock\n\t^self detect: aBlock ifNone: [self error: 'Object is not in the collection']!\n\ndetect: aBlock ifNone: exceptionBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^each]].\n\t^exceptionBlock value!\n\ninject: thisValue into: binaryBlock\n\t| nextValue |\n\tnextValue := thisValue.\n\tself do: [:each | nextValue := binaryBlock value: nextValue value: each].\n\t^nextValue!\n\nanySatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^true]].\n\t^false!\n\nallSatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifFalse: [^false]].\n\t^true!\n\nmax\n\t^self inject: self anyOne into: [:a :b | a max: b]!\n\nmin\n\t^self inject: self anyOne into: [:a :b | a min: b]!\n\nsum\n\t^self inject: 0 into: [:a :b | a + b]!\n\nanyOne\n\tself do: [:each | ^each].\n\t^self error: 'Collection is empty'! !\n\n!Collection methodsFor: 'converting'!\nasArray\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: each].\n\t^result!\n\nasOrderedCollection\n\t^OrderedCollection withAll: self!\n\nasBag\n\t^Bag withAll: self!\n\nasSet\n\t^Set withAll: self!\n\nasSortedCollection\n\t^SortedCollection withAll: self!\n\nasSortedCollection: aBlock\n\t^(SortedCollection sortBlock: aBlock) addAll: self; yourself! !\n\n!Collection methodsFor: 'private'!\nspecies\n\t^self class! !\n\n!Collection methodsFor: 'printing'!\nprintOn: aStream\n\t"OrderedCollection (1 2 3 ), as the Blue Book prints it."\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself do: [:element | element printOn: aStream. aStream space].\n\taStream nextPut: $)! !\n\n!SequenceableCollection methodsFor: 'comparing'!\n= aCollection\n\tself class == aCollection class ifFalse: [^false].\n\tself size = aCollection size ifFalse: [^false].\n\t1 to: self size do: [:i | (self at: i) = (aCollection at: i) ifFalse: [^false]].\n\t^true!\n\nhash\n\t^self size! !\n\n!SequenceableCollection methodsFor: 'accessing'!\nfirst\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: 1!\n\nlast\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: self size!\n\nindexOf: anElement\n\t1 to: self size do: [:i | (self at: i) = anElement ifTrue: [^i]].\n\t^0!\n\nallButFirst\n\t^self copyFrom: 2 to: self size!\n\nallButLast\n\t^self copyFrom: 1 to: self size - 1! !\n\n!SequenceableCollection methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i)]!\n\nreverseDo: aBlock\n\tself size to: 1 by: -1 do: [:i | aBlock value: (self at: i)]!\n\ndoWithIndex: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: i]!\n\nkeysAndValuesDo: aBlock\n\t1 to: self size do: [:i | aBlock value: i value: (self at: i)]!\n\nwith: aCollection do: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: (aCollection at: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := self species new: self size.\n\t1 to: self size do: [:i | result at: i put: (aBlock value: (self at: i))].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^(self species inheritsFrom: ArrayedCollection)\n\t\tifTrue: [(self species new: result size) replaceFrom: 1 to: result size with: result startingAt: 1]\n\t\tifFalse: [result]! !\n\n!SequenceableCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := self species new: (stop - start + 1 max: 0).\n\tstart to: stop do: [:i | result at: i - start + 1 put: (self at: i)].\n\t^result!\n\ncopyWith: newElement\n\t| result |\n\tresult := self species new: self size + 1.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult at: result size put: newElement.\n\t^result!\n\nreversed\n\t| result n |\n\tn := self size.\n\tresult := self species new: n.\n\t1 to: n do: [:i | result at: i put: (self at: n + 1 - i)].\n\t^result!\n\nreverse\n\t^self reversed!\n\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t| j |\n\tj := repStart.\n\tstart to: stop do: [:i | self at: i put: (replacement at: j). j := j + 1]!\n\n, aSequenceableCollection\n\t| result |\n\tresult := self species new: self size + aSequenceableCollection size.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult replaceFrom: self size + 1 to: result size with: aSequenceableCollection startingAt: 1.\n\t^result! !\n\n!SequenceableCollection methodsFor: 'converting'!\nreadStream\n\t^ReadStream on: self! !\n\n!ArrayedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 0!\n\nwith: anObject\n\t^(self new: 1) at: 1 put: anObject; yourself!\n\nwith: first with: second\n\t^(self new: 2) at: 1 put: first; at: 2 put: second; yourself!\n\nwith: first with: second with: third\n\t^(self new: 3) at: 1 put: first; at: 2 put: second; at: 3 put: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^(self new: 4) at: 1 put: first; at: 2 put: second; at: 3 put: third; at: 4 put: fourth; yourself!\n\nwithAll: aCollection\n\t| result i |\n\tresult := self new: aCollection size.\n\ti := 0.\n\taCollection do: [:each | result at: (i := i + 1) put: each].\n\t^result! !\n\n!ArrayedCollection methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!ArrayedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self shouldNotImplement! !\n\n!ArrayedCollection methodsFor: 'copying'!\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t"The primitive when both are pointers or both bytes."\n\t<primitive: 105>\n\t^super replaceFrom: start to: stop with: replacement startingAt: repStart! !\n\n!ArrayedCollection methodsFor: 'sorting'!\nasSortedArray\n\t^self asSortedCollection asArray! !\n\n!Array methodsFor: 'testing'!\nisArray\n\t^true! !\n\n!Array methodsFor: 'printing'!\nprintOn: aStream\n\t"#(1 $a 'b'), as a literal reads"\n\taStream nextPutAll: '#('.\n\tself do: [:each | each printOn: aStream] separatedBy: [aStream space].\n\taStream nextPut: $)! !\n\n!String class methodsFor: 'instance creation'!\nnew\n\t^self new: 0! !\n\n!String methodsFor: 'accessing'!\nat: index\n\t"A Character: the bytes are characters."\n\t<primitive: 63>\n\t^self checkIndex: index!\n\nat: index put: aCharacter\n\t<primitive: 64>\n\taCharacter isCharacter ifFalse: [^self error: 'Strings only store Characters'].\n\t^self checkIndex: index!\n\nsize\n\t<primitive: 62>\n\t^0! !\n\n!String methodsFor: 'comparing'!\n= aString\n\t<primitive: 123>\n\t^false!\n\n< aString\n\t<primitive: 124>\n\t^self error: 'Not a String'!\n\n> aString\n\t^aString < self!\n\n<= aString\n\t^(aString < self) not!\n\n>= aString\n\t^(self < aString) not!\n\nhash\n\t<primitive: 125>\n\t^0! !\n\n!String methodsFor: 'testing'!\nisString\n\t^true!\n\nincludesSubstring: aString\n\t| n |\n\tn := aString size.\n\t1 to: self size - n + 1 do: [:i | (self copyFrom: i to: i + n - 1) = aString ifTrue: [^true]].\n\t^false! !\n\n!String methodsFor: 'converting'!\nasSymbol\n\t<primitive: 122>\n\tself primitiveFailed!\n\nasString\n\t^self!\n\nasNumber\n\t"The number the text reads as, or nil."\n\t<primitive: 150>\n\t^nil!\n\nasUppercase\n\t^self collect: [:c | c asUppercase]!\n\nasLowercase\n\t^self collect: [:c | c asLowercase]!\n\ndisplayString\n\t^self!\n\nspecies\n\t^String! !\n\n!String methodsFor: 'printing'!\nprintOn: aStream\n\t"'it''s': quoted, a quote doubled"\n\taStream nextPut: $'.\n\tself do: [:c | aStream nextPut: c. c == $' ifTrue: [aStream nextPut: c]].\n\taStream nextPut: $'! !\n\n!Symbol class methodsFor: 'instance creation'!\nnew: anInteger\n\t^self error: 'Symbols are made by asSymbol, unique'! !\n\n!Symbol methodsFor: 'comparing'!\n= anObject\n\t"Symbols are unique: equal is identical."\n\t^self == anObject!\n\nhash\n\t^self identityHash! !\n\n!Symbol methodsFor: 'accessing'!\nat: index put: aCharacter\n\t^self error: 'Symbols cannot be changed'! !\n\n!Symbol methodsFor: 'converting'!\nasSymbol\n\t^self!\n\nasString\n\t| s |\n\ts := String new: self size.\n\ts replaceFrom: 1 to: self size with: self startingAt: 1.\n\t^s!\n\nnumArgs\n\t| n |\n\tn := 0.\n\tself do: [:c | c == $: ifTrue: [n := n + 1]].\n\t(n = 0 and: [(self at: 1) isLetter not]) ifTrue: [^1].\n\t^n! !\n\n!Symbol methodsFor: 'testing'!\nisSymbol\n\t^true! !\n\n!Symbol methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $#; nextPutAll: self!\n\ndisplayString\n\t^self asString! !\n\n!Symbol methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!ByteArray methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!Interval class methodsFor: 'instance creation'!\nfrom: start to: stop by: step\n\t^self new setFrom: start to: stop by: step! !\n\n!Interval methodsFor: 'private'!\nsetFrom: startNumber to: stopNumber by: stepNumber\n\tstart := startNumber.\n\tstop := stopNumber.\n\tstep := stepNumber!\n\nspecies\n\t^Array! !\n\n!Interval methodsFor: 'accessing'!\nsize\n\tstep > 0\n\t\tifTrue: [stop < start ifTrue: [^0]]\n\t\tifFalse: [start < stop ifTrue: [^0]].\n\t^stop - start // step + 1!\n\nat: index\n\t(index >= 1 and: [index <= self size]) ifTrue: [^start + (step * (index - 1))].\n\t^self error: 'Index out of bounds'!\n\nat: index put: anObject\n\t^self error: 'Intervals cannot be changed'! !\n\n!Interval methodsFor: 'enumerating'!\ndo: aBlock\n\t| i |\n\ti := start.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]!\n\ncollect: aBlock\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: (aBlock value: each)].\n\t^result! !\n\n!Interval methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $(; print: start; nextPutAll: ' to: '; print: stop.\n\tstep = 1 ifFalse: [aStream nextPutAll: ' by: '; print: step].\n\taStream nextPut: $)! !\n\n!OrderedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 8!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setIndices! !\n\n!OrderedCollection methodsFor: 'private'!\nsetIndices\n\tfirstIndex := self basicSize // 2 max: 1.\n\tlastIndex := firstIndex - 1!\n\nsetFirst: first last: last\n\tfirstIndex := first.\n\tlastIndex := last!\n\ngrow\n\t"A copy with room at both ends, then become: -- the receiver is the\n\tbigger one from now on, for whoever holds it."\n\t| newSelf newFirst n |\n\tn := self basicSize * 2 + 8.\n\tnewSelf := self class basicNew: n.\n\t1 to: self class instSize do: [:i | newSelf instVarAt: i put: (self instVarAt: i)].\n\tnewFirst := n - self size // 2 + 1.\n\t1 to: self size do: [:i | newSelf basicAt: newFirst + i - 1 put: (self basicAt: firstIndex + i - 1)].\n\tnewSelf setFirst: newFirst last: newFirst + self size - 1.\n\tself become: newSelf! !\n\n!OrderedCollection methodsFor: 'accessing'!\nsize\n\t^lastIndex - firstIndex + 1!\n\nat: index\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1!\n\nat: index put: anObject\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1 put: anObject! !\n\n!OrderedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self addLast: anObject!\n\naddLast: anObject\n\tlastIndex = self basicSize ifTrue: [self grow].\n\tlastIndex := lastIndex + 1.\n\t^self basicAt: lastIndex put: anObject!\n\naddFirst: anObject\n\tfirstIndex = 1 ifTrue: [self grow].\n\tfirstIndex := firstIndex - 1.\n\t^self basicAt: firstIndex put: anObject! !\n\n!OrderedCollection methodsFor: 'removing'!\nremoveFirst\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: firstIndex.\n\tself basicAt: firstIndex put: nil.\n\tfirstIndex := firstIndex + 1.\n\t^answer!\n\nremoveLast\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: lastIndex.\n\tself basicAt: lastIndex put: nil.\n\tlastIndex := lastIndex - 1.\n\t^answer!\n\nremove: oldObject ifAbsent: aBlock\n\t| index |\n\tindex := firstIndex.\n\t[index <= lastIndex] whileTrue: [\n\t\toldObject = (self basicAt: index) ifTrue: [\n\t\t\tindex to: lastIndex - 1 do: [:i | self basicAt: i put: (self basicAt: i + 1)].\n\t\t\tself basicAt: lastIndex put: nil.\n\t\t\tlastIndex := lastIndex - 1.\n\t\t\t^oldObject].\n\t\tindex := index + 1].\n\t^aBlock value! !\n\n!OrderedCollection methodsFor: 'enumerating'!\ndo: aBlock\n\tfirstIndex to: lastIndex do: [:i | aBlock value: (self basicAt: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self copyEmpty.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\ncopyEmpty\n\t^self class new! !\n\n!OrderedCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := OrderedCollection new.\n\tstart to: stop do: [:i | result addLast: (self at: i)].\n\t^result!\n\n, aCollection\n\t^self copy addAll: aCollection; yourself!\n\ncopy\n\t^self collect: [:each | each]!\n\nreversed\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result addFirst: each].\n\t^result! !\n\n!SortedCollection class methodsFor: 'instance creation'!\nnew\n\t^self sortBlock: [:a :b | a <= b]!\n\nsortBlock: aBlock\n\t^(self new: 8) setSortBlock: aBlock! !\n\n!SortedCollection methodsFor: 'private'!\nsetSortBlock: aBlock\n\tsortBlock := aBlock!\n\ncopyEmpty\n\t^SortedCollection sortBlock: sortBlock! !\n\n!SortedCollection methodsFor: 'adding'!\nadd: anObject\n\t"Put at the end, then moved down past the ones it sorts before:\n\tan insertion sort, one element at a time."\n\t| i |\n\tself addLast: anObject.\n\ti := lastIndex.\n\t[i > firstIndex and: [sortBlock value: anObject value: (self basicAt: i - 1)]] whileTrue: [\n\t\tself basicAt: i put: (self basicAt: i - 1).\n\t\ti := i - 1].\n\tself basicAt: i put: anObject.\n\t^anObject!\n\naddFirst: anObject\n\t^self shouldNotImplement!\n\nat: index put: anObject\n\t^self shouldNotImplement! !\n\n!SortedCollection methodsFor: 'accessing'!\nsortBlock\n\t^sortBlock!\n\nmedian\n\t^self at: self size + 1 // 2! !\n\n!SortedCollection methodsFor: 'enumerating'!\ncollect: aBlock\n\t"The answers are not sorted: an OrderedCollection."\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result! !\n\n!Set class methodsFor: 'instance creation'!\nnew\n\t^self new: 16!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setTally! !\n\n!Set methodsFor: 'private'!\nsetTally\n\ttally := 0!\n\nfindIndexFor: anObject\n\t"Where anObject is, or the empty slot where it would go: its hash,\n\tthen the next slots in turn (open addressing)."\n\t| index element |\n\tindex := anObject hash \\\\ self basicSize + 1.\n\t[element := self basicAt: index.\n\telement == nil or: [self matches: element key: anObject]]\n\t\twhileFalse: [index := index \\\\ self basicSize + 1].\n\t^index!\n\nmatches: element key: anObject\n\t^element = anObject!\n\ngrow\n\t| newSelf |\n\tnewSelf := self class new: self basicSize * 2.\n\t"the slots themselves: a Dictionary's do: gives its values"\n\t1 to: self basicSize do: [:i |\n\t\t(self basicAt: i) == nil ifFalse: [newSelf noCheckAdd: (self basicAt: i)]].\n\tself become: newSelf!\n\nnoCheckAdd: anObject\n\tself basicAt: (self findIndexFor: (self keyOf: anObject)) put: anObject.\n\ttally := tally + 1!\n\nkeyOf: element\n\t^element! !\n\n!Set methodsFor: 'accessing'!\nsize\n\t^tally! !\n\n!Set methodsFor: 'adding'!\nadd: newObject\n\t| index |\n\tnewObject == nil ifTrue: [^newObject].\n\tindex := self findIndexFor: newObject.\n\t(self basicAt: index) == nil ifTrue: [\n\t\tself basicAt: index put: newObject.\n\t\ttally := tally + 1.\n\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]].\n\t^newObject! !\n\n!Set methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| index rest |\n\tindex := self findIndexFor: oldObject.\n\t(self basicAt: index) == nil ifTrue: [^aBlock value].\n\tself basicAt: index put: nil.\n\ttally := tally - 1.\n\t"the ones after it, in its run, put again"\n\trest := OrderedCollection new.\n\tindex := index \\\\ self basicSize + 1.\n\t[(self basicAt: index) == nil] whileFalse: [\n\t\trest add: (self basicAt: index).\n\t\tself basicAt: index put: nil.\n\t\ttally := tally - 1.\n\t\tindex := index \\\\ self basicSize + 1].\n\trest do: [:each | self noCheckAdd: each].\n\t^oldObject! !\n\n!Set methodsFor: 'testing'!\nincludes: anObject\n\t^(self basicAt: (self findIndexFor: anObject)) ~~ nil! !\n\n!Set methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self basicSize do: [:i | | each | each := self basicAt: i. each == nil ifFalse: [aBlock value: each]]! !\n\n!Dictionary methodsFor: 'private'!\nmatches: element key: aKey\n\t^element key = aKey!\n\nkeyOf: element\n\t^element key! !\n\n!Dictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key printString]!\n\nat: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\t^assoc value!\n\nat: key put: value\n\t| index assoc |\n\tindex := self findIndexFor: key.\n\tassoc := self basicAt: index.\n\tassoc == nil\n\t\tifTrue: [\n\t\t\tself basicAt: index put: (Association key: key value: value).\n\t\t\ttally := tally + 1.\n\t\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]]\n\t\tifFalse: [assoc value: value].\n\t^value!\n\nassociationAt: key\n\t^self basicAt: (self findIndexFor: key)!\n\nkeys\n\t| result |\n\tresult := Set new.\n\tself associationsDo: [:assoc | result add: assoc key].\n\t^result!\n\nvalues\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:value | result add: value].\n\t^result!\n\nkeyAtValue: value\n\tself associationsDo: [:assoc | assoc value = value ifTrue: [^assoc key]].\n\t^nil! !\n\n!Dictionary methodsFor: 'adding'!\nadd: anAssociation\n\tself at: anAssociation key put: anAssociation value.\n\t^anAssociation! !\n\n!Dictionary methodsFor: 'removing'!\nremoveKey: key\n\t^self removeKey: key ifAbsent: [self error: 'Key not found']!\n\nremoveKey: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\tsuper remove: key ifAbsent: [].\n\t^assoc value! !\n\n!Dictionary methodsFor: 'testing'!\nincludesKey: key\n\t^(self basicAt: (self findIndexFor: key)) ~~ nil!\n\nincludes: value\n\tself do: [:each | each = value ifTrue: [^true]].\n\t^false! !\n\n!Dictionary methodsFor: 'enumerating'!\nassociationsDo: aBlock\n\tsuper do: aBlock!\n\ndo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc value]!\n\nkeysDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key]!\n\nkeysAndValuesDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key value: assoc value]!\n\ncollect: aBlock\n\t| result |\n\tresult := Bag new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := Dictionary new.\n\tself associationsDo: [:assoc | (aBlock value: assoc value) ifTrue: [result add: assoc]].\n\t^result! !\n\n!Dictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself associationsDo: [:assoc | aStream print: assoc; space].\n\taStream nextPut: $)! !\n\n!Bag class methodsFor: 'instance creation'!\nnew\n\t^self basicNew setContents! !\n\n!Bag methodsFor: 'private'!\nsetContents\n\tcontents := Dictionary new! !\n\n!Bag methodsFor: 'adding'!\nadd: newObject\n\t^self add: newObject withOccurrences: 1!\n\nadd: newObject withOccurrences: anInteger\n\tcontents at: newObject put: (contents at: newObject ifAbsent: [0]) + anInteger.\n\t^newObject! !\n\n!Bag methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| count |\n\tcount := contents at: oldObject ifAbsent: [^aBlock value].\n\tcount = 1\n\t\tifTrue: [contents removeKey: oldObject]\n\t\tifFalse: [contents at: oldObject put: count - 1].\n\t^oldObject! !\n\n!Bag methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tcontents do: [:count | tally := tally + count].\n\t^tally!\n\noccurrencesOf: anObject\n\t^contents at: anObject ifAbsent: [0]! !\n\n!Bag methodsFor: 'enumerating'!\ndo: aBlock\n\tcontents associationsDo: [:assoc | assoc value timesRepeat: [aBlock value: assoc key]]! !\n`],[0,[0,"Streams.st",`"Streams over collections: printString is printOn: into a WriteStream\non a String, and a ReadStream reads one element at a time."!\n\n!Stream methodsFor: 'accessing'!\nnext\n\t^self subclassResponsibility!\n\nnextPut: anObject\n\t^self subclassResponsibility!\n\nnextPutAll: aCollection\n\taCollection do: [:each | self nextPut: each].\n\t^aCollection!\n\natEnd\n\t^self subclassResponsibility!\n\ndo: aBlock\n\t[self atEnd] whileFalse: [aBlock value: self next]! !\n\n!Stream methodsFor: 'printing'!\nprint: anObject\n\tanObject printOn: self!\n\ncr\n\tself nextPut: Character cr!\n\ntab\n\tself nextPut: Character tab!\n\nspace\n\tself nextPut: Character space! !\n\n!PositionableStream class methodsFor: 'instance creation'!\non: aCollection\n\t^self basicNew on: aCollection! !\n\n!PositionableStream methodsFor: 'private'!\non: aCollection\n\tcollection := aCollection.\n\treadLimit := aCollection size.\n\tposition := 0! !\n\n!PositionableStream methodsFor: 'accessing'!\ncontents\n\t^collection copyFrom: 1 to: readLimit!\n\nposition\n\t^position!\n\nposition: anInteger\n\tposition := anInteger!\n\nreset\n\tposition := 0!\n\nisEmpty\n\t^readLimit = 0!\n\natEnd\n\t^position >= readLimit!\n\npeek\n\tself atEnd ifTrue: [^nil].\n\t^collection at: position + 1!\n\nskip: anInteger\n\tposition := (position + anInteger min: readLimit) max: 0!\n\nupTo: anObject\n\t| start |\n\tstart := position + 1.\n\t[self atEnd or: [self next = anObject]] whileFalse.\n\t^collection copyFrom: start to: (self atEnd ifTrue: [position] ifFalse: [position - 1])!\n\nupToEnd\n\t| start |\n\tstart := position + 1.\n\tposition := readLimit.\n\t^collection copyFrom: start to: readLimit!\n\nskipSeparators\n\t[self atEnd not and: [self peek isSeparator]] whileTrue: [self next]! !\n\n!ReadStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\nnextPut: anObject\n\t^self shouldNotImplement! !\n\n!WriteStream class methodsFor: 'instance creation'!\nwith: aCollection\n\t^(self on: aCollection) setToEnd! !\n\n!WriteStream methodsFor: 'private'!\non: aCollection\n\tsuper on: aCollection.\n\treadLimit := 0.\n\twriteLimit := aCollection size!\n\nsetToEnd\n\tposition := readLimit := writeLimit!\n\ngrowCollection\n\t| bigger |\n\tbigger := collection species new: collection size * 2 + 16.\n\tbigger replaceFrom: 1 to: collection size with: collection startingAt: 1.\n\tcollection := bigger.\n\twriteLimit := collection size! !\n\n!WriteStream methodsFor: 'accessing'!\nnextPut: anObject\n\tposition >= writeLimit ifTrue: [self growCollection].\n\tposition := position + 1.\n\tcollection at: position put: anObject.\n\tposition > readLimit ifTrue: [readLimit := position].\n\t^anObject!\n\ncontents\n\t^collection copyFrom: 1 to: position!\n\nnext\n\t^self shouldNotImplement! !\n\n!ReadWriteStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\ncontents\n\t^collection copyFrom: 1 to: readLimit! !\n\n!SequenceableCollection methodsFor: 'converting'!\nwriteStream\n\t^WriteStream on: self! !\n`],[0,[0,"Graphics.st",`"The display, as the Blue Book's chapters 18 to 20 have it: Forms,\npictures of one bit per pixel; BitBlt, the one primitive that draws\nthem (St_bitblt.mli); and Pen, a turtle that draws lines with it,\nLogo's idea brought to Smalltalk (Papert and Kay were friends).\nDisplay is the Form of the screen: what a Pen draws there is drawn over\nthe windows, until the screen menu's 'restore display' erases it."!\n\n!Form class methodsFor: 'instance creation'!\nextent: aPoint\n\t^self width: aPoint x height: aPoint y!\n\nwidth: w height: h\n\t^self new setBits: (ByteArray new: w + 15 // 16 * 2 * h) width: w height: h! !\n\n!Form methodsFor: 'private'!\nsetBits: aByteArray width: w height: h\n\tbits := aByteArray.\n\twidth := w.\n\theight := h! !\n\n!Form methodsFor: 'accessing'!\nwidth\n\t^width!\n\nheight\n\t^height!\n\nextent\n\t^width @ height!\n\nboundingBox\n\t^0 @ 0 corner: width @ height!\n\ncenter\n\t^(width // 2) @ (height // 2)!\n\nbits\n\t^bits! !\n\n!Form methodsFor: 'displaying'!\nfill: aRectangle rule: anInteger\n\t(BitBlt destForm: self sourceForm: nil halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aRectangle origin sourceOrigin: 0 @ 0 extent: aRectangle extent clipRect: self boundingBox) copyBits!\n\nfillWhite\n\tself fill: self boundingBox rule: 0!\n\nfillBlack\n\tself fill: self boundingBox rule: 15!\n\nreverse\n\tself fill: self boundingBox rule: 10!\n\ndisplayOn: aForm at: aPoint rule: anInteger\n\t(BitBlt destForm: aForm sourceForm: self halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aPoint sourceOrigin: 0 @ 0 extent: self extent clipRect: aForm boundingBox) copyBits!\n\ndisplayAt: aPoint\n\tself displayOn: Display at: aPoint rule: 3!\n\npixelAt: aPoint\n\t"0 or 1, read the BitBlt way: the pixel copied onto a Form of one."\n\t| one |\n\tone := Form width: 1 height: 1.\n\t(BitBlt destForm: one sourceForm: self halftoneForm: nil combinationRule: 3\n\t\tdestOrigin: 0 @ 0 sourceOrigin: aPoint extent: 1 @ 1 clipRect: one boundingBox) copyBits.\n\t^(one bits at: 1) bitShift: -7! !\n\n!Form methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Form('; print: width; nextPut: $x; print: height; nextPut: $)! !\n\n!BitBlt class methodsFor: 'instance creation'!\ndestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\t^self new\n\t\tsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr\n\t\tdestOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect! !\n\n!BitBlt methodsFor: 'private'!\nsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\tdestForm := df.\n\tsourceForm := sf.\n\thalftoneForm := hf.\n\tcombinationRule := cr.\n\tdestX := destOrigin x.\n\tdestY := destOrigin y.\n\tsourceX := sourceOrigin x.\n\tsourceY := sourceOrigin y.\n\twidth := extent x.\n\theight := extent y.\n\tclipX := clipRect origin x.\n\tclipY := clipRect origin y.\n\tclipWidth := clipRect width.\n\tclipHeight := clipRect height! !\n\n!BitBlt methodsFor: 'accessing'!\ndestForm: aForm\n\tdestForm := aForm!\n\nsourceForm: aForm\n\tsourceForm := aForm!\n\nhalftoneForm: aForm\n\thalftoneForm := aForm!\n\ncombinationRule: anInteger\n\tcombinationRule := anInteger!\n\ndestOrigin: aPoint\n\tdestX := aPoint x.\n\tdestY := aPoint y!\n\ndestX: x destY: y\n\tdestX := x.\n\tdestY := y!\n\nwidth: w height: h\n\twidth := w.\n\theight := h!\n\nclipRect: aRectangle\n\tclipX := aRectangle origin x.\n\tclipY := aRectangle origin y.\n\tclipWidth := aRectangle width.\n\tclipHeight := aRectangle height! !\n\n!BitBlt methodsFor: 'copying'!\ncopyBits\n\t"The one drawing primitive (St_bitblt.mli)."\n\t<primitive: 96>\n\t^self error: 'Bad BitBlt arguments'! !\n\n!Pen class methodsFor: 'instance creation'!\nnew\n\t"A pen of one pixel on the Display, at its center, pointing up."\n\t^super new defaultNib: 1! !\n\n!Pen methodsFor: 'initialize'!\ndefaultNib: n\n\tdestForm := Display.\n\tsourceForm := (Form width: n height: n) fillBlack; yourself.\n\tcombinationRule := 7.\n\twidth := n.\n\theight := n.\n\tsourceX := 0.\n\tsourceY := 0.\n\tself clipRect: Display boundingBox.\n\tframe := Display boundingBox.\n\tlocation := Display center.\n\tdirection := 270.\n\tpenDown := true! !\n\n!Pen methodsFor: 'accessing'!\nlocation\n\t^location!\n\ndirection\n\t^direction! !\n\n!Pen methodsFor: 'moving'!\nup\n\tpenDown := false!\n\ndown\n\tpenDown := true!\n\nturn: degrees\n\t"Clockwise, the y axis going down."\n\tdirection := direction + degrees \\\\ 360!\n\nnorth\n\tdirection := 270!\n\nhome\n\tlocation := Display center!\n\nplace: aPoint\n\tlocation := aPoint!\n\ngo: distance\n\t"Forward, drawing if the pen is down."\n\t| old radians |\n\told := location.\n\tradians := direction degreesToRadians.\n\tlocation := location + ((radians cos * distance) @ (radians sin * distance)).\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ngoto: aPoint\n\t| old |\n\told := location.\n\tlocation := aPoint.\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ndrawFrom: startPoint to: endPoint\n\t"Bresenham's line (1965), a copyBits of the nib at each point:\n\tthe error term says when to step across as well as along."\n\t| x0 y0 x1 y1 dx dy sx sy err e2 |\n\tx0 := startPoint x rounded.\n\ty0 := startPoint y rounded.\n\tx1 := endPoint x rounded.\n\ty1 := endPoint y rounded.\n\tdx := (x1 - x0) abs.\n\tdy := (y1 - y0) abs negated.\n\tsx := x0 < x1 ifTrue: [1] ifFalse: [-1].\n\tsy := y0 < y1 ifTrue: [1] ifFalse: [-1].\n\terr := dx + dy.\n\t[destX := x0.\n\tdestY := y0.\n\tself copyBits.\n\tx0 = x1 and: [y0 = y1]] whileFalse: [\n\t\te2 := 2 * err.\n\t\te2 >= dy ifTrue: [err := err + dy. x0 := x0 + sx].\n\t\te2 <= dx ifTrue: [err := err + dx. y0 := y0 + sy]]! !\n\n!Pen methodsFor: 'geometric designs'!\ndragon: n\n\t"The dragon curve, the Blue Book's (chapter 20): Pen new dragon: 9."\n\tn = 0\n\t\tifTrue: [self go: 10]\n\t\tifFalse: [\n\t\t\tn > 0\n\t\t\t\tifTrue: [self dragon: n - 1; turn: 90; dragon: 1 - n]\n\t\t\t\tifFalse: [self dragon: -1 - n; turn: -90; dragon: 1 + n]]!\n\nspiral: n angle: a\n\t"Pen new spiral: 200 angle: 89."\n\t1 to: n do: [:i | self go: i; turn: a]!\n\npolygon: sides length: length\n\tsides timesRepeat: [self go: length; turn: 360 // sides]!\n\nscribble\n\t"Pen new scribble: press the button and draw, release to stop --\n\tthe mouse read by Smalltalk while it runs."\n\tself place: Sensor waitButton.\n\t[Sensor anyButtonPressed] whileTrue: [self goto: Sensor mousePoint]! !\n\n!Number methodsFor: 'converting'!\ndegreesToRadians\n\t^self asFloat * 0.017453292519943295! !\n\n!InputSensor methodsFor: 'mouse'!\nmousePoint\n\t"Where the mouse is, on the Display."\n\t<primitive: 90>\n\tself primitiveFailed!\n\ncursorPoint\n\t^self mousePoint!\n\nbuttons\n\t<primitive: 91>\n\tself primitiveFailed!\n\nredButtonPressed\n\t^(self buttons bitAnd: 4) ~= 0!\n\nyellowButtonPressed\n\t^(self buttons bitAnd: 2) ~= 0!\n\nblueButtonPressed\n\t^(self buttons bitAnd: 1) ~= 0!\n\nanyButtonPressed\n\t^self buttons ~= 0!\n\nwaitButton\n\t[self anyButtonPressed] whileFalse.\n\t^self mousePoint!\n\nwaitNoButton\n\t[self anyButtonPressed] whileTrue! !\n`],[0,[0,"System.st",`"The last chunks the bootstrap runs, once every method is compiled:\nthe globals that are objects rather than classes."!\n\nSmalltalk at: #Transcript put: TextCollector new!\n\nSmalltalk at: #Display put: (Form extent: 800 @ 600)!\n\nSmalltalk at: #Sensor put: InputSensor new!\n\nRectangle comment: 'A rectangle of the screen, from its origin (top left) to its corner (bottom right), each a Point.'!\n\nPoint comment: 'A point of the screen, x to the right and y downwards: 3@4.'!\n\nObject comment: 'The root of the classes: what every object answers.'!\n`],0]]]]]]]],jx=[0,[2,0,[12,58,[4,0,0,0,[11,str$19,[2,0,0]]]]],"%s:%d: %s"],jw=[0,1],jv=[0,[2,0,[12,58,[4,0,0,0,[11,str$19,[2,0,[11,str$3,[2,0,0]]]]]]],"%s:%d: %s>>%s"];function
-ju(s,c){s=s?s[1]:jo;var
-l=[0,caml_make_vect(num_4096,0),caml_make_vect(num_4096,0),0,1,1,0,aH(0,num_1024),[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,[0],[0]]];caml_check_bound(l[2],0)[1]=[0,[0]];var
-f=l[8],c=jj,e=0;for(;;){if(!c)break;var
+c=0;for(;;){caml_bytes_set(g,c,Q(16+c|0));var
+e=c+1|0;if(a===c)break;c=e}}caml_bytes_set(g,a+1|0,Q(num_131));caml_bytes_set(g,a+2|0,Q(a<<5));caml_bytes_set(g,a+3|0,Q(num_124));h=J(d[1],h);e=as(a+1|0,function(a){return 0===a?"receiver":"arg"+str+a});c=J(d[1],str_send);e=ei(d,fP(d[1],[0,0,a+1|0,a+1|0,(2*a|0)+4|0],[0,h],g,c,q,str,[0,[0,a+1|0,0,0],0],e),q);b=[0,b,f];f=0;d=z(d[1],e[2]);for(;;){if(!b)return e;a=6+f|0;h=b[2];b=b[1];caml_check_bound(d,a)[a+1]=b;b=h;f=f+1|0}}var
+jk=[0,[0,"Definitions.st",`"The kernel's classes, the Blue Book's hierarchy (its part two), a\nsubset. St_boot reads these definitions before anything can run: it\nmakes every class and its metaclass from them, ties the knot at the top\n(Object class superclass == Class, Metaclass class class == Metaclass),\nthen compiles the methods of the other files. The fields the virtual\nmachine reads -- a class's, a context's, a Character's value -- are in\nthe order St_class.mli and St_interp.mli say."!\n\nnil subclass: #Object\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Behavior\n\tinstanceVariableNames: 'superclass methodDict format'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nBehavior subclass: #ClassDescription\n\tinstanceVariableNames: 'instanceVariables organization'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Class\n\tinstanceVariableNames: 'name category classPool comment'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Metaclass\n\tinstanceVariableNames: 'thisClass'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nObject subclass: #UndefinedObject\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Boolean\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #True\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #False\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Association\n\tinstanceVariableNames: 'key value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Message\n\tinstanceVariableNames: 'selector arguments'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #Magnitude\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Character\n\tinstanceVariableNames: 'value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Number\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Integer\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger subclass: #SmallInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger variableByteSubclass: #LargePositiveInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nLargePositiveInteger variableByteSubclass: #LargeNegativeInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Float\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Fraction\n\tinstanceVariableNames: 'numerator denominator'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nObject subclass: #Point\n\tinstanceVariableNames: 'x y'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Rectangle\n\tinstanceVariableNames: 'origin corner'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Collection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nCollection subclass: #SequenceableCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nSequenceableCollection subclass: #ArrayedCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nArrayedCollection variableSubclass: #Array\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nArrayedCollection variableByteSubclass: #String\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nString variableByteSubclass: #Symbol\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nArrayedCollection variableByteSubclass: #ByteArray\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nSequenceableCollection subclass: #Interval\n\tinstanceVariableNames: 'start stop step'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nSequenceableCollection variableSubclass: #OrderedCollection\n\tinstanceVariableNames: 'firstIndex lastIndex'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nOrderedCollection variableSubclass: #SortedCollection\n\tinstanceVariableNames: 'sortBlock'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nCollection variableSubclass: #Set\n\tinstanceVariableNames: 'tally'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nSet variableSubclass: #Dictionary\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nCollection subclass: #Bag\n\tinstanceVariableNames: 'contents'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nObject subclass: #SystemDictionary\n\tinstanceVariableNames: 'associations'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Stream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nStream subclass: #PositionableStream\n\tinstanceVariableNames: 'collection position readLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #ReadStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #WriteStream\n\tinstanceVariableNames: 'writeLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nWriteStream subclass: #ReadWriteStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nObject subclass: #MethodDictionary\n\tinstanceVariableNames: 'selectors methods'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #CompiledMethod\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject variableSubclass: #ContextPart\n\tinstanceVariableNames: 'sender pc stackp'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #MethodContext\n\tinstanceVariableNames: 'method unused receiver'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #BlockContext\n\tinstanceVariableNames: 'nargs startpc home'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #TextCollector\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Interface-Transcript'!\n\nObject subclass: #Time\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Form\n\tinstanceVariableNames: 'bits width height'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Display Objects'!\n\nObject subclass: #BitBlt\n\tinstanceVariableNames: 'destForm sourceForm halftoneForm combinationRule destX destY width height sourceX sourceY clipX clipY clipWidth clipHeight'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Support'!\n\nBitBlt subclass: #Pen\n\tinstanceVariableNames: 'frame location direction penDown'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #InputSensor\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Processes'!\n`],[0,[0,"Objects.st",`"Object, nil, the Booleans, and the two small classes everything\nuses: Association (key -> value) and Message (what doesNotUnderstand:\nreceives)."!\n\n!Object methodsFor: 'comparing'!\n== anObject\n\t"The same object: the oops equal. Never fails."\n\t<primitive: 110>\n\tself primitiveFailed!\n\n= anObject\n\t"Equal: by default, the same object. Subclasses say more."\n\t^self == anObject!\n\n~= anObject\n\t^(self = anObject) == false!\n\n~~ anObject\n\t^(self == anObject) == false!\n\nhash\n\t"Equal objects must have equal hashes."\n\t^self identityHash!\n\nidentityHash\n\t<primitive: 75>\n\tself primitiveFailed! !\n\n!Object methodsFor: 'class membership'!\nclass\n\t<primitive: 111>\n\tself primitiveFailed!\n\nisKindOf: aClass\n\t| c |\n\tc := self class.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\nisMemberOf: aClass\n\t^self class == aClass!\n\nrespondsTo: aSymbol\n\t^self class canUnderstand: aSymbol! !\n\n!Object methodsFor: 'testing'!\nisNil\n\t^false!\n\nnotNil\n\t^true!\n\nisString\n\t^false!\n\nisSymbol\n\t^false!\n\nisNumber\n\t^false!\n\nisInteger\n\t^false!\n\nisSmallInteger\n\t^false!\n\nisCharacter\n\t^false!\n\nisClass\n\t^false!\n\nisArray\n\t^false!\n\nifNil: aBlock\n\t^self!\n\nifNotNil: aBlock\n\t^aBlock value: self! !\n\n!Object methodsFor: 'accessing'!\nat: index\n\t"The indexed field, from 1."\n\t<primitive: 60>\n\tself checkIndex: index!\n\nat: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nbasicAt: index\n\t<primitive: 60>\n\tself checkIndex: index!\n\nbasicAt: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nsize\n\t"How many indexed fields."\n\t<primitive: 62>\n\t^0!\n\nbasicSize\n\t<primitive: 62>\n\t^0!\n\ninstVarAt: index\n\t<primitive: 73>\n\tself error: 'Index out of bounds'!\n\ninstVarAt: index put: value\n\t<primitive: 74>\n\tself error: 'Index out of bounds'!\n\nyourself\n\t^self!\n\ncheckIndex: index\n\tindex isInteger ifFalse: [^self error: 'Index must be an integer'].\n\t(index < 1 or: [index > self basicSize])\n\t\tifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self error: 'Improper store into indexable object'! !\n\n!Object methodsFor: 'copying'!\nshallowCopy\n\t"A new object with the same fields: they are shared, not copied."\n\t<primitive: 153>\n\tself primitiveFailed!\n\ncopy\n\t^self shallowCopy!\n\ndeepCopy\n\t| new |\n\tnew := self shallowCopy.\n\t1 to: self class instSize do: [:i | new instVarAt: i put: (self instVarAt: i) copy].\n\t^new! !\n\n!Object methodsFor: 'printing'!\nprintString\n\t"What 'print it' shows: printOn: into a stream on a String."\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream.\n\t^aStream contents!\n\nprintOn: aStream\n\t"By default, the class's name with an article: a Point, an Object."\n\t| title |\n\ttitle := self class name.\n\taStream nextPutAll: ((title at: 1) isVowel ifTrue: ['an '] ifFalse: ['a ']).\n\taStream nextPutAll: title!\n\ndisplayString\n\t^self printString!\n\ndisplayNl\n\tTranscript show: self displayString; cr!\n\nprintNl\n\tTranscript show: self printString; cr! !\n\n!Object methodsFor: 'error handling'!\nerror: aString\n\t"Stop the process, a notifier titled aString: St_debug.mli.\n\tProceeding answers nil."\n\t<primitive: 141>!\n\ndoesNotUnderstand: aMessage\n\t"No method for aMessage selector, up the whole superclass chain."\n\t^self error: 'Message not understood: ', aMessage selector!\n\nhalt\n\t^self error: 'Halt'!\n\nprimitiveFailed\n\t^self error: 'Primitive failed'!\n\nsubclassResponsibility\n\t^self error: 'My subclass should have overridden one of my messages'!\n\nshouldNotImplement\n\t^self error: 'This message is not appropriate for this object'!\n\nmustBeBoolean\n\t^self error: 'NonBoolean receiver--proceed for truth'!\n\ncannotReturn: value\n\t^self error: 'Context cannot return'! !\n\n!Object methodsFor: 'message handling'!\nperform: aSymbol\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: anObject\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: first with: second\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol withArguments: anArray\n\t<primitive: 84>\n\t^self error: 'Wrong number of arguments'! !\n\n!Object methodsFor: 'system primitives'!\nbecome: otherObject\n\t"Swap the two objects: every reference to one now reaches the\n\tother (St_memory.mli)."\n\t<primitive: 72>\n\tself primitiveFailed!\n\ninspect\n\t"An Inspector on the receiver."\n\t<primitive: 158>!\n\n-> anObject\n\t^Association key: self value: anObject! !\n\n!UndefinedObject methodsFor: 'testing'!\nisNil\n\t^true!\n\nnotNil\n\t^false!\n\nifNil: aBlock\n\t^aBlock value!\n\nifNotNil: aBlock\n\t^self! !\n\n!UndefinedObject methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'nil'! !\n\n!UndefinedObject methodsFor: 'class definition'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t"A class with no superclass: Object's own definition."\n\t<primitive: 143>\n\tself primitiveFailed! !\n\n!Boolean methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: (self ifTrue: ['true'] ifFalse: ['false'])! !\n\n!Boolean methodsFor: 'copying'!\nshallowCopy\n\t"true and false are unique."\n\t^self! !\n\n!True methodsFor: 'controlling'!\nifTrue: trueBlock\n\t"Sent only when the argument is not a literal block: the compiler\n\tinlines the other cases into jumps (St_compile.mli)."\n\t^trueBlock value!\n\nifFalse: falseBlock\n\t^nil!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^trueBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^trueBlock value!\n\nand: aBlock\n\t^aBlock value!\n\nor: aBlock\n\t^true! !\n\n!True methodsFor: 'logical operations'!\n& aBoolean\n\t^aBoolean!\n\n| aBoolean\n\t^true!\n\nnot\n\t^false! !\n\n!False methodsFor: 'controlling'!\nifTrue: trueBlock\n\t^nil!\n\nifFalse: falseBlock\n\t^falseBlock value!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^falseBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^falseBlock value!\n\nand: aBlock\n\t^false!\n\nor: aBlock\n\t^aBlock value! !\n\n!False methodsFor: 'logical operations'!\n& aBoolean\n\t^false!\n\n| aBoolean\n\t^aBoolean!\n\nnot\n\t^true! !\n\n!Association class methodsFor: 'instance creation'!\nkey: aKey value: aValue\n\t^self new key: aKey value: aValue! !\n\n!Association methodsFor: 'accessing'!\nkey\n\t^key!\n\nvalue\n\t^value!\n\nkey: aKey value: aValue\n\tkey := aKey.\n\tvalue := aValue!\n\nvalue: aValue\n\tvalue := aValue! !\n\n!Association methodsFor: 'comparing'!\n= anAssociation\n\t^(anAssociation isKindOf: Association)\n\t\tand: [key = anAssociation key and: [value = anAssociation value]]!\n\nhash\n\t^key hash! !\n\n!Association methodsFor: 'printing'!\nprintOn: aStream\n\tkey printOn: aStream.\n\taStream nextPutAll: '->'.\n\tvalue printOn: aStream! !\n\n!Message methodsFor: 'accessing'!\nselector\n\t^selector!\n\narguments\n\t^arguments! !\n\n!Message methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Message ('; nextPutAll: selector.\n\targuments do: [:each | aStream space; print: each].\n\taStream nextPut: $)! !\n`],[0,[0,"Classes.st",`"Classes are objects: Behavior (what makes instances and finds\nmethods), ClassDescription (instance variables' names, the methods'\ncategories), Class and Metaclass. And the objects of the machine\nitself: the SystemDictionary Smalltalk, method dictionaries, compiled\nmethods, the contexts, and Time."!\n\n!Behavior methodsFor: 'instance creation'!\nnew\n\t<primitive: 70>\n\t^self error: 'This class cannot make instances with new'!\n\nnew: anInteger\n\t<primitive: 71>\n\t^self error: 'This class cannot make indexed instances'!\n\nbasicNew\n\t<primitive: 70>\n\tself primitiveFailed!\n\nbasicNew: anInteger\n\t<primitive: 71>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'accessing'!\nsuperclass\n\t^superclass!\n\nmethodDictionary\n\t^methodDict!\n\ninstSize\n\t"The named fields of an instance: the format's high bits."\n\t^format bitShift: -3!\n\nisVariable\n\t^(format bitAnd: 7) between: 1 and: 2!\n\ninstanceVariableNames\n\t| names |\n\tnames := superclass == nil ifTrue: [OrderedCollection new] ifFalse: [superclass instanceVariableNames].\n\tinstanceVariables == nil ifFalse: [instanceVariables do: [:each | names add: each]].\n\t^names!\n\nselectors\n\t<primitive: 149>\n\tself primitiveFailed!\n\nallInstances\n\t<primitive: 145>\n\tself primitiveFailed!\n\nsubclasses\n\t| result |\n\tresult := OrderedCollection new.\n\tSmalltalk classesDo: [:each | each superclass == self ifTrue: [result add: each]].\n\t^result!\n\nwithAllSuperclasses\n\t| result c |\n\tresult := OrderedCollection new.\n\tc := self.\n\t[c == nil] whileFalse: [result add: c. c := c superclass].\n\t^result! !\n\n!Behavior methodsFor: 'testing'!\nisClass\n\t^true!\n\ninheritsFrom: aClass\n\t| c |\n\tc := superclass.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\ncanUnderstand: aSymbol\n\t<primitive: 147>\n\tself primitiveFailed!\n\nincludesSelector: aSymbol\n\t<primitive: 148>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'compiling'!\ncompile: code classified: category\n\t"What the Browser's accept does: the selector, or the compiler's\n\tcomplaint, a String."\n\t<primitive: 142>\n\tself primitiveFailed!\n\ncompile: code\n\t^self compile: code classified: 'as yet unclassified'! !\n\n!Behavior methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self name! !\n\n!Class methodsFor: 'accessing'!\nname\n\t^name!\n\ncategory\n\t^category!\n\ncomment\n\t^comment!\n\ncomment: aString\n\tcomment := aString! !\n\n!Class methodsFor: 'subclass creation'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 143>\n\tself primitiveFailed!\n\nvariableSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 151>\n\tself primitiveFailed!\n\nvariableByteSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 152>\n\tself primitiveFailed! !\n\n!Metaclass methodsFor: 'accessing'!\nname\n\t^thisClass name , ' class'!\n\nsoleInstance\n\t^thisClass!\n\ncategory\n\t^thisClass category! !\n\n!SystemDictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key]!\n\nat: key ifAbsent: aBlock\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifTrue: [^aBlock value].\n\t^a value!\n\nat: key put: value\n\t"The same Association kept: the methods that use the global see\n\tits new value (St_class.mli)."\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifFalse: [a value: value. ^value].\n\tassociations := associations copyWith: (Association key: key asSymbol value: value).\n\t^value!\n\nassociationAt: key ifAbsent: aBlock\n\t| k |\n\tk := key asSymbol.\n\tassociations do: [:each | each key == k ifTrue: [^each]].\n\t^aBlock value!\n\nincludesKey: key\n\tself associationAt: key ifAbsent: [^false].\n\t^true!\n\nkeys\n\t^associations collect: [:each | each key]!\n\nclassesDo: aBlock\n\tassociations do: [:each | (each value isClass and: [each value name == each key]) ifTrue: [aBlock value: each value]]!\n\ngarbageCollect\n\t"The entries freed."\n\t<primitive: 146>\n\tself primitiveFailed! !\n\n!SystemDictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'Smalltalk'! !\n\n!MethodDictionary methodsFor: 'accessing'!\nkeys\n\t^selectors!\n\nat: aSymbol\n\t1 to: selectors size do: [:i | (selectors at: i) == aSymbol ifTrue: [^methods at: i]].\n\t^self error: 'Key not found'!\n\nsize\n\t^selectors size! !\n\n!CompiledMethod methodsFor: 'accessing'!\nselector\n\t<primitive: 156>\n\tself primitiveFailed!\n\nmethodClass\n\t<primitive: 157>\n\tself primitiveFailed! !\n\n!CompiledMethod methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self methodClass name; nextPutAll: '>>'; nextPutAll: self selector! !\n\n!ContextPart methodsFor: 'controlling'!\nblockCopy: numArgs\n\t"What the compiler sends for each [...]: a BlockContext that will\n\tstart after the jump that follows this send (St_compile.mli)."\n\t<primitive: 80>\n\tself primitiveFailed! !\n\n!ContextPart methodsFor: 'accessing'!\nsender\n\t^sender!\n\nmethod\n\t^self subclassResponsibility!\n\nreceiver\n\t^self subclassResponsibility! !\n\n!MethodContext methodsFor: 'accessing'!\nmethod\n\t^method!\n\nreceiver\n\t^receiver!\n\nhome\n\t^self! !\n\n!MethodContext methodsFor: 'printing'!\nprintOn: aStream\n\t"Point(Object)>>printString: the receiver's class, and the class\n\tthe method was found in if another"\n\t| mclass |\n\tmclass := method methodClass.\n\taStream nextPutAll: receiver class name.\n\tmclass == receiver class ifFalse: [aStream nextPut: $(; nextPutAll: mclass name; nextPut: $)].\n\taStream nextPutAll: '>>'; nextPutAll: method selector! !\n\n!BlockContext methodsFor: 'accessing'!\nmethod\n\t^home method!\n\nreceiver\n\t^home receiver!\n\nhome\n\t^home!\n\nnumArgs\n\t^nargs! !\n\n!BlockContext methodsFor: 'evaluating'!\nvalue\n\t"Evaluate the block. It runs in this same context each time: the\n\tBlue Book's blocks are not reentrant (St_compile.mli)."\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3 value: arg4\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalueWithArguments: anArray\n\t<primitive: 82>\n\t^self error: 'Wrong number of arguments'! !\n\n!BlockContext methodsFor: 'controlling'!\nwhileTrue: aBlock\n\t"Sent only when the compiler could not inline it."\n\t[self value] whileTrue: [aBlock value].\n\t^nil!\n\nwhileFalse: aBlock\n\t[self value] whileFalse: [aBlock value].\n\t^nil!\n\nwhileTrue\n\t[self value] whileTrue.\n\t^nil!\n\nrepeat\n\t[true] whileTrue: [self value]! !\n\n!BlockContext methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: '[] in '.\n\thome printOn: aStream! !\n\n!Time class methodsFor: 'general inquiries'!\nmillisecondClock\n\t<primitive: 144>\n\tself primitiveFailed!\n\nmillisecondsToRun: aBlock\n\t| start |\n\tstart := self millisecondClock.\n\taBlock value.\n\t^self millisecondClock - start! !\n\n!TextCollector methodsFor: 'accessing'!\nshow: aString\n\t"The Transcript's text, given to the host."\n\t<primitive: 140>\n\t^self show: aString printString!\n\nnextPutAll: aString\n\t^self show: aString!\n\nnextPut: aCharacter\n\t^self show: (String with: aCharacter)!\n\ncr\n\t^self nextPut: Character cr!\n\ntab\n\t^self nextPut: Character tab!\n\nspace\n\t^self nextPut: Character space!\n\nprint: anObject\n\t^self show: anObject printString!\n\ndisplay: anObject\n\t^self show: anObject displayString! !\n\n!TextCollector methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a TextCollector'! !\n`],[0,[0,"Numbers.st",`"The numbers. SmallInteger's arithmetic is primitives (and even the\nbytecodes' own, St_interp.mli); when one fails -- an overflow, or an\nargument of another kind -- the method's Smalltalk runs instead:\noverflows go on in LargePositiveInteger and LargeNegativeInteger,\nwritten here over their bytes as in the Blue Book, and mixed kinds are\ncoerced to the more general one (retry:coercing:, generality: a\nSmallInteger 20, a large one 40, a Fraction 60, a Float 80)."!\n\n!Magnitude methodsFor: 'comparing'!\n< aMagnitude\n\t^self subclassResponsibility!\n\n> aMagnitude\n\t^aMagnitude < self!\n\n<= aMagnitude\n\t^(aMagnitude < self) not!\n\n>= aMagnitude\n\t^(self < aMagnitude) not!\n\nbetween: min and: max\n\t^self >= min and: [self <= max]!\n\nmax: aMagnitude\n\t^self > aMagnitude ifTrue: [self] ifFalse: [aMagnitude]!\n\nmin: aMagnitude\n\t^self < aMagnitude ifTrue: [self] ifFalse: [aMagnitude]! !\n\n!Character class methodsFor: 'instance creation'!\nvalue: anInteger\n\t"The unique Character of a code: $a == (Character value: 97)."\n\t<primitive: 120>\n\t^self error: 'Not a character code'!\n\ndigitValue: anInteger\n\t^'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ' at: anInteger + 1!\n\ncr\n\t^self value: 13!\n\nlf\n\t^self value: 10!\n\ntab\n\t^self value: 9!\n\nspace\n\t^self value: 32! !\n\n!Character methodsFor: 'accessing'!\nvalue\n\t^value!\n\nasInteger\n\t^value!\n\nasCharacter\n\t^self!\n\ndigitValue\n\tvalue <= 57 ifTrue: [^value - 48].\n\tvalue <= 90 ifTrue: [^value - 55].\n\t^value - 87! !\n\n!Character methodsFor: 'comparing'!\n< aCharacter\n\t^value < aCharacter asInteger!\n\n= aCharacter\n\t^self == aCharacter!\n\nhash\n\t^value! !\n\n!Character methodsFor: 'testing'!\nisCharacter\n\t^true!\n\nisVowel\n\t^'aeiouAEIOU' includes: self!\n\nisLetter\n\t^self isUppercase or: [self isLowercase]!\n\nisUppercase\n\t^value between: 65 and: 90!\n\nisLowercase\n\t^value between: 97 and: 122!\n\nisDigit\n\t^value between: 48 and: 57!\n\nisSeparator\n\t^value = 32 or: [value = 13 or: [value = 9 or: [value = 10]]]! !\n\n!Character methodsFor: 'converting'!\nasUppercase\n\tself isLowercase ifTrue: [^Character value: value - 32].\n\t^self!\n\nasLowercase\n\tself isUppercase ifTrue: [^Character value: value + 32].\n\t^self!\n\nasString\n\t^String with: self! !\n\n!Character methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $$; nextPut: self!\n\ndisplayString\n\t^String with: self! !\n\n!Character methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!Number methodsFor: 'arithmetic'!\n+ aNumber\n\t^self subclassResponsibility!\n\n- aNumber\n\t^self + aNumber negated!\n\nnegated\n\t^0 - self!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self!\n\nreciprocal\n\t^1 / self!\n\nsquared\n\t^self * self!\n\n// aNumber\n\t^(self / aNumber) floor!\n\n\\\\ aNumber\n\t^self - (self // aNumber * aNumber)!\n\nquo: aNumber\n\t^(self / aNumber) truncated!\n\nrem: aNumber\n\t^self - ((self quo: aNumber) * aNumber)!\n\nraisedTo: anInteger\n\t| result |\n\tanInteger < 0 ifTrue: [^(self raisedTo: anInteger negated) reciprocal].\n\tresult := 1.\n\tanInteger timesRepeat: [result := result * self].\n\t^result!\n\nsqrt\n\t^self asFloat sqrt! !\n\n!Number methodsFor: 'testing'!\nisNumber\n\t^true!\n\nnegative\n\t^self < 0!\n\npositive\n\t^self >= 0!\n\nstrictlyPositive\n\t^self > 0!\n\nisZero\n\t^self = 0!\n\nsign\n\tself > 0 ifTrue: [^1].\n\tself < 0 ifTrue: [^-1].\n\t^0!\n\neven\n\t^self \\\\ 2 = 0!\n\nodd\n\t^self even not! !\n\n!Number methodsFor: 'truncation and round off'!\ntruncated\n\t^self subclassResponsibility!\n\nfloor\n\t| t |\n\tt := self truncated.\n\t(self < 0 and: [t ~= self]) ifTrue: [^t - 1].\n\t^t!\n\nceiling\n\t| t |\n\tt := self truncated.\n\t(self > 0 and: [t ~= self]) ifTrue: [^t + 1].\n\t^t!\n\nrounded\n\t^(self + (self sign / 2)) truncated!\n\nasInteger\n\t^self truncated! !\n\n!Number methodsFor: 'coercing'!\ngenerality\n\t^self subclassResponsibility!\n\ncoerce: aNumber\n\t^self subclassResponsibility!\n\nretry: aSymbol coercing: aNumber\n\t"Do the operation again, the less general number made like the\n\tother: 3 + (1/2) becomes (3/1) + (1/2)."\n\taNumber isNumber ifFalse: [\n\t\taSymbol == #= ifTrue: [^false].\n\t\taSymbol == #~= ifTrue: [^true].\n\t\t^self error: 'Not a number: ', aNumber printString].\n\tself generality < aNumber generality\n\t\tifTrue: [^(aNumber coerce: self) perform: aSymbol with: aNumber].\n\tself generality > aNumber generality\n\t\tifTrue: [^self perform: aSymbol with: (self coerce: aNumber)].\n\t^self error: 'Coercion failed'! !\n\n!Number methodsFor: 'intervals'!\nto: stop\n\t^Interval from: self to: stop by: 1!\n\nto: stop by: step\n\t^Interval from: self to: stop by: step!\n\nto: stop do: aBlock\n\t"Sent only when the compiler could not inline it."\n\t| i |\n\ti := self.\n\t[i <= stop] whileTrue: [aBlock value: i. i := i + 1]!\n\nto: stop by: step do: aBlock\n\t| i |\n\ti := self.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]! !\n\n!Number methodsFor: 'converting'!\n@ y\n\t"A Point."\n\t<primitive: 18>\n\t^Point x: self y: y!\n\nasPoint\n\t^self @ self! !\n\n!Number methodsFor: 'printing'!\nprintString: base\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream base: base.\n\t^aStream contents! !\n\n!Integer methodsFor: 'testing'!\nisInteger\n\t^true! !\n\n!Integer methodsFor: 'arithmetic'!\n+ anInteger\n\t"Here when a large integer is involved: SmallInteger's own + is a\n\tprimitive."\n\tanInteger isInteger ifFalse: [^self retry: #+ coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger asLargeInteger!\n\n- anInteger\n\tanInteger isInteger ifFalse: [^self retry: #- coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger negated asLargeInteger!\n\n* anInteger\n\tanInteger isInteger ifFalse: [^self retry: #* coercing: anInteger].\n\t^self asLargeInteger digitTimes: anInteger asLargeInteger!\n\n/ anInteger\n\t"An Integer if it divides exactly, else a Fraction."\n\tanInteger isInteger ifFalse: [^self retry: #/ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(Fraction numerator: self denominator: anInteger) reduced!\n\nquo: anInteger\n\t"Truncated towards zero."\n\tanInteger isInteger ifFalse: [^self retry: #quo: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 1!\n\nrem: anInteger\n\tanInteger isInteger ifFalse: [^self retry: #rem: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 2!\n\n// anInteger\n\t"Truncated towards minus infinity."\n\t| qr |\n\tanInteger isInteger ifFalse: [^self retry: #// coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tqr := self digitDivide: anInteger.\n\t((qr at: 2) ~= 0 and: [self negative ~~ anInteger negative]) ifTrue: [^(qr at: 1) - 1].\n\t^qr at: 1!\n\n\\\\ anInteger\n\t"The remainder of //: the sign of the divisor."\n\t| r |\n\tanInteger isInteger ifFalse: [^self retry: #\\\\ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tr := (self digitDivide: anInteger) at: 2.\n\t(r ~= 0 and: [r negative ~~ anInteger negative]) ifTrue: [^r + anInteger].\n\t^r!\n\n< anInteger\n\tanInteger isInteger ifFalse: [^self retry: #< coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) < 0!\n\n= anInteger\n\tanInteger isNumber ifFalse: [^false].\n\tanInteger isInteger ifFalse: [^self retry: #= coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) = 0!\n\nhash\n\t^(self \\\\ 1073741823) hash!\n\nnegated\n\t^0 - self!\n\ngcd: anInteger\n\t"Euclid's."\n\t| a b t |\n\ta := self abs.\n\tb := anInteger abs.\n\t[b = 0] whileFalse: [t := a \\\\ b. a := b. b := t].\n\t^a!\n\nlcm: anInteger\n\t^(self * anInteger) abs // (self gcd: anInteger)!\n\nfactorial\n\t"100 factorial printString size = 158."\n\t| result |\n\tself < 0 ifTrue: [^self error: 'Not valid for negative integers'].\n\tresult := 1.\n\t2 to: self do: [:i | result := result * i].\n\t^result!\n\ntimesRepeat: aBlock\n\t| i |\n\ti := 1.\n\t[i <= self] whileTrue: [aBlock value. i := i + 1]!\n\nisPrime\n\tself < 2 ifTrue: [^false].\n\t2 to: self sqrtFloor do: [:i | self \\\\ i = 0 ifTrue: [^false]].\n\t^true!\n\nsqrtFloor\n\t| r |\n\tr := self asFloat sqrt truncated.\n\t[r * r > self] whileTrue: [r := r - 1].\n\t[(r + 1) * (r + 1) <= self] whileTrue: [r := r + 1].\n\t^r! !\n\n!Integer methodsFor: 'coercing'!\ngenerality\n\t^40!\n\ncoerce: aNumber\n\t^aNumber asLargeInteger! !\n\n!Integer methodsFor: 'converting'!\nasFloat\n\t"A large integer's bytes, summed as floats."\n\t| f |\n\tf := 0.0.\n\tself digitLength to: 1 by: -1 do: [:i | f := f * 256.0 + (self digitAt: i)].\n\tself negative ifTrue: [^f negated].\n\t^f!\n\ntruncated\n\t^self!\n\nasCharacter\n\t^Character value: self!\n\ndigitDivide: anInteger\n\t"The quotient and the remainder truncated towards zero, an Array:\n\tby the schoolbook's short division when the divisor is small\n\tenough for a digit times it to stay a SmallInteger, else bit by\n\tbit."\n\t| a b qr q r |\n\ta := self abs asLargeInteger.\n\tb := anInteger abs.\n\tqr := (b isSmallInteger and: [b < 4194304])\n\t\tifTrue: [a shortDivide: b]\n\t\tifFalse: [a longDivide: b].\n\tq := qr at: 1.\n\tr := qr at: 2.\n\tself negative == anInteger negative ifFalse: [q := q negated].\n\tself negative ifTrue: [r := r negated].\n\t^Array with: q with: r! !\n\n!Integer methodsFor: 'printing'!\nprintOn: aStream\n\tself printOn: aStream base: 10!\n\nprintOn: aStream base: base\n\tself < 0 ifTrue: [aStream nextPut: $-. ^self negated printOn: aStream base: base].\n\tself >= base ifTrue: [self // base printOn: aStream base: base].\n\taStream nextPut: (Character digitValue: self \\\\ base)! !\n\n!SmallInteger class methodsFor: 'instance creation'!\nnew\n\t^self error: 'SmallIntegers are not made, they are'! !\n\n!SmallInteger methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 1>\n\t^super + aNumber!\n\n- aNumber\n\t<primitive: 2>\n\t^super - aNumber!\n\n< aNumber\n\t<primitive: 3>\n\t^super < aNumber!\n\n> aNumber\n\t<primitive: 4>\n\t^super > aNumber!\n\n<= aNumber\n\t<primitive: 5>\n\t^super <= aNumber!\n\n>= aNumber\n\t<primitive: 6>\n\t^super >= aNumber!\n\n= aNumber\n\t<primitive: 7>\n\t^super = aNumber!\n\n~= aNumber\n\t<primitive: 8>\n\t^super ~= aNumber!\n\n* aNumber\n\t<primitive: 9>\n\t^super * aNumber!\n\n/ aNumber\n\t<primitive: 10>\n\t^super / aNumber!\n\n\\\\ aNumber\n\t<primitive: 11>\n\t^super \\\\ aNumber!\n\n// aNumber\n\t<primitive: 12>\n\t^super // aNumber!\n\nquo: aNumber\n\t<primitive: 13>\n\t^super quo: aNumber!\n\nbitAnd: anInteger\n\t<primitive: 14>\n\t^self error: 'Not a SmallInteger'!\n\nbitOr: anInteger\n\t<primitive: 15>\n\t^self error: 'Not a SmallInteger'!\n\nbitXor: anInteger\n\t<primitive: 16>\n\t^self error: 'Not a SmallInteger'!\n\nbitShift: anInteger\n\t<primitive: 17>\n\tanInteger > 0 ifTrue: [^self asLargeInteger * (2 raisedTo: anInteger)].\n\t^self error: 'Not a SmallInteger'! !\n\n!SmallInteger methodsFor: 'testing'!\nisSmallInteger\n\t^true!\n\neven\n\t^(self bitAnd: 1) = 0! !\n\n!SmallInteger methodsFor: 'coercing'!\ngenerality\n\t^20!\n\ncoerce: aNumber\n\t^aNumber!\n\nasLargeInteger\n\t<primitive: 154>\n\tself primitiveFailed! !\n\n!SmallInteger methodsFor: 'converting'!\nasFloat\n\t<primitive: 40>\n\tself primitiveFailed!\n\nhash\n\t^self! !\n\n!SmallInteger methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digits'!\ndigitAt: index\n\t"A byte of the magnitude, least significant first; 0 past the end."\n\t<primitive: 60>\n\t^0!\n\ndigitAt: index put: value\n\t<primitive: 61>\n\tself primitiveFailed!\n\ndigitLength\n\t<primitive: 62>\n\tself primitiveFailed!\n\nnormalize\n\t"The leading zero bytes dropped, a SmallInteger if it fits."\n\t<primitive: 155>\n\tself primitiveFailed!\n\nasLargeInteger\n\t^self!\n\nnegative\n\t^false!\n\nnegated\n\t| result |\n\tresult := (self negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: self digitLength.\n\t1 to: self digitLength do: [:i | result digitAt: i put: (self digitAt: i)].\n\t^result normalize!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digit arithmetic'!\ndigitPlus: arg\n\t"The sum of two large integers of any signs."\n\tself negative == arg negative\n\t\tifTrue: [^(self magnitudeAdd: arg negative: self negative) normalize].\n\t(self magnitudeCompare: arg) >= 0\n\t\tifTrue: [^(self magnitudeSubtract: arg negative: self negative) normalize].\n\t^(arg magnitudeSubtract: self negative: arg negative) normalize!\n\nmagnitudeAdd: arg negative: aBoolean\n\t| len result carry sum |\n\tlen := (self digitLength max: arg digitLength) + 1.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tcarry := 0.\n\t1 to: len do: [:i |\n\t\tsum := (self digitAt: i) + (arg digitAt: i) + carry.\n\t\tresult digitAt: i put: (sum bitAnd: 255).\n\t\tcarry := sum bitShift: -8].\n\t^result!\n\nmagnitudeSubtract: arg negative: aBoolean\n\t"The receiver's magnitude is the larger."\n\t| len result borrow diff |\n\tlen := self digitLength.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tborrow := 0.\n\t1 to: len do: [:i |\n\t\tdiff := (self digitAt: i) - (arg digitAt: i) - borrow.\n\t\tdiff < 0\n\t\t\tifTrue: [diff := diff + 256. borrow := 1]\n\t\t\tifFalse: [borrow := 0].\n\t\tresult digitAt: i put: diff].\n\t^result!\n\nmagnitudeCompare: arg\n\t"-1, 0 or 1."\n\t| a b |\n\t(self digitLength max: arg digitLength) to: 1 by: -1 do: [:i |\n\t\ta := self digitAt: i.\n\t\tb := arg digitAt: i.\n\t\ta < b ifTrue: [^-1].\n\t\ta > b ifTrue: [^1]].\n\t^0!\n\ncompareWith: arg\n\tself negative == arg negative ifFalse: [self negative ifTrue: [^-1] ifFalse: [^1]].\n\tself negative ifTrue: [^arg magnitudeCompare: self].\n\t^self magnitudeCompare: arg!\n\ndigitTimes: arg\n\t"The schoolbook's: each digit of one by each of the other."\n\t| la lb result carry prod k |\n\tla := self digitLength.\n\tlb := arg digitLength.\n\tresult := (self negative == arg negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: la + lb.\n\t1 to: la do: [:i |\n\t\tcarry := 0.\n\t\t1 to: lb do: [:j |\n\t\t\tk := i + j - 1.\n\t\t\tprod := (self digitAt: i) * (arg digitAt: j) + (result digitAt: k) + carry.\n\t\t\tresult digitAt: k put: (prod bitAnd: 255).\n\t\t\tcarry := prod bitShift: -8].\n\t\tresult digitAt: i + lb put: carry].\n\t^result normalize!\n\nshortDivide: divisor\n\t"The magnitude by a small SmallInteger, a digit at a time from the\n\ttop: the quotient and the remainder."\n\t| len q r |\n\tlen := self digitLength.\n\tq := LargePositiveInteger new: len.\n\tr := 0.\n\tlen to: 1 by: -1 do: [:i |\n\t\tr := r * 256 + (self digitAt: i).\n\t\tq digitAt: i put: r // divisor.\n\t\tr := r \\\\ divisor].\n\t^Array with: q normalize with: r!\n\nlongDivide: divisor\n\t"A bit at a time: slow, but only for large divisors."\n\t| q r bit |\n\tq := 0.\n\tr := 0.\n\tself digitLength * 8 to: 1 by: -1 do: [:i |\n\t\tbit := ((self digitAt: i - 1 // 8 + 1) bitShift: 0 - (i - 1 \\\\ 8)) bitAnd: 1.\n\t\tr := r * 2 + bit.\n\t\tq := q * 2.\n\t\tr >= divisor ifTrue: [r := r - divisor. q := q + 1]].\n\t^Array with: q with: r! !\n\n!LargePositiveInteger methodsFor: 'bit manipulation'!\nbitShift: anInteger\n\tanInteger >= 0 ifTrue: [^self * (2 raisedTo: anInteger)].\n\t^self // (2 raisedTo: anInteger negated)!\n\nhash\n\t^self digitAt: 1! !\n\n!LargeNegativeInteger methodsFor: 'testing'!\nnegative\n\t^true! !\n\n!Fraction class methodsFor: 'instance creation'!\nnumerator: n denominator: d\n\t"Not reduced: Integer>>/ reduces it."\n\t^self new setNumerator: n denominator: d! !\n\n!Fraction methodsFor: 'private'!\nsetNumerator: n denominator: d\n\td < 0\n\t\tifTrue: [numerator := n negated. denominator := d negated]\n\t\tifFalse: [numerator := n. denominator := d]! !\n\n!Fraction methodsFor: 'accessing'!\nnumerator\n\t^numerator!\n\ndenominator\n\t^denominator! !\n\n!Fraction methodsFor: 'arithmetic'!\n+ aNumber\n\taNumber isNumber ifFalse: [^self retry: #+ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #+ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator + (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n- aNumber\n\taNumber isNumber ifFalse: [^self retry: #- coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #- coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator - (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n* aNumber\n\taNumber isNumber ifFalse: [^self retry: #* coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #* coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber numerator\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n/ aNumber\n\taNumber isNumber ifFalse: [^self retry: #/ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #/ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator\n\t\tdenominator: denominator * aNumber numerator) reduced!\n\nnegated\n\t^Fraction numerator: numerator negated denominator: denominator!\n\nreduced\n\t"Lowest terms, and an Integer when the denominator is 1."\n\t| g |\n\tnumerator = 0 ifTrue: [^0].\n\tg := numerator gcd: denominator.\n\tg = denominator ifTrue: [^numerator // g].\n\t^Fraction numerator: numerator // g denominator: denominator // g! !\n\n!Fraction methodsFor: 'comparing'!\n< aNumber\n\taNumber isNumber ifFalse: [^self retry: #< coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #< coercing: aNumber].\n\t^numerator * aNumber denominator < (aNumber numerator * denominator)!\n\n= aNumber\n\taNumber isNumber ifFalse: [^false].\n\taNumber generality = self generality ifFalse: [^self retry: #= coercing: aNumber].\n\t^numerator = aNumber numerator and: [denominator = aNumber denominator]!\n\nhash\n\t^numerator hash bitXor: denominator hash! !\n\n!Fraction methodsFor: 'truncation and round off'!\ntruncated\n\t^numerator quo: denominator! !\n\n!Fraction methodsFor: 'coercing'!\ngenerality\n\t^60!\n\ncoerce: aNumber\n\t^Fraction numerator: aNumber denominator: 1! !\n\n!Fraction methodsFor: 'converting'!\nasFloat\n\t^numerator asFloat / denominator asFloat! !\n\n!Fraction methodsFor: 'printing'!\nprintOn: aStream\n\taStream print: numerator; nextPut: $/; print: denominator! !\n\n!Float methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 41>\n\t^self retry: #+ coercing: aNumber!\n\n- aNumber\n\t<primitive: 42>\n\t^self retry: #- coercing: aNumber!\n\n< aNumber\n\t<primitive: 43>\n\t^self retry: #< coercing: aNumber!\n\n> aNumber\n\t<primitive: 44>\n\t^self retry: #> coercing: aNumber!\n\n<= aNumber\n\t<primitive: 45>\n\t^self retry: #<= coercing: aNumber!\n\n>= aNumber\n\t<primitive: 46>\n\t^self retry: #>= coercing: aNumber!\n\n= aNumber\n\t<primitive: 47>\n\t^self retry: #= coercing: aNumber!\n\n~= aNumber\n\t<primitive: 48>\n\t^self retry: #~= coercing: aNumber!\n\n* aNumber\n\t<primitive: 49>\n\t^self retry: #* coercing: aNumber!\n\n/ aNumber\n\t<primitive: 50>\n\taNumber = 0 ifTrue: [^self error: 'Division by zero'].\n\t^self retry: #/ coercing: aNumber!\n\nsqrt\n\t<primitive: 55>\n\tself primitiveFailed!\n\nsin\n\t<primitive: 56>\n\tself primitiveFailed!\n\ncos\n\t^(self + 1.5707963267948966) sin!\n\narcTan\n\t<primitive: 57>\n\tself primitiveFailed!\n\nln\n\t<primitive: 58>\n\tself primitiveFailed!\n\nexp\n\t<primitive: 59>\n\tself primitiveFailed! !\n\n!Float methodsFor: 'truncation and round off'!\ntruncated\n\t"Too large for a SmallInteger: the high part and the low part."\n\t| q |\n\t<primitive: 51>\n\tq := (self / 65536.0) truncated.\n\t^q * 65536 + (self - (q * 65536.0)) truncated! !\n\n!Float methodsFor: 'truncation and round off'!\nrounded\n\t^(self + (self sign * 0.5)) truncated! !\n\n!Float methodsFor: 'coercing'!\ngenerality\n\t^80!\n\ncoerce: aNumber\n\t^aNumber asFloat!\n\nasFloat\n\t^self!\n\nhash\n\t^self truncated hash! !\n\n!Float methodsFor: 'printing'!\nprintString\n\t<primitive: 130>\n\tself primitiveFailed!\n\nprintOn: aStream\n\taStream nextPutAll: self printString! !\n\n!Point class methodsFor: 'instance creation'!\nx: xInteger y: yInteger\n\t^self new setX: xInteger setY: yInteger! !\n\n!Point methodsFor: 'private'!\nsetX: xValue setY: yValue\n\tx := xValue.\n\ty := yValue! !\n\n!Point methodsFor: 'accessing'!\nx\n\t^x!\n\ny\n\t^y! !\n\n!Point methodsFor: 'arithmetic'!\n+ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x + p x) @ (y + p y)!\n\n- arg\n\t| p |\n\tp := arg asPoint.\n\t^(x - p x) @ (y - p y)!\n\n* arg\n\t| p |\n\tp := arg asPoint.\n\t^(x * p x) @ (y * p y)!\n\n/ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x / p x) @ (y / p y)!\n\n// arg\n\t| p |\n\tp := arg asPoint.\n\t^(x // p x) @ (y // p y)!\n\nabs\n\t^x abs @ y abs! !\n\n!Point methodsFor: 'comparing'!\n= aPoint\n\t^(aPoint isKindOf: Point) and: [x = aPoint x and: [y = aPoint y]]!\n\nhash\n\t^x hash bitXor: y hash!\n\n< aPoint\n\t^x < aPoint x and: [y < aPoint y]!\n\n> aPoint\n\t^x > aPoint x and: [y > aPoint y]!\n\n<= aPoint\n\t^x <= aPoint x and: [y <= aPoint y]!\n\n>= aPoint\n\t^x >= aPoint x and: [y >= aPoint y]!\n\nmax: aPoint\n\t^(x max: aPoint x) @ (y max: aPoint y)!\n\nmin: aPoint\n\t^(x min: aPoint x) @ (y min: aPoint y)! !\n\n!Point methodsFor: 'point functions'!\ndist: aPoint\n\t| dx dy |\n\tdx := aPoint x - x.\n\tdy := aPoint y - y.\n\t^(dx * dx + (dy * dy)) sqrt!\n\ntranspose\n\t^y @ x!\n\ncorner: aPoint\n\t^Rectangle origin: self corner: aPoint!\n\nextent: aPoint\n\t^Rectangle origin: self corner: self + aPoint! !\n\n!Point methodsFor: 'converting'!\nasPoint\n\t^self! !\n\n!Point methodsFor: 'printing'!\nprintOn: aStream\n\tx printOn: aStream.\n\taStream nextPut: $@.\n\ty printOn: aStream! !\n\n!Rectangle class methodsFor: 'instance creation'!\norigin: originPoint corner: cornerPoint\n\t^self new setOrigin: originPoint corner: cornerPoint! !\n\n!Rectangle methodsFor: 'private'!\nsetOrigin: originPoint corner: cornerPoint\n\torigin := originPoint.\n\tcorner := cornerPoint! !\n\n!Rectangle methodsFor: 'accessing'!\norigin\n\t^origin!\n\ncorner\n\t^corner!\n\nwidth\n\t^corner x - origin x!\n\nheight\n\t^corner y - origin y!\n\nextent\n\t^corner - origin!\n\narea\n\t^self width * self height! !\n\n!Rectangle methodsFor: 'rectangle functions'!\ncenter\n\t"The Blue Book's example of compiled code (St_bytecode.mli):\n\t0 1 176 119 185 124."\n\t^origin + corner / 2!\n\ncontainsPoint: aPoint\n\t^origin <= aPoint and: [aPoint < corner]!\n\nintersects: aRectangle\n\t^(origin max: aRectangle origin) < (corner min: aRectangle corner)! !\n\n!Rectangle methodsFor: 'comparing'!\n= aRectangle\n\t^(aRectangle isKindOf: Rectangle) and: [origin = aRectangle origin and: [corner = aRectangle corner]]!\n\nhash\n\t^origin hash bitXor: corner hash! !\n\n!Rectangle methodsFor: 'printing'!\nprintOn: aStream\n\torigin printOn: aStream.\n\taStream nextPutAll: ' corner: '.\n\tcorner printOn: aStream! !\n`],[0,[0,"Collections.st",`"The collections, and their iteration protocol -- do:, collect:,\nselect:, reject:, detect:, inject:into: -- the one the rest of the\nworld copied (Ruby's each, map, select, detect, inject; Python's\ncomprehensions). Every collection answers them once it has do:.\n\nOrderedCollection and Set grow the Blue Book's way: a bigger copy,\nthen 'self become: newSelf' (St_memory.mli), so that everything that\nknew the collection now knows the bigger one."!\n\n!Collection class methodsFor: 'instance creation'!\nwith: anObject\n\t^self new add: anObject; yourself!\n\nwith: first with: second\n\t^self new add: first; add: second; yourself!\n\nwith: first with: second with: third\n\t^self new add: first; add: second; add: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^self new add: first; add: second; add: third; add: fourth; yourself!\n\nwithAll: aCollection\n\t^self new addAll: aCollection; yourself! !\n\n!Collection methodsFor: 'adding'!\nadd: anObject\n\t^self subclassResponsibility!\n\naddAll: aCollection\n\taCollection do: [:each | self add: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'removing'!\nremove: oldObject\n\t^self remove: oldObject ifAbsent: [self error: 'Object is not in the collection']!\n\nremove: oldObject ifAbsent: aBlock\n\t^self subclassResponsibility!\n\nremoveAll: aCollection\n\taCollection do: [:each | self remove: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'testing'!\nincludes: anObject\n\tself do: [:each | anObject = each ifTrue: [^true]].\n\t^false!\n\nisEmpty\n\t^self size = 0!\n\nnotEmpty\n\t^self isEmpty not!\n\noccurrencesOf: anObject\n\t| tally |\n\ttally := 0.\n\tself do: [:each | anObject = each ifTrue: [tally := tally + 1]].\n\t^tally! !\n\n!Collection methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tself do: [:each | tally := tally + 1].\n\t^tally! !\n\n!Collection methodsFor: 'enumerating'!\ndo: aBlock\n\t^self subclassResponsibility!\n\ndo: aBlock separatedBy: separatorBlock\n\t| first |\n\tfirst := true.\n\tself do: [:each |\n\t\tfirst ifTrue: [first := false] ifFalse: [separatorBlock value].\n\t\taBlock value: each]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self species new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\nreject: aBlock\n\t^self select: [:each | (aBlock value: each) == false]!\n\ndetect: aBlock\n\t^self detect: aBlock ifNone: [self error: 'Object is not in the collection']!\n\ndetect: aBlock ifNone: exceptionBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^each]].\n\t^exceptionBlock value!\n\ninject: thisValue into: binaryBlock\n\t| nextValue |\n\tnextValue := thisValue.\n\tself do: [:each | nextValue := binaryBlock value: nextValue value: each].\n\t^nextValue!\n\nanySatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^true]].\n\t^false!\n\nallSatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifFalse: [^false]].\n\t^true!\n\nmax\n\t^self inject: self anyOne into: [:a :b | a max: b]!\n\nmin\n\t^self inject: self anyOne into: [:a :b | a min: b]!\n\nsum\n\t^self inject: 0 into: [:a :b | a + b]!\n\nanyOne\n\tself do: [:each | ^each].\n\t^self error: 'Collection is empty'! !\n\n!Collection methodsFor: 'converting'!\nasArray\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: each].\n\t^result!\n\nasOrderedCollection\n\t^OrderedCollection withAll: self!\n\nasBag\n\t^Bag withAll: self!\n\nasSet\n\t^Set withAll: self!\n\nasSortedCollection\n\t^SortedCollection withAll: self!\n\nasSortedCollection: aBlock\n\t^(SortedCollection sortBlock: aBlock) addAll: self; yourself! !\n\n!Collection methodsFor: 'private'!\nspecies\n\t^self class! !\n\n!Collection methodsFor: 'printing'!\nprintOn: aStream\n\t"OrderedCollection (1 2 3 ), as the Blue Book prints it."\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself do: [:element | element printOn: aStream. aStream space].\n\taStream nextPut: $)! !\n\n!SequenceableCollection methodsFor: 'comparing'!\n= aCollection\n\tself class == aCollection class ifFalse: [^false].\n\tself size = aCollection size ifFalse: [^false].\n\t1 to: self size do: [:i | (self at: i) = (aCollection at: i) ifFalse: [^false]].\n\t^true!\n\nhash\n\t^self size! !\n\n!SequenceableCollection methodsFor: 'accessing'!\nfirst\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: 1!\n\nlast\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: self size!\n\nindexOf: anElement\n\t1 to: self size do: [:i | (self at: i) = anElement ifTrue: [^i]].\n\t^0!\n\nallButFirst\n\t^self copyFrom: 2 to: self size!\n\nallButLast\n\t^self copyFrom: 1 to: self size - 1! !\n\n!SequenceableCollection methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i)]!\n\nreverseDo: aBlock\n\tself size to: 1 by: -1 do: [:i | aBlock value: (self at: i)]!\n\ndoWithIndex: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: i]!\n\nkeysAndValuesDo: aBlock\n\t1 to: self size do: [:i | aBlock value: i value: (self at: i)]!\n\nwith: aCollection do: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: (aCollection at: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := self species new: self size.\n\t1 to: self size do: [:i | result at: i put: (aBlock value: (self at: i))].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^(self species inheritsFrom: ArrayedCollection)\n\t\tifTrue: [(self species new: result size) replaceFrom: 1 to: result size with: result startingAt: 1]\n\t\tifFalse: [result]! !\n\n!SequenceableCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := self species new: (stop - start + 1 max: 0).\n\tstart to: stop do: [:i | result at: i - start + 1 put: (self at: i)].\n\t^result!\n\ncopyWith: newElement\n\t| result |\n\tresult := self species new: self size + 1.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult at: result size put: newElement.\n\t^result!\n\nreversed\n\t| result n |\n\tn := self size.\n\tresult := self species new: n.\n\t1 to: n do: [:i | result at: i put: (self at: n + 1 - i)].\n\t^result!\n\nreverse\n\t^self reversed!\n\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t| j |\n\tj := repStart.\n\tstart to: stop do: [:i | self at: i put: (replacement at: j). j := j + 1]!\n\n, aSequenceableCollection\n\t| result |\n\tresult := self species new: self size + aSequenceableCollection size.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult replaceFrom: self size + 1 to: result size with: aSequenceableCollection startingAt: 1.\n\t^result! !\n\n!SequenceableCollection methodsFor: 'converting'!\nreadStream\n\t^ReadStream on: self! !\n\n!ArrayedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 0!\n\nwith: anObject\n\t^(self new: 1) at: 1 put: anObject; yourself!\n\nwith: first with: second\n\t^(self new: 2) at: 1 put: first; at: 2 put: second; yourself!\n\nwith: first with: second with: third\n\t^(self new: 3) at: 1 put: first; at: 2 put: second; at: 3 put: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^(self new: 4) at: 1 put: first; at: 2 put: second; at: 3 put: third; at: 4 put: fourth; yourself!\n\nwithAll: aCollection\n\t| result i |\n\tresult := self new: aCollection size.\n\ti := 0.\n\taCollection do: [:each | result at: (i := i + 1) put: each].\n\t^result! !\n\n!ArrayedCollection methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!ArrayedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self shouldNotImplement! !\n\n!ArrayedCollection methodsFor: 'copying'!\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t"The primitive when both are pointers or both bytes."\n\t<primitive: 105>\n\t^super replaceFrom: start to: stop with: replacement startingAt: repStart! !\n\n!ArrayedCollection methodsFor: 'sorting'!\nasSortedArray\n\t^self asSortedCollection asArray! !\n\n!Array methodsFor: 'testing'!\nisArray\n\t^true! !\n\n!Array methodsFor: 'printing'!\nprintOn: aStream\n\t"#(1 $a 'b'), as a literal reads"\n\taStream nextPutAll: '#('.\n\tself do: [:each | each printOn: aStream] separatedBy: [aStream space].\n\taStream nextPut: $)! !\n\n!String class methodsFor: 'instance creation'!\nnew\n\t^self new: 0! !\n\n!String methodsFor: 'accessing'!\nat: index\n\t"A Character: the bytes are characters."\n\t<primitive: 63>\n\t^self checkIndex: index!\n\nat: index put: aCharacter\n\t<primitive: 64>\n\taCharacter isCharacter ifFalse: [^self error: 'Strings only store Characters'].\n\t^self checkIndex: index!\n\nsize\n\t<primitive: 62>\n\t^0! !\n\n!String methodsFor: 'comparing'!\n= aString\n\t<primitive: 123>\n\t^false!\n\n< aString\n\t<primitive: 124>\n\t^self error: 'Not a String'!\n\n> aString\n\t^aString < self!\n\n<= aString\n\t^(aString < self) not!\n\n>= aString\n\t^(self < aString) not!\n\nhash\n\t<primitive: 125>\n\t^0! !\n\n!String methodsFor: 'testing'!\nisString\n\t^true!\n\nincludesSubstring: aString\n\t| n |\n\tn := aString size.\n\t1 to: self size - n + 1 do: [:i | (self copyFrom: i to: i + n - 1) = aString ifTrue: [^true]].\n\t^false! !\n\n!String methodsFor: 'converting'!\nasSymbol\n\t<primitive: 122>\n\tself primitiveFailed!\n\nasString\n\t^self!\n\nasNumber\n\t"The number the text reads as, or nil."\n\t<primitive: 150>\n\t^nil!\n\nasUppercase\n\t^self collect: [:c | c asUppercase]!\n\nasLowercase\n\t^self collect: [:c | c asLowercase]!\n\ndisplayString\n\t^self!\n\nspecies\n\t^String! !\n\n!String methodsFor: 'printing'!\nprintOn: aStream\n\t"'it''s': quoted, a quote doubled"\n\taStream nextPut: $'.\n\tself do: [:c | aStream nextPut: c. c == $' ifTrue: [aStream nextPut: c]].\n\taStream nextPut: $'! !\n\n!Symbol class methodsFor: 'instance creation'!\nnew: anInteger\n\t^self error: 'Symbols are made by asSymbol, unique'! !\n\n!Symbol methodsFor: 'comparing'!\n= anObject\n\t"Symbols are unique: equal is identical."\n\t^self == anObject!\n\nhash\n\t^self identityHash! !\n\n!Symbol methodsFor: 'accessing'!\nat: index put: aCharacter\n\t^self error: 'Symbols cannot be changed'! !\n\n!Symbol methodsFor: 'converting'!\nasSymbol\n\t^self!\n\nasString\n\t| s |\n\ts := String new: self size.\n\ts replaceFrom: 1 to: self size with: self startingAt: 1.\n\t^s!\n\nnumArgs\n\t| n |\n\tn := 0.\n\tself do: [:c | c == $: ifTrue: [n := n + 1]].\n\t(n = 0 and: [(self at: 1) isLetter not]) ifTrue: [^1].\n\t^n! !\n\n!Symbol methodsFor: 'testing'!\nisSymbol\n\t^true! !\n\n!Symbol methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $#; nextPutAll: self!\n\ndisplayString\n\t^self asString! !\n\n!Symbol methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!ByteArray methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!Interval class methodsFor: 'instance creation'!\nfrom: start to: stop by: step\n\t^self new setFrom: start to: stop by: step! !\n\n!Interval methodsFor: 'private'!\nsetFrom: startNumber to: stopNumber by: stepNumber\n\tstart := startNumber.\n\tstop := stopNumber.\n\tstep := stepNumber!\n\nspecies\n\t^Array! !\n\n!Interval methodsFor: 'accessing'!\nsize\n\tstep > 0\n\t\tifTrue: [stop < start ifTrue: [^0]]\n\t\tifFalse: [start < stop ifTrue: [^0]].\n\t^stop - start // step + 1!\n\nat: index\n\t(index >= 1 and: [index <= self size]) ifTrue: [^start + (step * (index - 1))].\n\t^self error: 'Index out of bounds'!\n\nat: index put: anObject\n\t^self error: 'Intervals cannot be changed'! !\n\n!Interval methodsFor: 'enumerating'!\ndo: aBlock\n\t| i |\n\ti := start.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]!\n\ncollect: aBlock\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: (aBlock value: each)].\n\t^result! !\n\n!Interval methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $(; print: start; nextPutAll: ' to: '; print: stop.\n\tstep = 1 ifFalse: [aStream nextPutAll: ' by: '; print: step].\n\taStream nextPut: $)! !\n\n!OrderedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 8!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setIndices! !\n\n!OrderedCollection methodsFor: 'private'!\nsetIndices\n\tfirstIndex := self basicSize // 2 max: 1.\n\tlastIndex := firstIndex - 1!\n\nsetFirst: first last: last\n\tfirstIndex := first.\n\tlastIndex := last!\n\ngrow\n\t"A copy with room at both ends, then become: -- the receiver is the\n\tbigger one from now on, for whoever holds it."\n\t| newSelf newFirst n |\n\tn := self basicSize * 2 + 8.\n\tnewSelf := self class basicNew: n.\n\t1 to: self class instSize do: [:i | newSelf instVarAt: i put: (self instVarAt: i)].\n\tnewFirst := n - self size // 2 + 1.\n\t1 to: self size do: [:i | newSelf basicAt: newFirst + i - 1 put: (self basicAt: firstIndex + i - 1)].\n\tnewSelf setFirst: newFirst last: newFirst + self size - 1.\n\tself become: newSelf! !\n\n!OrderedCollection methodsFor: 'accessing'!\nsize\n\t^lastIndex - firstIndex + 1!\n\nat: index\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1!\n\nat: index put: anObject\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1 put: anObject! !\n\n!OrderedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self addLast: anObject!\n\naddLast: anObject\n\tlastIndex = self basicSize ifTrue: [self grow].\n\tlastIndex := lastIndex + 1.\n\t^self basicAt: lastIndex put: anObject!\n\naddFirst: anObject\n\tfirstIndex = 1 ifTrue: [self grow].\n\tfirstIndex := firstIndex - 1.\n\t^self basicAt: firstIndex put: anObject! !\n\n!OrderedCollection methodsFor: 'removing'!\nremoveFirst\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: firstIndex.\n\tself basicAt: firstIndex put: nil.\n\tfirstIndex := firstIndex + 1.\n\t^answer!\n\nremoveLast\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: lastIndex.\n\tself basicAt: lastIndex put: nil.\n\tlastIndex := lastIndex - 1.\n\t^answer!\n\nremove: oldObject ifAbsent: aBlock\n\t| index |\n\tindex := firstIndex.\n\t[index <= lastIndex] whileTrue: [\n\t\toldObject = (self basicAt: index) ifTrue: [\n\t\t\tindex to: lastIndex - 1 do: [:i | self basicAt: i put: (self basicAt: i + 1)].\n\t\t\tself basicAt: lastIndex put: nil.\n\t\t\tlastIndex := lastIndex - 1.\n\t\t\t^oldObject].\n\t\tindex := index + 1].\n\t^aBlock value! !\n\n!OrderedCollection methodsFor: 'enumerating'!\ndo: aBlock\n\tfirstIndex to: lastIndex do: [:i | aBlock value: (self basicAt: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self copyEmpty.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\ncopyEmpty\n\t^self class new! !\n\n!OrderedCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := OrderedCollection new.\n\tstart to: stop do: [:i | result addLast: (self at: i)].\n\t^result!\n\n, aCollection\n\t^self copy addAll: aCollection; yourself!\n\ncopy\n\t^self collect: [:each | each]!\n\nreversed\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result addFirst: each].\n\t^result! !\n\n!SortedCollection class methodsFor: 'instance creation'!\nnew\n\t^self sortBlock: [:a :b | a <= b]!\n\nsortBlock: aBlock\n\t^(self new: 8) setSortBlock: aBlock! !\n\n!SortedCollection methodsFor: 'private'!\nsetSortBlock: aBlock\n\tsortBlock := aBlock!\n\ncopyEmpty\n\t^SortedCollection sortBlock: sortBlock! !\n\n!SortedCollection methodsFor: 'adding'!\nadd: anObject\n\t"Put at the end, then moved down past the ones it sorts before:\n\tan insertion sort, one element at a time."\n\t| i |\n\tself addLast: anObject.\n\ti := lastIndex.\n\t[i > firstIndex and: [sortBlock value: anObject value: (self basicAt: i - 1)]] whileTrue: [\n\t\tself basicAt: i put: (self basicAt: i - 1).\n\t\ti := i - 1].\n\tself basicAt: i put: anObject.\n\t^anObject!\n\naddFirst: anObject\n\t^self shouldNotImplement!\n\nat: index put: anObject\n\t^self shouldNotImplement! !\n\n!SortedCollection methodsFor: 'accessing'!\nsortBlock\n\t^sortBlock!\n\nmedian\n\t^self at: self size + 1 // 2! !\n\n!SortedCollection methodsFor: 'enumerating'!\ncollect: aBlock\n\t"The answers are not sorted: an OrderedCollection."\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result! !\n\n!Set class methodsFor: 'instance creation'!\nnew\n\t^self new: 16!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setTally! !\n\n!Set methodsFor: 'private'!\nsetTally\n\ttally := 0!\n\nfindIndexFor: anObject\n\t"Where anObject is, or the empty slot where it would go: its hash,\n\tthen the next slots in turn (open addressing)."\n\t| index element |\n\tindex := anObject hash \\\\ self basicSize + 1.\n\t[element := self basicAt: index.\n\telement == nil or: [self matches: element key: anObject]]\n\t\twhileFalse: [index := index \\\\ self basicSize + 1].\n\t^index!\n\nmatches: element key: anObject\n\t^element = anObject!\n\ngrow\n\t| newSelf |\n\tnewSelf := self class new: self basicSize * 2.\n\t"the slots themselves: a Dictionary's do: gives its values"\n\t1 to: self basicSize do: [:i |\n\t\t(self basicAt: i) == nil ifFalse: [newSelf noCheckAdd: (self basicAt: i)]].\n\tself become: newSelf!\n\nnoCheckAdd: anObject\n\tself basicAt: (self findIndexFor: (self keyOf: anObject)) put: anObject.\n\ttally := tally + 1!\n\nkeyOf: element\n\t^element! !\n\n!Set methodsFor: 'accessing'!\nsize\n\t^tally! !\n\n!Set methodsFor: 'adding'!\nadd: newObject\n\t| index |\n\tnewObject == nil ifTrue: [^newObject].\n\tindex := self findIndexFor: newObject.\n\t(self basicAt: index) == nil ifTrue: [\n\t\tself basicAt: index put: newObject.\n\t\ttally := tally + 1.\n\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]].\n\t^newObject! !\n\n!Set methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| index rest |\n\tindex := self findIndexFor: oldObject.\n\t(self basicAt: index) == nil ifTrue: [^aBlock value].\n\tself basicAt: index put: nil.\n\ttally := tally - 1.\n\t"the ones after it, in its run, put again"\n\trest := OrderedCollection new.\n\tindex := index \\\\ self basicSize + 1.\n\t[(self basicAt: index) == nil] whileFalse: [\n\t\trest add: (self basicAt: index).\n\t\tself basicAt: index put: nil.\n\t\ttally := tally - 1.\n\t\tindex := index \\\\ self basicSize + 1].\n\trest do: [:each | self noCheckAdd: each].\n\t^oldObject! !\n\n!Set methodsFor: 'testing'!\nincludes: anObject\n\t^(self basicAt: (self findIndexFor: anObject)) ~~ nil! !\n\n!Set methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self basicSize do: [:i | | each | each := self basicAt: i. each == nil ifFalse: [aBlock value: each]]! !\n\n!Dictionary methodsFor: 'private'!\nmatches: element key: aKey\n\t^element key = aKey!\n\nkeyOf: element\n\t^element key! !\n\n!Dictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key printString]!\n\nat: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\t^assoc value!\n\nat: key put: value\n\t| index assoc |\n\tindex := self findIndexFor: key.\n\tassoc := self basicAt: index.\n\tassoc == nil\n\t\tifTrue: [\n\t\t\tself basicAt: index put: (Association key: key value: value).\n\t\t\ttally := tally + 1.\n\t\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]]\n\t\tifFalse: [assoc value: value].\n\t^value!\n\nassociationAt: key\n\t^self basicAt: (self findIndexFor: key)!\n\nkeys\n\t| result |\n\tresult := Set new.\n\tself associationsDo: [:assoc | result add: assoc key].\n\t^result!\n\nvalues\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:value | result add: value].\n\t^result!\n\nkeyAtValue: value\n\tself associationsDo: [:assoc | assoc value = value ifTrue: [^assoc key]].\n\t^nil! !\n\n!Dictionary methodsFor: 'adding'!\nadd: anAssociation\n\tself at: anAssociation key put: anAssociation value.\n\t^anAssociation! !\n\n!Dictionary methodsFor: 'removing'!\nremoveKey: key\n\t^self removeKey: key ifAbsent: [self error: 'Key not found']!\n\nremoveKey: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\tsuper remove: key ifAbsent: [].\n\t^assoc value! !\n\n!Dictionary methodsFor: 'testing'!\nincludesKey: key\n\t^(self basicAt: (self findIndexFor: key)) ~~ nil!\n\nincludes: value\n\tself do: [:each | each = value ifTrue: [^true]].\n\t^false! !\n\n!Dictionary methodsFor: 'enumerating'!\nassociationsDo: aBlock\n\tsuper do: aBlock!\n\ndo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc value]!\n\nkeysDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key]!\n\nkeysAndValuesDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key value: assoc value]!\n\ncollect: aBlock\n\t| result |\n\tresult := Bag new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := Dictionary new.\n\tself associationsDo: [:assoc | (aBlock value: assoc value) ifTrue: [result add: assoc]].\n\t^result! !\n\n!Dictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself associationsDo: [:assoc | aStream print: assoc; space].\n\taStream nextPut: $)! !\n\n!Bag class methodsFor: 'instance creation'!\nnew\n\t^self basicNew setContents! !\n\n!Bag methodsFor: 'private'!\nsetContents\n\tcontents := Dictionary new! !\n\n!Bag methodsFor: 'adding'!\nadd: newObject\n\t^self add: newObject withOccurrences: 1!\n\nadd: newObject withOccurrences: anInteger\n\tcontents at: newObject put: (contents at: newObject ifAbsent: [0]) + anInteger.\n\t^newObject! !\n\n!Bag methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| count |\n\tcount := contents at: oldObject ifAbsent: [^aBlock value].\n\tcount = 1\n\t\tifTrue: [contents removeKey: oldObject]\n\t\tifFalse: [contents at: oldObject put: count - 1].\n\t^oldObject! !\n\n!Bag methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tcontents do: [:count | tally := tally + count].\n\t^tally!\n\noccurrencesOf: anObject\n\t^contents at: anObject ifAbsent: [0]! !\n\n!Bag methodsFor: 'enumerating'!\ndo: aBlock\n\tcontents associationsDo: [:assoc | assoc value timesRepeat: [aBlock value: assoc key]]! !\n`],[0,[0,"Streams.st",`"Streams over collections: printString is printOn: into a WriteStream\non a String, and a ReadStream reads one element at a time."!\n\n!Stream methodsFor: 'accessing'!\nnext\n\t^self subclassResponsibility!\n\nnextPut: anObject\n\t^self subclassResponsibility!\n\nnextPutAll: aCollection\n\taCollection do: [:each | self nextPut: each].\n\t^aCollection!\n\natEnd\n\t^self subclassResponsibility!\n\ndo: aBlock\n\t[self atEnd] whileFalse: [aBlock value: self next]! !\n\n!Stream methodsFor: 'printing'!\nprint: anObject\n\tanObject printOn: self!\n\ncr\n\tself nextPut: Character cr!\n\ntab\n\tself nextPut: Character tab!\n\nspace\n\tself nextPut: Character space! !\n\n!PositionableStream class methodsFor: 'instance creation'!\non: aCollection\n\t^self basicNew on: aCollection! !\n\n!PositionableStream methodsFor: 'private'!\non: aCollection\n\tcollection := aCollection.\n\treadLimit := aCollection size.\n\tposition := 0! !\n\n!PositionableStream methodsFor: 'accessing'!\ncontents\n\t^collection copyFrom: 1 to: readLimit!\n\nposition\n\t^position!\n\nposition: anInteger\n\tposition := anInteger!\n\nreset\n\tposition := 0!\n\nisEmpty\n\t^readLimit = 0!\n\natEnd\n\t^position >= readLimit!\n\npeek\n\tself atEnd ifTrue: [^nil].\n\t^collection at: position + 1!\n\nskip: anInteger\n\tposition := (position + anInteger min: readLimit) max: 0!\n\nupTo: anObject\n\t| start |\n\tstart := position + 1.\n\t[self atEnd or: [self next = anObject]] whileFalse.\n\t^collection copyFrom: start to: (self atEnd ifTrue: [position] ifFalse: [position - 1])!\n\nupToEnd\n\t| start |\n\tstart := position + 1.\n\tposition := readLimit.\n\t^collection copyFrom: start to: readLimit!\n\nskipSeparators\n\t[self atEnd not and: [self peek isSeparator]] whileTrue: [self next]! !\n\n!ReadStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\nnextPut: anObject\n\t^self shouldNotImplement! !\n\n!WriteStream class methodsFor: 'instance creation'!\nwith: aCollection\n\t^(self on: aCollection) setToEnd! !\n\n!WriteStream methodsFor: 'private'!\non: aCollection\n\tsuper on: aCollection.\n\treadLimit := 0.\n\twriteLimit := aCollection size!\n\nsetToEnd\n\tposition := readLimit := writeLimit!\n\ngrowCollection\n\t| bigger |\n\tbigger := collection species new: collection size * 2 + 16.\n\tbigger replaceFrom: 1 to: collection size with: collection startingAt: 1.\n\tcollection := bigger.\n\twriteLimit := collection size! !\n\n!WriteStream methodsFor: 'accessing'!\nnextPut: anObject\n\tposition >= writeLimit ifTrue: [self growCollection].\n\tposition := position + 1.\n\tcollection at: position put: anObject.\n\tposition > readLimit ifTrue: [readLimit := position].\n\t^anObject!\n\ncontents\n\t^collection copyFrom: 1 to: position!\n\nnext\n\t^self shouldNotImplement! !\n\n!ReadWriteStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\ncontents\n\t^collection copyFrom: 1 to: readLimit! !\n\n!SequenceableCollection methodsFor: 'converting'!\nwriteStream\n\t^WriteStream on: self! !\n`],[0,[0,"Graphics.st",`"The display, as the Blue Book's chapters 18 to 20 have it: Forms,\npictures of one bit per pixel; BitBlt, the one primitive that draws\nthem (St_bitblt.mli); and Pen, a turtle that draws lines with it,\nLogo's idea brought to Smalltalk (Papert and Kay were friends).\nDisplay is the Form of the screen: what a Pen draws there is drawn over\nthe windows, until the screen menu's 'restore display' erases it."!\n\n!Form class methodsFor: 'instance creation'!\nextent: aPoint\n\t^self width: aPoint x height: aPoint y!\n\nwidth: w height: h\n\t^self new setBits: (ByteArray new: w + 15 // 16 * 2 * h) width: w height: h! !\n\n!Form methodsFor: 'private'!\nsetBits: aByteArray width: w height: h\n\tbits := aByteArray.\n\twidth := w.\n\theight := h! !\n\n!Form methodsFor: 'accessing'!\nwidth\n\t^width!\n\nheight\n\t^height!\n\nextent\n\t^width @ height!\n\nboundingBox\n\t^0 @ 0 corner: width @ height!\n\ncenter\n\t^(width // 2) @ (height // 2)!\n\nbits\n\t^bits! !\n\n!Form methodsFor: 'displaying'!\nfill: aRectangle rule: anInteger\n\t(BitBlt destForm: self sourceForm: nil halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aRectangle origin sourceOrigin: 0 @ 0 extent: aRectangle extent clipRect: self boundingBox) copyBits!\n\nfillWhite\n\tself fill: self boundingBox rule: 0!\n\nfillBlack\n\tself fill: self boundingBox rule: 15!\n\nreverse\n\tself fill: self boundingBox rule: 10!\n\ndisplayOn: aForm at: aPoint rule: anInteger\n\t(BitBlt destForm: aForm sourceForm: self halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aPoint sourceOrigin: 0 @ 0 extent: self extent clipRect: aForm boundingBox) copyBits!\n\ndisplayAt: aPoint\n\tself displayOn: Display at: aPoint rule: 3!\n\npixelAt: aPoint\n\t"0 or 1, read the BitBlt way: the pixel copied onto a Form of one."\n\t| one |\n\tone := Form width: 1 height: 1.\n\t(BitBlt destForm: one sourceForm: self halftoneForm: nil combinationRule: 3\n\t\tdestOrigin: 0 @ 0 sourceOrigin: aPoint extent: 1 @ 1 clipRect: one boundingBox) copyBits.\n\t^(one bits at: 1) bitShift: -7! !\n\n!Form methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Form('; print: width; nextPut: $x; print: height; nextPut: $)! !\n\n!BitBlt class methodsFor: 'instance creation'!\ndestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\t^self new\n\t\tsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr\n\t\tdestOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect! !\n\n!BitBlt methodsFor: 'private'!\nsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\tdestForm := df.\n\tsourceForm := sf.\n\thalftoneForm := hf.\n\tcombinationRule := cr.\n\tdestX := destOrigin x.\n\tdestY := destOrigin y.\n\tsourceX := sourceOrigin x.\n\tsourceY := sourceOrigin y.\n\twidth := extent x.\n\theight := extent y.\n\tclipX := clipRect origin x.\n\tclipY := clipRect origin y.\n\tclipWidth := clipRect width.\n\tclipHeight := clipRect height! !\n\n!BitBlt methodsFor: 'accessing'!\ndestForm: aForm\n\tdestForm := aForm!\n\nsourceForm: aForm\n\tsourceForm := aForm!\n\nhalftoneForm: aForm\n\thalftoneForm := aForm!\n\ncombinationRule: anInteger\n\tcombinationRule := anInteger!\n\ndestOrigin: aPoint\n\tdestX := aPoint x.\n\tdestY := aPoint y!\n\ndestX: x destY: y\n\tdestX := x.\n\tdestY := y!\n\nwidth: w height: h\n\twidth := w.\n\theight := h!\n\nclipRect: aRectangle\n\tclipX := aRectangle origin x.\n\tclipY := aRectangle origin y.\n\tclipWidth := aRectangle width.\n\tclipHeight := aRectangle height! !\n\n!BitBlt methodsFor: 'copying'!\ncopyBits\n\t"The one drawing primitive (St_bitblt.mli)."\n\t<primitive: 96>\n\t^self error: 'Bad BitBlt arguments'! !\n\n!Pen class methodsFor: 'instance creation'!\nnew\n\t"A pen of one pixel on the Display, at its center, pointing up."\n\t^super new defaultNib: 1! !\n\n!Pen methodsFor: 'initialize'!\ndefaultNib: n\n\tdestForm := Display.\n\tsourceForm := (Form width: n height: n) fillBlack; yourself.\n\tcombinationRule := 7.\n\twidth := n.\n\theight := n.\n\tsourceX := 0.\n\tsourceY := 0.\n\tself clipRect: Display boundingBox.\n\tframe := Display boundingBox.\n\tlocation := Display center.\n\tdirection := 270.\n\tpenDown := true! !\n\n!Pen methodsFor: 'accessing'!\nlocation\n\t^location!\n\ndirection\n\t^direction! !\n\n!Pen methodsFor: 'moving'!\nup\n\tpenDown := false!\n\ndown\n\tpenDown := true!\n\nturn: degrees\n\t"Clockwise, the y axis going down."\n\tdirection := direction + degrees \\\\ 360!\n\nnorth\n\tdirection := 270!\n\nhome\n\tlocation := Display center!\n\nplace: aPoint\n\tlocation := aPoint!\n\ngo: distance\n\t"Forward, drawing if the pen is down."\n\t| old radians |\n\told := location.\n\tradians := direction degreesToRadians.\n\tlocation := location + ((radians cos * distance) @ (radians sin * distance)).\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ngoto: aPoint\n\t| old |\n\told := location.\n\tlocation := aPoint.\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ndrawFrom: startPoint to: endPoint\n\t"Bresenham's line (1965), a copyBits of the nib at each point:\n\tthe error term says when to step across as well as along."\n\t| x0 y0 x1 y1 dx dy sx sy err e2 |\n\tx0 := startPoint x rounded.\n\ty0 := startPoint y rounded.\n\tx1 := endPoint x rounded.\n\ty1 := endPoint y rounded.\n\tdx := (x1 - x0) abs.\n\tdy := (y1 - y0) abs negated.\n\tsx := x0 < x1 ifTrue: [1] ifFalse: [-1].\n\tsy := y0 < y1 ifTrue: [1] ifFalse: [-1].\n\terr := dx + dy.\n\t[destX := x0.\n\tdestY := y0.\n\tself copyBits.\n\tx0 = x1 and: [y0 = y1]] whileFalse: [\n\t\te2 := 2 * err.\n\t\te2 >= dy ifTrue: [err := err + dy. x0 := x0 + sx].\n\t\te2 <= dx ifTrue: [err := err + dx. y0 := y0 + sy]]! !\n\n!Pen methodsFor: 'geometric designs'!\ndragon: n\n\t"The dragon curve, the Blue Book's (chapter 20): Pen new dragon: 9."\n\tn = 0\n\t\tifTrue: [self go: 10]\n\t\tifFalse: [\n\t\t\tn > 0\n\t\t\t\tifTrue: [self dragon: n - 1; turn: 90; dragon: 1 - n]\n\t\t\t\tifFalse: [self dragon: -1 - n; turn: -90; dragon: 1 + n]]!\n\nspiral: n angle: a\n\t"Pen new spiral: 200 angle: 89."\n\t1 to: n do: [:i | self go: i; turn: a]!\n\npolygon: sides length: length\n\tsides timesRepeat: [self go: length; turn: 360 // sides]!\n\nscribble\n\t"Pen new scribble: press the button and draw, release to stop --\n\tthe mouse read by Smalltalk while it runs."\n\tself place: Sensor waitButton.\n\t[Sensor anyButtonPressed] whileTrue: [self goto: Sensor mousePoint]! !\n\n!Number methodsFor: 'converting'!\ndegreesToRadians\n\t^self asFloat * 0.017453292519943295! !\n\n!InputSensor methodsFor: 'mouse'!\nmousePoint\n\t"Where the mouse is, on the Display."\n\t<primitive: 90>\n\tself primitiveFailed!\n\ncursorPoint\n\t^self mousePoint!\n\nbuttons\n\t<primitive: 91>\n\tself primitiveFailed!\n\nredButtonPressed\n\t^(self buttons bitAnd: 4) ~= 0!\n\nyellowButtonPressed\n\t^(self buttons bitAnd: 2) ~= 0!\n\nblueButtonPressed\n\t^(self buttons bitAnd: 1) ~= 0!\n\nanyButtonPressed\n\t^self buttons ~= 0!\n\nwaitButton\n\t[self anyButtonPressed] whileFalse.\n\t^self mousePoint!\n\nwaitNoButton\n\t[self anyButtonPressed] whileTrue! !\n`],[0,[0,"System.st",`"The last chunks the bootstrap runs, once every method is compiled:\nthe globals that are objects rather than classes."!\n\nSmalltalk at: #Transcript put: TextCollector new!\n\nSmalltalk at: #Display put: (Form extent: 800 @ 600)!\n\nSmalltalk at: #Sensor put: InputSensor new!\n\nRectangle comment: 'A rectangle of the screen, from its origin (top left) to its corner (bottom right), each a Point.'!\n\nPoint comment: 'A point of the screen, x to the right and y downwards: 3@4.'!\n\nObject comment: 'The root of the classes: what every object answers.'!\n`],0]]]]]]]],jy=[0,[2,0,[12,58,[4,0,0,0,[11,str$19,[2,0,0]]]]],"%s:%d: %s"],jx=[0,1],jw=[0,[2,0,[12,58,[4,0,0,0,[11,str$19,[2,0,[11,str$3,[2,0,0]]]]]]],"%s:%d: %s>>%s"];function
+jv(s,c){s=s?s[1]:jp;var
+l=[0,caml_make_vect(num_4096,0),caml_make_vect(num_4096,0),0,1,1,0,aI(0,num_1024),[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,[0],[0]]];caml_check_bound(l[2],0)[1]=[0,[0]];var
+f=l[8],c=jk,e=0;for(;;){if(!c)break;var
 u=c[1],j=u[2],b=caml_ml_string_length(j);a:{var
 v=0;b:{var
 i=0,a=0,c=c[2],u=u[1];for(;;){if(b<=a)break;var
 n=ak(num_256);c:{var
 r=a;for(;;){if(b<=r)break c;if(33===caml_string_get(j,r)){if((r+1|0)>=b)break;if(33!==caml_string_get(j,r+1|0))break;I(n,33);r=r+2|0}else{I(n,caml_string_get(j,r));r=r+1|0}}r=r+1|0}n=aw(n);var
-p=0,w=" \t\r\n";for(;;){if(p>=caml_ml_string_length(n))break;if(!as(w,caml_string_get(n,p)))break;p=p+1|0}n=F(n,p,caml_ml_string_length(n)-p|0);c:if(b<=r&&r===b){if(0!==b&&33===caml_string_get(j,b-1|0))break c;if(cz(n)===str)break b}a=a+p|0;for(;;){p=caml_ml_string_length(n);if(0<p&&as(w,caml_string_get(n,p-1|0))){n=F(n,0,p-1|0);continue}i=[0,[0,n,a],i];a=r;break}}a=h(i);break a}a=h(i)}for(;;){if(!a)break;i=a[1];p=i[1];if(p!==str){v=[0,[0,p,i[2]],v];a=a[2]}else{i=a[2];if(i){a=i[1];i=i[2];a=jl(a[1],a[2]);b=0;p=a[3];w=a[2];a=a[1];for(;;){if(i){n=i[1];if(n[1]!==str){b=[0,n,b];i=i[2];continue}i=i[2];b=[0,i,h(b)]}else
+p=0,w=" \t\r\n";for(;;){if(p>=caml_ml_string_length(n))break;if(!at(w,caml_string_get(n,p)))break;p=p+1|0}n=F(n,p,caml_ml_string_length(n)-p|0);c:if(b<=r&&r===b){if(0!==b&&33===caml_string_get(j,b-1|0))break c;if(cA(n)===str)break b}a=a+p|0;for(;;){p=caml_ml_string_length(n);if(0<p&&at(w,caml_string_get(n,p-1|0))){n=F(n,0,p-1|0);continue}i=[0,[0,n,a],i];a=r;break}}a=h(i);break a}a=h(i)}for(;;){if(!a)break;i=a[1];p=i[1];if(p!==str){v=[0,[0,p,i[2]],v];a=a[2]}else{i=a[2];if(i){a=i[1];i=i[2];a=jm(a[1],a[2]);b=0;p=a[3];w=a[2];a=a[1];for(;;){if(i){n=i[1];if(n[1]!==str){b=[0,n,b];i=i[2];continue}i=i[2];b=[0,i,h(b)]}else
 b=[0,0,h(b)];v=[0,[1,a,w,p,b[2]],v];a=b[1];break}}else
 a=a[2]}}let
-d=j,f=u;e=M(k(function(a){return[0,f,d,a]},h(v)),e)}e=h(e);c=b1(function(a){a=a[3];return 0===a[0]?gy(a[1]):0})(e);var
-z=aH(0,64);function
+d=j,f=u;e=M(k(function(a){return[0,f,d,a]},h(v)),e)}e=h(e);c=b1(function(a){a=a[3];return 0===a[0]?gz(a[1]):0})(e);var
+z=aI(0,64);function
 g(b){var
-a=fp(z,b);if(a)return a[1];throw caml_maybe_attach_backtrace([0,en,"the kernel defines no "+b],1)}var
+a=fq(z,b);if(a)return a[1];throw caml_maybe_attach_backtrace([0,en,"the kernel defines no "+b],1)}var
 d=k(function(c){var
-a=x(l,q,[0,caml_make_vect(6,0)]),b=x(l,a,[0,caml_make_vect(9,0)]);dT(z,c[2],b);return a},c);f[15]=g("Metaclass");for(;;){if(!d)break;u=d[2];fL(l,d[1],f[15]);d=u}f[1]=g("SmallInteger");f[2]=g("String");f[3]=g("Symbol");f[4]=g("Array");f[5]=g(str_Float);f[6]=g("Character");f[7]=g(str_CompiledMethod);f[8]=g("MethodContext");f[9]=g("BlockContext");f[10]=g("Message");f[11]=g("Association");f[12]=g("Point");f[13]=g("LargePositiveInteger");f[14]=g("LargeNegativeInteger");f[16]=g("MethodDictionary");fL(l,q,g("UndefinedObject"));f[17]=x(l,g("True"),[0,[0]]);f[18]=x(l,g("False"),[0,[0]]);f[20]=dB(num_256,function(a){a=[0,[0,m(a)]];return x(l,f[6],a)});d=[0,[0,R(l,[0])]];f[19]=x(l,g("SystemDictionary"),d);f[21]=aY(function(a){return J(l,a)},d3);cY(l,"Smalltalk",f[19]);d=c;for(;;){if(!d)break;j=d[1];d=d[2];u=g(j[2]);cY(l,j[2],u)}for(;;){if(!c){c=e;break}d=c[1];c=c[2];j=d[1]===str_nil?q:g(d[1]);f5(l,j,d[2],d[3],d[4],d[5],d[6])}for(;;){if(!c)break;d=c[2];c=c[1];b=c[3];j=c[2];c=c[1];if(0===b[0])c=d;else{var
-t=b[4],v=b[3],a=b[2],b=g(b[1]),b=a?o(l,b):b;for(;;){if(!t){c=d;break}a=t[1];i=t[2];u=a[2];a=a[1];try{bL(l,b,v,jw,a);t=i}catch(a){e=caml_wrap_exception(a);if(e[1]!==az)throw caml_maybe_attach_backtrace(e,0);s=e[3];e=e[2];var
-y=ah(l,b),e=gz(j,u+e|0);throw caml_maybe_attach_backtrace([0,en,caml_call4(G(jv),c,e,y,s)],1)}}}}c=gj(l,s);gv(c);for(;;){if(!e)return c;s=e[2];e=e[1];d=e[3];b=e[2];e=e[1];if(0===d[0]){j=d[1];d=d[2];if(0===gy(j)){a:{try{y=ea(j)}catch(a){t=caml_wrap_exception(a);if(t[1]!==a3)throw caml_maybe_attach_backtrace(t,0);t=0;break a}t=y[5]?0:1}if(1-t){j=c9(c,0,0,j);if(0!==j[0]){s=j[1];c=gz(b,d);throw caml_maybe_attach_backtrace([0,en,caml_call3(G(jx),e,c,s)],1)}e=s}else
+a=x(l,q,[0,caml_make_vect(6,0)]),b=x(l,a,[0,caml_make_vect(9,0)]);dT(z,c[2],b);return a},c);f[15]=g("Metaclass");for(;;){if(!d)break;u=d[2];fM(l,d[1],f[15]);d=u}f[1]=g("SmallInteger");f[2]=g("String");f[3]=g("Symbol");f[4]=g("Array");f[5]=g(str_Float);f[6]=g("Character");f[7]=g(str_CompiledMethod);f[8]=g("MethodContext");f[9]=g("BlockContext");f[10]=g("Message");f[11]=g("Association");f[12]=g("Point");f[13]=g("LargePositiveInteger");f[14]=g("LargeNegativeInteger");f[16]=g("MethodDictionary");fM(l,q,g("UndefinedObject"));f[17]=x(l,g("True"),[0,[0]]);f[18]=x(l,g("False"),[0,[0]]);f[20]=dB(num_256,function(a){a=[0,[0,m(a)]];return x(l,f[6],a)});d=[0,[0,S(l,[0])]];f[19]=x(l,g("SystemDictionary"),d);f[21]=aZ(function(a){return J(l,a)},d3);cZ(l,"Smalltalk",f[19]);d=c;for(;;){if(!d)break;j=d[1];d=d[2];u=g(j[2]);cZ(l,j[2],u)}for(;;){if(!c){c=e;break}d=c[1];c=c[2];j=d[1]===str_nil?q:g(d[1]);f6(l,j,d[2],d[3],d[4],d[5],d[6])}for(;;){if(!c)break;d=c[2];c=c[1];b=c[3];j=c[2];c=c[1];if(0===b[0])c=d;else{var
+t=b[4],v=b[3],a=b[2],b=g(b[1]),b=a?o(l,b):b;for(;;){if(!t){c=d;break}a=t[1];i=t[2];u=a[2];a=a[1];try{bL(l,b,v,jx,a);t=i}catch(a){e=caml_wrap_exception(a);if(e[1]!==az)throw caml_maybe_attach_backtrace(e,0);s=e[3];e=e[2];var
+y=ah(l,b),e=gA(j,u+e|0);throw caml_maybe_attach_backtrace([0,en,caml_call4(G(jw),c,e,y,s)],1)}}}}c=gk(l,s);gw(c);for(;;){if(!e)return c;s=e[2];e=e[1];d=e[3];b=e[2];e=e[1];if(0===d[0]){j=d[1];d=d[2];if(0===gz(j)){a:{try{y=ea(j)}catch(a){t=caml_wrap_exception(a);if(t[1]!==a4)throw caml_maybe_attach_backtrace(t,0);t=0;break a}t=y[5]?0:1}if(1-t){j=c_(c,0,0,j);if(0!==j[0]){s=j[1];c=gA(b,d);throw caml_maybe_attach_backtrace([0,en,caml_call3(G(jy),e,c,s)],1)}e=s}else
 e=s}else
 e=s}else
 e=s}}var
-str_TinySmalltalk80_abr="TinySmalltalk80 image 1\n",jA=caml_int64_create_lo_mi_hi(0,0,0);function
-jz(k){var
+str_TinySmalltalk80_abr="TinySmalltalk80 image 1\n",jB=caml_int64_create_lo_mi_hi(0,0,0);function
+jA(k){var
 a=caml_ml_string_length(k)<24,c=24,a=a||F(k,0,c)!==str_TinySmalltalk80_abr;if(a)aj("not a TinySmalltalk80 image");var
 e=[0,k,c];function
-j(a){return ar(bN(e),function(a){return gB(e)})}var
+j(a){return as(bN(e),function(a){return gC(e)})}var
 c=j(0),k=Y(j(0));a:{a=Y(j(0));if(c){var
 l=c[2];if(l){var
 b=l[2];if(b){var
@@ -3069,18 +3069,18 @@ d=t[2];if(d){var
 u=d[2];if(u){var
 v=u[2];if(v){var
 w=v[2];if(w){var
-g=w[2];if(g&&!g[2]){h=[0,c[1],l[1],b[1],m[1],n[1],o[1],p[1],q[1],i[1],r[1],h[1],f[1],s[1],t[1],d[1],u[1],v[1],w[1],g[1],k,a];break a}}}}}}}}}}}}}}}}}}}h=aj("bad image header")}d=ar(bN(e),function(c){c=bN(e);var
-d=gB(e),a=caml_string_get(e[1],e[2]);e[2]=e[2]+1|0;a=a-66|0;a:{if(14>=a>>>0)switch(a){case
+g=w[2];if(g&&!g[2]){h=[0,c[1],l[1],b[1],m[1],n[1],o[1],p[1],q[1],i[1],r[1],h[1],f[1],s[1],t[1],d[1],u[1],v[1],w[1],g[1],k,a];break a}}}}}}}}}}}}}}}}}}}h=aj("bad image header")}d=as(bN(e),function(c){c=bN(e);var
+d=gC(e),a=caml_string_get(e[1],e[2]);e[2]=e[2]+1|0;a=a-66|0;a:{if(14>=a>>>0)switch(a){case
 0:a=[1,eo(e,bN(e))];break a;case
-4:a=jA;var
+4:a=jB;var
 b=7,f=eo(e,8);for(;;){a=caml_int64_or(caml_int64_shift_left(a,8),caml_int64_of_int32(caml_bytes_get(f,b)));var
 g=b-1|0;if(0===b){a=[2,caml_int64_float_of_bits(a)];break a}b=g}break;case
 11:a=Y(j(0));a=[3,a,eo(e,bN(e))];break a;case
-14:a=[0,Y(j(0))];break a}a=aj("bad object in image")}return[0,c,d,a]});a=d;b=1;for(;;){if(!a)break;c=a[2];b=$(b,a[1][1]+1|0);a=c}a=num_4096;for(;;){if(a>=(b+1|0))break;a=2*a|0}a=[0,caml_make_vect(a,0),caml_make_vect(a,0),0,b,0,0,aH(0,num_1024),h];c=d;for(;;){if(!c)break;f=c[1];g=f[1];c=c[2];i=f[3];f=f[2];caml_check_bound(a[1],g)[g+1]=f;caml_check_bound(a[2],g)[g+1]=i;a[5]=a[5]+1|0}b=b-1|0;if(b<1);else
+14:a=[0,Y(j(0))];break a}a=aj("bad object in image")}return[0,c,d,a]});a=d;b=1;for(;;){if(!a)break;c=a[2];b=$(b,a[1][1]+1|0);a=c}a=num_4096;for(;;){if(a>=(b+1|0))break;a=2*a|0}a=[0,caml_make_vect(a,0),caml_make_vect(a,0),0,b,0,0,aI(0,num_1024),h];c=d;for(;;){if(!c)break;f=c[1];g=f[1];c=c[2];i=f[3];f=f[2];caml_check_bound(a[1],g)[g+1]=f;caml_check_bound(a[2],g)[g+1]=i;a[5]=a[5]+1|0}b=b-1|0;if(b<1);else
 for(;;){if(0===caml_check_bound(a[2],b)[b+1])a[3]=[0,b,a[3]];c=b-1|0;if(1===b)break;b=c}for(;;){if(!d)return a;c=d[2];d=d[1];b=d[3];f=d[2];d=d[1];if(typeof
-b==="number"||!(1===b[0]))d=c;else{b=b[1];if(f===h[3]){b=e8(b);dT(a[7],b,d<<1);d=c}else
+b==="number"||!(1===b[0]))d=c;else{b=b[1];if(f===h[3]){b=e9(b);dT(a[7],b,d<<1);d=c}else
 d=c}}}function
-jE(a,b){if(typeof
+jF(a,b){if(typeof
 a==="number")for(;;){if(!b)return 0;a=b[1];b=b[2];a=11===a[0]?[0,caml_call1(a[1],0)]:0;if(a)return[0,a[1]]}else
 switch(a[0]){case
 0:a=a[1];for(;;){if(!b)return 0;var
@@ -3095,15 +3095,15 @@ for(;;){if(!b)return 0;a=b[1];b=b[2];a=6===a[0]?[0,caml_call1(a[1],0)]:0;if(a)re
 5:a=a[1];if(a[1]){a=a[2];for(;;){if(!b)return 0;c=b[1];b=b[2];c=7===c[0]?[0,caml_call1(c[1],a)]:0;if(c)return[0,c[1]]}}else{a=a[2];for(;;){if(!b)return 0;c=b[1];b=b[2];c=8===c[0]?[0,caml_call1(c[1],a)]:0;if(c)return[0,c[1]]}}break;case
 6:a=a[1];for(;;){if(!b)return 0;c=b[1];b=b[2];c=9===c[0]?[0,caml_call1(c[1],a)]:0;if(c)return[0,c[1]]}break;case
 7:a=a[1];for(;;){if(!b)return 0;c=b[1];b=b[2];c=10===c[0]?[0,caml_call1(c[1],a)]:0;if(c)return[0,c[1]]}break;default:c=a[1];a=c[2];c=c[1];for(;;){if(!b)return 0;d=b[1];b=b[2];d=12===d[0]?[0,caml_call2(d[1],c,a)]:0;if(d)return[0,d[1]]}}}function
-jK(a,c){var
+jL(a,c){var
 b=a?a[1]:num_44100;return function(a,e){a=num_6_283185307179586*a/b;var
 d=Math.cos(a),e=Math.sin(a)/(2.*e),a=1.+e;switch(c){case
 0:var
 h=(1.-d)/2.,g=1.-d,f=(1.-d)/2.;break;case
-1:h=(1.+d)/2.;g=-(1.+d);f=(1.+d)/2.;break;default:h=-e;g=0.;f=e}return[num_254,f/a,g/a,h/a,-2.*d/a,(1.-e)/a]}}try{aM=fD[28].call(null,str,C[7]);var
-gT=aM}catch(a){aM=caml_wrap_exception(a);if(aM!==Not_found)throw caml_maybe_attach_backtrace(aM,0);aM=C[1];C[1]=aM+1|0;gT=aM}fI(C,fH(C,cw),function(a){return a[gT+1]});d0(C);var
-str_copy="copy",str_end="end",str_mousemove="mousemove",str_mousedown="mousedown",str_keydown="keydown",str_mouseup="mouseup",str_keyup="keyup",str_wheel="wheel",str_dblclick="dblclick",str_paste="paste",str_load="load",str_cut="cut";function
-jO(a){if(typeof
+1:h=(1.+d)/2.;g=-(1.+d);f=(1.+d)/2.;break;default:h=-e;g=0.;f=e}return[num_254,f/a,g/a,h/a,-2.*d/a,(1.-e)/a]}}try{aN=fE[28].call(null,str,C[7]);var
+gU=aN}catch(a){aN=caml_wrap_exception(a);if(aN!==Not_found)throw caml_maybe_attach_backtrace(aN,0);aN=C[1];C[1]=aN+1|0;gU=aN}fJ(C,fI(C,cw),function(a){return a[gU+1]});d0(C);var
+str_copy="copy",str_end="end",str_mousemove="mousemove",str_mousedown="mousedown",str_keydown="keydown",str_mouseup="mouseup",str_keyup="keyup",str_wheel="wheel",str_blur="blur",str_dblclick="dblclick",str_paste="paste",str_load="load",str_cut="cut";function
+jP(a){if(typeof
 a!=="number")return caml_js_from_string(a[1]);if(88<=a){if(num_132<=a)switch(a){case
 132:return"resume";case
 133:return"scroll";case
@@ -3246,7 +3246,7 @@ a!=="number")return caml_js_from_string(a[1]);if(88<=a){if(num_132<=a)switch(a){
 10:return"beforeunload";case
 11:return"beginEvent";case
 12:return"blocked";case
-13:return"blur";case
+13:return str_blur;case
 14:return"boundary";case
 15:return"cached";case
 16:return"canplay";case
@@ -3276,71 +3276,71 @@ a!=="number")return caml_js_from_string(a[1]);if(88<=a){if(num_132<=a)switch(a){
 40:return"DOMAttrModified";case
 41:return"DOMCharacterDataModified";case
 42:return"DOMContentLoaded";default:return"DOMElementNameChanged"}}function
-gU(a){a.preventDefault();return 0}function
+gV(a){a.preventDefault();return 0}function
 eA(a){return caml_js_to_string(a.type)}function
-dd(a){return caml_js_to_string(a.key)}function
+de(a){return caml_js_to_string(a.key)}function
 eB(b,a){b.appendChild(a)}function
-gV(b,a){b.removeChild(a)}function
+gW(b,a){b.removeChild(a)}function
 eC(c,b,a){c.setAttribute(caml_js_from_string(b),caml_js_from_string(a))}function
-eD(d,c,b,a){d.addEventListener(jO(c),caml_js_wrap_callback_strict(1,function(a){return caml_call1(b,a)}),!!a);return 0}function
-gW(b,a){b.requestAnimationFrame(caml_js_wrap_callback_strict(1,function(b){return caml_call1(a,b)}));return 0}var
-bq=at.window,eE=at.document,C=globalThis;C.String;C.RegExp;C.Object;C.Array;C.Date;C.Math;function
-gX(a){return caml_string_of_jsstring(a.toString())}C.JSON;var
-jQ=C.Error,jP=at.console;dQ(function(a){return a
+eD(d,c,b,a){d.addEventListener(jP(c),caml_js_wrap_callback_strict(1,function(a){return caml_call1(b,a)}),!!a);return 0}function
+gX(b,a){b.requestAnimationFrame(caml_js_wrap_callback_strict(1,function(b){return caml_call1(a,b)}));return 0}var
+bq=aq.window,eE=aq.document,C=globalThis;C.String;C.RegExp;C.Object;C.Array;C.Date;C.Math;function
+gY(a){return caml_string_of_jsstring(a.toString())}C.JSON;var
+jR=C.Error,jQ=aq.console;dQ(function(a){return a
 instanceof
-jQ?[0,gX(a)]:a[1]===gR?[0,gX(a[2])]:0});C.ArrayBuffer;C.Int8Array;C.Uint8Array;C.Int16Array;C.Uint16Array;C.Int32Array;C.Uint32Array;C.Float32Array;C.Float64Array;C.DataView;var
+jR?[0,gY(a)]:a[1]===gS?[0,gY(a[2])]:0});C.ArrayBuffer;C.Int8Array;C.Uint8Array;C.Int16Array;C.Uint16Array;C.Int32Array;C.Uint32Array;C.Float32Array;C.Float64Array;C.DataView;var
 str_ABCDEFGHIJKLMNOP_abr="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";function
-gY(h){var
+gZ(h){var
 c=caml_ml_string_length(h),d=ak(((c+2|0)/3|0)*4|0);function
 e(a){return a<c?caml_string_get(h,a):0}var
 a=0;for(;;){if(a>=c)return aw(d);var
 f=e(a+2|0),g=e(a+1|0)<<8,b=0,f=e(a)<<16|g|f;for(;;){a:{if(((a+b|0)-1|0)>=c&&2<=b){I(d,61);break a}I(d,caml_string_get(str_ABCDEFGHIJKLMNOP_abr,(f>>>(18-(6*b|0)|0)|0)&63))}g=b+1|0;if(3===b){a=a+3|0;break}b=g}}}function
-gZ(a){a=bq.localStorage;a=a==ez?0:[0,a];return a?a[1]:aj("no localStorage in this browser")}a_(bx);a_(by);a_(bw);a_(dq);a_(dp);a_(aN);a_(A);a_(a);a=aH(0,2);A=aH(0,2);var
-aV=[0,0,aH(0,8),A,a];aH(0,2);aH(0,2);var
-jM=[0,1],jN=[0,1];function
-g0(c){var
-g=caml_make_vect(c,0.),h=caml_make_vect(c,0.),a=aV[1];for(;;){if(!a)break;var
-b=a[1],a=a[2],f=b[2],f=O(c,ey(b[1])-f|0),l=f-1|0;if(l>=0){var
+g0(a){a=bq.localStorage;a=a==ez?0:[0,a];return a?a[1]:aj("no localStorage in this browser")}a$(bx);a$(by);a$(bw);a$(dr);a$(dq);a$(aO);a$(A);a$(a);a=aI(0,2);A=aI(0,2);var
+aW=[0,0,aI(0,8),A,a];aI(0,2);aI(0,2);var
+jN=[0,1],jO=[0,1];function
+g1(c){var
+g=caml_make_vect(c,0.),h=caml_make_vect(c,0.),a=aW[1];for(;;){if(!a)break;var
+b=a[1],a=a[2],f=b[2],f=P(c,ey(b[1])-f|0),l=f-1|0;if(l>=0){var
 d=0;for(;;){var
-e=b[2]+d|0,e=caml_check_bound(b[1][1],e)[e+1];g[d+1]=caml_check_bound(g,d)[d+1]+e;e=b[2]+d|0;e=caml_check_bound(b[1][2],e)[e+1];h[d+1]=caml_check_bound(h,d)[d+1]+e;e=d+1|0;if(l===d)break;d=e}}b[2]=b[2]+f|0}a=aV[1];aV[1]=T(function(a){var
+e=b[2]+d|0,e=caml_check_bound(b[1][1],e)[e+1];g[d+1]=caml_check_bound(g,d)[d+1]+e;e=b[2]+d|0;e=caml_check_bound(b[1][2],e)[e+1];h[d+1]=caml_check_bound(h,d)[d+1]+e;e=d+1|0;if(l===d)break;d=e}}b[2]=b[2]+f|0}a=aW[1];aW[1]=N(function(a){var
 b=ey(a[1]);return a[2]<b?1:0})(a);var
-i=[0,0];cI(function(a,d){if(d[3]){a=gQ(d[2],d[1],c);var
-b=a[1];d[2]=a[2]}else{i[1]=[0,a,i[1]];b=d[1];b=gQ(d[2],[0,b[1],b[2],b[3],b[4],0.,b[6],b[7],b[8]],c)[1]}a=d[4];if(a){a=a[1];var
-k=a[4],j=a[2],l=jK(0,a[1])(j,k),f=d[5],b=aY(function(b){var
-a=l[1]*b+l[2]*f[1]+l[3]*f[2]-l[4]*f[3]-l[5]*f[4];f[2]=f[1];f[1]=b;f[4]=f[3];f[3]=a;return a},b)}j=gO(d[7]);a=j[2];j=j[1];k=gO(d[6]);var
+i=[0,0];cJ(function(a,d){if(d[3]){a=gR(d[2],d[1],c);var
+b=a[1];d[2]=a[2]}else{i[1]=[0,a,i[1]];b=d[1];b=gR(d[2],[0,b[1],b[2],b[3],b[4],0.,b[6],b[7],b[8]],c)[1]}a=d[4];if(a){a=a[1];var
+k=a[4],j=a[2],l=jL(0,a[1])(j,k),f=d[5],b=aZ(function(b){var
+a=l[1]*b+l[2]*f[1]+l[3]*f[2]-l[4]*f[3]-l[5]*f[4];f[2]=f[1];f[1]=b;f[4]=f[3];f[3]=a;return a},b)}j=gP(d[7]);a=j[2];j=j[1];k=gP(d[6]);var
 n=b.length-2|0,p=k[2],k=k[1];if(n>=0){var
 e=0;for(;;){var
-m=b[e+1],o=(e+1|0)/c;g[e+1]=caml_check_bound(g,e)[e+1]+m*(j+(k-j)*o);h[e+1]=caml_check_bound(h,e)[e+1]+m*(a+(p-a)*o);m=e+1|0;if(n===e)break;e=m}}d[7]=d[6];d[3]=0;return 0},aV[2]);a=i[1];b=aV[2];for(;;){if(!a)break;f=a[2];dS(b,a[1]);a=f}var
-j=[0,0];cI(function(e,a){var
+m=b[e+1],o=(e+1|0)/c;g[e+1]=caml_check_bound(g,e)[e+1]+m*(j+(k-j)*o);h[e+1]=caml_check_bound(h,e)[e+1]+m*(a+(p-a)*o);m=e+1|0;if(n===e)break;e=m}}d[7]=d[6];d[3]=0;return 0},aW[2]);a=i[1];b=aW[2];for(;;){if(!a)break;f=a[2];dS(b,a[1]);a=f}var
+j=[0,0];cJ(function(e,a){var
 f=c-1|0,k=ey(a[1]);if(f>=0){var
 d=0;for(;;){var
-i=a[4]?1.-d/c:1.,b=a[2],b=i*caml_check_bound(a[1][1],b)[b+1];g[d+1]=caml_check_bound(g,d)[d+1]+b;b=a[2];b=i*caml_check_bound(a[1][2],b)[b+1];h[d+1]=caml_check_bound(h,d)[d+1]+b;a[2]=caml_mod(a[2]+1|0,k);b=d+1|0;if(f===d)break;d=b}}a[3]=a[3]+c|0;a=a[4];e=a?(j[1]=[0,e,j[1]],0):a;return e},aV[3]);a=j[1];b=aV[3];for(;;){if(!a)break;f=a[2];dS(b,a[1]);a=f}var
-k=[0,0];cI(function(f,b){var
+i=a[4]?1.-d/c:1.,b=a[2],b=i*caml_check_bound(a[1][1],b)[b+1];g[d+1]=caml_check_bound(g,d)[d+1]+b;b=a[2];b=i*caml_check_bound(a[1][2],b)[b+1];h[d+1]=caml_check_bound(h,d)[d+1]+b;a[2]=caml_mod(a[2]+1|0,k);b=d+1|0;if(f===d)break;d=b}}a[3]=a[3]+c|0;a=a[4];e=a?(j[1]=[0,e,j[1]],0):a;return e},aW[3]);a=j[1];b=aW[3];for(;;){if(!a)break;f=a[2];dS(b,a[1]);a=f}var
+k=[0,0];cJ(function(f,b){var
 e=[0,caml_make_vect(c,0.),caml_make_vect(c,0.)];caml_call1(b[1][4],e);var
 i=c-1|0;if(i>=0){var
 a=0;for(;;){var
-d=b[2]?1.-a/c:1.,j=d*caml_check_bound(e[1],a)[a+1];g[a+1]=caml_check_bound(g,a)[a+1]+j;d*=caml_check_bound(e[2],a)[a+1];h[a+1]=caml_check_bound(h,a)[a+1]+d;d=a+1|0;if(i===a)break;a=d}}b=b[2];f=b?(k[1]=[0,f,k[1]],0):b;return f},aV[4]);a=k[1];b=aV[4];for(;;){if(!a){a=gM(jM,h);return[0,gM(jN,g),a]}f=a[2];dS(b,a[1]);a=f}}function
-g4(c,b,a){return[0,0.,0.,0.,1.,1.,[2,c,b,a]]}function
+d=b[2]?1.-a/c:1.,j=d*caml_check_bound(e[1],a)[a+1];g[a+1]=caml_check_bound(g,a)[a+1]+j;d*=caml_check_bound(e[2],a)[a+1];h[a+1]=caml_check_bound(h,a)[a+1]+d;d=a+1|0;if(i===a)break;a=d}}b=b[2];f=b?(k[1]=[0,f,k[1]],0):b;return f},aW[4]);a=k[1];b=aW[4];for(;;){if(!a){a=gN(jN,h);return[0,gN(jO,g),a]}f=a[2];dS(b,a[1]);a=f}}function
+g5(c,b,a){return[0,0.,0.,0.,1.,1.,[2,c,b,a]]}function
 eF(c,b,a){return[0,a[1]+c,a[2]+b,a[3],a[4],a[5],a[6]]}function
 eG(b,a){return[num_254,b,a,a/2.,-b/2.,b/2.,-a/2.]}function
-g5(b,a){return[0,a[1],a[2],a[3],b,a[5],a[6],a[7],a[8],a[9]]}function
-g6(b,a){return[0,a[1],a[2],b,a[4],a[5],a[6],a[7],a[8],a[9]]}var
-str_Backspace="Backspace",str_Delete="Delete",str_ArrowLeft="ArrowLeft",str_Enter="Enter",str_ArrowDown="ArrowDown",str_ArrowUp="ArrowUp",str_Control="Control",str_Tab="Tab",str_End="End",str_space="space",str_Home="Home",str_s="s",str_d$0="d",str_ArrowRight="ArrowRight",str_a="a";function
-jT(e,d,a){var
-c=caml_string_compare(d,"home"),f="Shift";a:{var
-b=str_Enter;if(0<=c){if(0>=c){b=str_Home;break a}if(d==="insert"){b="Insert";break a}if(d==="pagedown"){b="PageDown";break a}if(d==="pageup"){b="PageUp";break a}if(d==="return")break a;if(d==="tab"){b=str_Tab;break a}}else{if(d===str_Enter)break a;if(d==="backspace"){b=str_Backspace;break a}if(d==="delete"){b=str_Delete;break a}if(d===str_end){b=str_End;break a}if(d==="escape"){b="Escape";break a}}if(2<=caml_ml_string_length(d)&&num_102===caml_string_get(d,0)){b=caml_bytes_of_string(F(d,1,caml_ml_string_length(d)-1|0));c=0;var
-g=caml_ml_bytes_length(b);for(;;){if(c===g)b=1;else{var
-i=caml_bytes_unsafe_get(b,c),h=48<=i,h=h?i<=57:h;if(h){c=c+1|0;continue}b=0}if(!b)break;b="F"+F(d,1,caml_ml_string_length(d)-1|0);break a}}b=f;g=str_Control;c="Alt";b=d!=="left alt"?d!=="left ctrl"?d!=="left shift"?d!=="right alt"?d!=="right ctrl"?d!=="right shift"?d:b:g:c:b:g:c}c=e?cn(b,a[13]):es(b,a[13]);f=caml_string_compare(b,f);if(0<=f){if(0>=f)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],e,a[12],c,a[14]];if(b===str_a)return[0,a[1],a[2],a[3],a[4],a[5],a[6],e,a[8],a[9],a[10],a[11],a[12],c,a[14]];if(b===str_d$0)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],e,a[9],a[10],a[11],a[12],c,a[14]];if(b===str_s)return[0,a[1],a[2],a[3],a[4],a[5],e,a[7],a[8],a[9],a[10],a[11],a[12],c,a[14]];if(b===str_space)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],e,a[10],a[11],a[12],c,a[14]];if(b==="w")return[0,a[1],a[2],a[3],a[4],e,a[6],a[7],a[8],a[9],a[10],a[11],a[12],c,a[14]]}else{if(b===str_ArrowDown)return[0,a[1],e,a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],c,a[14]];if(b===str_ArrowLeft)return[0,a[1],a[2],e,a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],c,a[14]];if(b===str_ArrowRight)return[0,a[1],a[2],a[3],e,a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],c,a[14]];if(b===str_ArrowUp)return[0,e,a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],c,a[14]];if(b===str_Backspace)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],e,c,a[14]];if(b===str_Enter)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],e,a[11],a[12],c,a[14]]}return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],c,a[14]]}function
-g7(a){jP.log(caml_js_from_string(a))}var
-g2=num_1000$0,g3=num_1000$0,jV=eG(g2,g3),j7=at.String;function
-K(a){return caml_js_to_string(j7(a))}function
-de(b,a){switch(a[0]){case
+g6(b,a){return[0,a[1],a[2],a[3],b,a[5],a[6],a[7],a[8],a[9]]}function
+g7(b,a){return[0,a[1],a[2],b,a[4],a[5],a[6],a[7],a[8],a[9]]}var
+str_Backspace="Backspace",str_Delete="Delete",str_ArrowLeft="ArrowLeft",str_Enter="Enter",str_ArrowDown="ArrowDown",str_Alt="Alt",str_ArrowUp="ArrowUp",str_Control="Control",str_Tab="Tab",str_End="End",str_Shift="Shift",str_space="space",str_Home="Home",str_s="s",str_d$0="d",str_ArrowRight="ArrowRight",str_a="a";function
+jU(e,c,a){var
+d=caml_string_compare(c,"home");a:{var
+b=str_Enter;if(0<=d){if(0>=d){b=str_Home;break a}if(c==="insert"){b="Insert";break a}if(c==="pagedown"){b="PageDown";break a}if(c==="pageup"){b="PageUp";break a}if(c==="return")break a;if(c==="tab"){b=str_Tab;break a}}else{if(c===str_Enter)break a;if(c==="backspace"){b=str_Backspace;break a}if(c==="delete"){b=str_Delete;break a}if(c===str_end){b=str_End;break a}if(c==="escape"){b="Escape";break a}}if(2<=caml_ml_string_length(c)&&num_102===caml_string_get(c,0)){b=caml_bytes_of_string(F(c,1,caml_ml_string_length(c)-1|0));d=0;var
+f=caml_ml_bytes_length(b);for(;;){if(d===f)f=1;else{var
+g=caml_bytes_unsafe_get(b,d),h=48<=g,g=h?g<=57:h;if(g){d=d+1|0;continue}f=0}if(!f)break;b="F"+F(c,1,caml_ml_string_length(c)-1|0);break a}}b=str_Shift;d=str_Control;f=str_Alt;b=c!=="left alt"?c!=="left ctrl"?c!=="left shift"?c!=="right alt"?c!=="right ctrl"?c!=="right shift"?c:b:d:f:b:d:f}d=e?cn(b,a[13]):es(b,a[13]);c=caml_string_compare(b,str_Shift);if(0<=c){if(0>=c)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],e,a[12],d,a[14]];if(b===str_a)return[0,a[1],a[2],a[3],a[4],a[5],a[6],e,a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_d$0)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],e,a[9],a[10],a[11],a[12],d,a[14]];if(b===str_s)return[0,a[1],a[2],a[3],a[4],a[5],e,a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_space)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],e,a[10],a[11],a[12],d,a[14]];if(b==="w")return[0,a[1],a[2],a[3],a[4],e,a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]]}else{if(b===str_ArrowDown)return[0,a[1],e,a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowLeft)return[0,a[1],a[2],e,a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowRight)return[0,a[1],a[2],a[3],e,a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_ArrowUp)return[0,e,a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]];if(b===str_Backspace)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],e,d,a[14]];if(b===str_Enter)return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],e,a[11],a[12],d,a[14]]}return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],d,a[14]]}function
+g8(a){jQ.log(caml_js_from_string(a))}var
+g3=num_1000$0,g4=num_1000$0,jW=eG(g3,g4),j8=aq.String;function
+K(a){return caml_js_to_string(j8(a))}function
+df(b,a){switch(a[0]){case
 0:return eC(b,a[1],a[2]);case
 1:b.style[a[1]]=caml_js_from_string(a[2]);return;default:b[a[1]]=caml_js_from_string(a[2]);return}}function
-df(a){var
+dg(a){var
 c=eE.createElementNS("http://www.w3.org/2000/svg",caml_js_from_string(a[1])),b=a[2];for(;;){if(!b)break;var
-d=b[2];de(c,b[1]);b=d}a=a[3];for(;;){if(!a)return c;b=a[2];eB(c,df(a[1]));a=b}}function
-g8(a,f,d,b){if(d[1]!==b[1]){b=df(b);a.replaceChild(b,f);return b}a=d[2];for(;;){if(!a)break;var
+d=b[2];df(c,b[1]);b=d}a=a[3];for(;;){if(!a)return c;b=a[2];eB(c,dg(a[1]));a=b}}function
+g9(a,f,d,b){if(d[1]!==b[1]){b=dg(b);a.replaceChild(b,f);return b}a=d[2];for(;;){if(!a)break;var
 e=a[2],a=a[1],g=b[2];a:for(;;){if(g){var
 c=g[1];b:{c:{g=g[2];switch(a[0]){case
 0:var
@@ -3348,109 +3348,109 @@ h=a[1];if(0===c[0]){c=c[1];break c}break;case
 1:h=a[1];if(1===c[0]){c=c[1];break c}break;default:h=a[1];if(2===c[0]){c=c[1];break c}}c=0;break b}c=h===c}if(!c)continue}else
 c=0;if(1-c)switch(a[0]){case
 0:f.removeAttribute(caml_js_from_string(a[1]));a=e;break a;case
-1:de(f,[1,a[1],str]);a=e;break a;default:de(f,[2,a[1],str]);a=e;break a}a=e;break}}a=b[2];for(;;){if(!a)break;e=a[2];a=a[1];if(1-be(a,d[2])){de(f,a);a=e}else
-a=e}a=f.firstChild;d=d[3];b=b[3];for(;;)if(d){e=d[2];d=d[1];if(b){g=b[2];c=a.nextSibling;g8(f,a,d,b[1]);a=c;d=e;b=g}else{d=a.nextSibling;gV(f,a);a=d;d=e;b=0}}else{if(!b)return f;e=b[2];eB(f,df(b[1]));d=0;b=e}}function
+1:df(f,[1,a[1],str]);a=e;break a;default:df(f,[2,a[1],str]);a=e;break a}a=e;break}}a=b[2];for(;;){if(!a)break;e=a[2];a=a[1];if(1-aG(a,d[2])){df(f,a);a=e}else
+a=e}a=f.firstChild;d=d[3];b=b[3];for(;;)if(d){e=d[2];d=d[1];if(b){g=b[2];c=a.nextSibling;g9(f,a,d,b[1]);a=c;d=e;b=g}else{d=a.nextSibling;gW(f,a);a=d;d=e;b=0}}else{if(!b)return f;e=b[2];eB(f,dg(b[1]));d=0;b=e}}function
 bs(a){return 0===a[0]?a[1]:"rgb("+str+a[1]+str$2+str+a[2]+str$2+str+a[3]+str$11}function
 bt(d,c,b,a){c=str$1+K(-c)+str$11;d="translate("+K(d)+c;b=b===0.?str:" rotate("+K(-b)+str$11;a=a===1.?str:" scale("+K(a)+str$11;return d+b+a}function
-g9(b,a,f,e,d,c){a=str$1+K(-a/2.)+str$11;b=" translate("+K(-b/2.)+a;return bt(f,e,d,c)+b}function
-ba(a){return a===1.?0:[0,[0,"opacity",K(gJ(0.,1.,a))],0]}var
-str_image="image",str_href="href",eH="width",eI="height",br="fill",a$="transform",jH=[0,"#edd400"];function
-g_(d,b,h,g,f,a,e,c){c=ba(c);a=[0,[0,a$,g9(d,b,g,f,a,e)],c];a=[0,[0,br,bs(jH)],a];b=[0,[0,eI,K(b)],a];return[0,str_image,[0,[0,str_href,h],[0,[0,eH,K(d)],b]],0]}var
-eJ=[0,0],g$=[0,0];function
-ha(g){var
+g_(b,a,f,e,d,c){a=str$1+K(-a/2.)+str$11;b=" translate("+K(-b/2.)+a;return bt(f,e,d,c)+b}function
+bb(a){return a===1.?0:[0,[0,"opacity",K(gK(0.,1.,a))],0]}var
+str_image="image",str_href="href",eH="width",eI="height",br="fill",ba="transform",jI=[0,"#edd400"];function
+g$(d,b,h,g,a,f,e,c){c=bb(c);a=[0,[0,ba,g_(d,b,g,a,f,e)],c];a=[0,[0,br,bs(jI)],a];b=[0,[0,eI,K(b)],a];return[0,str_image,[0,[0,str_href,h],[0,[0,eH,K(d)],b]],0]}var
+eJ=[0,0],ha=[0,0];function
+hb(g){var
 a=g[6],b=g[5],i=g[4],e=g[3],f=g[2],g=g[1],c="polygon",d="points";switch(a[0]){case
-0:c=a[2];d=a[1];b=ba(b);e=[0,[0,a$,bt(g,f,e,i)],b];e=[0,[0,br,bs(d)],e];return[0,"circle",[0,[0,"r",K(c)],e],0];case
-1:d=a[3];c=a[2];a=a[1];b=ba(b);f=[0,[0,a$,bt(g,f,e,i)],b];f=[0,[0,br,bs(a)],f];f=[0,[0,"ry",K(d/2.)],f];return[0,"ellipse",[0,[0,"rx",K(c/2.)],f],0];case
-2:c=a[3];d=a[2];a=a[1];b=ba(b);b=[0,[0,a$,g9(d,c,g,f,e,i)],b];b=[0,[0,br,bs(a)],b];c=[0,[0,eI,K(c)],b];return[0,"rect",[0,[0,eH,K(d)],c],0];case
+0:c=a[2];d=a[1];b=bb(b);e=[0,[0,ba,bt(g,f,e,i)],b];e=[0,[0,br,bs(d)],e];return[0,"circle",[0,[0,"r",K(c)],e],0];case
+1:d=a[3];c=a[2];a=a[1];b=bb(b);f=[0,[0,ba,bt(g,f,e,i)],b];f=[0,[0,br,bs(a)],f];f=[0,[0,"ry",K(d/2.)],f];return[0,"ellipse",[0,[0,"rx",K(c/2.)],f],0];case
+2:c=a[3];d=a[2];a=a[1];b=bb(b);b=[0,[0,ba,g_(d,c,g,f,e,i)],b];b=[0,[0,br,bs(a)],b];c=[0,[0,eI,K(c)],b];return[0,"rect",[0,[0,eH,K(d)],c],0];case
 3:var
-j=a[3],m=a[2],a=a[1],b=ba(b),f=[0,[0,a$,bt(g,f,e,i)],b],b=0,e=str,f=[0,[0,br,bs(a)],f];for(;;){if(b===m)return[0,c,[0,[0,d,e],f],0];i=num_6_283185307179586*(b/m-num_0_25);g=str$2+K(j*Math.sin(i))+str$16;b=b+1|0;e=e+K(j*Math.cos(i))+g}break;case
+j=a[3],m=a[2],a=a[1],b=bb(b),f=[0,[0,ba,bt(g,f,e,i)],b],b=0,e=str,f=[0,[0,br,bs(a)],f];for(;;){if(b===m)return[0,c,[0,[0,d,e],f],0];i=num_6_283185307179586*(b/m-num_0_25);g=str$2+K(j*Math.sin(i))+str$16;b=b+1|0;e=e+K(j*Math.cos(i))+g}break;case
 4:m=a[1];a=b3(str$16,k(function(a){var
-b=a[1],a=str$2+K(-a[2]);return K(b)+a},a[2]));b=ba(b);b=[0,[0,a$,bt(g,f,e,i)],b];return[0,c,[0,[0,d,a],[0,[0,br,bs(m)],b]],0];case
-5:return g_(a[1],a[2],a[3],g,f,e,i,b);case
-6:d=a[3];a:{b:{c=eJ[1];m=a[2];a=a[1];for(;;){if(!c)break b;j=c[1];c=c[2];if(j[1]===d)break}c=[0,j];break a}c=0}if(c)d=c[1][2];else{c=g$[1];if(c)c=c[1];else{c=at.document.createElement("canvas");g$[1]=[0,c]}c.width=d[1];c.height=d[2];j=c.getContext("2d");var
+b=a[1],a=str$2+K(-a[2]);return K(b)+a},a[2]));b=bb(b);b=[0,[0,ba,bt(g,f,e,i)],b];return[0,c,[0,[0,d,a],[0,[0,br,bs(m)],b]],0];case
+5:return g$(a[1],a[2],a[3],g,f,e,i,b);case
+6:d=a[3];a:{b:{c=eJ[1];m=a[2];a=a[1];for(;;){if(!c)break b;j=c[1];c=c[2];if(j[1]===d)break}c=[0,j];break a}c=0}if(c)d=c[1][2];else{c=ha[1];if(c)c=c[1];else{c=aq.document.createElement("canvas");ha[1]=[0,c]}c.width=d[1];c.height=d[2];j=c.getContext("2d");var
 l=caml_ba_to_typed_array(d[3]),l=new
-at.Uint8ClampedArray(l.buffer,l.byteOffset,l.length);j.putImageData(new
-at.ImageData(l,d[1],d[2]),0,0);c=caml_js_to_string(c.toDataURL("image/png"));d=[0,[0,d,c],eJ[1]];l=0;j=0;for(;;){if(!d){eJ[1]=h(l);d=c;break}var
-n=d[2],d=d[1],l=j<32?[0,d,l]:l;d=n;j=j+1|0}}return g_(a,m,d,g,f,e,i,b);case
-7:d=a[2];a=a[1];b=ba(b);e=[0,[0,a$,bt(g,f,e,i)],b];a=[0,[0,"font-family","sans-serif"],[0,[2,"textContent",d],[0,[0,br,bs(a)],e]]];return[0,"text",[0,[0,"text-anchor","middle"],[0,[0,"dominant-baseline","central"],[0,[0,"font-size",K(10.)],a]]],0];default:a=k(ha,a[1]);b=ba(b);return[0,"g",[0,[0,a$,bt(g,f,e,i)],b],a]}}var
-j8=[0,[11,"key = '",[2,0,[12,39,0]]],"key = '%s'"];function
-hb(a){g7(caml_call1(G(j8),a));return a!==str$16?a:str_space}aH(0,16);var
-bb=[num_246,function(a){a=at.AudioContext;return gS(a)==="undefined"?0:[0,new
+aq.Uint8ClampedArray(l.buffer,l.byteOffset,l.length);j.putImageData(new
+aq.ImageData(l,d[1],d[2]),0,0);c=caml_js_to_string(c.toDataURL("image/png"));d=[0,[0,d,c],eJ[1]];l=0;j=0;for(;;){if(!d){eJ[1]=h(l);d=c;break}var
+n=d[2],d=d[1],l=j<32?[0,d,l]:l;d=n;j=j+1|0}}return g$(a,m,d,g,f,e,i,b);case
+7:d=a[2];a=a[1];b=bb(b);e=[0,[0,ba,bt(g,f,e,i)],b];a=[0,[0,"font-family","sans-serif"],[0,[2,"textContent",d],[0,[0,br,bs(a)],e]]];return[0,"text",[0,[0,"text-anchor","middle"],[0,[0,"dominant-baseline","central"],[0,[0,"font-size",K(10.)],a]]],0];default:a=k(hb,a[1]);b=bb(b);return[0,"g",[0,[0,ba,bt(g,f,e,i)],b],a]}}var
+j9=[0,[11,"key = '",[2,0,[12,39,0]]],"key = '%s'"];function
+hc(a){g8(caml_call1(G(j9),a));return a!==str$16?a:str_space}aI(0,16);var
+bc=[num_246,function(a){a=aq.AudioContext;return gT(a)==="undefined"?0:[0,new
 a]}];function
-hc(a){return caml_js_to_string(a.state)}function
-kb(a){a=aG(10,a);return b1(function(b){var
-a=cA(b,58);if(!a)return 0;a=a[1];var
-c=cz(F(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0));return[0,[0,cz(F(b,0,a)),c]]})(a)}var
-kc=[1,0];function
-he(b,e,c){var
+hd(a){return caml_js_to_string(a.state)}function
+kc(a){a=aH(10,a);return b1(function(b){var
+a=cB(b,58);if(!a)return 0;a=a[1];var
+c=cA(F(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0));return[0,[0,cA(F(b,0,a)),c]]})(a)}var
+kd=[1,0];function
+hf(b,e,c){var
 a=new
-at.XMLHttpRequest,d=0===b?"GET":"POST";try{a.open(caml_js_from_string(d),caml_js_from_string(e))}catch(a){return caml_call1(c,[1,[0,e]])}a.timeout=30000;a.responseType="arraybuffer";a.onload=caml_js_wrap_callback_strict(1,function(d){d=a.status;var
+aq.XMLHttpRequest,d=0===b?"GET":"POST";try{a.open(caml_js_from_string(d),caml_js_from_string(e))}catch(a){return caml_call1(c,[1,[0,e]])}a.timeout=30000;a.responseType="arraybuffer";a.onload=caml_js_wrap_callback_strict(1,function(d){d=a.status;var
 b=new
-at.Uint8Array(a.response),e=e$(b.length,function(a){return P(b[a])}),f=kb(caml_js_to_string(a.getAllResponseHeaders()));return caml_call1(c,[0,[0,caml_js_to_string(a.responseURL),d,f,e]])});a.onerror=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,[1,[1,e+": no answer (network, or CORS)"]])});a.ontimeout=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,kc)});if(b){b=b[1];d=b[2];a.setRequestHeader("Content-Type",caml_js_from_string(b[1]));a.send(caml_js_from_string(d));return}a.send()}function
+aq.Uint8Array(a.response),e=fa(b.length,function(a){return Q(b[a])}),f=kc(caml_js_to_string(a.getAllResponseHeaders()));return caml_call1(c,[0,[0,caml_js_to_string(a.responseURL),d,f,e]])});a.onerror=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,[1,[1,e+": no answer (network, or CORS)"]])});a.ontimeout=caml_js_wrap_callback_strict(1,function(a){return caml_call1(c,kd)});if(b){b=b[1];d=b[2];a.setRequestHeader("Content-Type",caml_js_from_string(b[1]));a.send(caml_js_from_string(d));return}a.send()}function
 cq(b,c){var
 d=c[2],c=c[1],a=b[1]<=c?1:0;if(a){a=c<b[1]+b[3]?1:0;if(a){a=b[2]<=d?1:0;a=a?d<b[2]+b[4]?1:0:a}}return a}var
 num_800=800.,num_600=600.;function
-hf(a){return bC(a[3][1]/num_800,a[3][2]/num_600)}var
+hg(a){return bC(a[3][1]/num_800,a[3][2]/num_600)}var
 num_400=400.;function
-hg(a){var
-b=hf(a);return[0,a[1][1]/b+num_400,num_300-a[1][2]/b]}function
+hh(a){var
+b=hg(a);return[0,a[1][1]/b+num_400,num_300-a[1][2]/b]}function
 w(a){return[0,a,0,0,0]}function
 bQ(a){var
-b=$(a[2],a[3]);return[0,O(a[2],a[3]),b]}function
-eK(c){var
+b=$(a[2],a[3]);return[0,P(a[2],a[3]),b]}function
+eL(c){var
 a=bQ(c),b=a[1];return F(c[1],b,a[2]-b|0)}function
 aE(c,b){var
 a=bQ(c),d=a[2],a=a[1],d=b+F(c[1],d,caml_ml_string_length(c[1])-d|0),b=a+caml_ml_string_length(b)|0,a=F(c[1],0,a)+d;return[0,a,b,b,c[4]]}function
 bR(b,c){var
 a=c-1|0;a:{if(-1<=a&&caml_ml_string_length(b)>a)for(;;){if(0>a){a=0;break a}if(caml_string_unsafe_get(b,a)===10){a=[0,a];break a}a=a-1|0}a=u("String.rindex_from_opt / Bytes.rindex_from_opt")}if(a){b=a[1];if(0<c)return b+1|0}return 0}function
-bS(b,a){a=cB(b,a,10);return a?a[1]:caml_ml_string_length(b)}function
-hh(d,c){c=O(c,caml_ml_string_length(d))-1|0;var
+bS(b,a){a=cC(b,a,10);return a?a[1]:caml_ml_string_length(b)}function
+hi(d,c){c=P(c,caml_ml_string_length(d))-1|0;var
 a=0;if(c<0);else{var
 b=0;for(;;){a=10===caml_string_get(d,b)?a+1|0:a;var
 e=b+1|0;if(c===b)break;b=e}}return a}function
-hi(d,c){var
-a=0,b=0;for(;;){if(b===c)return[0,a];a=cB(d,a,10);if(!a)return 0;a=a[1]+1|0;b=b+1|0}}function
-hj(d,b){var
+hj(d,c){var
+a=0,b=0;for(;;){if(b===c)return[0,a];a=cC(d,a,10);if(!a)return 0;a=a[1]+1|0;b=b+1|0}}function
+hk(d,b){var
 a=bR(d,b),b=b-1|0,c=0;if(b<a);else
 for(;;){c=9===caml_string_get(d,a)?((c/4|0)*4|0)+4|0:c+1|0;var
 e=a+1|0;if(b===a)break;a=e}return c}function
-hk(f,a,d){var
+hl(f,a,d){var
 e=bS(f,a),b=0;for(;;){if(e<=a)return e;var
 c=9===caml_string_get(f,a)?((b/4|0)*4|0)+4|0:b+1|0;if(d<c)return(d-b|0)<(c-d|0)?a:a+1|0;a=a+1|0;b=c}}function
-hl(b){var
+hm(b){var
 a=97<=b?1:0,a=a?b<=num_122?1:0:a;if(a);else{a=65<=b?1:0;a=a?b<=90?1:0:a;if(a);else{a=48<=b?1:0;a=a?b<=57?1:0:a;a||=58===b?1:0}}return a}function
-eL(c,a){var
-b=hh(a[1],a[2]);return b<a[4]?[0,a[1],a[2],a[3],b]:(a[4]+c|0)<=b?[0,a[1],a[2],a[3],(b-c|0)+1|0]:a}function
+eM(c,a){var
+b=hi(a[1],a[2]);return b<a[4]?[0,a[1],a[2],a[3],b]:(a[4]+c|0)<=b?[0,a[1],a[2],a[3],(b-c|0)+1|0]:a}function
 ai(a){return a[1][1]}function
-eM(a,c){var
-b=a[3]/c;return ar(c,function(c){return[num_254,a[1]+c*b,a[2],b,a[4]]})}function
+eN(a,c){var
+b=a[3]/c;return as(c,function(c){return[num_254,a[1]+c*b,a[2],b,a[4]]})}function
 bT(a,b){b=caml_round_float(a[4]*b);return[0,[num_254,a[1],a[2],a[3],b],[num_254,a[1],a[2]+b,a[3],a[4]-b]]}function
-eN(b,a){return e4(function(a,b){return[2,[num_254,a[1]+2.,a[2]+2.,a[3]-4.,a[4]-4.],b[1],b[2],b[3]]},eM(b,s(a)),a)}function
-eO(c,a){a=bI(c,a);if(a){a=a[1];if(bj(c,o(c,b(c,a,1))))return[0,b(c,a,1)]}return 0}function
+eO(b,a){return e5(function(a,b){return[2,[num_254,a[1]+2.,a[2]+2.,a[3]-4.,a[4]-4.],b[1],b[2],b[3]]},eN(b,s(a)),a)}function
+eP(c,a){a=bI(c,a);if(a){a=a[1];if(bj(c,o(c,b(c,a,1))))return[0,b(c,a,1)]}return 0}function
 bU(c,b){var
-a=b[2],a=a?eO(c,a[1]):0;if(!a)return 0;a=a[1];a=b[3]?o(c,a):a;return[0,a]}function
-dh(b,a){if(!b)return 0;var
+a=b[2],a=a?eP(c,a[1]):0;if(!a)return 0;a=a[1];a=b[3]?o(c,a):a;return[0,a]}function
+di(b,a){if(!b)return 0;var
 c=0,b=b[1];for(;;){if(!a)return 0;var
 d=a[2];if(b===a[1])return[0,c];c=c+1|0;a=d}}function
-di(a,f){a=a[1][1];a:if(g(f))a=0;else{var
+dj(a,f){a=a[1][1];a:if(g(f))a=0;else{var
 i=a[8],b=o(a,f),d=d6(a,b),a=t(a,f);if(typeof
 a!=="number"){var
 c=num_200$0;switch(a[0]){case
 0:var
-e=a[1],j=s(d),a=0,b=0,c=ar(O(c,$(0,e.length-1-j|0)),function(b){var
+e=a[1],j=s(d),a=0,b=0,c=as(P(c,$(0,e.length-1-j|0)),function(b){var
 a=j+b|0;return[0,str+(b+1|0),caml_check_bound(e,a)[a+1]]});for(;;){if(!d)break;var
-l=d[2],d=d[1],b=a<e.length-1?[0,d,b]:b;a=a+1|0;d=l}a=n(bd(function(a,b){return[0,b,caml_check_bound(e,a)[a+1]]},h(b)),c);break a;case
+l=d[2],d=d[1],b=a<e.length-1?[0,d,b]:b;a=a+1|0;d=l}a=n(be(function(a,b){return[0,b,caml_check_bound(e,a)[a+1]]},h(b)),c);break a;case
 1:var
-k=a[1],a=b===i[2],p=a||b===i[3],a=ar(O(c,caml_ml_bytes_length(k)),function(b){var
+k=a[1],a=b===i[2],p=a||b===i[3],a=as(P(c,caml_ml_bytes_length(k)),function(b){var
 a=caml_bytes_get(k,b),a=p?caml_check_bound(i[20],a)[a+1]:m(a);return[0,str+(b+1|0),a]});break a;case
-3:a=a[1];c=a.length-6|0;b:{if(0<=c&&(a.length-1-c|0)>=0){a=caml_array_sub(a,0,c);break b}a=u("Array.sub")}a=bd(function(a,b){a=0===a?"header":"literal "+str+a;return[0,a,b]},aa(a));break a}}a=0}return[0,[0,str_self,f],a]}var
-str_step="step",A="apps/devtools/web/TinySmalltalk80.ml",num_16=16.,str_proceed="proceed",num_20=20.,str_restart="restart",num_18=18.,kg=[0,A,368,81],kh=[0,A,399,15];function
-dj(h,e){var
+3:a=a[1];c=a.length-6|0;b:{if(0<=c&&(a.length-1-c|0)>=0){a=caml_array_sub(a,0,c);break b}a=u("Array.sub")}a=be(function(a,b){a=0===a?"header":"literal "+str+a;return[0,a,b]},aa(a));break a}}a=0}return[0,[0,str_self,f],a]}var
+str_step="step",A="apps/devtools/web/TinySmalltalk80.ml",num_16=16.,str_proceed="proceed",num_20=20.,str_restart="restart",num_18=18.,kh=[0,A,368,81],ki=[0,A,399,15];function
+dk(h,e){var
 l=ai(h),a=e[2],c=e[5],g="define";switch(c[0]){case
-2:g=c[1];a=bT(a,.45);h=a[2];a=eM(a[1],4);if(a){c=a[2];if(c){var
+2:g=c[1];a=bT(a,.45);h=a[2];a=eN(a[1],4);if(a){c=a[2];if(c){var
 p=c[2];if(p){var
 r=p[2];if(r&&!r[2]){c=c[1];r=r[1];p=p[1];a=a[1];c=bT(c,(c[4]-num_16)/c[4]);var
-j=c[2],c=c[1],d=k(function(a){return cX(l,a)},d9(l)),t=function(c,a){if(2===c){if(a){var
+j=c[2],c=c[1],d=k(function(a){return cY(l,a)},d9(l)),t=function(c,a){if(2===c){if(a){var
 b=a[2];if(b){c=b[1];a=a[1];var
 e=caml_string_compare(a,c),b=b[2],a=0===e?[0,a,0]:0<=e?[0,c,[0,a,0]]:[0,a,[0,c,0]];return[0,a,b]}}}else if(3===c&&a){b=a[2];if(b){e=b[2];if(e){c=e[1];b=b[1];a=a[1];var
 d=caml_string_compare(a,b),e=e[2];if(0===d){a=caml_string_compare(b,c);a=0===a?[0,b,0]:0<=a?[0,c,[0,b,0]]:[0,b,[0,c,0]]}else if(0<=d){d=caml_string_compare(a,c);if(0===d)a=[0,b,[0,a,0]];else if(0<=d){d=caml_string_compare(b,c);a=0===d?[0,b,[0,a,0]]:0<=d?[0,c,[0,b,[0,a,0]]]:[0,b,[0,c,[0,a,0]]]}else
@@ -3463,52 +3463,52 @@ e=caml_string_compare(a,c),b=b[2],a=0===e?[0,a,0]:0<e?[0,a,[0,c,0]]:[0,c,[0,a,0]
 d=caml_string_compare(a,b),e=e[2];if(0===d){a=caml_string_compare(b,c);a=0===a?[0,b,0]:0<a?[0,b,[0,c,0]]:[0,c,[0,b,0]]}else if(0<d){d=caml_string_compare(b,c);if(0===d)a=[0,a,[0,b,0]];else if(0<d)a=[0,a,[0,b,[0,c,0]]];else{d=caml_string_compare(a,c);a=0===d?[0,a,[0,b,0]]:0<d?[0,a,[0,c,[0,b,0]]]:[0,c,[0,a,[0,b,0]]]}}else{d=caml_string_compare(a,c);if(0===d)a=[0,b,[0,a,0]];else if(0<d)a=[0,b,[0,a,[0,c,0]]];else{d=caml_string_compare(b,c);a=0===d?[0,b,[0,a,0]]:0<d?[0,b,[0,c,[0,a,0]]]:[0,c,[0,b,[0,a,0]]]}}return[0,a,e]}}}e=c>>1;a=t(e,a);d=a[1];e=t(c-e|0,a[2]);c=e[1];a=0;e=e[2];for(;;){if(d){if(c){b=c[2];var
 g=c[1],h=d[2],f=d[1],i=caml_string_compare(f,g);if(0===i){d=h;c=b;a=[0,f,a];continue}if(0<=i){c=b;a=[0,g,a];continue}d=h;a=[0,f,a];continue}a=M(d,a)}else
 a=M(c,a);return[0,a,e]}},f=s(d),d=2<=f?t(f,d)[1]:d,f=g[1];if(f)var
-w=f[1],f=d9(l),f=k(function(a){return ah(l,a)},T(function(a){return cX(l,a)===w?1:0})(f));else
+w=f[1],f=d9(l),f=k(function(a){return ah(l,a)},N(function(a){return cY(l,a)===w?1:0})(f));else
 f=0;var
-i=bU(l,g),i=i?fZ(l,i[1]):0,m=bU(l,g),o=g[4];a:{if(m&&o){o=f0(l,m[1],o[1]);break a}o=0}e=eN(j,[0,[0,"instance",1-g[3],[20,e[1],1]],[0,[0,str_class,g[3],[20,e[1],0]],0]]);h=[0,[1,3,r,o,dh(g[5],o)],[0,[0,0,h],0]];h=[0,[1,2,p,i,dh(g[4],i)],h];c=[0,[1,1,c,f,dh(g[2],f)],h];return n([0,[1,0,a,d,dh(g[1],d)],c],e)}}}}throw caml_maybe_attach_backtrace([0,Assert_failure,kg],1);case
-3:c=c[1];e=k(function(a){return a[1]},di(h,c[1]));return[0,[1,0,[num_254,a[1],a[2],caml_round_float(a[3]*num_0_35),a[4]],e,c[2]],[0,[0,0,[num_254,a[1]+caml_round_float(a[3]*num_0_35),a[2],a[3]-caml_round_float(a[3]*num_0_35),a[4]]],0]];case
-4:c=c[1];a=bT(a,num_0_25);d=a[2];a=a[1];d=bT(d,num_18/d[4]);f=d[1];d=bT(d[2],.62);p=d[1];d=eM(d[2],2);if(d){i=d[2];if(i&&!i[2]){var
-v=function(a){return[0,[num_254,a[1],a[2],caml_round_float(a[3]*num_0_4),a[4]],[num_254,a[1]+caml_round_float(a[3]*num_0_4),a[2],a[3]-caml_round_float(a[3]*num_0_4),a[4]]]},i=i[1],d=v(d[1]),o=d[2],d=d[1],i=v(i),r=i[2],i=i[1],j=ac(c[3],c[4]),j=j?j[1][1]:q,m=j===0?q:b(l,a6(h[1],j),aT),g=0!==da(h[1],c[1])?[0,[0,g,0!==c[10]?1:0,[15,e[1]]],0]:0,g=eN(f,n([0,[0,str_proceed,0,[10,e[1]]],[0,[0,str_restart,0,[12,e[1]]],[0,[0,str_step,0,[13,e[1]]],[0,[0,str_send,0,[14,e[1]]],0]]]],g)),e=c[8],j=j===0?0:k(function(a){return a[1]},gC(h[1],j)),f=c[6],h=[0,[0,0,p],[0,[1,1,d,k(function(a){return a[1]},di(h,m)),f],[0,[0,1,o],[0,[1,2,i,j,e],[0,[0,2,r],0]]]]],e=[0,c[4]];return n([0,[1,0,a,k(function(a){return a[2]},c[3]),e],h],g)}}throw caml_maybe_attach_backtrace([0,Assert_failure,kh],1);case
-5:c=c[1];a=bT(a,(a[4]-num_20)/a[4]);m=a[2];a=a[1];h=0!==da(h[1],c[1]);f=[0,[0,str_close,0,[8,e[1]]],0];g=h?[0,[0,g,0,[15,e[1]]],0]:0;f=n(g,f);m=eN(m,n([0,[0,str_proceed,0,[10,e[1]]],[0,[0,"debug",0,[11,e[1]]],0]],f));return[0,[1,0,a,c[3],0],m];default:return[0,[0,0,a],0]}}function
-hm(a,b){a=dj(a,b);return b1(function(a){return 0===a[0]?[0,[0,a[1],a[2]]]:0})(a)}var
+i=bU(l,g),i=i?f0(l,i[1]):0,m=bU(l,g),o=g[4];a:{if(m&&o){o=f1(l,m[1],o[1]);break a}o=0}e=eO(j,[0,[0,"instance",1-g[3],[20,e[1],1]],[0,[0,str_class,g[3],[20,e[1],0]],0]]);h=[0,[1,3,r,o,di(g[5],o)],[0,[0,0,h],0]];h=[0,[1,2,p,i,di(g[4],i)],h];c=[0,[1,1,c,f,di(g[2],f)],h];return n([0,[1,0,a,d,di(g[1],d)],c],e)}}}}throw caml_maybe_attach_backtrace([0,Assert_failure,kh],1);case
+3:c=c[1];e=k(function(a){return a[1]},dj(h,c[1]));return[0,[1,0,[num_254,a[1],a[2],caml_round_float(a[3]*num_0_35),a[4]],e,c[2]],[0,[0,0,[num_254,a[1]+caml_round_float(a[3]*num_0_35),a[2],a[3]-caml_round_float(a[3]*num_0_35),a[4]]],0]];case
+4:c=c[1];a=bT(a,num_0_25);d=a[2];a=a[1];d=bT(d,num_18/d[4]);f=d[1];d=bT(d[2],.62);p=d[1];d=eN(d[2],2);if(d){i=d[2];if(i&&!i[2]){var
+v=function(a){return[0,[num_254,a[1],a[2],caml_round_float(a[3]*num_0_4),a[4]],[num_254,a[1]+caml_round_float(a[3]*num_0_4),a[2],a[3]-caml_round_float(a[3]*num_0_4),a[4]]]},i=i[1],d=v(d[1]),o=d[2],d=d[1],i=v(i),r=i[2],i=i[1],j=ac(c[3],c[4]),j=j?j[1][1]:q,m=j===0?q:b(l,a7(h[1],j),aU),g=0!==db(h[1],c[1])?[0,[0,g,0!==c[10]?1:0,[15,e[1]]],0]:0,g=eO(f,n([0,[0,str_proceed,0,[10,e[1]]],[0,[0,str_restart,0,[12,e[1]]],[0,[0,str_step,0,[13,e[1]]],[0,[0,str_send,0,[14,e[1]]],0]]]],g)),e=c[8],j=j===0?0:k(function(a){return a[1]},gD(h[1],j)),f=c[6],h=[0,[0,0,p],[0,[1,1,d,k(function(a){return a[1]},dj(h,m)),f],[0,[0,1,o],[0,[1,2,i,j,e],[0,[0,2,r],0]]]]],e=[0,c[4]];return n([0,[1,0,a,k(function(a){return a[2]},c[3]),e],h],g)}}throw caml_maybe_attach_backtrace([0,Assert_failure,ki],1);case
+5:c=c[1];a=bT(a,(a[4]-num_20)/a[4]);m=a[2];a=a[1];h=0!==db(h[1],c[1]);f=[0,[0,str_close,0,[8,e[1]]],0];g=h?[0,[0,g,0,[15,e[1]]],0]:0;f=n(g,f);m=eO(m,n([0,[0,str_proceed,0,[10,e[1]]],[0,[0,"debug",0,[11,e[1]]],0]],f));return[0,[1,0,a,c[3],0],m];default:return[0,[0,0,a],0]}}function
+hn(a,b){a=dk(a,b);return b1(function(a){return 0===a[0]?[0,[0,a[1],a[2]]]:0})(a)}var
 num_13=13.;function
-dk(a){return $(1,(a[4]-4.)/num_13|0)}function
+dl(a){return $(1,(a[4]-4.)/num_13|0)}function
 bu(a,b){a=a[5];switch(a[0]){case
 2:return a[1][6];case
 3:return a[1][3];case
 4:a=a[1];return 0===b?a[5]:1===b?a[7]:a[9];case
 5:return w(str);default:return a[1]}}function
-dl(b,a){return au(ac(b[6],a),0)}function
-S(a,c){a=a[3];for(;;){if(!a)return 0;var
+dm(b,a){return au(ac(b[6],a),0)}function
+T(a,c){a=a[3];for(;;){if(!a)return 0;var
 b=a[1],a=a[2];if(b[1]===c)return[0,b]}}function
 aF(a,q,p){var
 b=a[15],c=a[14],d=a[13],e=a[12],f=a[11],g=a[10],h=a[9],i=a[8],j=a[7],l=a[6],m=a[5],n=a[4],o=k(function(a){return a[1]===q?caml_call1(p,a):a},a[3]);return[0,a[1],a[2],o,n,m,l,j,i,h,g,f,e,d,c,b]}function
-eP(a,d){var
-b=S(a,d);if(!b)return a;var
-e=a[15],f=a[14],g=a[13],h=a[12],i=a[11],j=a[10],k=a[9],l=a[8],m=a[7],o=a[6],p=a[5],q=a[4],b=[0,b[1],0],c=a[3],c=n(T(function(a){return a[1]!==d?1:0})(c),b);return[0,a[1],a[2],c,q,p,o,m,l,k,j,i,h,g,f,e]}function
-aW(a,q,c,p){var
+eQ(a,d){var
+b=T(a,d);if(!b)return a;var
+e=a[15],f=a[14],g=a[13],h=a[12],i=a[11],j=a[10],k=a[9],l=a[8],m=a[7],o=a[6],p=a[5],q=a[4],b=[0,b[1],0],c=a[3],c=n(N(function(a){return a[1]!==d?1:0})(c),b);return[0,a[1],a[2],c,q,p,o,m,l,k,j,i,h,g,f,e]}function
+aX(a,q,c,p){var
 b=a[8],d=a[15],e=a[14],f=a[13],g=a[12],h=a[11],i=a[10],j=a[9],k=a[7],l=a[6],m=a[5],o=a[4],c=n(a[3],[0,[0,b,c,q,0,p,0],0]);return[0,[0,a[1],a[2],c,o,m,l,k,b+1|0,j,i,h,g,f,e,d],b]}function
 cr(a,d){var
-b=a[4],e=a[15],f=a[14],g=a[13],h=a[12],i=a[11],j=a[10],k=a[9],l=a[8],m=a[7],n=a[6],o=a[5],b=b?b[1][1]===d?0:b:b,c=a[3],c=T(function(a){return a[1]!==d?1:0})(c);return[0,a[1],a[2],c,b,o,n,m,l,k,j,i,h,g,f,e]}var
+b=a[4],e=a[15],f=a[14],g=a[13],h=a[12],i=a[11],j=a[10],k=a[9],l=a[8],m=a[7],n=a[6],o=a[5],b=b?b[1][1]===d?0:b:b,c=a[3],c=N(function(a){return a[1]!==d?1:0})(c);return[0,a[1],a[2],c,b,o,n,m,l,k,j,i,h,g,f,e]}var
 num_60=60.;function
-dm(a,c,b){a=s(a[3])%6|0;return[num_254,140.+a*num_18,num_60+a*num_18,c,b]}var
-iU=[0,5000000];function
+dn(a,c,b){a=s(a[3])%6|0;return[num_254,140.+a*num_18,num_60+a*num_18,c,b]}var
+iV=[0,5000000];function
 cs(b,c){b=b[1];var
-a=iU[1],a=gp(b,iQ(b,c,"printString",0),a);if(0!==a[0])return"<printString failed: "+a[1]+str$22;a=a[1];c=b[1][8][2];return o(b[1],a)===c?r(b[1],a):"<printString not a String>"}var
-num_180=180.,kj=[0,0];function
-hn(b,a){var
-c=o(ai(b),a),c=ah(ai(b),c),a=[3,[0,a,kj,w(cs(b,a))]];return aW(b,c,dm(b,360.,num_180),a)[1]}function
-eQ(i,f,m){i=i[1];var
+a=iV[1],a=gq(b,iR(b,c,"printString",0),a);if(0!==a[0])return"<printString failed: "+a[1]+str$22;a=a[1];c=b[1][8][2];return o(b[1],a)===c?r(b[1],a):"<printString not a String>"}var
+num_180=180.,kk=[0,0];function
+ho(b,a){var
+c=o(ai(b),a),c=ah(ai(b),c),a=[3,[0,a,kk,w(cs(b,a))]];return aX(b,c,dn(b,360.,num_180),a)[1]}function
+eR(i,f,m){i=i[1];var
 l=i[1],f=f[2],d=1,j=0;for(;;){if(f!==0&&num_200$0>=s(j)){d=d?m:d;var
-a=i[1],c=b(a,f,aK);a:if(c===0)a=0;else{c>>=1;a=fR(a,c7(i,f));if(d)for(;;){if(!a){a=0;break}d=a[1];a=a[2];if(c<=d[1]){a=[0,d];break}}else{d=0;for(;;){if(!a){a=d;break}var
+a=i[1],c=b(a,f,aL);a:if(c===0)a=0;else{c>>=1;a=fS(a,c8(i,f));if(d)for(;;){if(!a){a=0;break}d=a[1];a=a[2];if(c<=d[1]){a=[0,d];break}}else{d=0;for(;;){if(!a){a=d;break}var
 e=a[2],g=a[1];if(g[1]<c){a=e;d=[0,g]}else
-a=e}}if(a){a=a[1];d=a[3];a=a[2];if(a<d){a=[0,[0,a,d]];break a}}a=0}d=ca(l,c7(i,f));c=i[1];g=a6(i,f);e=b(c,g,aS);g=o(c,b(c,g,aT));var
-k=b$(c,e),e=r(c,b_(c,e));a:{if(k!==g&&k!==0){e=str$20+ah(c,k)+")>>"+e;c=ah(c,g)+e;break a}c=ah(c,g)+str$3+e}c=c6(i,f)?"[] in "+c:c;j=[0,[0,f,c,d,a],j];f=b(l,f,bp);d=0;continue}return h(j)}}function
-eR(a){a=ac(a[3],a[4]);if(!a)return w(str);a=a[1];var
-b=w(a[3]),a=a[4];if(!a)return b;a=a[1];return eL(8,[0,b[1],a[2],a[1],b[4]])}var
-num_100$0=100.,num_420=420.,kk=[num_254,num_180,num_150,num_420,num_100$0];function
-ho(e,i,d,g){var
-a=k(function(a){return a[2]},eQ(e,d,0)),b=0,c=0;for(;;){if(!a)return aW(e,i,kk,[5,[0,d,g,h(b)]])[1];var
+a=e}}if(a){a=a[1];d=a[3];a=a[2];if(a<d){a=[0,[0,a,d]];break a}}a=0}d=ca(l,c8(i,f));c=i[1];g=a7(i,f);e=b(c,g,aT);g=o(c,b(c,g,aU));var
+k=b$(c,e),e=r(c,b_(c,e));a:{if(k!==g&&k!==0){e=str$20+ah(c,k)+")>>"+e;c=ah(c,g)+e;break a}c=ah(c,g)+str$3+e}c=c7(i,f)?"[] in "+c:c;j=[0,[0,f,c,d,a],j];f=b(l,f,bp);d=0;continue}return h(j)}}function
+eS(a){a=ac(a[3],a[4]);if(!a)return w(str);a=a[1];var
+b=w(a[3]),a=a[4];if(!a)return b;a=a[1];return eM(8,[0,b[1],a[2],a[1],b[4]])}var
+num_100$0=100.,num_420=420.,kl=[num_254,num_180,num_150,num_420,num_100$0];function
+hp(e,i,d,g){var
+a=k(function(a){return a[2]},eR(e,d,0)),b=0,c=0;for(;;){if(!a)return aX(e,i,kl,[5,[0,d,g,h(b)]])[1];var
 f=a[2],a=a[1],b=c<5?[0,a,b]:b;a=f;c=c+1|0}}function
 X(d,c,a,b){return aF(d,c,function(e){var
 d=caml_call1(b,bu(e,a)),c=e[5];switch(c[0]){case
@@ -3518,176 +3518,176 @@ d=caml_call1(b,bu(e,a)),c=e[5];switch(c[0]){case
 3:c=c[1];c=[3,[0,c[1],c[2],d]];break;case
 4:c=c[1];c=0===a?[4,[0,c[1],c[2],c[3],c[4],d,c[6],c[7],c[8],c[9],c[10]]]:1===a?[4,[0,c[1],c[2],c[3],c[4],c[5],c[6],d,c[8],c[9],c[10]]]:[4,[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],d,c[10]]];break}return[0,e[1],e[2],e[3],e[4],c,e[6]]})}function
 ct(a,c,b){b=str$16+b+" ->";a=aE([0,a[1],c,c,a[4]],b);return[0,a[1],c+caml_ml_string_length(b)|0,c,a[4]]}function
-dn(e,h,c,t){var
-a=S(e,h);if(!a)return e;a=a[1];var
+dp(e,h,c,t){var
+a=T(e,h);if(!a)return e;a=a[1];var
 d=bu(a,c);if(d[2]!==d[3])var
 g=d;else
 var
 i=d[4],j=bR(d[1],d[2]),k=bS(d[1],d[2]),g=[0,d[1],k,j,i];var
 l=bQ(g)[1],a=a[5];switch(a[0]){case
 3:a=a[1][1];break;case
-4:a=a[1];if(0===c){a=ac(a[3],a[4]);if(a){a=a6(e[1],a[1][1]);a=b(ai(e),a,aT)}else
+4:a=a[1];if(0===c){a=ac(a[3],a[4]);if(a){a=a7(e[1],a[1][1]);a=b(ai(e),a,aU)}else
 a=q}else
 a=q;break;default:a=q}d=ai(e);try{var
-f=eK(g),f=gh(d,o(d,a),f)}catch(a){f=caml_wrap_exception(a);if(f[1]!==az)throw caml_maybe_attach_backtrace(f,0);var
+f=eL(g),f=gi(d,o(d,a),f)}catch(a){f=caml_wrap_exception(a);if(f[1]!==az)throw caml_maybe_attach_backtrace(f,0);var
 m=f[3],p=f[2];return X(e,h,c,function(a){return ct(g,l+p|0,m)})}a=ei(e[1],f,a);c=X(e,h,c,function(a){return g});h=c[15];f=c[14];d=c[13];j=c[12];k=c[11];i=c[10];var
 r=c[9],s=c[8],e=n(e[7],[0,[0,a,t],0]);return[0,c[1],c[2],c[3],c[4],c[5],c[6],e,s,r,i,k,j,d,f,h]}function
-hp(a,d,b){var
+hq(a,d,b){var
 c=d[3];if(typeof
 c==="number"){if(0!==c)return a;c=a[15];var
-e=a[14],h=a[13],f=a[12],i=a[11],j=a[10],k=a[9],l=a[8],d=n(a[7],[0,[0,d,b],0]);return[0,a[1],a[2],a[3],a[4],a[5],a[6],d,l,k,j,i,f,h,e,c]}if(0===c[0])return ho(a,c[1],d,b);e=c[1];if(typeof
-b==="number")return b?hn(a,e):a;f=b[2];b=b[1];var
+e=a[14],h=a[13],f=a[12],i=a[11],j=a[10],k=a[9],l=a[8],d=n(a[7],[0,[0,d,b],0]);return[0,a[1],a[2],a[3],a[4],a[5],a[6],d,l,k,j,i,f,h,e,c]}if(0===c[0])return hp(a,c[1],d,b);e=c[1];if(typeof
+b==="number")return b?ho(a,e):a;f=b[2];b=b[1];var
 g=cs(a,e);return X(a,b,f,function(a){var
 b=bQ(a)[2],a=aE([0,a[1],b,b,a[4]],str$16+g);return[0,a[1],a[2],b+1|0,a[4]]})}var
-kl=[0,[11,"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '",[2,0,[12,39,0]]],"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '%s'"];function
-hq(b,a){var
-c=bU(b,a),d=a[5],e=a[4];if(c){a=c[1];if(!d)return e?w('message selector and argument names\n\t"comment stating purpose of message"\n\n\t| temporary variable names |\n\tstatements'):w(fV(b,a));a=bl(b,a,J(b,d[1]));return a?w(ca(b,a[1])):w(str)}b=a[1];if(!b)return w(str);b=b[1];return w(caml_call1(G(kl),b))}function
-aX(a,d,c){var
+km=[0,[11,"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '",[2,0,[12,39,0]]],"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '%s'"];function
+hr(b,a){var
+c=bU(b,a),d=a[5],e=a[4];if(c){a=c[1];if(!d)return e?w('message selector and argument names\n\t"comment stating purpose of message"\n\n\t| temporary variable names |\n\tstatements'):w(fW(b,a));a=bl(b,a,J(b,d[1]));return a?w(ca(b,a[1])):w(str)}b=a[1];if(!b)return w(str);b=b[1];return w(caml_call1(G(km),b))}function
+aY(a,d,c){var
 b=ai(a);return aF(a,d,function(d){var
 a=d[5];if(2!==a[0])return d;a=caml_call1(c,a[1]);var
-e=d[6],f=hq(b,a);return[0,d[1],d[2],d[3],d[4],[2,[0,a[1],a[2],a[3],a[4],a[5],f]],e]})}function
+e=d[6],f=hr(b,a);return[0,d[1],d[2],d[3],d[4],[2,[0,a[1],a[2],a[3],a[4],a[5],f]],e]})}function
 bV(d,f,e){var
-a=S(d,f);if(a){a=a[1][5];if(4===a[0]){a=a[1];var
+a=T(d,f);if(a){a=a[1][5];if(4===a[0]){a=a[1];var
 c=a[1][3];if(typeof
-c!=="number"&&0===c[0]){e=eQ(d,a[1],e);c=a[10];var
+c!=="number"&&0===c[0]){e=eR(d,a[1],e);c=a[10];var
 g=w(str),h=w(str),b=[0,a[1],a[2],e,0,a[5],0,h,0,g,c];return aF(d,f,function(a){var
-c=a[6],d=b[10],e=b[9],f=b[8],g=b[7],h=b[6],i=eR(b);return[0,a[1],a[2],a[3],a[4],[4,[0,b[1],b[2],b[3],b[4],i,h,g,f,e,d]],c]})}c=a[2];a=a[1];return hp(cr(d,f),a,c)}}return d}function
-hr(a){return[0,function(b){b=caml_string_of_bytes(dz(function(a){return 13===a?10:a},caml_bytes_of_string(b)));b=a[1]+b;var
+c=a[6],d=b[10],e=b[9],f=b[8],g=b[7],h=b[6],i=eS(b);return[0,a[1],a[2],a[3],a[4],[4,[0,b[1],b[2],b[3],b[4],i,h,g,f,e,d]],c]})}c=a[2];a=a[1];return hq(cr(d,f),a,c)}}return d}function
+hs(a){return[0,function(b){b=caml_string_of_bytes(dz(function(a){return 13===a?10:a},caml_bytes_of_string(b)));b=a[1]+b;var
 num_20000=20000,b=num_20000<caml_ml_string_length(b)?F(b,caml_ml_string_length(b)-20000|0,num_20000):b;a[1]=b;return 0},function(a){return caml_sys_time(0)*num_1000$0|0},function(b){a[2]=n(a[2],[0,b,0]);return 0},function(b){return a[3]}]}function
-hs(b,a){if(a){a=a[1];var
-c=hr(b),a=gj(jz(a),c);gv(a)}else
-a=ju([0,hr(b)],0);a[4]=function(a){return b[4]};return a}var
-str_System_Transcript="System Transcript",num_560=560.,str_Workspace="Workspace",str_System_Browser="System Browser",jm=[0,[12,33,[2,0,[2,0,[11," methodsFor: '",[2,0,[11,"'!\n",0]]]]]],"!%s%s methodsFor: '%s'!\n"],jy=caml_int64_create_lo_mi_hi(num_255,0,0),jR=[0,0],km=[0,[11,"Image saved: ",[4,0,0,0,[11," objects, ",[4,0,0,0,[11," bytes.\n",0]]]]],"Image saved: %d objects, %d bytes.\n"];function
-cu(f,i,p){var
+ht(b,a){if(a){a=a[1];var
+c=hs(b),a=gk(jA(a),c);gw(a)}else
+a=jv([0,hs(b)],0);a[4]=function(a){return b[4]};return a}var
+str_System_Transcript="System Transcript",num_560=560.,str_Workspace="Workspace",str_System_Browser="System Browser",jn=[0,[12,33,[2,0,[2,0,[11," methodsFor: '",[2,0,[11,"'!\n",0]]]]]],"!%s%s methodsFor: '%s'!\n"],jz=caml_int64_create_lo_mi_hi(num_255,0,0),jS=[0,0],kn=[0,[11,"Image saved: ",[4,0,0,0,[11," objects, ",[4,0,0,0,[11," bytes.\n",0]]]]],"Image saved: %d objects, %d bytes.\n"];function
+cu(p,f,i){var
 h=0;a:for(;;){switch(h){case
 0:var
-d=i,a=p;b:for(;;){var
+d=f,a=i;b:for(;;){var
 j=ai(d);if(typeof
 a==="number"){h=1;continue a}c:switch(a[0]){case
-0:return dn(d,a[1],a[2],0);case
-1:p=a[2];var
-c=a[1];return dn(d,c,p,[0,c,p]);case
-2:return dn(d,a[1],a[2],1);case
+0:return dp(d,a[1],a[2],0);case
+1:f=a[2];var
+c=a[1];return dp(d,c,f,[0,c,f]);case
+2:return dp(d,a[1],a[2],1);case
 3:h=2;continue a;case
 4:h=3;continue a;case
 5:h=4;continue a;case
 6:h=5;continue a;case
 7:h=6;continue a;case
-8:i=a[1];c=S(d,i);if(c){var
-e=c[1][5];if(e[0]>=4){e=e[1][1];c=d[1];e[3]=1;ej(c,e)}}return cr(d,i);case
+8:p=a[1];c=T(d,p);if(c){i=c[1][5];if(i[0]>=4){i=i[1][1];c=d[1];i[3]=1;ej(c,i)}}return cr(d,p);case
 9:h=7;continue a;case
 10:h=8;continue a;case
 11:h=9;continue a;case
-12:i=a[1];c=S(d,i);if(c){c=c[1][5];if(4===c[0]){c=c[1];f=ac(c[3],c[4]);return f?(ep(d[1],c[1],f[1][1]),bV(d,i,1)):d}}return d;case
+12:p=a[1];c=T(d,p);if(c){c=c[1][5];if(4===c[0]){c=c[1];var
+e=ac(c[3],c[4]);return e?(ep(d[1],c[1],e[1][1]),bV(d,p,1)):d}}return d;case
 13:h=10;continue a;case
 14:h=11;continue a;case
-15:e=a[1];c=S(d,e);if(c){c=c[1][5];switch(c[0]){case
+15:c=a[1];e=T(d,c);if(e){e=e[1][5];switch(e[0]){case
 4:h=12;continue a;case
-5:a=cu(f,d,[11,e]);d=a;a=[15,a[8]-1|0];break c}}return d;case
+5:a=cu(p,d,[11,c]);d=a;a=[15,a[8]-1|0];break c}}return d;case
 16:h=13;continue a;case
 17:h=14;continue a;case
 18:h=15;continue a;case
 19:h=16;continue a;default:break b}}case
 17:var
-af=a[2];return aX(d,a[1],function(a){return[0,a[1],a[2],1-af,0,0,a[6]]});case
-16:e=a[1];c=S(d,e);if(c){a=c[1][5];if(2===a[0]){c=a[1];a=bU(j,c);c=c[5];if(a&&c){a=a[1];var
-H=J(j,c[1]),c=b(j,a,bh),h=cZ(j,a),p=h[1],h=aa(h[2]),h=e5(aa(p),h),h=T(function(a){return a[1]!==H?1:0})(h);ax(j,c,0,R(j,Y(k(function(a){return a[1]},h))));ax(j,c,1,R(j,Y(k(function(a){return a[2]},h))));var
-K=r(j,H);fY(j,a,k(function(a){var
-b=a[2],a=a[1];return[0,a,T(function(a){return K!==a?1:0})(b)]},cd(j,a)));aU(d[1]);return aX(d,e,function(a){return[0,a[1],a[2],a[3],a[4],0,a[6]]})}return d}}return d;case
-15:c=S(d,a[1]);if(c){c=c[1][5];if(2===c[0]){c=c[1][2];c=c?eO(j,c[1]):0;if(!c)return d;var
+af=a[2];return aY(d,a[1],function(a){return[0,a[1],a[2],1-af,0,0,a[6]]});case
+16:e=a[1];c=T(d,e);if(c){a=c[1][5];if(2===a[0]){c=a[1];a=bU(j,c);c=c[5];if(a&&c){a=a[1];var
+H=J(j,c[1]),c=b(j,a,bh),h=c0(j,a),p=h[1],h=aa(h[2]),h=e6(aa(p),h),h=N(function(a){return a[1]!==H?1:0})(h);ax(j,c,0,S(j,Y(k(function(a){return a[1]},h))));ax(j,c,1,S(j,Y(k(function(a){return a[2]},h))));var
+K=r(j,H);fZ(j,a,k(function(a){var
+b=a[2],a=a[1];return[0,a,N(function(a){return K!==a?1:0})(b)]},cd(j,a)));aV(d[1]);return aY(d,e,function(a){return[0,a[1],a[2],a[3],a[4],0,a[6]]})}return d}}return d;case
+15:c=T(d,a[1]);if(c){c=c[1][5];if(2===c[0]){c=c[1][2];c=c?eP(j,c[1]):0;if(!c)return d;var
 A=c[1],c=ah(j,A)+".st",F=function(a,b){return k(function(e){var
-c=f0(j,a,e),c=b1(function(b){b=bl(j,a,J(j,b));return b?[0,ca(j,b[1])]:0})(c),g=ah(j,bk(j,A)),d=ak(num_1024),f=b?str_class$0:str;ad(d,caml_call3(G(jm),g,f,e));for(;;){if(!c){ad(d," !\n");return aw(d)}e=c[2];ad(d,gw(c[1]));ad(d,"\n\n");c=e}},fZ(j,a))},a=F(o(j,A),1),a=n(F(A,0),a),a=b3(str$14,[0,gw(fV(j,A))+str$14,a]),e=eE.createElement(str_a);eC(e,str_href,"data:application/octet-stream;base64,"+gY(a));eC(e,"download",c);e.click();d[2][1]=d[2][1]+"Filed out "+c+str$14;return d}}return d;case
-14:c=a[1];a=S(d,c);if(a){a=a[1][5];if(2===a[0]){a=bU(j,a[1]);if(!a)return d;var
+c=f1(j,a,e),c=b1(function(b){b=bl(j,a,J(j,b));return b?[0,ca(j,b[1])]:0})(c),g=ah(j,bk(j,A)),d=ak(num_1024),f=b?str_class$0:str;ad(d,caml_call3(G(jn),g,f,e));for(;;){if(!c){ad(d," !\n");return aw(d)}e=c[2];ad(d,gx(c[1]));ad(d,"\n\n");c=e}},f0(j,a))},a=F(o(j,A),1),a=n(F(A,0),a),a=b3(str$14,[0,gx(fW(j,A))+str$14,a]),e=eE.createElement(str_a);eC(e,str_href,"data:application/octet-stream;base64,"+gZ(a));eC(e,"download",c);e.click();d[2][1]=d[2][1]+"Filed out "+c+str$14;return d}}return d;case
+14:c=a[1];a=T(d,c);if(a){a=a[1][5];if(2===a[0]){a=bU(j,a[1]);if(!a)return d;var
 ae=a[1];return X(d,c,0,function(a){a=b(j,bk(j,ae),8);a=a===0?str:r(j,a);return w(str$6+a+str$6)})}}return d;case
-13:return aX(d,a[1],function(a){return[0,a[1],a[2],a[3],0,0,a[6]]});case
+13:return aY(d,a[1],function(a){return[0,a[1],a[2],a[3],0,0,a[6]]});case
 12:var
-u=c[1],a=da(d[1],u[1]);if(!a)return d;a=a[1];c=a[2];var
-$=a[1];if(0===d1(c))a=c;else if(as(c,58)){a=aG(58,c);a=b3(str$16,bd(function(b,a){return a+": arg"+str+(b+1|0)},T(function(a){return str!==a?1:0})(a)))}else
-a=c+" anObject";a=w(a+'\n\t"A method for '+c+', to write here."\n\t^self');var
-ab=[0,a[1],caml_ml_string_length(a[1]),a[3],a[4]],a=aF(d,e,function(a){return[0,a[1],a[2],a[3],a[4],[4,[0,u[1],u[2],u[3],u[4],ab,u[6],u[7],u[8],u[9],[0,$]]],a[6]]});return[0,a[1],a[2],a[3],[0,[0,e,0]],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]];case
-11:a=a[1];e=S(d,a);if(e){e=e[1][5];if(4===e[0]){e=e[1];c=ac(e[3],e[4]);if(!c)return d;var
-D=c[1][1],c=e[1],e=d[1];if(1-cm(e,D)){var
-L=gE(e,c,D),ag=e[1];gD(e,c,function(d){var
+u=e[1],a=db(d[1],u[1]);if(!a)return d;a=a[1];e=a[2];var
+$=a[1];if(0===d1(e))a=e;else if(at(e,58)){a=aH(58,e);a=b3(str$16,be(function(b,a){return a+": arg"+str+(b+1|0)},N(function(a){return str!==a?1:0})(a)))}else
+a=e+" anObject";a=w(a+'\n\t"A method for '+e+', to write here."\n\t^self');var
+ab=[0,a[1],caml_ml_string_length(a[1]),a[3],a[4]],a=aF(d,c,function(a){return[0,a[1],a[2],a[3],a[4],[4,[0,u[1],u[2],u[3],u[4],ab,u[6],u[7],u[8],u[9],[0,$]]],a[6]]});return[0,a[1],a[2],a[3],[0,[0,c,0]],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]];case
+11:a=a[1];c=T(d,a);if(c){c=c[1][5];if(4===c[0]){c=c[1];e=ac(c[3],c[4]);if(!e)return d;var
+D=e[1][1],e=c[1],c=d[1];if(1-cm(c,D)){var
+L=gF(c,e,D),ag=c[1];gE(c,e,function(d){var
 c=d[7],a=c!==D?1:0,a=a?b(ag,c,bp)===D?1:0:a;return a?a:L(d)})}return bV(d,a,1)}}return d;case
-10:a=a[1];e=S(d,a);if(e){e=e[1][5];if(4===e[0]){e=e[1];c=ac(e[3],e[4]);if(!c)return d;c=c[1][1];e=e[1];h=d[1];if(1-cm(h,c))gD(h,e,gE(h,e,c));return bV(d,a,1)}}return d;case
-9:a=a[1];e=S(d,a);if(e){e=e[1];c=e[5];if(5===c[0]){c=c[1];h=c[1];p=e[3];e=e[2];c=c[2];a=cr(d,a);i=eQ(a,h,p===str_Step?1:0);f=w(str);var
-q=w(str),f=[0,h,c,i,0,w(str),0,q,0,f,0],i=f[10],h=f[9],c=f[8],q=f[7],y=f[6],l=eR(f);return aW(a,p,[num_254,e[1],e[2],num_560,num_420],[4,[0,f[1],f[2],f[3],f[4],l,y,q,c,h,i]])[1]}}return d;case
-8:a=a[1];e=S(d,a);if(e){e=e[1][5];switch(e[0]){case
-4:e=e[1];el(e[1]);a=cr(d,a);c=a[15];p=a[14];y=a[13];l=a[12];f=a[11];i=a[10];h=a[9];q=a[8];e=n(d[7],[0,[0,e[1],e[2]],0]);return[0,a[1],a[2],a[3],a[4],a[5],a[6],e,q,h,i,f,l,y,p,c];case
-5:c=e[1];el(c[1]);a=cr(d,a);f=a[15];y=a[14];e=a[13];l=a[12];i=a[11];h=a[10];q=a[9];p=a[8];c=n(d[7],[0,[0,c[1],c[2]],0]);return[0,a[1],a[2],a[3],a[4],a[5],a[6],c,p,q,h,i,l,e,y,f]}}return d;case
+10:a=a[1];c=T(d,a);if(c){c=c[1][5];if(4===c[0]){c=c[1];e=ac(c[3],c[4]);if(!e)return d;e=e[1][1];c=c[1];h=d[1];if(1-cm(h,e))gE(h,c,gF(h,c,e));return bV(d,a,1)}}return d;case
+9:a=a[1];c=T(d,a);if(c){c=c[1];e=c[5];if(5===e[0]){e=e[1];h=e[1];p=c[3];c=c[2];e=e[2];a=cr(d,a);i=eR(a,h,p===str_Step?1:0);f=w(str);var
+q=w(str),f=[0,h,e,i,0,w(str),0,q,0,f,0],i=f[10],h=f[9],e=f[8],q=f[7],y=f[6],l=eS(f);return aX(a,p,[num_254,c[1],c[2],num_560,num_420],[4,[0,f[1],f[2],f[3],f[4],l,y,q,e,h,i]])[1]}}return d;case
+8:a=a[1];c=T(d,a);if(c){c=c[1][5];switch(c[0]){case
+4:c=c[1];el(c[1]);a=cr(d,a);e=a[15];p=a[14];y=a[13];l=a[12];f=a[11];i=a[10];h=a[9];q=a[8];c=n(d[7],[0,[0,c[1],c[2]],0]);return[0,a[1],a[2],a[3],a[4],a[5],a[6],c,q,h,i,f,l,y,p,e];case
+5:e=c[1];el(e[1]);a=cr(d,a);f=a[15];y=a[14];c=a[13];l=a[12];i=a[11];h=a[10];q=a[9];p=a[8];e=n(d[7],[0,[0,e[1],e[2]],0]);return[0,a[1],a[2],a[3],a[4],a[5],a[6],e,p,q,h,i,l,c,y,f]}}return d;case
 7:return aF(d,a[1],function(a){return[0,a[1],a[2],a[3],1-a[4],a[5],a[6]]});case
 6:return X(d,a[1],a[2],function(a){return aE(a,d[13])});case
-5:f=a[2];a=a[1];i=S(d,a);if(!i)return d;i=bu(i[1],f);a=X(d,a,f,function(a){return aE(a,str)});f=a[15];e=a[14];i=eK(i);return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],i,e,f];case
-4:f=a[2];a=S(d,a[1]);if(!a)return d;e=d[15];i=d[14];a=eK(bu(a[1],f));return[0,d[1],d[2],d[3],d[4],d[5],d[6],d[7],d[8],d[9],d[10],d[11],d[12],a,i,e];case
-3:e=a[1];a=a[2];i=S(d,e);if(i){i=i[1][5];if(2===i[0]){var
-_=i[1];return X(d,e,a,function(a){return hq(j,_)})}}return d;case
-2:e=a[2];a=a[1];i=S(d,a);if(i){i=i[1];f=i[5];switch(f[0]){case
+5:f=a[2];a=a[1];i=T(d,a);if(!i)return d;i=bu(i[1],f);a=X(d,a,f,function(a){return aE(a,str)});f=a[15];c=a[14];i=eL(i);return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],i,c,f];case
+4:f=a[2];a=T(d,a[1]);if(!a)return d;c=d[15];i=d[14];a=eL(bu(a[1],f));return[0,d[1],d[2],d[3],d[4],d[5],d[6],d[7],d[8],d[9],d[10],d[11],d[12],a,i,c];case
+3:c=a[1];a=a[2];i=T(d,c);if(i){i=i[1][5];if(2===i[0]){var
+_=i[1];return X(d,c,a,function(a){return hr(j,_)})}}return d;case
+2:c=a[2];a=a[1];i=T(d,a);if(i){i=i[1];f=i[5];switch(f[0]){case
 2:f=f[1];var
-v=ai(d),i=f[6],e=bU(v,f);b:if(e){e=e[1];if(0===f[4]&&0===f[5])break b;f=f[4];var
+v=ai(d),i=f[6],c=bU(v,f);b:if(c){c=c[1];if(0===f[4]&&0===f[5])break b;f=f[4];var
 E=f?f[1]:str_as_yet_unclassified;try{var
-Q=bL(v,e,E,0,i[1])}catch(b){i=caml_wrap_exception(b);if(i[1]!==az)throw caml_maybe_attach_backtrace(i,0);var
-N=i[3],O=i[2];return X(d,a,0,function(a){return ct(a,O,N)})}aU(d[1]);return aX(d,a,function(a){return[0,a[1],a[2],a[3],[0,E],[0,Q],a[6]]})}e=c9(d[1],0,0,i[1]);if(0!==e[0]){var
-M=e[1];return X(d,a,0,function(a){return ct(a,caml_ml_string_length(a[1]),M)})}var
-z=e[1];if(!g(z)&&z!==0&&bj(v,o(v,z)))return aX(d,a,function(a){a=a[6];var
-b=[0,ah(v,z)];return[0,[0,cX(v,z)],b,0,0,0,a]});return d;case
-3:a=f[1];f=bu(i,e)[1];f=c9(d[1],0,[0,a[1]],f);e=a[2];if(0===f[0]&&e){e=e[1];f=f[1];if(0<e&&!g(a[1])){a=t(j,a[1]);if(typeof
-a!=="number"&&0===a[0]){a=a[1];if((e-1|0)<a.length-1){e=e-1|0;caml_check_bound(a,e)[e+1]=f}}return d}}return d;case
-4:f=f[1];if(0===e){e=ai(d);i=f[10];c=ac(f[3],f[4]);if(i){c=i[1];try{bL(e,c,str_as_yet_unclassified,0,f[5][1])}catch(b){f=caml_wrap_exception(b);if(f[1]!==az)throw caml_maybe_attach_backtrace(f,0);var
-U=f[3],V=f[2];return X(d,a,0,function(a){return ct(a,V,U)})}aU(d[1]);e=da(d[1],f[1]);return e?(ep(d[1],f[1],e[1][3]),bV(d,a,1)):bV(d,a,1)}if(!c)return d;c=c[1];i=c7(d[1],c[1]);l=b$(e,i);if(l===0)return d;try{h=f[5][1];bL(e,l,au(f1(e,l,r(e,b_(e,i))),str_as_yet_unclassified),0,h)}catch(b){f=caml_wrap_exception(b);if(f[1]!==az)throw caml_maybe_attach_backtrace(f,0);var
-W=f[3],Z=f[2];return X(d,a,0,function(a){return ct(a,Z,W)})}aU(d[1]);ep(d[1],f[1],c[1]);return bV(d,a,1)}break}}return d;case
-1:c=380.;f="elm-playground:";l="TinySmalltalk80.image";switch(a){case
-0:f=[2,[0,0,0,0,0,0,w(str)]];return aW(d,str_System_Browser,dm(d,num_560,320.),f)[1];case
-1:f=[0,w(str)];return aW(d,str_Workspace,dm(d,c,num_200),f)[1];case
-2:f=[1,w(d[2][1])];return aW(d,str_System_Transcript,dm(d,c,num_150),f)[1];case
-3:c9(d[1],0,0,"Display fillWhite");return d;case
+R=bL(v,c,E,0,i[1])}catch(b){i=caml_wrap_exception(b);if(i[1]!==az)throw caml_maybe_attach_backtrace(i,0);var
+O=i[3],P=i[2];return X(d,a,0,function(a){return ct(a,P,O)})}aV(d[1]);return aY(d,a,function(a){return[0,a[1],a[2],a[3],[0,E],[0,R],a[6]]})}c=c_(d[1],0,0,i[1]);if(0!==c[0]){var
+M=c[1];return X(d,a,0,function(a){return ct(a,caml_ml_string_length(a[1]),M)})}var
+z=c[1];if(!g(z)&&z!==0&&bj(v,o(v,z)))return aY(d,a,function(a){a=a[6];var
+b=[0,ah(v,z)];return[0,[0,cY(v,z)],b,0,0,0,a]});return d;case
+3:a=f[1];f=bu(i,c)[1];f=c_(d[1],0,[0,a[1]],f);c=a[2];if(0===f[0]&&c){c=c[1];f=f[1];if(0<c&&!g(a[1])){a=t(j,a[1]);if(typeof
+a!=="number"&&0===a[0]){a=a[1];if((c-1|0)<a.length-1){c=c-1|0;caml_check_bound(a,c)[c+1]=f}}return d}}return d;case
+4:f=f[1];if(0===c){c=ai(d);i=f[10];e=ac(f[3],f[4]);if(i){e=i[1];try{bL(c,e,str_as_yet_unclassified,0,f[5][1])}catch(b){f=caml_wrap_exception(b);if(f[1]!==az)throw caml_maybe_attach_backtrace(f,0);var
+U=f[3],V=f[2];return X(d,a,0,function(a){return ct(a,V,U)})}aV(d[1]);c=db(d[1],f[1]);return c?(ep(d[1],f[1],c[1][3]),bV(d,a,1)):bV(d,a,1)}if(!e)return d;e=e[1];i=c8(d[1],e[1]);l=b$(c,i);if(l===0)return d;try{h=f[5][1];bL(c,l,au(f2(c,l,r(c,b_(c,i))),str_as_yet_unclassified),0,h)}catch(b){f=caml_wrap_exception(b);if(f[1]!==az)throw caml_maybe_attach_backtrace(f,0);var
+W=f[3],Z=f[2];return X(d,a,0,function(a){return ct(a,Z,W)})}aV(d[1]);ep(d[1],f[1],e[1]);return bV(d,a,1)}break}}return d;case
+1:e=380.;f="elm-playground:";l="TinySmalltalk80.image";switch(a){case
+0:f=[2,[0,0,0,0,0,0,w(str)]];return aX(d,str_System_Browser,dn(d,num_560,320.),f)[1];case
+1:f=[0,w(str)];return aX(d,str_Workspace,dn(d,e,num_200),f)[1];case
+2:f=[1,w(d[2][1])];return aX(d,str_System_Transcript,dn(d,e,num_150),f)[1];case
+3:c_(d[1],0,0,"Display fillWhite");return d;case
 4:var
-m=ak(1048576);ad(m,str_TinySmalltalk80_abr);c=j[8];var
+m=ak(1048576);ad(m,str_TinySmalltalk80_abr);e=j[8];var
 x=function(a){bM(m,s(a));for(;;){if(!a)return;var
-b=a[2];gA(m,a[1]);a=b}};x([0,c[1],[0,c[2],[0,c[3],[0,c[4],[0,c[5],[0,c[6],[0,c[7],[0,c[8],[0,c[9],[0,c[10],[0,c[11],[0,c[12],[0,c[13],[0,c[14],[0,c[15],[0,c[16],[0,c[17],[0,c[18],[0,c[19],0]]]]]]]]]]]]]]]]]]]);x(aa(c[20]));x(aa(c[21]));c=j[4]-1|0;a=0;if(c<0);else
-for(;;){if(0!==caml_check_bound(j[2],c)[c+1]){h=caml_check_bound(j[2],c)[c+1];a=[0,[0,c,caml_check_bound(j[1],c)[c+1],h],a]}h=c-1|0;if(0===c)break;c=h}bM(m,s(a));for(;;){if(!a){a=aw(m);h=gY(a);c=gZ(0);c.setItem(caml_js_from_string(f+l),caml_js_from_string(h));f=j[5];a=caml_call2(G(km),f,caml_ml_string_length(a));d[2][1]=d[2][1]+a;return d}h=a[2];a=a[1];c=a[3];i=a[2];bM(m,a[1]);gA(m,i);if(typeof
-c==="number"){I(m,45);a=h}else
-switch(c[0]){case
-0:a=c[1];I(m,80);x(aa(a));a=h;break;case
-1:a=c[1];I(m,66);bM(m,caml_ml_bytes_length(a));fh(m,a);a=h;break;case
-2:a=c[1];I(m,70);c=0;a=caml_int64_bits_of_float(a);for(;;){I(m,P(caml_int64_to_int32(caml_int64_and(caml_int64_shift_right_unsigned(a,8*c|0),jy))));i=c+1|0;if(7===c){a=h;break}c=i}break;default:a=c[2];c=c[1];I(m,77);x(aa(c));bM(m,caml_ml_bytes_length(a));fh(m,a);a=h}}break;default:h=gZ(0);h=h.getItem(caml_js_from_string(f+l));h=h==ez?0:[0,caml_js_to_string(h)];if(h){var
+b=a[2];gB(m,a[1]);a=b}};x([0,e[1],[0,e[2],[0,e[3],[0,e[4],[0,e[5],[0,e[6],[0,e[7],[0,e[8],[0,e[9],[0,e[10],[0,e[11],[0,e[12],[0,e[13],[0,e[14],[0,e[15],[0,e[16],[0,e[17],[0,e[18],[0,e[19],0]]]]]]]]]]]]]]]]]]]);x(aa(e[20]));x(aa(e[21]));e=j[4]-1|0;a=0;if(e<0);else
+for(;;){if(0!==caml_check_bound(j[2],e)[e+1]){h=caml_check_bound(j[2],e)[e+1];a=[0,[0,e,caml_check_bound(j[1],e)[e+1],h],a]}h=e-1|0;if(0===e)break;e=h}bM(m,s(a));for(;;){if(!a){a=aw(m);h=gZ(a);e=g0(0);e.setItem(caml_js_from_string(f+l),caml_js_from_string(h));f=j[5];a=caml_call2(G(kn),f,caml_ml_string_length(a));d[2][1]=d[2][1]+a;return d}h=a[2];a=a[1];e=a[3];i=a[2];bM(m,a[1]);gB(m,i);if(typeof
+e==="number"){I(m,45);a=h}else
+switch(e[0]){case
+0:a=e[1];I(m,80);x(aa(a));a=h;break;case
+1:a=e[1];I(m,66);bM(m,caml_ml_bytes_length(a));fi(m,a);a=h;break;case
+2:a=e[1];I(m,70);e=0;a=caml_int64_bits_of_float(a);for(;;){I(m,Q(caml_int64_to_int32(caml_int64_and(caml_int64_shift_right_unsigned(a,8*e|0),jz))));i=e+1|0;if(7===e){a=h;break}e=i}break;default:a=e[2];e=e[1];I(m,77);x(aa(e));bM(m,caml_ml_bytes_length(a));fi(m,a);a=h}}break;default:h=g0(0);h=h.getItem(caml_js_from_string(f+l));h=h==ez?0:[0,caml_js_to_string(h)];if(h){var
 B=h[1],h=caml_ml_string_length(B);if(0===(h%4|0)){f=ak((h/4|0)*3|0);l=0;for(;;){if(h<=l){l=[0,aw(f)];break}let
 b=l;var
-C=function(a){return 61===caml_string_get(B,b+a|0)?jR:cA(str_ABCDEFGHIJKLMNOP_abr,caml_string_get(B,b+a|0))},a=C(0),i=C(1),e=C(2),q=C(3);if(a&&i&&e&&q){i=a[1]<<18|i[1]<<12|e[1]<<6|q[1];I(f,P((i>>>16|0)&num_255));if(61!==caml_string_get(B,l+2|0))I(f,P((i>>>8|0)&num_255));if(61!==caml_string_get(B,l+3|0))I(f,P(i&num_255));l=l+4|0;continue}l=0;break}}else
+C=function(a){return 61===caml_string_get(B,b+a|0)?jS:cB(str_ABCDEFGHIJKLMNOP_abr,caml_string_get(B,b+a|0))},a=C(0),i=C(1),c=C(2),q=C(3);if(a&&i&&c&&q){i=a[1]<<18|i[1]<<12|c[1]<<6|q[1];I(f,Q((i>>>16|0)&num_255));if(61!==caml_string_get(B,l+2|0))I(f,Q((i>>>8|0)&num_255));if(61!==caml_string_get(B,l+3|0))I(f,Q(i&num_255));l=l+4|0;continue}l=0;break}}else
 l=0}else
-l=0;if(l){f=hs(d[2],[0,l[1]]);d[2][1]=d[2][1]+"Image loaded.\n";l=d[3];l=T(function(a){return a[5][0]<3?1:0})(l);return[0,f,d[2],l,d[4],d[5],d[6],0,d[8],d[9],d[10],d[11],d[12],d[13],d[14],d[15]]}d[2][1]=d[2][1]+"No image saved yet: the screen menu's save first.\n";return d}}break}}function
-ht(a){var
+l=0;if(l){f=ht(d[2],[0,l[1]]);d[2][1]=d[2][1]+"Image loaded.\n";l=d[3];l=N(function(a){return a[5][0]<3?1:0})(l);return[0,f,d[2],l,d[4],d[5],d[6],0,d[8],d[9],d[10],d[11],d[12],d[13],d[14],d[15]]}d[2][1]=d[2][1]+"No image saved yet: the screen menu's save first.\n";return d}}break}}function
+hu(a){var
 num_15=15.;return[num_254,a[2][1],a[2][2]-num_15,caml_ml_string_length(a[3])*7.+num_12,num_15]}function
-eS(a,e){a=a[3];var
+eT(a,e){a=a[3];var
 d=0;for(;;){if(!a)return d;var
-c=a[2],b=a[1];if(cq(ht(b),e)){a=c;d=[0,[0,b,1]]}else if(b[4]||!cq(b[2],e))a=c;else{a=c;d=[0,[0,b,0]]}}}function
-eT(b,a,d){b=dj(b,a);for(;;){if(!b)return 0;a=b[1];b=b[2];var
-c=2===a[0]?a[1]:a[2];if(cq(c,d))return[0,a]}}function
-hu(c,b,a){var
-d=a[1],a=$(0,(a[2]-c[2]-2.)/num_13|0),a=hi(b[1],b[4]+a|0);return a?hk(b[1],a[1],caml_round_float((d-c[1]-3.)/7.)|0):caml_ml_string_length(b[1])}function
-hv(e){var
+c=a[2],b=a[1];if(cq(hu(b),e)){a=c;d=[0,[0,b,1]]}else if(b[4]||!cq(b[2],e))a=c;else{a=c;d=[0,[0,b,0]]}}}function
+eU(b,a,d){a=dk(b,a);for(;;){if(!a)return 0;b=a[1];a=a[2];var
+c=2===b[0]?b[1]:b[2];if(cq(c,d))return[0,b]}}function
+hv(c,b,a){var
+d=a[1],a=$(0,(a[2]-c[2]-2.)/num_13|0),a=hj(b[1],b[4]+a|0);return a?hl(b[1],a[1],caml_round_float((d-c[1]-3.)/7.)|0):caml_ml_string_length(b[1])}function
+hw(e){var
 c=e[1],a=e[2],b=0,d=c[2],c=c[1];for(;;){if(!a){b=b*7.+num_16;a=s(e[2])*num_13+6.;d=bC(d,num_600-a);return[num_254,bC(c,num_800-b),d,b,a]}var
 f=a[2],b=$(b,caml_ml_string_length(a[1][1]));a=f}}function
-ki(a,b,d){var
-c=ar($(b+1|0,s(a[6])),function(c){return c===b?$(0,d):dl(a,c)});return[0,a[1],a[2],a[3],a[4],a[5],c]}function
-ko(c,a,n,i){var
-d=a[5];if(d){n=d[1];a=[0,a[1],a[2],a[3],a[4],0,a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]];d=hv(n);if(cq(d,i)){i=ac(n[2],(i[2]-d[2]-3.)/num_13|0);i=i?[0,i[1][2]]:0}else
-i=0;return i?cu(c,a,i[1]):a}d=eS(a,i);if(!d)return a;d=d[1];var
-f=d[1];if(d[2]){c=eP(a,f[1]);return[0,c[1],c[2],c[3],c[4],c[5],[0,[0,f[1],i[1]-f[2][1],i[2]-f[2][2]]],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15]]}var
-e=eP(a,f[1]),a=eT(e,f,i);if(!a)return e;a=a[1];switch(a[0]){case
-0:c=a[1];a=a[2];d=bu(f,c);a=hu(a,d,i);a:if(n[1][9]){i=bR(d[1],a);var
-k=bS(d[1],a);b:if(a!==i){if(a===k)break b;k=a;for(;;){if(0>=k)break;if(!hl(caml_string_get(d[1],k-1|0)))break;k=k-1|0}for(;;){if(a<caml_ml_string_length(d[1])&&hl(caml_string_get(d[1],a))){a=a+1|0;continue}var
+kj(a,b,d){var
+c=as($(b+1|0,s(a[6])),function(c){return c===b?$(0,d):dm(a,c)});return[0,a[1],a[2],a[3],a[4],a[5],c]}function
+kp(c,a,n,i){var
+d=a[5];if(d){n=d[1];a=[0,a[1],a[2],a[3],a[4],0,a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]];d=hw(n);if(cq(d,i)){i=ac(n[2],(i[2]-d[2]-3.)/num_13|0);i=i?[0,i[1][2]]:0}else
+i=0;return i?cu(c,a,i[1]):a}d=eT(a,i);if(!d)return a;d=d[1];var
+f=d[1];if(d[2]){c=eQ(a,f[1]);return[0,c[1],c[2],c[3],c[4],c[5],[0,[0,f[1],i[1]-f[2][1],i[2]-f[2][2]]],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15]]}var
+e=eQ(a,f[1]),a=eU(e,f,i);if(!a)return e;a=a[1];switch(a[0]){case
+0:c=a[1];a=a[2];d=bu(f,c);a=hv(a,d,i);a:if(n[1][9]){i=bR(d[1],a);var
+k=bS(d[1],a);b:if(a!==i){if(a===k)break b;k=a;for(;;){if(0>=k)break;if(!hm(caml_string_get(d[1],k-1|0)))break;k=k-1|0}for(;;){if(a<caml_ml_string_length(d[1])&&hm(caml_string_get(d[1],a))){a=a+1|0;continue}var
 t=[0,d[1],a,k,d[4]];break a}}t=[0,d[1],k,i,d[4]]}else
 t=[0,d[1],a,a,d[4]];a=X(e,f[1],c,function(a){return t});i=a[15];k=a[14];d=a[13];var
 y=a[12],j=a[11],z=a[10],A=a[9],B=a[8],C=a[7],n=n[1][9]?0:[0,[1,f[1],c]];return[0,a[1],a[2],a[3],[0,[0,f[1],c]],a[5],n,C,B,A,z,j,y,d,k,i];case
-1:c=a[1];j=a[4];n=a[3];a=a[2];k=dl(f,c);a=((i[2]-a[2]-2.)/num_13|0)+k|0;a:{if(0<=a&&a<s(n)){a=[0,a];break a}a=0}var
+1:c=a[1];j=a[4];n=a[3];a=a[2];k=dm(f,c);a=((i[2]-a[2]-2.)/num_13|0)+k|0;a:{if(0<=a&&a<s(n)){a=[0,a];break a}a=0}var
 m=caml_equal(a,j)?0:a,a=ai(e),j=f[5];switch(j[0]){case
 2:var
-l=j[1],j=dj(e,f),a=0;for(;;){if(!j)break;n=j[1];a:{j=j[2];if(1===n[0]){k=n[3];if(n[1]===c){k=[0,k,0];break a}}k=0}a=M(k,a)}a=h(a);a:{if(a&&!a[2]&&m){var
-o=ac(a[1],m[1]);break a}o=0}if(2<c>>>0)return aX(e,f[1],function(a){return[0,l[1],l[2],l[3],l[4],o,l[6]]});switch(c){case
-0:return aX(e,f[1],function(a){return[0,o,0,l[3],0,0,l[6]]});case
-1:return aX(e,f[1],function(a){return[0,l[1],o,l[3],0,0,l[6]]});default:return aX(e,f[1],function(a){return[0,l[1],l[2],l[3],o,0,l[6]]})}case
+l=j[1],j=dk(e,f),a=0;for(;;){if(!j)break;n=j[1];a:{j=j[2];if(1===n[0]){k=n[3];if(n[1]===c){k=[0,k,0];break a}}k=0}a=M(k,a)}a=h(a);a:{if(a&&!a[2]&&m){var
+o=ac(a[1],m[1]);break a}o=0}if(2<c>>>0)return aY(e,f[1],function(a){return[0,l[1],l[2],l[3],l[4],o,l[6]]});switch(c){case
+0:return aY(e,f[1],function(a){return[0,o,0,l[3],0,0,l[6]]});case
+1:return aY(e,f[1],function(a){return[0,l[1],o,l[3],0,0,l[6]]});default:return aY(e,f[1],function(a){return[0,l[1],l[2],l[3],o,0,l[6]]})}case
 3:var
-u=j[1],j=di(e,u[1]);if(m){j=ac(j,m[1]);var
+u=j[1],j=dj(e,u[1]);if(m){j=ac(j,m[1]);var
 v=j?w(cs(e,j[1][2])):w(str)}else
 v=w(str);return aF(e,f[1],function(a){return[0,a[1],a[2],a[3],a[4],[3,[0,u[1],m,v]],a[6]]});case
 4:var
@@ -3695,65 +3695,65 @@ g=j[1];if(2>=c>>>0)switch(c){case
 0:if(m){var
 x=m[1];return aF(e,f[1],function(c){var
 b=c[5];if(4!==b[0])return c;b=b[1];var
-a=w(str),d=w(str),a=[0,b[1],b[2],b[3],x,b[5],0,d,0,a,0],b=c[6],d=a[10],e=a[9],f=a[8],g=a[7],h=a[6],i=eR(a);return[0,c[1],c[2],c[3],c[4],[4,[0,a[1],a[2],a[3],a[4],i,h,g,f,e,d]],b]})}break;case
-1:c=ac(g[3],g[4]);c=c?c[1][1]:q;c=c===0?q:b(a,a6(e[1],c),aT);if(m){a=m[1];c=ac(di(e,c),a);var
+a=w(str),d=w(str),a=[0,b[1],b[2],b[3],x,b[5],0,d,0,a,0],b=c[6],d=a[10],e=a[9],f=a[8],g=a[7],h=a[6],i=eS(a);return[0,c[1],c[2],c[3],c[4],[4,[0,a[1],a[2],a[3],a[4],i,h,g,f,e,d]],b]})}break;case
+1:c=ac(g[3],g[4]);c=c?c[1][1]:q;c=c===0?q:b(a,a7(e[1],c),aU);if(m){a=m[1];c=ac(dj(e,c),a);var
 r=c?[0,c[1][2]]:0}else
 r=0;return aF(e,f[1],function(a){var
-c=a[6],d=g[10],f=g[9],h=g[8],b=r?cs(e,r[1]):str,b=w(b);return[0,a[1],a[2],a[3],a[4],[4,[0,g[1],g[2],g[3],g[4],g[5],m,b,h,f,d]],c]});default:c=ac(g[3],g[4]);c=c?c[1][1]:q;a:{if(m){a=m[1];if(c!==0){a=ac(gC(e[1],c),a);if(a){var
+c=a[6],d=g[10],f=g[9],h=g[8],b=r?cs(e,r[1]):str,b=w(b);return[0,a[1],a[2],a[3],a[4],[4,[0,g[1],g[2],g[3],g[4],g[5],m,b,h,f,d]],c]});default:c=ac(g[3],g[4]);c=c?c[1][1]:q;a:{if(m){a=m[1];if(c!==0){a=ac(gD(e[1],c),a);if(a){var
 p=[0,a[1][2]];break a}p=0;break a}}p=0}return aF(e,f[1],function(a){var
 c=a[6],d=g[10],b=p?cs(e,p[1]):str,b=w(b);return[0,a[1],a[2],a[3],a[4],[4,[0,g[1],g[2],g[3],g[4],g[5],g[6],g[7],m,b,d]],c]})}return e;default:return e}default:return cu(c,e,a[4])}}var
-A=0,a=[0,"Smalltalk-80 of the Blue Book (Goldberg and Robson, 1983), in OCaml.\nThe kernel's classes compiled to its bytecodes, from their text.\n",0,[0,0,0,0],0],ks=[0,hs(a,0),a,0,0,0,0,0,1,A,0,0,0,str,0,0],a=et(num_150$0),aN=et(num_150$0),jG=[1,et(num_150$0),aN,a];function
-ab(b,c,a){c=g4(c,a[3]*b,a[4]*b);return eF((a[1]+a[3]/2.-num_400)*b,(num_300-a[2]-a[4]/2.)*b,c)}var
+A=0,a=[0,"Smalltalk-80 of the Blue Book (Goldberg and Robson, 1983), in OCaml.\nThe kernel's classes compiled to its bytecodes, from their text.\n",0,[0,0,0,0],0],kt=[0,ht(a,0),a,0,0,0,0,0,1,A,0,0,0,str,0,0],a=et(num_150$0),aO=et(num_150$0),jH=[1,et(num_150$0),aO,a];function
+ab(b,c,a){c=g5(c,a[3]*b,a[4]*b);return eF((a[1]+a[3]/2.-num_400)*b,(num_300-a[2]-a[4]/2.)*b,c)}var
 W=[0,"#000000"];function
 bW(c,a){var
 b=[0,ab(c,W,[num_254,a[1]+a[3]-1.,a[2],1.,a[4]]),0],b=[0,ab(c,W,[num_254,a[1],a[2],1.,a[4]]),b],b=[0,ab(c,W,[num_254,a[1],a[2]+a[4]-1.,a[3],1.]),b];return[0,ab(c,W,[num_254,a[1],a[2],a[3],1.]),b]}function
-eU(b,e,d,c,a){if(32!==a&&9!==a)return[0,eF((d+3.5-num_400)*b,(num_300-c-6.5)*b,[0,0.,0.,0.,1.*(b*1.1),1.,[7,e,dA(1,a)]]),0];return 0}function
-bv(f,e,d,c,a,b){a=a?a[1]:num_1000;return bA(ar(O(a,caml_ml_string_length(b)),function(a){return eU(f,e,d+a*7.,c,caml_string_get(b,a))}))}var
-aD=[0,"#FFFFFF"],dg=num_13;function
-kv(i,f,c,v){var
+eV(b,e,d,c,a){if(32!==a&&9!==a)return[0,eF((d+3.5-num_400)*b,(num_300-c-6.5)*b,[0,0.,0.,0.,1.*(b*1.1),1.,[7,e,dA(1,a)]]),0];return 0}function
+bv(f,e,d,c,a,b){a=a?a[1]:num_1000;return bA(as(P(a,caml_ml_string_length(b)),function(a){return eV(f,e,d+a*7.,c,caml_string_get(b,a))}))}var
+aD=[0,"#FFFFFF"],dh=num_13;function
+kw(i,f,c,v){var
 t=(f[3]-6.)/7.|0,j=bQ(c),p=j[2],j=j[1],q=[0,0];function
 l(a){q[1]=n(a,q[1])}var
-b=hi(c[1],c[4]),b=b?b[1]:caml_ml_string_length(c[1]),u=caml_ml_string_length(c[1]),o=0,w=dk(f);for(;;){if(o<w&&b<=u){var
+b=hj(c[1],c[4]),b=b?b[1]:caml_ml_string_length(c[1]),u=caml_ml_string_length(c[1]),o=0,w=dl(f);for(;;){if(o<w&&b<=u){var
 k=bS(c[1],b),m=f[2]+2.+o*num_13,a=k-1|0,d=0;if(a<b);else{var
 e=b;for(;;){var
 r=caml_string_get(c[1],e),g=9===r?(((d/4|0)*4|0)+4|0)-d|0:1;a:if((d+g|0)<=t){var
-s=f[1]+3.+d*7.;if(j<=e&&e<p){l([0,ab(i,W,[num_254,s,m,g*7.,dg]),0]);l(eU(i,aD,s,m,r));break a}l(eU(i,W,s,m,r))}d=d+g|0;g=e+1|0;if(a===e)break;e=g}}a=j<=k;if(a){a=k<p;if(a){a=k<u;a=a?d<t:a}}if(a)l([0,ab(i,W,[num_254,f[1]+3.+d*7.,m,7.,dg]),0]);if(v){a=j===p;if(a){a=b<=c[2];a=a?c[2]<=k:a}}else
-a=v;if(a){b=hj(c[1],c[2])*7.;l([0,ab(i,W,[num_254,f[1]+3.+b-1.,m+1.,1.5,11.]),0])}b=k+1|0;o=o+1|0;continue}e=h(q[1]);g=bW(i,f);return n([0,ab(i,aD,f),g],e)}}function
-kw(d,a,b,k,g){var
-f=(a[3]-6.)/7.|0,e=0,c=0,i=dk(a);for(;;){if(!b)break;var
-j=b[2],b=b[1],e=g<=c?[0,b,e]:e;b=j;c=c+1|0}c=bA(bd(function(b,c){var
-e=b+g|0;if(i<=b)return 0;b=a[2]+2.+b*num_13;if(!caml_equal(k,[0,e]))return bv(d,W,a[1]+3.,b,[0,f],c);c=bv(d,aD,a[1]+3.,b,[0,f],c);return[0,ab(d,W,[num_254,a[1]+1.,b,a[3]-2.,dg]),c]},h(e)));b=bW(d,a);return n([0,ab(d,aD,a),b],c)}function
-jY(g,d,e){var
+s=f[1]+3.+d*7.;if(j<=e&&e<p){l([0,ab(i,W,[num_254,s,m,g*7.,dh]),0]);l(eV(i,aD,s,m,r));break a}l(eV(i,W,s,m,r))}d=d+g|0;g=e+1|0;if(a===e)break;e=g}}a=j<=k;if(a){a=k<p;if(a){a=k<u;a=a?d<t:a}}if(a)l([0,ab(i,W,[num_254,f[1]+3.+d*7.,m,7.,dh]),0]);if(v){a=j===p;if(a){a=b<=c[2];a=a?c[2]<=k:a}}else
+a=v;if(a){b=hk(c[1],c[2])*7.;l([0,ab(i,W,[num_254,f[1]+3.+b-1.,m+1.,1.5,11.]),0])}b=k+1|0;o=o+1|0;continue}e=h(q[1]);g=bW(i,f);return n([0,ab(i,aD,f),g],e)}}function
+kx(d,a,b,k,g){var
+f=(a[3]-6.)/7.|0,e=0,c=0,i=dl(a);for(;;){if(!b)break;var
+j=b[2],b=b[1],e=g<=c?[0,b,e]:e;b=j;c=c+1|0}c=bA(be(function(b,c){var
+e=b+g|0;if(i<=b)return 0;b=a[2]+2.+b*num_13;if(!caml_equal(k,[0,e]))return bv(d,W,a[1]+3.,b,[0,f],c);c=bv(d,aD,a[1]+3.,b,[0,f],c);return[0,ab(d,W,[num_254,a[1]+1.,b,a[3]-2.,dh]),c]},h(e)));b=bW(d,a);return n([0,ab(d,aD,a),b],c)}function
+jZ(g,d,e){var
 a=e[2],e=e[1];if(typeof
 d!=="number")switch(d[0]){case
 0:var
 c=a[2],b=a[1],d=[0,[0,b[1],b[2],b[3],0,b[5],0.,0.,0.,0],[0,c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],str],a[3],[0,d[1]],a[5]];return[0,caml_call2(g,a,e),d];case
 1:g=a[5];c=a[4];d=eG(d[1],d[2]);return[0,e,[0,a[1],a[2],d,c,g]];case
-2:g=a[5];c=a[4];b=a[3];d=jT(d[1],d[2],a[2]);return[0,e,[0,a[1],d,b,c,g]];case
+2:g=a[5];c=a[4];b=a[3];d=jU(d[1],d[2],a[2]);return[0,e,[0,a[1],d,b,c,g]];case
 3:d=d[1];c=a[1];return[0,e,[0,[0,d[1],d[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9]],a[2],a[3],a[4],a[5]]];case
 4:d=d[1];c=a[1];return[0,e,[0,[0,c[1],c[2],c[3],c[4],c[5],c[6]+d[1],c[7]+d[2],c[8],c[9]],a[2],a[3],a[4],a[5]]];case
 5:c=a[5];b=a[4];g=a[3];var
-f=a[2],a=d[1]?g6(1,a[1]):g5(1,g6(0,a[1]));return[0,e,[0,a,f,g,b,c]];case
+f=a[2],a=d[1]?g7(1,a[1]):g6(1,g7(0,a[1]));return[0,e,[0,a,f,g,b,c]];case
 6:b=a[1];return[0,e,[0,[0,b[1],b[2],b[3],b[4],d[1],b[6],b[7],b[8],b[9]],a[2],a[3],a[4],a[5]]];case
-7:b=a[2];return[0,e,[0,a[1],[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8],b[9],b[10],b[11],b[12],b[13],b[14]+d[1]],a[3],a[4],a[5]]];default:b=a[1];return[0,e,[0,[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8]+d[1],b[9]],a[2],a[3],a[4],a[5]]]}if(0===d){d=a[5];b=a[4];f=a[3];c=a[2];return[0,e,[0,g5(1,a[1]),c,f,b,d]]}f=a[1];return[0,e,[0,[0,f[1],f[2],f[3],f[4],f[5],f[6],f[7],f[8],1],a[2],a[3],a[4],a[5]]]}var
-g1=[0,0],bc=[0,0.],hd=i,bP=[0,hd];function
-ka(c){var
-b=caml_obj_tag(bb),b=num_250===b?bb[1]:num_246===b?dv(bb):bb;if(b){var
-d=b[1];if(hc(d)==="running"){c=d.currentTime;if(bc[1]<c){if(0.<bc[1])bP[1]=bC(num_0_3,bP[1]+num_0_03);bc[1]=c+bP[1]/2.}else
-bP[1]=dF(hd,bP[1]-.0002);var
-g=function(a){a=d[a];return gS(a)==="number"?a:0.},b=g("outputLatency"),a=g("baseLatency"),a=bc[1]-c+a+b,b=g1[1];if(b){b=b[1];a=b+(a-b)/num_60}g1[1]=[0,a];c=(bP[1]-(bc[1]-c))*num_44100|0;if(0<c){a=g0(c);b=d.createBuffer(2,c,44100);a=[0,a[1],[0,a[2],0]];var
-f=0;for(;;){if(!a){a=d.createBufferSource();a.buffer=b;a.connect(d.destination);a.start(bc[1]);bc[1]=bc[1]+c/num_44100;break}var
+7:b=a[2];return[0,e,[0,a[1],[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8],b[9],b[10],b[11],b[12],b[13],b[14]+d[1]],a[3],a[4],a[5]]];default:b=a[1];return[0,e,[0,[0,b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8]+d[1],b[9]],a[2],a[3],a[4],a[5]]]}if(0===d){d=a[5];b=a[4];f=a[3];c=a[2];return[0,e,[0,g6(1,a[1]),c,f,b,d]]}f=a[1];return[0,e,[0,[0,f[1],f[2],f[3],f[4],f[5],f[6],f[7],f[8],1],a[2],a[3],a[4],a[5]]]}var
+g2=[0,0],bd=[0,0.],he=i,bP=[0,he];function
+kb(c){var
+b=caml_obj_tag(bc),b=num_250===b?bc[1]:num_246===b?dw(bc):bc;if(b){var
+d=b[1];if(hd(d)==="running"){c=d.currentTime;if(bd[1]<c){if(0.<bd[1])bP[1]=bC(num_0_3,bP[1]+num_0_03);bd[1]=c+bP[1]/2.}else
+bP[1]=dF(he,bP[1]-.0002);var
+g=function(a){a=d[a];return gT(a)==="number"?a:0.},b=g("outputLatency"),a=g("baseLatency"),a=bd[1]-c+a+b,b=g2[1];if(b){b=b[1];a=b+(a-b)/num_60}g2[1]=[0,a];c=(bP[1]-(bd[1]-c))*num_44100|0;if(0<c){a=g1(c);b=d.createBuffer(2,c,44100);a=[0,a[1],[0,a[2],0]];var
+f=0;for(;;){if(!a){a=d.createBufferSource();a.buffer=b;a.connect(d.destination);a.start(bd[1]);bd[1]=bd[1]+c/num_44100;break}var
 h=a[1],a=a[2],i=h.length-2|0,k=b.getChannelData(f);if(i>=0){var
 e=0;for(;;){k[e]=h[e+1];var
-j=e+1|0;if(i===e)break;e=j}}f=f+1|0}}return}}g0(c*735|0)}var
-str_browser="browser",i=350.,a=240.,kt=[0,"saved"],kp=[num_254,8.,num_20,num_560,num_300],kq=[num_254,480.,i,312.,a],kr=[num_254,8.,i,462.,a],kn=[0,[0,"restore display",3],[0,[0,str_browser,0],[0,[0,"workspace",1],[0,[0,"system transcript",2],[0,[0,"save",4],[0,[0,str_load,5],0]]]]]];function
-ku(n,i,a){if(a[15]);else{a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],1];a=caml_equal(b0(str_image,i[5]),kt)?cu(n,a,5):a;var
-e=ai(a),c="Rectangle",f=eO(e,c),d="center";if(f){f=f[1];f=bl(e,f,J(e,d))}else
-f=0;e=f?ca(e,f[1]):str;a=aW(a,str_System_Browser,kp,[2,[0,[0,"Graphics-Primitives"],[0,c],0,[0,"rectangle functions"],[0,d],w(e)]])[1];a=aW(a,str_System_Transcript,kq,[1,w(a[2][1])])[1];a=aW(a,str_Workspace,kr,[0,w(`"The caret on a line, then the right button's menu:\ndo it, print it, inspect it (or Control-D, P, I)."\n3 + 4 * 2\n100 factorial\n(1/3) + (2/3)\n#(5 3 8 1 2) asSortedCollection\n(Rectangle origin: 0@0 corner: 4@6) center\n(1 to: 10) collect: [:i | i * i]\nTranscript show: 'Hello, world!'; cr\nMetaclass class class == Metaclass\n(3@4) inspect\nPen new dragon: 9\nPen new spiral: 150 angle: 89\nPen new scribble\n10 fib\n3 zork: 4\n3 halt\n[true] whileTrue`)]);d=a[1];a=[0,d[1],d[2],d[3],[0,[0,a[2],0]],d[5],d[6],d[7],d[8],d[9],d[10],d[11],d[12],d[13],d[14],d[15]];d=b0("window",i[5]);if(d){d=d[1];if(d!==str_browser)if(d!=="debugger");else{a:{b:{d=a[3];for(;;){if(!d)break b;e=d[1];d=d[2];c=0===e[5][0]?1:0;if(c)break}d=[0,e];break a}d=0}if(d){d=d[1];a=X(a,d[1],0,function(b){var
-c=b[1],a=0;for(;;){if(caml_ml_string_length(c)<(a+6|0))a=0;else if(F(c,a,6)!=="10 fib"){a=a+1|0;continue}return[0,b[1],a,a,b[4]]}});a=dn(a,d[1],0,[0,d[1],0])}}else{d=a[3];for(;;){if(d){e=d[1];d=d[2];c=2===e[5][0]?1:0;if(!c)continue;d=[0,e]}else
-d=0;if(d){a=eP(a,d[1][1]);break}break}}}}var
-p=hg(i),u=gI(0,co(i[2][13],a[9])),d=0!==a[7],e=i[1][5]?2:0,c=i[1][3]?4:0;a[2][3]=[0,p[1]|0,p[2]|0,c|e];e=a[3];c=0;for(;;){if(!e)break;var
-m=e[1][5],e=e[2],m=3===m[0]?[0,m[1][1],0]:0;c=M(m,c)}c=h(c);a[2][4]=c;c=i[1][3];c=c?1-a[10]:c;e=i[1][5];e=e?1-a[11]:e;f="c";if(d){if(gH(str_Control,i[2][13])&&be(f,u)){e=a[7];a=[0,a[1],a[2],a[3],a[4],a[5],a[6],0,a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]];for(;;){if(!e)break;f=e[1];c=f[1];e=e[2];f=f[2];n="User Interrupt";go(c,n);a=ho(a,n,c,f)}}}else{if(e){c=eS(a,p);a:if(c){c=c[1];d=c[1];if(c[2]){c=[0,[0,str_close,[8,d[1]]],0];e=[9,d[1]];d=d[4]?"expand":"collapse";d=[0,[0,d,e],c]}else{c=d[5];e=eT(a,d,p);if(e){var
+j=e+1|0;if(i===e)break;e=j}}f=f+1|0}}return}}g1(c*735|0)}var
+str_browser="browser",i=350.,a=240.,ku=[0,"saved"],kq=[num_254,8.,num_20,num_560,num_300],kr=[num_254,480.,i,312.,a],ks=[num_254,8.,i,462.,a],ko=[0,[0,"restore display",3],[0,[0,str_browser,0],[0,[0,"workspace",1],[0,[0,"system transcript",2],[0,[0,"save",4],[0,[0,str_load,5],0]]]]]];function
+kv(n,i,a){if(a[15]);else{a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],1];a=caml_equal(b0(str_image,i[5]),ku)?cu(n,a,5):a;var
+e=ai(a),c="Rectangle",f=eP(e,c),d="center";if(f){f=f[1];f=bl(e,f,J(e,d))}else
+f=0;e=f?ca(e,f[1]):str;a=aX(a,str_System_Browser,kq,[2,[0,[0,"Graphics-Primitives"],[0,c],0,[0,"rectangle functions"],[0,d],w(e)]])[1];a=aX(a,str_System_Transcript,kr,[1,w(a[2][1])])[1];a=aX(a,str_Workspace,ks,[0,w(`"The caret on a line, then the right button's menu:\ndo it, print it, inspect it (or Control-D, P, I)."\n3 + 4 * 2\n100 factorial\n(1/3) + (2/3)\n#(5 3 8 1 2) asSortedCollection\n(Rectangle origin: 0@0 corner: 4@6) center\n(1 to: 10) collect: [:i | i * i]\nTranscript show: 'Hello, world!'; cr\nMetaclass class class == Metaclass\n(3@4) inspect\nPen new dragon: 9\nPen new spiral: 150 angle: 89\nPen new scribble\n10 fib\n3 zork: 4\n3 halt\n[true] whileTrue`)]);d=a[1];a=[0,d[1],d[2],d[3],[0,[0,a[2],0]],d[5],d[6],d[7],d[8],d[9],d[10],d[11],d[12],d[13],d[14],d[15]];d=b0("window",i[5]);if(d){d=d[1];if(d!==str_browser)if(d!=="debugger");else{a:{b:{d=a[3];for(;;){if(!d)break b;e=d[1];d=d[2];c=0===e[5][0]?1:0;if(c)break}d=[0,e];break a}d=0}if(d){d=d[1];a=X(a,d[1],0,function(b){var
+c=b[1],a=0;for(;;){if(caml_ml_string_length(c)<(a+6|0))a=0;else if(F(c,a,6)!=="10 fib"){a=a+1|0;continue}return[0,b[1],a,a,b[4]]}});a=dp(a,d[1],0,[0,d[1],0])}}else{d=a[3];for(;;){if(d){e=d[1];d=d[2];c=2===e[5][0]?1:0;if(!c)continue;d=[0,e]}else
+d=0;if(d){a=eQ(a,d[1][1]);break}break}}}}var
+p=hh(i),u=gJ(0,co(i[2][13],a[9])),d=0!==a[7],e=i[1][5]?2:0,c=i[1][3]?4:0;a[2][3]=[0,p[1]|0,p[2]|0,c|e];e=a[3];c=0;for(;;){if(!e)break;var
+m=e[1][5],e=e[2],m=3===m[0]?[0,m[1][1],0]:0;c=M(m,c)}c=h(c);a[2][4]=c;c=i[1][3];c=c?1-a[10]:c;e=i[1][5];e=e?1-a[11]:e;f="c";if(d){if(gI(str_Control,i[2][13])&&aG(f,u)){e=a[7];a=[0,a[1],a[2],a[3],a[4],a[5],a[6],0,a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]];for(;;){if(!e)break;f=e[1];c=f[1];e=e[2];f=f[2];n="User Interrupt";gp(c,n);a=hp(a,n,c,f)}}}else{if(e){c=eT(a,p);a:if(c){c=c[1];d=c[1];if(c[2]){c=[0,[0,str_close,[8,d[1]]],0];e=[9,d[1]];d=d[4]?"expand":"collapse";d=[0,[0,d,e],c]}else{c=d[5];e=eU(a,d,p);if(e){var
 g=e[1];switch(g[0]){case
 0:e=g[1];d=d[1];d=[0,[0,"do it",[0,d,e]],[0,[0,"print it",[1,d,e]],[0,[0,"inspect it",[2,d,e]],[0,[0,"accept",[3,d,e]],[0,[0,"cancel",[4,d,e]],[0,[0,str_copy,[5,d,e]],[0,[0,str_cut,[6,d,e]],[0,[0,str_paste,[7,d,e]],0]]]]]]]];break a;case
 1:switch(c[0]){case
@@ -3761,88 +3761,94 @@ g=e[1];switch(g[0]){case
 0:d=[0,[0,"definition",[16,d[1]]],[0,[0,"comment",[17,d[1]]],[0,[0,"file out",[18,d[1]]],0]]];break a;case
 2:d=[0,[0,"remove",[19,d[1]]],0];break a}break;case
 4:if(0===e[1][1]){d=[0,[0,str_proceed,[10,d[1]]],[0,[0,str_restart,[12,d[1]]],[0,[0,str_step,[13,d[1]]],[0,[0,str_send,[14,d[1]]],0]]]];break a}break}break}}d=0}}else
-d=kn;c=0===d?a:[0,a[1],a[2],a[3],a[4],[0,[0,p,d]],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]]}else
-c=c?ko(n,a,i,p):a;if(i[1][3]&&!(0===c[6])){a=c[6];if(a){a=a[1];if(0===a[0])var
+d=ko;c=0===d?a:[0,a[1],a[2],a[3],a[4],[0,[0,p,d]],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]]}else
+c=c?kp(n,a,i,p):a;if(i[1][3]&&!(0===c[6])){a=c[6];if(a){a=a[1];if(0===a[0])var
 G=a[3],H=a[2],c=aF(c,a[1],function(a){var
-b=a[2];return[0,a[1],[num_254,p[1]-H,p[2]-G,b[3],b[4]],a[3],a[4],a[5],a[6]]});else{e=a[2];a=a[1];d=S(c,a);if(d){d=b0(e,hm(c,d[1]));if(d)var
+b=a[2];return[0,a[1],[num_254,p[1]-H,p[2]-G,b[3],b[4]],a[3],a[4],a[5],a[6]]});else{e=a[2];a=a[1];d=T(c,a);if(d){d=b0(e,hn(c,d[1]));if(d)var
 I=d[1],c=X(c,a,e,function(a){var
-b=a[4],c=a[3],d=hu(I,a,p);return[0,a[1],d,c,b]})}}}}a=i[1][3]?c:[0,c[1],c[2],c[3],c[4],c[5],0,c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15]];if(i[1][8]!==0.){var
-A=0.<i[1][8]?-3:3,d=eS(a,p);if(d){e=d[1];if(e[2]);else{d=e[1];e=eT(a,d,p);if(e){e=e[1];switch(e[0]){case
+b=a[4],c=a[3],d=hv(I,a,p);return[0,a[1],d,c,b]})}}}}a=i[1][3]?c:[0,c[1],c[2],c[3],c[4],c[5],0,c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15]];if(i[1][8]!==0.){var
+A=0.<i[1][8]?-3:3,d=eT(a,p);if(d){e=d[1];if(e[2]);else{d=e[1];e=eU(a,d,p);if(e){e=e[1];switch(e[0]){case
 2:break;case
 0:a=X(a,d[1],e[1],function(a){var
-b=a[4]+A|0,b=$(0,O(hh(a[1],caml_ml_string_length(a[1])),b));return[0,a[1],a[2],a[3],b]});break;default:var
+b=a[4]+A|0,b=$(0,P(hi(a[1],caml_ml_string_length(a[1])),b));return[0,a[1],a[2],a[3],b]});break;default:var
 B=e[1],K=e[3],a=aF(a,d[1],function(a){var
-b=dl(a,B)+A|0;return ki(a,B,O(s(K)-1|0,b))})}}}}}d=a[4];if(d){c=d[1];e=c[1];d=c[2];if(gH(str_Control,i[2][13])){a=be(str_a,k(fc,u))?X(a,e,d,function(a){return[0,a[1],caml_ml_string_length(a[1]),0,a[4]]}):a;c=u;for(;;){if(c){g=c[2];c=fc(c[1]);c=c!==f?c!==str_d$0?c!=="i"?c!==str_p?c!==str_s?c!=="v"?c!==str_x?0:[0,[6,e,d]]:[0,[7,e,d]]:[0,[3,e,d]]:[0,[1,e,d]]:[0,[2,e,d]]:[0,[0,e,d]]:[0,[5,e,d]];if(!c){c=g;continue}}else
+b=dm(a,B)+A|0;return kj(a,B,P(s(K)-1|0,b))})}}}}}d=a[4];if(d){c=d[1];e=c[1];d=c[2];if(gI(str_Control,i[2][13])){a=aG(str_a,k(fd,u))?X(a,e,d,function(a){return[0,a[1],caml_ml_string_length(a[1]),0,a[4]]}):a;c=u;for(;;){if(c){g=c[2];c=fd(c[1]);c=c!==f?c!==str_d$0?c!=="i"?c!==str_p?c!==str_s?c!=="v"?c!==str_x?0:[0,[6,e,d]]:[0,[7,e,d]]:[0,[3,e,d]]:[0,[1,e,d]]:[0,[2,e,d]]:[0,[0,e,d]]:[0,[5,e,d]];if(!c){c=g;continue}}else
 c=0;a=[0,a,c];break}}else{var
 C=caml_bytes_of_string(i[2][14]),z=function(a,c){if(a===caml_ml_bytes_length(C))return 0;var
 b=a+1|0;return[0,caml_bytes_get(C,a),function(a){return z(b,a)}]},E=function(a){return z(0,a)},L=function(a){var
-b=32<=a?1:0,a=b?a<num_127?1:0:b;return a},d=c[2],c=av(num_256,0),f=0,y=function(a){return eZ(L,E,a)};for(;;){g=y(0);if(!g)break;var
+b=32<=a?1:0,a=b?a<num_127?1:0:b;return a},d=c[2],c=av(num_256,0),f=0,y=function(a){return e0(L,E,a)};for(;;){g=y(0);if(!g)break;var
 l=g[2],g=g[1];if(f===caml_ml_bytes_length(c)){var
-t=e6(2*caml_ml_bytes_length(c)|0,bz);if(caml_ml_bytes_length(c)===t)aj("Bytes.of_seq: cannot grow bytes");t=av(t,0);cy(c,0,t,0,f)}else
+t=e7(2*caml_ml_bytes_length(c)|0,bz);if(caml_ml_bytes_length(c)===t)aj("Bytes.of_seq: cannot grow bytes");t=av(t,0);cz(c,0,t,0,f)}else
 t=c;caml_bytes_set(t,f,g);c=t;f=f+1|0;y=l}var
 D=caml_string_of_bytes(bB(c,0,f)),a=[0,X(a,e,d,function(a){if(D!==str)var
 b=u,a=aE(a,D);else
 b=u;for(;;){if(!b)return a;var
 e=b[2],b=b[1],f=caml_ml_string_length(a[1]),d=bQ(a),c=d[2],d=d[1],g=caml_string_compare(b,str_Delete);if(0<=g)if(0<g)if(b!==str_End)if(b!==str_Enter)if(b!==str_Home)if(b!==str_Tab)b=e;else{b=e;a=aE(a,"\t")}else{c=bR(a[1],a[2]);b=e;a=[0,a[1],c,c,a[4]]}else{b=e;a=aE(a,str$14)}else{c=bS(a[1],a[2]);b=e;a=[0,a[1],c,c,a[4]]}else if(d<c){b=e;a=aE(a,str)}else if(d<f){b=e;a=aE([0,a[1],d+1|0,d,a[4]],str)}else
-b=e;else{if(b!==str_ArrowDown){if(b===str_ArrowLeft){c=d<c?d:$(0,a[2]-1|0);b=e;a=[0,a[1],c,c,a[4]];continue}if(b===str_ArrowRight){c=d<c?c:O(f,a[2]+1|0);b=e;a=[0,a[1],c,c,a[4]];continue}if(b!==str_ArrowUp){if(b!==str_Backspace){b=e;continue}if(d<c){b=e;a=aE(a,str);continue}if(0<d){b=e;a=aE([0,a[1],d,d-1|0,a[4]],str);continue}b=e;continue}}d=bR(a[1],a[2]);c=hj(a[1],a[2]);if(b===str_ArrowUp)f=0===d?0:[0,bR(a[1],d-1|0)];else{b=bS(a[1],a[2]);f=f<=b?0:[0,b+1|0]}if(f){c=hk(a[1],f[1],c);b=e;a=[0,a[1],c,c,a[4]]}else
+b=e;else{if(b!==str_ArrowDown){if(b===str_ArrowLeft){c=d<c?d:$(0,a[2]-1|0);b=e;a=[0,a[1],c,c,a[4]];continue}if(b===str_ArrowRight){c=d<c?c:P(f,a[2]+1|0);b=e;a=[0,a[1],c,c,a[4]];continue}if(b!==str_ArrowUp){if(b!==str_Backspace){b=e;continue}if(d<c){b=e;a=aE(a,str);continue}if(0<d){b=e;a=aE([0,a[1],d,d-1|0,a[4]],str);continue}b=e;continue}}d=bR(a[1],a[2]);c=hk(a[1],a[2]);if(b===str_ArrowUp)f=0===d?0:[0,bR(a[1],d-1|0)];else{b=bS(a[1],a[2]);f=f<=b?0:[0,b+1|0]}if(f){c=hl(a[1],f[1],c);b=e;a=[0,a[1],c,c,a[4]]}else
 b=e}}}),0]}}else
-a=[0,a,0];e=a[2];a=a[1];a=e?cu(n,a,e[1]):a;e=a[4];if(e){e=e[1];d=e[2];e=e[1];c=S(a,e);if(c){c=b0(d,hm(a,c[1]));if(c)var
-N=dk(c[1]),a=X(a,e,d,function(a){return eL(N,a)})}}}e=a[7];if(e){d=e[1];c=d[1];e=e[2];d=d[2];ek(0,a[1],c,num_100000);a=hp([0,a[1],a[2],a[3],a[4],a[5],a[6],e,a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]],c,d)}e=a[2][2];a[2][2]=0;for(;;){if(!e)break;c=e[2];a=hn(a,e[1]);e=c}if(caml_ml_string_length(a[2][1])===a[14]);else
+a=[0,a,0];e=a[2];a=a[1];a=e?cu(n,a,e[1]):a;e=a[4];if(e){e=e[1];d=e[2];e=e[1];c=T(a,e);if(c){c=b0(d,hn(a,c[1]));if(c)var
+N=dl(c[1]),a=X(a,e,d,function(a){return eM(N,a)})}}}e=a[7];if(e){d=e[1];c=d[1];e=e[2];d=d[2];ek(0,a[1],c,num_100000);a=hq([0,a[1],a[2],a[3],a[4],a[5],a[6],e,a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]],c,d)}e=a[2][2];a[2][2]=0;for(;;){if(!e)break;c=e[2];a=ho(a,e[1]);e=c}if(caml_ml_string_length(a[2][1])===a[14]);else
 var
 x=a[2][1],e=a[15],c=a[13],d=a[12],n=a[11],f=a[10],l=a[9],g=a[8],o=a[7],r=a[6],m=a[5],j=a[4],q=k(function(a){if(1!==a[5][0])return a;var
-b=caml_ml_string_length(x),d=a[6],c=w(x),b=[0,c[1],b,b,c[4]],b=[1,eL(dk(a[2]),b)];return[0,a[1],a[2],a[3],a[4],b,d]},a[3]),a=[0,a[1],a[2],q,j,m,r,o,g,l,f,n,d,c,caml_ml_string_length(x),e];e=fN[1];c=a[12];a:{if(c&&c[1][1]===e)break a;c=bI(ai(a),"Display");if(c){c=c[1];c=b(ai(a),c,1);c=cS(ai(a),c);if(c)var
-v=c[1],c=[0,[0,v[2],v[3],function(b,a){return 1===cT(v,b,a)?1:0}]];else
-c=0;if(c){c=c[1];d=c[3];n=c[2];c=c[1];r=n-1|0;j=-1;f=-1;if(r<0);else{g=c;o=0;for(;;){q=c-1|0;if(q<0);else{m=0;for(;;){if(d(m,o)){g=O(g,m);n=O(n,o);j=$(j,m);f=$(f,o)}l=m+1|0;if(q===m)break;m=l}}l=o+1|0;if(r===o){c=g;break}o=l}}if(0<=j){j=(j-c|0)+1|0;r=(f-n|0)+1|0;l=caml_ba_create(3,0,[0,caml_mul(j,r)*4|0]);caml_ba_fill(l,0);f=r-1|0;g=[0,j,r,l];if(f>=0){l=0;for(;;){o=j-1|0;if(o>=0){q=0;for(;;){if(d(c+q|0,n+l|0))caml_ba_set_1(g[3],((caml_mul(l,j)+q|0)*4|0)+3|0,num_255);m=q+1|0;if(o===q)break;q=m}}o=l+1|0;if(f===l)break;l=o}}j=[0,[0,[num_254,c,n,j,r],g]]}else
+b=caml_ml_string_length(x),d=a[6],c=w(x),b=[0,c[1],b,b,c[4]],b=[1,eM(dl(a[2]),b)];return[0,a[1],a[2],a[3],a[4],b,d]},a[3]),a=[0,a[1],a[2],q,j,m,r,o,g,l,f,n,d,c,caml_ml_string_length(x),e];e=fO[1];c=a[12];a:{if(c&&c[1][1]===e)break a;c=bI(ai(a),"Display");if(c){c=c[1];c=b(ai(a),c,1);c=cT(ai(a),c);if(c)var
+v=c[1],c=[0,[0,v[2],v[3],function(b,a){return 1===cU(v,b,a)?1:0}]];else
+c=0;if(c){c=c[1];d=c[3];n=c[2];c=c[1];r=n-1|0;j=-1;f=-1;if(r<0);else{g=c;o=0;for(;;){q=c-1|0;if(q<0);else{m=0;for(;;){if(d(m,o)){g=P(g,m);n=P(n,o);j=$(j,m);f=$(f,o)}l=m+1|0;if(q===m)break;m=l}}l=o+1|0;if(r===o){c=g;break}o=l}}if(0<=j){j=(j-c|0)+1|0;r=(f-n|0)+1|0;l=caml_ba_create(3,0,[0,caml_mul(j,r)*4|0]);caml_ba_fill(l,0);f=r-1|0;g=[0,j,r,l];if(f>=0){l=0;for(;;){o=j-1|0;if(o>=0){q=0;for(;;){if(d(c+q|0,n+l|0))caml_ba_set_1(g[3],((caml_mul(l,j)+q|0)*4|0)+3|0,num_255);m=q+1|0;if(o===q)break;q=m}}o=l+1|0;if(f===l)break;l=o}}j=[0,[0,[num_254,c,n,j,r],g]]}else
 j=0}else
 j=0}else
 j=0;a=[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],,,,[0,[0,e,j]],a[13],a[14],a[15]]}return[0,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],i[2][13],i[1][3],i[1][5],a[12],a[13],a[14],a[15]]}function
-kx(i,g){var
-a=hf(i),m=s(g[3]),j=bA(bd(function(f,d){var
-c=ht(d);if(f===(m-1|0)){f=W;var
+ky(i,g){var
+a=hg(i),m=s(g[3]),j=bA(be(function(f,d){var
+c=hu(d);if(f===(m-1|0)){f=W;var
 b=aD}else{f=aD;b=W}b=bv(a,b,c[1]+6.,c[2]+1.,0,d[3]);var
-k=bW(a,c),k=n([0,ab(a,f,c),k],b);if(d[4])return k;c=dj(g,d);f=0;for(;;){if(!c){f=h(f);c=bW(a,[num_254,d[2][1]-1.,d[2][2]-1.,d[2][3]+2.,d[2][4]+2.]);return n(k,n([0,ab(a,aD,d[2]),f],c))}b=c[1];c=c[2];switch(b[0]){case
+k=bW(a,c),k=n([0,ab(a,f,c),k],b);if(d[4])return k;c=dk(g,d);f=0;for(;;){if(!c){f=h(f);c=bW(a,[num_254,d[2][1]-1.,d[2][2]-1.,d[2][3]+2.,d[2][4]+2.]);return n(k,n([0,ab(a,aD,d[2]),f],c))}b=c[1];c=c[2];switch(b[0]){case
 0:var
-i=b[1],b=b[2],e=caml_equal(g[4],[0,[0,d[1],i]]),b=kv(a,b,bu(d,i),e);break;case
+i=b[1],b=b[2],e=caml_equal(g[4],[0,[0,d[1],i]]),b=kw(a,b,bu(d,i),e);break;case
 1:e=b[4];i=b[3];var
-j=b[2],b=kw(a,j,i,e,dl(d,b[1]));break;default:i=b[2];e=b[1];if(b[3]){b=W;j=aD}else{b=aD;j=W}i=bv(a,j,e[1]+(e[3]-caml_ml_string_length(i)*7.)/2.,e[2]+(e[4]-num_13)/2.,0,i);j=bW(a,e);b=n([0,ab(a,b,e),j],i)}f=M(b,f)}},g[3])),b=g[12];a:{var
+j=b[2],b=kx(a,j,i,e,dm(d,b[1]));break;default:i=b[2];e=b[1];if(b[3]){b=W;j=aD}else{b=aD;j=W}i=bv(a,j,e[1]+(e[3]-caml_ml_string_length(i)*7.)/2.,e[2]+(e[4]-num_13)/2.,0,i);j=bW(a,e);b=n([0,ab(a,b,e),j],i)}f=M(b,f)}},g[3])),b=g[12];a:{var
 l=[num_254,0.,0.,num_800,num_600];if(b){b=b[1][2];if(b){b=b[1];var
 d=b[1],d=[0,eF((d[1]+d[3]/2.-num_400)*a,(num_300-d[2]-d[4]/2.)*a,[0,0.,0.,0.,1.,1.,[6,d[3]*a,d[4]*a,b[2]]]),0];break a}}d=0}b=0===g[7]?0:bv(a,W,4.,2.,0,"running... (Control-C interrupts)");var
 e=g[5];if(e){e=e[1];var
-f=hg(i),c=hv(e),k=cq(c,f)?[0,(f[2]-c[2]-3.)/num_13|0]:0,e=bA(bd(function(e,b){b=b[1];var
-d=c[2]+3.+e*num_13;if(!caml_equal(k,[0,e]))return bv(a,W,c[1]+8.,d,0,b);b=bv(a,aD,c[1]+8.,d,0,b);return[0,ab(a,W,[num_254,c[1]+1.,d,c[3]-2.,dg]),b]},e[2])),f=bW(a,c),f=n([0,ab(a,aD,c),f],e)}else
-f=0;b=n(d,n(b,f));j=[0,ab(a,jG,l),j];return n([0,g4(W,i[3][1],i[3][2]),j],b)}var
+f=hh(i),c=hw(e),k=cq(c,f)?[0,(f[2]-c[2]-3.)/num_13|0]:0,e=bA(be(function(e,b){b=b[1];var
+d=c[2]+3.+e*num_13;if(!caml_equal(k,[0,e]))return bv(a,W,c[1]+8.,d,0,b);b=bv(a,aD,c[1]+8.,d,0,b);return[0,ab(a,W,[num_254,c[1]+1.,d,c[3]-2.,dh]),b]},e[2])),f=bW(a,c),f=n([0,ab(a,aD,c),f],e)}else
+f=0;b=n(d,n(b,f));j=[0,ab(a,jH,l),j];return n([0,g5(W,i[3][1],i[3][2]),j],b)}var
 a=[0,0];if(a[1])aj("Cap.main() already called");else{a[1]=1;var
-ky=function(a,b){return ku(jD,a,b)},a=caml_js_to_string(at.location.search),jW=[0,0.,0.,0,0,0,0.,0.,0.,0],gK=0,jS=[0,0,0,0,0,0,0,0,0,0,0,0,0,A,str],jU=[0,1.],jZ=function(a){return[0,[0,ks,[0,jW,jS,jV,jU,a]],gK]},j0=function(a){return kx(a[2],a[1])},j1=function(b,a){return[0,jY(ky,b,a),gK]},j6=[5,1],j5=[5,0],j4=[6,1],j3=[6,0],j2=function(a){return bA([0,[0,[12,function(b,a){return[1,b,a]}],0],[0,[0,[0,function(a){return[0,a]}],0],[0,[0,[1,function(a){return[3,a]}],0],[0,[0,[2,function(a){return[4,a]}],0],[0,[0,[3,function(a){return j6}],0],[0,[0,[4,function(a){return j5}],0],[0,[0,[5,function(a){return j4}],0],[0,[0,[6,function(a){return j3}],0],[0,[0,[7,function(a){return[2,1,a]}],0],[0,[0,[8,function(a){return[2,0,a]}],0],[0,[0,[9,function(a){return[7,a]}],0],[0,[0,[10,function(a){return[8,a]}],0],[0,[0,[11,function(a){return 1}],0],0]]]]]]]]]]]]])},a=0<caml_ml_string_length(a)?63===caml_string_get(a,0)?F(a,1,caml_ml_string_length(a)-1|0):a:a,a=aG(38,a),kd=k(function(b){var
-a=cA(b,61);if(!a)return[0,b,str];a=a[1];var
-c=F(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0);return[0,F(b,0,a),c]},T(function(a){return a!==str?1:0})(a)),jX=[0,1,1],ke=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],kf=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],j9=[0,[4,0]],j_=[0,[4,1]],j$=[0,0];bq.onload=caml_js_wrap_callback_strict(1,function(a){var
-c=eG(g2,g3),a=jZ(kd),d=[0,a[1]];function
-f(a){a=j1(a,d[1]);var
-b=a[2];d[1]=a[1];return j(b)}var
-e=[0,0];function
-j(a){a=gL(a);for(;;){if(!a)return 0;var
+kz=function(a,b){return kv(jE,a,b)},a=caml_js_to_string(aq.location.search),jX=[0,0.,0.,0,0,0,0.,0.,0.,0],gL=0,jT=[0,0,0,0,0,0,0,0,0,0,0,0,0,A,str],jV=[0,1.],j0=function(a){return[0,[0,kt,[0,jX,jT,jW,jV,a]],gL]},j1=function(a){return ky(a[2],a[1])},j2=function(b,a){return[0,jZ(kz,b,a),gL]},j7=[5,1],j6=[5,0],j5=[6,1],j4=[6,0],j3=function(a){return bA([0,[0,[12,function(b,a){return[1,b,a]}],0],[0,[0,[0,function(a){return[0,a]}],0],[0,[0,[1,function(a){return[3,a]}],0],[0,[0,[2,function(a){return[4,a]}],0],[0,[0,[3,function(a){return j7}],0],[0,[0,[4,function(a){return j6}],0],[0,[0,[5,function(a){return j5}],0],[0,[0,[6,function(a){return j4}],0],[0,[0,[7,function(a){return[2,1,a]}],0],[0,[0,[8,function(a){return[2,0,a]}],0],[0,[0,[9,function(a){return[7,a]}],0],[0,[0,[10,function(a){return[8,a]}],0],[0,[0,[11,function(a){return 1}],0],0]]]]]]]]]]]]])},a=0<caml_ml_string_length(a)?63===caml_string_get(a,0)?F(a,1,caml_ml_string_length(a)-1|0):a:a,a=aH(38,a),ke=k(function(b){var
+a=cB(b,61);if(!a)return[0,b,str];a=a[1];var
+c=F(b,a+1|0,(caml_ml_string_length(b)-a|0)-1|0);return[0,F(b,0,a),c]},N(function(a){return a!==str?1:0})(a)),eK=[0,[0,str_Control,"ctrlKey"],[0,[0,str_Alt,"altKey"],[0,[0,str_Shift,"shiftKey"],[0,[0,"Meta","metaKey"],0]]]],jY=[0,1,1],kf=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],kg=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],j_=[0,[4,0]],j$=[0,[4,1]],ka=[0,0];bq.onload=caml_js_wrap_callback_strict(1,function(b){var
+e=eG(g3,g4),b=j0(ke),f=[0,b[1]];function
+h(a){a=j2(a,f[1]);var
+b=a[2];f[1]=a[1];return l(b)}var
+g=[0,0];function
+l(a){a=gM(a);for(;;){if(!a)return 0;var
 b=a[2],a=a[1];if(typeof
 a==="number")a=b;else
 switch(a[0]){case
 3:a=b;break;case
-0:e[1]=n(e[1],[0,a[1],0]);a=b;break;case
+0:g[1]=n(g[1],[0,a[1],0]);a=b;break;case
 1:let
-d=a[3];he(0,a[2],function(a){return f(caml_call1(d,a))});a=b;break;default:let
-c=a[4];he([0,a[3]],a[2],function(a){return f(caml_call1(c,a))});a=b}}}j(a[2]);function
-g(a){a=jE(a,j2(d[1]));if(a)return f(a[1])}var
-l=[0,0],b=[0,0.],m=[0,0],i=[0,0],h=[0,0];function
-o(a){a/=num_1000$0;var
-p=m[1];if(p){p=p[1];i[1]++;if(num_120===i[1]){p=i[1]/(a-p);g7(caml_call1(G(ke),p))}}else
-m[1]=[0,a];p=l[1];var
-q=.016666666666666666,j=q;b[1]=p?b[1]+(a-p[1]):j;l[1]=[0,a];if(num_0_25<b[1])b[1]=j;j=at.Date.now()/num_1000$0;a=e[1];e[1]=0;dw(f,a);a=0;for(;;){if(!(.014666666666666666<=b[1]))break;g([0,j]);b[1]=b[1]-q;a=a+1|0}ka(a);q=j0(d[1]);j=K(c[1]);a=K(c[2]);p=K(c[4]);var
-s=K(c[6]),q=k(ha,q),r=jX,t=r[2]?0:[0,[1,"image-rendering","pixelated"],0],r=r[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",q=[0,"svg",n([0,[0,"viewBox",p+str$16+s+str$16+j+str$16+a],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,eH,str_100],[0,[0,eI,str_100],0]]]]]],n(r,t)),q],j=eE.body,a=h[1];if(a){a=a[1];h[1]=[0,[0,q,g8(j,a[2],a[1],q)]]}else{a=j.firstChild;for(;;){if(caml_equal(a,ez)){a=df(q);eB(j,a);h[1]=[0,[0,q,a]];break}gV(j,a);a=j.firstChild}}return gW(bq,o)}gW(bq,o);a=kf;function
-p(b){var
-c=caml_obj_tag(bb),c=num_250===c?bb[1]:num_246===c?dv(bb):bb;if(c){c=c[1];if(hc(c)==="suspended")c.resume()}c=h[1];c=c?[0,c[1][2]]:0;var
-a=eA(b);a:if(a!==str_dblclick)if(a!==str_keydown)if(a!==str_keyup){if(a!==str_mousedown){if(a===str_mousemove){if(c){a=c[1];c=b.clientY;var
-e=b.clientX,d=a.createSVGPoint();d.x=e;d.y=c;a=d.matrixTransform(a.getScreenCTM().inverse());a=[0,[1,[0,a.x|0,-a.y|0]]];break a}a=0;break a}if(a!==str_mouseup){if(a!==str_wheel){a=0;break a}a=b.deltaY;d=b.deltaMode|0;a=0===d?a/num_100$0:1===d?a/3.:a;a=[0,[7,-a]];break a}if(2===b.button){a=j9;break a}}else if(2===b.button){a=j_;break a}a=[0,[3,0!==(b.buttons&1)?1:0]]}else
-a=[0,[5,[0,0,hb(dd(b))]]];else
-a=[0,[5,[0,1,hb(dd(b))]]];else
-a=j$;if(a)g(a[1]);if(eA(b)===str_mousemove)g([2,[0,b.movementX,-b.movementY]]);if(eA(b)===str_keydown){b=dd(b);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)g([6,b[1]])}return 0}for(;;){if(!a)break;var
-q=a[2];eD(bq,a[1],p,1);a=q}eD(bq,28,gU,1);return eD(bq,76,function(d){var
-c=dd(d),a=c===str_Tab?1:0;if(a);else{a=2<=caml_ml_string_length(c)?1:0;if(a){a=70===caml_string_get(c,0)?1:0;if(a){a=F(c,1,caml_ml_string_length(c)-1|0);try{var
+d=a[3];hf(0,a[2],function(a){return h(caml_call1(d,a))});a=b;break;default:let
+c=a[4];hf([0,a[3]],a[2],function(a){return h(caml_call1(c,a))});a=b}}}l(b[2]);function
+d(a){a=jF(a,j3(f[1]));return a?h(a[1]):0}var
+m=[0,0],c=[0,0.],o=[0,0],j=[0,0],i=[0,0];function
+p(a){a/=num_1000$0;var
+l=o[1];if(l){l=l[1];j[1]++;if(num_120===j[1]){l=j[1]/(a-l);g8(caml_call1(G(kf),l))}}else
+o[1]=[0,a];l=m[1];var
+q=.016666666666666666,b=q;c[1]=l?c[1]+(a-l[1]):b;m[1]=[0,a];if(num_0_25<c[1])c[1]=b;b=aq.Date.now()/num_1000$0;a=g[1];g[1]=0;cx(h,a);a=0;for(;;){if(!(.014666666666666666<=c[1]))break;d([0,b]);c[1]=c[1]-q;a=a+1|0}kb(a);q=j1(f[1]);b=K(e[1]);a=K(e[2]);l=K(e[4]);var
+s=K(e[6]),q=k(hb,q),r=jY,t=r[2]?0:[0,[1,"image-rendering","pixelated"],0],r=r[1]?0:[0,[0,"shape-rendering","crispEdges"],0],str_100="100%",q=[0,"svg",n([0,[0,"viewBox",l+str$16+s+str$16+b+str$16+a],[0,[1,"position","fixed"],[0,[1,"top",str_0],[0,[1,"left",str_0],[0,[0,eH,str_100],[0,[0,eI,str_100],0]]]]]],n(r,t)),q],b=eE.body,a=i[1];if(a){a=a[1];i[1]=[0,[0,q,g9(b,a[2],a[1],q)]]}else{a=b.firstChild;for(;;){if(caml_equal(a,ez)){a=dg(q);eB(b,a);i[1]=[0,[0,q,a]];break}gW(b,a);a=b.firstChild}}return gX(bq,p)}gX(bq,p);var
+a=[0,0];function
+q(c){var
+b=aG(c,a[1]);if(!b)return b;b=a[1];a[1]=N(function(a){return a!==c?1:0})(b);return d([5,[0,0,c]])}aq.addEventListener(str_blur,caml_js_wrap_callback_strict(1,function(b){return cx(q,a[1])}));b=kg;function
+r(e){var
+b=caml_obj_tag(bc),b=num_250===b?bc[1]:num_246===b?dw(bc):bc;if(b){b=b[1];b=hd(b)==="suspended"?(b.resume(),eK):eK}else
+b=eK;for(;;){if(!b)break;var
+c=b[2],b=b[1],f=b[1],b=b[2],g=aG(f,a[1]),b=g?1-(e[b]|0):g;if(b){q(f);b=c}else
+b=c}b=i[1];b=b?[0,b[1][2]]:0;c=eA(e);a:if(c!==str_dblclick)if(c!==str_keydown)if(c!==str_keyup){if(c!==str_mousedown){if(c===str_mousemove){if(b){c=b[1];b=e.clientY;g=e.clientX;f=c.createSVGPoint();f.x=g;f.y=b;c=f.matrixTransform(c.getScreenCTM().inverse());c=[0,[1,[0,c.x|0,-c.y|0]]];break a}c=0;break a}if(c!==str_mouseup){if(c!==str_wheel){c=0;break a}c=e.deltaY;b=e.deltaMode|0;c=0===b?c/num_100$0:1===b?c/3.:c;c=[0,[7,-c]];break a}if(2===e.button){c=j_;break a}}else if(2===e.button){c=j$;break a}c=[0,[3,0!==(e.buttons&1)?1:0]]}else
+c=[0,[5,[0,0,hc(de(e))]]];else
+c=[0,[5,[0,1,hc(de(e))]]];else
+c=ka;if(c){b=c[1];if(typeof
+b!=="number"&&5===b[0]){c=b[1];if(c[1]){c=c[2];if(1-aG(c,a[1]))a[1]=[0,c,a[1]]}else{var
+h=c[2],c=a[1];a[1]=N(function(a){return a!==h?1:0})(c)}}d(b)}if(eA(e)===str_mousemove)d([2,[0,e.movementX,-e.movementY]]);if(eA(e)===str_keydown){b=de(e);a:if(b===str)b=0;else{if(1!==caml_ml_string_length(b)&&num_128>caml_string_get(b,0)){b=0;break a}b=[0,b]}if(b)d([6,b[1]])}return 0}for(;;){if(!b)break;var
+s=b[2];eD(bq,b[1],r,1);b=s}eD(bq,28,gV,1);return eD(bq,76,function(d){var
+c=de(d),a=c===str_Tab?1:0;if(a);else{a=2<=caml_ml_string_length(c)?1:0;if(a){a=70===caml_string_get(c,0)?1:0;if(a){a=F(c,1,caml_ml_string_length(c)-1|0);try{var
 b=[0,caml_int_of_string(a)]}catch(a){b=caml_wrap_exception(a);if(b[1]!==Failure)throw caml_maybe_attach_backtrace(b,0);b=0}if(b){a=b[1];b=1<=a?1:0;a=b?a<=10?1:0:b}else
-a=0}}}return a?gU(d):a},1)})}dt(0);return}(globalThis));
+a=0}}}if(a);else{a=d.ctrlKey|0;if(a){a=1===caml_ml_string_length(c)?1:0;if(a){a=48<=caml_string_get(c,0)?1:0;a=a?caml_string_get(c,0)<=57?1:0:a}}}return a?gV(d):a},1)})}du(0);return}(globalThis));
