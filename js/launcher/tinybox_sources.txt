@@ -1,5 +1,5 @@
 games/adventure/TinyAdventure.ml
-22633
+22640
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -49,7 +49,7 @@ games/adventure/TinyAdventure.ml
  *    opens its mouth, and if you are still there when it closes, you
  *    are eaten; the moment between is the whole game. They fly over
  *    the walls, but not out of their room, and each flees or chases
- *    ([dragon_move]): Yorgle runs from the gold key.
+ *    ([dragon_move]): Yorgle runs from the gold key in your hands.
  *
  * What it uses: Scene2d (the title, eaten, won), Sprite.pixels (the
  * dragons, the keys, the sword and the chalice, 8 pixels wide as on the
@@ -185,7 +185,7 @@ type model = scene Scene2d.t
 let new_game () : game =
   { room = start_room; x = 0.; y = -250.;
     things =
-      [ { what = Sword; troom = 1; tx = 200.; ty = 0. }; { what = Gold_key; troom = 3; tx = -300.; ty = 0. }; { what = Black_key; troom = 4; tx = 300.; ty = 0. };
+      [ { what = Sword; troom = 1; tx = 200.; ty = 0. }; { what = Gold_key; troom = 3; tx = -400.; ty = 0. }; { what = Black_key; troom = 4; tx = 300.; ty = 0. };
         { what = Chalice; troom = 8; tx = 0.; ty = 250. } ];
     carried = None; offset = (0., 0.); ignoring = None;
     dragons =
@@ -252,10 +252,10 @@ let speed (k : kind) : number = match k with Yorgle -> 2.5 | Grundle -> 3. | Rhi
 let fears (k : kind) : item option = match k with Yorgle -> Some Gold_key | Grundle | Rhindle -> None
 let bite_frames = 24
 
-(* [dragon_move g d]: towards you, or away from what it fears if that is
- * in its room; over the walls, but kept in its room *)
+(* [dragon_move g d]: towards you, or away from what it fears if you
+ * hold it; over the walls, but kept in its room *)
 let dragon_move (g : game) (d : dragon) : dragon =
-  let feared = match fears d.kind with Some it -> List.find_opt (fun t -> t.what = it && t.troom = d.droom) g.things | None -> None in
+  let feared = match fears d.kind with Some it when g.carried = Some it -> List.find_opt (fun t -> t.what = it) g.things | _ -> None in
   let tx, ty, sign = match feared with Some t -> (t.tx, t.ty, -1.) | None -> (g.x, g.y, 1.) in
   let dist = Float.max 1. (Float.hypot (tx - d.dx) (ty - d.dy)) in
   let s = speed d.kind in
@@ -355,7 +355,7 @@ let item_rows (it : item) : string list =
   match it with
   | Sword -> [ "..X....."; ".X......"; "XXXXXXXX"; ".X......"; "..X....." ]
   | Gold_key | Black_key -> [ ".XX....."; "X..XXXXX"; ".XX..X.X" ]
-  | Chalice -> [ "X......X"; "X......X"; ".X....X."; "..XXXX.."; "...XX..."; "...XX..."; "..XXXX.."; ".XXXXXX." ]
+  | Chalice -> [ "X......X"; "X......X"; "XX....XX"; ".XXXXXX."; "..XXXX.."; "...XX..."; "...XX..."; ".XXXXXX." ]
 
 let item_color (frames : int) (it : item) : color =
   match it with
