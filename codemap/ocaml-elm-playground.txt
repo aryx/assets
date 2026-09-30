@@ -400,7 +400,6 @@ U	examples/AiFlock.ml	76	update	1	0	0
 U	appkits/browser/layout/Html_layout.mli	190	marker	1	0	0
 U	appkits/browser/Browser_script.ml	168	style_object	1	0	0
 U	libs/physics/2d/Joint2d.ml	16	Pulley	3	0	0
-U	launcher/codemap/Map_v2.ml	404	capitals_cache	2	0	0
 U	games/rpg/TinyGauntlet2.ml	481	update_game	1	0	0
 U	libs/terminal/Talk.ml	31	Print	5	2	1
 U	libs/graphics/3d/Shading.mli	45	Flat_color	0	0	0
@@ -541,6 +540,7 @@ U	games/shmup/Asteroid.ml	173	random_range	8	0	0
 U	languages/lisp/Lisp_eval.ml	294	documentation	1	0	0
 U	languages/smalltalk/St_ast.mli	39	Cascade	0	0	0
 U	games/adventure/TinyGTA.ml	106	block_rect	4	0	0
+U	launcher/codemap/Map_v2.ml	2390	street_title_at	0	1	1
 U	languages/c/Parse_c.ml	131	expect	41	0	0
 U	games/fps/TinyDoom.ml	478	cut_segs	1	0	0
 U	appkits/editor/Tui_turbo.ml	17	New	2	0	0
@@ -558,6 +558,7 @@ U	playground/ways/Bigbang.mli	91	Outline	0	0	0
 U	games/fps/TinyHalfLife2.ml	124	Walking	4	0	0
 U	games/arcade/TinyMarbleMadness.ml	207	race_time	1	0	0
 U	libs/audio/synthesis/Oscillator.ml	73	next	1	0	0
+U	launcher/codemap/Map_v2.ml	1062	entries_index_cache	2	0	0
 U	apps/office/TinyLotus123.ml	119	named_keys	1	0	0
 U	libs/graphics/images/jpeg/Dct.ml	37	idct	0	1	1
 U	examples/AiSteering.ml	83	update	1	0	0
@@ -763,7 +764,6 @@ U	libs/physics/3d/Joint3d.ml	56	anchors	1	1	1
 U	languages/html/Html_tree.ml	93	start_body	5	0	0
 U	games/puzzle/TinyFez.ml	386	bit_rows	1	0	0
 U	libs/gui/Mvu.ml	18	Label	4	0	0
-U	launcher/codemap/Map_v2.ml	920	names_glow	2	0	0
 U	games/fps/TinyTeardown.ml	537	blow	1	0	0
 U	languages/jsonnet/Jsonnet_ast.ml	40	Importstr	0	2	2
 U	games/shmup/Asteroid.ml	432	bullet_frames	1	0	0
@@ -1006,6 +1006,7 @@ U	games/puzzle/TinyTetris.ml	348	view_well	2	0	0
 U	games/arcade/TinyLunarLander.ml	236	Title	4	0	0
 U	games/puzzle/TinyBabaIsYou.ml	47	Water	5	0	0
 U	gamekits/racing/3d/Track3d.ml	149	at	2	33	5
+U	launcher/codemap/Map_v2.ml	762	hover_card	1	0	0
 U	games/arcade/TinyBoomerangFu.ml	277	half	4	0	0
 U	playground/Playground.ml	244	move_up	0	12	7
 U	languages/ocaml/Parse_ml.ml	466	open_construct	1	0	0
@@ -1175,6 +1176,7 @@ U	apps/media/TinyWinamp.ml	770	icon	2	0	0
 U	playground/ways/Logo.mli	108	label	0	0	0
 U	games/platform/TinySonic.ml	284	scene	1	0	0
 U	playground/platforms/software/Shape_render_software.ml	177	pen_width	2	0	0
+U	launcher/codemap/Map_v2.ml	2478	anchor_line	0	2	1
 U	languages/basic/Basic_parse.mli	125	Int	0	0	0
 U	games/platform/TinyVVVVVV.ml	191	falling	2	0	0
 U	apps/graphics/TinyPhotoshop.ml	118	Background	4	0	0
@@ -1220,7 +1222,6 @@ U	libs/code/highlight/Highlight_code.mli	17	Keyword	0	0	0
 U	languages/jsonnet/Jsonnet_parse.mli	27	parse	0	0	0
 U	games/puzzle/AiGo.ml	92	around	3	0	0
 U	playground/apis/Physics3d.ml	354	sweep_radius	1	0	0
-U	launcher/codemap/Map_v2.ml	1873	texts	2	0	0
 U	appkits/richtext/Style.mli	23	toggle_italic	0	0	0
 U	libs/networking/protocols/Http.ml	215	response	0	6	2
 U	games/sports/TinyPinball.ml	258	surface_velocity	1	0	0
@@ -1240,6 +1241,7 @@ U	games/racing/TinyOutRun.ml	121	project	2	0	0
 U	launcher/codemap/Code_view.ml	305	code_lines	1	0	0
 U	apps/music/TinySoundtracker.ml	62	model	18	0	0
 U	gamekits/puzzle/Sokoban.ml	17	board	5	4	2
+U	launcher/codemap/Map_v2.ml	1696	peek	4	0	0
 U	libs/core/time/Civil.ml	69	add_months	0	2	2
 U	appkits/editor/Tui_vi.ml	335	toggle_case	1	0	0
 U	libs/compression/Deflate.mli	40	deflate	0	0	0
@@ -1414,7 +1416,6 @@ U	languages/smalltalk/St_lexer.mli	41	Keyword	0	0	0
 U	libs/physics/2d/Joint2d.ml	50	length_now	0	1	1
 U	languages/c/Highlight_c.ml	306	lines	0	0	0
 U	apps/media/Our_pictures.mli	3	demo_picture_jpg	0	1	1
-U	launcher/codemap/Map_v2.ml	668	ties_of_opti	1	0	0
 U	games/adventure/TinyZelda.ml	137	Game_over	3	0	0
 U	examples/PhysicsBounce3d.ml	127	text	5	0	0
 U	libs/physics/2d/Resolve.ml	53	separate	1	0	0
@@ -1609,6 +1610,7 @@ U	apps/office/TinyOpenDoc.ml	389	handles	1	0	0
 U	languages/smalltalk/St_interp.ml	522	call	1	0	0
 U	apps/pim/Pim_memo.mli	13	wrap	0	0	0
 U	libs/networking/protocols/Smtp.ml	95	Body	2	0	0
+U	launcher/codemap/Map_v2.ml	1132	bone_line	3	0	0
 U	apps/music/Voice_tb303.ml	237	recent	0	1	1
 U	apps/music/Piano.ml	12	look	5	7	7
 U	apps/gamedev/TinyAseprite.ml	104	paint	3	0	0
@@ -1713,6 +1715,7 @@ U	launcher/menu/Tinybox_menu.ml	116	platform_title	1	0	0
 U	games/shmup/TinyGalaga.ml	337	view_title	1	0	0
 U	libs/core/time/Julian.mli	67	julian_day_number	0	0	0
 U	games/puzzle/TinyPortal2D.ml	447	update	1	0	0
+U	launcher/codemap/Map_v2.ml	1770	peek_level	2	0	0
 U	languages/ocaml/Parse_ml.ml	92	lident	9	0	0
 U	examples/gui4/Gui4Circles.ml	129	disc	2	0	0
 U	games/platform/TinyRick.ml	266	update_game	1	0	0
@@ -2046,6 +2049,7 @@ U	libs/core/Sub.ml	37	on_mouse_move_by	0	1	1
 U	apps/music/Voice_juno.mli	89	choruses	0	0	0
 U	games/racing/TinyMarioKart.ml	612	back	2	0	0
 U	examples/PhysicsPyramid.ml	122	view	1	0	0
+U	launcher/codemap/Map_v2.ml	904	preview_cache	2	0	0
 U	libs/core/time/Julian.mli	55	of_days	0	0	0
 U	libs/compression/Huffman.ml	12	max_bits	10	0	0
 U	games/platform/TinyJoust.ml	209	lance	2	0	0
@@ -2061,7 +2065,6 @@ U	games/strategy/TinyDune2.ml	101	Them	10	0	0
 U	libs/networking/mail/Mbox.ml	23	unescape	1	0	0
 U	libs/gui/Layout.ml	49	axis	0	0	0
 U	libs/graphics/images/png/Png.mli	106	encode	0	0	0
-U	launcher/codemap/Map_v2.ml	1646	peek_images	2	0	0
 U	libs/audio/Tape.ml	12	Recording	4	0	0
 U	games/racing/TinyMarioKart64.ml	873	step_boxes	1	0	0
 U	languages/smalltalk/St_primitives.ml	298	start_block	2	0	0
@@ -2544,7 +2547,6 @@ U	appkits/sketch/Sketch.ml	52	points_of	0	1	1
 U	apps/music/Studio_opxy.ml	374	render_piece	2	0	0
 U	languages/scheme/Scheme.ml	36	If	0	10	2
 U	games/racing/TinyOutRun.ml	112	draw_distance	2	0	0
-U	launcher/codemap/Map_v2.ml	2102	mark_groups	2	1	1
 U	appkits/browser/Browser_tab.ml	433	at_path	2	0	0
 U	playground/platforms/web/Playground3d_platform.ml	315	images	2	0	0
 U	launcher/menu/Tinybox_menu.ml	723	code_preview	2	0	0
@@ -2580,7 +2582,6 @@ U	examples/PaintersAlgorithmFail3d.ml	51	app	1	0	0
 U	languages/javascript/Js_eval.ml	446	create	0	1	1
 U	libs/audio/formats/mpeg_audio/Mpeg_audio_header.ml	93	first_frame	1	1	1
 U	playground/ways/Povray.ml	109	raytrace_scene	1	4	4
-U	launcher/codemap/Map_v2.ml	1875	text_of	2	0	0
 U	libs/juice/Trauma.mli	65	noise	0	0	0
 U	languages/scheme/Scheme_step.ml	181	unmark	10	0	0
 U	playground/Playground3d.mli	363	Flat	0	0	0
@@ -2896,6 +2897,7 @@ U	languages/postscript/Ps_machine.mli	51	Name	0	0	0
 U	examples/Gui7Circles.ml	72	Status	2	0	0
 U	launcher/codemap/Code_map_base.mli	148	fit	0	0	0
 U	apps/office/TinyOffice.ml	528	untie	1	0	0
+U	launcher/codemap/Map_v2.ml	456	capitals	1	0	0
 U	apps/music/TinyOpxy.ml	77	inst	4	0	0
 U	apps/cad/TinySketchup.ml	429	keyhole	1	0	0
 U	games/shmup/TinyGalaga.ml	134	scene	3	0	0
@@ -3186,7 +3188,6 @@ U	libs/physics/3d/Collide3d.mli	220	ray_plane	0	0	0
 U	games/fps/TinyDoom.ml	253	columns	6	0	0
 U	apps/internet/TinyChrome.ml	241	open_tab	3	0	0
 U	languages/scratch/Scratch_blocks.ml	14	Num	2	2	1
-U	launcher/codemap/Map_v2.ml	2091	mark_colours	2	2	1
 U	games/shmup/TinyDefender.ml	134	enemy	17	0	0
 U	playground/platforms/web/Playground_platform.ml	383	render_circle	1	0	0
 U	launcher/codemap/Treemap.mli	54	File	0	0	0
@@ -3665,7 +3666,7 @@ U	languages/ocaml/Token_ml.ml	12	kind	1	1	1
 U	playground/ways/Povray.mli	158	rotate	0	0	0
 U	launcher/menu/Tinybox_menu.ml	147	size_of	1	0	0
 U	apps/media/TinyMediaPlayer.ml	519	app	1	0	0
-U	launcher/codemap/Map_v2.ml	1223	skeleton_shapes	1	0	0
+U	launcher/codemap/Map_v2.ml	2645	street_files	0	2	1
 U	languages/jsonnet/Jsonnet_ast.mli	11	visibility	1	0	0
 U	libs/gui/Immediate.ml	301	progress	0	2	2
 U	libs/networking/protocols/Wire.mli	91	get_u8	0	0	0
@@ -4207,12 +4208,12 @@ U	appkits/modeler/Modeler.ml	16	Mesh	3	0	0
 U	games/platform/TinyMetroid.ml	127	Bombs	4	0	0
 U	games/platform/TinyMario64.ml	240	mario_model	1	0	0
 U	appkits/browser/Browser_script.ml	79	elements	9	0	0
-U	launcher/codemap/Map_v2.ml	1012	entry_of_simple	1	0	0
 U	apps/music/TinySoundtracker.ml	82	fetched	3	0	0
 U	apps/office/TinyOpenDoc.ml	297	reopened	2	0	0
 U	apps/office/Part_drawing.ml	105	middle	2	0	0
 U	apps/internet/TinyFirefox.ml	83	msg	11	0	0
 U	apps/gamedev/TinyAseprite.ml	305	main	0	0	0
+U	launcher/codemap/Map_v2.ml	949	preview	2	0	0
 U	libs/audio/formats/mpeg_audio/Mpeg_audio_header.mli	67	first_frame	0	0	0
 U	apps/music/TinyOpxy.ml	76	opxy	14	0	0
 U	apps/music/TinyCS80.ml	221	main	0	0	0
@@ -4271,7 +4272,6 @@ U	games/puzzle/TinySlingshot.ml	63	block	8	0	0
 U	libs/networking/protocols/Wire.ml	50	put_signed	0	2	2
 U	games/arcade/TinyPacman.ml	102	Right	2	0	0
 U	examples/RaytracingSplit3d.ml	51	main	0	0	0
-U	launcher/codemap/Map_v2.ml	2206	percentiles	1	0	0
 U	games/platform/TinyMarioWorld.ml	110	radius	8	0	0
 U	games/adventure/TinyTombRaider.ml	369	heading_of	4	0	0
 U	libs/physics/3d/Integrate3d.ml	12	Semi_implicit_euler	3	1	1
@@ -4314,7 +4314,6 @@ U	libs/audio/synthesis/Envelope.mli	51	duration	0	0	0
 U	games/rpg/TinyHades.ml	153	scene	1	0	0
 U	apps/graphics/TinyMacPaint.ml	74	Marquee	3	0	0
 U	libs/graphics/videos/mpeg1/Mpeg1.ml	246	picture_header	1	0	0
-U	launcher/codemap/Map_v2.ml	864	code_card	3	0	0
 U	languages/css/Computed.ml	28	Contents	1	0	0
 U	apps/system/TinyTerminal.ml	124	desk	1	0	0
 U	appkits/browser/Browser_tab.ml	232	with_pictures	5	0	0
@@ -4461,6 +4460,7 @@ U	libs/audio/instruments/Svf.ml	15	modes	0	0	0
 U	games/strategy/TinyTowerDefense.ml	100	problem	1	0	0
 U	gamekits/cards/Cards.ml	31	deal	0	2	2
 U	libs/physics/3d/Integrate3d.mli	116	Explicit_euler	0	0	0
+U	launcher/codemap/Map_v2.ml	2583	labels	0	0	0
 U	appkits/modeler/Modeler.ml	16	Point_light	2	0	0
 U	libs/crypto/Bignum.mli	67	rem	0	0	0
 U	languages/c/Token_c.ml	12	Punctuation	1	0	0
@@ -4611,6 +4611,7 @@ U	libs/audio/synthesis/Oscillator.ml	12	Square	4	0	0
 U	libs/crypto/Bignum.mli	94	inverse_prime	0	0	0
 U	launcher/codemap/Map_streets.ml	205	build	1	0	0
 U	games/rpg/TinyDiablo.ml	204	Playing	4	0	0
+U	launcher/codemap/Map_v2.ml	1057	entry_of_simple	1	0	0
 U	games/platform/TinyMarioGalaxy.ml	282	approach	1	0	0
 U	games/fps/TinyMinecraft.ml	606	rebuild_chunks_around	2	0	0
 U	libs/audio/instruments/Sampler.mli	94	default	0	0	0
@@ -4702,6 +4703,7 @@ U	launcher/website/make_website.ml	44	write	4	0	0
 U	libs/audio/effects/Delay.ml	18	t	2	2	2
 U	appkits/richtext/Rich.mli	84	insert	0	0	0
 U	appkits/browser/Browser_tab.mli	141	form_effect	0	0	0
+U	launcher/codemap/Map_v2.ml	909	code_card	3	0	0
 U	languages/postscript/Ps_machine.mli	68	how	1	0	0
 U	apps/graphics/TinyVisio.ml	268	typing	1	0	0
 U	games/arcade/TinyBomberman.ml	975	new_bomb	2	0	0
@@ -4786,6 +4788,7 @@ U	languages/css/Css_syntax.mli	78	declarations_of_block	0	0	0
 U	games/platform/TinyMarioWorld.ml	87	gravity_held	1	0	0
 U	libs/audio/effects/Rack.ml	39	set	0	1	1
 U	appkits/blocks/Block_edit.mli	32	text	0	0	0
+U	launcher/codemap/Map_v2.ml	1551	facts_of	3	0	0
 U	languages/c/Token_c.mli	17	Float	0	0	0
 U	languages/basic/Basic_parse.ml	91	Syntax	2	0	0
 U	games/flight/TinyElite3d.ml	191	flight	14	0	0
@@ -5223,6 +5226,7 @@ U	games/racing/TinyBigRedRacing.ml	422	Racing	7	0	0
 U	libs/networking/protocols/Wire.ml	30	put_u16	0	2	1
 U	libs/networking/mail/Mail_thread.ml	38	base_subject	3	0	0
 U	apps/music/Voice_minimoog.ml	88	control	0	0	0
+U	launcher/codemap/Map_v2.ml	1948	query_mode	2	0	0
 U	playground/apis/Ai.mli	155	playing_out	0	0	0
 U	games/strategy/TinyHamurabi.ml	175	question	2	0	0
 U	games/fighting/TinyStreetFighter.ml	387	guard	9	0	0
@@ -5271,6 +5275,7 @@ U	languages/javascript/Js_ast.ml	80	expr_to_string	20	0	0
 U	launcher/codemap/Code_names.ml	192	tries	1	0	0
 U	games/strategy/TinyXCOM.ml	106	unit_	18	0	0
 U	games/platform/TinyMarioGalaxy2D.ml	435	jump	1	0	0
+U	launcher/codemap/Map_v2.ml	797	notes_on	3	0	0
 U	games/strategy/TinyCivilization.ml	228	needs	1	0	0
 U	appkits/richtext/Rich.mli	96	restyle	0	0	0
 U	gamekits/brawler/Frame_data.mli	23	move	4	0	0
@@ -5378,6 +5383,7 @@ U	games/racing/TinySSX.ml	190	chunk_size	5	0	0
 U	games/programming/TinyKarel.ml	105	primitives	2	0	0
 U	games/platform/TinyLodeRunner.ml	76	places	3	0	0
 U	appkits/embed/Compound.ml	11	Column	15	2	1
+U	launcher/codemap/Map_v2.ml	2251	percentiles	1	0	0
 U	games/platform/TinyVikings.ml	174	gravity	1	0	0
 U	libs/graphics/core/Blit.mli	78	filter	1	0	0
 U	games/platform/TinySuperMeatBoy.ml	88	saw	5	0	0
@@ -5819,7 +5825,6 @@ U	gamekits/racing/Topdown.ml	77	distance_from	1	1	1
 U	libs/ai/learning/Backprop.ml	69	step	1	2	2
 U	apps/gamedev/TinyTiled.ml	192	minimap	1	0	0
 U	playground/layers/Tilemap.ml	25	width	1	0	0
-U	launcher/codemap/Map_v2.ml	2362	hovered_match	1	1	1
 U	languages/css/Looks.mli	109	Block	0	0	0
 U	gamekits/lightcycles/Lightcycles.mli	92	game	6	0	0
 U	examples/PovrayQuake.ml	108	solids	1	0	0
@@ -5864,6 +5869,7 @@ U	launcher/codemap/Map_classic.ml	20	paint	0	0	0
 U	launcher/codegen/make_tinybox_data.ml	59	thumbnail	2	0	0
 U	libs/networking/mail/Mime.ml	237	text_part	0	2	1
 U	appkits/editor/Emacs_simple.ml	12	text	0	1	1
+U	launcher/codemap/Map_v2.ml	713	ties_of_opti	1	0	0
 U	libs/graphics/videos/mpeg_system/Mpeg_system.ml	14	byte	13	0	0
 U	apps/music/Part_tr808.ml	64	step_y	4	0	0
 U	languages/css/Looks.ml	265	styled_box	0	1	1
@@ -5891,7 +5897,6 @@ U	apps/devtools/TinySmalltalk80.ml	557	stopped	2	0	0
 U	libs/crypto/Bignum.ml	203	mont_is_zero	0	8	1
 U	libs/audio/synthesis/Fm.mli	48	wave	0	0	0
 U	libs/networking/tls/Asn1.mli	33	parse	0	0	0
-U	launcher/codemap/Map_v2.ml	1046	placed_index_cache	2	0	0
 U	apps/cad/TinySketchpad.ml	157	constrain	3	0	0
 U	libs/graphics/3d/raytrace/Raytrace.ml	46	acceleration	1	0	0
 U	launcher/codemap/Map_atlas.ml	50	roads_of	2	0	0
@@ -6083,6 +6088,7 @@ U	libs/graphics/images/Image_decode.ml	41	read_file	2	1	1
 U	languages/html/Line_mode.ml	37	end_word	3	0	0
 U	libs/graphics/videos/mpeg1/Mpeg1_vlc.mli	31	Escape	0	0	0
 U	languages/javascript/Js_value.mli	50	Closure	0	0	0
+U	launcher/codemap/Map_v2.ml	2241	heat	4	0	0
 U	gamekits/crush/Crush.ml	26	gap	1	0	0
 U	libs/terminal/Curses.ml	21	rows	0	2	2
 U	playground/layers/Portal3d.mli	56	point	0	0	0
@@ -6202,7 +6208,6 @@ U	libs/physics/2d/Collide.ml	66	crossing	2	0	0
 U	appkits/draw/Figure.mli	37	point	7	0	0
 U	libs/audio/synthesis/Noise.ml	14	step	2	3	2
 U	languages/hypertalk/Hypertalk.ml	73	Into	2	0	0
-U	launcher/codemap/Map_v2.ml	2032	search_box	1	0	0
 U	languages/css/Computed.ml	38	flex_direction	1	0	0
 U	apps/music/Voice_hammond.mli	93	knob	1	0	0
 U	games/shmup/TinyInvaders.ml	369	view_game	1	0	0
@@ -6250,7 +6255,6 @@ U	apps/devtools/TinyDrScheme.ml	494	comment_color	1	0	0
 U	libs/code/highlight/Highlight_code.mli	31	Label	0	0	0
 U	games/strategy/TinyWorms.ml	190	new_wind	2	0	0
 U	games/arcade/TinyBoomerangFu.ml	270	flesh_color	2	0	0
-U	launcher/codemap/Map_v2.ml	1087	bone_line	3	0	0
 U	languages/pascal/Pcode.mli	92	Mpi	0	0	0
 U	games/fps/TinyDoom.ml	152	box_of_segs	1	0	0
 U	games/adventure/TinyZeldaOcarina.ml	422	free_in	5	0	0
@@ -6368,7 +6372,6 @@ U	appkits/blocks/Block_layout.ml	64	item_size	3	0	0
 U	libs/graphics/3d/raytrace/Raytrace.ml	425	passes	2	0	0
 U	games/rhythm/TinyRockBand.ml	476	view_play	1	0	0
 U	playground/apis/Physics3d.mli	194	pulled_to	0	0	0
-U	launcher/codemap/Map_v2.ml	1711	glows	2	0	0
 U	apps/graphics/TinyPostScript.ml	136	colour	1	0	0
 U	games/fighting/TinyFinalFight.ml	84	Jump	4	0	0
 U	languages/smalltalk/St_memory.mli	151	entries	0	0	0
@@ -6924,7 +6927,6 @@ U	libs/graphics/images/png/Png.ml	247	cost	2	0	0
 U	games/flight/TinyXpilot.ml	185	wall_color	3	0	0
 U	appkits/paint/Bitmap.mli	32	t	19	0	0
 U	gamekits/segments/Segments.mli	94	mine	0	0	0
-U	launcher/codemap/Map_v2.ml	570	card	1	0	0
 U	languages/css/Cascade.mli	59	origin	2	0	0
 U	appkits/cad/Cad_drawing.mli	47	add	0	0	0
 U	playground/platforms/web/Playground_platform.ml	785	pixel_ratio	0	0	0
@@ -6952,6 +6954,7 @@ U	libs/core/Basics.ml	10	+	0	2210	139
 U	languages/lisp/Lisp_prelude.mli	17	text	0	0	0
 U	libs/audio/instruments/Fm_algorithm.mli	77	state	3	0	0
 U	languages/css/Computed.mli	53	Align_left	0	0	0
+U	launcher/codemap/Map_v2.ml	2077	search_box	1	0	0
 U	examples/BigBangRocket.ml	23	rocket	2	0	0
 U	apps/graphics/TinyVisio.ml	129	page_w	3	0	0
 U	examples/AiPathfinding.ml	55	top	2	0	0
@@ -6964,7 +6967,6 @@ U	games/arcade/TinySoldat.ml	175	body_of	9	0	0
 U	languages/javascript/Js_value.ml	12	Bool	7	37	3
 U	libs/gui/Grid.ml	40	sum	1	0	0
 U	games/fps/TinyFortnite.ml	915	scene	1	0	0
-U	launcher/codemap/Map_v2.ml	1903	query_mode	2	0	0
 U	games/strategy/TinyHamurabi.ml	111	orders	1	0	0
 U	games/rpg/TinyHades.ml	105	hit_of	1	0	0
 U	appkits/sheet/Sheet.ml	252	order	0	2	2
@@ -7492,6 +7494,7 @@ U	libs/physics/3d/Body3d.mli	75	make	0	0	0
 U	games/racing/TinySSX.ml	278	axis	3	0	0
 U	games/adventure/TinyAloneInTheDark.ml	76	wall_height	5	0	0
 U	gamekits/lightcycles/Lightcycles.mli	59	cycle	3	0	0
+U	launcher/codemap/Map_v2.ml	1268	skeleton_shapes	1	0	0
 U	libs/audio/instruments/Drift.mli	47	cents	0	0	0
 U	languages/pascal/Pcode.ml	19	Ind	1	2	2
 U	games/strategy/TinyDune2.ml	138	their_base	3	0	0
@@ -7611,6 +7614,7 @@ U	games/arcade/TinyMarbleMadness.ml	719	view_race	3	0	0
 U	examples/Turtle.ml	12	view	1	0	0
 U	games/adventure/TinyMetalGearSolid.ml	134	Suspicious	8	0	0
 U	gamekits/lightcycles/Lightcycles.ml	219	voronoi	0	0	0
+U	launcher/codemap/Map_v2.ml	2136	mark_colours	2	2	1
 U	games/adventure/TinyJourney.ml	132	gravity	1	0	0
 U	libs/physics/2d/Joint2d.mli	108	anchors	0	0	0
 U	games/arcade/TinySoldat.ml	170	Playing	4	0	0
@@ -7701,7 +7705,6 @@ U	games/rhythm/TinyGuitarHero.ml	168	update	1	0	0
 U	libs/graphics/2d/geometry/Curve.mli	157	length	0	0	0
 U	apps/office/TinyWord.ml	311	reopened	2	0	0
 U	games/rhythm/TinyGuitarHero.ml	360	main	0	0	0
-U	launcher/codemap/Map_v2.ml	562	within	5	0	0
 U	apps/music/Voice_rhodes.mli	101	t	8	0	0
 U	appkits/editor/Tui_turbo.ml	580	hot_label	2	0	0
 U	languages/css/Selectors.mli	98	to_string	0	0	0
@@ -7783,6 +7786,7 @@ U	games/platform/TinySuperMeatBoy.ml	460	main	0	0	0
 U	gamekits/lightcycles/Lightcycles.mli	96	Winner	0	0	0
 U	playground/ways/Karel.mli	138	Finished	0	0	0
 U	games/adventure/TinyZeldaLinkPast.ml	446	soldier_down	1	0	0
+U	launcher/codemap/Map_v2.ml	1880	types	4	0	0
 U	apps/music/Patch_text.ml	17	switch	0	13	5
 U	languages/scheme/Scheme.mli	63	env	5	0	0
 U	games/shmup/TinyDefender.ml	242	nearest_standing	2	0	0
@@ -7941,6 +7945,7 @@ U	games/sports/TinyKickOff2.ml	75	goal_half	4	0	0
 U	playground/ways/Logo3d.mli	42	command	32	0	0
 U	libs/audio/effects/Leslie.ml	15	drum_slow	2	0	0
 U	apps/internet/TinyFirefox.ml	95	resolve	2	0	0
+U	launcher/codemap/Map_v2.ml	658	ties_of	2	0	0
 U	languages/scheme/Scheme_syntax.ml	44	name_of	6	0	0
 U	games/racing/TinyVirtuaRacing.ml	437	course	25	0	0
 U	games/puzzle/TinyWitness.ml	171	regions	1	0	0
@@ -7971,6 +7976,7 @@ U	examples/UniverseBall.ml	28	Falling	5	0	0
 U	examples/AiQlearn.ml	62	moves	6	0	0
 U	games/arcade/TinyLunarLander.ml	154	pad_kinds	1	0	0
 U	playground/apis/Physics.ml	259	rod	0	1	1
+U	launcher/codemap/Map_v2.ml	841	street_labels	1	0	0
 U	languages/pascal/Pcode.mli	93	Ior	0	0	0
 U	games/rpg/TinyDiablo.ml	167	Sword	3	0	0
 U	apps/graphics/TinyMacPaint.ml	69	floating	1	0	0
@@ -8037,6 +8043,7 @@ U	apps/media/Media.ml	73	media	5	13	3
 U	libs/crypto/Aes.ml	13	xtime	4	0	0
 U	games/rpg/TinyHades.ml	153	Dead	3	0	0
 U	appkits/diagram/Diagram.ml	216	corner	3	0	0
+U	launcher/codemap/Map_v2.ml	880	line_lit	2	0	0
 U	appkits/sheet_view/Sheet_view.ml	42	cell_at	0	3	3
 U	apps/internet/TinyChrome.ml	267	typed_url	1	0	0
 U	appkits/editor/Emacs_editor.ml	167	lisp_pos	9	0	0
@@ -8218,7 +8225,6 @@ U	games/sports/TinyTennisForTwo.ml	89	ball	8	0	0
 U	libs/graphics/core/Framebuffer.mli	31	clear	0	0	0
 U	launcher/menu/Tinybox_menu.ml	247	find_program	1	0	0
 U	games/arcade/TinyFrogger.ml	113	dt	7	0	0
-U	launcher/codemap/Map_v2.ml	2530	search_shapes	1	0	0
 U	libs/audio/Synth.mli	204	echo	0	0	0
 U	launcher/codemap/Codemap.ml	166	make_own	1	1	1
 U	languages/pascal/Pascal_compile.ml	135	new_label	11	0	0
@@ -8686,6 +8692,7 @@ U	games/sports/TinyPinball3d.ml	89	pivot_x	2	0	0
 U	gamekits/lightcycles/Lightcycles.ml	349	update_game	1	1	1
 U	appkits/editor/Tui_vi.ml	17	Lines	3	0	0
 U	appkits/paint/Paint.mli	24	line_dots	0	0	0
+U	launcher/codemap/Map_v2.ml	633	unit_with_ties	0	2	1
 U	languages/smalltalk/St_lexer.mli	44	Large	0	0	0
 U	languages/smalltalk/St_interp.ml	108	bytecodes_run	0	0	0
 U	languages/javascript/Js_ast.mli	50	statement	1	0	0
@@ -8791,7 +8798,6 @@ U	apps/music/Part_minimoog.mli	9	kind	0	0	0
 U	apps/devtools/TinySmalltalk80.ml	223	notifier	1	0	0
 U	libs/audio/Sfx.ml	12	Triangle	3	0	0
 U	libs/ai/learning/Matrix.mli	77	to_lists	0	0	0
-U	launcher/codemap/Map_v2.ml	1707	inside_peek	3	0	0
 U	languages/jsonnet/Jsonnet_lexer.mli	39	to_string	0	0	0
 U	games/arcade/TinyBoomerangFu.ml	1483	banner	1	0	0
 U	playground/apis/Juice.ml	58	Engine	1	3	2
@@ -8982,6 +8988,7 @@ U	libs/physics/3d/Quat.mli	74	of_axis_angle	0	0	0
 U	languages/lisp/Lisp_eval.mli	59	Signal	0	0	0
 U	libs/audio/effects/Delay.ml	39	write	4	0	0
 U	games/flight/TinyComanche.ml	258	minimap_cells	6	0	0
+U	launcher/codemap/Map_v2.ml	2575	search_shapes	1	0	0
 U	games/sports/TinyTonyHawk.ml	107	max_speed	2	0	0
 U	languages/jsonnet/Jsonnet_ast.mli	47	comp	2	0	0
 U	apps/music/Studio_opxy.ml	339	level	0	1	1
@@ -8990,6 +8997,7 @@ U	languages/c/Ast_c.mli	54	Sfor	0	2	2
 U	apps/music/Studio_reason.mli	104	set_patch	0	0	0
 U	libs/gui/Layout.mli	113	t	17	0	0
 U	libs/ai/search/Deepening.mli	85	search	0	0	0
+U	launcher/codemap/Map_v2.ml	2024	search_named	1	1	1
 U	games/arcade/TinyBoomerangFu.ml	156	tile	12	0	0
 U	games/racing/TinyGranTrak10.ml	244	main	0	0	0
 U	appkits/pushpull/Skp_model.ml	141	split_at	1	0	0
@@ -9465,7 +9473,6 @@ U	appkits/modeler/Modeler.mli	36	Cylinder	0	0	0
 U	apps/devtools/TinyDrScheme.ml	326	place	4	0	0
 U	appkits/pushpull/Skp_infer.ml	14	On_axis	4	0	0
 U	playground/apis/Audio.ml	38	tune	2	0	0
-U	launcher/codemap/Map_v2.ml	1979	search_named	1	1	1
 U	gamekits/cards/Cards.ml	19	of_index	2	0	0
 U	libs/audio/formats/mpeg_audio/Imdct.mli	56	mdct	0	0	0
 U	launcher/website/make_website.ml	38	read	1	0	0
@@ -9536,7 +9543,7 @@ U	libs/graphics/images/jpeg/Jpeg_encode.ml	45	ac_luminance	2	0	0
 U	apps/music/Studio_op1.mli	55	lfos	0	0	0
 U	playground/Playground.ml	746	game	0	219	219
 U	languages/basic/Basic_parse.mli	73	Add	0	0	0
-U	launcher/codemap/Code_map_base.ml	35	@	2	143	7
+U	launcher/codemap/Code_map_base.ml	35	@	2	144	7
 U	libs/code/highlight/Highlight_code.ml	70	all	1	3	3
 U	apps/music/TinyJuno.ml	97	view	1	0	0
 U	appkits/pushpull/Skp_infer.mli	29	On_axis	0	0	0
@@ -10107,6 +10114,7 @@ U	libs/networking/protocols/Wire.mli	93	get_varint	0	0	0
 U	apps/devtools/TinySmalltalk80.ml	920	screen_menu	1	0	0
 U	apps/internet/TinyFirefox.ml	104	area_bottom	3	0	0
 U	games/arcade/TinyTron.ml	78	settings	2	0	0
+U	launcher/codemap/Map_v2.ml	721	unit_ties	1	0	0
 U	playground/ways/Logo3d.ml	37	down	0	3	1
 U	appkits/indexed/Indexed.mli	56	frame_ellipse	0	0	0
 U	languages/c/Highlight_c.mli	23	lines	0	0	0
@@ -10139,7 +10147,6 @@ U	libs/audio/effects/Reverb.mli	108	process	0	0	0
 U	apps/pim/Palm.ml	91	size	7	4	4
 U	apps/office/TinyExcel.ml	118	Bar	2	0	0
 U	appkits/pushpull/Skp_view.ml	32	project	0	0	0
-U	launcher/codemap/Map_v2.ml	1092	unit_spot	1	0	0
 U	apps/cad/TinySketchpad.ml	86	Draw_circle	3	0	0
 U	launcher/codemap/Code_map_base.mli	109	mark	2	0	0
 U	games/strategy/TinyCivilization.ml	529	ai_research	1	0	0
@@ -10282,7 +10289,6 @@ U	playground/apis/Physics3d.mli	66	body	79	0	0
 U	libs/gui/Layout.ml	39	row	0	18	9
 U	playground/apis/Multiplayer.ml	29	byte	2	0	0
 U	gamekits/racing/Road.ml	72	point	1	1	1
-U	launcher/codemap/Map_v2.ml	666	ties_cache	2	0	0
 U	languages/css/Cascade.ml	131	needs	1	0	0
 U	games/sports/TinyKickOff2.ml	322	grass	2	0	0
 U	libs/compression/Huffman.mli	58	max_bits	0	0	0
@@ -10326,6 +10332,7 @@ U	playground/layers/Character3d.ml	36	degrees	3	0	0
 U	launcher/codemap/Map_graph.ml	156	colour_of	3	0	0
 U	games/racing/TinyVirtuaRacing.ml	1326	drive	2	0	0
 U	apps/music/TinyReBirth.ml	123	click_drum	2	0	0
+U	launcher/codemap/Map_v2.ml	1910	shown	2	0	0
 U	examples/gui4/Gui4Flight.ml	29	initial	7	0	0
 U	libs/physics/2d/Shape.ml	15	box_corners	1	2	1
 U	languages/html/Html_lexer.ml	36	tag	7	0	0
@@ -10398,6 +10405,7 @@ U	appkits/cad/Cad_session.ml	380	step	1	0	0
 U	libs/graphics/3d/raytrace/Raytrace.mli	269	Lambert	0	0	0
 U	appkits/blocks/Block_layout.ml	22	Above	3	1	1
 U	libs/graphics/imaging/Scale.mli	25	flip_horizontal	0	0	0
+U	launcher/codemap/Map_v2.ml	838	notes	1	0	0
 U	libs/graphics/3d/raytrace/Csg.ml	14	Diff	1	0	0
 U	languages/scratch/Scratch_text.ml	76	A	5	0	0
 U	languages/basic/Basic_parse.mli	129	Load	0	0	0
@@ -10497,7 +10505,6 @@ U	games/shmup/TinyZaxxon.ml	268	model	5	0	0
 U	libs/graphics/images/Download.ml	17	grant	0	4	4
 U	playground/apis/Ai.mli	165	best_move	0	0	0
 U	libs/graphics/core/Pixelate.ml	47	name	0	4	2
-U	launcher/codemap/Map_v2.ml	1704	peek_geom	2	0	0
 U	games/platform/TinyRick.ml	138	Escaped	3	0	0
 U	examples/AiPathfinding.ml	107	name	2	0	0
 U	libs/physics/2d/Broadphase.ml	36	grid	1	0	0
@@ -10530,7 +10537,6 @@ U	playground/ways/Povray.ml	70	union	0	19	3
 U	apps/office/Part_sheet.ml	11	kind	0	7	4
 U	appkits/sketch/Sketch.ml	26	On_circle	6	6	2
 U	libs/physics/3d/Collide3d.mli	158	sphere_triangle	0	0	0
-U	launcher/codemap/Map_v2.ml	1865	shown	2	0	0
 U	playground/ways/Povray.ml	52	glassy	0	6	5
 U	games/platform/TinyMetroid.ml	129	ability_of	2	0	0
 U	appkits/document/Clipboard.ml	12	t	0	3	3
@@ -10672,6 +10678,7 @@ U	games/puzzle/TinyPortal2D.ml	367	carry	1	0	0
 U	libs/core/Set_.ml	304	pp	0	0	0
 U	games/arcade/TinyTronscroll.ml	462	view	1	0	0
 U	libs/audio/signal/Resample.ml	18	read	1	5	4
+U	launcher/codemap/Map_v2.ml	1920	text_of	2	0	0
 U	libs/graphics/imaging/Scale.ml	12	Bilinear	1	0	0
 U	appkits/richtext/Page.mli	124	caret_at	0	0	0
 U	libs/networking/tls/X509.ml	153	names_host	1	0	0
@@ -11109,6 +11116,7 @@ U	apps/music/Voice_cs80.ml	436	set_patch	0	4	2
 U	games/platform/TinyMarioGalaxy.ml	268	nothing	0	0	0
 U	apps/music/Voice_tr808.ml	508	render_metal	1	0	0
 U	games/racing/TinyMarioKart64.ml	1309	battle_winner	1	0	0
+U	launcher/codemap/Map_v2.ml	1137	unit_spot	1	0	0
 U	languages/basic/Basic_parse.mli	130	Save	0	0	0
 U	libs/compression/Zlib.ml	12	decompress	0	2	1
 U	apps/music/Tonewheel.mli	41	count	0	0	0
@@ -11194,6 +11202,7 @@ U	games/racing/TinyMarioKart64.ml	199	road_speed	6	0	0
 U	apps/internet/TinyEudora.ml	340	width	4	0	0
 U	playground/ways/Teletype.ml	181	draw	1	2	2
 U	games/arcade/TinyTronscroll.ml	93	cell	4	0	0
+U	launcher/codemap/Map_v2.ml	1752	inside_peek	3	0	0
 U	launcher/codemap/Code_map.ml	25	Stay	37	0	0
 U	games/fps/TinyWolfenstein.ml	175	camera	2	0	0
 U	gamekits/lightcycles/Lightcycles.ml	157	search_no	4	0	0
@@ -11364,6 +11373,7 @@ U	games/arcade/TinyBomberman.ml	853	view_battle	2	0	0
 U	appkits/richtext/Rich.ml	38	edit	0	0	0
 U	libs/graphics/3d/raytrace/Solid.ml	19	Marble	1	0	0
 U	playground/platforms/native/Playground_platform.ml	55	utc_offset	0	0	0
+U	launcher/codemap/Map_v2.ml	1107	spot	4	0	0
 U	libs/audio/effects/Reverb.mli	92	name	0	0	0
 U	apps/music/Studio_reason.mli	65	connect	0	0	0
 U	games/adventure/myst/Myst_stills.mli	1	all	0	1	1
@@ -11463,7 +11473,6 @@ U	languages/javascript/Js_ast.ml	29	Index	1	3	1
 U	games/racing/TinySuperSprint.ml	212	shop	1	0	0
 U	games/arcade/TinyTronscroll.ml	410	polyline	1	0	0
 U	playground/ways/Logo3d.ml	24	Roll	3	0	0
-U	launcher/codemap/Map_v2.ml	1897	split_prefix	2	0	0
 U	appkits/editor/Gap_buffer.ml	80	delete	0	1	1
 U	libs/physics/3d/Joint3d.mli	53	t	6	0	0
 U	games/fps/TinyMinecraft.ml	744	crosshair	1	0	0
@@ -11519,6 +11528,7 @@ U	examples/Gui7Crud.ml	73	Delete	2	0	0
 U	playground/apis/Audio.mli	401	position	0	0	0
 U	libs/physics/3d/Joint3d.ml	26	dir_local	6	0	0
 U	games/adventure/TinyManiacMansion.ml	140	rule	31	0	0
+U	launcher/codemap/Map_v2.ml	1716	geom_of	3	0	0
 U	playground/Playground.ml	385	to_y	1	27	23
 U	languages/pascal/Pascal_compile.ml	585	assignment	1	0	0
 U	games/arcade/TinyPong.ml	94	initial_model	1	0	0
@@ -11526,6 +11536,7 @@ U	languages/smalltalk/St_primitives.mli	61	install	0	0	0
 U	games/flight/TinyComanche.ml	89	model	6	0	0
 U	games/arcade/TinyBreakout.ml	146	game	15	0	0
 U	apps/music/Studio_opxy.ml	263	t	20	0	0
+U	launcher/codemap/Map_v2.ml	1091	placed_index_cache	2	0	0
 U	languages/postscript/Ps_machine.mli	48	Int	0	0	0
 U	games/puzzle/AiConnect4.ml	231	update	1	0	0
 U	games/adventure/TinyZeldaOcarina.ml	248	half	18	0	0
@@ -11784,7 +11795,6 @@ U	games/puzzle/TinyMonumentValley.ml	214	Done	3	0	0
 U	games/platform/TinyLodeRunner.ml	71	level	6	0	0
 U	playground/apis/Audio_debug.ml	25	Off	4	1	1
 U	games/arcade/TinyMarbleMadness.ml	248	add	5	0	0
-U	launcher/codemap/Map_v2.ml	1184	derived_dir	1	0	0
 U	apps/music/Part_rhodes.mli	18	make	0	0	0
 U	games/puzzle/TinyPerspective.ml	117	corners	1	0	0
 U	libs/networking/tls/Tls13.ml	47	keys	8	0	0
@@ -11827,7 +11837,6 @@ U	languages/css/Computed.mli	52	Nowrap	0	0	0
 U	games/shmup/TinyRType.ml	75	battleship	3	0	0
 U	examples/PhysicsHitbox3d.ml	50	As_capsule	4	0	0
 U	appkits/richtext/Page.ml	17	Justify	2	2	1
-U	launcher/codemap/Map_v2.ml	2417	tour_banner	1	0	0
 U	playground/ways/Povray.ml	54	sphere	0	18	8
 U	libs/networking/mail/Mime.mli	129	multipart	0	0	0
 U	games/shmup/TinyGradius.ml	275	step_boss	1	0	0
@@ -12171,7 +12180,6 @@ U	games/platform/TinyMarioWorld.ml	443	play_step	1	0	0
 U	gamekits/sectors/Sectors.mli	95	side	0	0	0
 U	languages/c/Ast_c.mli	27	Ttypeof	0	2	2
 U	games/puzzle/TinyFez.ml	297	mix	4	0	0
-U	launcher/codemap/Map_v2.ml	793	notes	1	0	0
 U	apps/cad/TinySketchup.ml	330	choose	2	0	0
 U	libs/physics/2d/Resolve.ml	37	bounce	1	0	0
 U	launcher/codemap/Codemap.mli	57	run_directory	0	0	0
@@ -12314,7 +12322,6 @@ U	games/platform/TinyTurrican.ml	140	kind	3	0	0
 U	games/arcade/TinyFlappyBird.ml	419	ground_color	1	0	0
 U	games/arcade/TinyBomberman.ml	256	arenas	4	0	0
 U	libs/core/Sub.ml	10	SubKeyDown	2	0	0
-U	launcher/codemap/Map_v2.ml	2220	layer_cache	2	0	0
 U	games/platform/TinyMario64.ml	272	text	6	0	0
 U	games/fps/TinyFortnite.ml	312	Wall	6	0	0
 U	libs/terminal/Line_discipline.ml	17	End_of_file	1	0	0
@@ -12347,7 +12354,6 @@ U	libs/networking/protocols/Smtp.ml	16	reply_line	1	0	0
 U	games/sports/TinySpeedball2.ml	417	text	18	0	0
 U	games/sports/TinyTonyHawk.ml	366	pants	4	0	0
 U	libs/networking/unix/Tls_tunnel.ml	14	connect	0	2	2
-U	launcher/codemap/Map_v2.ml	1062	spot	4	0	0
 U	libs/networking/netcode/Rollback.ml	134	confirmed	0	0	0
 U	languages/c/Ast_c.mli	26	Tfunc	0	7	2
 U	games/strategy/TinyDune2.ml	419	view	1	0	0
@@ -12534,6 +12540,7 @@ U	appkits/blocks/Block_layout.ml	19	Label	2	0	0
 U	games/rhythm/TinyRockBand.ml	140	instrument	16	0	0
 U	languages/smalltalk/St_lexer.mli	62	token	1	0	0
 U	languages/smalltalk/St_parse.mli	38	parse_method	0	0	0
+U	launcher/codemap/Map_v2.ml	615	card	1	0	0
 U	games/strategy/TinyWarcraft2.ml	172	their_footmen_max	1	0	0
 U	games/shmup/TinyZaxxon.ml	214	far	8	0	0
 U	playground/platforms/native_common/Native_loop_2d.ml	328	open_audio	1	1	1
@@ -12724,7 +12731,6 @@ U	playground/Playground3d.ml	310	project	1	5	5
 U	libs/graphics/3d/Painter.ml	12	sort_far_to_near	0	1	1
 U	languages/jsonnet/Jsonnet.ml	57	type_name	37	0	0
 U	gamekits/maze/Grid_move.ml	27	next_tile	2	3	2
-U	launcher/codemap/Map_v2.ml	406	capitals_chosen_opti	1	0	0
 U	apps/music/Part_cs80.ml	81	shared	1	0	0
 U	appkits/editor/Tui_emacs.mli	58	message	0	0	0
 U	apps/music/Part_dx7.ml	243	panel_view	1	0	0
@@ -12839,6 +12845,7 @@ U	libs/terminal/Talk.mli	134	spawn	0	0	0
 U	games/sports/TinyTonyHawk.ml	300	step	1	0	0
 U	games/adventure/TinyTombRaider.ml	177	base	9	0	0
 U	games/adventure/TinyAdventure.ml	349	dragon_biting	1	0	0
+U	launcher/codemap/Map_v2.ml	1958	query_hits	2	0	0
 U	appkits/modeler/Modeler.mli	46	Mesh	0	0	0
 U	playground/Playground3d.mli	202	scale3d	0	0	0
 U	games/fps/TinyMinecraft.ml	73	block	7	0	0
@@ -12904,6 +12911,7 @@ U	libs/crypto/Hmac.mli	20	sha256	0	0	0
 U	gamekits/brawler/Stickman.ml	59	segment	3	0	0
 U	games/racing/TinyMarioKart64.ml	434	kart_palette	2	0	0
 U	apps/devtools/TinyDrScheme.ml	321	lines	4	0	0
+U	launcher/codemap/Map_v2.ml	368	capitals_drawn	1	0	0
 U	libs/audio/effects/Modulated_delay.ml	23	line	2	0	0
 U	appkits/cad/Cad_drawing.mli	49	remove	0	0	0
 U	playground/layers/Camera3d.ml	65	floor	0	22	18
@@ -13157,6 +13165,7 @@ U	appkits/astronomy/Celestial.ml	33	julian_date	0	2	1
 U	playground/apis/Physics.ml	247	states	3	0	0
 U	games/platform/TinyMario64.ml	115	gravity	2	0	0
 U	apps/music/TinySoundtracker.ml	112	piano	1	0	0
+U	launcher/codemap/Map_v2.ml	711	ties_cache	2	0	0
 U	appkits/editor/Tui_turbo.ml	396	menu_of_letter	2	0	0
 U	games/strategy/TinyTowerDefense.ml	139	model	5	0	0
 U	languages/css/Css_syntax.mli	43	Percentage	0	0	0
@@ -13306,6 +13315,7 @@ U	appkits/cad/Cad_drawing.mli	45	empty	0	0	0
 U	libs/audio/Mixer.mli	80	instrument	0	0	0
 U	games/arcade/TinyFrogger.ml	427	text	8	0	0
 U	games/puzzle/TinySokoban.ml	75	Solved	3	0	0
+U	launcher/codemap/Map_v2.ml	1156	extent	3	0	0
 U	games/fps/TinyCyberSled.ml	111	shell	16	0	0
 U	libs/graphics/images/jpeg/Jpeg.ml	16	component	5	0	0
 U	gamekits/rts/Orders.mli	62	field	0	0	0
@@ -13775,6 +13785,7 @@ U	languages/jsonnet/Jsonnet.ml	43	body	1	0	0
 U	playground/platforms/native_common/Native_loop_2d.ml	241	window_pixels	1	1	1
 U	games/arcade/TinyBomberman.ml	731	mode	1	0	0
 U	apps/office/TinyOffice.ml	558	host_menus	1	0	0
+U	launcher/codemap/Map_v2.ml	446	capitals_cache	2	0	0
 U	languages/basic/Basic_parse.ml	259	atom	3	0	0
 U	apps/devtools/TinySmalltalk80.ml	517	complain	5	0	0
 U	appkits/cad/Cad_session.ml	109	say	48	0	0
@@ -14109,7 +14120,6 @@ U	gamekits/shmup/Path.mli	40	point	4	0	0
 U	playground/apis/Audio.mli	290	keep_playing	0	0	0
 U	libs/networking/mail/Mime.ml	164	decode_words	3	4	2
 U	libs/networking/netcode/Prediction.mli	40	t	5	0	0
-U	launcher/codemap/Map_v2.ml	2453	bone_card	1	0	0
 U	playground/platforms/native_common/Native_loop_3d.ml	145	mouse_button	2	0	0
 U	apps/graphics/TinyBlender.ml	311	world_move	1	0	0
 U	libs/networking/protocols/Websocket.mli	74	Text	0	0	0
@@ -14152,6 +14162,7 @@ U	appkits/slides/Outline.mli	36	start_of	0	0	0
 U	languages/smalltalk/St_ast.ml	40	arity	1	3	2
 U	libs/ai/search/Zobrist.mli	72	entry	2	0	0
 U	playground/ways/Logo3d.mli	61	roll_right	0	0	0
+U	launcher/codemap/Map_v2.ml	2237	layer_names	2	0	0
 U	games/racing/TinyVirtuaRacing.ml	1214	Close	4	0	0
 U	apps/music/Part_tr808.ml	180	ink	1	0	0
 U	apps/music/Part_cs80.ml	101	control	1	0	0
@@ -14378,6 +14389,7 @@ U	apps/cad/TinySketchpad.ml	255	scope_y	5	0	0
 U	libs/audio/effects/Reverb.ml	151	excursion_room	1	0	0
 U	apps/music/Voice_dx7.ml	198	value	18	0	0
 U	libs/physics/3d/Integrate3d.ml	12	Explicit_euler	3	0	0
+U	launcher/codemap/Map_v2.ml	2632	style	0	2	1
 U	games/rhythm/TinyDDR.ml	250	beat	2	0	0
 U	games/puzzle/AiOthello.ml	77	directions	1	0	0
 U	games/adventure/TinyAloneInTheDark.ml	111	zone_of	2	0	0
@@ -14389,7 +14401,6 @@ U	playground/ways/Povray.mli	118	glassy	0	0	0
 U	examples/PhysicsElastic.ml	62	start	4	0	0
 U	apps/devtools/TinySmalltalk80.ml	457	update_window	11	0	0
 U	appkits/sketch/Sketch.ml	43	pos	10	11	2
-U	launcher/codemap/Map_v2.ml	1111	extent	3	0	0
 U	games/puzzle/AiChess.ml	581	view_piece	1	0	0
 U	libs/crypto/Bignum.ml	107	rem	3	3	1
 U	appkits/cad/Cad_session.ml	103	running	0	0	0
@@ -14421,6 +14432,7 @@ U	examples/AiGhosts.ml	80	Blinky	8	0	0
 U	libs/audio/instruments/Fm_algorithm.ml	18	all	1	0	0
 U	games/rpg/TinyDiablo.ml	453	monster_shape	1	0	0
 U	games/arcade/TinyMarbleMadness.ml	501	Rolling	9	0	0
+U	launcher/codemap/Map_v2.ml	2484	hovered_bone	1	1	1
 U	languages/hypertalk/Hypertalk.mli	45	script	3	0	0
 U	libs/audio/instruments/Fm_algorithm.ml	82	sum	3	0	0
 U	examples/AiDigits.ml	84	drawn_digit	2	0	0
@@ -14444,6 +14456,7 @@ U	libs/graphics/videos/avi/Avi.ml	43	stream	0	0	0
 U	games/platform/TinyLodeRunner.ml	253	update	1	0	0
 U	apps/office/TinyNLS.ml	452	view	1	0	0
 U	libs/networking/mail/Mail_thread.ml	47	below	4	0	0
+U	launcher/codemap/Map_v2.ml	607	within	5	0	0
 U	languages/scratch/Scratch_text.ml	24	slot_text	1	0	0
 U	languages/c/Parse_c.ml	148	skip_parens	2	0	0
 U	languages/smalltalk/St_interp.ml	61	c_sp	4	0	0
@@ -14615,6 +14628,7 @@ U	libs/physics/3d/Collide3d.ml	400	ray_triangle	0	0	0
 U	libs/gui/Text_edit.mli	82	selected	0	0	0
 U	libs/graphics/imaging/Lut.mli	40	levels	0	0	0
 U	games/shmup/TinyDefender.ml	127	humans_start	1	0	0
+U	launcher/codemap/Map_v2.ml	1077	entry_of	9	0	0
 U	games/racing/TinyMarioKart64.ml	621	angle_diff	7	0	0
 U	games/puzzle/TinyWitness.ml	138	is_cell	1	0	0
 U	playground/apis/Physics3d.ml	167	world_bounds	3	2	2
@@ -14750,7 +14764,6 @@ U	apps/office/TinyHyperCard.ml	400	edit_script	1	0	0
 U	playground/ways/Bigbang.mli	103	text	0	0	0
 U	apps/music/Voice_tr808.ml	436	t	14	8	4
 U	libs/networking/protocols/Smtp.mli	71	Rcpt_to	0	0	0
-U	launcher/codemap/Map_v2.ml	2590	legend_row_at	0	1	1
 U	examples/Mouse.ml	11	update	1	0	0
 U	appkits/browser/Browser_url.mli	28	starts_with	0	0	0
 U	playground/Playground.mli	980	Any_app	0	0	0
@@ -14933,7 +14946,6 @@ U	libs/graphics/3d/geometry/Material.ml	12	t	1	5	5
 U	games/shmup/TinyRobotron.ml	73	margin	10	0	0
 U	apps/music/Voice_minimoog.ml	425	recent	0	1	1
 U	libs/physics/3d/Collide3d.mli	142	boxes	0	0	0
-U	launcher/codemap/Map_v2.ml	796	street_labels	1	0	0
 U	apps/office/TinyOffice.ml	289	line_top	2	0	0
 U	apps/internet/Browser_media.ml	27	players	2	0	0
 U	libs/core/Color.ml	55	gray	0	0	0
@@ -15100,6 +15112,7 @@ U	languages/css/Selectors.ml	19	Nth_child	3	0	0
 U	games/racing/TinyMarioKart64.ml	426	from_side	1	0	0
 U	apps/graphics/TinyVisio.ml	72	drag	1	0	0
 U	apps/devtools/TinyDrScheme.ml	132	job	2	0	0
+U	launcher/codemap/Map_v2.ml	448	capitals_chosen_opti	1	0	0
 U	apps/gamedev/TinyAseprite.ml	209	update	1	0	0
 U	languages/ocaml/Parse_ml.ml	640	unary	1	0	0
 U	games/flight/TinyXpilot.ml	310	Title	4	0	0
@@ -15266,7 +15279,6 @@ U	apps/music/TinyTB303.ml	120	scope_view	1	0	0
 U	examples/LogoFractals.ml	148	initial_model	1	0	0
 U	apps/music/Rack_device.mli	27	Sequencer	0	0	0
 U	games/shmup/TinyGradius.ml	285	update_game	1	0	0
-U	launcher/codemap/Map_v2.ml	2202	layer_data	2	0	0
 U	libs/audio/formats/mod/Paula.mli	39	reading_name	0	0	0
 U	games/puzzle/AiGo.ml	63	points	7	0	0
 U	examples/Gui7Flight.ml	133	main	0	0	0
@@ -15399,7 +15411,7 @@ U	appkits/browser/Browser_page.ml	62	as_html	1	0	0
 U	games/racing/TinySuperOffRoad.ml	440	place_names	1	0	0
 U	languages/smalltalk/St_lexer.ml	24	Rparen	3	0	0
 U	games/adventure/TinyZork.ml	436	app	1	0	0
-U	launcher/codemap/Code_search.ml	45	starts	3	16	2
+U	launcher/codemap/Code_search.ml	45	starts	3	17	2
 U	examples/HttpText.ml	37	get	2	0	0
 U	languages/pascal/Pmachine.mli	79	give_random	0	0	0
 U	playground/ways/Logo3d.ml	42	pen_up	1	1	1
@@ -15490,7 +15502,6 @@ U	apps/cad/TinySketchpad.ml	254	scope_x	5	0	0
 U	games/shmup/TinyGradius.ml	153	model	5	0	0
 U	games/fps/TinyDoom.ml	217	model	6	0	0
 U	apps/office/TinyOffice.ml	827	update	1	0	0
-U	launcher/codemap/Map_v2.ml	1895	prefixes	1	0	0
 U	apps/music/Rack_cable.mli	36	sag	0	0	0
 U	libs/networking/protocols/Http.ml	169	is_redirect	0	2	2
 U	apps/music/Studio_opxy.ml	61	scene	1	0	0
@@ -15529,7 +15540,6 @@ U	libs/gui/Retained.mli	103	chosen	0	0	0
 U	games/shmup/Asteroid.ml	178	space_asteroid	1	0	0
 U	libs/networking/mail/Mail.mli	120	date_to_string	0	0	0
 U	libs/audio/synthesis/Envelope.mli	44	percussive	0	0	0
-U	launcher/codemap/Map_v2.ml	2433	anchor_line	0	2	1
 U	games/platform/TinyMarioWorld.ml	524	new_progress	1	0	0
 U	libs/audio/instruments/Sequencer.ml	19	Note_on	1	2	2
 U	libs/gui/Immediate.mli	192	text_area	0	0	0
@@ -16189,7 +16199,6 @@ U	apps/internet/TinyEudora.ml	298	sorted	1	0	0
 U	playground/apis/Physics3d.ml	164	bounce_off	0	3	3
 U	playground/ways/Logo.ml	27	Label	2	0	0
 U	apps/graphics/TinyBlender.ml	438	swatches	2	0	0
-U	launcher/codemap/Map_v2.ml	752	notes_on	3	0	0
 U	apps/music/Studio_opxy.ml	46	component	1	1	1
 U	libs/graphics/2d/geometry/Curve.ml	44	flatten	0	1	1
 U	appkits/cad/Dxf.ml	167	of_string	0	1	1
@@ -16303,7 +16312,6 @@ U	apps/graphics/TinyMacPaint.ml	148	amend	3	0	0
 U	games/platform/TinySonic.ml	79	decel	3	0	0
 U	apps/music/TinyDX7.ml	176	app	1	0	0
 U	appkits/money/Reconcile.ml	53	hints	0	1	1
-U	launcher/codemap/Map_v2.ml	2482	hit_spots	1	0	0
 U	games/racing/TinyMarioKart64.ml	495	kart	32	0	0
 U	games/arcade/Snake.ml	211	update_direction	1	0	0
 U	libs/audio/instruments/Svf.mli	64	t	2	0	0
@@ -16434,6 +16442,7 @@ U	launcher/menu/Tinybox_menu.ml	326	shot_x	10	0	0
 U	games/platform/TinyPrinceOfPersia.ml	102	tile_w	13	0	0
 U	playground/platforms/web/Playground_platform.ml	164	svg_elt	0	0	0
 U	apps/office/TinyWord.ml	144	laid_out	3	0	0
+U	launcher/codemap/Map_v2.ml	2452	match_preview	1	0	0
 U	examples/AiQlearn.ml	56	start	7	0	0
 U	libs/gui/Text_edit.ml	134	delete	4	2	1
 U	appkits/browser/Browser_script.ml	31	timer	1	0	0
@@ -16497,7 +16506,6 @@ U	languages/jsonnet/Jsonnet_ast.mli	23	Object	0	0	0
 U	apps/music/TinyReBirth.ml	213	ink	4	0	0
 U	games/fps/TinyTeardown.ml	124	cell_of	4	0	0
 U	examples/PhysicsHitbox3d.ml	65	model	4	0	0
-U	launcher/codemap/Map_v2.ml	1002	ivory	5	0	0
 U	games/platform/TinyVVVVVV.ml	87	open_row	2	0	0
 U	appkits/money/Reconcile.ml	21	cleared	1	1	1
 U	apps/music/Voice_dx7.ml	453	pitch_envelope	1	0	0
@@ -16542,7 +16550,7 @@ U	launcher/menu/Tinybox_menu.ml	339	first_row	1	0	0
 U	launcher/codemap/Code_guide.ml	32	mark	2	1	1
 U	examples/PhysicsFloat3d.ml	122	pool	1	0	0
 U	examples/GuiEditor.ml	113	places	1	0	0
-U	launcher/codemap/Code_rank.ml	18	place	3	2	1
+U	launcher/codemap/Code_rank.ml	18	place	3	3	1
 U	games/arcade/TinyBreakout.ml	508	view	1	0	0
 U	examples/ImageLzw.ml	91	line	1	0	0
 U	libs/physics/3d/Collide3d.ml	190	plane_hitbox	2	0	0
@@ -16932,6 +16940,7 @@ U	libs/ai/search/Zobrist.ml	16	random64	2	0	0
 U	games/arcade/TinyBreakout.ml	450	squashed	2	0	0
 U	libs/crypto/Sha1.ml	12	+:	9	0	0
 U	appkits/sketch/Sketch.mli	53	Equal	0	0	0
+U	launcher/codemap/Map_v2.ml	1942	split_prefix	2	0	0
 U	launcher/codemap/Code_file.mli	26	trick	0	0	0
 U	libs/audio/effects/Reverb.ml	227	process	1	1	1
 U	games/strategy/TinyCivilization.ml	463	active	4	0	0
@@ -17003,6 +17012,7 @@ U	games/rpg/TinyGauntlet2.ml	284	field_step	1	0	0
 U	games/puzzle/TinyWitness.ml	212	Drawing	5	0	0
 U	gamekits/rhythm/Rhythm.mli	151	Hard	0	0	0
 U	appkits/browser/layout/Html_layout.mli	187	Rule	0	0	0
+U	launcher/codemap/Map_v2.ml	1940	prefixes	1	0	0
 U	playground/platforms/web/Playground_platform.ml	184	set_attr	4	0	0
 U	libs/networking/tls/X509.ml	42	public_key	1	0	0
 U	playground/Playground.ml	231	move_down	0	12	4
@@ -17024,7 +17034,6 @@ U	games/arcade/TinyBomberman.ml	431	new_battle	1	0	0
 U	gamekits/adventure/Adventure.ml	22	has	2	17	2
 U	languages/smalltalk/St_class.mli	55	format	0	0	0
 U	playground/Playground.mli	184	circle	0	0	0
-U	launcher/codemap/Map_v2.ml	1725	peek_level	2	0	0
 U	games/platform/TinyVVVVVV.ml	195	standing	1	0	0
 U	games/platform/TinyMetroid.ml	259	drop	1	0	0
 U	games/adventure/TinyTombRaider.ml	582	step_lara	1	0	0
@@ -17447,7 +17456,6 @@ U	games/puzzle/TinyTetris.ml	342	text	9	0	0
 U	libs/random/Lehmer.ml	17	r	1	0	0
 U	apps/music/Op1_engine.ml	12	t	10	11	4
 U	libs/graphics/images/jpeg/Jpeg_encode.ml	113	size_of	2	0	0
-U	launcher/codemap/Map_v2.ml	1221	drawn_bones	4	0	0
 U	games/arcade/TinyBoomerangFu.ml	393	pace	26	0	0
 U	examples/AiNeuralNet.ml	177	box_y	1	0	0
 U	playground/layers/Character3d.mli	87	trace	0	0	0
@@ -17554,7 +17562,6 @@ U	games/adventure/TinyZeldaOcarina.ml	327	free	2	0	0
 U	examples/Gui7Circles.ml	91	places	2	0	0
 U	libs/core/Set_.mli	144	split	0	0	0
 U	apps/music/Studio_opxy.ml	25	brain	1	0	0
-U	launcher/codemap/Map_v2.ml	1837	search_all	3	0	0
 U	playground/layers/Camera2d.mli	155	follow	0	0	0
 U	libs/networking/netcode/Sim_net.mli	42	config	4	0	0
 U	libs/audio/effects/Leslie.ml	14	horn_fast	1	0	0
@@ -17990,6 +17997,7 @@ U	playground/platforms/software/Shape_render_software.ml	210	effective_alpha	1	0
 U	launcher/menu/Tinybox_menu.ml	315	screen_h	1	0	0
 U	languages/css/Css_values.mli	50	px	0	0	0
 U	apps/pim/TinyQuicken.ml	165	quickfill	1	0	0
+U	launcher/codemap/Map_v2.ml	1653	legend	1	0	0
 U	launcher/codemap/Code_map_base.mli	151	make	0	0	0
 U	games/shmup/TinyRType.ml	169	Title	4	0	0
 U	examples/PhysicsRoll3d.ml	50	g	2	0	0
@@ -18027,7 +18035,6 @@ U	libs/ai/decision/Fsm.ml	16	step	0	8	7
 U	apps/internet/TinyEudora.ml	1095	message_cache	2	0	0
 U	libs/networking/tls/Tls13.ml	295	close	0	1	1
 U	languages/basic/Basic_run.ml	199	eval_ints	1	0	0
-U	launcher/codemap/Map_v2.ml	564	unit_at	0	0	0
 U	languages/javascript/Js_value.ml	27	scope	2	14	1
 U	apps/music/Rack_cable.ml	35	make	0	4	1
 U	games/platform/TinyTurrican.ml	142	enemy	7	0	0
@@ -18219,7 +18226,6 @@ U	playground/platforms/software/Playground3d_platform.ml	166	title_keys	1	0	0
 U	appkits/browser/layout/Box_layout.ml	35	moved	10	0	0
 U	playground/apis/Audio.mli	412	latency	0	0	0
 U	apps/devtools/Scratch_ide.ml	80	top_bar	6	0	0
-U	launcher/codemap/Map_v2.ml	859	preview_cache	2	0	0
 U	games/racing/TinyMarioKart64.ml	493	Sliding	8	0	0
 U	games/arcade/TinyBomberman.ml	89	t	4	0	0
 U	launcher/codemap/Code_units.ml	75	ancestors	0	3	2
@@ -18360,6 +18366,7 @@ U	examples/AiNeuralNet.ml	95	shape	1	0	0
 U	languages/css/Cascade.ml	116	words	1	0	0
 U	apps/music/Studio_opxy.ml	81	skip	1	1	1
 U	appkits/cad/Cad_session.ml	332	command	0	0	0
+U	launcher/codemap/Map_v2.ml	1846	peek_glow	1	0	0
 U	games/fps/TinyBattlezone.ml	187	blocked	3	0	0
 U	languages/pascal/Pmachine.ml	275	execute	0	0	0
 U	gamekits/cards/Cards.ml	14	Clubs	3	3	2
@@ -18428,6 +18435,7 @@ U	playground/layers/Tilemap.mli	112	size	0	0	0
 U	apps/music/Voice_minimoog.mli	175	options	4	0	0
 U	playground/apis/Ai.ml	190	pondering	0	0	0
 U	libs/terminal/Line_discipline.mli	85	input	0	0	0
+U	launcher/codemap/Map_v2.ml	2407	hovered_match	1	1	1
 U	languages/css/Css.ml	45	page_sheet	0	2	1
 U	playground/Playground.ml	212	bitmap	0	27	16
 U	games/adventure/TinyMetalGearSolid.ml	159	Title	3	0	0
@@ -18563,7 +18571,6 @@ U	games/racing/TinyIgnition.ml	248	wheel	12	0	0
 U	apps/office/TinyPowerPoint.ml	272	slide_shapes	1	0	0
 U	apps/devtools/TinySmalltalk80.ml	456	find	16	0	0
 U	languages/smalltalk/St_image.ml	61	get_oop	2	0	0
-U	launcher/codemap/Map_v2.ml	1017	entries_index_cache	2	0	0
 U	games/platform/TinyVVVVVV.ml	229	nothing	0	0	0
 U	libs/core/Basics.ml	6		0	0	0
 U	playground/apis/Multiplayer.ml	333	hud	1	0	0
@@ -18654,6 +18661,7 @@ U	playground/apis/Physics3d.mli	147	rough	0	0	0
 U	launcher/codemap/Treemap.mli	52	rect	8	0	0
 U	games/racing/TinyVirtuaRacing.ml	1202	position	2	0	0
 U	games/adventure/TinyTombRaider.ml	869	pyramid	1	0	0
+U	launcher/codemap/Map_v2.ml	2041	search_lit	2	0	0
 U	libs/graphics/imaging/Mask.mli	30	all	0	0	0
 U	games/shmup/TinyZaxxon.ml	172	Turret	5	0	0
 U	apps/devtools/TinyDrScheme.ml	92	glyph	2	0	0
@@ -18797,6 +18805,7 @@ U	apps/music/Voice_tr808.ml	152	presets	0	10	5
 U	playground/ways/Povray.ml	86	sun	0	4	4
 U	playground/layers/Sprite.ml	21	runs	1	3	3
 U	libs/audio/effects/Reverb.ml	19	rate	3	0	0
+U	launcher/codemap/Map_v2.ml	2147	mark_groups	2	1	1
 U	apps/internet/TinyFirefox.ml	111	command_y	8	0	0
 U	libs/graphics/3d/Texture.ml	12	image	2	2	2
 U	libs/graphics/3d/geometry/Vec3.ml	14	add	1	143	28
@@ -18943,7 +18952,7 @@ U	languages/jsonnet/Jsonnet_ast.mli	17	Str	0	0	0
 U	appkits/browser/layout/Html_layout.ml	84	Float	10	0	0
 U	games/arcade/TinyMarbleMadness.ml	216	axes	3	0	0
 U	appkits/modeler/Modeler.ml	13	Torus	1	0	0
-U	launcher/codemap/Code_guide.ml	13	item	6	10	1
+U	launcher/codemap/Code_guide.ml	13	item	6	13	1
 U	libs/terminal/Vt.mli	102	Black	0	0	0
 U	apps/media/TinyWinamp.ml	730	marquee	1	0	0
 U	apps/media/Media.mli	60	Picture	0	0	0
@@ -19012,6 +19021,7 @@ U	launcher/codegen/make_tinybox_data.ml	56	halve	2	0	0
 U	games/racing/TinySuperOffRoad.ml	109	bump	2	0	0
 U	apps/graphics/TinyDeluxePaint.ml	60	Freehand	7	0	0
 U	appkits/diagram/Ortho_route.ml	12	point	5	0	0
+U	launcher/codemap/Map_v2.ml	2606	pick	0	0	0
 U	languages/javascript/Js_regexp.mli	50	groups	0	0	0
 U	games/racing/TinySSX.ml	331	scene	1	0	0
 U	languages/smalltalk/St_image.ml	51	get_varint	6	0	0
@@ -19137,6 +19147,7 @@ U	libs/core/time/Recur.ml	13	Until_date	1	1	1
 U	apps/music/TinyOp1.ml	158	black_y	1	0	0
 U	apps/music/TinyJuno.ml	62	look	4	0	0
 U	libs/compression/Huffman.mli	63	of_lengths	0	0	0
+U	launcher/codemap/Map_v2.ml	1082	placed_of_simple	1	0	0
 U	apps/office/TinyOpenDoc.ml	198	width	0	0	0
 U	libs/ai/movement/Steering.mli	48	vec	23	0	0
 U	games/arcade/TinyTron3d.ml	128	text	14	0	0
@@ -19193,6 +19204,7 @@ U	games/fighting/TinyFinalFight.ml	149	height_of	3	0	0
 U	gamekits/maze/Grid_move.ml	13	Stop	10	1	1
 U	playground/ways/Teletype.ml	50	palette	1	0	0
 U	libs/audio/formats/mpeg_audio/Layer3_tables.mli	37	t12	0	0	0
+U	launcher/codemap/Map_v2.ml	1882	search_all	3	0	0
 U	libs/graphics/3d/raytrace/Transform.mli	77	inverse_direction	0	0	0
 U	games/shmup/TinyZaxxon.ml	365	floor_slices	1	0	0
 U	libs/crypto/Chacha20.ml	12	mask	7	0	0
@@ -19294,7 +19306,6 @@ U	appkits/editor/Tui_vi.ml	168	find_text	2	0	0
 U	libs/graphics/2d/Fill.ml	12	fill_rule	1	0	0
 U	languages/javascript/Js_value.ml	26	closure	1	0	0
 U	games/platform/TinyPrinceOfPersia.ml	143	landing	2	0	0
-U	launcher/codemap/Map_v2.ml	613	ties_of	2	0	0
 U	playground/apis/Ai.ml	162	playing_out	0	0	0
 U	languages/smalltalk/St_interp.mli	142	collect	0	0	0
 U	games/rpg/TinyHades.ml	116	Fury	4	0	0
@@ -19398,6 +19409,7 @@ U	games/shmup/TinyStarFox.ml	372	sounds	1	0	0
 U	games/shmup/TinyGalaga.ml	186	speed	5	0	0
 U	libs/gui/Look.mli	43	slider	0	0	0
 U	games/adventure/TinyZeldaOcarina.ml	351	reach	1	0	0
+U	launcher/codemap/Map_v2.ml	1918	texts	2	0	0
 U	languages/css/Computed.mli	34	List_item	0	0	0
 U	languages/basic/Basic_parse.ml	16	Ne	2	3	1
 U	libs/audio/instruments/Vco.ml	12	Sine	7	0	0
@@ -19469,7 +19481,6 @@ U	examples/TexturedCube3d.ml	26	app	1	0	0
 U	launcher/menu/Tinybox_menu.ml	385	start	3	0	0
 U	libs/compression/Inflate.ml	62	length_base	1	2	1
 U	games/platform/TinyVVVVVV.ml	400	app	1	0	0
-U	launcher/codemap/Map_v2.ml	1060	placed_of	2	0	0
 U	launcher/codemap/Code_guide.mli	75	bone	1	0	0
 U	games/strategy/TinyCivilization.ml	183	tech_name	3	0	0
 U	examples/GuiEditor.ml	90	Save	2	0	0
@@ -19786,7 +19797,6 @@ U	games/adventure/TinyGTA.ml	128	car	12	0	0
 U	appkits/browser/Browser_script.ml	723	engine	0	0	0
 U	libs/gui/Immediate.ml	241	selector_step	4	0	0
 U	libs/audio/formats/midi/Midi.mli	65	parse	0	0	0
-U	launcher/codemap/Map_v2.ml	2196	heat	4	0	0
 U	launcher/codemap/Treemap.ml	185	child_path	5	5	1
 U	games/platform/TinyPrinceOfPersia.ml	163	Land_soft	3	0	0
 U	games/platform/TinyJoust.ml	134	tier_color	1	0	0
@@ -19909,7 +19919,6 @@ U	libs/ai/learning/Train.mli	92	best	0	0	0
 U	games/sports/TinyPinball3d.ml	87	drain_y	3	0	0
 U	games/fps/TinyCyberSled.ml	84	solid	2	0	0
 U	libs/audio/instruments/Polyphony.ml	60	voices	0	7	7
-U	launcher/codemap/Map_v2.ml	1037	placed_of_simple	1	0	0
 U	launcher/codemap/Code_search.mli	25	kind	1	0	0
 U	examples/PhysicsPyramid.ml	90	next_iterations	1	0	0
 U	games/adventure/TinyMyst.ml	86	card	8	0	0
@@ -20052,6 +20061,7 @@ U	apps/devtools/Scratch_look.mli	32	to_stage	0	0	0
 U	appkits/browser/layout/Html_layout.mli	214	greedy	0	0	0
 U	languages/smalltalk/St_memory.mli	47	Float	0	0	0
 U	libs/gui/Immediate.ml	338	canvas	0	1	1
+U	launcher/codemap/Map_v2.ml	2554	chosen_glow	1	0	0
 U	libs/networking/protocols/Url.mli	97	port	0	0	0
 U	games/shmup/TinyStarFox.ml	108	floor_clearance	1	0	0
 U	apps/music/Part_juno.ml	172	part	3	0	0
@@ -20080,7 +20090,6 @@ U	libs/audio/formats/wav/Wav.mli	37	of_string	0	0	0
 U	games/adventure/TinyGTA.ml	429	building	1	0	0
 U	apps/pim/Pim_memo.ml	67	first_line	1	0	0
 U	apps/devtools/TinySmalltalk80.ml	237	Print_it_in	3	0	0
-U	launcher/codemap/Map_v2.ml	1506	facts_of	3	0	0
 U	examples/PhysicsSpin3d.ml	84	inertia	0	0	0
 U	games/fighting/TinyFinalFight.ml	385	view	1	0	0
 U	languages/jsonnet/Jsonnet_lexer.mli	33	token	1	0	0
@@ -20594,7 +20603,6 @@ U	launcher/codemap/Codemap.ml	182	preview	0	1	1
 U	libs/compression/Inflate.ml	43	stored	1	0	0
 U	appkits/blocks/Block_layout.ml	44	items	1	0	0
 U	libs/graphics/imaging/Blend.ml	27	screen	2	0	0
-U	launcher/codemap/Map_v2.ml	1835	types	4	0	0
 U	libs/graphics/3d/raytrace/Raytrace.ml	182	color_of_int	5	0	0
 U	apps/media/TinyWinamp.ml	527	stop	1	0	0
 U	libs/audio/instruments/Fm_algorithm.ml	55	get	0	7	3
@@ -20894,7 +20902,7 @@ U	apps/pim/TinyPalmPilot.ml	94	today	3	0	0
 U	games/fps/TinyDoom.ml	286	to_view	3	0	0
 U	games/arcade/TinyPang.ml	125	Title	4	0	0
 U	playground/apis/Juice.mli	134	squash	0	0	0
-U	launcher/codemap/Code_map_base.ml	235	rank_if_counted	0	5	1
+U	launcher/codemap/Code_map_base.ml	235	rank_if_counted	0	8	1
 U	games/fps/TinyFortnite.ml	1123	gold	2	0	0
 U	languages/smalltalk/St_class.mli	110	new_association	0	0	0
 U	games/fps/TinyCyberSled.ml	458	update	1	0	0
@@ -21108,7 +21116,7 @@ U	libs/graphics/animation/Timing.mli	43	default	0	0	0
 U	libs/audio/Mixer.ml	13	shot	1	0	0
 U	libs/terminal/Vt.mli	102	Red	0	0	0
 U	apps/devtools/TinyTurboPascal.ml	58	main	0	0	0
-U	launcher/codemap/Code_guide.ml	302	anchor_name	0	5	2
+U	launcher/codemap/Code_guide.ml	302	anchor_name	0	6	2
 U	playground/ways/Teletype.ml	45	phosphor	2	0	0
 U	examples/AudioAliasing.ml	54	bin_hz	3	0	0
 U	libs/physics/3d/Sweep3d.ml	25	touching	1	0	0
@@ -21137,6 +21145,7 @@ U	apps/office/TinyOffice.ml	959	glyphs_at	2	0	0
 U	games/puzzle/Tetris.ml	245	spawn_tetrimino	2	0	0
 U	games/arcade/TinyTron.ml	284	main	0	0	0
 U	examples/PhysicsBounce.ml	64	initial_model	2	0	0
+U	launcher/codemap/Map_v2.ml	2247	layer_data	2	0	0
 U	languages/ocaml/Token_ml.ml	17	Label	1	0	0
 U	games/arcade/TinyBomberman.ml	464	fuse_times	1	0	0
 U	games/puzzle/TinyTetris.ml	74	Z	3	0	0
@@ -21194,7 +21203,6 @@ U	launcher/menu/Tinybox_menu.ml	329	text_w	6	0	0
 U	games/shmup/TinyInvaders.ml	70	cannon_rows	2	0	0
 U	launcher/codemap/Code_map_base.ml	528	ink	0	15	3
 U	languages/pascal/Pcode.mli	92	Ngi	0	0	0
-U	launcher/codemap/Map_v2.ml	1996	search_lit	2	0	0
 U	games/rpg/TinyGauntlet2.ml	530	text	24	0	0
 U	games/arcade/TinyTron.ml	81	rules	1	0	0
 U	games/shmup/TinyGalaga.ml	55	top_center	2	0	0
@@ -21644,7 +21652,6 @@ U	games/puzzle/TinyBabaIsYou.ml	47	Wall	5	0	0
 U	libs/networking/unix/Worker.mli	51	submit	0	0	0
 U	libs/ai/search/Deepening.ml	160	think	0	1	1
 U	apps/internet/TinyEudora.ml	388	columns_y	1	0	0
-U	launcher/codemap/Map_v2.ml	1048	placed_of_opti	1	0	0
 U	apps/education/TinyInteractivePhysics.ml	159	Spring_tool	3	0	0
 U	games/strategy/TinyCivilization.ml	162	Code_of_laws	5	0	0
 U	apps/media/Our_media.ml	148	clip_sound	1	0	0
@@ -21795,7 +21802,6 @@ U	apps/graphics/TinyMacPaint.ml	382	menu_box	2	0	0
 U	games/fps/TinyTeardown.ml	596	update	1	0	0
 U	games/fps/TinyCyberSled.ml	526	sled	5	0	0
 U	playground/Playground.ml	588	Resized1	1	0	0
-U	launcher/codemap/Map_v2.ml	2271	layer_shapes	1	0	0
 U	apps/cad/TinySketchup.ml	332	update	1	0	0
 U	appkits/browser/layout/Flex_layout.ml	50	resolve	0	2	1
 U	games/arcade/TinyTron.ml	253	level_name	1	0	0
@@ -21843,7 +21849,6 @@ U	libs/graphics/videos/mpeg1/Mpeg1_vlc.ml	66	motion_code	0	2	2
 U	languages/jsonnet/Jsonnet.ml	529	str_of	20	0	0
 U	languages/javascript/Js_parse.ml	15	Error	4	0	0
 U	games/racing/TinyMarioKart64.ml	1477	tree_shapes	1	0	0
-U	launcher/codemap/Map_v2.ml	1006	grounds	4	0	0
 U	launcher/codemap/Code_units.ml	36	child_toward	0	0	0
 U	games/puzzle/Tetris.ml	109	stamp	3	0	0
 U	apps/pim/Palm.mli	77	paper	0	0	0
@@ -22073,7 +22078,6 @@ U	libs/graphics/imaging/Scale.mli	21	Nearest	0	0	0
 U	games/arcade/TinyTronscroll.ml	104	kinds	2	0	0
 U	games/shmup/TinyRobotron.ml	206	man_speed	2	0	0
 U	apps/internet/TinyMosaic.ml	131	wrap	1	0	0
-U	launcher/codemap/Map_v2.ml	423	names	4	0	0
 U	playground/apis/Ai.ml	165	hinting	0	0	0
 U	games/adventure/TinyZeldaLinkPast.ml	223	new_game	1	0	0
 U	languages/ocaml/Ast_ml.mli	106	Iopen	0	2	2
@@ -22220,6 +22224,7 @@ U	apps/music/TinyOpxy.ml	334	segment	0	0	0
 U	games/racing/TinyMarioKart64.ml	459	tree_palette	1	0	0
 U	languages/scheme/Scheme_syntax.ml	173	quasi	3	0	0
 U	games/racing/TinyMarioKart.ml	1031	update	1	0	0
+U	launcher/codemap/Map_v2.ml	1749	peek_geom	2	0	0
 U	games/platform/TinySuperMeatBoy.ml	397	splat	2	0	0
 U	apps/cad/TinySketchup.ml	495	icon	1	0	0
 U	examples/AiNeuralNet.ml	199	boundary	1	0	0
@@ -22256,7 +22261,6 @@ U	languages/smalltalk/St_interp.ml	424	collect	1	0	0
 U	playground/apis/Ai.ml	147	opponent	9	0	0
 U	apps/media/Media.mli	49	Png	0	0	0
 U	libs/gui/Grid.ml	16	item	1	0	0
-U	launcher/codemap/Map_v2.ml	2093	mark_hits	3	0	0
 U	games/rhythm/TinyGuitarHero.ml	166	finished	1	0	0
 U	apps/office/TinyOpenDoc.ml	248	record	4	0	0
 U	languages/pascal/Pascal_compile.ml	99	advance	59	0	0
@@ -22597,7 +22601,6 @@ U	games/puzzle/AiConnect4.ml	142	key	0	0	0
 U	examples/PhysicsElastic.ml	121	dot	3	0	0
 U	games/shmup/TinyZaxxon.ml	149	block	1	0	0
 U	appkits/modeler/Modeler.mli	35	Sphere	0	0	0
-U	launcher/codemap/Map_v2.ml	1504	facts_cache	3	0	0
 U	games/strategy/TinyXCOM.ml	98	starts	2	0	0
 U	apps/internet/TinyMosaic.ml	128	Tokens	4	0	0
 U	appkits/modeler/Modeler.ml	112	resize	0	0	0
@@ -22625,6 +22628,7 @@ U	apps/office/TinyWord.ml	139	page_h	3	0	0
 U	games/strategy/TinyWarcraft2.ml	70	map	7	0	0
 U	games/platform/TinyBraid.ml	442	view_play	1	0	0
 U	games/arcade/TinyPacman.ml	263	of_mind	1	0	0
+U	launcher/codemap/Map_v2.ml	1164	derived_file	1	0	0
 U	examples/Gui7Timer.ml	98	view	1	0	0
 U	apps/graphics/TinyPhotoshop.ml	122	doc	7	0	0
 U	libs/graphics/videos/yuv/Yuv.ml	12	Studio	6	1	1
@@ -22852,7 +22856,6 @@ U	games/puzzle/TinyCrush.ml	62	model	4	0	0
 U	libs/audio/formats/mod/Mod.ml	115	u16	4	0	0
 U	playground/ways/Povray.mli	125	sphere	0	0	0
 U	games/puzzle/TinyTetris.ml	164	model	12	0	0
-U	launcher/codemap/Map_v2.ml	2222	layer_of	1	0	0
 U	games/puzzle/TinyPortal.ml	154	pressed_button	2	0	0
 U	apps/media/TinyWinamp.ml	257	samples_of	5	0	0
 U	games/flight/TinyDescent.ml	173	to_eye	2	0	0
@@ -23021,7 +23024,6 @@ U	libs/physics/2d/Integrate.mli	43	Verlet	0	0	0
 U	gamekits/isometric/Isometric.mli	139	at	0	0	0
 U	languages/pascal/Pcode.ml	41	program	1	25	7
 U	appkits/indexed/Indexed.ml	27	square	0	0	0
-U	launcher/codemap/Map_v2.ml	1671	geom_of	3	0	0
 U	libs/core/time/Julian.mli	37	days_in_month	0	0	0
 U	appkits/cad/Cad_geom.mli	54	curve	8	0	0
 U	games/platform/TinyPrinceOfPersia.ml	94	dungeon	1	0	0
@@ -23054,7 +23056,6 @@ U	libs/graphics/3d/geometry/Vec3.mli	30	centroid	0	0	0
 U	launcher/codemap/Map_v2.ml	264	name	7	0	0
 U	playground/Playground.ml	553	Bad_status	2	0	0
 U	games/shmup/Asteroid.ml	169	asteroid_size	2	0	0
-U	launcher/codemap/Map_v2.ml	676	unit_ties	1	0	0
 U	appkits/editor/Tui_turbo.ml	46	Editing	19	0	0
 U	launcher/codemap/Code_map_base.ml	542	label	2	26	3
 U	libs/graphics/videos/avi/Avi.mli	71	to_string	0	0	0
@@ -23100,6 +23101,7 @@ U	games/fps/TinyTeardown.ml	88	Wood	2	0	0
 U	languages/smalltalk/St_ast.mli	24	L_symbol	0	0	0
 U	examples/Gui7Flight.ml	89	update	1	0	0
 U	apps/music/Voice_dx7.mli	159	output_level	0	0	0
+U	launcher/codemap/Map_v2.ml	1579	anatomy_shapes	1	0	0
 U	games/fps/TinyQuake.ml	164	rock	1	0	0
 U	libs/core/Set_.mli	79	diff	0	0	0
 U	games/fps/TinyCyberSled.ml	283	cpu_missile	1	0	0
@@ -23236,7 +23238,6 @@ U	games/strategy/TinyDune2.ml	161	shell	2	0	0
 U	appkits/richtext/Page.mli	120	height	0	0	0
 U	games/shmup/TinyMissileCommand.ml	225	view_game	2	0	0
 U	games/platform/TinyLodeRunner.ml	269	text	11	0	0
-U	launcher/codemap/Map_v2.ml	1782	peek_shapes	1	0	0
 U	languages/css/Selectors.mli	69	Class	0	0	0
 U	appkits/browser/Browser_script.mli	141	changed	0	0	0
 U	languages/jsonnet/Jsonnet_lexer.mli	35	Error	0	0	0
@@ -23560,6 +23561,7 @@ U	languages/ocaml/Parse_ml.ml	274	cons_pattern	3	0	0
 U	apps/devtools/TinySmalltalk80.ml	421	rows	4	0	0
 U	libs/audio/effects/Drive.mli	70	t	2	0	0
 U	games/cards/TinySolitaire.ml	190	play	1	0	0
+U	launcher/codemap/Map_v2.ml	1756	glows	2	0	0
 U	games/strategy/TinyXCOM.ml	378	new_turn	1	0	0
 U	apps/pim/Pim_todo.ml	31	change	4	0	0
 U	launcher/menu/Tinybox_menu.mli	29	No_sources	0	0	0
@@ -24008,7 +24010,6 @@ U	apps/music/Voice_dx7.ml	388	scale_curve	2	0	0
 U	libs/audio/instruments/Sequencer.ml	52	stop	0	3	3
 U	appkits/editor/Emacs_editor.ml	30	t	10	2	1
 U	launcher/web/Tinybox_web.ml	55	fetch_sources	1	0	0
-U	launcher/codemap/Map_v2.ml	1913	query_hits	2	0	0
 U	languages/formula/Formula.ml	26	Formula	1	4	3
 U	games/puzzle/AiOthello.ml	159	square_size	5	0	0
 U	libs/crypto/Rsa.mli	31	verify_pkcs1	0	0	0
@@ -24228,7 +24229,6 @@ U	examples/AiSteering.ml	39	Flee	3	0	0
 U	games/sports/TinySensibleSoccer.ml	128	formation	1	0	0
 U	languages/lisp/Lisp.mli	44	to_list	0	0	0
 U	appkits/document/Clipboard.ml	16	get	0	5	3
-U	launcher/codemap/Map_v2.ml	1019	entry_of_opti	1	0	0
 U	games/arcade/Pong.ml	65	game	2	0	0
 U	libs/audio/effects/Phaser.mli	46	settings	2	0	0
 U	libs/audio/formats/midi/Midi.ml	44	track_events	1	0	0
@@ -24274,7 +24274,6 @@ U	apps/music/Voice_juno.ml	137	lfo_hz	1	0	0
 U	apps/devtools/TinySmalltalk80.ml	253	Debug	3	0	0
 U	apps/pim/Pim_address.ml	23	labels	3	0	0
 U	games/adventure/myst/Myst_island.mli	36	place	1	0	0
-U	launcher/codemap/Map_v2.ml	2192	layer_names	2	0	0
 U	games/puzzle/TinyTetris.ml	162	Playing	7	0	0
 U	languages/css/Computed.mli	58	Space_between	0	0	0
 U	appkits/modeler/Modeler.mli	31	v3	14	0	0
@@ -24524,7 +24523,6 @@ U	libs/physics/2d/Collide.ml	62	centroid	3	0	0
 U	playground/apis/Juice3d.ml	66	step	0	3	2
 U	languages/pascal/Pdebug.mli	38	line	0	0	0
 U	libs/physics/2d/Resolve.ml	17	resistance	2	2	1
-U	launcher/codemap/Map_v2.ml	1608	legend	1	0	0
 U	games/adventure/myst/Myst_island.ml	34	marble_white	7	0	0
 U	languages/ocaml/Parse_ml.ml	115	lpath	12	0	0
 U	playground/apis/Audio.ml	113	hit	0	43	28
@@ -24618,7 +24616,6 @@ U	playground/apis/Physics3d.ml	209	attracted_by	0	0	0
 U	libs/physics/2d/Solver.ml	12	options	1	0	0
 U	libs/graphics/3d/raytrace/Raytrace.ml	24	Lambert	4	0	0
 U	launcher/codemap/Codemap.ml	537	run_directory	0	1	1
-U	launcher/codemap/Map_v2.ml	2345	street_title_at	0	1	1
 U	libs/audio/instruments/Voicing.ml	48	glide_to	0	3	2
 U	apps/music/Voice_rhodes.ml	28	initial	5	1	1
 U	appkits/editor/Tui_turbo.ml	17	Open	3	0	0
@@ -24679,6 +24676,7 @@ U	appkits/modeler/Modeler.ml	83	rot_x	2	0	0
 U	games/adventure/TinyZork.ml	240	directions	2	0	0
 U	playground/apis/Physics3d.ml	150	bounce	2	0	0
 U	appkits/browser/layout/Box_layout.mli	183	as_html_layout	0	0	0
+U	launcher/codemap/Map_v2.ml	2635	legend_row_at	0	1	1
 U	apps/music/TinyReBirth.ml	72	panel_theme	1	0	0
 U	games/strategy/TinyHamurabi.ml	195	prompt	11	0	0
 U	libs/graphics/2d/geometry/Affine.mli	44	rotate	0	0	0
@@ -24837,6 +24835,7 @@ U	games/strategy/TinyTowerDefense.ml	276	view_game	2	0	0
 U	libs/graphics/images/svg/Svg.ml	389	property	3	0	0
 U	games/strategy/TinyWarcraft2.ml	100	Footman	13	0	0
 U	appkits/browser/Browser_draw.ml	25	raised	4	0	0
+U	launcher/codemap/Map_v2.ml	2316	layer_shapes	1	0	0
 U	games/arcade/TinyCameltry.ml	248	main	0	0	0
 U	libs/audio/signal/Spectrum.mli	70	peak	0	0	0
 U	languages/javascript/Js_ast.ml	77	kind_to_string	2	0	0
@@ -24846,7 +24845,6 @@ U	libs/graphics/imaging/Layers.ml	15	transparent	0	1	1
 U	libs/terminal/Line_discipline.ml	17	Key	1	0	0
 U	games/racing/TinyOutRun.ml	62	Sign	2	0	0
 U	apps/cad/TinySketchpad.ml	623	app	1	0	0
-U	launcher/codemap/Map_v2.ml	835	line_lit	2	0	0
 U	playground/apis/Juice.mli	81	ease	21	0	0
 U	libs/crypto/Hkdf.mli	21	extract	0	0	0
 U	libs/gui/Text_edit.ml	64	split	3	0	0
@@ -25058,6 +25056,7 @@ U	launcher/native/Tinybox_native.ml	268	preview_pixels	1	0	0
 U	gamekits/cards/Cards.mli	99	under	0	0	0
 U	appkits/browser/Browser_page.ml	161	expand	3	0	0
 U	games/puzzle/TinyLemmings.ml	92	to_y	13	0	0
+U	launcher/codemap/Map_v2.ml	1549	facts_cache	3	0	0
 U	languages/smalltalk/St_parse.ml	287	primitive	2	0	0
 U	apps/music/Studio_opxy.mli	120	multiply	0	0	0
 U	playground/layers/Scene2d.mli	103	go	0	0	0
@@ -25108,7 +25107,6 @@ U	playground/apis/Ai.ml	47	flocking	0	1	1
 U	games/puzzle/Tetris.ml	361	Tick	2	0	0
 U	languages/css/Selectors.ml	42	Child	3	1	1
 U	games/adventure/myst/Myst_island.mli	60	find_card	0	0	0
-U	launcher/codemap/Map_v2.ml	1534	anatomy_shapes	1	0	0
 U	apps/pim/Pim_address.ml	69	list_buttons	2	0	0
 U	apps/graphics/TinyVisio.ml	93	master	3	0	0
 U	games/arcade/TinyFrogger.ml	96	field_right	5	0	0
@@ -25741,6 +25739,7 @@ U	appkits/diagram/Diagram.ml	223	bounds	1	6	1
 U	apps/music/Part_juno.ml	129	ink	2	0	0
 U	libs/audio/effects/Leslie.ml	16	drum_fast	1	0	0
 U	gamekits/racing/3d/Track3d.mli	154	forward	0	0	0
+U	launcher/codemap/Map_v2.ml	965	names_glow	2	0	0
 U	games/shmup/TinyZaxxon.ml	375	wall_shapes	1	0	0
 U	appkits/editor/Emacs_editor.ml	247	write	2	0	0
 U	libs/physics/2d/Kepler.mli	73	period	0	0	0
@@ -25811,6 +25810,7 @@ U	games/racing/TinyMicroMachines.ml	46	rows	2	0	0
 U	games/arcade/TinyPang.ml	101	item_kind	3	0	0
 U	playground/ways/Puzzlescript.ml	17	Right	6	0	0
 U	libs/audio/formats/abc/Abc.ml	243	is_field	1	0	0
+U	launcher/codemap/Map_v2.ml	1051	grounds	4	0	0
 U	languages/javascript/Js_lexer.mli	59	to_string	0	0	0
 U	games/platform/TinyMario.ml	213	fall_sound	1	0	0
 U	playground/ways/Karel.mli	74	world	0	0	0
@@ -26096,7 +26096,6 @@ U	apps/office/TinyOpenDoc.ml	253	next_path	1	0	0
 U	apps/graphics/TinyBlender.ml	374	boolean	3	0	0
 U	games/strategy/TinySimCity.ml	111	river	1	0	0
 U	libs/core/Color.ml	58	lightCharcoal	0	0	0
-U	launcher/codemap/Map_v2.ml	2139	marks_shapes	1	0	0
 U	games/fighting/TinyStreetFighter.ml	141	Fight	6	0	0
 U	languages/javascript/Js_ast.mli	66	let_kind	2	0	0
 U	games/fps/TinyMinecraft.ml	623	model	8	0	0
@@ -26530,7 +26529,6 @@ U	libs/audio/Synth.mli	136	duration	0	0	0
 U	languages/scheme/Scheme.ml	55	Constructor	7	0	0
 U	games/flight/TinyXpilot.ml	280	key	8	0	0
 U	languages/smalltalk/St_memory.ml	149	size	0	0	0
-U	launcher/codemap/Map_v2.ml	2407	match_preview	1	0	0
 U	playground/ways/Karel.ml	161	max_work	1	0	0
 U	launcher/menu/Tinybox_menu.ml	738	code_panel	1	0	0
 U	languages/html/Entities.ml	78	utf_8	4	0	0
@@ -26661,6 +26659,7 @@ U	launcher/codemap/Codemap.ml	49	is_config	1	0	0
 U	games/platform/TinyLodeRunner.ml	271	tile_shape	2	0	0
 U	apps/music/Voice_minimoog.ml	16	Sawtooth	7	0	0
 U	games/strategy/TinyHamurabi.ml	245	model	4	0	0
+U	launcher/codemap/Map_v2.ml	1105	placed_of	2	0	0
 U	languages/smalltalk/St_bitblt.mli	34	oop	2	0	0
 U	appkits/cad/Cad_drawing.mli	23	entity	5	0	0
 U	games/shmup/TinyRType.ml	125	waves	1	0	0
@@ -27228,6 +27227,7 @@ U	games/adventure/TinyAdventure.ml	153	in_gate	2	0	0
 U	libs/ai/learning/Grad.mli	65	value	0	0	0
 U	languages/scratch/Scratch_run.ml	14	Bool	14	0	0
 U	games/adventure/myst/Myst_island.ml	91	gear	1	0	0
+U	launcher/codemap/Map_v2.ml	2138	mark_hits	3	0	0
 U	apps/office/Part_sheet.mli	6	kind	0	0	0
 U	examples/gui4/Gui4Counter.ml	10	slot	0	0	0
 U	languages/pascal/Pcode.mli	76	Rln	0	0	0
@@ -27356,6 +27356,7 @@ U	games/shmup/TinyStarFox.ml	106	wall_height	2	0	0
 U	apps/graphics/TinyBlender.ml	282	viewport_progress	2	0	0
 U	appkits/diagram/Diagram.mli	105	bounds	0	0	0
 U	games/arcade/TinyLunarLander.ml	148	segments	6	0	0
+U	launcher/codemap/Map_v2.ml	2030	search_set	1	1	1
 U	languages/basic/Basic_run.mli	81	direct	0	0	0
 U	games/adventure/TinyZeldaLinkPast.ml	442	link_left	1	0	0
 U	playground/apis/Audio.mli	41	sound	78	0	0
@@ -27529,7 +27530,6 @@ U	games/racing/TinyMarioKart.ml	422	tile_of	2	0	0
 U	libs/gui/Mvu.ml	65	enabled	1	0	0
 U	languages/smalltalk/St_ast.ml	18	L_char	1	3	2
 U	apps/gamedev/TinyTiled.ml	235	main	0	0	0
-U	launcher/codemap/Map_v2.ml	2561	pick	0	0	0
 U	playground/platforms/web/Playground_platform.ml	954	phone_page	1	0	0
 U	languages/smalltalk/St_interp.mli	76	host	0	0	0
 U	games/arcade/TinyFrogger.ml	342	any_key	2	0	0
@@ -27846,6 +27846,7 @@ U	games/racing/TinyMarioKart64.ml	1315	Title	6	0	0
 U	playground/apis/Juice3d.mli	61	shake	0	0	0
 U	appkits/pushpull/Skp_infer.mli	29	On_edge	0	0	0
 U	libs/audio/formats/mod/Mod_player.mli	77	tick_samples	0	0	0
+U	launcher/codemap/Map_v2.ml	1093	placed_of_opti	1	0	0
 U	games/shmup/TinyRType.ml	120	hp_of	3	0	0
 U	appkits/diagram/Ortho_route.ml	16	vector	1	0	0
 U	games/arcade/TinyPang.ml	88	ball	6	0	0
@@ -27857,6 +27858,7 @@ U	playground/ways/Logo3d.ml	143	octahedron	1	0	0
 U	games/rpg/TinyGauntlet2.ml	587	view_minimap	1	0	0
 U	appkits/editor/Emacs_editor.ml	154	signal	13	0	0
 U	libs/audio/Space.ml	28	vec	8	9	1
+U	launcher/codemap/Map_v2.ml	2527	hit_spots	1	0	0
 U	launcher/codemap/Map_v2.ml	270	capital_line	6	0	0
 U	games/platform/TinyMarioGalaxy.ml	385	input_of	1	0	0
 U	examples/Gui7Cells.ml	98	slot	0	0	0
@@ -28142,7 +28144,6 @@ U	apps/pim/Pim_todo.ml	14	start	0	1	1
 U	games/sports/TinySpeedball2.ml	483	view_title	1	0	0
 U	languages/css/Selectors.mli	63	Enabled	0	0	0
 U	apps/internet/TinyChrome.ml	153	panel_top	6	0	0
-U	launcher/codemap/Map_v2.ml	588	unit_with_ties	0	2	1
 U	languages/lisp/Lisp.ml	20	to_list	1	9	2
 U	libs/gui/Retained.mli	109	window	0	0	0
 U	libs/crypto/Bignum.mli	53	to_hex	0	0	0
@@ -28451,7 +28452,6 @@ U	libs/terminal/Vt.mli	112	blank	0	0	0
 U	examples/PhysicsBounce3d.ml	50	comes_back_to	3	0	0
 U	playground/apis/Juice.mli	124	during	0	0	0
 U	playground/apis/Physics3d.ml	212	pulled_to	0	0	0
-U	launcher/codemap/Map_v2.ml	2439	hovered_bone	1	1	1
 U	games/rpg/TinyDungeonMaster.ml	616	app	1	0	0
 U	games/racing/TinyVirtuaRacing.ml	494	rock	1	0	0
 U	games/puzzle/TinyFez.ml	231	gravity	1	0	0
@@ -28626,7 +28626,6 @@ U	playground/apis/Physics3d.ml	283	debug	0	4	3
 U	appkits/indexed/Indexed.ml	12	t	9	3	1
 U	apps/media/Graphic_eq.mli	32	range	0	0	0
 U	playground/apis/Audio.ml	227	note_on	0	0	0
-U	launcher/codemap/Map_v2.ml	1985	search_set	1	1	1
 U	libs/graphics/font/Vga_font.ml	37	question	2	0	0
 U	apps/music/Studio_opxy.mli	103	scene	1	0	0
 U	apps/office/TinyOpenDoc.ml	113	resize	1	0	0
@@ -28644,7 +28643,6 @@ U	languages/javascript/Js_value.mli	63	closure	1	0	0
 U	appkits/indexed/Indexed.ml	24	brush	1	1	1
 U	libs/graphics/imaging/Mask.ml	106	subtract	0	1	1
 U	libs/core/time/Civil.ml	12	date	7	47	16
-U	launcher/codemap/Map_v2.ml	1801	peek_glow	1	0	0
 U	languages/css/Looks.mli	70	Center	0	0	0
 U	games/adventure/TinyAdventure.ml	162	Dead	5	0	0
 U	languages/pascal/Pcode.ml	18	Str	1	7	2
@@ -28800,7 +28798,6 @@ U	apps/office/TinyNLS.ml	88	Jump	6	0	0
 U	apps/music/Opxy_engine.mli	49	wavetable	0	0	0
 U	games/flight/TinyXpilot.ml	380	hit_walls	2	0	0
 U	appkits/astronomy/Ephemeris.ml	86	equatorial_of_ecliptic	2	0	0
-U	launcher/codemap/Map_v2.ml	1651	peek	4	0	0
 U	languages/jsonnet/Jsonnet_ast.ml	18	Str	0	1	1
 U	languages/c/Parse_c.ml	826	item	1	0	0
 U	playground/apis/Ai.ml	29	seek	0	1	1
@@ -28844,6 +28841,7 @@ U	libs/graphics/3d/raytrace/Transform.mli	58	identity	0	0	0
 U	apps/music/Part_voice.mli	26	make	0	0	0
 U	libs/audio/formats/mpeg_audio/Imdct.ml	13	cosines	3	0	0
 U	appkits/browser/Browser_script.ml	110	html_of	2	0	0
+U	launcher/codemap/Map_v2.ml	2267	layer_of	1	0	0
 U	games/platform/TinyMario.ml	296	walk2	2	0	0
 U	libs/audio/formats/mod/Mod_player.ml	95	seek	0	3	3
 U	appkits/browser/Browser_script.mli	110	eval	0	0	0
@@ -29569,6 +29567,7 @@ U	games/sports/TinyPinball3d.ml	109	bumper_kick	1	0	0
 U	games/racing/TinyMarioKart64.ml	350	tree_places	1	0	0
 U	games/arcade/TinyLunarLander.ml	325	dt	7	0	0
 U	libs/compression/Adler32.mli	36	string	0	0	0
+U	launcher/codemap/Map_v2.ml	465	names	4	0	0
 U	appkits/pushpull/Skp_model.mli	75	normal	0	0	0
 U	games/fps/TinyCyberSled.ml	497	arena	3	0	0
 U	apps/music/Rack_cable.ml	11	gravity	1	0	0
@@ -29740,7 +29739,6 @@ U	games/platform/TinyCeleste.ml	346	spikes	1	0	0
 U	apps/pim/TinyClock.ml	80	local_minute	2	0	0
 U	appkits/editor/Tui_turbo.ml	541	error_attrs	1	0	0
 U	languages/ocaml/Ast_ml.mli	40	Por	0	2	2
-U	launcher/codemap/Map_v2.ml	904	preview	2	0	0
 U	games/racing/TinyMarioKart64.ml	1131	bshell	3	0	0
 U	appkits/cad/Cad_edit.ml	46	around	2	0	0
 U	apps/devtools/TinyDrScheme.ml	218	machine	7	0	0
@@ -30187,6 +30185,7 @@ U	libs/networking/mail/Mime.ml	54	parts	1	0	0
 U	libs/audio/instruments/Svf.ml	30	chamberlin	1	0	0
 U	launcher/codemap/Code_guide.mli	108	t	14	0	0
 U	games/fighting/TinyStreetFighter.ml	76	Jab	3	0	0
+U	launcher/codemap/Map_v2.ml	2498	bone_card	1	0	0
 U	libs/audio/instruments/Sampler.ml	106	pad	0	2	1
 U	libs/networking/unix/Http_request.ml	197	result	0	1	1
 U	games/arcade/TinyBoomerangFu.ml	152	Hole	8	0	0
@@ -30261,12 +30260,10 @@ U	languages/css/Css_syntax.mli	52	Func	0	0	0
 U	playground/apis/Physics.ml	128	inertia	1	0	0
 U	games/arcade/TinySoldat.ml	135	intent	6	0	0
 U	apps/music/Rack_matrix.ml	15	position	2	0	0
-U	launcher/codemap/Map_v2.ml	2587	style	0	2	1
 U	appkits/file_menu/File_menu.ml	28	Nothing	14	14	13
 U	libs/audio/formats/abc/Abc.ml	99	field	2	0	0
 U	examples/PhysicsBoxes.ml	74	initial_model	1	0	0
 U	playground/Playground3d.mli	56	material	2	0	0
-U	launcher/codemap/Map_v2.ml	1119	derived_file	1	0	0
 U	apps/office/TinyNLS.ml	299	command_key	1	0	0
 U	playground/ways/Bigbang.mli	107	empty_scene	0	0	0
 U	playground/ways/Karel.ml	115	turn_off	0	2	2
@@ -30328,6 +30325,7 @@ U	games/rpg/TinyDiablo.ml	157	kind	1	0	0
 U	appkits/diagram/Diagram.ml	189	place_end	0	2	1
 U	libs/physics/2d/Shape.ml	13	Polygon_at	4	3	1
 U	libs/physics/3d/Hitbox3d.ml	55	support	0	2	1
+U	launcher/codemap/Map_v2.ml	2238	layer_count	0	1	1
 U	games/racing/TinyIgnition.ml	481	main	0	0	0
 U	games/arcade/TinyTronscroll.ml	160	new_rider	1	0	0
 U	games/fps/TinyMazeWar.ml	332	help	1	0	0
@@ -30397,6 +30395,7 @@ U	apps/music/Studio_op1.ml	241	gain	2	0	0
 U	games/arcade/TinySpacewar.ml	88	game	6	0	0
 U	games/adventure/TinyTombRaider.ml	623	Escaped	3	0	0
 U	apps/education/TinyStellarium.ml	105	model	4	0	0
+U	launcher/codemap/Map_v2.ml	1064	entry_of_opti	1	0	0
 U	languages/basic/Basic_parse.mli	89	Spc	0	0	0
 U	languages/ocaml/Ast_ml.mli	32	Pany	0	4	2
 U	appkits/nls/Nls_doc.ml	64	find	0	1	1
@@ -30451,7 +30450,6 @@ U	apps/music/Voice_minimoog.ml	93	switch	9	0	0
 U	apps/graphics/TinyMacPaint.ml	226	redo	3	0	0
 U	appkits/pushpull/Skp_model.mli	57	t	22	0	0
 U	libs/physics/3d/Broadphase3d.mli	122	widest_axis	0	0	0
-U	launcher/codemap/Map_v2.ml	717	hover_card	1	0	0
 U	playground/Playground.ml	619	MouseMoveBy	3	0	0
 U	libs/graphics/animation/Animation.ml	25	lerp_float	0	0	0
 U	games/shmup/TinyStarFox.ml	212	enemy_across	6	0	0
@@ -30474,7 +30472,6 @@ U	games/strategy/TinyDune2.ml	275	their_turn	1	0	0
 U	playground/Playground3d.ml	288	next_cached_id	2	0	0
 U	libs/crypto/Sha512.ml	17	k	1	0	0
 U	games/arcade/Snake.ml	41	position	4	0	0
-U	launcher/codemap/Map_v2.ml	2509	chosen_glow	1	0	0
 U	games/adventure/TinyGTA.ml	88	pitch	2	0	0
 U	games/platform/TinyDonkeyKong.ml	324	jumpman	2	0	0
 U	games/racing/TinyMarioKart64.ml	1133	battle	10	0	0
@@ -30506,11 +30503,11 @@ U	libs/audio/synthesis/Noise.ml	39	lcg	0	14	9
 U	games/arcade/TinyPacman.ml	529	ghost_top	2	0	0
 U	languages/scratch/Scratch_blocks.mli	56	Looks	0	0	0
 U	examples/Gui7Cells.ml	98	Recalc_label	2	0	0
+U	launcher/codemap/Map_v2.ml	1266	drawn_bones	4	0	0
 U	games/fps/TinyTeardown.ml	454	player	4	0	0
 U	appkits/editor/Emacs_editor.ml	108	line_start_at	7	0	0
 U	games/puzzle/AiOthello.ml	140	game	6	0	0
 U	playground/platforms/software/Playground_platform.ml	68	audio_view	5	0	0
-U	launcher/codemap/Map_v2.ml	2600	street_files	0	2	1
 U	launcher/codemap/Treemap.mli	62	of_paths	0	0	0
 U	games/rpg/TinyDiablo.ml	418	rock_side	2	0	0
 U	playground/Playground.ml	45	Time	5	55	34
@@ -30549,6 +30546,7 @@ U	libs/audio/Synth.ml	287	continue	1	1	1
 U	appkits/astronomy/Celestial.mli	99	of_vector	0	0	0
 U	languages/javascript/Js_eval.ml	26	outcome	2	0	0
 U	apps/education/TinyInteractivePhysics.ml	207	objs_of_world	3	0	0
+U	launcher/codemap/Map_v2.ml	2462	tour_banner	1	0	0
 U	apps/office/TinyLotus123.ml	530	ready	1	0	0
 U	playground/apis/Physics3d.ml	350	movable	11	0	0
 U	apps/music/Voice_cs80.ml	96	initial	5	0	0
@@ -30604,6 +30602,7 @@ U	games/fighting/TinyVirtuaFighter.ml	392	draw_fighter	2	0	0
 U	libs/graphics/imaging/Pixels.ml	14	copy	1	11	7
 U	examples/Spheres3d.ml	32	app	1	0	0
 U	apps/music/Studio_op1.mli	60	sound	2	0	0
+U	launcher/codemap/Map_v2.ml	1229	derived_dir	1	0	0
 U	apps/office/TinyOffice.ml	124	Drawing_doc	4	0	0
 U	libs/graphics/videos/mpeg_system/Mpeg_system.ml	12	stream	5	0	0
 U	games/fps/TinyTeardown.ml	120	centre	2	0	0
@@ -30628,7 +30627,6 @@ U	games/cards/TinySolitaire.ml	118	move_cards	1	0	0
 U	appkits/paint/Seed_fill.mli	31	area	0	0	0
 U	apps/education/TinyStellarium.ml	120	kind	1	0	0
 U	games/shmup/TinyDefender.ml	132	Mutant	3	0	0
-U	launcher/codemap/Map_v2.ml	414	capitals	1	0	0
 U	apps/music/Part_matrix.ml	21	gate_h	6	0	0
 U	appkits/editor/Tui_turbo.ml	130	set_lines	3	0	0
 U	launcher/codemap/Code_map_base.ml	593	lighter	0	13	3
@@ -30870,6 +30868,7 @@ U	languages/smalltalk/St_memory.ml	102	int_of	1	0	0
 U	playground/platforms/native/Playground3d_platform.ml	189	use_cache	4	0	0
 U	languages/hypertalk/Hypertalk.ml	339	send	0	2	2
 U	games/shmup/TinyRType.ml	101	start_cam	3	0	0
+U	launcher/codemap/Map_v2.ml	1047	ivory	5	0	0
 U	libs/physics/3d/Collide3d.mli	204	box_faces	0	0	0
 U	libs/graphics/2d/Fill.ml	48	make_edge	2	0	0
 U	apps/office/TinyHyperCard.ml	119	card_w	5	0	0
@@ -30893,7 +30892,6 @@ U	games/adventure/TinyGTA.ml	111	park	4	0	0
 U	apps/graphics/TinyBlender.ml	172	picture_size	2	0	0
 U	games/adventure/TinyTombRaider.ml	264	Air	6	0	0
 U	apps/music/Part_rhodes.ml	70	step_ui	2	0	0
-U	launcher/codemap/Map_v2.ml	1032	entry_of	9	0	0
 U	libs/audio/effects/Modulation.mli	17	Chorus	0	0	0
 U	games/puzzle/TinyPerspective.ml	210	play	13	0	0
 U	games/fps/TinyCyberSled.ml	705	main	0	0	0
@@ -30926,7 +30924,6 @@ U	apps/music/TinyReBirth.ml	223	playing	1	0	0
 U	launcher/codemap/Codemap.ml	297	view	1	2	2
 U	libs/audio/Synth.ml	163	running	6	1	1
 U	languages/javascript/Js_parse.mli	128	error	2	0	0
-U	launcher/codemap/Map_v2.ml	1968	search_hits	3	1	1
 U	games/fps/TinyTeardown.ml	88	material	6	0	0
 U	libs/audio/formats/mpeg_audio/Layer3.ml	418	create	0	1	1
 U	examples/Cubes3d.ml	35	view	1	0	0
@@ -30962,6 +30959,7 @@ U	libs/graphics/videos/mpeg1/Mpeg1.ml	53	frame	10	0	0
 U	games/racing/TinyIgnition.ml	431	clock	2	0	0
 U	apps/graphics/TinyPhotoshop.ml	76	Marquee	4	0	0
 U	apps/music/Voice_minimoog.mli	149	to_string	0	0	0
+U	launcher/codemap/Map_v2.ml	2265	layer_cache	2	0	0
 U	apps/office/TinyFrameMaker.ml	86	master	2	0	0
 U	languages/css/Looks.mli	70	Right	0	0	0
 U	playground/ways/Logo3d.ml	39	roll_right	0	2	1
@@ -30977,6 +30975,7 @@ U	appkits/editor/Tui_emacs.ml	37	editor	15	0	0
 U	languages/css/Selectors.ml	285	matches	0	3	2
 U	games/sports/TinyPinball3d.ml	86	lane_x	3	0	0
 U	games/platform/TinyLodeRunner.ml	160	dig	2	0	0
+U	launcher/codemap/Map_v2.ml	609	unit_at	0	0	0
 U	games/adventure/TinyManiacMansion.ml	327	inventory_at	2	0	0
 U	appkits/browser/layout/Box_layout.ml	930	relative	3	0	0
 U	launcher/codemap/Code_map.mli	101	lines_of	0	1	1
@@ -31234,7 +31233,6 @@ U	launcher/codemap/Code_view.ml	119	update	0	1	1
 U	libs/gui/Look.ml	22	label	0	4	4
 U	games/platform/TinySuperMeatBoy.ml	103	wall	10	0	0
 U	libs/graphics/images/jpeg/Jpeg.ml	160	put_block	1	0	0
-U	launcher/codemap/Map_v2.ml	2193	layer_count	0	1	1
 U	languages/smalltalk/St_interp.ml	210	send_to_class	3	0	0
 U	games/puzzle/TinyPortal.ml	323	blue	2	0	0
 U	languages/basic/Basic_parse.mli	135	Direct	0	0	0
@@ -31295,7 +31293,6 @@ U	appkits/slides/Outline.mli	26	parse	0	0	0
 U	languages/javascript/Js_value.ml	38	make	4	0	0
 U	apps/gamedev/TinyTiled.ml	185	cell	2	0	0
 U	games/racing/TinyOutRun.ml	227	view	1	0	0
-U	launcher/codemap/Map_v2.ml	2538	labels	0	0	0
 U	libs/core/Sub.ml	96	event_to_msgopt	0	2	2
 U	games/sports/TinyPinball3d.ml	88	pivot_y	2	0	0
 U	games/adventure/TinyJourney.ml	117	scene	1	0	0
@@ -31657,6 +31654,7 @@ U	playground/ways/Povray.ml	64	fold	3	0	0
 U	games/adventure/TinyTombRaider.ml	476	step_air	1	0	0
 U	apps/music/Voice_tb303.ml	120	locks	1	0	0
 U	games/fps/TinyBattlezone3d.ml	49	v3	1	0	0
+U	launcher/codemap/Map_v2.ml	2013	search_hits	3	1	1
 U	languages/c/Lexer_c.mll	49	hex	0	0	0
 U	gamekits/adventure/Adventure.mli	44	place	4	0	0
 U	apps/music/Rack_device.ml	12	Cv	3	0	0
@@ -32241,6 +32239,7 @@ U	languages/css/Looks.ml	166	Rule	1	0	0
 U	launcher/codemap/Code_search.ml	27	hit	9	38	5
 U	appkits/sheet_view/Sheet_view.mli	32	geometry	5	0	0
 U	playground/platforms/native_common/Input_script.mli	72	button_changes	0	0	0
+U	launcher/codemap/Map_v2.ml	1691	peek_images	2	0	0
 U	games/adventure/TinyMetalGearSolid.ml	329	alert	6	0	0
 U	appkits/pim/Ics.ml	14	event	4	41	4
 U	appkits/editor/Tui_turbo.ml	538	reserved_attrs	1	0	0
@@ -32359,7 +32358,7 @@ U	examples/AudioPiano.ml	97	help	1	0	0
 U	apps/music/Voice_tb303.mli	100	create	0	0	0
 U	languages/scratch/Scratch_run.ml	14	value	6	0	0
 U	appkits/astronomy/Celestial.mli	100	to_vector	0	0	0
-U	launcher/codemap/Code_rank.ml	247	places	0	1	1
+U	launcher/codemap/Code_rank.ml	247	places	0	2	1
 U	examples/AudioAliasing.ml	45	state	2	0	0
 U	libs/networking/netcode/Checksum.mli	45	fnv1a	0	0	0
 U	apps/office/TinyHyperCard.ml	143	field_named	2	0	0
@@ -32750,7 +32749,6 @@ U	libs/graphics/gpu/Mesh_cache.ml	16	t	4	1	1
 U	examples/LogoFractals3d.ml	185	app	1	0	0
 U	libs/core/Sub.ml	6	SubMouseUp	2	0	0
 U	games/shmup/TinyRobotron.ml	152	next	6	0	0
-U	launcher/codemap/Map_v2.ml	335	capitals_drawn	1	0	0
 U	libs/networking/unix/Tls_client.ml	123	receive	3	0	0
 U	apps/music/Voice_cs80.mli	163	instrument	0	0	0
 U	games/puzzle/TinyIncredibleMachine.ml	336	marks	1	0	0
@@ -32839,6 +32837,7 @@ U	apps/devtools/TinySmalltalk80.ml	260	File_out	2	0	0
 U	libs/networking/unix/Tls_client.ml	71	connect	2	1	1
 U	games/puzzle/TinyPortal2D.ml	334	bounce_off_tiles	1	0	0
 U	libs/networking/unix/Http_server.ml	89	step	0	1	1
+U	launcher/codemap/Map_v2.ml	1827	peek_shapes	1	0	0
 U	launcher/codemap/Code_file.ml	34	plain	1	0	0
 U	examples/Mario.ml	92	update_physics	1	0	0
 U	games/puzzle/AiGo.ml	62	size	17	0	0
@@ -32937,6 +32936,7 @@ U	launcher/codemap/Code_facts.ml	19	header	2	0	0
 U	scripts/build/file_to_base64_ml.ml	22	encode	1	0	0
 U	libs/networking/unix/Relay.mli	50	listen	0	0	0
 U	appkits/cad/Cad_session.ml	252	arc3	2	0	0
+U	launcher/codemap/Map_v2.ml	2184	marks_shapes	1	0	0
 U	gamekits/adventure/Adventure.ml	12	Carried	2	11	2
 U	libs/graphics/images/png/Png.ml	89	header	2	0	0
 U	launcher/codemap/Codemap.ml	175	make	0	1	1
@@ -33610,7 +33610,7 @@ B	libs/ai/search/Mcts.ml	62	thinking	games/puzzle/AiGo.ml	1
 B	playground/apis/Physics3d.ml	137	upright	examples/PhysicsFloat3d.ml	1
 B	playground/apis/Physics3d.ml	137	upright	games/fps/TinyHalfLife2.ml	1
 B	libs/audio/Tape.ml	46	moving	apps/music/TinyOp1.ml	3
-B	launcher/codemap/Code_rank.ml	18	place	launcher/codemap/Map_v2.ml	2
+B	launcher/codemap/Code_rank.ml	18	place	launcher/codemap/Map_v2.ml	3
 B	libs/graphics/3d/raytrace/Csg.ml	14	Union	libs/graphics/3d/raytrace/Solid.ml	1
 B	libs/ai/bots/Sense.ml	37	focus	games/arcade/TinyBoomerangFu.ml	1
 B	languages/pascal/Pdebug.ml	133	pause_for	appkits/editor/Tui_turbo.ml	1
@@ -34335,7 +34335,7 @@ B	appkits/draw/Figure.ml	10	point	apps/graphics/TinyMacDraw.ml	5
 B	appkits/draw/Figure.ml	10	point	appkits/draw_view/Figure_shapes.mli	2
 B	appkits/draw/Figure.ml	10	point	appkits/draw/Drawing.mli	1
 B	appkits/draw/Figure.ml	10	point	apps/office/Part_drawing.ml	1
-B	launcher/codemap/Code_map_base.ml	235	rank_if_counted	launcher/codemap/Map_v2.ml	5
+B	launcher/codemap/Code_map_base.ml	235	rank_if_counted	launcher/codemap/Map_v2.ml	8
 B	languages/smalltalk/St_ast.ml	17	L_float	languages/smalltalk/St_primitives.ml	1
 B	languages/smalltalk/St_ast.ml	17	L_float	languages/smalltalk/St_parse.ml	2
 B	languages/smalltalk/St_ast.ml	17	L_float	languages/smalltalk/St_compile.ml	1
@@ -35197,7 +35197,7 @@ B	gamekits/rhythm/Rhythm.ml	99	difficulties	games/rhythm/TinyRockBand.ml	2
 B	gamekits/rhythm/Rhythm.ml	99	difficulties	games/rhythm/TinyGuitarHero.ml	3
 B	playground/apis/Audio.ml	200	change_loop	games/puzzle/Tetris.ml	1
 B	launcher/codemap/Code_guide.ml	302	anchor_name	launcher/codemap/Code_map.ml	1
-B	launcher/codemap/Code_guide.ml	302	anchor_name	launcher/codemap/Map_v2.ml	4
+B	launcher/codemap/Code_guide.ml	302	anchor_name	launcher/codemap/Map_v2.ml	5
 B	languages/css/Selectors.ml	43	complex	languages/css/Css.mli	3
 B	languages/css/Selectors.ml	43	complex	languages/css/Cascade.ml	5
 B	languages/css/Selectors.ml	43	complex	languages/css/Cascade.mli	2
@@ -35223,6 +35223,7 @@ B	languages/html/Forms.ml	13	value	appkits/browser/Browser_page.mli	3
 B	libs/physics/3d/Body3d.ml	38	inertia_world	libs/physics/3d/Energy3d.ml	2
 B	libs/physics/3d/Body3d.ml	38	inertia_world	libs/physics/3d/Integrate3d.ml	2
 B	libs/physics/3d/Body3d.ml	38	inertia_world	playground/apis/Physics3d.ml	1
+B	launcher/codemap/Map_v2.ml	633	unit_with_ties	launcher/codemap/Code_map.ml	2
 B	libs/physics/2d/Collide.ml	176	contact	playground/apis/Physics.ml	1
 B	appkits/nls/Nls_doc.ml	55	number	apps/office/TinyNLS.ml	4
 B	launcher/codemap/Code_guide.ml	34	dir_note	launcher/codemap/Code_facts.ml	3
@@ -35275,6 +35276,7 @@ B	playground/ways/Povray.ml	339	pick	games/adventure/myst/Myst_island.ml	1
 B	languages/javascript/Js_ast.ml	38	Expr	languages/javascript/Js_parse.ml	2
 B	languages/pascal/Pascal_lexer.ml	24	tokens	languages/pascal/Pascal_compile.ml	1
 B	launcher/codemap/Code_rank.ml	12	use	launcher/codemap/Code_facts.ml	1
+B	launcher/codemap/Map_v2.ml	2390	street_title_at	launcher/codemap/Code_map.ml	1
 B	libs/physics/2d/Springs.ml	39	chain	examples/PhysicsElastic.ml	1
 B	gamekits/puzzle/Sokoban.ml	130	Unsolvable	games/puzzle/TinySokobanEd.ml	1
 B	apps/media/Graphic_eq.ml	28	create	apps/media/TinyWinamp.ml	1
@@ -36568,6 +36570,7 @@ B	libs/audio/signal/Signal.ml	21	samples	libs/audio/signal/Mix.ml	1
 B	libs/audio/signal/Signal.ml	21	samples	libs/audio/effects/Reverb.ml	3
 B	libs/audio/signal/Signal.ml	21	samples	apps/music/Voice_tr808.ml	5
 B	libs/audio/signal/Signal.ml	21	samples	libs/audio/Synth.ml	8
+B	launcher/codemap/Map_v2.ml	2024	search_named	launcher/codemap/Code_map.ml	1
 B	libs/juice/Squash.ml	15	landing	playground/apis/Juice.ml	1
 B	languages/ocaml/Ast_ml.mli	111	typedecl	languages/ocaml/Parse_ml.ml	1
 B	playground/layers/Camera3d.ml	14	pose	games/arcade/TinyTron3d.ml	1
@@ -37665,7 +37668,6 @@ B	apps/music/Studio_rebirth.ml	122	set_patch	apps/music/TinyReBirth.ml	1
 B	libs/audio/instruments/Sampler.ml	16	sample	apps/music/Studio_opxy.ml	1
 B	libs/audio/instruments/Sampler.ml	16	sample	apps/music/Op1_engine.mli	2
 B	libs/audio/instruments/Sampler.ml	16	sample	apps/music/Op1_engine.ml	4
-B	launcher/codemap/Map_v2.ml	2587	style	launcher/codemap/Code_map.ml	2
 B	appkits/file_menu/File_menu.ml	28	Nothing	apps/office/TinyPowerPoint.ml	1
 B	appkits/file_menu/File_menu.ml	28	Nothing	apps/graphics/TinyMacDraw.ml	1
 B	appkits/file_menu/File_menu.ml	28	Nothing	apps/office/TinyExcel.ml	1
@@ -37850,6 +37852,7 @@ B	libs/gui/Immediate.ml	243	selector	playground/apis/Gui.ml	1
 B	appkits/diagram/Diagram.ml	189	place_end	apps/graphics/TinyVisio.ml	2
 B	libs/physics/2d/Shape.ml	13	Polygon_at	playground/apis/Physics.ml	3
 B	libs/physics/3d/Hitbox3d.ml	55	support	libs/physics/3d/Collide3d.ml	2
+B	launcher/codemap/Map_v2.ml	2238	layer_count	launcher/codemap/Code_map.ml	1
 B	libs/audio/Space.ml	43	air_cutoff	playground/apis/Audio3d.ml	1
 B	libs/graphics/images/ilbm/Ilbm.ml	45	encode	apps/graphics/TinyDeluxePaint.ml	1
 B	appkits/astronomy/Celestial.ml	20	to_hours	apps/education/TinyStellarium.ml	2
@@ -37930,6 +37933,7 @@ B	libs/audio/signal/Signal.ml	17	mono	playground/platforms/software/Playground_p
 B	libs/audio/signal/Signal.ml	17	mono	libs/audio/Synth.ml	1
 B	libs/audio/signal/Signal.ml	17	mono	libs/audio/Mixer.ml	1
 B	apps/music/Studio_opxy.ml	63	patch	apps/music/TinyOpxy.ml	2
+B	launcher/codemap/Map_v2.ml	2478	anchor_line	launcher/codemap/Code_map.ml	2
 B	languages/scheme/Scheme_image.ml	23	Overlay	languages/scheme/Scheme_prims.ml	1
 B	languages/scheme/Scheme.ml	27	Closure	languages/scheme/Scheme_eval.ml	4
 B	playground/apis/Ai.ml	31	arrive	examples/AiSteering.ml	1
@@ -38164,7 +38168,6 @@ B	libs/networking/netcode/Lockstep.ml	51	stats	playground/apis/Multiplayer.ml	1
 B	apps/music/Voice_dx7.ml	236	knobs	apps/music/Part_dx7.ml	1
 B	languages/c/Ast_c.mli	69	Imacro	languages/c/Parse_c.ml	2
 B	languages/c/Ast_c.mli	69	Imacro	languages/c/Highlight_c.ml	3
-B	launcher/codemap/Map_v2.ml	1979	search_named	launcher/codemap/Code_map.ml	1
 B	gamekits/brawler/Hitbox.ml	15	place	games/fighting/TinyFinalFight.ml	1
 B	gamekits/brawler/Hitbox.ml	15	place	games/fighting/TinyStreetFighter.ml	3
 B	gamekits/brawler/Hitbox.ml	15	place	games/fighting/TinyVirtuaFighter.ml	2
@@ -38953,7 +38956,7 @@ B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Map_graph.ml	22
 B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Code_street.ml	1
 B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Map_classic.ml	2
 B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Map_streets.ml	1
-B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Map_v2.ml	113
+B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Map_v2.ml	114
 B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Map_atlas.ml	3
 B	launcher/codemap/Code_map_base.ml	35	@	launcher/codemap/Codemap.ml	1
 B	libs/code/highlight/Highlight_code.ml	70	all	launcher/codemap/Code_map_base.ml	1
@@ -39204,7 +39207,6 @@ B	launcher/codemap/Code_map.ml	292	entries	launcher/codemap/Codemap.ml	5
 B	languages/smalltalk/St_compile.ml	514	recompile	languages/smalltalk/St_primitives.ml	1
 B	libs/networking/protocols/Wire.ml	26	put_u8	libs/networking/netcode/Snapshot.ml	2
 B	libs/networking/protocols/Wire.ml	26	put_u8	libs/networking/netcode/Inputs.ml	3
-B	launcher/codemap/Map_v2.ml	2600	street_files	launcher/codemap/Code_map.ml	2
 B	playground/Playground.ml	45	Time	games/fps/TinyMinecraft.ml	1
 B	playground/Playground.ml	45	Time	games/arcade/TinyBreakout.ml	4
 B	playground/Playground.ml	45	Time	playground/apis/Juice3d.ml	1
@@ -40486,7 +40488,6 @@ B	libs/ai/learning/Backprop.ml	69	step	examples/AiDigits.ml	1
 B	playground/ways/Bigbang.ml	64	above	examples/BigBangWorm.ml	1
 B	playground/ways/Bigbang.ml	64	above	apps/devtools/TinyDrScheme.ml	1
 B	playground/ways/Bigbang.ml	64	above	examples/BigBangRocket.ml	1
-B	launcher/codemap/Map_v2.ml	2362	hovered_match	launcher/codemap/Code_map.ml	1
 B	libs/audio/formats/mpeg_audio/Polyphase.ml	78	synthesize	libs/audio/formats/mpeg_audio/Mpeg_audio.ml	1
 B	appkits/editor/Tui_vi.ml	648	program	launcher/native/Tinybox.ml	1
 B	appkits/editor/Tui_vi.ml	648	program	apps/devtools/TinyVi.ml	1
@@ -41234,7 +41235,6 @@ B	apps/internet/Site.ml	12	about	apps/internet/TinyMosaic.ml	1
 B	launcher/codemap/Codemap.ml	297	view	launcher/codemap/bench/codemap_bench.ml	1
 B	launcher/codemap/Codemap.ml	297	view	launcher/menu/Tinybox_menu.ml	1
 B	libs/audio/Synth.ml	163	running	libs/audio/Mixer.ml	1
-B	launcher/codemap/Map_v2.ml	1968	search_hits	launcher/codemap/Code_map.ml	1
 B	launcher/codemap/Map_graph.ml	122	update	launcher/codemap/Codemap.ml	1
 B	libs/audio/formats/mpeg_audio/Layer3.ml	418	create	libs/audio/formats/mpeg_audio/Mpeg_audio.ml	1
 B	languages/ocaml/Ast_ml.mli	108	Ieval	languages/ocaml/Parse_ml.ml	2
@@ -42081,6 +42081,7 @@ B	libs/graphics/core/Framebuffer.ml	56	get_rgb	apps/media/Our_media.ml	1
 B	libs/graphics/core/Framebuffer.ml	56	get_rgb	playground/platforms/software/Playground3d_platform.ml	2
 B	libs/graphics/core/Framebuffer.ml	56	get_rgb	launcher/native/Tinybox_native.ml	1
 B	libs/graphics/core/Framebuffer.ml	56	get_rgb	libs/graphics/core/Matting.ml	2
+B	launcher/codemap/Map_v2.ml	2407	hovered_match	launcher/codemap/Code_map.ml	1
 B	appkits/embed/Component.ml	24	placeholder	apps/office/TinyOpenDoc.ml	1
 B	appkits/embed/Component.ml	24	placeholder	apps/office/Part_drawing.ml	1
 B	languages/css/Css.ml	45	page_sheet	appkits/browser/Browser_page.ml	2
@@ -42524,6 +42525,7 @@ B	libs/networking/mail/Mail.ml	27	parse	libs/networking/mail/Mbox.ml	1
 B	libs/networking/mail/Mail.ml	27	parse	libs/networking/mail/Mime.ml	2
 B	libs/networking/mail/Mail.ml	27	parse	libs/networking/unix/Mail_server.ml	1
 B	languages/javascript/Js_ast.ml	51	Empty	languages/javascript/Js_parse.ml	1
+B	launcher/codemap/Map_v2.ml	2632	style	launcher/codemap/Code_map.ml	2
 B	languages/basic/Basic_parse.ml	74	is_string	languages/basic/Basic_run.ml	6
 B	gamekits/rhythm/Rhythm.ml	132	muted	games/rhythm/TinyRockBand.ml	3
 B	gamekits/rhythm/Rhythm.ml	132	muted	games/rhythm/TinyGuitarHero.ml	1
@@ -42925,6 +42927,7 @@ B	launcher/codemap/Code_map_base.ml	347	mix	launcher/codemap/Map_classic.ml	2
 B	launcher/codemap/Code_map_base.ml	347	mix	launcher/codemap/Map_streets.ml	7
 B	launcher/codemap/Code_map_base.ml	347	mix	launcher/codemap/Map_v2.ml	6
 B	launcher/codemap/Code_map_base.ml	347	mix	launcher/codemap/Map_atlas.ml	3
+B	launcher/codemap/Map_v2.ml	2484	hovered_bone	launcher/codemap/Code_map.ml	1
 B	examples/gui4/Gui4.ml	18	places	examples/gui4/Gui4Counter.ml	1
 B	examples/gui4/Gui4.ml	18	places	examples/gui4/Gui4Flight.ml	1
 B	examples/gui4/Gui4.ml	18	places	examples/gui4/Gui4Timer.ml	1
@@ -43025,7 +43028,6 @@ B	launcher/codemap/Treemap.ml	41	fold_singletons	launcher/codemap/Code_map_base.
 B	libs/gui/Look.ml	188	context_box	libs/gui/Mvu.ml	3
 B	libs/gui/Look.ml	188	context_box	libs/gui/Immediate.ml	1
 B	libs/gui/Look.ml	188	context_box	libs/gui/Retained.ml	1
-B	launcher/codemap/Map_v2.ml	2193	layer_count	launcher/codemap/Code_map.ml	1
 B	libs/graphics/imaging/Mask.ml	16	all	apps/graphics/TinyPhotoshop.ml	6
 B	appkits/cad/Cad_snap.ml	15	Midpoint	apps/cad/TinyAutoCAD.ml	1
 B	libs/networking/netcode/Inputs.ml	59	desync	libs/networking/netcode/Rollback.ml	1
@@ -44016,6 +44018,7 @@ B	appkits/richtext/Page.ml	287	glyphs	apps/office/TinyOffice.ml	1
 B	appkits/richtext/Page.ml	287	glyphs	apps/office/TinyHyperCard.ml	1
 B	appkits/richtext/Page.ml	287	glyphs	apps/office/TinyWord.ml	2
 B	libs/networking/mail/Mail.ml	58	set	apps/internet/TinyEudora.ml	3
+B	launcher/codemap/Map_v2.ml	2147	mark_groups	launcher/codemap/Code_map.ml	1
 B	libs/graphics/2d/geometry/Vec2.ml	16	scale	libs/physics/2d/Shape.ml	1
 B	libs/graphics/2d/geometry/Vec2.ml	16	scale	libs/physics/2d/Collide.ml	9
 B	libs/graphics/2d/geometry/Vec2.ml	16	scale	libs/graphics/2d/Stroke.ml	1
@@ -44463,6 +44466,7 @@ B	playground/apis/Gui.ml	94	label_size	examples/GuiEditor.ml	2
 B	playground/apis/Gui.ml	94	label_size	examples/Gui7Timer.ml	3
 B	playground/apis/Gui.ml	94	label_size	apps/pim/TinyCalendar.ml	2
 B	playground/apis/Gui.ml	94	label_size	examples/Gui7Flight.ml	1
+B	launcher/codemap/Map_v2.ml	2030	search_set	launcher/codemap/Code_map.ml	1
 B	languages/javascript/Js_ast.ml	19	Array	languages/javascript/Js_parse.ml	1
 B	launcher/codemap/Code_map_base.ml	443	paint_code	launcher/codemap/Map_classic.ml	1
 B	launcher/codemap/Code_map_base.ml	443	paint_code	launcher/codemap/Map_streets.ml	1
@@ -44556,7 +44560,6 @@ B	apps/music/Voice_tr808.ml	436	t	apps/music/Studio_rebirth.mli	1
 B	apps/music/Voice_tr808.ml	436	t	apps/music/Studio_rebirth.ml	2
 B	apps/music/Voice_tr808.ml	436	t	apps/music/Part_tr808.mli	2
 B	apps/music/Voice_tr808.ml	436	t	apps/music/Part_tr808.ml	3
-B	launcher/codemap/Map_v2.ml	2590	legend_row_at	launcher/codemap/Code_map.ml	1
 B	appkits/money/Reconcile.ml	13	Missing	apps/pim/TinyQuicken.ml	1
 B	languages/javascript/Js_value.ml	50	get_own	languages/javascript/Js_eval.ml	3
 B	languages/javascript/Js_value.ml	50	get_own	languages/javascript/Js_builtins.ml	4
@@ -44712,7 +44715,7 @@ B	libs/core/Basics.ml	9	/	games/rhythm/TinyGuitarHero.ml	7
 B	libs/core/Basics.ml	9	/	games/arcade/TinyPong.ml	4
 B	libs/core/Basics.ml	9	/	apps/music/TinyHammond.ml	1
 B	libs/core/Basics.ml	9	/	games/sports/TinyPinball.ml	22
-B	launcher/codemap/Code_guide.ml	13	item	launcher/codemap/Map_v2.ml	10
+B	launcher/codemap/Code_guide.ml	13	item	launcher/codemap/Map_v2.ml	13
 B	playground/Playground3d.ml	440	split	games/fps/TinyCyberSled.ml	1
 B	playground/Playground3d.ml	440	split	games/racing/TinyMarioKart64.ml	2
 B	playground/Playground3d.ml	440	split	playground/apis/Multiplayer3d.ml	1
@@ -45277,6 +45280,7 @@ B	libs/graphics/3d/geometry/Ray.ml	21	at	libs/graphics/3d/raytrace/Raytrace.ml	1
 B	libs/graphics/3d/geometry/Ray.ml	21	at	libs/graphics/3d/raytrace/Solid.ml	3
 B	apps/graphics/photos/Photos.mli	1	blue_marble_jpg	apps/graphics/TinyPhotoshop.ml	3
 B	libs/graphics/3d/raytrace/Solid.ml	76	surface	libs/graphics/3d/raytrace/Raytrace.ml	1
+B	launcher/codemap/Map_v2.ml	2013	search_hits	launcher/codemap/Code_map.ml	1
 B	languages/jsonnet/Jsonnet_ast.ml	22	Array	languages/jsonnet/Jsonnet.ml	3
 B	languages/jsonnet/Jsonnet_ast.ml	22	Array	languages/jsonnet/Jsonnet_parse.ml	2
 B	appkits/richtext/Rich.ml	81	style_at	appkits/richtext/Page.ml	1
@@ -45336,7 +45340,6 @@ B	apps/music/Panel.ml	37	shapes	apps/music/Part_mixer.ml	1
 B	apps/music/Panel.ml	37	shapes	apps/music/Part_hammond.ml	1
 B	apps/music/Panel.ml	37	shapes	apps/music/Part_rhodes.ml	1
 B	apps/music/Panel.ml	37	shapes	apps/music/Part_dx7.ml	1
-B	launcher/codemap/Map_v2.ml	2102	mark_groups	launcher/codemap/Code_map.ml	1
 B	playground/apis/Gui.ml	134	draw	apps/office/TinyPowerPoint.ml	3
 B	playground/apis/Gui.ml	134	draw	apps/music/TinyTR808.ml	1
 B	playground/apis/Gui.ml	134	draw	apps/music/TinyReface.ml	1
@@ -48608,7 +48611,7 @@ B	playground/Playground.ml	144	Ngon	playground/platforms/web/Playground_platform
 B	playground/Playground.ml	144	Ngon	playground/apis/Juice.ml	3
 B	playground/Playground.ml	144	Ngon	playground/platforms/native/Shape_render_native.ml	1
 B	languages/basic/Basic_parse.ml	29	Expr	languages/basic/Basic_run.ml	1
-B	launcher/codemap/Code_search.ml	45	starts	launcher/codemap/Map_v2.ml	14
+B	launcher/codemap/Code_search.ml	45	starts	launcher/codemap/Map_v2.ml	15
 B	launcher/codemap/Code_search.ml	45	starts	launcher/codemap/Codemap.ml	2
 B	languages/ocaml/Parse_ml.ml	1171	parse	languages/ocaml/Highlight_ml.ml	1
 B	apps/music/Voice_minimoog.ml	35	patch	apps/music/Part_minimoog.ml	2
@@ -49300,7 +49303,6 @@ B	launcher/codemap/Code_view.ml	274	glow_at	launcher/codemap/Map_v2.ml	3
 B	languages/css/Looks.ml	83	color_of_string	appkits/browser/Browser_page.ml	2
 B	libs/networking/tls/Tls13.ml	273	received	libs/networking/unix/Tls_client.ml	1
 B	languages/scratch/Scratch_blocks.ml	14	Num	languages/scratch/Scratch_text.ml	2
-B	launcher/codemap/Map_v2.ml	2091	mark_colours	launcher/codemap/Code_map.ml	2
 B	apps/music/Studio_reason.ml	17	hardware_device	apps/music/TinyReason.ml	1
 B	libs/code/highlight/Highlight_code.ml	136	reference	launcher/codemap/Code_names.mli	2
 B	libs/code/highlight/Highlight_code.ml	136	reference	launcher/codemap/Code_names.ml	3
@@ -49342,7 +49344,6 @@ B	playground/apis/Physics3d.ml	83	body	examples/StarCollector3d.ml	2
 B	playground/apis/Physics3d.ml	83	body	examples/PhysicsWalk3d.ml	2
 B	playground/apis/Physics3d.ml	83	body	games/sports/TinyPinball3d.ml	6
 B	playground/apis/Physics3d.ml	83	body	games/platform/TinyMario64.ml	1
-B	launcher/codemap/Map_v2.ml	588	unit_with_ties	launcher/codemap/Code_map.ml	2
 B	apps/pim/Palm.ml	93	center	apps/pim/TinyPalmPilot.ml	1
 B	languages/lisp/Lisp.ml	20	to_list	languages/lisp/Lisp_eval.ml	8
 B	languages/lisp/Lisp.ml	20	to_list	appkits/editor/Tui_emacs.ml	1
@@ -49426,7 +49427,6 @@ B	gamekits/crush/Crush.ml	69	cell	games/puzzle/TinyCrush.ml	1
 B	gamekits/crush/Crush.ml	69	cell	games/puzzle/TinyCrush3d.ml	1
 B	libs/core/Set.ml	2	insert	playground/Playground.ml	1
 B	libs/gui/Immediate.ml	351	context_menu	examples/gui4/Gui4Circles.ml	1
-B	launcher/codemap/Map_v2.ml	2433	anchor_line	launcher/codemap/Code_map.ml	2
 B	languages/basic/Basic_parse.ml	23	Call	languages/basic/Basic_run.ml	2
 B	apps/media/Media.ml	12	kind	apps/media/TinyMediaPlayer.ml	1
 B	apps/media/Media.ml	12	kind	apps/media/TinyWinamp.ml	2
@@ -49605,7 +49605,7 @@ B	libs/networking/netcode/Prediction.ml	54	model	playground/apis/Multiplayer.ml	
 B	playground/apis/Ai_debug.ml	69	thoughts	examples/AiDebug.ml	1
 B	appkits/sheet/Sheet.ml	257	recalculate	apps/office/TinyLotus123.ml	2
 B	appkits/sheet/Sheet.ml	257	recalculate	apps/office/TinyVisiCalc.ml	2
-B	launcher/codemap/Code_rank.ml	247	places	launcher/codemap/Map_v2.ml	1
+B	launcher/codemap/Code_rank.ml	247	places	launcher/codemap/Map_v2.ml	2
 B	appkits/stroke_text/Stroke_text.ml	18	metrics	apps/office/TinyPowerPoint.ml	2
 B	appkits/stroke_text/Stroke_text.ml	18	metrics	apps/graphics/TinyMacDraw.ml	1
 B	appkits/stroke_text/Stroke_text.ml	18	metrics	appkits/draw_view/Figure_shapes.ml	1
@@ -50953,7 +50953,6 @@ B	playground/Playground.ml	612	msg	playground/ways/Universe.ml	1
 B	playground/Playground.ml	612	msg	playground/ways/Bigbang.mli	1
 B	libs/physics/3d/Resolve3d.ml	22	resistance	libs/physics/3d/Solver3d.ml	3
 B	libs/physics/3d/Resolve3d.ml	22	resistance	libs/physics/3d/Joint3d.ml	1
-B	launcher/codemap/Map_v2.ml	2439	hovered_bone	launcher/codemap/Code_map.ml	1
 B	appkits/pim/Ics.ml	38	unfold	appkits/pim/Vcard.ml	1
 B	launcher/codemap/Code_labels.ml	33	label	launcher/codemap/Map_streets.ml	7
 B	languages/scheme/Scheme_image.ml	19	Text	languages/scheme/Scheme_prims.ml	1
@@ -51081,6 +51080,7 @@ B	playground/Playground3d.ml	369	default_rendering	games/fps/TinyHalfLife2.ml	1
 B	playground/Playground3d.ml	369	default_rendering	games/fps/TinyWolfenstein3d.ml	1
 B	playground/Playground3d.ml	369	default_rendering	playground/platforms/web/Playground3d_platform.ml	1
 B	playground/Playground3d.ml	369	default_rendering	games/platform/TinyMario64.ml	1
+B	launcher/codemap/Map_v2.ml	2136	mark_colours	launcher/codemap/Code_map.ml	2
 B	languages/basic/Basic_parse.ml	31	lvalue	languages/basic/Basic_run.ml	2
 B	appkits/sheet/Sheet.ml	252	Rows	apps/office/TinyLotus123.ml	1
 B	appkits/sheet/Sheet.ml	252	Rows	apps/office/TinyVisiCalc.ml	2
@@ -51447,7 +51447,6 @@ B	playground/apis/Physics3d.ml	283	debug	examples/StarCollector3d.ml	1
 B	playground/apis/Physics3d.ml	283	debug	examples/PhysicsWalk3d.ml	1
 B	appkits/indexed/Indexed.ml	12	t	apps/graphics/TinyDeluxePaint.ml	3
 B	libs/graphics/3d/Cull.ml	12	faces_camera	libs/graphics/3d/Render.ml	1
-B	launcher/codemap/Map_v2.ml	1985	search_set	launcher/codemap/Code_map.ml	1
 B	libs/ai/learning/Matrix.ml	16	init	libs/ai/learning/Backprop.ml	2
 B	appkits/modeler/Modeler.ml	12	v3	appkits/modeler/Modeler_view.mli	5
 B	languages/ocaml/Token_ml.ml	12	kind	languages/ocaml/Highlight_ml.ml	1
@@ -51459,6 +51458,7 @@ B	gamekits/maze/Grid_move.ml	20	grid	games/arcade/TinyPacman.ml	1
 B	gamekits/maze/Grid_move.ml	20	grid	games/arcade/TinyBomberman.ml	1
 B	gamekits/maze/Grid_move.ml	20	grid	gamekits/maze/Chase.mli	3
 B	gamekits/maze/Grid_move.ml	20	grid	examples/AiGhosts.ml	1
+B	launcher/codemap/Map_v2.ml	2645	street_files	launcher/codemap/Code_map.ml	2
 B	libs/gui/Immediate.ml	301	progress	examples/gui4/Gui4Timer.ml	1
 B	libs/gui/Immediate.ml	301	progress	playground/apis/Gui.ml	1
 B	libs/graphics/gpu/Mesh_cache.ml	16	t	playground/platforms/web/Playground3d_platform.ml	1
@@ -53165,7 +53165,6 @@ B	apps/office/Part_sheet.ml	97	load	apps/office/TinyOffice.ml	1
 B	apps/office/Part_sheet.ml	97	load	apps/office/TinyFrameMaker.ml	1
 B	playground/apis/Ai.ml	238	links	playground/apis/Ai_debug.ml	1
 B	launcher/codemap/Codemap.ml	537	run_directory	launcher/native/Tinybox.ml	1
-B	launcher/codemap/Map_v2.ml	2345	street_title_at	launcher/codemap/Code_map.ml	1
 B	apps/music/Studio_op1.ml	50	initial	apps/music/Studio_opxy.ml	1
 B	apps/music/Studio_op1.ml	50	initial	apps/music/TinyOp1.ml	1
 B	libs/audio/instruments/Voicing.ml	48	glide_to	apps/music/Voice_minimoog.ml	2
@@ -53361,6 +53360,7 @@ B	apps/pim/Palm.ml	115	rect	apps/pim/Pim_date_book.ml	3
 B	libs/networking/netcode/Rollback.ml	132	model	playground/apis/Multiplayer.ml	1
 B	apps/internet/Our_mail.ml	15	nicknames	apps/internet/TinyEudora.ml	1
 B	libs/networking/netcode/Lockstep.ml	14	t	playground/apis/Multiplayer.ml	1
+B	launcher/codemap/Map_v2.ml	2635	legend_row_at	launcher/codemap/Code_map.ml	1
 B	languages/scheme/Scheme.ml	119	display	languages/scheme/Scheme_prims.ml	3
 B	languages/scheme/Scheme.ml	119	display	languages/scheme/Scheme_eval.ml	1
 B	apps/media/Media.ml	73	media	apps/media/TinyMediaPlayer.ml	3
@@ -54664,7 +54664,7 @@ L	examples/AiSteering.ml	playground/Playground.mli	18
 L	games/fps/TinyWolfenstein.ml	libs/core/Program.ml	1
 L	libs/graphics/2d/Magnifier.mli	libs/graphics/core/Framebuffer.ml	1
 L	games/strategy/TinySimCity.ml	playground/layers/Scene2d.ml	7
-L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_rank.ml	14
+L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_rank.ml	16
 L	appkits/indexed/Cycling.ml	libs/graphics/images/ilbm/Ilbm.ml	4
 L	examples/PhysicsSpin3d.ml	playground/Playground.ml	12
 L	apps/office/TinyOffice.ml	libs/core/Set_.ml	2
@@ -58888,7 +58888,7 @@ L	games/adventure/TinyMyst.ml	playground/Playground.ml	27
 L	libs/graphics/imaging/Scale.mli	libs/graphics/imaging/Pixels.ml	8
 L	apps/media/TinyMediaPlayer.ml	libs/gui/Widget.ml	1
 L	apps/internet/Tube.ml	apps/media/Our_media.ml	1
-L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_search.ml	52
+L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_search.ml	53
 L	appkits/editor/Emacs_editor.mli	languages/lisp/Lisp.ml	1
 L	libs/graphics/2d/Fill.mli	libs/graphics/core/Framebuffer.ml	3
 L	apps/music/Voice_tb303.ml	libs/audio/instruments/Vco.ml	3
@@ -59374,7 +59374,7 @@ L	apps/devtools/Scratch_ide.ml	libs/core/Set_.ml	1
 L	examples/PhysicsSpin3d.ml	libs/physics/3d/Integrate3d.ml	13
 L	apps/office/TinyOffice.ml	apps/office/Part_text.ml	4
 L	languages/jsonnet/Jsonnet.mli	languages/json/Json.ml	1
-L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_map_base.ml	659
+L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_map_base.ml	663
 L	gamekits/puzzle/Sokoban.ml	playground/layers/Tilemap.ml	11
 L	apps/music/Rack_matrix.ml	apps/music/Rack_device.ml	3
 L	playground/platforms/software/Playground_platform.ml	playground/apis/Audio.ml	3
@@ -59420,7 +59420,7 @@ L	apps/graphics/TinyPhotoshop.ml	libs/graphics/imaging/Pixels.ml	5
 L	games/rhythm/TinyDDR.ml	libs/core/Program.ml	1
 L	libs/physics/2d/Integrate.mli	libs/physics/2d/Force.ml	5
 L	libs/graphics/images/Image_decode.ml	libs/graphics/images/png/Png.ml	2
-L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_guide.ml	89
+L	launcher/codemap/Map_v2.ml	launcher/codemap/Code_guide.ml	93
 L	apps/devtools/TinyDrScheme.ml	languages/scheme/Scheme_step.ml	2
 L	examples/PhysicsSpin3d.ml	libs/physics/3d/Energy3d.ml	4
 L	languages/postscript/Ps_machine.ml	languages/postscript/Ps_lexer.ml	3
@@ -59725,7 +59725,6 @@ R	games/adventure/TinyZelda.ml	360	4	0	2	15	0
 R	games/puzzle/TinyCrush.ml	62	4	0	4	2	0
 R	libs/audio/effects/Dynamics.ml	94	3	1	1	40	2
 R	playground/apis/Physics3d.ml	71	2	0	2	8	0
-R	launcher/codemap/Map_v2.ml	1985	10	3	4	11	1
 R	languages/smalltalk/St_compile.ml	75	1	0	1	12	0
 R	playground/platforms/software/Playground_platform.ml	101	6	0	1	26	0
 R	apps/pim/TinyCalendar.ml	214	3	0	2	35	0
@@ -59793,7 +59792,6 @@ R	languages/ocaml/Parse_ml.ml	671	1	0	1	33	0
 R	playground/ways/Povray.ml	323	5	0	3	6	0
 R	games/racing/TinyIgnition.ml	481	2	0	1	3	0
 R	games/platform/TinyRick.ml	383	4	0	2	15	0
-R	launcher/codemap/Map_v2.ml	406	10	0	4	8	0
 R	languages/javascript/Js_ast.ml	35	0	1	0	2	1
 R	launcher/codemap/Code_map.ml	1381	1	2	1	9	2
 R	games/shmup/TinyStarFox.ml	240	2	0	2	22	0
@@ -59882,7 +59880,6 @@ R	launcher/codemap/walk/Code_walk.ml	16	0	2	0	2	2
 R	games/puzzle/TinyWitness.ml	382	5	0	3	1	0
 R	games/fps/TinyTeardown.ml	478	9	0	3	4	0
 R	games/arcade/TinyPacman.ml	355	3	0	3	4	0
-R	launcher/codemap/Map_v2.ml	752	14	0	4	41	0
 R	playground/apis/Multiplayer3d.ml	36	6	0	3	17	0
 R	games/racing/TinyMarioKart64.ml	1637	4	0	2	22	0
 R	apps/devtools/Scratch_ide.mli	50	5	0	2	3	0
@@ -59924,7 +59921,6 @@ R	apps/music/TinyTR808.ml	51	3	0	2	7	0
 R	libs/networking/protocols/Wire.ml	18	0	3	0	5	2
 R	appkits/document/Clipboard.ml	14	0	1	0	1	3
 R	libs/compression/Inflate.ml	62	0	1	0	3	1
-R	launcher/codemap/Map_v2.ml	1184	10	0	5	37	0
 R	libs/networking/unix/Udp.mli	44	1	0	1	3	0
 R	playground/Playground3d.ml	470	0	1	0	5	57
 R	appkits/richtext/Rich.ml	97	1	2	1	1	7
@@ -59958,14 +59954,12 @@ R	apps/music/Voice_tr808.ml	183	0	1	0	6	1
 R	libs/audio/effects/Modulated_delay.ml	12	0	1	0	2	1
 R	gamekits/brawler/3d/Skeleton.mli	120	2	0	2	3	0
 R	playground/platforms/web/Playground_platform.ml	1175	6	1	2	261	1
-R	launcher/codemap/Map_v2.ml	1903	1	0	1	10	0
 R	apps/music/TinyOpxy.ml	65	1	0	1	10	0
 R	languages/javascript/Js_value.ml	44	0	1	0	4	3
 R	playground/layers/Camera2d.mli	210	1	0	1	20	0
 R	apps/pim/Palm.ml	76	0	2	0	15	9
 R	games/platform/TinyJoust.ml	333	3	0	2	8	0
 R	libs/physics/3d/Quat.ml	81	1	2	1	4	3
-R	launcher/codemap/Map_v2.ml	423	15	0	4	139	0
 R	apps/music/Studio_opxy.ml	49	0	1	0	12	1
 R	apps/music/Voice_rhodes.ml	45	2	1	2	2	1
 R	apps/graphics/TinyBlender.ml	611	1	0	1	1	0
@@ -60226,7 +60220,6 @@ R	games/racing/TinySSX.ml	113	2	0	2	4	0
 R	games/platform/TinyPrinceOfPersia.ml	311	1	0	1	8	0
 R	libs/physics/2d/Body.mli	50	1	0	1	2	0
 R	libs/networking/tls/Tls13.ml	274	0	2	0	2	1
-R	launcher/codemap/Map_v2.ml	1012	10	0	4	5	0
 R	games/platform/TinyCeleste.ml	344	1	0	1	1	0
 R	apps/music/TinyOpxy.ml	331	1	0	1	1	0
 R	launcher/codegen/make_tinybox_data.ml	62	1	0	1	11	0
@@ -60353,7 +60346,6 @@ R	games/arcade/TinyMarbleMadness.ml	719	5	0	3	11	0
 R	libs/networking/protocols/Wire.ml	84	0	1	0	5	1
 R	games/racing/TinySuperOffRoad.ml	472	1	0	1	2	0
 R	apps/media/TinyMediaPlayer.ml	387	4	0	2	7	0
-R	launcher/codemap/Map_v2.ml	1506	11	0	4	28	0
 R	playground/layers/Portal3d.ml	87	1	1	1	15	1
 R	libs/crypto/Bignum.ml	144	0	3	0	1	1
 R	games/adventure/TinyTombRaider.ml	850	2	0	2	6	0
@@ -60566,6 +60558,7 @@ R	apps/music/TinyReBirth.ml	54	1	0	1	3	0
 R	playground/apis/Juice3d.ml	175	2	0	2	4	0
 R	games/puzzle/TinyPortal2D.ml	471	3	0	2	12	0
 R	languages/smalltalk/St_bitblt.mli	44	1	0	1	2	0
+R	launcher/codemap/Map_v2.ml	1948	1	0	1	10	0
 R	games/strategy/TinyDune2.ml	364	3	0	2	1	0
 R	games/shmup/TinyRType.ml	218	3	0	2	15	0
 R	libs/core/Set.ml	2	1	2	1	1	1
@@ -60593,7 +60586,6 @@ R	libs/graphics/imaging/Hsl.ml	23	1	2	1	16	1
 R	libs/graphics/2d/geometry/Vec2.ml	20	0	4	0	2	13
 R	games/strategy/TinyCivilization.ml	635	5	0	4	13	0
 R	libs/graphics/2d/Line.mli	51	1	0	1	33	0
-R	launcher/codemap/Map_v2.ml	1060	11	0	4	2	0
 R	apps/music/TinyOpxy.ml	341	7	0	2	40	0
 R	appkits/sheet/Sheet.ml	281	1	1	1	5	1
 R	languages/scheme/Scheme.mli	65	1	0	1	2	0
@@ -60650,7 +60642,6 @@ R	apps/internet/TinyFirefox.ml	196	5	0	4	3	0
 R	apps/graphics/TinyBlender.ml	679	3	0	2	53	0
 R	playground/apis/Physics3d.mli	202	2	0	2	7	0
 R	libs/networking/unix/Http_server.ml	102	0	1	0	5	1
-R	launcher/codemap/Map_v2.ml	1092	10	0	4	19	0
 R	libs/physics/3d/Broadphase3d.ml	18	0	2	0	2	2
 R	examples/PhysicsSpin3d.ml	203	10	0	4	25	0
 R	apps/music/Voice_dx7.ml	289	0	1	0	85	3
@@ -60743,6 +60734,7 @@ R	libs/networking/unix/Mail_server.ml	145	2	0	2	3	0
 R	games/sports/TinyShufflePuck.ml	444	1	0	1	2	0
 R	games/platform/TinyDonkeyKong.ml	99	1	0	1	2	0
 R	gamekits/crush/Crush.mli	80	2	0	2	6	0
+R	launcher/codemap/Map_v2.ml	1910	12	0	4	8	0
 R	apps/music/Voice_tr808.ml	49	0	1	0	14	1
 R	playground/layers/Character3d.ml	69	9	0	5	10	0
 R	apps/music/Rack_device.mli	80	2	0	2	2	0
@@ -60888,6 +60880,7 @@ R	playground/Playground3d.ml	75	1	1	1	2	3
 R	games/sports/TinyTonyHawk.ml	447	1	0	1	4	0
 R	games/puzzle/TinyLemmings.ml	374	2	0	1	1	0
 R	appkits/editor/Tui_turbo.ml	535	1	0	1	1	0
+R	launcher/codemap/Map_v2.ml	1132	10	0	4	5	0
 R	examples/AiDigits.ml	105	2	0	1	8	0
 R	games/arcade/TinyBomberman.ml	644	7	0	4	78	0
 R	games/sports/TinyKickOff2.ml	152	3	0	2	12	0
@@ -60959,7 +60952,6 @@ R	apps/music/Part_dx7.ml	257	10	0	4	8	0
 R	appkits/browser/layout/Flex_layout.ml	102	0	1	0	27	1
 R	languages/smalltalk/St_class.mli	97	1	0	1	1	0
 R	playground/layers/Camera3d.ml	17	2	1	2	1	6
-R	launcher/codemap/Map_v2.ml	2091	0	3	0	2	1
 R	games/adventure/TinyManiacMansion.ml	442	5	0	2	32	0
 R	apps/cad/TinySketchup.ml	382	1	0	1	1	0
 R	libs/audio/formats/mpeg_audio/Mpeg_audio.mli	27	2	0	1	2	0
@@ -61016,6 +61008,7 @@ R	games/fps/TinyCyberSled.ml	572	11	0	4	19	0
 R	games/puzzle/TinyFez.ml	381	4	0	3	5	0
 R	apps/graphics/TinyBlender.ml	109	2	0	1	15	0
 R	appkits/sheet_view/Sheet_view.ml	57	1	1	1	12	1
+R	launcher/codemap/Map_v2.ml	1091	4	0	3	2	0
 R	libs/gui/Text.ml	44	0	4	0	8	4
 R	languages/scheme/Scheme_eval.ml	138	3	0	2	44	0
 R	apps/music/Studio_rebirth.ml	122	3	1	2	10	1
@@ -61187,7 +61180,6 @@ R	libs/crypto/Ecdsa.ml	78	1	0	1	8	0
 R	examples/Spheres3d.ml	22	4	0	2	8	0
 R	libs/audio/Synth.ml	125	2	0	2	12	0
 R	games/sports/TinyKickOff2.ml	138	3	0	2	4	0
-R	launcher/codemap/Map_v2.ml	2220	1	0	1	2	0
 R	games/arcade/TinyBomberman.ml	542	2	0	1	17	0
 R	launcher/codemap/Code_guide.ml	13	0	1	0	2	1
 R	playground/ways/Karel.mli	173	3	0	2	4	0
@@ -61673,7 +61665,6 @@ R	libs/graphics/images/svg/Svg.ml	249	3	0	2	100	0
 R	games/arcade/TinySpacewar.ml	70	3	0	2	2	0
 R	libs/audio/instruments/Sequencer.ml	24	0	3	0	13	3
 R	libs/gui/Grid.ml	72	0	1	0	13	1
-R	launcher/codemap/Map_v2.ml	2271	15	0	4	74	0
 R	apps/music/TinyReBirth.ml	218	3	0	2	3	0
 R	games/racing/TinyGranTrak10.ml	209	4	0	2	12	0
 R	games/fps/TinyHalfLife2.ml	86	8	0	4	4	0
@@ -61720,6 +61711,7 @@ R	playground/ways/Logo3d.ml	39	0	1	0	1	1
 R	libs/audio/instruments/Sampler.ml	95	2	1	2	6	2
 R	appkits/blocks/Block_layout.mli	59	1	0	1	1	0
 R	apps/office/TinyWord.ml	171	1	0	1	1	0
+R	launcher/codemap/Map_v2.ml	711	4	0	3	2	0
 R	examples/AudioTheremin.ml	37	3	0	2	17	0
 R	playground/ways/Bigbang.mli	130	1	0	1	10	0
 R	games/platform/TinyMarioGalaxy2D.ml	320	3	0	2	42	0
@@ -61728,7 +61720,6 @@ R	appkits/diagram/Diagram.ml	12	0	1	0	1	1
 R	games/puzzle/TinyStoneAge.ml	285	1	0	1	1	0
 R	games/adventure/TinyZeldaLinkPast.ml	220	3	0	2	3	0
 R	examples/PovrayQuake.ml	202	2	0	1	2	0
-R	launcher/codemap/Map_v2.ml	2362	13	1	4	45	1
 R	games/fighting/TinyStreetFighter.ml	242	4	0	2	22	0
 R	gamekits/platformer/Slope.mli	71	1	0	1	4	0
 R	playground/apis/Juice.ml	93	1	1	1	2	1
@@ -61740,6 +61731,7 @@ R	games/puzzle/TinySokoban.ml	87	4	0	4	1	0
 R	appkits/sheet_view/Sheet_view.ml	69	3	0	2	9	0
 R	apps/education/TinyStellarium.ml	458	5	0	3	2	0
 R	apps/graphics/TinyBlender.ml	233	6	0	3	31	0
+R	launcher/codemap/Map_v2.ml	1093	10	0	4	12	0
 R	games/adventure/TinyZork.ml	263	1	0	1	13	0
 R	libs/juice/Follow.ml	12	0	2	0	2	1
 R	languages/html/Forms.ml	68	2	0	2	5	0
@@ -61881,7 +61873,6 @@ R	apps/music/Studio_reason.ml	103	1	0	1	15	0
 R	apps/music/TinyMinimoog.ml	277	2	0	2	2	0
 R	apps/music/Panel.ml	21	7	1	4	16	7
 R	libs/physics/2d/Integrate.mli	58	3	0	2	3	0
-R	launcher/codemap/Map_v2.ml	2439	10	1	4	14	1
 R	apps/internet/TinyMosaic.ml	585	3	0	2	5	0
 R	playground/Playground3d.mli	82	1	0	1	7	0
 R	libs/physics/3d/Quat.ml	12	1	5	1	2	10
@@ -61905,6 +61896,7 @@ R	games/fighting/TinyFinalFight.ml	307	3	0	2	1	0
 R	launcher/codemap/Code_guide.ml	249	0	1	0	7	1
 R	games/shmup/Asteroid.ml	518	9	0	4	16	0
 R	appkits/diagram/Diagram.ml	46	1	0	1	12	0
+R	launcher/codemap/Map_v2.ml	2030	10	3	4	11	1
 R	apps/graphics/TinyBlender.ml	210	4	0	4	23	0
 R	launcher/native/Tinybox_native.mli	20	1	0	1	2	0
 R	playground/ways/Bigbang.mli	144	1	0	1	7	0
@@ -61966,7 +61958,6 @@ R	apps/music/TinyOp1.ml	154	1	0	1	1	0
 R	games/shmup/TinyGradius.ml	94	4	0	2	4	0
 R	games/racing/TinyMarioKart64.ml	1121	2	0	2	2	0
 R	games/platform/TinyDonkeyKong.ml	299	1	0	1	3	0
-R	launcher/codemap/Map_v2.ml	1651	4	0	3	20	0
 R	apps/pim/TinyQuicken.ml	339	2	0	2	1	0
 R	playground/ways/Teletype.ml	138	4	1	2	2	2
 R	libs/graphics/core/Pixelate.ml	47	0	1	0	5	2
@@ -62073,12 +62064,12 @@ R	examples/Gui7Crud.ml	153	5	0	3	1	0
 R	apps/music/Voice_tb303.ml	242	1	0	1	10	0
 R	launcher/codemap/Code_file.ml	32	0	3	0	2	4
 R	appkits/tui/Tui_snake.ml	47	1	0	1	7	0
+R	launcher/codemap/Map_v2.ml	1716	11	0	4	33	0
 R	languages/css/Css_values.ml	83	1	1	1	23	1
 R	games/sports/TinyKickOff2.ml	359	3	0	2	15	0
 R	games/rhythm/TinyRockBand.ml	294	1	0	1	4	0
 R	games/fps/TinyDoom.ml	498	1	0	1	2	0
 R	libs/physics/3d/Joint3d.ml	174	4	2	3	6	1
-R	launcher/codemap/Map_v2.ml	2093	10	0	4	9	0
 R	games/strategy/TinyXCOM.ml	473	4	0	2	17	0
 R	games/platform/TinyMarioWorld.ml	255	2	0	1	4	0
 R	games/arcade/TinyPacman.ml	448	4	0	1	37	0
@@ -62098,6 +62089,7 @@ R	playground/apis/Physics.ml	259	2	1	2	2	1
 R	libs/audio/synthesis/Fm.ml	15	1	0	1	7	0
 R	playground/layers/Camera2d.ml	88	2	1	1	4	3
 R	games/adventure/TinyTombRaider.ml	362	2	0	2	7	0
+R	launcher/codemap/Map_v2.ml	2462	14	0	4	16	0
 R	playground/apis/Physics.ml	325	1	1	1	3	1
 R	apps/pim/Palm.mli	95	2	0	2	3	0
 R	appkits/browser/Browser_picture.ml	14	12	2	3	16	2
@@ -62270,7 +62262,6 @@ R	games/shmup/TinyRobotron.ml	163	1	0	1	7	0
 R	games/platform/TinyPrinceOfPersia.ml	230	1	0	1	2	0
 R	apps/pim/Palm.ml	17	4	2	2	8	9
 R	appkits/draw/Figure.ml	95	0	1	0	7	2
-R	launcher/codemap/Map_v2.ml	613	11	0	4	53	0
 R	games/arcade/TinyPang.ml	84	1	0	1	2	0
 R	apps/office/TinyOpenDoc.ml	200	1	0	1	4	0
 R	games/racing/TinySSX.ml	138	4	0	3	9	0
@@ -62345,20 +62336,18 @@ R	libs/graphics/2d/Circle.ml	59	2	1	2	11	1
 R	apps/office/TinyOpenDoc.ml	226	2	0	1	13	0
 R	languages/c/Parse_c.ml	523	1	0	1	12	0
 R	libs/juice/Tween.ml	14	0	2	0	3	1
-R	launcher/codemap/Map_v2.ml	1996	14	0	4	36	0
 R	games/rpg/TinyRogue.ml	442	1	0	1	2	0
 R	games/fps/TinyBattlezone3d.ml	193	3	0	2	4	0
 R	apps/office/TinyPowerPoint.ml	109	2	0	1	1	0
 R	languages/javascript/Js_eval.ml	209	3	0	3	78	0
 R	games/flight/TinyElite.ml	104	1	0	1	2	0
+R	launcher/codemap/Map_v2.ml	1077	11	0	4	5	0
 R	libs/networking/protocols/Http.ml	169	0	2	0	6	2
-R	launcher/codemap/Map_v2.ml	570	10	0	4	18	0
 R	libs/audio/Sfx.ml	147	0	2	0	26	2
 R	apps/office/TinyWord.ml	104	7	0	2	20	0
 R	games/adventure/TinyAdventure.ml	401	6	0	3	22	0
 R	libs/graphics/3d/raytrace/Raytrace.ml	197	1	0	1	2	0
 R	launcher/menu/Tinybox_menu.ml	368	2	0	2	5	0
-R	launcher/codemap/Map_v2.ml	564	10	0	4	6	0
 R	games/platform/TinySuperMeatBoy.ml	90	1	0	1	4	0
 R	gamekits/isometric/Isometric.mli	155	1	0	1	5	0
 R	apps/music/Studio_op1.ml	160	2	1	2	1	1
@@ -62368,7 +62357,6 @@ R	launcher/catalogue/Catalogue.ml	131	0	1	0	2	1
 R	apps/media/Graphic_eq.ml	55	0	1	0	11	1
 R	games/fps/TinyCyberSled.ml	451	8	0	4	7	0
 R	libs/crypto/Bignum.ml	107	0	2	0	11	1
-R	launcher/codemap/Map_v2.ml	1223	18	0	4	281	0
 R	apps/music/Part_effect.ml	40	12	0	4	9	0
 R	apps/music/Part_tr808.ml	107	10	0	4	9	0
 R	games/sports/TinyKickOff2.ml	126	1	0	1	2	0
@@ -62443,6 +62431,7 @@ R	apps/pim/TinyCalendar.ml	179	2	0	2	4	0
 R	languages/lisp/Lisp_read.ml	34	1	1	1	2	1
 R	appkits/richtext/Page.ml	38	0	1	0	4	2
 R	playground/ways/Povray.ml	125	3	0	2	26	0
+R	launcher/codemap/Map_v2.ml	721	16	0	4	41	0
 R	games/fps/TinyMinecraft.ml	771	2	0	1	4	0
 R	apps/internet/TinyEudora.ml	1126	3	0	2	7	0
 R	launcher/codemap/Map_v2.mli	66	10	0	4	4	0
@@ -62521,6 +62510,7 @@ R	games/adventure/myst/Myst_island.ml	39	5	0	3	1	0
 R	appkits/browser/Browser_page.ml	161	4	0	2	27	0
 R	apps/devtools/TinyDrScheme.ml	627	3	0	1	16	0
 R	apps/music/Studio_opxy.ml	134	1	0	1	4	0
+R	launcher/codemap/Map_v2.ml	1164	10	0	4	65	0
 R	apps/devtools/TinyDrScheme.ml	610	1	0	1	1	0
 R	apps/graphics/TinyMacDraw.ml	453	3	0	2	10	0
 R	appkits/sketch/Relax.mli	53	1	0	1	3	0
@@ -62556,8 +62546,10 @@ R	playground/Playground.ml	209	0	1	0	3	3
 R	games/puzzle/TinySlingshot.ml	153	10	0	6	5	0
 R	playground/Playground.ml	677	0	2	0	2	15
 R	launcher/menu/Tinybox_menu.ml	763	4	0	2	36	0
+R	launcher/codemap/Map_v2.ml	2013	10	3	4	11	1
 R	gamekits/puzzle/Sokoban.ml	60	4	1	3	4	2
 R	examples/RaytracingSplit3d.ml	40	4	0	2	9	0
+R	launcher/codemap/Map_v2.ml	762	14	0	4	35	0
 R	games/rpg/TinyDungeonMaster.ml	288	2	0	1	22	0
 R	games/adventure/TinyGTA.ml	170	3	0	2	8	0
 R	games/arcade/TinyFrogger.ml	365	1	0	1	1	0
@@ -62604,7 +62596,6 @@ R	games/arcade/TinyFlappyBird.ml	418	1	0	1	1	0
 R	libs/ai/learning/Backprop.ml	106	1	0	1	3	0
 R	languages/scratch/Scratch_blocks.ml	166	0	1	0	2	2
 R	languages/css/Looks.ml	110	0	1	0	11	1
-R	launcher/codemap/Map_v2.ml	859	1	0	1	5	0
 R	games/arcade/TinyBreakout.ml	288	8	0	4	31	0
 R	playground/ways/Bigbang.mli	94	2	0	2	1	0
 R	examples/AudioTheremin.ml	54	5	0	3	1	0
@@ -62667,6 +62658,7 @@ R	launcher/codemap/Map_atlas.ml	86	1	0	1	12	0
 R	games/strategy/TinyDune2.ml	62	1	0	1	1	0
 R	apps/office/TinyPowerPoint.ml	197	3	0	2	10	0
 R	libs/audio/synthesis/Envelope.ml	61	1	2	1	29	5
+R	launcher/codemap/Map_v2.ml	2147	11	1	4	37	1
 R	apps/music/Op1_engine.ml	42	1	0	1	30	0
 R	games/shmup/TinyMissileCommand.ml	53	1	0	1	4	0
 R	playground/ways/Povray.ml	51	0	1	0	1	5
@@ -62690,7 +62682,6 @@ R	examples/LogoFractals3d.ml	83	5	0	3	17	0
 R	languages/c/Parse_c.ml	420	1	0	1	8	0
 R	apps/internet/TinyNetscape.ml	170	3	0	3	3	0
 R	games/adventure/TinyZeldaLinkPast.ml	596	3	0	2	2	0
-R	launcher/codemap/Map_v2.ml	920	17	0	4	82	0
 R	launcher/codemap/Map_streets.mli	42	3	0	2	2	0
 R	languages/css/Selectors.ml	285	2	4	2	7	2
 R	games/racing/TinySuperSprint.ml	274	2	0	2	2	0
@@ -62730,6 +62721,7 @@ R	apps/office/TinyVisiCalc.ml	150	2	0	2	12	0
 R	appkits/browser/Browser_tab.ml	427	2	0	2	6	0
 R	libs/graphics/3d/Project.mli	62	2	0	2	4	0
 R	games/adventure/TinyAdventure.ml	424	1	0	1	2	0
+R	launcher/codemap/Map_v2.ml	2390	12	1	4	17	1
 R	languages/smalltalk/St_compile.ml	19	0	2	0	9	4
 R	games/puzzle/TinySokobanEd.ml	158	1	0	1	11	0
 R	playground/apis/Physics3d.ml	340	1	1	1	6	7
@@ -62950,7 +62942,6 @@ R	games/platform/TinyJoust.ml	113	1	0	1	6	0
 R	examples/ImagePng.ml	83	4	0	4	2	0
 R	examples/PhysicsBounce.ml	34	3	0	2	5	0
 R	games/rpg/TinyHades.ml	112	2	0	2	4	0
-R	launcher/codemap/Map_v2.ml	1037	10	0	4	9	0
 R	playground/apis/Ai.ml	203	1	0	1	3	0
 R	libs/physics/3d/Contact3d.mli	30	1	0	1	7	0
 R	apps/office/Part_text.ml	102	4	0	2	13	0
@@ -63237,11 +63228,12 @@ R	libs/physics/2d/Shape.ml	43	1	1	1	18	1
 R	games/platform/TinyDonkeyKong.ml	337	3	0	2	8	0
 R	playground/apis/Juice.ml	80	1	1	1	1	1
 R	apps/music/Part_hammond.ml	75	10	0	5	12	0
+R	launcher/codemap/Map_v2.ml	1653	6	0	3	38	0
 R	libs/gui/Mvu.ml	200	3	2	2	8	5
 R	playground/Playground3d.mli	395	1	0	1	6	0
 R	libs/graphics/imaging/Blend.ml	12	0	2	0	2	2
 R	playground/Playground3d.ml	479	0	1	0	1	5
-R	launcher/codemap/Map_v2.ml	1865	12	0	4	8	0
+R	launcher/codemap/Map_v2.ml	2024	10	3	4	6	1
 R	games/puzzle/TinyWitness.ml	352	3	0	2	11	0
 R	games/racing/TinyVirtuaRacing.ml	1139	2	0	2	1	0
 R	games/racing/TinySupercars.ml	370	1	0	1	2	0
@@ -63295,7 +63287,6 @@ R	libs/audio/Synth.ml	12	1	3	1	2	1
 R	languages/javascript/Js_eval.mli	80	1	0	1	3	0
 R	playground/apis/Ai_debug.mli	28	3	0	2	6	0
 R	games/rhythm/TinyGuitarHero.ml	134	1	0	1	1	0
-R	launcher/codemap/Map_v2.ml	2587	3	1	2	3	1
 R	languages/css/Css_values.ml	106	1	0	1	54	0
 R	libs/physics/2d/Integrate.mli	61	3	0	2	7	0
 R	games/platform/TinyBraid.ml	271	2	0	2	5	0
@@ -63316,8 +63307,10 @@ R	appkits/editor/Tui_turbo.ml	541	1	0	1	1	0
 R	launcher/menu/Tinybox_menu.ml	572	3	0	2	5	0
 R	apps/music/TinyOpxy.ml	334	3	0	2	7	0
 R	games/racing/TinyMarioKart.ml	239	3	0	2	15	0
+R	launcher/codemap/Map_v2.ml	1064	10	0	4	13	0
 R	launcher/codemap/Code_view.ml	46	1	0	1	1	0
 R	languages/html/Dom.ml	44	0	1	0	10	2
+R	launcher/codemap/Map_v2.ml	1156	2	0	2	8	0
 R	games/flight/TinyElite.ml	516	3	0	2	10	0
 R	gamekits/brawler/3d/Skeleton.mli	73	2	0	2	8	0
 R	libs/graphics/animation/Animation.ml	15	1	0	1	2	0
@@ -63374,6 +63367,7 @@ R	libs/gui/Text_edit.ml	94	0	3	0	4	3
 R	appkits/draw/Drawing.ml	30	0	1	0	1	2
 R	appkits/document/Document.ml	16	0	1	0	13	1
 R	apps/music/TinyOp1.ml	121	1	0	1	3	0
+R	launcher/codemap/Map_v2.ml	2041	14	0	4	36	0
 R	playground/ways/Logo.ml	31	0	1	0	1	1
 R	libs/networking/unix/Connect.mli	3	1	0	1	2	0
 R	playground/ways/Karel.ml	112	0	1	0	1	2
@@ -63589,6 +63583,7 @@ R	playground/platforms/native/Playground_platform.ml	65	1	0	1	1	0
 R	languages/sexpr/Sexpr_read.ml	59	1	0	1	10	0
 R	games/adventure/TinyMetalGearSolid.ml	346	3	0	3	2	0
 R	games/racing/TinyOutRun.ml	188	4	0	3	3	0
+R	launcher/codemap/Map_v2.ml	797	14	0	4	41	0
 R	apps/graphics/TinyMacPaint.ml	177	1	0	1	7	0
 R	apps/music/Part_voice.ml	51	9	0	4	17	0
 R	games/adventure/TinyAloneInTheDark.ml	84	2	0	2	17	0
@@ -63605,6 +63600,7 @@ R	examples/InteractiveCube3d.ml	34	5	0	2	38	0
 R	games/shmup/TinyZaxxon.ml	419	3	0	2	46	0
 R	libs/gui/Retained.ml	77	0	2	0	1	2
 R	playground/ways/Povray.ml	25	0	1	0	9	9
+R	launcher/codemap/Map_v2.ml	2554	14	0	4	21	0
 R	languages/scheme/Scheme_eval.mli	84	2	0	2	4	0
 R	libs/physics/3d/Hitbox3d.mli	55	2	0	2	2	0
 R	libs/graphics/3d/raytrace/Raytrace.ml	427	1	1	1	14	4
@@ -63625,6 +63621,7 @@ R	games/shmup/TinyInvaders.ml	216	3	0	2	9	0
 R	games/arcade/TinyBreakout.ml	178	1	0	1	4	0
 R	apps/pim/Palm.ml	126	1	0	1	1	0
 R	languages/css/Css_values.ml	21	0	1	0	2	1
+R	launcher/codemap/Map_v2.ml	1920	3	0	3	20	0
 R	games/rpg/TinyRogue.ml	89	2	0	2	3	0
 R	games/adventure/TinyZeldaLinkPast.ml	548	1	0	1	2	0
 R	libs/physics/2d/Kepler.ml	29	1	0	1	4	0
@@ -63635,6 +63632,7 @@ R	libs/gui/Focus.mli	48	1	0	1	2	0
 R	languages/postscript/Ps_machine.ml	413	0	1	0	11	1
 R	examples/PhysicsMarbles3d.ml	110	1	0	1	3	0
 R	libs/networking/mail/Mail.ml	17	0	2	0	3	9
+R	launcher/codemap/Map_v2.ml	2136	0	3	0	2	1
 R	appkits/blocks/Block_layout.ml	61	1	0	1	1	0
 R	games/fps/TinyBattlezone3d.ml	188	1	0	1	5	0
 R	appkits/browser/Browser_script.mli	110	2	0	1	4	0
@@ -63686,6 +63684,7 @@ R	games/platform/TinyVikings.ml	299	2	0	2	5	0
 R	libs/audio/instruments/Polyphony.ml	41	0	2	0	5	7
 R	games/fps/TinyDoom3d.ml	41	1	0	1	8	0
 R	apps/devtools/TinySnap.ml	141	2	0	1	29	0
+R	launcher/codemap/Map_v2.ml	2077	14	0	4	59	0
 R	apps/gamedev/TinyAseprite.ml	256	4	0	3	10	0
 R	examples/LogoFractals.ml	172	4	0	2	10	0
 R	appkits/embed/Component.ml	11	2	3	1	11	51
@@ -63732,7 +63731,6 @@ R	gamekits/brawler/Hitbox.mli	28	1	0	1	5	0
 R	languages/postscript/Ps_lexer.ml	59	0	2	0	19	1
 R	examples/AiGhosts.ml	134	3	0	1	11	0
 R	libs/audio/synthesis/Fm.ml	12	0	1	0	3	1
-R	launcher/codemap/Map_v2.ml	2433	10	1	4	6	1
 R	games/adventure/TinyZeldaOcarina.ml	176	3	0	2	6	0
 R	libs/core/time/Civil.ml	69	0	1	0	5	2
 R	apps/internet/TinyEudora.ml	254	2	0	2	9	0
@@ -64055,7 +64053,6 @@ R	apps/music/TinyJuno.ml	97	14	0	3	15	0
 R	libs/networking/mail/Mbox.ml	12	1	1	1	3	4
 R	libs/graphics/3d/raytrace/Transform.ml	41	0	2	0	13	1
 R	playground/ways/Logo3d.ml	131	1	0	1	12	0
-R	launcher/codemap/Map_v2.ml	2600	12	1	4	3	1
 R	games/shmup/TinyDefender.ml	428	5	0	4	13	0
 R	games/puzzle/AiGo.ml	81	1	0	1	11	0
 R	launcher/codemap/Code_rank.ml	251	0	2	0	5	2
@@ -64095,6 +64092,7 @@ R	languages/scheme/Scheme_step.ml	39	4	0	3	29	0
 R	games/rhythm/TinyDDR.ml	104	4	0	3	1	0
 R	games/racing/TinySupercars.ml	76	2	0	2	6	0
 R	languages/css/Computed.ml	14	0	1	0	16	1
+R	launcher/codemap/Map_v2.ml	1958	10	0	4	55	0
 R	languages/basic/Basic_run.ml	26	0	2	0	2	1
 R	appkits/browser/Browser_page.mli	67	2	0	2	6	0
 R	appkits/browser/Browser_devtools.ml	24	2	0	2	5	0
@@ -64246,6 +64244,7 @@ R	games/fps/TinyFortnite.ml	261	2	0	2	10	0
 R	apps/pim/Palm.ml	193	1	2	1	3	4
 R	appkits/browser/Browser_script.ml	346	1	0	1	14	0
 R	launcher/codemap/deps/Code_deps.ml	34	0	2	0	74	2
+R	launcher/codemap/Map_v2.ml	2478	10	1	4	6	1
 R	playground/ways/Teletype.ml	45	1	0	1	1	0
 R	games/platform/TinyLodeRunner.ml	86	1	0	1	2	0
 R	games/flight/TinyElite.ml	109	1	0	1	1	0
@@ -64298,8 +64297,6 @@ R	playground/layers/Portal3d.ml	27	1	1	1	5	1
 R	apps/media/TinyWinamp.ml	137	3	0	2	3	0
 R	examples/AiNeuralNet.ml	98	1	0	1	6	0
 R	launcher/codemap/Code_map_base.ml	55	0	3	0	3	6
-R	launcher/codemap/Map_v2.ml	2345	12	1	4	17	1
-R	launcher/codemap/Map_v2.ml	1979	10	3	4	6	1
 R	games/shmup/TinyMissileCommand.ml	217	3	0	2	4	0
 R	apps/pim/TinyCalendar.ml	150	3	0	2	21	0
 R	launcher/codemap/Code_map_base.mli	270	1	0	1	1	0
@@ -64398,6 +64395,7 @@ R	appkits/paint/Paint.ml	32	0	1	0	6	3
 R	gamekits/rhythm/Rhythm.ml	74	0	1	0	3	3
 R	apps/graphics/TinyDeluxePaint.ml	191	2	0	1	1	0
 R	languages/html/Dtd.ml	80	0	3	0	9	2
+R	launcher/codemap/Map_v2.ml	1082	10	0	4	9	0
 R	libs/audio/formats/mod/Mod_player.ml	137	3	0	2	46	0
 R	languages/css/Cascade.ml	119	2	0	2	12	0
 R	playground/Playground3d.ml	480	0	1	0	3	5
@@ -64449,6 +64447,7 @@ R	games/sports/TinySensibleSoccer.ml	218	10	0	4	26	0
 R	games/arcade/TinyMarbleMadness.ml	375	1	0	1	3	0
 R	libs/graphics/3d/raytrace/Bvh.ml	19	4	0	3	2	0
 R	games/platform/TinyJoust.ml	182	2	0	1	9	0
+R	launcher/codemap/Map_v2.ml	965	17	0	4	82	0
 R	languages/html/Line_mode.ml	166	2	3	2	10	1
 R	gamekits/racing/3d/Track3d.mli	86	2	0	2	20	0
 R	launcher/codemap/Map_v2.ml	171	13	0	4	36	0
@@ -64641,7 +64640,6 @@ R	languages/javascript/Js_builtins.ml	113	2	0	2	121	0
 R	apps/music/TinyDX7.ml	121	12	0	4	37	0
 R	launcher/native/Tinybox_native.ml	147	8	0	2	29	0
 R	libs/graphics/images/png/Png.ml	239	1	0	1	8	0
-R	launcher/codemap/Map_v2.ml	1711	16	0	4	14	0
 R	games/shmup/TinyStarFox.ml	98	3	0	3	5	0
 R	libs/gui/Text_edit.ml	140	1	3	1	8	4
 R	playground/apis/Multiplayer.ml	144	9	0	3	14	0
@@ -64738,6 +64736,7 @@ R	games/strategy/TinySimCity.ml	315	2	0	1	2	0
 R	games/racing/TinySuperOffRoad.ml	200	5	0	4	9	0
 R	playground/apis/Juice.ml	213	1	1	1	8	5
 R	apps/music/Part_cs80.ml	42	2	0	1	5	0
+R	launcher/codemap/Map_v2.ml	1551	11	0	4	28	0
 R	examples/HttpText.ml	62	3	0	2	6	0
 R	games/platform/TinyBraid.ml	317	1	0	1	14	0
 R	apps/internet/TinyChrome.ml	460	1	0	1	1	0
@@ -64817,6 +64816,7 @@ R	games/puzzle/AiConnect4.ml	231	3	0	3	8	0
 R	libs/graphics/images/Texture_decode.mli	16	1	0	1	6	0
 R	playground/apis/Audio.ml	111	1	1	1	1	7
 R	apps/music/Part_tr808.ml	24	3	0	2	17	0
+R	launcher/codemap/Map_v2.ml	633	10	1	5	25	1
 R	libs/physics/3d/Sweep3d.ml	10	4	0	4	7	0
 R	playground/apis/Physics3d.ml	137	2	1	2	1	2
 R	examples/Corridor3d.ml	46	3	0	1	4	0
@@ -65001,7 +65001,6 @@ R	games/platform/TinyJoust.ml	173	7	0	4	9	0
 R	playground/Playground.ml	107	1	1	1	4	8
 R	games/platform/TinySonic.ml	273	2	0	2	11	0
 R	apps/music/Part_minimoog.ml	113	11	0	3	3	0
-R	launcher/codemap/Map_v2.ml	668	10	0	4	8	0
 R	languages/css/Selectors.ml	228	2	0	2	28	0
 R	games/sports/TinySensibleSoccer.ml	171	3	0	2	17	0
 R	playground/apis/Juice3d.ml	78	3	1	2	1	2
@@ -65167,7 +65166,6 @@ R	playground/apis/Audio.ml	15	1	1	1	1	14
 R	apps/office/Part_picture.ml	57	2	0	1	2	0
 R	apps/music/Op1_engine.ml	204	2	0	2	31	0
 R	playground/layers/Sprite.ml	81	0	1	0	10	17
-R	launcher/codemap/Map_v2.ml	2453	14	0	4	29	0
 R	examples/PhysicsOrbit.ml	68	3	0	2	2	0
 R	examples/AiPerceptron.ml	132	3	0	2	2	0
 R	games/shmup/Asteroid.ml	88	1	0	1	5	0
@@ -65284,6 +65282,7 @@ R	games/platform/TinyVikings.ml	102	2	0	2	1	0
 R	games/adventure/myst/Myst_island.ml	61	5	0	4	8	0
 R	examples/PhysicsElastic.ml	65	2	0	2	3	0
 R	appkits/indexed/Indexed.ml	24	0	1	0	2	1
+R	launcher/codemap/Map_v2.ml	2138	10	0	4	9	0
 R	games/puzzle/AiGo.ml	233	3	0	1	33	0
 R	playground/layers/Tilemap.ml	22	1	1	1	1	1
 R	games/adventure/myst/Myst_island.ml	33	4	0	3	1	0
@@ -65472,7 +65471,6 @@ R	libs/graphics/3d/raytrace/Raytrace.ml	105	1	0	1	11	0
 R	examples/AiPerceptron.ml	98	6	0	4	32	0
 R	examples/Gui7Timer.ml	98	5	0	2	8	0
 R	apps/office/TinyNLS.ml	104	1	0	1	11	0
-R	launcher/codemap/Map_v2.ml	2032	14	0	4	59	0
 R	games/arcade/TinyBoomerangFu.ml	1475	2	0	2	8	0
 R	languages/scheme/Scheme_image.ml	36	0	1	0	11	2
 R	gamekits/rhythm/Rhythm.ml	88	1	1	1	9	2
@@ -65676,7 +65674,6 @@ R	playground/apis/Juice.ml	174	3	1	2	18	1
 R	launcher/codemap/Code_guide.ml	24	0	5	0	1	4
 R	games/fighting/TinyStreetFighter.ml	418	4	0	3	5	0
 R	examples/Words.ml	2	5	0	2	7	0
-R	launcher/codemap/Map_v2.ml	2509	14	0	4	21	0
 R	apps/music/TinyOp1.ml	464	5	0	3	1	0
 R	libs/audio/synthesis/Filter.mli	67	1	0	1	1	0
 R	games/fps/TinyCyberSled.ml	111	2	0	2	4	0
@@ -65730,7 +65727,6 @@ R	libs/networking/httpd/tiny_httpd.ml	166	1	0	1	24	0
 R	launcher/codemap/Map_streets.ml	205	11	0	5	91	0
 R	languages/scratch/Scratch_run.ml	52	1	0	1	2	0
 R	appkits/browser/Browser_forms.ml	66	12	1	3	12	4
-R	launcher/codemap/Map_v2.ml	2538	11	0	4	23	0
 R	languages/c/Ast_c.mli	31	0	1	0	2	2
 R	apps/internet/TinyFirefox.ml	358	1	0	1	1	0
 R	appkits/diagram/Diagram.mli	45	1	0	1	8	0
@@ -65811,6 +65807,7 @@ R	games/platform/TinyPrinceOfPersia.ml	129	1	0	1	1	0
 R	games/arcade/TinyPang.ml	172	1	0	1	7	0
 R	apps/office/TinyOffice.ml	806	3	0	2	8	0
 R	libs/graphics/3d/geometry/Mat4.ml	65	0	1	0	10	2
+R	launcher/codemap/Map_v2.ml	448	10	0	4	8	0
 R	games/arcade/TinyBoomerangFu.ml	1096	2	0	2	1	0
 R	apps/music/Voice_tb303.ml	219	1	2	1	5	2
 R	games/arcade/TinyBoomerangFu.ml	1286	1	0	1	1	0
@@ -65841,6 +65838,7 @@ R	apps/internet/TinyEudora.ml	981	9	0	5	13	0
 R	playground/layers/Tilemap.ml	88	1	1	1	3	15
 R	appkits/money/Ledger.mli	37	1	0	1	1	0
 R	launcher/codemap/Code_map_base.ml	262	1	3	1	1	4
+R	launcher/codemap/Map_v2.ml	2184	14	0	4	53	0
 R	games/puzzle/TinyPuzzleBobble.ml	283	3	0	2	3	0
 R	apps/music/Part_minimoog.ml	91	1	0	1	4	0
 R	games/puzzle/TinyPortal2D.ml	468	1	0	1	1	0
@@ -65887,7 +65885,6 @@ R	apps/music/Op1_engine.ml	440	0	1	0	6	1
 R	apps/music/TinyCS80.ml	59	3	0	2	12	0
 R	libs/ai/learning/Matrix.ml	32	1	2	1	4	1
 R	games/platform/TinySonic.ml	325	3	0	2	9	0
-R	launcher/codemap/Map_v2.ml	1968	10	3	4	11	1
 R	games/shmup/TinyGradius.ml	174	8	0	4	14	0
 R	playground/ways/Karel.ml	120	0	1	0	2	1
 R	libs/graphics/imaging/Lut.mli	55	2	0	2	4	0
@@ -65952,7 +65949,6 @@ R	apps/internet/TinyChrome.ml	282	3	0	3	3	0
 R	playground/ways/Povray.ml	56	2	0	1	1	0
 R	games/platform/TinyMario.ml	275	2	0	2	19	0
 R	libs/graphics/3d/raytrace/Solid.ml	303	1	0	1	3	0
-R	launcher/codemap/Map_v2.ml	2482	10	0	4	27	0
 R	games/puzzle/TinyBabaIsYou.ml	167	3	0	3	2	0
 R	libs/ai/movement/Steering.ml	109	0	3	0	1	2
 R	games/racing/TinyMarioKart.ml	232	7	0	4	7	0
@@ -65997,7 +65993,6 @@ R	apps/internet/TinyEudora.ml	880	1	0	1	17	0
 R	games/arcade/TinyBoomerangFu.ml	1548	1	0	1	2	0
 R	examples/Gui7Circles.ml	76	6	0	4	15	0
 R	libs/physics/3d/Broadphase3d.ml	96	2	0	2	21	0
-R	launcher/codemap/Map_v2.ml	2102	11	1	4	37	1
 R	examples/JuiceCurves.ml	93	7	0	3	13	0
 R	playground/apis/Audio.mli	148	1	0	1	6	0
 R	launcher/codemap/Code_map_base.ml	161	2	0	1	12	0
@@ -66030,6 +66025,7 @@ R	gamekits/adventure/Adventure.ml	13	0	1	0	2	2
 R	apps/music/Op1_engine.ml	464	0	2	0	2	3
 R	playground/apis/Physics.mli	93	1	0	1	6	0
 R	apps/office/TinyFrameMaker.ml	541	2	0	1	2	0
+R	launcher/codemap/Map_v2.ml	1229	10	0	5	37	0
 R	games/programming/TinyCoreWar.ml	327	1	0	1	1	0
 R	apps/office/TinyPowerPoint.ml	313	2	0	1	1	0
 R	libs/networking/tls/Asn1.ml	38	0	2	0	6	1
@@ -66055,6 +66051,7 @@ R	libs/core/Basics.ml	24	0	3	0	3	11
 R	libs/ai/learning/Qlearn.ml	77	0	1	0	13	1
 R	apps/music/Voice_juno.ml	108	2	1	2	1	1
 R	playground/apis/Physics3d.ml	79	2	0	1	4	0
+R	launcher/codemap/Map_v2.ml	2575	11	0	4	8	0
 R	apps/music/TinyOp1.ml	85	7	0	3	1	0
 R	playground/Gpu_scene.ml	158	0	1	0	8	2
 R	apps/music/Voice_tr808.ml	27	0	1	0	3	3
@@ -66384,6 +66381,7 @@ R	appkits/astronomy/Bright_stars.ml	16	1	0	1	4	0
 R	libs/physics/3d/Joint3d.mli	91	4	0	3	8	0
 R	examples/PhysicsBounce3d.ml	44	1	0	1	6	0
 R	libs/graphics/imaging/Blend.ml	16	0	1	0	11	1
+R	launcher/codemap/Map_v2.ml	2267	11	0	4	49	0
 R	libs/core/Sub.ml	40	0	3	0	3	5
 R	games/fighting/TinyVirtuaFighter.ml	104	3	0	3	12	0
 R	games/arcade/TinyBreakout.ml	467	3	0	2	5	0
@@ -66584,7 +66582,6 @@ R	apps/music/Part_dx7.ml	191	7	0	4	4	0
 R	appkits/astronomy/Celestial.ml	16	0	1	0	1	2
 R	games/strategy/TinyWarcraft2.ml	514	1	0	1	2	0
 R	playground/ways/Textmode.mli	23	8	0	3	3	0
-R	launcher/codemap/Map_v2.ml	1006	12	0	4	6	0
 R	languages/basic/Basic_run.ml	305	1	0	1	5	0
 R	games/platform/TinyTurrican.ml	259	2	0	1	10	0
 R	launcher/codemap/Code_guide.ml	360	0	2	0	6	1
@@ -66614,7 +66611,6 @@ R	games/racing/TinyVirtuaRacing.ml	493	2	0	1	1	0
 R	apps/graphics/TinyMacDraw.ml	226	2	0	2	9	0
 R	libs/terminal/Talk.ml	126	1	0	1	8	0
 R	appkits/embed/Component.mli	87	2	0	1	2	0
-R	launcher/codemap/Map_v2.ml	335	14	0	4	69	0
 R	libs/graphics/images/png/Png.ml	219	3	1	2	16	1
 R	libs/physics/2d/Resolve.ml	30	2	3	2	7	1
 R	gamekits/racing/3d/Track3d.mli	175	3	0	2	2	0
@@ -66682,7 +66678,7 @@ R	playground/layers/Camera2d.mli	122	1	0	1	9	0
 R	libs/networking/tls/Tls13.ml	302	1	1	1	1	1
 R	libs/gui/Retained.ml	100	0	2	0	1	2
 R	games/adventure/TinyMyst.ml	180	2	0	1	4	0
-R	launcher/codemap/Map_v2.ml	284	11	0	4	51	0
+R	launcher/codemap/Map_v2.ml	284	11	0	4	84	0
 R	playground/apis/Gui.mli	150	2	0	1	1	0
 R	libs/audio/Mixer.mli	56	1	0	1	6	0
 R	playground/Playground3d.ml	301	0	2	0	9	44
@@ -66732,7 +66728,6 @@ R	games/sports/TinySpeedball2.ml	109	1	0	1	2	0
 R	playground/Playground.mli	137	0	1	0	2	3
 R	apps/music/TinyOp1.ml	273	1	0	1	1	0
 R	apps/internet/Browser_media.mli	26	11	0	3	4	0
-R	launcher/codemap/Map_v2.ml	414	11	0	4	9	0
 R	launcher/web/Tinybox_web.ml	78	3	0	2	20	0
 R	games/racing/TinyMarioKart64.ml	1145	2	0	2	4	0
 R	libs/networking/protocols/Http.ml	83	0	4	0	2	14
@@ -66767,7 +66762,6 @@ R	examples/AiNeuralNet.ml	109	1	0	1	12	0
 R	games/strategy/TinyXCOM.ml	391	2	0	2	4	0
 R	games/adventure/TinyAdventure.ml	423	5	0	3	1	0
 R	examples/PhysicsMarbles.ml	41	4	0	2	9	0
-R	launcher/codemap/Map_v2.ml	1119	10	0	4	65	0
 R	games/flight/TinyElite3d.ml	134	2	0	2	10	0
 R	games/adventure/TinyMetalGearSolid.ml	438	5	0	3	18	0
 R	games/platform/TinyJoust.ml	266	9	0	4	50	0
@@ -66901,6 +66895,7 @@ R	appkits/astronomy/Bright_stars.ml	204	0	1	0	52	1
 R	appkits/browser/Browser_devtools.ml	29	2	0	2	4	0
 R	games/racing/TinyVirtuaRacing.ml	303	1	0	1	2	0
 R	playground/Playground3d.ml	319	1	0	1	4	0
+R	launcher/codemap/Map_v2.ml	1579	16	0	4	74	0
 R	launcher/codemap/Code_map.ml	25	2	0	2	4	0
 R	games/fps/TinyFortnite.ml	283	2	0	2	6	0
 R	games/flight/TinyXpilot.ml	145	1	0	1	2	0
@@ -66963,7 +66958,6 @@ R	games/racing/TinyGranTrak10.ml	196	2	0	2	2	0
 R	apps/devtools/TinyDrScheme.ml	342	3	0	2	26	0
 R	languages/smalltalk/St_class.mli	127	1	0	1	10	0
 R	games/arcade/TinyFrogger.ml	430	3	0	2	11	0
-R	launcher/codemap/Map_v2.ml	2222	11	0	4	49	0
 R	games/adventure/TinyGTA.ml	197	3	0	3	6	0
 R	playground/ways/Povray.mli	88	2	0	2	5	0
 R	gamekits/crush/Crush.ml	96	1	1	1	16	2
@@ -67006,6 +67000,7 @@ R	games/racing/TinyVirtuaRacing.ml	378	4	0	2	14	0
 R	appkits/browser/Browser_boxes.mli	38	3	0	2	2	0
 R	libs/graphics/3d/geometry/Ray.ml	57	1	2	1	15	3
 R	playground/apis/Juice.mli	144	1	0	1	4	0
+R	launcher/codemap/Map_v2.ml	1051	12	0	4	6	0
 R	playground/Playground.ml	532	2	2	1	12	19
 R	games/shmup/TinyRobotron.ml	243	2	0	1	2	0
 R	games/flight/TinyXpilot.ml	175	3	0	2	10	0
@@ -67025,7 +67020,6 @@ R	games/adventure/TinyMyst.ml	99	1	0	1	3	0
 R	apps/internet/Browser_media.ml	61	1	0	1	12	0
 R	gamekits/racing/Road.ml	74	1	2	1	13	1
 R	gamekits/crush/Crush.mli	50	1	0	1	3	0
-R	launcher/codemap/Map_v2.ml	835	16	0	4	24	0
 R	games/platform/TinyDonkeyKong.ml	325	3	0	3	2	0
 R	languages/basic/Basic_run.mli	81	2	0	1	3	0
 R	playground/apis/Gui.ml	71	5	1	4	1	1
@@ -67084,7 +67078,7 @@ R	examples/PhysicsElastic.ml	52	4	0	2	8	0
 R	launcher/codemap/Map_v2.ml	129	13	0	5	33	0
 R	games/platform/TinyMetroid.ml	505	1	0	1	10	0
 R	libs/ai/search/Deepening.ml	150	1	1	1	10	1
-R	launcher/codemap/Map_v2.ml	2407	11	0	4	10	0
+R	launcher/codemap/Map_v2.ml	2407	13	1	4	45	1
 R	libs/gui/Immediate.mli	229	2	0	2	9	0
 R	gamekits/platformer/Slope.ml	58	1	0	1	12	0
 R	appkits/browser/layout/Flex_layout.ml	129	0	1	0	7	1
@@ -67223,6 +67217,7 @@ R	appkits/sketch/Sketch.ml	30	0	1	0	9	3
 R	libs/audio/instruments/Sequencer.ml	40	0	3	0	1	2
 R	libs/networking/httpd/tiny_httpd.ml	190	1	0	1	26	0
 R	libs/gui/Focus.mli	51	1	0	1	1	0
+R	launcher/codemap/Map_v2.ml	609	10	0	4	6	0
 R	gamekits/lightcycles/Lightcycles.ml	62	2	1	2	8	1
 R	libs/crypto/Bignum.ml	262	0	1	0	2	1
 R	examples/PhysicsElastic.ml	60	4	0	4	2	0
@@ -67644,6 +67639,7 @@ R	games/arcade/TinyFrogger.ml	366	1	0	1	1	0
 R	games/arcade/TinyBoomerangFu.ml	249	2	0	2	9	0
 R	launcher/codemap/Code_rank.ml	247	0	1	0	2	1
 R	examples/PhysicsRoll3d.ml	71	8	0	3	4	0
+R	launcher/codemap/Map_v2.ml	1770	17	0	4	57	0
 R	games/platform/TinyRick.ml	142	1	0	1	2	0
 R	apps/graphics/TinyVisio.ml	72	1	0	1	9	0
 R	playground/ways/Logo3d.mli	125	6	0	4	2	0
@@ -67703,7 +67699,6 @@ R	games/strategy/TinySimCity.ml	111	1	0	1	9	0
 R	apps/music/Studio_rebirth.ml	137	3	1	2	1	1
 R	apps/graphics/TinyMacPaint.ml	491	1	0	1	2	0
 R	playground/layers/Camera2d.ml	44	2	1	1	12	15
-R	launcher/codemap/Map_v2.ml	1913	10	0	4	55	0
 R	examples/Gui7Cells.ml	177	5	0	3	1	0
 R	apps/internet/TinyMosaic.ml	370	13	0	4	13	0
 R	games/adventure/TinyAdventure.ml	248	1	0	1	1	0
@@ -67725,7 +67720,6 @@ R	games/racing/TinyVirtuaRacing.ml	509	3	0	3	19	0
 R	games/platform/TinyPrinceOfPersia.ml	167	2	0	2	3	0
 R	games/sports/TinySensibleSoccer.ml	314	3	0	2	2	0
 R	playground/platforms/software/Shape_render_software.ml	247	1	0	1	4	0
-R	launcher/codemap/Map_v2.ml	717	14	0	4	35	0
 R	languages/javascript/Js_parse.ml	390	1	3	1	5	1
 R	games/platform/TinyTurrican.ml	271	3	0	2	16	0
 R	launcher/codemap/Map_streets.ml	47	10	0	4	9	0
@@ -67749,7 +67743,6 @@ R	examples/GuiEditor.ml	81	3	0	1	9	0
 R	examples/PhysicsSpin3d.ml	106	7	0	3	16	0
 R	apps/internet/TinyEudora.ml	530	1	0	1	4	0
 R	games/adventure/TinyMetalGearSolid.ml	89	2	0	2	30	0
-R	launcher/codemap/Map_v2.ml	2193	0	1	0	3	1
 R	gamekits/adventure/Adventure.ml	21	0	1	0	1	2
 R	libs/networking/protocols/Smtp.ml	86	0	1	0	2	1
 R	games/adventure/TinyZelda.ml	290	3	0	2	2	0
@@ -68163,6 +68156,7 @@ R	games/adventure/TinyMetalGearSolid.ml	278	3	0	1	32	0
 R	appkits/astronomy/Ephemeris.ml	62	1	0	1	24	0
 R	apps/office/TinyOffice.ml	818	2	0	1	7	0
 R	apps/pim/TinyCalendar.ml	76	3	0	1	16	0
+R	launcher/codemap/Map_v2.ml	2316	15	0	4	74	0
 R	launcher/codemap/Map_atlas.mli	33	2	0	1	2	0
 R	games/arcade/TinySoldat.ml	226	2	0	1	5	0
 R	libs/graphics/videos/mpeg1/Mpeg1.ml	261	2	0	2	91	0
@@ -68711,6 +68705,7 @@ R	games/platform/TinyVikings.ml	389	3	0	2	16	0
 R	libs/audio/Tape.ml	42	0	1	0	1	1
 R	apps/internet/TinyNetscape.ml	78	10	0	5	10	0
 R	games/platform/TinyRick.ml	153	3	0	3	6	0
+R	launcher/codemap/Map_v2.ml	1107	11	0	4	25	0
 R	games/platform/TinyBraid.ml	284	1	0	1	2	0
 R	playground/apis/Physics.ml	40	0	1	0	11	4
 R	apps/pim/TinyQuicken.ml	351	2	0	1	16	0
@@ -68736,9 +68731,11 @@ R	apps/cad/TinyAutoCAD.ml	169	2	0	1	29	0
 R	apps/graphics/TinyMacDraw.ml	70	2	0	1	6	0
 R	playground/apis/Audio.ml	157	5	1	3	4	9
 R	libs/networking/protocols/Url.ml	12	0	2	0	2	1
+R	launcher/codemap/Map_v2.ml	456	11	0	4	9	0
 R	playground/Playground3d.ml	464	1	1	1	6	8
 R	games/shmup/TinyMissileCommand.ml	145	10	0	4	9	0
 R	games/platform/TinyLodeRunner.ml	167	2	0	2	5	0
+R	launcher/codemap/Map_v2.ml	658	11	0	4	53	0
 R	playground/layers/Camera2d.mli	206	1	0	1	4	0
 R	playground/Gpu_scene.ml	62	1	0	1	7	0
 R	appkits/browser/Browser_script.ml	534	1	0	1	8	0
@@ -69281,6 +69278,7 @@ R	libs/graphics/images/png/Png.mli	106	1	0	1	4	0
 R	games/shmup/TinyZaxxon.ml	149	1	0	1	1	0
 R	games/platform/TinyVikings.ml	370	6	0	4	17	0
 R	appkits/sketch/Relax.ml	19	1	0	1	35	0
+R	launcher/codemap/Map_v2.ml	2265	1	0	1	2	0
 R	examples/AudioAliasing.ml	46	4	0	4	4	0
 R	apps/music/Part_cs80.ml	140	9	0	4	8	0
 R	games/rpg/TinyDiablo.ml	453	3	0	2	5	0
@@ -69289,7 +69287,6 @@ R	games/sports/TinyPinball.ml	127	2	0	1	17	0
 R	apps/music/TinyDX7.ml	94	1	0	1	4	0
 R	apps/graphics/TinyDeluxePaint.ml	76	5	0	1	21	0
 R	games/arcade/TinyFrogger.ml	342	4	0	4	3	0
-R	launcher/codemap/Map_v2.ml	1837	10	0	4	28	0
 R	apps/media/TinyMediaPlayer.ml	519	5	0	3	1	0
 R	libs/networking/unix/Tcp.ml	36	0	1	0	4	1
 R	games/arcade/TinyPang.ml	195	1	0	1	3	0
@@ -69448,6 +69445,7 @@ R	games/sports/TinyShufflePuck.ml	182	4	0	4	2	0
 R	apps/music/Part_tb303.ml	249	4	0	2	18	0
 R	appkits/browser/Browser_script.ml	168	3	0	2	16	0
 R	apps/music/TinySoundtracker.ml	227	1	0	1	1	0
+R	launcher/codemap/Map_v2.ml	838	11	0	4	3	0
 R	games/platform/TinyBraid.ml	492	5	0	3	2	0
 R	apps/office/TinyHyperCard.ml	423	1	0	1	6	0
 R	games/shmup/TinyInvaders.ml	158	1	0	1	6	0
@@ -69483,6 +69481,7 @@ R	libs/compression/Adler32.ml	25	0	5	0	2	1
 R	languages/scheme/Scheme_eval.ml	184	3	1	2	13	1
 R	games/puzzle/TinyPortal.ml	279	7	0	3	12	0
 R	games/flight/TinyXpilot.ml	268	2	0	2	3	0
+R	launcher/codemap/Map_v2.ml	368	14	0	4	78	0
 R	games/platform/TinyMarioWorld.ml	686	4	0	2	17	0
 R	apps/office/TinyOpenDoc.ml	267	1	0	1	2	0
 R	libs/audio/Synth.ml	80	2	3	2	14	1
@@ -69712,7 +69711,6 @@ R	apps/internet/TinyEudora.ml	251	2	0	2	1	0
 R	languages/scheme/Scheme_image.ml	26	0	1	0	10	2
 R	apps/music/TinyOp1.ml	302	3	0	1	11	0
 R	libs/graphics/images/Texture_decode.ml	24	11	0	4	10	0
-R	launcher/codemap/Map_v2.ml	1801	13	0	4	34	0
 R	appkits/document/Undo.ml	32	0	1	0	3	13
 R	apps/music/Part_hammond.ml	166	7	0	3	17	0
 R	examples/AudioSpace.ml	57	1	0	1	1	0
@@ -69788,7 +69786,6 @@ R	examples/PhysicsWalk3d.ml	107	4	0	2	2	0
 R	languages/scheme/Scheme_step.ml	24	2	0	2	10	0
 R	games/shmup/TinyDefender.ml	454	3	0	2	5	0
 R	libs/audio/Synth.ml	14	2	3	1	11	4
-R	launcher/codemap/Map_v2.ml	1782	13	0	4	19	0
 R	games/sports/TinyPinball.ml	151	1	0	1	22	0
 R	games/rpg/TinyRogue.ml	242	1	0	1	4	0
 R	games/rhythm/TinyRockBand.ml	298	15	0	4	56	0
@@ -69869,7 +69866,6 @@ R	games/arcade/TinyBoomerangFu.ml	1288	1	0	1	1	0
 R	games/arcade/TinyLunarLander.ml	460	4	0	2	29	0
 R	playground/platforms/native_common/Input_script.ml	86	0	2	0	7	3
 R	apps/music/Op1_engine.ml	290	1	0	1	19	0
-R	launcher/codemap/Map_v2.ml	1504	1	0	1	2	0
 R	games/puzzle/TinyPortal.ml	137	7	0	3	12	0
 R	examples/PhysicsHitbox3d.ml	69	8	0	4	6	0
 R	games/platform/TinyMarioGalaxy.ml	77	1	0	1	1	0
@@ -69896,6 +69892,7 @@ R	gamekits/lightcycles/Lightcycles.ml	133	2	0	2	18	0
 R	games/racing/TinyMarioKart64.ml	1566	3	0	2	6	0
 R	playground/ways/Povray.ml	109	6	1	4	16	4
 R	gamekits/heightmap/Heightmap.ml	10	0	1	0	8	3
+R	launcher/codemap/Map_v2.ml	2606	12	0	4	26	0
 R	languages/smalltalk/St_class.mli	113	1	0	1	4	0
 R	games/fps/TinyFortnite.ml	158	3	0	2	4	0
 R	gamekits/adventure/Adventure.ml	46	0	1	0	1	2
@@ -69925,6 +69922,7 @@ R	games/adventure/myst/Myst_island.ml	114	5	0	4	5	0
 R	libs/audio/testutil/Testutil_wav.mli	12	1	0	1	5	0
 R	gamekits/racing/3d/Track3d.ml	30	2	1	2	2	5
 R	appkits/browser/layout/Box_layout.ml	858	5	0	2	24	0
+R	launcher/codemap/Map_v2.ml	1105	11	0	4	2	0
 R	appkits/blocks/Block_layout.mli	60	1	0	1	1	0
 R	appkits/draw/Drawing.ml	61	1	1	1	9	1
 R	libs/audio/instruments/Polyphony.mli	50	1	0	1	9	0
@@ -70160,6 +70158,7 @@ R	libs/gui/Retained.ml	78	0	2	0	1	1
 R	games/adventure/TinyMetalGearSolid.ml	504	5	0	3	2	0
 R	launcher/menu/Tinybox_menu.ml	813	3	0	2	15	0
 R	libs/core/Basics.ml	6	0	2	0	3	76
+R	launcher/codemap/Map_v2.ml	1749	10	0	4	3	0
 R	games/arcade/TinyPacman.ml	106	1	0	1	1	0
 R	appkits/embed/Compound.mli	77	1	0	1	9	0
 R	appkits/sheet_view/Sheet_view.mli	73	1	0	1	2	0
@@ -70248,6 +70247,7 @@ R	gamekits/maze/Grid_move.ml	21	0	2	0	2	5
 R	languages/lisp/Lisp_eval.ml	294	1	0	1	7	0
 R	games/puzzle/TinyBabaIsYou.ml	194	3	0	2	2	0
 R	playground/platforms/software/Playground_platform.ml	68	1	0	1	2	0
+R	launcher/codemap/Map_v2.ml	465	15	0	4	142	0
 R	playground/apis/Physics.ml	264	2	1	2	3	1
 R	playground/Playground.ml	374	2	0	2	8	0
 R	games/shmup/TinyRType.ml	138	3	0	2	4	0
@@ -70655,7 +70655,6 @@ R	apps/music/TinyReason.ml	587	4	0	2	7	0
 R	games/platform/TinyJoust.ml	242	1	0	1	5	0
 R	libs/audio/formats/mod/Mod_player.ml	33	3	1	1	18	3
 R	apps/pim/TinyQuicken.ml	196	3	0	2	7	0
-R	launcher/codemap/Map_v2.ml	1646	1	0	1	5	0
 R	libs/terminal/Vt.ml	353	0	3	0	1	1
 R	apps/devtools/tty/TinyTurboPascal.ml	20	6	0	4	2	0
 R	libs/compression/Bits.ml	36	0	2	0	15	1
@@ -70679,6 +70678,7 @@ R	examples/AiBots.ml	47	1	0	1	2	0
 R	appkits/browser/layout/Box_layout.ml	158	3	0	2	5	0
 R	languages/basic/Basic_run.ml	199	2	0	1	4	0
 R	appkits/diagram/Diagram.ml	229	1	1	1	10	1
+R	launcher/codemap/Map_v2.ml	1266	1	0	1	2	0
 R	examples/HttpText.ml	68	3	0	2	7	0
 R	apps/music/Voice_tr808.ml	436	4	2	1	18	4
 R	languages/css/Looks.ml	265	0	1	0	26	1
@@ -70788,7 +70788,6 @@ R	apps/music/Voice_dx7.ml	409	1	0	1	4	0
 R	playground/apis/Juice.ml	56	2	1	2	2	8
 R	playground/apis/Juice.mli	60	2	0	2	8	0
 R	libs/physics/3d/Body3d.ml	39	2	2	2	1	2
-R	launcher/codemap/Map_v2.ml	404	5	0	3	2	0
 R	libs/gui/Layout.ml	33	0	1	0	1	6
 R	languages/smalltalk/St_interp.mli	75	1	0	1	1	0
 R	languages/lisp/Lisp_eval.mli	121	1	0	1	3	0
@@ -70814,6 +70813,7 @@ R	apps/office/TinyOffice.ml	1032	3	0	2	7	0
 R	libs/juice/Ease.ml	12	0	3	0	2	3
 R	playground/platforms/web/Playground3d_platform.ml	653	11	0	3	48	0
 R	games/strategy/TinyTowerDefense.ml	144	1	0	1	4	0
+R	launcher/codemap/Map_v2.ml	2645	12	1	4	3	1
 R	apps/music/Op1_engine.ml	72	3	0	2	44	0
 R	libs/networking/protocols/Smtp.mli	91	1	0	1	4	0
 R	appkits/pim/Ics.mli	70	1	0	1	3	0
@@ -70941,7 +70941,6 @@ R	languages/smalltalk/St_compile.ml	58	1	0	1	2	0
 R	languages/scheme/Scheme_syntax.mli	35	3	0	2	2	0
 R	languages/scheme/Scheme_syntax.ml	173	3	0	2	18	0
 R	examples/PhysicsRoll3d.ml	136	2	0	2	3	0
-R	launcher/codemap/Map_v2.ml	1111	2	0	2	8	0
 R	libs/physics/2d/Resolve.mli	118	3	0	2	2	0
 R	languages/jsonnet/Jsonnet.ml	43	1	0	1	4	0
 R	playground/layers/Ragdoll3d.mli	30	4	0	3	2	0
@@ -71012,6 +71011,7 @@ R	games/shmup/TinyGradius.ml	158	3	0	2	5	0
 R	games/platform/TinyMarioGalaxy.ml	446	3	0	1	8	0
 R	apps/office/Part_chart.ml	15	1	1	1	12	1
 R	apps/music/Part_dx7.ml	81	1	0	1	1	0
+R	launcher/codemap/Map_v2.ml	2635	11	1	4	10	1
 R	libs/audio/Synth.mli	140	1	0	1	7	0
 R	games/sports/TinySpeedball2.ml	419	1	0	1	1	0
 R	games/fps/TinyHalfLife2.ml	319	8	0	3	4	0
@@ -71064,7 +71064,6 @@ R	apps/internet/TinyEudora.ml	801	3	0	1	25	0
 R	languages/javascript/Js_regexp.ml	160	0	5	0	1	1
 R	games/sports/TinyKickOff2.ml	164	1	0	1	2	0
 R	apps/music/Voice_dx7.ml	658	2	0	2	26	0
-R	launcher/codemap/Map_v2.ml	1032	11	0	4	5	0
 R	games/arcade/TinyBoomerangFu.ml	1462	2	0	1	11	0
 R	apps/cad/TinySketchpad.ml	354	1	0	1	22	0
 R	games/puzzle/TinyCrush3d.ml	96	1	0	1	4	0
@@ -71117,12 +71116,12 @@ R	appkits/blocks/Block_layout.ml	74	1	0	1	22	0
 R	games/flight/TinyDescent3d.ml	193	3	0	2	16	0
 R	apps/devtools/TinySmalltalk80.ml	1200	3	0	2	3	0
 R	gamekits/brawler/Frame_data.ml	12	2	1	2	1	4
+R	launcher/codemap/Map_v2.ml	1268	18	0	4	281	0
 R	games/racing/TinyMarioKart64.ml	362	2	0	2	28	0
 R	gamekits/racing/3d/Track3d.ml	41	2	0	2	13	0
 R	appkits/browser/Browser_tab.ml	232	7	0	3	26	0
 R	libs/audio/formats/abc/Abc.ml	12	0	4	0	1	4
 R	examples/PhysicsSolarSystem3d.ml	295	1	0	1	2	0
-R	launcher/codemap/Map_v2.ml	1046	4	0	3	2	0
 R	playground/layers/Camera3d.mli	50	2	0	2	11	0
 R	libs/core/time/Clock.ml	34	0	1	0	4	2
 R	games/flight/TinyComanche.ml	290	3	0	2	9	0
@@ -71171,6 +71170,7 @@ R	apps/office/TinyNLS.ml	78	3	0	3	10	0
 R	languages/jsonnet/Jsonnet.ml	566	1	0	1	123	0
 R	apps/graphics/TinyBlender.ml	265	2	0	2	2	0
 R	games/fps/TinyBattlezone3d.ml	93	2	0	2	6	0
+R	launcher/codemap/Map_v2.ml	446	5	0	3	2	0
 R	libs/ai/learning/Neuron.ml	15	1	1	1	4	1
 R	games/platform/TinyMarioGalaxy.ml	324	4	0	3	59	0
 R	playground/ways/Povray.ml	332	0	1	0	7	5
@@ -71398,9 +71398,11 @@ R	playground/apis/Juice.ml	85	1	1	1	2	1
 R	apps/internet/TinyEudora.ml	1075	5	0	2	19	0
 R	libs/networking/unix/Tls_client.mli	44	2	0	2	3	0
 R	appkits/pushpull/Skp_view.ml	53	2	0	2	14	0
+R	launcher/codemap/Map_v2.ml	2238	0	1	0	3	1
 R	apps/music/Part_tb303.ml	275	8	0	3	20	0
 R	games/arcade/TinyPacman.ml	109	1	0	1	1	0
 R	gamekits/heightmap/Heightmap.ml	96	0	1	0	6	5
+R	launcher/codemap/Map_v2.ml	2498	14	0	4	29	0
 R	games/racing/TinyVirtuaRacing.ml	543	3	0	2	16	0
 R	apps/graphics/TinyMacPaint.ml	537	5	0	3	1	0
 R	launcher/codemap/Code_rank.mli	53	1	0	1	8	0
@@ -71585,6 +71587,7 @@ R	languages/pascal/Pmachine.ml	237	0	1	0	2	1
 R	libs/juice/Emitter.ml	84	0	3	0	2	1
 R	games/platform/TinyMarioWorld.ml	305	2	0	1	3	0
 R	apps/cad/TinySketchup.ml	206	1	0	1	7	0
+R	launcher/codemap/Map_v2.ml	949	11	0	4	16	0
 R	apps/internet/TinyFirefox.ml	162	4	0	2	1	0
 R	games/sports/TinyTonyHawk.ml	365	1	0	1	1	0
 R	games/arcade/TinySoldat.ml	178	3	0	2	2	0
@@ -71605,6 +71608,7 @@ R	games/racing/TinyVirtuaRacing.ml	191	2	0	2	2	0
 R	apps/office/TinyOffice.ml	519	3	0	2	9	0
 R	languages/lisp/Lisp_eval.mli	132	1	0	1	2	0
 R	appkits/browser/layout/Html_layout.ml	350	1	0	1	11	0
+R	launcher/codemap/Map_v2.ml	880	16	0	4	24	0
 R	examples/PhysicsFloat3d.ml	112	1	0	1	1	0
 R	appkits/browser/layout/Flex_layout.ml	50	0	1	0	52	1
 R	games/rpg/TinyGauntlet2.ml	668	1	0	1	4	0
@@ -71661,7 +71665,6 @@ R	games/adventure/myst/Myst_island.ml	125	5	0	4	2	0
 R	apps/music/Part_tr808.ml	256	10	0	3	4	0
 R	libs/graphics/3d/raytrace/Bvh.ml	161	0	1	0	2	1
 R	appkits/astronomy/Stereographic.ml	29	0	1	0	2	1
-R	launcher/codemap/Map_v2.ml	796	17	0	4	39	0
 R	libs/core/Set.ml	3	1	2	1	2	1
 R	games/platform/TinyMetroid.ml	330	1	0	1	1	0
 R	apps/music/Piano.ml	49	2	0	1	4	0
@@ -71674,6 +71677,7 @@ R	libs/audio/formats/mpeg_audio/Layer3.mli	89	2	0	1	4	0
 R	examples/PhysicsHitbox3d.ml	65	7	0	3	2	0
 R	playground/layers/Sprite.mli	100	2	0	2	5	0
 R	libs/crypto/Ecdsa.ml	24	0	1	0	8	1
+R	launcher/codemap/Map_v2.ml	1057	10	0	4	5	0
 R	playground/Playground.mli	1031	1	0	1	5	0
 R	libs/networking/protocols/Url.ml	169	0	2	0	5	1
 R	libs/networking/unix/Tls_client.ml	117	2	1	2	2	1
@@ -71777,7 +71781,7 @@ R	playground/platforms/native/Image_native.ml	89	1	1	1	12	1
 R	libs/graphics/3d/raytrace/Raytrace.mli	242	1	0	1	13	0
 R	languages/html/Forms.mli	60	2	0	2	7	0
 R	playground/layers/Scene2d.ml	43	1	1	1	3	115
-R	launcher/codemap/Map_v2.ml	904	11	0	4	16	0
+R	launcher/codemap/Map_v2.ml	904	1	0	1	5	0
 R	games/shmup/TinyRType.ml	428	3	0	2	9	0
 R	games/racing/TinyMarioKart.ml	289	4	0	3	46	0
 R	languages/smalltalk/St_primitives.mli	61	1	0	1	2	0
@@ -72068,6 +72072,7 @@ R	libs/audio/instruments/Moog_ladder.mli	97	1	0	1	2	0
 R	games/racing/TinySupercars.ml	223	1	0	1	3	0
 R	apps/music/Part_mixer.ml	22	6	0	3	7	0
 R	games/racing/TinySuperOffRoad.ml	151	2	0	2	12	0
+R	launcher/codemap/Map_v2.ml	2484	10	1	4	14	1
 R	apps/pim/TinyQuicken.ml	143	3	0	2	2	0
 R	languages/html/Charset.ml	120	0	2	0	15	1
 R	games/platform/TinyPrinceOfPersia.ml	335	1	0	1	4	0
@@ -72100,6 +72105,7 @@ R	gamekits/sectors/Sectors.ml	14	0	1	0	10	2
 R	appkits/paint/Paint.mli	30	2	0	1	3	0
 R	apps/pim/TinyClock.ml	154	4	0	2	20	0
 R	libs/audio/instruments/Vco.ml	20	0	3	0	2	4
+R	launcher/codemap/Map_v2.ml	1691	1	0	1	5	0
 R	games/adventure/TinyMetalGearSolid.ml	193	3	0	2	10	0
 R	games/racing/TinyOutRun.ml	119	1	0	1	2	0
 R	apps/office/Part_sheet.ml	15	1	0	1	2	0
@@ -72245,6 +72251,7 @@ R	apps/media/TinyMediaPlayer.ml	285	4	0	2	17	0
 R	languages/pascal/Pcode.ml	14	0	2	0	24	1
 R	playground/layers/Character3d.mli	82	7	0	3	5	0
 R	apps/music/Part_tb303.ml	44	1	0	1	16	0
+R	launcher/codemap/Map_v2.ml	1756	16	0	4	14	0
 R	playground/apis/Physics.ml	33	0	1	0	1	22
 R	libs/physics/3d/Resolve3d.mli	89	4	0	3	4	0
 R	playground/apis/Audio.ml	31	0	2	0	1	10
@@ -72360,6 +72367,7 @@ R	libs/graphics/3d/raytrace/Bvh.ml	60	1	0	1	2	0
 R	games/rpg/TinyGauntlet2.ml	138	2	0	2	9	0
 R	appkits/browser/Browser_text.ml	21	1	2	1	2	4
 R	playground/Playground3d.mli	109	2	0	2	4	0
+R	launcher/codemap/Map_v2.ml	615	10	0	4	18	0
 R	examples/TypesetParagraph.ml	80	2	0	1	10	0
 R	examples/AudioSfx.ml	38	4	0	4	2	0
 R	appkits/embed/Compound.ml	14	0	1	0	1	1
@@ -72447,6 +72455,7 @@ R	libs/physics/3d/Joint3d.ml	26	4	0	3	1	0
 R	libs/graphics/3d/raytrace/Raytrace.ml	294	5	0	3	78	0
 R	appkits/money/Money.ml	33	0	2	0	13	2
 R	playground/Playground.ml	178	0	1	0	3	1
+R	launcher/codemap/Map_v2.ml	2452	11	0	4	10	0
 R	examples/AudioTheremin.ml	30	2	0	1	1	0
 R	games/rhythm/TinyDDR.ml	191	12	0	4	42	0
 R	games/platform/TinyMarioGalaxy2D.ml	294	1	0	1	15	0
@@ -72503,7 +72512,6 @@ R	libs/networking/netcode/Sim_net.ml	86	0	1	0	13	1
 R	languages/lisp/Lisp_read.ml	31	3	3	2	3	1
 R	games/racing/TinyIgnition.ml	96	2	0	2	3	0
 R	games/puzzle/TinyPuzzleBobble.ml	100	1	0	1	3	0
-R	launcher/codemap/Map_v2.ml	2561	12	0	4	26	0
 R	apps/office/TinyVisiCalc.ml	91	3	0	2	11	0
 R	apps/internet/TinyFirefox.ml	141	7	0	4	15	0
 R	appkits/draw/Drawing.ml	42	1	1	1	11	1
@@ -72523,6 +72531,7 @@ R	apps/music/Part_juno.ml	132	4	0	2	9	0
 R	apps/graphics/TinyBlender.ml	483	1	0	1	17	0
 R	apps/pim/Palm.mli	102	1	0	1	3	0
 R	apps/music/Part_tr808.ml	253	13	1	3	3	2
+R	launcher/codemap/Map_v2.ml	2583	11	0	4	23	0
 R	gamekits/brawler/3d/Skeleton.ml	52	0	1	0	18	3
 R	games/platform/TinyVVVVVV.ml	166	2	0	2	7	0
 R	libs/audio/effects/Effect.mli	33	1	0	1	14	0
@@ -72694,7 +72703,6 @@ R	playground/Playground.mli	133	0	3	0	1	95
 R	games/platform/TinyMarioGalaxy2D.ml	93	2	0	1	1	0
 R	games/arcade/TinySpacewar.ml	141	5	0	4	3	0
 R	playground/Playground.ml	397	1	1	1	7	9
-R	launcher/codemap/Map_v2.ml	1048	10	0	4	12	0
 R	games/rhythm/TinyRockBand.ml	270	1	0	1	7	0
 R	games/adventure/TinyManiacMansion.ml	325	1	0	1	1	0
 R	games/sports/TinyKickOff2.ml	148	2	0	1	4	0
@@ -72740,7 +72748,6 @@ R	libs/gui/Mvc.ml	27	0	2	0	1	5
 R	appkits/document/Document.ml	30	0	1	0	1	1
 R	games/adventure/TinyJourney.ml	183	1	0	1	19	0
 R	libs/audio/formats/midi/Midi.ml	13	0	3	0	6	3
-R	launcher/codemap/Map_v2.ml	2417	14	0	4	16	0
 R	games/shmup/TinyGalaga.ml	287	5	0	4	16	0
 R	apps/music/TinyOpxy.ml	77	4	0	3	1	0
 R	apps/media/TinyMediaPlayer.ml	451	5	0	2	28	0
@@ -72763,7 +72770,6 @@ R	games/platform/TinyMario.ml	341	5	0	3	2	0
 R	libs/physics/3d/Collide3d.mli	156	4	0	3	2	0
 R	apps/media/TinyWinamp.ml	250	2	0	2	7	0
 R	libs/audio/formats/mpeg_audio/Layer2.ml	40	1	0	1	13	0
-R	launcher/codemap/Map_v2.ml	1671	11	0	4	33	0
 R	languages/smalltalk/St_primitives.ml	432	1	0	1	23	0
 R	games/adventure/TinyGTA.ml	106	3	0	2	4	0
 R	libs/audio/instruments/Vco.ml	50	1	0	1	36	0
@@ -72793,7 +72799,6 @@ R	libs/networking/protocols/Transport.ml	21	0	2	0	2	4
 R	apps/internet/TinyChrome.ml	554	23	0	6	28	0
 R	games/platform/TinyVikings.ml	187	1	0	1	5	0
 R	apps/office/TinyVisiCalc.ml	81	1	0	1	3	0
-R	launcher/codemap/Map_v2.ml	1017	3	0	3	2	0
 R	playground/apis/Physics3d.mli	421	2	0	2	12	0
 R	games/adventure/TinyMetalGearSolid.ml	263	1	0	1	4	0
 R	apps/office/TinyWord.ml	125	1	0	1	1	0
@@ -72833,6 +72838,7 @@ R	apps/office/TinyWord.ml	76	7	0	2	15	0
 R	appkits/draw/Drawing.ml	15	0	1	0	1	5
 R	languages/smalltalk/St_image.mli	21	1	0	1	3	0
 R	games/strategy/TinyWorms.ml	87	2	0	1	1	0
+R	launcher/codemap/Map_v2.ml	1942	1	0	1	6	0
 R	games/platform/TinyCeleste.ml	217	1	0	1	5	0
 R	apps/education/TinyInteractivePhysics.ml	198	3	0	2	9	0
 R	playground/layers/Camera2d.mli	145	1	0	1	10	0
@@ -73058,7 +73064,6 @@ R	apps/music/TinyReBirth.ml	130	2	0	1	1	0
 R	libs/physics/2d/Collide.ml	28	2	2	2	12	1
 R	playground/platforms/web/Playground_platform.ml	792	1	0	1	1	0
 R	libs/graphics/imaging/Layers.mli	24	2	0	1	3	0
-R	launcher/codemap/Map_v2.ml	1087	10	0	4	5	0
 R	games/arcade/TinyBreakout.ml	255	1	0	1	15	0
 R	apps/media/Id3.ml	114	0	1	0	25	1
 R	libs/ai/search/Zobrist.ml	20	0	1	0	4	1
@@ -73083,7 +73088,6 @@ R	libs/audio/signal/Mix.mli	30	1	0	1	3	0
 R	launcher/codemap/Code_map_base.ml	347	0	3	0	4	4
 R	apps/gamedev/TinyAseprite.ml	189	1	0	1	2	0
 R	languages/css/Computed.ml	172	1	0	1	10	0
-R	launcher/codemap/Map_v2.ml	2139	14	0	4	53	0
 R	playground/Playground.ml	206	0	4	0	1	28
 R	apps/music/TinyOpxy.ml	88	2	0	1	1	0
 R	games/fps/TinyBattlezone3d.ml	89	4	0	4	4	0
@@ -73167,7 +73171,6 @@ R	playground/layers/Camera2d.ml	74	2	0	1	4	0
 R	launcher/codemap/Code_map_base.ml	128	1	1	1	3	1
 R	languages/ocaml/Parse_ml.ml	704	1	0	1	112	0
 R	games/fps/TinyCyberSled.ml	74	3	0	2	2	0
-R	launcher/codemap/Map_v2.ml	2590	11	1	4	10	1
 R	games/sports/TinyPinball3d.ml	71	2	0	2	2	0
 R	apps/music/TinyHammond.ml	67	15	0	4	4	0
 R	games/adventure/TinyZelda.ml	375	5	0	3	1	0
@@ -73301,6 +73304,7 @@ R	apps/music/Voice_rhodes.ml	70	0	1	0	6	1
 R	libs/terminal/Talk.ml	145	1	0	1	14	0
 R	playground/apis/Physics3d.ml	589	7	0	4	2	0
 R	apps/music/Op1_engine.ml	134	2	0	1	28	0
+R	launcher/codemap/Map_v2.ml	1882	10	0	4	28	0
 R	games/arcade/TinyMarbleMadness.ml	503	5	0	3	10	0
 R	libs/graphics/3d/geometry/Ray.ml	17	1	4	1	4	3
 R	games/arcade/TinyBreakout.ml	276	2	0	1	12	0
@@ -73330,7 +73334,6 @@ R	games/racing/TinyBigRedRacing.ml	272	4	0	2	21	0
 R	playground/apis/Multiplayer.ml	310	2	0	1	9	0
 R	libs/graphics/videos/mpeg1/Motion.ml	13	0	4	0	3	1
 R	launcher/codemap/Code_search.ml	88	0	1	0	25	1
-R	launcher/codemap/Map_v2.ml	1897	1	0	1	6	0
 R	games/shmup/TinyGalaga.ml	333	3	0	2	4	0
 R	apps/internet/TinyChrome.ml	636	1	0	1	6	0
 R	apps/music/Voice_minimoog.mli	205	1	0	1	4	0
@@ -73346,6 +73349,7 @@ R	languages/javascript/Js_value.mli	47	1	0	1	12	0
 R	games/flight/TinyComanche.ml	261	3	0	3	6	0
 R	playground/layers/Camera3d.mli	183	3	0	2	2	0
 R	appkits/paint/Pattern.ml	12	0	3	0	1	1
+R	launcher/codemap/Map_v2.ml	2632	3	1	2	3	1
 R	apps/music/Part_juno.ml	121	4	0	2	8	0
 R	apps/internet/TinyFirefox.ml	355	1	0	1	1	0
 R	appkits/tui/Tui_snake.ml	116	3	1	3	1	2
@@ -73383,6 +73387,7 @@ R	launcher/codemap/Map_v2.mli	48	11	0	4	4	0
 R	apps/graphics/TinyVisio.ml	361	3	0	2	12	0
 R	libs/graphics/imaging/Convolve.ml	58	0	1	0	2	1
 R	apps/music/Part_juno.ml	141	4	0	2	8	0
+R	launcher/codemap/Map_v2.ml	1827	13	0	4	19	0
 R	playground/ways/Povray.ml	151	1	0	1	3	0
 R	playground/apis/Physics3d.mli	66	6	0	2	32	0
 R	examples/AiNeuralNet.ml	276	6	0	3	1	0
@@ -73562,7 +73567,6 @@ R	games/racing/TinySuperOffRoad.ml	341	2	0	2	21	0
 R	libs/crypto/Bignum.ml	202	0	2	0	1	2
 R	appkits/browser/Browser_url.ml	25	0	3	0	1	7
 R	games/racing/TinyMarioKart.ml	940	7	0	4	1	0
-R	launcher/codemap/Map_v2.ml	666	4	0	3	2	0
 R	playground/apis/Gui.ml	75	7	1	4	1	8
 R	games/platform/TinyBraid.ml	404	1	0	1	1	0
 R	games/arcade/TinyTron.ml	147	13	0	4	25	0
@@ -73585,7 +73589,6 @@ R	examples/PhysicsHitbox3d.ml	47	1	0	1	1	0
 R	libs/audio/signal/Mix.ml	22	0	3	0	1	3
 R	games/puzzle/TinyFez.ml	449	4	0	2	13	0
 R	libs/ai/movement/Steering.ml	10	0	3	0	1	3
-R	launcher/codemap/Map_v2.ml	1221	1	0	1	2	0
 R	games/puzzle/TinyPortal2D.ml	410	12	0	4	37	0
 R	gamekits/shmup/Shots.mli	26	1	0	1	4	0
 R	apps/media/TinyWinamp.ml	535	3	0	2	14	0
@@ -73604,7 +73607,6 @@ R	games/shmup/TinyRobotron.ml	245	1	0	1	5	0
 R	playground/ways/Povray.ml	58	0	1	0	1	3
 R	games/racing/TinySuperOffRoad.ml	105	1	0	1	4	0
 R	gamekits/racing/Car.mli	50	4	0	3	2	0
-R	launcher/codemap/Map_v2.ml	676	16	0	4	41	0
 R	libs/physics/3d/Integrate3d.ml	73	2	0	2	3	0
 R	games/puzzle/TinySokobanEd.ml	107	4	0	4	2	0
 R	libs/physics/3d/Body3d.mli	102	2	0	1	4	0
@@ -73759,7 +73761,7 @@ R	examples/ImageLzw.ml	32	3	0	2	5	0
 R	games/arcade/TinyBomberman.ml	977	13	0	4	37	0
 R	examples/AiPathfinding.ml	132	3	0	3	6	0
 R	apps/music/Part_rhodes.ml	67	8	0	3	3	0
-R	launcher/codemap/Map_v2.ml	1875	3	0	3	20	0
+R	launcher/codemap/Map_v2.ml	841	17	0	4	39	0
 R	games/puzzle/TinyTetris.ml	297	1	0	1	3	0
 R	libs/ai/search/Mcts.ml	35	2	0	1	15	0
 R	games/sports/TinyPinball.ml	113	1	0	1	3	0
@@ -74040,6 +74042,7 @@ R	games/adventure/myst/Myst_island.ml	298	0	1	0	18	1
 R	libs/gui/Mvu.ml	34	0	2	0	1	1
 R	appkits/editor/Tui_turbo.ml	619	2	0	1	49	0
 R	examples/PhysicsRagdoll3d.ml	55	5	0	2	9	0
+R	launcher/codemap/Map_v2.ml	1137	10	0	4	19	0
 R	games/platform/TinyMarioWorld.ml	90	1	0	1	1	0
 R	apps/internet/TinyEudora.ml	267	4	0	2	3	0
 R	playground/apis/Juice.mli	235	1	0	1	2	0
@@ -74153,7 +74156,6 @@ R	games/flight/TinyDescent3d.ml	59	1	0	1	2	0
 R	games/sports/TinyPinball3d.ml	194	4	0	3	19	0
 R	libs/networking/mail/Mail.ml	58	0	1	0	7	1
 R	examples/AiBots.ml	75	1	0	1	2	0
-R	launcher/codemap/Map_v2.ml	793	11	0	4	3	0
 R	languages/scheme/Scheme_prims.ml	19	2	0	2	2	0
 R	playground/apis/Audio3d.ml	14	1	1	1	2	1
 R	apps/music/TinyReason.ml	249	7	0	3	6	0
@@ -74182,6 +74184,7 @@ R	games/strategy/TinyDune2.ml	275	1	0	1	15	0
 R	apps/education/TinyStellarium.ml	357	7	0	2	101	0
 R	apps/internet/TinyEudora.ml	1124	1	0	1	2	0
 R	games/shmup/TinyInvaders.ml	363	3	0	2	2	0
+R	launcher/codemap/Map_v2.ml	909	16	0	4	40	0
 R	gamekits/rhythm/Rhythm.ml	139	0	1	0	8	2
 R	games/platform/TinyPrinceOfPersia.ml	147	1	0	1	1	0
 R	games/puzzle/TinyLemmings.ml	80	1	0	1	3	0
@@ -74533,7 +74536,6 @@ R	games/platform/TinySonic.ml	658	4	0	2	15	0
 R	libs/gui/Look.mli	139	3	0	2	5	0
 R	launcher/codemap/Map_v2.mli	98	3	0	2	3	0
 R	libs/networking/protocols/Url.ml	174	0	2	0	3	1
-R	launcher/codemap/Map_v2.ml	864	16	0	4	40	0
 R	libs/compression/Huffman.ml	72	0	1	0	17	1
 R	languages/css/Selectors.ml	165	1	0	1	6	0
 R	playground/layers/Tilemap.mli	168	2	0	2	23	0
@@ -74561,6 +74563,7 @@ R	games/shmup/TinyRType.ml	170	4	0	4	2	0
 R	games/shmup/TinyInvaders.ml	365	3	0	2	4	0
 R	games/strategy/TinyWorms.ml	323	9	0	4	15	0
 R	games/shmup/TinyStarFox.ml	454	4	0	2	2	0
+R	launcher/codemap/Map_v2.ml	1696	4	0	3	20	0
 R	games/platform/TinyMario64.ml	129	5	0	3	11	0
 R	games/platform/TinyPrinceOfPersia.ml	497	4	0	2	17	0
 R	games/adventure/TinyMyst.ml	210	3	0	1	33	0
@@ -74666,6 +74669,7 @@ R	apps/media/TinyWinamp.ml	396	1	0	1	16	0
 R	games/racing/TinyBigRedRacing.ml	236	3	0	2	7	0
 R	apps/graphics/TinyPhotoshop.ml	212	3	0	2	2	0
 R	games/strategy/TinyWorms.ml	347	1	0	1	2	0
+R	launcher/codemap/Map_v2.ml	2527	10	0	4	27	0
 R	apps/music/TinyJuno.ml	112	5	0	3	1	0
 R	appkits/draw/Drawing.mli	28	1	0	1	3	0
 R	libs/networking/mail/Mail.ml	16	0	1	0	1	1
@@ -74921,7 +74925,6 @@ R	libs/physics/3d/Resolve3d.mli	122	5	0	3	2	0
 R	languages/c/Parse_c.ml	403	1	0	1	17	0
 R	libs/physics/3d/Body3d.mli	87	1	0	1	1	0
 R	libs/graphics/3d/Clip.ml	15	1	0	1	11	0
-R	launcher/codemap/Map_v2.ml	2530	11	0	4	8	0
 R	games/fps/TinyFortnite.ml	986	2	0	1	9	0
 R	libs/audio/Sfx.ml	131	0	2	0	16	2
 R	gamekits/racing/Topdown.ml	51	1	2	1	2	11
@@ -75014,7 +75017,6 @@ R	apps/media/TinyMediaPlayer.ml	364	3	0	1	5	0
 R	libs/graphics/imaging/Lut.ml	38	0	1	0	36	1
 R	playground/apis/Physics.ml	174	0	1	0	4	9
 R	libs/physics/2d/Energy.mli	27	2	0	2	6	0
-R	launcher/codemap/Map_v2.ml	1019	10	0	4	13	0
 R	games/rhythm/TinyDDR.ml	175	4	0	4	2	0
 R	games/platform/TinyPrinceOfPersia.ml	515	1	0	1	2	0
 R	apps/music/TinyReface.ml	223	1	0	1	2	0
@@ -75069,6 +75071,7 @@ R	games/strategy/TinySimCity.ml	372	1	0	1	5	0
 R	libs/ai/movement/Steering.ml	54	0	2	0	8	1
 R	games/fps/TinyFortnite.ml	639	2	0	2	12	0
 R	libs/compression/Zlib.ml	31	2	3	1	12	1
+R	launcher/codemap/Map_v2.ml	1846	13	0	4	34	0
 R	apps/music/Voice_cs80.mli	154	1	0	1	4	0
 R	games/racing/TinyVirtuaRacing.ml	984	3	0	3	9	0
 R	libs/networking/mail/Mail.ml	178	0	2	0	9	2
@@ -75092,6 +75095,7 @@ R	playground/apis/Gui.mli	103	2	0	1	8	0
 R	libs/physics/3d/Sweep3d.mli	42	3	0	3	4	0
 R	games/strategy/TinyTowerDefense.ml	186	1	0	1	11	0
 R	libs/physics/2d/Collide.ml	109	1	0	1	9	0
+R	launcher/codemap/Map_v2.ml	1549	1	0	1	2	0
 R	apps/music/TinyReason.ml	622	4	0	2	15	0
 R	libs/networking/tls/Tls13.ml	178	5	0	3	54	0
 R	launcher/codemap/Map_classic.ml	139	1	0	1	3	0
@@ -75273,7 +75277,7 @@ R	games/shmup/TinyMissileCommand.ml	212	3	0	2	2	0
 R	games/racing/TinyMicroMachines.ml	103	2	0	2	2	0
 R	libs/graphics/3d/raytrace/Raytrace.ml	446	0	1	0	1	3
 R	apps/music/Studio_rebirth.ml	22	3	1	2	16	1
-R	launcher/codemap/Map_v2.ml	1062	11	0	4	25	0
+R	launcher/codemap/Map_v2.ml	1062	3	0	3	2	0
 R	games/racing/TinyBigRedRacing.ml	424	4	0	4	2	0
 R	libs/physics/3d/Energy3d.ml	27	4	0	3	3	0
 R	libs/networking/tls/Tls13.ml	161	4	0	4	13	0
@@ -75375,7 +75379,6 @@ R	libs/networking/netcode/Rollback.ml	139	1	1	1	2	1
 R	gamekits/brawler/Hitbox.ml	13	1	2	1	2	6
 R	languages/pascal/Pdebug.ml	16	1	0	1	5	0
 R	games/platform/TinyMarioGalaxy2D.ml	135	1	0	1	5	0
-R	launcher/codemap/Map_v2.ml	588	10	1	5	25	1
 R	games/sports/TinyKickOff2.ml	347	3	0	2	6	0
 R	games/racing/TinyMarioKart64.ml	618	2	0	2	3	0
 R	libs/gui/Look.mli	121	3	0	2	4	0
@@ -75387,7 +75390,6 @@ R	examples/Turtle.ml	12	3	0	2	10	0
 R	playground/platforms/software/Shape_render_software.ml	375	3	0	1	36	0
 R	appkits/editor/Emacs_simple.ml	12	0	1	0	415	1
 R	examples/PhysicsBounce3d.ml	50	2	0	2	5	0
-R	launcher/codemap/Map_v2.ml	1704	10	0	4	3	0
 R	libs/core/Set_.ml	296	0	3	0	1	42
 R	libs/audio/effects/Rack.ml	17	11	2	3	4	1
 R	libs/graphics/3d/raytrace/Raytrace.ml	153	0	1	0	1	1
@@ -75411,7 +75413,6 @@ R	libs/gui/Look.ml	115	3	0	2	2	0
 R	languages/c/Parse_c.ml	444	1	0	1	34	0
 R	languages/lisp/Lisp_eval.mli	69	1	0	1	13	0
 R	appkits/editor/Tui_turbo.ml	62	5	0	2	10	0
-R	launcher/codemap/Map_v2.ml	1608	6	0	3	38	0
 R	apps/music/TinySoundtracker.ml	233	2	0	1	1	0
 R	libs/audio/formats/mpeg_audio/Layer3_tables.ml	423	0	1	0	2	1
 R	launcher/menu/Tinybox_menu.ml	111	1	0	1	3	0
@@ -75458,11 +75459,11 @@ R	launcher/codemap/Map_streets.ml	180	1	0	1	23	0
 R	libs/audio/effects/Eq.ml	36	3	0	1	17	0
 R	apps/music/Part_juno.ml	149	4	0	2	15	0
 R	libs/physics/2d/Energy.mli	21	2	0	2	6	0
-R	launcher/codemap/Map_v2.ml	1534	16	0	4	74	0
 R	games/racing/TinyMarioKart64.ml	530	2	0	2	12	0
 R	apps/music/Opxy_engine.ml	37	1	0	1	14	0
 R	launcher/website/make_website.ml	205	1	0	1	11	0
 R	libs/graphics/3d/Clip.mli	56	1	0	1	5	0
+R	launcher/codemap/Map_v2.ml	713	10	0	4	8	0
 R	languages/c/Parse_c.ml	285	1	0	1	41	0
 R	apps/music/Part_tr808.ml	192	1	0	1	3	0
 R	libs/networking/unix/Tls_client.mli	35	1	0	1	4	0
@@ -75571,7 +75572,6 @@ R	apps/music/TinyReason.ml	594	5	0	3	11	0
 R	launcher/codemap/Map_graph.ml	84	2	0	1	17	0
 R	appkits/blocks/Block_edit.mli	23	2	0	1	3	0
 R	languages/css/Css_syntax.ml	279	0	3	0	33	6
-R	launcher/codemap/Map_v2.ml	1725	17	0	4	57	0
 R	gamekits/racing/3d/Track3d.ml	19	2	0	2	7	0
 R	games/rpg/TinyDiablo.ml	165	1	0	1	2	0
 R	playground/layers/Scene2d.ml	38	0	2	0	3	125
@@ -259598,7 +259598,7 @@ let help_shapes (computer : computer) : shape list =
  * see at once whether a page runs the latest, a browser keeping the
  * program it has for a while): 0.01, 0.02, ..., raised by hand at each
  * publish of a change to the map (make publish, make codemap-web) *)
-let version = "0.02"
+let version = "0.03"
 
 (* claude: a line of keys and what they do, centred at [y], the keys in
  * yellow, the rest dim; the widths Code_map_base.text_width's *)
@@ -264717,7 +264717,7 @@ val labels : Code_map_base.t -> Code_map_base.camera -> float -> Playground.shap
 
 val style : Code_map_base.style
 launcher/codemap/Map_v2.ml
-146064
+148838
 (* Claude Code
  *
  * Copyright (C) 2026 Yoann Padioleau
@@ -265051,7 +265051,40 @@ let capitals_chosen (t : t) : (string, int * entry) Hashtbl.t * (string * Code_g
        * its genre *)
       (List.filter (fun (p, _) -> fan p >= 3 || depth (dir_of p) - depth top <= 1) sorted)
   in
-  (where, chosen)
+  (* claude: and the unit's entry point, a capital whether a config names
+   * it or not (the author, at principia's rio: "why the main or
+   * threadmain of rio is not a big green capital? ... it's useful to see
+   * the entry point usually, and in which file it's located"): of the
+   * definitions under the unit, the one whose calls reach the most files,
+   * if 30 or more; weight 0, never a config's, saying so *)
+  let entry =
+    match rank_if_counted t with
+    | None -> None
+    | Some r ->
+        let under p = top = "" || p = top || Code_search.starts p (top ^ "/") in
+        let best =
+          List.fold_left
+            (fun acc (p, l, (pl : Code_rank.place)) ->
+              if pl.reach >= 30 && under p && Hashtbl.mem where p then match acc with Some (_, _, r') when r' >= pl.reach -> acc | _ -> Some (p, l, pl.reach) else acc)
+            None (Code_rank.places r)
+        in
+        match best with
+        | Some (p, l, _) -> (
+            let _, e = Hashtbl.find where p in
+            match List.find_opt (fun (l', _, _) -> l' = l) (Lazy.force e.file).defs with
+            | Some (_, name, _) -> Some (p, name)
+            | None -> None)
+        | None -> None
+  in
+  (* a config's capital already: marked so, its file said too *)
+  let is_entry (q, (it : Code_guide.item)) = match entry with Some (p, name) -> q = p && Code_guide.anchor_name it.at = name | None -> false in
+  let chosen = List.map (fun ((q, (it : Code_guide.item)) as x) -> if is_entry x then (q, { it with weight = 0 }) else x) chosen in
+  let added =
+    match entry with
+    | Some (p, name) when not (List.exists is_entry chosen) -> [ (p, ({ at = "def:" ^ name; say = Some "the entry point: of the code here, what reaches the most"; weight = 0 } : Code_guide.item)) ]
+    | _ -> []
+  in
+  (where, added @ chosen)
 
 let capitals_drawn (t : t) (c : camera) (where : (string, int * entry) Hashtbl.t) (chosen : (string * Code_guide.item) list) : name list =
   let a = c.a in
@@ -265071,6 +265104,8 @@ let capitals_drawn (t : t) (c : camera) (where : (string, int * entry) Hashtbl.t
                   let label = Code_guide.anchor_name it.at in
                   (* claude: a name too short to say anything from afar (t), its module's with it *)
                   let label = if String.length label <= 2 then String.capitalize_ascii (Filename.remove_extension (Filename.basename path)) ^ "." ^ label else label in
+                  (* claude: the entry point found (weight 0), its file said *)
+                  let label = if it.weight = 0 then Printf.sprintf "%s (%s)" label (Filename.basename path) else label in
                   (* claude: its own uses once counted (Code_rank, not counted
                    * here: rank_if_counted), the .ml's for an .mli's *)
                   let uses =
@@ -265091,7 +265126,14 @@ let capitals_drawn (t : t) (c : camera) (where : (string, int * entry) Hashtbl.t
                   let reaching = match uses with Some (_, r) -> r >= 30 && not (many || fan path >= 30) | None -> false in
                   (* claude: as large as central: the core's the map's largest;
                    * a definition used by many files as large as a central file's *)
-                  let size = match fan path with n when n >= 100 -> 24. | n when n >= 30 -> 19. | _ -> if many || reaching then 19. else 15. in
+                  let size =
+                    let by_fan = match fan path with n when n >= 100 -> 24. | n when n >= 30 -> 19. | _ -> 15. in
+                    (* claude: and by its own uses and reach, so that the one
+                     * that matters stands out (the author: Window, used by 15
+                     * files, as small as the rest) *)
+                    let by_own = match uses with Some (u, r) -> if u.files >= 20 || r >= 100 then 24. else if u.files >= 10 || r >= 30 then 22. else 15. | None -> 15. in
+                    Float.max by_fan by_own
+                  in
                   let tw = 0.5 *. size *. float_of_int (String.length label) in
                   let x0 = px -. 6. and x1 = px +. 10. +. tw +. 4. in
                   (* claude: a definition many use is red, the map's colour of
@@ -265112,7 +265154,7 @@ let capitals_drawn (t : t) (c : camera) (where : (string, int * entry) Hashtbl.t
                   let reaches = match uses with Some (_, r) when r > 0 -> [ Printf.sprintf "reaches %d files through its calls" r ] | _ -> [] in
                   let central = match fan path with 0 -> [] | n -> [ Printf.sprintf "its module named by %d files%s" n (if n >= 30 then ": the core" else "") ] in
                   let said = [ "* " ^ label ^ "   " ^ path ] @ (match it.say with Some s -> wrap 48 s | None -> []) @ central @ used @ reaches @ [ "click: to its file" ] in
-                  Some { node = i; nbox = (x0, py -. (size /. 2.) -. 2., x1, py +. (size /. 2.) +. 2.); nrank = 805. +. float_of_int (min 14 (fan path / 10)); draw = group [ ring; dot; shadow; text ]; said = Some said; sect = None; cap = Some (path, line, label) }
+                  Some { node = i; nbox = (x0, py -. (size /. 2.) -. 2., x1, py +. (size /. 2.) +. 2.); nrank = (if many || reaching || it.weight = 0 then 850. else 805. +. float_of_int (min 14 (fan path / 10))); draw = group [ ring; dot; shadow; text ]; said = Some said; sect = None; cap = Some (path, line, label) }
               | None -> None)
           | _ -> None)
       | _ -> None)
@@ -265122,14 +265164,14 @@ let capitals_drawn (t : t) (c : camera) (where : (string, int * entry) Hashtbl.t
  * unit looked at are the same, not chosen again every frame: sorting
  * and hashing principia's 2,200 files kept the map at 60% of a CPU with
  * nothing happening *)
-let capitals_cache : (entry Treemap.placed array * Code_guide.t * int * ((string, int * entry) Hashtbl.t * (string * Code_guide.item) list)) option ref = ref None
+let capitals_cache : (entry Treemap.placed array * Code_guide.t * int * bool * ((string, int * entry) Hashtbl.t * (string * Code_guide.item) list)) option ref = ref None
 
 let capitals_chosen_opti (t : t) : (string, int * entry) Hashtbl.t * (string * Code_guide.item) list =
   match !capitals_cache with
-  | Some (placed, guide, focus, r) when placed == t.placed && guide == t.guide && focus = t.focus -> r
+  | Some (placed, guide, focus, counted, r) when placed == t.placed && guide == t.guide && focus = t.focus && counted = (rank_if_counted t <> None) -> r
   | _ ->
       let r = capitals_chosen t in
-      capitals_cache := Some (t.placed, t.guide, t.focus, r);
+      capitals_cache := Some (t.placed, t.guide, t.focus, rank_if_counted t <> None, r);
       r
 
 let capitals (t : t) (c : camera) : name list =
@@ -265266,7 +265308,10 @@ let names (t : t) (c : camera) : name list =
     (fun kept n ->
       let free box = on_map box && not (List.exists (fun k -> overlaps box k.nbox) kept) in
       if free n.nbox then n :: kept
-      else if n.said <> None && n.nrank >= 815. && n.nrank < 820. then begin
+      (* claude: and a capital much used or reaching far, or the entry
+       * point (850: over a file's card, 820, the author: Window hidden
+       * under dat.h's) *)
+      else if n.said <> None && ((n.nrank >= 815. && n.nrank < 820.) || n.nrank = 850.) then begin
         (* claude: a hub's capital (fan-in 100 and more: ranked 815 and up)
          * that collides is nudged up or down a line or two, the core's
          * names shown near their place rather than not at all *)
