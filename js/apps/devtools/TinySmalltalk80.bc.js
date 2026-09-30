@@ -964,7 +964,7 @@ caml_call5(f,a0,a1,a2,a3,a4){return(f.l>=0?f.l:f.l=f.length)===5?f(a0,a1,a2,a3,a
 caml_call6(f,a0,a1,a2,a3,a4,a5){return(f.l>=0?f.l:f.l=f.length)===6?f(a0,a1,a2,a3,a4,a5):caml_call_gen(f,[a0,a1,a2,a3,a4,a5])}function
 caml_call7(f,a0,a1,a2,a3,a4,a5,a6){return(f.l>=0?f.l:f.l=f.length)===7?f(a0,a1,a2,a3,a4,a5,a6):caml_call_gen(f,[a0,a1,a2,a3,a4,a5,a6])}var
 dummy=0;caml_fs_init();var
-Out_of_memory=[num_248,str_Out_of_memory,-1],Sys_error=[num_248,str_Sys_error,-2],Failure=[num_248,str_Failure,-3],Invalid_argument=[num_248,str_Invalid_argument,-4],Not_found=[num_248,str_Not_found,-7],Match_failure=[num_248,str_Match_failure,-8],Stack_overflow=[num_248,str_Stack_overflow,-9],Assert_failure=[num_248,str_Assert_failure,-11],Undefined_recursive_module=[num_248,str_Undefined_recurs_abr,-12],partial=[4,0,0,0,[12,45,[4,0,0,0,0]]],dY=[0,[11,'File "',[2,0,[11,'", line ',[4,0,0,0,[11,str_characters,[4,0,0,0,[12,45,[4,0,0,0,[11,str$8,[2,0,0]]]]]]]]]],'File "%s", line %d, characters %d-%d: %s'],eY=[0,str$9,0,str$9],h$=[0,"#FFFFFF"],ia=[0,"#000000"],im="+-*/\\<>=~@%&?,",partial$0=[2,0,[12,39,0]],oa=[0,0,num_440,num_440,0.,num_0_1,num_0_1,0.,0.,0.,0.,0.,0.,0.707,0.,0.,0.,num_0_5],pC=[0,1,1],pV="polygon",p0=str_width,p1=str_height,p5="fill",p6="points",p7="transform";caml_register_global(11,Undefined_recursive_module,str_Undefined_recurs_abr);caml_register_global(10,Assert_failure,str_Assert_failure);caml_register_global(9,[num_248,str_Sys_blocked_io,-10],str_Sys_blocked_io);caml_register_global(8,Stack_overflow,str_Stack_overflow);caml_register_global(7,Match_failure,str_Match_failure);caml_register_global(6,Not_found,str_Not_found);caml_register_global(5,[num_248,str_Division_by_zero,-6],str_Division_by_zero);caml_register_global(4,[num_248,str_End_of_file,-5],str_End_of_file);caml_register_global(3,Invalid_argument,str_Invalid_argument);caml_register_global(2,Failure,str_Failure);caml_register_global(1,Sys_error,str_Sys_error);caml_register_global(0,Out_of_memory,str_Out_of_memory);function
+Out_of_memory=[num_248,str_Out_of_memory,-1],Sys_error=[num_248,str_Sys_error,-2],Failure=[num_248,str_Failure,-3],Invalid_argument=[num_248,str_Invalid_argument,-4],Not_found=[num_248,str_Not_found,-7],Match_failure=[num_248,str_Match_failure,-8],Stack_overflow=[num_248,str_Stack_overflow,-9],Assert_failure=[num_248,str_Assert_failure,-11],Undefined_recursive_module=[num_248,str_Undefined_recurs_abr,-12],partial=[4,0,0,0,[12,45,[4,0,0,0,0]]],dY=[0,[11,'File "',[2,0,[11,'", line ',[4,0,0,0,[11,str_characters,[4,0,0,0,[12,45,[4,0,0,0,[11,str$8,[2,0,0]]]]]]]]]],'File "%s", line %d, characters %d-%d: %s'],eY=[0,str$9,0,str$9],h_=[0,"#FFFFFF"],h$=[0,"#000000"],il="+-*/\\<>=~@%&?,",partial$0=[2,0,[12,39,0]],n$=[0,0,num_440,num_440,0.,num_0_1,num_0_1,0.,0.,0.,0.,0.,0.,0.707,0.,0.,0.,num_0_5],pB=[0,1,1],pU="polygon",pZ=str_width,p0=str_height,p4="fill",p5="points",p6="transform";caml_register_global(11,Undefined_recursive_module,str_Undefined_recurs_abr);caml_register_global(10,Assert_failure,str_Assert_failure);caml_register_global(9,[num_248,str_Sys_blocked_io,-10],str_Sys_blocked_io);caml_register_global(8,Stack_overflow,str_Stack_overflow);caml_register_global(7,Match_failure,str_Match_failure);caml_register_global(6,Not_found,str_Not_found);caml_register_global(5,[num_248,str_Division_by_zero,-6],str_Division_by_zero);caml_register_global(4,[num_248,str_End_of_file,-5],str_End_of_file);caml_register_global(3,Invalid_argument,str_Invalid_argument);caml_register_global(2,Failure,str_Failure);caml_register_global(1,Sys_error,str_Sys_error);caml_register_global(0,Out_of_memory,str_Out_of_memory);function
 a(a4r){if(typeof
 a4r==="number")return 0;switch(a4r[0]){case
 0:return[0,a(a4r[1])];case
@@ -1932,7 +1932,7 @@ aQD=aQA?aQC:aQC+str$2;return aQB(aQD)}case
 6:return aQw(0);case
 7:return caml_string_of_bytes(aL(N,caml_bytes_of_string(aQw(0))));case
 8:return aQB(aQw(0));default:return caml_format_float(du(aQv,aQu),aQt)}}function
-uA(counter,aPi,aPh,aPg){var
+uz(counter,aPi,aPh,aPg){var
 aPl=aPi,aPk=aPh,aPj=aPg;for(;;){if(typeof
 aPj==="number")return caml_call1(aPl,aPk);switch(aPj[0]){case
 0:var
@@ -2001,25 +2001,25 @@ aPC=aPj[1];return function(aPP){return dF(aPl,[5,aPk,aPP],aPC)};case
 23:var
 aPD=aPj[2],aPE=aPj[1];if(typeof
 aPE==="number")switch(aPE){case
-0:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-1:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-2:throw caml_maybe_attach_backtrace([0,Assert_failure,dM],1);default:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD])}switch(aPE[0]){case
-0:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-1:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-2:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-3:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-4:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-5:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-6:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-7:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
-8:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);case
+0:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+1:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+2:throw caml_maybe_attach_backtrace([0,Assert_failure,dM],1);default:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD])}switch(aPE[0]){case
+0:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+1:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+2:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+3:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+4:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+5:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+6:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+7:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
+8:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);case
 9:var
-aPI=aPE[2];return counter<50?uz(counter+1|0,aPl,aPk,aPI,aPD):caml_trampoline_return(uz,[0,aPl,aPk,aPI,aPD]);case
-10:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD]);default:return counter<50?uy(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPD])}default:var
-aPF=aPj[3],aPG=aPj[1],aPH=caml_call1(aPj[2],0);return counter<50?ux(counter+1|0,aPl,aPk,aPF,aPG,aPH):caml_trampoline_return(ux,[0,aPl,aPk,aPF,aPG,aPH])}}}function
-dF(aPb,aPc,aPd){return caml_trampoline(uA(0,aPb,aPc,aPd))}function
-uz(counter,aOJ,aOI,aOH,aOG){if(typeof
-aOH==="number")return counter<50?uy(counter+1|0,aOJ,aOI,aOG):caml_trampoline_return(uy,[0,aOJ,aOI,aOG]);switch(aOH[0]){case
+aPI=aPE[2];return counter<50?uy(counter+1|0,aPl,aPk,aPI,aPD):caml_trampoline_return(uy,[0,aPl,aPk,aPI,aPD]);case
+10:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD]);default:return counter<50?ux(counter+1|0,aPl,aPk,aPD):caml_trampoline_return(ux,[0,aPl,aPk,aPD])}default:var
+aPF=aPj[3],aPG=aPj[1],aPH=caml_call1(aPj[2],0);return counter<50?uw(counter+1|0,aPl,aPk,aPF,aPG,aPH):caml_trampoline_return(uw,[0,aPl,aPk,aPF,aPG,aPH])}}}function
+dF(aPb,aPc,aPd){return caml_trampoline(uz(0,aPb,aPc,aPd))}function
+uy(counter,aOJ,aOI,aOH,aOG){if(typeof
+aOH==="number")return counter<50?ux(counter+1|0,aOJ,aOI,aOG):caml_trampoline_return(ux,[0,aOJ,aOI,aOG]);switch(aOH[0]){case
 0:var
 aOK=aOH[1];return function(aPa){return dG(aOJ,aOI,aOK,aOG)};case
 1:var
@@ -2047,9 +2047,9 @@ aOX=aOH[1];return function(aO0){return dG(aOJ,aOI,aOX,aOG)};case
 12:var
 aOY=aOH[1];return function(aOZ){return dG(aOJ,aOI,aOY,aOG)};case
 13:throw caml_maybe_attach_backtrace([0,Assert_failure,dN],1);default:throw caml_maybe_attach_backtrace([0,Assert_failure,dO],1)}}function
-dG(aOC,aOD,aOE,aOF){return caml_trampoline(uz(0,aOC,aOD,aOE,aOF))}function
-uy(counter,aOA,aOz,aOy){var
-aOB=[8,aOz,dP];return counter<50?uA(counter+1|0,aOA,aOB,aOy):caml_trampoline_return(uA,[0,aOA,aOB,aOy])}function
+dG(aOC,aOD,aOE,aOF){return caml_trampoline(uy(0,aOC,aOD,aOE,aOF))}function
+ux(counter,aOA,aOz,aOy){var
+aOB=[8,aOz,dP];return counter<50?uz(counter+1|0,aOA,aOB,aOy):caml_trampoline_return(uz,[0,aOA,aOB,aOy])}function
 dH(aOq,aOp,aOo,aOn,aOm){if(typeof
 aOn==="number")return function(aOx){return dF(aOq,[4,aOp,caml_call1(aOm,aOx)],aOo)};if(0===aOn[0]){var
 aOr=aOn[2],aOs=aOn[1];return function(aOw){return dF(aOq,[4,aOp,cC(aOs,aOr,caml_call1(aOm,aOw))],aOo)}}var
@@ -2064,10 +2064,10 @@ aN6=aNY[1];return function(aOe){return dF(aN2,[4,aN1,cC(aN5,aN4,cD(aN6,caml_call
 aN7=aNZ[1];if(typeof
 aNY==="number")return aNY?function(aOb,aOa,aN$){return dF(aN2,[4,aN1,cC(aN7,aOb,cD(aOa,caml_call2(aNX,aNW,aN$)))],aN0)}:function(aOd,aOc){return dF(aN2,[4,aN1,cC(aN7,aOd,caml_call2(aNX,aNW,aOc))],aN0)};var
 aN8=aNY[1];return function(aN_,aN9){return dF(aN2,[4,aN1,cC(aN7,aN_,cD(aN8,caml_call2(aNX,aNW,aN9)))],aN0)}}function
-ux(counter,aNS,aNR,aNQ,aNP,aNO){if(aNP){var
+uw(counter,aNS,aNR,aNQ,aNP,aNO){if(aNP){var
 aNT=aNP[1];return function(aNV){return dJ(aNS,aNR,aNQ,aNT,caml_call1(aNO,aNV))}}var
-aNU=[4,aNR,aNO];return counter<50?uA(counter+1|0,aNS,aNU,aNQ):caml_trampoline_return(uA,[0,aNS,aNU,aNQ])}function
-dJ(aNJ,aNK,aNL,aNM,aNN){return caml_trampoline(ux(0,aNJ,aNK,aNL,aNM,aNN))}function
+aNU=[4,aNR,aNO];return counter<50?uz(counter+1|0,aNS,aNU,aNQ):caml_trampoline_return(uz,[0,aNS,aNU,aNQ])}function
+dJ(aNJ,aNK,aNL,aNM,aNN){return caml_trampoline(uw(0,aNJ,aNK,aNL,aNM,aNN))}function
 dQ(aNx,aNw){var
 aNy=aNw;for(;;){if(typeof
 aNy==="number")return;switch(aNy[0]){case
@@ -2107,7 +2107,7 @@ aNt=aNl[2];dT(aNk,aNl[1]);return bE(aNk,aNt)}}}function
 dW(aNh,aNg){return dF(function(aNi){dQ(aNh,aNi);return 0},0,aNg[1])}function
 dX(aNd){return dF(function(aNe){var
 aNf=by(64);dT(aNf,aNe);return bz(aNf)},0,aNd[1])}var
-uw=[0,0],d0=[0,[3,0,0],"%S"],d1=str$23,d2=[0,[4,0,0,0,0],str_d],d4=str$9,d5=[0,[11,str$13,[2,0,[2,0,0]]],", %s%s"],d6=[0,[12,40,[2,0,[2,0,[12,41,0]]]],"(%s%s)"],d7=str$9,d8=str$9,d9=[0,[12,40,[2,0,[12,41,0]]],"(%s)"],d_="Out of memory",d$="Stack overflow",ea="Pattern matching failed",eb="Assertion failed",ec="Undefined recursive module",ee="Raised at",ef="Re-raised at",eg="Raised by primitive operation at",eh="Called from",ei=" (inlined)",ej=[0,[2,0,[12,32,[2,0,[11,' in file "',[2,0,[12,34,[2,0,[11,", line ",[4,0,0,0,[11,str_characters,partial]]]]]]]]]],'%s %s in file "%s"%s, line %d, characters %d-%d'],ek=str$9,el=[0,[2,0,[11," unknown location",0]],"%s unknown location"],em=[0,[2,0,[12,10,0]],"%s\n"];function
+uv=[0,0],d0=[0,[3,0,0],"%S"],d1=str$23,d2=[0,[4,0,0,0,0],str_d],d4=str$9,d5=[0,[11,str$13,[2,0,[2,0,0]]],", %s%s"],d6=[0,[12,40,[2,0,[2,0,[12,41,0]]]],"(%s%s)"],d7=str$9,d8=str$9,d9=[0,[12,40,[2,0,[12,41,0]]],"(%s)"],d_="Out of memory",d$="Stack overflow",ea="Pattern matching failed",eb="Assertion failed",ec="Undefined recursive module",ee="Raised at",ef="Re-raised at",eg="Raised by primitive operation at",eh="Called from",ei=" (inlined)",ej=[0,[2,0,[12,32,[2,0,[11,' in file "',[2,0,[12,34,[2,0,[11,", line ",[4,0,0,0,[11,str_characters,partial]]]]]]]]]],'%s %s in file "%s"%s, line %d, characters %d-%d'],ek=str$9,el=[0,[2,0,[11," unknown location",0]],"%s unknown location"],em=[0,[2,0,[12,10,0]],"%s\n"];function
 dZ(aNb,aNa){var
 aNc=aNb[1+aNa];if(!(1-(typeof
 aNc==="number"?1:0)))return caml_call1(dX(d2),aNc);if(caml_obj_tag(aNc)===num_252)return caml_call1(dX(d0),aNc);if(caml_obj_tag(aNc)!==253)return d1;var
@@ -2116,7 +2116,7 @@ aM_=caml_string_get(aM$,aM9);a:{if(48<=aM_){if(58>aM_)break a}else if(45===aM_)b
 d3(aM5,aM4){if(aM5.length-1<=aM4)return d4;var
 aM6=d3(aM5,aM4+1|0),aM7=dZ(aM5,aM4);return caml_call2(dX(d5),aM7,aM6)}function
 ed(aM1){a:{b:{var
-aMJ=uw[1];for(;;){if(!aMJ)break;c:{var
+aMJ=uv[1];for(;;){if(!aMJ)break;c:{var
 aMK=aMJ[2],aML=aMJ[1];try{var
 aMM=caml_call1(aML,aM1)}catch(aM3){break c}if(aMM)break b}aMJ=aMK}var
 aM2=0;break a}var
@@ -2145,7 +2145,7 @@ aMt=aMl(0),aMy=[0,caml_call1(dX(el),aMt)];if(aMy){var
 aMz=aMy[1];caml_call1(dW(aMC,em),aMz)}var
 aMA=aMw+1|0;if(aMv===aMw)break;aMw=aMA}}}function
 eo(aMh){for(;;){var
-aMj=uw[1],aMi=1-e(uw,aMj,[0,aMh,aMj]);if(!aMi)return aMi}}var
+aMj=uv[1],aMi=1-e(uv,aMj,[0,aMh,aMj]);if(!aMi)return aMi}}var
 ep=[0,str$9,"(Cannot print locations:\n bytecode executable program file not found)","(Cannot print locations:\n bytecode executable program file appears to be corrupt)","(Cannot print locations:\n bytecode executable program file has wrong magic number)","(Cannot print locations:\n bytecode executable program file cannot be opened;\n -- too many open files. Try running with OCAMLRUNPARAM=b=2)"].slice(),eq=[0,[11,str_Fatal_error_exc_abr$0,[2,0,[12,10,0]]],str_Fatal_error_exc_abr],er=[0],es="Fatal error: out of memory in uncaught exception handler",et=[0,[11,str_Fatal_error_exc_abr$0,[2,0,[12,10,0]]],str_Fatal_error_exc_abr],eu=[0,[11,"Fatal error in uncaught exception handler: exception ",[2,0,[12,10,0]]],"Fatal error in uncaught exception handler: exception %s\n"];caml_register_named_value(str_Printexc_handle_abr,function(aMa,aL$){try{try{var
 aL6=aL$?er:caml_get_exception_raw_backtrace(0);try{u(0)}catch(aMg){}try{var
 aL2=ed(aMa);caml_call1(dW(q,eq),aL2);en(q,aL6);var
@@ -2162,10 +2162,10 @@ ev=[num_248,"Stdlib.Fun.Finally_raised",caml_fresh_oo_id(0)];eo(function(aL1){re
 ex(aLY){var
 aLZ=aLY.length-1<4?1:0,aL0=aLZ||(aLY[4]<0?1:0);return aL0}function
 ey(aLX){aLX[4]=-aLX[4]|0}var
-s="output_substring",R="tl",aM="Bytes.of_seq: cannot grow bytes",a0="String.rindex_from_opt / Bytes.rindex_from_opt",a9="Array.sub",ew=str_x,eJ="Hashtbl: unsupported hash table format",eB=str$9,fh=[3,0,3],fi=str$2,fe=str$9,fc=str$9,e_=str$16,e7=[0,str$9],e1=str$9,e2=str$9,e3=str$9,e4=str$9,eP="Stdlib.Format.String_tag",gy=str_E2BIG,gA=str_EACCES,gB=str_EAGAIN,gC=str_EBADF,gD=str_EBUSY,gE=str_ECHILD,gF=str_EDEADLK,gG=str_EDOM,gH=str_EEXIST,gI=str_EFAULT,gJ=str_EFBIG,gK=str_EINTR,gL=str_EINVAL,gM=str_EIO,gN=str_EISDIR,gO=str_EMFILE,gP=str_EMLINK,gQ=str_ENAMETOOLONG,gR=str_ENFILE,gS=str_ENODEV,gT=str_ENOENT,gU=str_ENOEXEC,gV=str_ENOLCK,gW=str_ENOMEM,gX=str_ENOSPC,gY=str_ENOSYS,gZ=str_ENOTDIR,g0=str_ENOTEMPTY,g1=str_ENOTTY,g2=str_ENXIO,g3=str_EPERM,g4=str_EPIPE,g5=str_ERANGE,g6=str_EROFS,g7=str_ESPIPE,g8=str_ESRCH,g9=str_EXDEV,g_=str_EWOULDBLOCK,g$=str_EINPROGRESS,ha=str_EALREADY,hb=str_ENOTSOCK,hc=str_EDESTADDRREQ,hd=str_EMSGSIZE,he=str_EPROTOTYPE,hf=str_ENOPROTOOPT,hg=str_EPROTONOSUPPORT,hh=str_ESOCKTNOSUPPORT,hi=str_EOPNOTSUPP,hj=str_EPFNOSUPPORT,hk=str_EAFNOSUPPORT,hl=str_EADDRINUSE,hm=str_EADDRNOTAVAIL,hn=str_ENETDOWN,ho=str_ENETUNREACH,hp=str_ENETRESET,hq=str_ECONNABORTED,hr=str_ECONNRESET,hs=str_ENOBUFS,ht=str_EISCONN,hu=str_ENOTCONN,hv=str_ESHUTDOWN,hw=str_ETOOMANYREFS,hx=str_ETIMEDOUT,hy=str_ECONNREFUSED,hz=str_EHOSTDOWN,hA=str_EHOSTUNREACH,hB=str_ELOOP,hC=str_EOVERFLOW,hD=[0,[11,"EUNKNOWNERR ",[4,0,0,0,0]],"EUNKNOWNERR %d"],gz=[0,[11,"Unix.Unix_error(Unix.",[2,0,[11,str$13,[3,0,[11,str$13,[3,0,[12,41,0]]]]]]],"Unix.Unix_error(Unix.%s, %S, %S)"],gt=str_Unix_Unix_error,gv=str$9,gw=str$9,gx=str_Unix_Unix_error,hL="Cap.main() already called",hE=[0,str_open_in,str_argv,str_bind,str_draw,str_exec,str_exit,str_fork,str_chdir,str_kill,str_wait,str_network,str_time_limit,str_keyboard,str_open_out,str_env,str_tmp,str_readdir,str_stdin,str_stderr,str_stdout,str_mount,str_mouse,str_signal,str_random,str_memory_limit],hF=[0,str_wait,str_tmp,str_time_limit,str_stdout,str_stdin,str_stderr,str_signal,str_readdir,str_random,str_open_out,str_open_in,str_network,str_mouse,str_mount,str_memory_limit,str_kill,str_keyboard,str_fork,str_exit,str_exec,str_env,str_draw,str_chdir,str_bind,str_argv],hY="Set.remove_min_elt",h0=[0,0,0,0],hQ=str_Set_bal,hR=str_Set_bal,hS=str_Set_bal,hT=str_Set_bal,ib=[0,"#edd400"],iq="unmatched comment quote",is="unmatched string quote",ir="a character expected after $",it="a literal expected after #",iu=[0,[11,"unexpected character ",[1,0]],"unexpected character %C"],ip="bad radix",ig="St_lexer.Error",iI=str$9,iS=[0,str$17,str$12,str$25,str$6,str,str$21,"=","~=","*",str$20,str$22,str$26,"bitShift:","//","bitAnd:","bitOr:","at:","at:put:","size","next","nextPut:","atEnd","==",str_class$0,"blockCopy:","value","value:","do:","new","new:",str_x,"y"],jO="Class",jz="variableSubclass:",jA="variableByteSubclass:",ju="subclass:",jv=str$14,jw=str$14,jx=str_nil,jy=[0,[2,0,[12,32,[2,0,[11," #",[2,0,[11,"\n\tinstanceVariableNames: '",[2,0,[11,"'\n\tclassVariableNames: '",[2,0,[11,"'\n\tpoolDictionaries: ''\n\tcategory: '",partial$0]]]]]]]]]],"%s %s #%s\n\tinstanceVariableNames: '%s'\n\tclassVariableNames: '%s'\n\tpoolDictionaries: ''\n\tcategory: '%s'"],jm=str$9,jl=str$9,jh=str_nil,ja=[0,0,1,2,3,4],j0=str_expected,j1="literal expected",j2=[5,str$19],j_="Cascading not expected",ka=str$19,j$="Message expected",kb=str$19,kd=str_expected,kc="Argument expected",ke=str_Argument_name_ex_abr,kg=str_Vertical_bar_exp_abr,kf="Period or right bracket expected",kh=str$9,ki=str_Vertical_bar_exp_abr,kk=str_Nothing_more_exp_abr,kj=str_Nothing_more_exp_abr,ky="DoIt",kw=str_Nothing_more_exp_abr,ks="> expected",kt=[2,str$6],kr="Integer expected",km=str_Argument_name_ex_abr,kn=str$19,ko=str_Argument_name_ex_abr,kp=str_Argument_name_ex_abr,kl="Message pattern expected",jP="St_parse.Error",k5=" limit",k6=str,k8=str$21,k7=str$17,k4=[0,"languages/smalltalk/St_compile.ml",376,9],k9="Block too long",ld=str_as_yet_unclassified,lf=[0,1],la=[0,0,0],k$=[0,0,0],kS="Too many literals",kQ=[0,str_self,[0,str_super,[0,str_true,[0,str_false,[0,str_nil,[0,str_thisContext,0]]]]]],kM="Too many literals or variables",kJ="Too many temporaries",kz="St_compile.Error",lE=str_doesNotUnderstand,l9="printString",l_=[0,5000000],l$="<printString not a String>",l7=[1,"Too long: stopped"],l8=[1,"Terminated"],l2=[0,str_Step],lX="receiver",lY=str$9,lZ=str_send,lT=[0,[11,"unknown bytecode ",[4,0,0,0,0]],"unknown bytecode %d"],lU="store into a literal",lQ="mustBeBoolean",lK="cannotReturn:",lC="wrong number of arguments",lg="St_interp.Fatal",lM=[0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,1,0,1,0,1,0,1,1,0,1,0,0],mO="Halt",mv=[2,0.],mk=[0,[8,[0,0,0],0,[0,1],0],"%.1f"],ml=[0,[8,[0,0,3],0,[0,15],0],"%.15g"],mm=[0,[8,[0,0,3],0,[0,17],0],"%.17g"],mP=[0,[0,"Definitions.st","\"The kernel's classes, the Blue Book's hierarchy (its part two), a\nsubset. St_boot reads these definitions before anything can run: it\nmakes every class and its metaclass from them, ties the knot at the top\n(Object class superclass == Class, Metaclass class class == Metaclass),\nthen compiles the methods of the other files. The fields the virtual\nmachine reads -- a class's, a context's, a Character's value -- are in\nthe order St_class.mli and St_interp.mli say.\"!\n\nnil subclass: #Object\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Behavior\n\tinstanceVariableNames: 'superclass methodDict format'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nBehavior subclass: #ClassDescription\n\tinstanceVariableNames: 'instanceVariables organization'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Class\n\tinstanceVariableNames: 'name category classPool comment'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Metaclass\n\tinstanceVariableNames: 'thisClass'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nObject subclass: #UndefinedObject\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Boolean\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #True\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #False\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Association\n\tinstanceVariableNames: 'key value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Message\n\tinstanceVariableNames: 'selector arguments'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #Magnitude\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Character\n\tinstanceVariableNames: 'value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Number\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Integer\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger subclass: #SmallInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger variableByteSubclass: #LargePositiveInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nLargePositiveInteger variableByteSubclass: #LargeNegativeInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Float\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Fraction\n\tinstanceVariableNames: 'numerator denominator'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nObject subclass: #Point\n\tinstanceVariableNames: 'x y'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Rectangle\n\tinstanceVariableNames: 'origin corner'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Collection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nCollection subclass: #SequenceableCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nSequenceableCollection subclass: #ArrayedCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nArrayedCollection variableSubclass: #Array\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nArrayedCollection variableByteSubclass: #String\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nString variableByteSubclass: #Symbol\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nArrayedCollection variableByteSubclass: #ByteArray\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nSequenceableCollection subclass: #Interval\n\tinstanceVariableNames: 'start stop step'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nSequenceableCollection variableSubclass: #OrderedCollection\n\tinstanceVariableNames: 'firstIndex lastIndex'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nOrderedCollection variableSubclass: #SortedCollection\n\tinstanceVariableNames: 'sortBlock'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nCollection variableSubclass: #Set\n\tinstanceVariableNames: 'tally'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nSet variableSubclass: #Dictionary\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nCollection subclass: #Bag\n\tinstanceVariableNames: 'contents'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nObject subclass: #SystemDictionary\n\tinstanceVariableNames: 'associations'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Stream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nStream subclass: #PositionableStream\n\tinstanceVariableNames: 'collection position readLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #ReadStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #WriteStream\n\tinstanceVariableNames: 'writeLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nWriteStream subclass: #ReadWriteStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nObject subclass: #MethodDictionary\n\tinstanceVariableNames: 'selectors methods'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #CompiledMethod\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject variableSubclass: #ContextPart\n\tinstanceVariableNames: 'sender pc stackp'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #MethodContext\n\tinstanceVariableNames: 'method unused receiver'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #BlockContext\n\tinstanceVariableNames: 'nargs startpc home'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #TextCollector\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Interface-Transcript'!\n\nObject subclass: #Time\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Form\n\tinstanceVariableNames: 'bits width height'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Display Objects'!\n\nObject subclass: #BitBlt\n\tinstanceVariableNames: 'destForm sourceForm halftoneForm combinationRule destX destY width height sourceX sourceY clipX clipY clipWidth clipHeight'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Support'!\n\nBitBlt subclass: #Pen\n\tinstanceVariableNames: 'frame location direction penDown'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #InputSensor\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Processes'!\n"],[0,[0,"Objects.st","\"Object, nil, the Booleans, and the two small classes everything\nuses: Association (key -> value) and Message (what doesNotUnderstand:\nreceives).\"!\n\n!Object methodsFor: 'comparing'!\n== anObject\n\t\"The same object: the oops equal. Never fails.\"\n\t<primitive: 110>\n\tself primitiveFailed!\n\n= anObject\n\t\"Equal: by default, the same object. Subclasses say more.\"\n\t^self == anObject!\n\n~= anObject\n\t^(self = anObject) == false!\n\n~~ anObject\n\t^(self == anObject) == false!\n\nhash\n\t\"Equal objects must have equal hashes.\"\n\t^self identityHash!\n\nidentityHash\n\t<primitive: 75>\n\tself primitiveFailed! !\n\n!Object methodsFor: 'class membership'!\nclass\n\t<primitive: 111>\n\tself primitiveFailed!\n\nisKindOf: aClass\n\t| c |\n\tc := self class.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\nisMemberOf: aClass\n\t^self class == aClass!\n\nrespondsTo: aSymbol\n\t^self class canUnderstand: aSymbol! !\n\n!Object methodsFor: 'testing'!\nisNil\n\t^false!\n\nnotNil\n\t^true!\n\nisString\n\t^false!\n\nisSymbol\n\t^false!\n\nisNumber\n\t^false!\n\nisInteger\n\t^false!\n\nisSmallInteger\n\t^false!\n\nisCharacter\n\t^false!\n\nisClass\n\t^false!\n\nisArray\n\t^false!\n\nifNil: aBlock\n\t^self!\n\nifNotNil: aBlock\n\t^aBlock value: self! !\n\n!Object methodsFor: 'accessing'!\nat: index\n\t\"The indexed field, from 1.\"\n\t<primitive: 60>\n\tself checkIndex: index!\n\nat: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nbasicAt: index\n\t<primitive: 60>\n\tself checkIndex: index!\n\nbasicAt: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nsize\n\t\"How many indexed fields.\"\n\t<primitive: 62>\n\t^0!\n\nbasicSize\n\t<primitive: 62>\n\t^0!\n\ninstVarAt: index\n\t<primitive: 73>\n\tself error: 'Index out of bounds'!\n\ninstVarAt: index put: value\n\t<primitive: 74>\n\tself error: 'Index out of bounds'!\n\nyourself\n\t^self!\n\ncheckIndex: index\n\tindex isInteger ifFalse: [^self error: 'Index must be an integer'].\n\t(index < 1 or: [index > self basicSize])\n\t\tifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self error: 'Improper store into indexable object'! !\n\n!Object methodsFor: 'copying'!\nshallowCopy\n\t\"A new object with the same fields: they are shared, not copied.\"\n\t<primitive: 153>\n\tself primitiveFailed!\n\ncopy\n\t^self shallowCopy!\n\ndeepCopy\n\t| new |\n\tnew := self shallowCopy.\n\t1 to: self class instSize do: [:i | new instVarAt: i put: (self instVarAt: i) copy].\n\t^new! !\n\n!Object methodsFor: 'printing'!\nprintString\n\t\"What 'print it' shows: printOn: into a stream on a String.\"\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream.\n\t^aStream contents!\n\nprintOn: aStream\n\t\"By default, the class's name with an article: a Point, an Object.\"\n\t| title |\n\ttitle := self class name.\n\taStream nextPutAll: ((title at: 1) isVowel ifTrue: ['an '] ifFalse: ['a ']).\n\taStream nextPutAll: title!\n\ndisplayString\n\t^self printString!\n\ndisplayNl\n\tTranscript show: self displayString; cr!\n\nprintNl\n\tTranscript show: self printString; cr! !\n\n!Object methodsFor: 'error handling'!\nerror: aString\n\t\"Stop the process, a notifier titled aString: St_debug.mli.\n\tProceeding answers nil.\"\n\t<primitive: 141>!\n\ndoesNotUnderstand: aMessage\n\t\"No method for aMessage selector, up the whole superclass chain.\"\n\t^self error: 'Message not understood: ', aMessage selector!\n\nhalt\n\t^self error: 'Halt'!\n\nprimitiveFailed\n\t^self error: 'Primitive failed'!\n\nsubclassResponsibility\n\t^self error: 'My subclass should have overridden one of my messages'!\n\nshouldNotImplement\n\t^self error: 'This message is not appropriate for this object'!\n\nmustBeBoolean\n\t^self error: 'NonBoolean receiver--proceed for truth'!\n\ncannotReturn: value\n\t^self error: 'Context cannot return'! !\n\n!Object methodsFor: 'message handling'!\nperform: aSymbol\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: anObject\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: first with: second\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol withArguments: anArray\n\t<primitive: 84>\n\t^self error: 'Wrong number of arguments'! !\n\n!Object methodsFor: 'system primitives'!\nbecome: otherObject\n\t\"Swap the two objects: every reference to one now reaches the\n\tother (St_memory.mli).\"\n\t<primitive: 72>\n\tself primitiveFailed!\n\ninspect\n\t\"An Inspector on the receiver.\"\n\t<primitive: 158>!\n\n-> anObject\n\t^Association key: self value: anObject! !\n\n!UndefinedObject methodsFor: 'testing'!\nisNil\n\t^true!\n\nnotNil\n\t^false!\n\nifNil: aBlock\n\t^aBlock value!\n\nifNotNil: aBlock\n\t^self! !\n\n!UndefinedObject methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'nil'! !\n\n!UndefinedObject methodsFor: 'class definition'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t\"A class with no superclass: Object's own definition.\"\n\t<primitive: 143>\n\tself primitiveFailed! !\n\n!Boolean methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: (self ifTrue: ['true'] ifFalse: ['false'])! !\n\n!Boolean methodsFor: 'copying'!\nshallowCopy\n\t\"true and false are unique.\"\n\t^self! !\n\n!True methodsFor: 'controlling'!\nifTrue: trueBlock\n\t\"Sent only when the argument is not a literal block: the compiler\n\tinlines the other cases into jumps (St_compile.mli).\"\n\t^trueBlock value!\n\nifFalse: falseBlock\n\t^nil!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^trueBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^trueBlock value!\n\nand: aBlock\n\t^aBlock value!\n\nor: aBlock\n\t^true! !\n\n!True methodsFor: 'logical operations'!\n& aBoolean\n\t^aBoolean!\n\n| aBoolean\n\t^true!\n\nnot\n\t^false! !\n\n!False methodsFor: 'controlling'!\nifTrue: trueBlock\n\t^nil!\n\nifFalse: falseBlock\n\t^falseBlock value!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^falseBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^falseBlock value!\n\nand: aBlock\n\t^false!\n\nor: aBlock\n\t^aBlock value! !\n\n!False methodsFor: 'logical operations'!\n& aBoolean\n\t^false!\n\n| aBoolean\n\t^aBoolean!\n\nnot\n\t^true! !\n\n!Association class methodsFor: 'instance creation'!\nkey: aKey value: aValue\n\t^self new key: aKey value: aValue! !\n\n!Association methodsFor: 'accessing'!\nkey\n\t^key!\n\nvalue\n\t^value!\n\nkey: aKey value: aValue\n\tkey := aKey.\n\tvalue := aValue!\n\nvalue: aValue\n\tvalue := aValue! !\n\n!Association methodsFor: 'comparing'!\n= anAssociation\n\t^(anAssociation isKindOf: Association)\n\t\tand: [key = anAssociation key and: [value = anAssociation value]]!\n\nhash\n\t^key hash! !\n\n!Association methodsFor: 'printing'!\nprintOn: aStream\n\tkey printOn: aStream.\n\taStream nextPutAll: '->'.\n\tvalue printOn: aStream! !\n\n!Message methodsFor: 'accessing'!\nselector\n\t^selector!\n\narguments\n\t^arguments! !\n\n!Message methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Message ('; nextPutAll: selector.\n\targuments do: [:each | aStream space; print: each].\n\taStream nextPut: $)! !\n"],[0,[0,"Classes.st","\"Classes are objects: Behavior (what makes instances and finds\nmethods), ClassDescription (instance variables' names, the methods'\ncategories), Class and Metaclass. And the objects of the machine\nitself: the SystemDictionary Smalltalk, method dictionaries, compiled\nmethods, the contexts, and Time.\"!\n\n!Behavior methodsFor: 'instance creation'!\nnew\n\t<primitive: 70>\n\t^self error: 'This class cannot make instances with new'!\n\nnew: anInteger\n\t<primitive: 71>\n\t^self error: 'This class cannot make indexed instances'!\n\nbasicNew\n\t<primitive: 70>\n\tself primitiveFailed!\n\nbasicNew: anInteger\n\t<primitive: 71>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'accessing'!\nsuperclass\n\t^superclass!\n\nmethodDictionary\n\t^methodDict!\n\ninstSize\n\t\"The named fields of an instance: the format's high bits.\"\n\t^format bitShift: -3!\n\nisVariable\n\t^(format bitAnd: 7) between: 1 and: 2!\n\ninstanceVariableNames\n\t| names |\n\tnames := superclass == nil ifTrue: [OrderedCollection new] ifFalse: [superclass instanceVariableNames].\n\tinstanceVariables == nil ifFalse: [instanceVariables do: [:each | names add: each]].\n\t^names!\n\nselectors\n\t<primitive: 149>\n\tself primitiveFailed!\n\nallInstances\n\t<primitive: 145>\n\tself primitiveFailed!\n\nsubclasses\n\t| result |\n\tresult := OrderedCollection new.\n\tSmalltalk classesDo: [:each | each superclass == self ifTrue: [result add: each]].\n\t^result!\n\nwithAllSuperclasses\n\t| result c |\n\tresult := OrderedCollection new.\n\tc := self.\n\t[c == nil] whileFalse: [result add: c. c := c superclass].\n\t^result! !\n\n!Behavior methodsFor: 'testing'!\nisClass\n\t^true!\n\ninheritsFrom: aClass\n\t| c |\n\tc := superclass.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\ncanUnderstand: aSymbol\n\t<primitive: 147>\n\tself primitiveFailed!\n\nincludesSelector: aSymbol\n\t<primitive: 148>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'compiling'!\ncompile: code classified: category\n\t\"What the Browser's accept does: the selector, or the compiler's\n\tcomplaint, a String.\"\n\t<primitive: 142>\n\tself primitiveFailed!\n\ncompile: code\n\t^self compile: code classified: 'as yet unclassified'! !\n\n!Behavior methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self name! !\n\n!Class methodsFor: 'accessing'!\nname\n\t^name!\n\ncategory\n\t^category!\n\ncomment\n\t^comment!\n\ncomment: aString\n\tcomment := aString! !\n\n!Class methodsFor: 'subclass creation'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 143>\n\tself primitiveFailed!\n\nvariableSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 151>\n\tself primitiveFailed!\n\nvariableByteSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 152>\n\tself primitiveFailed! !\n\n!Metaclass methodsFor: 'accessing'!\nname\n\t^thisClass name , ' class'!\n\nsoleInstance\n\t^thisClass!\n\ncategory\n\t^thisClass category! !\n\n!SystemDictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key]!\n\nat: key ifAbsent: aBlock\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifTrue: [^aBlock value].\n\t^a value!\n\nat: key put: value\n\t\"The same Association kept: the methods that use the global see\n\tits new value (St_class.mli).\"\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifFalse: [a value: value. ^value].\n\tassociations := associations copyWith: (Association key: key asSymbol value: value).\n\t^value!\n\nassociationAt: key ifAbsent: aBlock\n\t| k |\n\tk := key asSymbol.\n\tassociations do: [:each | each key == k ifTrue: [^each]].\n\t^aBlock value!\n\nincludesKey: key\n\tself associationAt: key ifAbsent: [^false].\n\t^true!\n\nkeys\n\t^associations collect: [:each | each key]!\n\nclassesDo: aBlock\n\tassociations do: [:each | (each value isClass and: [each value name == each key]) ifTrue: [aBlock value: each value]]!\n\ngarbageCollect\n\t\"The entries freed.\"\n\t<primitive: 146>\n\tself primitiveFailed! !\n\n!SystemDictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'Smalltalk'! !\n\n!MethodDictionary methodsFor: 'accessing'!\nkeys\n\t^selectors!\n\nat: aSymbol\n\t1 to: selectors size do: [:i | (selectors at: i) == aSymbol ifTrue: [^methods at: i]].\n\t^self error: 'Key not found'!\n\nsize\n\t^selectors size! !\n\n!CompiledMethod methodsFor: 'accessing'!\nselector\n\t<primitive: 156>\n\tself primitiveFailed!\n\nmethodClass\n\t<primitive: 157>\n\tself primitiveFailed! !\n\n!CompiledMethod methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self methodClass name; nextPutAll: '>>'; nextPutAll: self selector! !\n\n!ContextPart methodsFor: 'controlling'!\nblockCopy: numArgs\n\t\"What the compiler sends for each [...]: a BlockContext that will\n\tstart after the jump that follows this send (St_compile.mli).\"\n\t<primitive: 80>\n\tself primitiveFailed! !\n\n!ContextPart methodsFor: 'accessing'!\nsender\n\t^sender!\n\nmethod\n\t^self subclassResponsibility!\n\nreceiver\n\t^self subclassResponsibility! !\n\n!MethodContext methodsFor: 'accessing'!\nmethod\n\t^method!\n\nreceiver\n\t^receiver!\n\nhome\n\t^self! !\n\n!MethodContext methodsFor: 'printing'!\nprintOn: aStream\n\t\"Point(Object)>>printString: the receiver's class, and the class\n\tthe method was found in if another\"\n\t| mclass |\n\tmclass := method methodClass.\n\taStream nextPutAll: receiver class name.\n\tmclass == receiver class ifFalse: [aStream nextPut: $(; nextPutAll: mclass name; nextPut: $)].\n\taStream nextPutAll: '>>'; nextPutAll: method selector! !\n\n!BlockContext methodsFor: 'accessing'!\nmethod\n\t^home method!\n\nreceiver\n\t^home receiver!\n\nhome\n\t^home!\n\nnumArgs\n\t^nargs! !\n\n!BlockContext methodsFor: 'evaluating'!\nvalue\n\t\"Evaluate the block. It runs in this same context each time: the\n\tBlue Book's blocks are not reentrant (St_compile.mli).\"\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3 value: arg4\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalueWithArguments: anArray\n\t<primitive: 82>\n\t^self error: 'Wrong number of arguments'! !\n\n!BlockContext methodsFor: 'controlling'!\nwhileTrue: aBlock\n\t\"Sent only when the compiler could not inline it.\"\n\t[self value] whileTrue: [aBlock value].\n\t^nil!\n\nwhileFalse: aBlock\n\t[self value] whileFalse: [aBlock value].\n\t^nil!\n\nwhileTrue\n\t[self value] whileTrue.\n\t^nil!\n\nrepeat\n\t[true] whileTrue: [self value]! !\n\n!BlockContext methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: '[] in '.\n\thome printOn: aStream! !\n\n!Time class methodsFor: 'general inquiries'!\nmillisecondClock\n\t<primitive: 144>\n\tself primitiveFailed!\n\nmillisecondsToRun: aBlock\n\t| start |\n\tstart := self millisecondClock.\n\taBlock value.\n\t^self millisecondClock - start! !\n\n!TextCollector methodsFor: 'accessing'!\nshow: aString\n\t\"The Transcript's text, given to the host.\"\n\t<primitive: 140>\n\t^self show: aString printString!\n\nnextPutAll: aString\n\t^self show: aString!\n\nnextPut: aCharacter\n\t^self show: (String with: aCharacter)!\n\ncr\n\t^self nextPut: Character cr!\n\ntab\n\t^self nextPut: Character tab!\n\nspace\n\t^self nextPut: Character space!\n\nprint: anObject\n\t^self show: anObject printString!\n\ndisplay: anObject\n\t^self show: anObject displayString! !\n\n!TextCollector methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a TextCollector'! !\n"],[0,[0,"Numbers.st","\"The numbers. SmallInteger's arithmetic is primitives (and even the\nbytecodes' own, St_interp.mli); when one fails -- an overflow, or an\nargument of another kind -- the method's Smalltalk runs instead:\noverflows go on in LargePositiveInteger and LargeNegativeInteger,\nwritten here over their bytes as in the Blue Book, and mixed kinds are\ncoerced to the more general one (retry:coercing:, generality: a\nSmallInteger 20, a large one 40, a Fraction 60, a Float 80).\"!\n\n!Magnitude methodsFor: 'comparing'!\n< aMagnitude\n\t^self subclassResponsibility!\n\n> aMagnitude\n\t^aMagnitude < self!\n\n<= aMagnitude\n\t^(aMagnitude < self) not!\n\n>= aMagnitude\n\t^(self < aMagnitude) not!\n\nbetween: min and: max\n\t^self >= min and: [self <= max]!\n\nmax: aMagnitude\n\t^self > aMagnitude ifTrue: [self] ifFalse: [aMagnitude]!\n\nmin: aMagnitude\n\t^self < aMagnitude ifTrue: [self] ifFalse: [aMagnitude]! !\n\n!Character class methodsFor: 'instance creation'!\nvalue: anInteger\n\t\"The unique Character of a code: $a == (Character value: 97).\"\n\t<primitive: 120>\n\t^self error: 'Not a character code'!\n\ndigitValue: anInteger\n\t^'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ' at: anInteger + 1!\n\ncr\n\t^self value: 13!\n\nlf\n\t^self value: 10!\n\ntab\n\t^self value: 9!\n\nspace\n\t^self value: 32! !\n\n!Character methodsFor: 'accessing'!\nvalue\n\t^value!\n\nasInteger\n\t^value!\n\nasCharacter\n\t^self!\n\ndigitValue\n\tvalue <= 57 ifTrue: [^value - 48].\n\tvalue <= 90 ifTrue: [^value - 55].\n\t^value - 87! !\n\n!Character methodsFor: 'comparing'!\n< aCharacter\n\t^value < aCharacter asInteger!\n\n= aCharacter\n\t^self == aCharacter!\n\nhash\n\t^value! !\n\n!Character methodsFor: 'testing'!\nisCharacter\n\t^true!\n\nisVowel\n\t^'aeiouAEIOU' includes: self!\n\nisLetter\n\t^self isUppercase or: [self isLowercase]!\n\nisUppercase\n\t^value between: 65 and: 90!\n\nisLowercase\n\t^value between: 97 and: 122!\n\nisDigit\n\t^value between: 48 and: 57!\n\nisSeparator\n\t^value = 32 or: [value = 13 or: [value = 9 or: [value = 10]]]! !\n\n!Character methodsFor: 'converting'!\nasUppercase\n\tself isLowercase ifTrue: [^Character value: value - 32].\n\t^self!\n\nasLowercase\n\tself isUppercase ifTrue: [^Character value: value + 32].\n\t^self!\n\nasString\n\t^String with: self! !\n\n!Character methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $$; nextPut: self!\n\ndisplayString\n\t^String with: self! !\n\n!Character methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!Number methodsFor: 'arithmetic'!\n+ aNumber\n\t^self subclassResponsibility!\n\n- aNumber\n\t^self + aNumber negated!\n\nnegated\n\t^0 - self!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self!\n\nreciprocal\n\t^1 / self!\n\nsquared\n\t^self * self!\n\n// aNumber\n\t^(self / aNumber) floor!\n\n\\\\ aNumber\n\t^self - (self // aNumber * aNumber)!\n\nquo: aNumber\n\t^(self / aNumber) truncated!\n\nrem: aNumber\n\t^self - ((self quo: aNumber) * aNumber)!\n\nraisedTo: anInteger\n\t| result |\n\tanInteger < 0 ifTrue: [^(self raisedTo: anInteger negated) reciprocal].\n\tresult := 1.\n\tanInteger timesRepeat: [result := result * self].\n\t^result!\n\nsqrt\n\t^self asFloat sqrt! !\n\n!Number methodsFor: 'testing'!\nisNumber\n\t^true!\n\nnegative\n\t^self < 0!\n\npositive\n\t^self >= 0!\n\nstrictlyPositive\n\t^self > 0!\n\nisZero\n\t^self = 0!\n\nsign\n\tself > 0 ifTrue: [^1].\n\tself < 0 ifTrue: [^-1].\n\t^0!\n\neven\n\t^self \\\\ 2 = 0!\n\nodd\n\t^self even not! !\n\n!Number methodsFor: 'truncation and round off'!\ntruncated\n\t^self subclassResponsibility!\n\nfloor\n\t| t |\n\tt := self truncated.\n\t(self < 0 and: [t ~= self]) ifTrue: [^t - 1].\n\t^t!\n\nceiling\n\t| t |\n\tt := self truncated.\n\t(self > 0 and: [t ~= self]) ifTrue: [^t + 1].\n\t^t!\n\nrounded\n\t^(self + (self sign / 2)) truncated!\n\nasInteger\n\t^self truncated! !\n\n!Number methodsFor: 'coercing'!\ngenerality\n\t^self subclassResponsibility!\n\ncoerce: aNumber\n\t^self subclassResponsibility!\n\nretry: aSymbol coercing: aNumber\n\t\"Do the operation again, the less general number made like the\n\tother: 3 + (1/2) becomes (3/1) + (1/2).\"\n\taNumber isNumber ifFalse: [\n\t\taSymbol == #= ifTrue: [^false].\n\t\taSymbol == #~= ifTrue: [^true].\n\t\t^self error: 'Not a number: ', aNumber printString].\n\tself generality < aNumber generality\n\t\tifTrue: [^(aNumber coerce: self) perform: aSymbol with: aNumber].\n\tself generality > aNumber generality\n\t\tifTrue: [^self perform: aSymbol with: (self coerce: aNumber)].\n\t^self error: 'Coercion failed'! !\n\n!Number methodsFor: 'intervals'!\nto: stop\n\t^Interval from: self to: stop by: 1!\n\nto: stop by: step\n\t^Interval from: self to: stop by: step!\n\nto: stop do: aBlock\n\t\"Sent only when the compiler could not inline it.\"\n\t| i |\n\ti := self.\n\t[i <= stop] whileTrue: [aBlock value: i. i := i + 1]!\n\nto: stop by: step do: aBlock\n\t| i |\n\ti := self.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]! !\n\n!Number methodsFor: 'converting'!\n@ y\n\t\"A Point.\"\n\t<primitive: 18>\n\t^Point x: self y: y!\n\nasPoint\n\t^self @ self! !\n\n!Number methodsFor: 'printing'!\nprintString: base\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream base: base.\n\t^aStream contents! !\n\n!Integer methodsFor: 'testing'!\nisInteger\n\t^true! !\n\n!Integer methodsFor: 'arithmetic'!\n+ anInteger\n\t\"Here when a large integer is involved: SmallInteger's own + is a\n\tprimitive.\"\n\tanInteger isInteger ifFalse: [^self retry: #+ coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger asLargeInteger!\n\n- anInteger\n\tanInteger isInteger ifFalse: [^self retry: #- coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger negated asLargeInteger!\n\n* anInteger\n\tanInteger isInteger ifFalse: [^self retry: #* coercing: anInteger].\n\t^self asLargeInteger digitTimes: anInteger asLargeInteger!\n\n/ anInteger\n\t\"An Integer if it divides exactly, else a Fraction.\"\n\tanInteger isInteger ifFalse: [^self retry: #/ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(Fraction numerator: self denominator: anInteger) reduced!\n\nquo: anInteger\n\t\"Truncated towards zero.\"\n\tanInteger isInteger ifFalse: [^self retry: #quo: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 1!\n\nrem: anInteger\n\tanInteger isInteger ifFalse: [^self retry: #rem: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 2!\n\n// anInteger\n\t\"Truncated towards minus infinity.\"\n\t| qr |\n\tanInteger isInteger ifFalse: [^self retry: #// coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tqr := self digitDivide: anInteger.\n\t((qr at: 2) ~= 0 and: [self negative ~~ anInteger negative]) ifTrue: [^(qr at: 1) - 1].\n\t^qr at: 1!\n\n\\\\ anInteger\n\t\"The remainder of //: the sign of the divisor.\"\n\t| r |\n\tanInteger isInteger ifFalse: [^self retry: #\\\\ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tr := (self digitDivide: anInteger) at: 2.\n\t(r ~= 0 and: [r negative ~~ anInteger negative]) ifTrue: [^r + anInteger].\n\t^r!\n\n< anInteger\n\tanInteger isInteger ifFalse: [^self retry: #< coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) < 0!\n\n= anInteger\n\tanInteger isNumber ifFalse: [^false].\n\tanInteger isInteger ifFalse: [^self retry: #= coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) = 0!\n\nhash\n\t^(self \\\\ 1073741823) hash!\n\nnegated\n\t^0 - self!\n\ngcd: anInteger\n\t\"Euclid's.\"\n\t| a b t |\n\ta := self abs.\n\tb := anInteger abs.\n\t[b = 0] whileFalse: [t := a \\\\ b. a := b. b := t].\n\t^a!\n\nlcm: anInteger\n\t^(self * anInteger) abs // (self gcd: anInteger)!\n\nfactorial\n\t\"100 factorial printString size = 158.\"\n\t| result |\n\tself < 0 ifTrue: [^self error: 'Not valid for negative integers'].\n\tresult := 1.\n\t2 to: self do: [:i | result := result * i].\n\t^result!\n\ntimesRepeat: aBlock\n\t| i |\n\ti := 1.\n\t[i <= self] whileTrue: [aBlock value. i := i + 1]!\n\nisPrime\n\tself < 2 ifTrue: [^false].\n\t2 to: self sqrtFloor do: [:i | self \\\\ i = 0 ifTrue: [^false]].\n\t^true!\n\nsqrtFloor\n\t| r |\n\tr := self asFloat sqrt truncated.\n\t[r * r > self] whileTrue: [r := r - 1].\n\t[(r + 1) * (r + 1) <= self] whileTrue: [r := r + 1].\n\t^r! !\n\n!Integer methodsFor: 'coercing'!\ngenerality\n\t^40!\n\ncoerce: aNumber\n\t^aNumber asLargeInteger! !\n\n!Integer methodsFor: 'converting'!\nasFloat\n\t\"A large integer's bytes, summed as floats.\"\n\t| f |\n\tf := 0.0.\n\tself digitLength to: 1 by: -1 do: [:i | f := f * 256.0 + (self digitAt: i)].\n\tself negative ifTrue: [^f negated].\n\t^f!\n\ntruncated\n\t^self!\n\nasCharacter\n\t^Character value: self!\n\ndigitDivide: anInteger\n\t\"The quotient and the remainder truncated towards zero, an Array:\n\tby the schoolbook's short division when the divisor is small\n\tenough for a digit times it to stay a SmallInteger, else bit by\n\tbit.\"\n\t| a b qr q r |\n\ta := self abs asLargeInteger.\n\tb := anInteger abs.\n\tqr := (b isSmallInteger and: [b < 4194304])\n\t\tifTrue: [a shortDivide: b]\n\t\tifFalse: [a longDivide: b].\n\tq := qr at: 1.\n\tr := qr at: 2.\n\tself negative == anInteger negative ifFalse: [q := q negated].\n\tself negative ifTrue: [r := r negated].\n\t^Array with: q with: r! !\n\n!Integer methodsFor: 'printing'!\nprintOn: aStream\n\tself printOn: aStream base: 10!\n\nprintOn: aStream base: base\n\tself < 0 ifTrue: [aStream nextPut: $-. ^self negated printOn: aStream base: base].\n\tself >= base ifTrue: [self // base printOn: aStream base: base].\n\taStream nextPut: (Character digitValue: self \\\\ base)! !\n\n!SmallInteger class methodsFor: 'instance creation'!\nnew\n\t^self error: 'SmallIntegers are not made, they are'! !\n\n!SmallInteger methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 1>\n\t^super + aNumber!\n\n- aNumber\n\t<primitive: 2>\n\t^super - aNumber!\n\n< aNumber\n\t<primitive: 3>\n\t^super < aNumber!\n\n> aNumber\n\t<primitive: 4>\n\t^super > aNumber!\n\n<= aNumber\n\t<primitive: 5>\n\t^super <= aNumber!\n\n>= aNumber\n\t<primitive: 6>\n\t^super >= aNumber!\n\n= aNumber\n\t<primitive: 7>\n\t^super = aNumber!\n\n~= aNumber\n\t<primitive: 8>\n\t^super ~= aNumber!\n\n* aNumber\n\t<primitive: 9>\n\t^super * aNumber!\n\n/ aNumber\n\t<primitive: 10>\n\t^super / aNumber!\n\n\\\\ aNumber\n\t<primitive: 11>\n\t^super \\\\ aNumber!\n\n// aNumber\n\t<primitive: 12>\n\t^super // aNumber!\n\nquo: aNumber\n\t<primitive: 13>\n\t^super quo: aNumber!\n\nbitAnd: anInteger\n\t<primitive: 14>\n\t^self error: 'Not a SmallInteger'!\n\nbitOr: anInteger\n\t<primitive: 15>\n\t^self error: 'Not a SmallInteger'!\n\nbitXor: anInteger\n\t<primitive: 16>\n\t^self error: 'Not a SmallInteger'!\n\nbitShift: anInteger\n\t<primitive: 17>\n\tanInteger > 0 ifTrue: [^self asLargeInteger * (2 raisedTo: anInteger)].\n\t^self error: 'Not a SmallInteger'! !\n\n!SmallInteger methodsFor: 'testing'!\nisSmallInteger\n\t^true!\n\neven\n\t^(self bitAnd: 1) = 0! !\n\n!SmallInteger methodsFor: 'coercing'!\ngenerality\n\t^20!\n\ncoerce: aNumber\n\t^aNumber!\n\nasLargeInteger\n\t<primitive: 154>\n\tself primitiveFailed! !\n\n!SmallInteger methodsFor: 'converting'!\nasFloat\n\t<primitive: 40>\n\tself primitiveFailed!\n\nhash\n\t^self! !\n\n!SmallInteger methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digits'!\ndigitAt: index\n\t\"A byte of the magnitude, least significant first; 0 past the end.\"\n\t<primitive: 60>\n\t^0!\n\ndigitAt: index put: value\n\t<primitive: 61>\n\tself primitiveFailed!\n\ndigitLength\n\t<primitive: 62>\n\tself primitiveFailed!\n\nnormalize\n\t\"The leading zero bytes dropped, a SmallInteger if it fits.\"\n\t<primitive: 155>\n\tself primitiveFailed!\n\nasLargeInteger\n\t^self!\n\nnegative\n\t^false!\n\nnegated\n\t| result |\n\tresult := (self negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: self digitLength.\n\t1 to: self digitLength do: [:i | result digitAt: i put: (self digitAt: i)].\n\t^result normalize!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digit arithmetic'!\ndigitPlus: arg\n\t\"The sum of two large integers of any signs.\"\n\tself negative == arg negative\n\t\tifTrue: [^(self magnitudeAdd: arg negative: self negative) normalize].\n\t(self magnitudeCompare: arg) >= 0\n\t\tifTrue: [^(self magnitudeSubtract: arg negative: self negative) normalize].\n\t^(arg magnitudeSubtract: self negative: arg negative) normalize!\n\nmagnitudeAdd: arg negative: aBoolean\n\t| len result carry sum |\n\tlen := (self digitLength max: arg digitLength) + 1.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tcarry := 0.\n\t1 to: len do: [:i |\n\t\tsum := (self digitAt: i) + (arg digitAt: i) + carry.\n\t\tresult digitAt: i put: (sum bitAnd: 255).\n\t\tcarry := sum bitShift: -8].\n\t^result!\n\nmagnitudeSubtract: arg negative: aBoolean\n\t\"The receiver's magnitude is the larger.\"\n\t| len result borrow diff |\n\tlen := self digitLength.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tborrow := 0.\n\t1 to: len do: [:i |\n\t\tdiff := (self digitAt: i) - (arg digitAt: i) - borrow.\n\t\tdiff < 0\n\t\t\tifTrue: [diff := diff + 256. borrow := 1]\n\t\t\tifFalse: [borrow := 0].\n\t\tresult digitAt: i put: diff].\n\t^result!\n\nmagnitudeCompare: arg\n\t\"-1, 0 or 1.\"\n\t| a b |\n\t(self digitLength max: arg digitLength) to: 1 by: -1 do: [:i |\n\t\ta := self digitAt: i.\n\t\tb := arg digitAt: i.\n\t\ta < b ifTrue: [^-1].\n\t\ta > b ifTrue: [^1]].\n\t^0!\n\ncompareWith: arg\n\tself negative == arg negative ifFalse: [self negative ifTrue: [^-1] ifFalse: [^1]].\n\tself negative ifTrue: [^arg magnitudeCompare: self].\n\t^self magnitudeCompare: arg!\n\ndigitTimes: arg\n\t\"The schoolbook's: each digit of one by each of the other.\"\n\t| la lb result carry prod k |\n\tla := self digitLength.\n\tlb := arg digitLength.\n\tresult := (self negative == arg negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: la + lb.\n\t1 to: la do: [:i |\n\t\tcarry := 0.\n\t\t1 to: lb do: [:j |\n\t\t\tk := i + j - 1.\n\t\t\tprod := (self digitAt: i) * (arg digitAt: j) + (result digitAt: k) + carry.\n\t\t\tresult digitAt: k put: (prod bitAnd: 255).\n\t\t\tcarry := prod bitShift: -8].\n\t\tresult digitAt: i + lb put: carry].\n\t^result normalize!\n\nshortDivide: divisor\n\t\"The magnitude by a small SmallInteger, a digit at a time from the\n\ttop: the quotient and the remainder.\"\n\t| len q r |\n\tlen := self digitLength.\n\tq := LargePositiveInteger new: len.\n\tr := 0.\n\tlen to: 1 by: -1 do: [:i |\n\t\tr := r * 256 + (self digitAt: i).\n\t\tq digitAt: i put: r // divisor.\n\t\tr := r \\\\ divisor].\n\t^Array with: q normalize with: r!\n\nlongDivide: divisor\n\t\"A bit at a time: slow, but only for large divisors.\"\n\t| q r bit |\n\tq := 0.\n\tr := 0.\n\tself digitLength * 8 to: 1 by: -1 do: [:i |\n\t\tbit := ((self digitAt: i - 1 // 8 + 1) bitShift: 0 - (i - 1 \\\\ 8)) bitAnd: 1.\n\t\tr := r * 2 + bit.\n\t\tq := q * 2.\n\t\tr >= divisor ifTrue: [r := r - divisor. q := q + 1]].\n\t^Array with: q with: r! !\n\n!LargePositiveInteger methodsFor: 'bit manipulation'!\nbitShift: anInteger\n\tanInteger >= 0 ifTrue: [^self * (2 raisedTo: anInteger)].\n\t^self // (2 raisedTo: anInteger negated)!\n\nhash\n\t^self digitAt: 1! !\n\n!LargeNegativeInteger methodsFor: 'testing'!\nnegative\n\t^true! !\n\n!Fraction class methodsFor: 'instance creation'!\nnumerator: n denominator: d\n\t\"Not reduced: Integer>>/ reduces it.\"\n\t^self new setNumerator: n denominator: d! !\n\n!Fraction methodsFor: 'private'!\nsetNumerator: n denominator: d\n\td < 0\n\t\tifTrue: [numerator := n negated. denominator := d negated]\n\t\tifFalse: [numerator := n. denominator := d]! !\n\n!Fraction methodsFor: 'accessing'!\nnumerator\n\t^numerator!\n\ndenominator\n\t^denominator! !\n\n!Fraction methodsFor: 'arithmetic'!\n+ aNumber\n\taNumber isNumber ifFalse: [^self retry: #+ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #+ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator + (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n- aNumber\n\taNumber isNumber ifFalse: [^self retry: #- coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #- coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator - (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n* aNumber\n\taNumber isNumber ifFalse: [^self retry: #* coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #* coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber numerator\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n/ aNumber\n\taNumber isNumber ifFalse: [^self retry: #/ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #/ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator\n\t\tdenominator: denominator * aNumber numerator) reduced!\n\nnegated\n\t^Fraction numerator: numerator negated denominator: denominator!\n\nreduced\n\t\"Lowest terms, and an Integer when the denominator is 1.\"\n\t| g |\n\tnumerator = 0 ifTrue: [^0].\n\tg := numerator gcd: denominator.\n\tg = denominator ifTrue: [^numerator // g].\n\t^Fraction numerator: numerator // g denominator: denominator // g! !\n\n!Fraction methodsFor: 'comparing'!\n< aNumber\n\taNumber isNumber ifFalse: [^self retry: #< coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #< coercing: aNumber].\n\t^numerator * aNumber denominator < (aNumber numerator * denominator)!\n\n= aNumber\n\taNumber isNumber ifFalse: [^false].\n\taNumber generality = self generality ifFalse: [^self retry: #= coercing: aNumber].\n\t^numerator = aNumber numerator and: [denominator = aNumber denominator]!\n\nhash\n\t^numerator hash bitXor: denominator hash! !\n\n!Fraction methodsFor: 'truncation and round off'!\ntruncated\n\t^numerator quo: denominator! !\n\n!Fraction methodsFor: 'coercing'!\ngenerality\n\t^60!\n\ncoerce: aNumber\n\t^Fraction numerator: aNumber denominator: 1! !\n\n!Fraction methodsFor: 'converting'!\nasFloat\n\t^numerator asFloat / denominator asFloat! !\n\n!Fraction methodsFor: 'printing'!\nprintOn: aStream\n\taStream print: numerator; nextPut: $/; print: denominator! !\n\n!Float methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 41>\n\t^self retry: #+ coercing: aNumber!\n\n- aNumber\n\t<primitive: 42>\n\t^self retry: #- coercing: aNumber!\n\n< aNumber\n\t<primitive: 43>\n\t^self retry: #< coercing: aNumber!\n\n> aNumber\n\t<primitive: 44>\n\t^self retry: #> coercing: aNumber!\n\n<= aNumber\n\t<primitive: 45>\n\t^self retry: #<= coercing: aNumber!\n\n>= aNumber\n\t<primitive: 46>\n\t^self retry: #>= coercing: aNumber!\n\n= aNumber\n\t<primitive: 47>\n\t^self retry: #= coercing: aNumber!\n\n~= aNumber\n\t<primitive: 48>\n\t^self retry: #~= coercing: aNumber!\n\n* aNumber\n\t<primitive: 49>\n\t^self retry: #* coercing: aNumber!\n\n/ aNumber\n\t<primitive: 50>\n\taNumber = 0 ifTrue: [^self error: 'Division by zero'].\n\t^self retry: #/ coercing: aNumber!\n\nsqrt\n\t<primitive: 55>\n\tself primitiveFailed!\n\nsin\n\t<primitive: 56>\n\tself primitiveFailed!\n\ncos\n\t^(self + 1.5707963267948966) sin!\n\narcTan\n\t<primitive: 57>\n\tself primitiveFailed!\n\nln\n\t<primitive: 58>\n\tself primitiveFailed!\n\nexp\n\t<primitive: 59>\n\tself primitiveFailed! !\n\n!Float methodsFor: 'truncation and round off'!\ntruncated\n\t\"Too large for a SmallInteger: the high part and the low part.\"\n\t| q |\n\t<primitive: 51>\n\tq := (self / 65536.0) truncated.\n\t^q * 65536 + (self - (q * 65536.0)) truncated! !\n\n!Float methodsFor: 'truncation and round off'!\nrounded\n\t^(self + (self sign * 0.5)) truncated! !\n\n!Float methodsFor: 'coercing'!\ngenerality\n\t^80!\n\ncoerce: aNumber\n\t^aNumber asFloat!\n\nasFloat\n\t^self!\n\nhash\n\t^self truncated hash! !\n\n!Float methodsFor: 'printing'!\nprintString\n\t<primitive: 130>\n\tself primitiveFailed!\n\nprintOn: aStream\n\taStream nextPutAll: self printString! !\n\n!Point class methodsFor: 'instance creation'!\nx: xInteger y: yInteger\n\t^self new setX: xInteger setY: yInteger! !\n\n!Point methodsFor: 'private'!\nsetX: xValue setY: yValue\n\tx := xValue.\n\ty := yValue! !\n\n!Point methodsFor: 'accessing'!\nx\n\t^x!\n\ny\n\t^y! !\n\n!Point methodsFor: 'arithmetic'!\n+ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x + p x) @ (y + p y)!\n\n- arg\n\t| p |\n\tp := arg asPoint.\n\t^(x - p x) @ (y - p y)!\n\n* arg\n\t| p |\n\tp := arg asPoint.\n\t^(x * p x) @ (y * p y)!\n\n/ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x / p x) @ (y / p y)!\n\n// arg\n\t| p |\n\tp := arg asPoint.\n\t^(x // p x) @ (y // p y)!\n\nabs\n\t^x abs @ y abs! !\n\n!Point methodsFor: 'comparing'!\n= aPoint\n\t^(aPoint isKindOf: Point) and: [x = aPoint x and: [y = aPoint y]]!\n\nhash\n\t^x hash bitXor: y hash!\n\n< aPoint\n\t^x < aPoint x and: [y < aPoint y]!\n\n> aPoint\n\t^x > aPoint x and: [y > aPoint y]!\n\n<= aPoint\n\t^x <= aPoint x and: [y <= aPoint y]!\n\n>= aPoint\n\t^x >= aPoint x and: [y >= aPoint y]!\n\nmax: aPoint\n\t^(x max: aPoint x) @ (y max: aPoint y)!\n\nmin: aPoint\n\t^(x min: aPoint x) @ (y min: aPoint y)! !\n\n!Point methodsFor: 'point functions'!\ndist: aPoint\n\t| dx dy |\n\tdx := aPoint x - x.\n\tdy := aPoint y - y.\n\t^(dx * dx + (dy * dy)) sqrt!\n\ntranspose\n\t^y @ x!\n\ncorner: aPoint\n\t^Rectangle origin: self corner: aPoint!\n\nextent: aPoint\n\t^Rectangle origin: self corner: self + aPoint! !\n\n!Point methodsFor: 'converting'!\nasPoint\n\t^self! !\n\n!Point methodsFor: 'printing'!\nprintOn: aStream\n\tx printOn: aStream.\n\taStream nextPut: $@.\n\ty printOn: aStream! !\n\n!Rectangle class methodsFor: 'instance creation'!\norigin: originPoint corner: cornerPoint\n\t^self new setOrigin: originPoint corner: cornerPoint! !\n\n!Rectangle methodsFor: 'private'!\nsetOrigin: originPoint corner: cornerPoint\n\torigin := originPoint.\n\tcorner := cornerPoint! !\n\n!Rectangle methodsFor: 'accessing'!\norigin\n\t^origin!\n\ncorner\n\t^corner!\n\nwidth\n\t^corner x - origin x!\n\nheight\n\t^corner y - origin y!\n\nextent\n\t^corner - origin!\n\narea\n\t^self width * self height! !\n\n!Rectangle methodsFor: 'rectangle functions'!\ncenter\n\t\"The Blue Book's example of compiled code (St_bytecode.mli):\n\t0 1 176 119 185 124.\"\n\t^origin + corner / 2!\n\ncontainsPoint: aPoint\n\t^origin <= aPoint and: [aPoint < corner]!\n\nintersects: aRectangle\n\t^(origin max: aRectangle origin) < (corner min: aRectangle corner)! !\n\n!Rectangle methodsFor: 'comparing'!\n= aRectangle\n\t^(aRectangle isKindOf: Rectangle) and: [origin = aRectangle origin and: [corner = aRectangle corner]]!\n\nhash\n\t^origin hash bitXor: corner hash! !\n\n!Rectangle methodsFor: 'printing'!\nprintOn: aStream\n\torigin printOn: aStream.\n\taStream nextPutAll: ' corner: '.\n\tcorner printOn: aStream! !\n"],[0,[0,"Collections.st","\"The collections, and their iteration protocol -- do:, collect:,\nselect:, reject:, detect:, inject:into: -- the one the rest of the\nworld copied (Ruby's each, map, select, detect, inject; Python's\ncomprehensions). Every collection answers them once it has do:.\n\nOrderedCollection and Set grow the Blue Book's way: a bigger copy,\nthen 'self become: newSelf' (St_memory.mli), so that everything that\nknew the collection now knows the bigger one.\"!\n\n!Collection class methodsFor: 'instance creation'!\nwith: anObject\n\t^self new add: anObject; yourself!\n\nwith: first with: second\n\t^self new add: first; add: second; yourself!\n\nwith: first with: second with: third\n\t^self new add: first; add: second; add: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^self new add: first; add: second; add: third; add: fourth; yourself!\n\nwithAll: aCollection\n\t^self new addAll: aCollection; yourself! !\n\n!Collection methodsFor: 'adding'!\nadd: anObject\n\t^self subclassResponsibility!\n\naddAll: aCollection\n\taCollection do: [:each | self add: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'removing'!\nremove: oldObject\n\t^self remove: oldObject ifAbsent: [self error: 'Object is not in the collection']!\n\nremove: oldObject ifAbsent: aBlock\n\t^self subclassResponsibility!\n\nremoveAll: aCollection\n\taCollection do: [:each | self remove: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'testing'!\nincludes: anObject\n\tself do: [:each | anObject = each ifTrue: [^true]].\n\t^false!\n\nisEmpty\n\t^self size = 0!\n\nnotEmpty\n\t^self isEmpty not!\n\noccurrencesOf: anObject\n\t| tally |\n\ttally := 0.\n\tself do: [:each | anObject = each ifTrue: [tally := tally + 1]].\n\t^tally! !\n\n!Collection methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tself do: [:each | tally := tally + 1].\n\t^tally! !\n\n!Collection methodsFor: 'enumerating'!\ndo: aBlock\n\t^self subclassResponsibility!\n\ndo: aBlock separatedBy: separatorBlock\n\t| first |\n\tfirst := true.\n\tself do: [:each |\n\t\tfirst ifTrue: [first := false] ifFalse: [separatorBlock value].\n\t\taBlock value: each]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self species new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\nreject: aBlock\n\t^self select: [:each | (aBlock value: each) == false]!\n\ndetect: aBlock\n\t^self detect: aBlock ifNone: [self error: 'Object is not in the collection']!\n\ndetect: aBlock ifNone: exceptionBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^each]].\n\t^exceptionBlock value!\n\ninject: thisValue into: binaryBlock\n\t| nextValue |\n\tnextValue := thisValue.\n\tself do: [:each | nextValue := binaryBlock value: nextValue value: each].\n\t^nextValue!\n\nanySatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^true]].\n\t^false!\n\nallSatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifFalse: [^false]].\n\t^true!\n\nmax\n\t^self inject: self anyOne into: [:a :b | a max: b]!\n\nmin\n\t^self inject: self anyOne into: [:a :b | a min: b]!\n\nsum\n\t^self inject: 0 into: [:a :b | a + b]!\n\nanyOne\n\tself do: [:each | ^each].\n\t^self error: 'Collection is empty'! !\n\n!Collection methodsFor: 'converting'!\nasArray\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: each].\n\t^result!\n\nasOrderedCollection\n\t^OrderedCollection withAll: self!\n\nasBag\n\t^Bag withAll: self!\n\nasSet\n\t^Set withAll: self!\n\nasSortedCollection\n\t^SortedCollection withAll: self!\n\nasSortedCollection: aBlock\n\t^(SortedCollection sortBlock: aBlock) addAll: self; yourself! !\n\n!Collection methodsFor: 'private'!\nspecies\n\t^self class! !\n\n!Collection methodsFor: 'printing'!\nprintOn: aStream\n\t\"OrderedCollection (1 2 3 ), as the Blue Book prints it.\"\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself do: [:element | element printOn: aStream. aStream space].\n\taStream nextPut: $)! !\n\n!SequenceableCollection methodsFor: 'comparing'!\n= aCollection\n\tself class == aCollection class ifFalse: [^false].\n\tself size = aCollection size ifFalse: [^false].\n\t1 to: self size do: [:i | (self at: i) = (aCollection at: i) ifFalse: [^false]].\n\t^true!\n\nhash\n\t^self size! !\n\n!SequenceableCollection methodsFor: 'accessing'!\nfirst\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: 1!\n\nlast\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: self size!\n\nindexOf: anElement\n\t1 to: self size do: [:i | (self at: i) = anElement ifTrue: [^i]].\n\t^0!\n\nallButFirst\n\t^self copyFrom: 2 to: self size!\n\nallButLast\n\t^self copyFrom: 1 to: self size - 1! !\n\n!SequenceableCollection methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i)]!\n\nreverseDo: aBlock\n\tself size to: 1 by: -1 do: [:i | aBlock value: (self at: i)]!\n\ndoWithIndex: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: i]!\n\nkeysAndValuesDo: aBlock\n\t1 to: self size do: [:i | aBlock value: i value: (self at: i)]!\n\nwith: aCollection do: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: (aCollection at: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := self species new: self size.\n\t1 to: self size do: [:i | result at: i put: (aBlock value: (self at: i))].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^(self species inheritsFrom: ArrayedCollection)\n\t\tifTrue: [(self species new: result size) replaceFrom: 1 to: result size with: result startingAt: 1]\n\t\tifFalse: [result]! !\n\n!SequenceableCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := self species new: (stop - start + 1 max: 0).\n\tstart to: stop do: [:i | result at: i - start + 1 put: (self at: i)].\n\t^result!\n\ncopyWith: newElement\n\t| result |\n\tresult := self species new: self size + 1.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult at: result size put: newElement.\n\t^result!\n\nreversed\n\t| result n |\n\tn := self size.\n\tresult := self species new: n.\n\t1 to: n do: [:i | result at: i put: (self at: n + 1 - i)].\n\t^result!\n\nreverse\n\t^self reversed!\n\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t| j |\n\tj := repStart.\n\tstart to: stop do: [:i | self at: i put: (replacement at: j). j := j + 1]!\n\n, aSequenceableCollection\n\t| result |\n\tresult := self species new: self size + aSequenceableCollection size.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult replaceFrom: self size + 1 to: result size with: aSequenceableCollection startingAt: 1.\n\t^result! !\n\n!SequenceableCollection methodsFor: 'converting'!\nreadStream\n\t^ReadStream on: self! !\n\n!ArrayedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 0!\n\nwith: anObject\n\t^(self new: 1) at: 1 put: anObject; yourself!\n\nwith: first with: second\n\t^(self new: 2) at: 1 put: first; at: 2 put: second; yourself!\n\nwith: first with: second with: third\n\t^(self new: 3) at: 1 put: first; at: 2 put: second; at: 3 put: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^(self new: 4) at: 1 put: first; at: 2 put: second; at: 3 put: third; at: 4 put: fourth; yourself!\n\nwithAll: aCollection\n\t| result i |\n\tresult := self new: aCollection size.\n\ti := 0.\n\taCollection do: [:each | result at: (i := i + 1) put: each].\n\t^result! !\n\n!ArrayedCollection methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!ArrayedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self shouldNotImplement! !\n\n!ArrayedCollection methodsFor: 'copying'!\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t\"The primitive when both are pointers or both bytes.\"\n\t<primitive: 105>\n\t^super replaceFrom: start to: stop with: replacement startingAt: repStart! !\n\n!ArrayedCollection methodsFor: 'sorting'!\nasSortedArray\n\t^self asSortedCollection asArray! !\n\n!Array methodsFor: 'testing'!\nisArray\n\t^true! !\n\n!Array methodsFor: 'printing'!\nprintOn: aStream\n\t\"#(1 $a 'b'), as a literal reads\"\n\taStream nextPutAll: '#('.\n\tself do: [:each | each printOn: aStream] separatedBy: [aStream space].\n\taStream nextPut: $)! !\n\n!String class methodsFor: 'instance creation'!\nnew\n\t^self new: 0! !\n\n!String methodsFor: 'accessing'!\nat: index\n\t\"A Character: the bytes are characters.\"\n\t<primitive: 63>\n\t^self checkIndex: index!\n\nat: index put: aCharacter\n\t<primitive: 64>\n\taCharacter isCharacter ifFalse: [^self error: 'Strings only store Characters'].\n\t^self checkIndex: index!\n\nsize\n\t<primitive: 62>\n\t^0! !\n\n!String methodsFor: 'comparing'!\n= aString\n\t<primitive: 123>\n\t^false!\n\n< aString\n\t<primitive: 124>\n\t^self error: 'Not a String'!\n\n> aString\n\t^aString < self!\n\n<= aString\n\t^(aString < self) not!\n\n>= aString\n\t^(self < aString) not!\n\nhash\n\t<primitive: 125>\n\t^0! !\n\n!String methodsFor: 'testing'!\nisString\n\t^true!\n\nincludesSubstring: aString\n\t| n |\n\tn := aString size.\n\t1 to: self size - n + 1 do: [:i | (self copyFrom: i to: i + n - 1) = aString ifTrue: [^true]].\n\t^false! !\n\n!String methodsFor: 'converting'!\nasSymbol\n\t<primitive: 122>\n\tself primitiveFailed!\n\nasString\n\t^self!\n\nasNumber\n\t\"The number the text reads as, or nil.\"\n\t<primitive: 150>\n\t^nil!\n\nasUppercase\n\t^self collect: [:c | c asUppercase]!\n\nasLowercase\n\t^self collect: [:c | c asLowercase]!\n\ndisplayString\n\t^self!\n\nspecies\n\t^String! !\n\n!String methodsFor: 'printing'!\nprintOn: aStream\n\t\"'it''s': quoted, a quote doubled\"\n\taStream nextPut: $'.\n\tself do: [:c | aStream nextPut: c. c == $' ifTrue: [aStream nextPut: c]].\n\taStream nextPut: $'! !\n\n!Symbol class methodsFor: 'instance creation'!\nnew: anInteger\n\t^self error: 'Symbols are made by asSymbol, unique'! !\n\n!Symbol methodsFor: 'comparing'!\n= anObject\n\t\"Symbols are unique: equal is identical.\"\n\t^self == anObject!\n\nhash\n\t^self identityHash! !\n\n!Symbol methodsFor: 'accessing'!\nat: index put: aCharacter\n\t^self error: 'Symbols cannot be changed'! !\n\n!Symbol methodsFor: 'converting'!\nasSymbol\n\t^self!\n\nasString\n\t| s |\n\ts := String new: self size.\n\ts replaceFrom: 1 to: self size with: self startingAt: 1.\n\t^s!\n\nnumArgs\n\t| n |\n\tn := 0.\n\tself do: [:c | c == $: ifTrue: [n := n + 1]].\n\t(n = 0 and: [(self at: 1) isLetter not]) ifTrue: [^1].\n\t^n! !\n\n!Symbol methodsFor: 'testing'!\nisSymbol\n\t^true! !\n\n!Symbol methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $#; nextPutAll: self!\n\ndisplayString\n\t^self asString! !\n\n!Symbol methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!ByteArray methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!Interval class methodsFor: 'instance creation'!\nfrom: start to: stop by: step\n\t^self new setFrom: start to: stop by: step! !\n\n!Interval methodsFor: 'private'!\nsetFrom: startNumber to: stopNumber by: stepNumber\n\tstart := startNumber.\n\tstop := stopNumber.\n\tstep := stepNumber!\n\nspecies\n\t^Array! !\n\n!Interval methodsFor: 'accessing'!\nsize\n\tstep > 0\n\t\tifTrue: [stop < start ifTrue: [^0]]\n\t\tifFalse: [start < stop ifTrue: [^0]].\n\t^stop - start // step + 1!\n\nat: index\n\t(index >= 1 and: [index <= self size]) ifTrue: [^start + (step * (index - 1))].\n\t^self error: 'Index out of bounds'!\n\nat: index put: anObject\n\t^self error: 'Intervals cannot be changed'! !\n\n!Interval methodsFor: 'enumerating'!\ndo: aBlock\n\t| i |\n\ti := start.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]!\n\ncollect: aBlock\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: (aBlock value: each)].\n\t^result! !\n\n!Interval methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $(; print: start; nextPutAll: ' to: '; print: stop.\n\tstep = 1 ifFalse: [aStream nextPutAll: ' by: '; print: step].\n\taStream nextPut: $)! !\n\n!OrderedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 8!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setIndices! !\n\n!OrderedCollection methodsFor: 'private'!\nsetIndices\n\tfirstIndex := self basicSize // 2 max: 1.\n\tlastIndex := firstIndex - 1!\n\nsetFirst: first last: last\n\tfirstIndex := first.\n\tlastIndex := last!\n\ngrow\n\t\"A copy with room at both ends, then become: -- the receiver is the\n\tbigger one from now on, for whoever holds it.\"\n\t| newSelf newFirst n |\n\tn := self basicSize * 2 + 8.\n\tnewSelf := self class basicNew: n.\n\t1 to: self class instSize do: [:i | newSelf instVarAt: i put: (self instVarAt: i)].\n\tnewFirst := n - self size // 2 + 1.\n\t1 to: self size do: [:i | newSelf basicAt: newFirst + i - 1 put: (self basicAt: firstIndex + i - 1)].\n\tnewSelf setFirst: newFirst last: newFirst + self size - 1.\n\tself become: newSelf! !\n\n!OrderedCollection methodsFor: 'accessing'!\nsize\n\t^lastIndex - firstIndex + 1!\n\nat: index\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1!\n\nat: index put: anObject\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1 put: anObject! !\n\n!OrderedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self addLast: anObject!\n\naddLast: anObject\n\tlastIndex = self basicSize ifTrue: [self grow].\n\tlastIndex := lastIndex + 1.\n\t^self basicAt: lastIndex put: anObject!\n\naddFirst: anObject\n\tfirstIndex = 1 ifTrue: [self grow].\n\tfirstIndex := firstIndex - 1.\n\t^self basicAt: firstIndex put: anObject! !\n\n!OrderedCollection methodsFor: 'removing'!\nremoveFirst\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: firstIndex.\n\tself basicAt: firstIndex put: nil.\n\tfirstIndex := firstIndex + 1.\n\t^answer!\n\nremoveLast\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: lastIndex.\n\tself basicAt: lastIndex put: nil.\n\tlastIndex := lastIndex - 1.\n\t^answer!\n\nremove: oldObject ifAbsent: aBlock\n\t| index |\n\tindex := firstIndex.\n\t[index <= lastIndex] whileTrue: [\n\t\toldObject = (self basicAt: index) ifTrue: [\n\t\t\tindex to: lastIndex - 1 do: [:i | self basicAt: i put: (self basicAt: i + 1)].\n\t\t\tself basicAt: lastIndex put: nil.\n\t\t\tlastIndex := lastIndex - 1.\n\t\t\t^oldObject].\n\t\tindex := index + 1].\n\t^aBlock value! !\n\n!OrderedCollection methodsFor: 'enumerating'!\ndo: aBlock\n\tfirstIndex to: lastIndex do: [:i | aBlock value: (self basicAt: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self copyEmpty.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\ncopyEmpty\n\t^self class new! !\n\n!OrderedCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := OrderedCollection new.\n\tstart to: stop do: [:i | result addLast: (self at: i)].\n\t^result!\n\n, aCollection\n\t^self copy addAll: aCollection; yourself!\n\ncopy\n\t^self collect: [:each | each]!\n\nreversed\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result addFirst: each].\n\t^result! !\n\n!SortedCollection class methodsFor: 'instance creation'!\nnew\n\t^self sortBlock: [:a :b | a <= b]!\n\nsortBlock: aBlock\n\t^(self new: 8) setSortBlock: aBlock! !\n\n!SortedCollection methodsFor: 'private'!\nsetSortBlock: aBlock\n\tsortBlock := aBlock!\n\ncopyEmpty\n\t^SortedCollection sortBlock: sortBlock! !\n\n!SortedCollection methodsFor: 'adding'!\nadd: anObject\n\t\"Put at the end, then moved down past the ones it sorts before:\n\tan insertion sort, one element at a time.\"\n\t| i |\n\tself addLast: anObject.\n\ti := lastIndex.\n\t[i > firstIndex and: [sortBlock value: anObject value: (self basicAt: i - 1)]] whileTrue: [\n\t\tself basicAt: i put: (self basicAt: i - 1).\n\t\ti := i - 1].\n\tself basicAt: i put: anObject.\n\t^anObject!\n\naddFirst: anObject\n\t^self shouldNotImplement!\n\nat: index put: anObject\n\t^self shouldNotImplement! !\n\n!SortedCollection methodsFor: 'accessing'!\nsortBlock\n\t^sortBlock!\n\nmedian\n\t^self at: self size + 1 // 2! !\n\n!SortedCollection methodsFor: 'enumerating'!\ncollect: aBlock\n\t\"The answers are not sorted: an OrderedCollection.\"\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result! !\n\n!Set class methodsFor: 'instance creation'!\nnew\n\t^self new: 16!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setTally! !\n\n!Set methodsFor: 'private'!\nsetTally\n\ttally := 0!\n\nfindIndexFor: anObject\n\t\"Where anObject is, or the empty slot where it would go: its hash,\n\tthen the next slots in turn (open addressing).\"\n\t| index element |\n\tindex := anObject hash \\\\ self basicSize + 1.\n\t[element := self basicAt: index.\n\telement == nil or: [self matches: element key: anObject]]\n\t\twhileFalse: [index := index \\\\ self basicSize + 1].\n\t^index!\n\nmatches: element key: anObject\n\t^element = anObject!\n\ngrow\n\t| newSelf |\n\tnewSelf := self class new: self basicSize * 2.\n\t\"the slots themselves: a Dictionary's do: gives its values\"\n\t1 to: self basicSize do: [:i |\n\t\t(self basicAt: i) == nil ifFalse: [newSelf noCheckAdd: (self basicAt: i)]].\n\tself become: newSelf!\n\nnoCheckAdd: anObject\n\tself basicAt: (self findIndexFor: (self keyOf: anObject)) put: anObject.\n\ttally := tally + 1!\n\nkeyOf: element\n\t^element! !\n\n!Set methodsFor: 'accessing'!\nsize\n\t^tally! !\n\n!Set methodsFor: 'adding'!\nadd: newObject\n\t| index |\n\tnewObject == nil ifTrue: [^newObject].\n\tindex := self findIndexFor: newObject.\n\t(self basicAt: index) == nil ifTrue: [\n\t\tself basicAt: index put: newObject.\n\t\ttally := tally + 1.\n\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]].\n\t^newObject! !\n\n!Set methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| index rest |\n\tindex := self findIndexFor: oldObject.\n\t(self basicAt: index) == nil ifTrue: [^aBlock value].\n\tself basicAt: index put: nil.\n\ttally := tally - 1.\n\t\"the ones after it, in its run, put again\"\n\trest := OrderedCollection new.\n\tindex := index \\\\ self basicSize + 1.\n\t[(self basicAt: index) == nil] whileFalse: [\n\t\trest add: (self basicAt: index).\n\t\tself basicAt: index put: nil.\n\t\ttally := tally - 1.\n\t\tindex := index \\\\ self basicSize + 1].\n\trest do: [:each | self noCheckAdd: each].\n\t^oldObject! !\n\n!Set methodsFor: 'testing'!\nincludes: anObject\n\t^(self basicAt: (self findIndexFor: anObject)) ~~ nil! !\n\n!Set methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self basicSize do: [:i | | each | each := self basicAt: i. each == nil ifFalse: [aBlock value: each]]! !\n\n!Dictionary methodsFor: 'private'!\nmatches: element key: aKey\n\t^element key = aKey!\n\nkeyOf: element\n\t^element key! !\n\n!Dictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key printString]!\n\nat: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\t^assoc value!\n\nat: key put: value\n\t| index assoc |\n\tindex := self findIndexFor: key.\n\tassoc := self basicAt: index.\n\tassoc == nil\n\t\tifTrue: [\n\t\t\tself basicAt: index put: (Association key: key value: value).\n\t\t\ttally := tally + 1.\n\t\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]]\n\t\tifFalse: [assoc value: value].\n\t^value!\n\nassociationAt: key\n\t^self basicAt: (self findIndexFor: key)!\n\nkeys\n\t| result |\n\tresult := Set new.\n\tself associationsDo: [:assoc | result add: assoc key].\n\t^result!\n\nvalues\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:value | result add: value].\n\t^result!\n\nkeyAtValue: value\n\tself associationsDo: [:assoc | assoc value = value ifTrue: [^assoc key]].\n\t^nil! !\n\n!Dictionary methodsFor: 'adding'!\nadd: anAssociation\n\tself at: anAssociation key put: anAssociation value.\n\t^anAssociation! !\n\n!Dictionary methodsFor: 'removing'!\nremoveKey: key\n\t^self removeKey: key ifAbsent: [self error: 'Key not found']!\n\nremoveKey: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\tsuper remove: key ifAbsent: [].\n\t^assoc value! !\n\n!Dictionary methodsFor: 'testing'!\nincludesKey: key\n\t^(self basicAt: (self findIndexFor: key)) ~~ nil!\n\nincludes: value\n\tself do: [:each | each = value ifTrue: [^true]].\n\t^false! !\n\n!Dictionary methodsFor: 'enumerating'!\nassociationsDo: aBlock\n\tsuper do: aBlock!\n\ndo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc value]!\n\nkeysDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key]!\n\nkeysAndValuesDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key value: assoc value]!\n\ncollect: aBlock\n\t| result |\n\tresult := Bag new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := Dictionary new.\n\tself associationsDo: [:assoc | (aBlock value: assoc value) ifTrue: [result add: assoc]].\n\t^result! !\n\n!Dictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself associationsDo: [:assoc | aStream print: assoc; space].\n\taStream nextPut: $)! !\n\n!Bag class methodsFor: 'instance creation'!\nnew\n\t^self basicNew setContents! !\n\n!Bag methodsFor: 'private'!\nsetContents\n\tcontents := Dictionary new! !\n\n!Bag methodsFor: 'adding'!\nadd: newObject\n\t^self add: newObject withOccurrences: 1!\n\nadd: newObject withOccurrences: anInteger\n\tcontents at: newObject put: (contents at: newObject ifAbsent: [0]) + anInteger.\n\t^newObject! !\n\n!Bag methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| count |\n\tcount := contents at: oldObject ifAbsent: [^aBlock value].\n\tcount = 1\n\t\tifTrue: [contents removeKey: oldObject]\n\t\tifFalse: [contents at: oldObject put: count - 1].\n\t^oldObject! !\n\n!Bag methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tcontents do: [:count | tally := tally + count].\n\t^tally!\n\noccurrencesOf: anObject\n\t^contents at: anObject ifAbsent: [0]! !\n\n!Bag methodsFor: 'enumerating'!\ndo: aBlock\n\tcontents associationsDo: [:assoc | assoc value timesRepeat: [aBlock value: assoc key]]! !\n"],[0,[0,"Streams.st","\"Streams over collections: printString is printOn: into a WriteStream\non a String, and a ReadStream reads one element at a time.\"!\n\n!Stream methodsFor: 'accessing'!\nnext\n\t^self subclassResponsibility!\n\nnextPut: anObject\n\t^self subclassResponsibility!\n\nnextPutAll: aCollection\n\taCollection do: [:each | self nextPut: each].\n\t^aCollection!\n\natEnd\n\t^self subclassResponsibility!\n\ndo: aBlock\n\t[self atEnd] whileFalse: [aBlock value: self next]! !\n\n!Stream methodsFor: 'printing'!\nprint: anObject\n\tanObject printOn: self!\n\ncr\n\tself nextPut: Character cr!\n\ntab\n\tself nextPut: Character tab!\n\nspace\n\tself nextPut: Character space! !\n\n!PositionableStream class methodsFor: 'instance creation'!\non: aCollection\n\t^self basicNew on: aCollection! !\n\n!PositionableStream methodsFor: 'private'!\non: aCollection\n\tcollection := aCollection.\n\treadLimit := aCollection size.\n\tposition := 0! !\n\n!PositionableStream methodsFor: 'accessing'!\ncontents\n\t^collection copyFrom: 1 to: readLimit!\n\nposition\n\t^position!\n\nposition: anInteger\n\tposition := anInteger!\n\nreset\n\tposition := 0!\n\nisEmpty\n\t^readLimit = 0!\n\natEnd\n\t^position >= readLimit!\n\npeek\n\tself atEnd ifTrue: [^nil].\n\t^collection at: position + 1!\n\nskip: anInteger\n\tposition := (position + anInteger min: readLimit) max: 0!\n\nupTo: anObject\n\t| start |\n\tstart := position + 1.\n\t[self atEnd or: [self next = anObject]] whileFalse.\n\t^collection copyFrom: start to: (self atEnd ifTrue: [position] ifFalse: [position - 1])!\n\nupToEnd\n\t| start |\n\tstart := position + 1.\n\tposition := readLimit.\n\t^collection copyFrom: start to: readLimit!\n\nskipSeparators\n\t[self atEnd not and: [self peek isSeparator]] whileTrue: [self next]! !\n\n!ReadStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\nnextPut: anObject\n\t^self shouldNotImplement! !\n\n!WriteStream class methodsFor: 'instance creation'!\nwith: aCollection\n\t^(self on: aCollection) setToEnd! !\n\n!WriteStream methodsFor: 'private'!\non: aCollection\n\tsuper on: aCollection.\n\treadLimit := 0.\n\twriteLimit := aCollection size!\n\nsetToEnd\n\tposition := readLimit := writeLimit!\n\ngrowCollection\n\t| bigger |\n\tbigger := collection species new: collection size * 2 + 16.\n\tbigger replaceFrom: 1 to: collection size with: collection startingAt: 1.\n\tcollection := bigger.\n\twriteLimit := collection size! !\n\n!WriteStream methodsFor: 'accessing'!\nnextPut: anObject\n\tposition >= writeLimit ifTrue: [self growCollection].\n\tposition := position + 1.\n\tcollection at: position put: anObject.\n\tposition > readLimit ifTrue: [readLimit := position].\n\t^anObject!\n\ncontents\n\t^collection copyFrom: 1 to: position!\n\nnext\n\t^self shouldNotImplement! !\n\n!ReadWriteStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\ncontents\n\t^collection copyFrom: 1 to: readLimit! !\n\n!SequenceableCollection methodsFor: 'converting'!\nwriteStream\n\t^WriteStream on: self! !\n"],[0,[0,"Graphics.st","\"The display, as the Blue Book's chapters 18 to 20 have it: Forms,\npictures of one bit per pixel; BitBlt, the one primitive that draws\nthem (St_bitblt.mli); and Pen, a turtle that draws lines with it,\nLogo's idea brought to Smalltalk (Papert and Kay were friends).\nDisplay is the Form of the screen: what a Pen draws there is drawn over\nthe windows, until the screen menu's 'restore display' erases it.\"!\n\n!Form class methodsFor: 'instance creation'!\nextent: aPoint\n\t^self width: aPoint x height: aPoint y!\n\nwidth: w height: h\n\t^self new setBits: (ByteArray new: w + 15 // 16 * 2 * h) width: w height: h! !\n\n!Form methodsFor: 'private'!\nsetBits: aByteArray width: w height: h\n\tbits := aByteArray.\n\twidth := w.\n\theight := h! !\n\n!Form methodsFor: 'accessing'!\nwidth\n\t^width!\n\nheight\n\t^height!\n\nextent\n\t^width @ height!\n\nboundingBox\n\t^0 @ 0 corner: width @ height!\n\ncenter\n\t^(width // 2) @ (height // 2)!\n\nbits\n\t^bits! !\n\n!Form methodsFor: 'displaying'!\nfill: aRectangle rule: anInteger\n\t(BitBlt destForm: self sourceForm: nil halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aRectangle origin sourceOrigin: 0 @ 0 extent: aRectangle extent clipRect: self boundingBox) copyBits!\n\nfillWhite\n\tself fill: self boundingBox rule: 0!\n\nfillBlack\n\tself fill: self boundingBox rule: 15!\n\nreverse\n\tself fill: self boundingBox rule: 10!\n\ndisplayOn: aForm at: aPoint rule: anInteger\n\t(BitBlt destForm: aForm sourceForm: self halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aPoint sourceOrigin: 0 @ 0 extent: self extent clipRect: aForm boundingBox) copyBits!\n\ndisplayAt: aPoint\n\tself displayOn: Display at: aPoint rule: 3!\n\npixelAt: aPoint\n\t\"0 or 1, read the BitBlt way: the pixel copied onto a Form of one.\"\n\t| one |\n\tone := Form width: 1 height: 1.\n\t(BitBlt destForm: one sourceForm: self halftoneForm: nil combinationRule: 3\n\t\tdestOrigin: 0 @ 0 sourceOrigin: aPoint extent: 1 @ 1 clipRect: one boundingBox) copyBits.\n\t^(one bits at: 1) bitShift: -7! !\n\n!Form methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Form('; print: width; nextPut: $x; print: height; nextPut: $)! !\n\n!BitBlt class methodsFor: 'instance creation'!\ndestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\t^self new\n\t\tsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr\n\t\tdestOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect! !\n\n!BitBlt methodsFor: 'private'!\nsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\tdestForm := df.\n\tsourceForm := sf.\n\thalftoneForm := hf.\n\tcombinationRule := cr.\n\tdestX := destOrigin x.\n\tdestY := destOrigin y.\n\tsourceX := sourceOrigin x.\n\tsourceY := sourceOrigin y.\n\twidth := extent x.\n\theight := extent y.\n\tclipX := clipRect origin x.\n\tclipY := clipRect origin y.\n\tclipWidth := clipRect width.\n\tclipHeight := clipRect height! !\n\n!BitBlt methodsFor: 'accessing'!\ndestForm: aForm\n\tdestForm := aForm!\n\nsourceForm: aForm\n\tsourceForm := aForm!\n\nhalftoneForm: aForm\n\thalftoneForm := aForm!\n\ncombinationRule: anInteger\n\tcombinationRule := anInteger!\n\ndestOrigin: aPoint\n\tdestX := aPoint x.\n\tdestY := aPoint y!\n\ndestX: x destY: y\n\tdestX := x.\n\tdestY := y!\n\nwidth: w height: h\n\twidth := w.\n\theight := h!\n\nclipRect: aRectangle\n\tclipX := aRectangle origin x.\n\tclipY := aRectangle origin y.\n\tclipWidth := aRectangle width.\n\tclipHeight := aRectangle height! !\n\n!BitBlt methodsFor: 'copying'!\ncopyBits\n\t\"The one drawing primitive (St_bitblt.mli).\"\n\t<primitive: 96>\n\t^self error: 'Bad BitBlt arguments'! !\n\n!Pen class methodsFor: 'instance creation'!\nnew\n\t\"A pen of one pixel on the Display, at its center, pointing up.\"\n\t^super new defaultNib: 1! !\n\n!Pen methodsFor: 'initialize'!\ndefaultNib: n\n\tdestForm := Display.\n\tsourceForm := (Form width: n height: n) fillBlack; yourself.\n\tcombinationRule := 7.\n\twidth := n.\n\theight := n.\n\tsourceX := 0.\n\tsourceY := 0.\n\tself clipRect: Display boundingBox.\n\tframe := Display boundingBox.\n\tlocation := Display center.\n\tdirection := 270.\n\tpenDown := true! !\n\n!Pen methodsFor: 'accessing'!\nlocation\n\t^location!\n\ndirection\n\t^direction! !\n\n!Pen methodsFor: 'moving'!\nup\n\tpenDown := false!\n\ndown\n\tpenDown := true!\n\nturn: degrees\n\t\"Clockwise, the y axis going down.\"\n\tdirection := direction + degrees \\\\ 360!\n\nnorth\n\tdirection := 270!\n\nhome\n\tlocation := Display center!\n\nplace: aPoint\n\tlocation := aPoint!\n\ngo: distance\n\t\"Forward, drawing if the pen is down.\"\n\t| old radians |\n\told := location.\n\tradians := direction degreesToRadians.\n\tlocation := location + ((radians cos * distance) @ (radians sin * distance)).\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ngoto: aPoint\n\t| old |\n\told := location.\n\tlocation := aPoint.\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ndrawFrom: startPoint to: endPoint\n\t\"Bresenham's line (1965), a copyBits of the nib at each point:\n\tthe error term says when to step across as well as along.\"\n\t| x0 y0 x1 y1 dx dy sx sy err e2 |\n\tx0 := startPoint x rounded.\n\ty0 := startPoint y rounded.\n\tx1 := endPoint x rounded.\n\ty1 := endPoint y rounded.\n\tdx := (x1 - x0) abs.\n\tdy := (y1 - y0) abs negated.\n\tsx := x0 < x1 ifTrue: [1] ifFalse: [-1].\n\tsy := y0 < y1 ifTrue: [1] ifFalse: [-1].\n\terr := dx + dy.\n\t[destX := x0.\n\tdestY := y0.\n\tself copyBits.\n\tx0 = x1 and: [y0 = y1]] whileFalse: [\n\t\te2 := 2 * err.\n\t\te2 >= dy ifTrue: [err := err + dy. x0 := x0 + sx].\n\t\te2 <= dx ifTrue: [err := err + dx. y0 := y0 + sy]]! !\n\n!Pen methodsFor: 'geometric designs'!\ndragon: n\n\t\"The dragon curve, the Blue Book's (chapter 20): Pen new dragon: 9.\"\n\tn = 0\n\t\tifTrue: [self go: 10]\n\t\tifFalse: [\n\t\t\tn > 0\n\t\t\t\tifTrue: [self dragon: n - 1; turn: 90; dragon: 1 - n]\n\t\t\t\tifFalse: [self dragon: -1 - n; turn: -90; dragon: 1 + n]]!\n\nspiral: n angle: a\n\t\"Pen new spiral: 200 angle: 89.\"\n\t1 to: n do: [:i | self go: i; turn: a]!\n\npolygon: sides length: length\n\tsides timesRepeat: [self go: length; turn: 360 // sides]!\n\nscribble\n\t\"Pen new scribble: press the button and draw, release to stop --\n\tthe mouse read by Smalltalk while it runs.\"\n\tself place: Sensor waitButton.\n\t[Sensor anyButtonPressed] whileTrue: [self goto: Sensor mousePoint]! !\n\n!Number methodsFor: 'converting'!\ndegreesToRadians\n\t^self asFloat * 0.017453292519943295! !\n\n!InputSensor methodsFor: 'mouse'!\nmousePoint\n\t\"Where the mouse is, on the Display.\"\n\t<primitive: 90>\n\tself primitiveFailed!\n\ncursorPoint\n\t^self mousePoint!\n\nbuttons\n\t<primitive: 91>\n\tself primitiveFailed!\n\nredButtonPressed\n\t^(self buttons bitAnd: 4) ~= 0!\n\nyellowButtonPressed\n\t^(self buttons bitAnd: 2) ~= 0!\n\nblueButtonPressed\n\t^(self buttons bitAnd: 1) ~= 0!\n\nanyButtonPressed\n\t^self buttons ~= 0!\n\nwaitButton\n\t[self anyButtonPressed] whileFalse.\n\t^self mousePoint!\n\nwaitNoButton\n\t[self anyButtonPressed] whileTrue! !\n"],[0,[0,"System.st","\"The last chunks the bootstrap runs, once every method is compiled:\nthe globals that are objects rather than classes.\"!\n\nSmalltalk at: #Transcript put: TextCollector new!\n\nSmalltalk at: #Display put: (Form extent: 800 @ 600)!\n\nSmalltalk at: #Sensor put: InputSensor new!\n\nRectangle comment: 'A rectangle of the screen, from its origin (top left) to its corner (bottom right), each a Point.'!\n\nPoint comment: 'A point of the screen, x to the right and y downwards: 3@4.'!\n\nObject comment: 'The root of the classes: what every object answers.'!\n"],0]]]]]]]],m1="\n\n",mZ=str_class,m3=str$9,m0=[0,[12,33,[2,0,[2,0,[11," methodsFor: '",[2,0,[11,"'!\n",0]]]]]],"!%s%s methodsFor: '%s'!\n"],m2=" !\n",mY="!!",mU=str$9,mV=str$9,mW="methodsFor: expected",mT=str$0,mS=str$0,mQ="St_chunk.Error",nz=[0,[2,0,[12,58,[4,0,0,0,[11,str$8,[2,0,0]]]]],"%s:%d: %s"],ny=[0,1],nx=[0,[2,0,[12,58,[4,0,0,0,[11,str$8,[2,0,[11,str$10,[2,0,0]]]]]]],"%s:%d: %s>>%s"],nc="Metaclass",nd="SmallInteger",ne="String",nf="Symbol",ng="Array",nh=str_Float,ni="Character",nj=str_CompiledMethod,nk="MethodContext",nl="BlockContext",nm="Message",nn="Association",no="Point",np="LargePositiveInteger",nq="LargeNegativeInteger",nr="MethodDictionary",ns="UndefinedObject",nt="True",nu="False",nv="SystemDictionary",nw="Smalltalk",m$=[0,3],na=[0,4],m8=[0,1],m9=[0,2],m_=[0,0],m4="St_boot.Error",nN=caml_int64_create_lo_mi_hi(0,0,0),nM="bad object in image",nL="not a TinySmalltalk80 image",nK=caml_int64_create_lo_mi_hi(num_255,0,0),nJ="bad image header",nI=str_truncated_image,nG=str_truncated_image,nE=str_truncated_image,nA=str_TinySmalltalk80_abr,nY=str$14,nU="Step: still running",nR="header",nQ=str_self,n_=[0,2],op=[0,1],oq=[0,1],os="hard",ot="tanh",ou="cubic",ov="asymmetric",or=[0,0,[0,1,[0,2,[0,3,0]]]],ox="compressor",oy="limiter",oz="gate",ow=[0,0,[0,1,[0,2,0]]],oA="Jsoo_runtime.Error.Exn",oC=str_jsError,oI=str$9,oK=str_to_js,oD=[0,str_to_js],o7=str_href,o8="download",o6="no localStorage in this browser",o4=[0,0],o2=str_ABCDEFGHIJKLMNOP_abr,pH=[5,1],pG=[5,0],pF=[6,1],pE=[6,0],pB=str$9,pt=str_Escape,pu=str_End,pv=str_Delete,pw=str_Backspace,pn=str_Tab,pp="PageUp",pq="PageDown",pr="Insert",ps=str_Home,po=str_Enter,pk=str_Shift,pl=str_Control,pm=str_Alt,pj=str$9,pc=str_sans_serif,ph=str$9,pA=[0,0.,0.,0,0,0,0.,0.,0.,0],rM=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],rN=[0,[0,str_Control,"ctrlKey"],[0,[0,str_Alt,"altKey"],[0,[0,str_Shift,"shiftKey"],[0,[0,"Meta","metaKey"],0]]]],rO=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],rI=[3,0],rJ=[0,num_1000,0.,0.],rK=[3,1],rH=[0,num_1000,0.,0.],rL=[0,str_pointerdown,[0,str_pointermove,[0,str_pointerup,0]]],rD=str_flex,rF=str_none,rE=str_display,rx=str_div,ry=[0,[0,str_position,str_fixed],[0,[0,str_left,str_0],[0,[0,str_right,str_0],[0,[0,str_bottom,str_0],[0,[0,"zIndex","10"],0]]]]],rz=str_div,rA=caml_list_of_js_array([[0,str_position,str_fixed],[0,str_right,str_8px],[0,str_bottom,str_4px],[0,str_width,str_44px],[0,str_height,str_44px],[0,"lineHeight",str_44px],[0,"textAlign",str_center],[0,str_fontSize,"26px"],[0,str_borderRadius,str_8px],[0,str_background,"rgba(255,255,255,0.75)"],[0,str_color,str_222]]),rB=str_pointerdown,rC=str_mousedown,rG=str_click,ru=[0,[8,[0,0,0],0,[0,0],[11,str_px,0]],"%.0fpx"],rv=str_height,rw=str_resize,rh=str_div,ri=[0,[0,str_flex,"1"],[0,[0,str_display,str_flex],[0,[0,"alignItems",str_center],[0,[0,"justifyContent",str_center],[0,[0,str_fontSize,"18px"],[0,[0,str_borderRadius,"6px"],[0,[0,str_background,"rgba(255,255,255,0.8)"],[0,[0,str_color,str_222],[0,[0,"fontFamily",str_sans_serif],0]]]]]]]]],rj=str_pointerdown,rk=str_mousedown,rl=[0,str_pointerup,[0,str_pointercancel,[0,str_pointerleave,0]]],ra=str_div,rb=[0,[0,str_display,str_none],[0,[0,"gap",str_4px],[0,[0,str_padding,str_4px],[0,[0,"boxSizing","border-box"],[0,[0,str_background,"#333"],0]]]]],rc=str_height,rd=[0,str_right,"60px"],re=[0,str_bottom,str_0],rf=[0,str_left,str_0],rg=[0,str_position,str_fixed],rm=str_ArrowLeft,rn=str_ArrowUp,ro=str_ArrowDown,rp=str_ArrowRight,rq=[0,str$14],rr=str_space,rs=str_Enter,rt=str_Escape,q9=str_space,q8=str_Backspace,q4=str_input,q5=[0,[0,"autocomplete",str_off],[0,[0,"autocorrect",str_off],[0,[0,"autocapitalize",str_off],[0,[0,"spellcheck",str_false],0]]]],q6=[0,[0,str_position,str_fixed],[0,[0,str_left,str_0],[0,[0,str_bottom,str_0],[0,[0,str_width,str_1px],[0,[0,str_height,str_1px],[0,[0,str_opacity,str_0],[0,[0,str_fontSize,"16px"],[0,[0,"border",str_0],[0,[0,str_padding,str_0],0]]]]]]]]],q7=str_keydown,q_=str_input,qY=[1,0],qX="GET",qZ="POST",qU="outputLatency",qV="baseLatency",qI=[0,[4,0]],qJ=[0,[4,1]],qK=[0,0],qG=[0,[11,"key = '",[2,0,[12,39,0]]],"key = '%s'"],qH=str_space,qC="pixelated",qD="image-rendering",qA="crispEdges",qB="shape-rendering",qs=str_100,qt=str_100,qu=str_0,qv=str_left,qw=str_0,qx="top",qy=str_fixed,qz=str_position,qn=str$14,qk="central",ql="middle",qj=str$9,qf=str$9,qg=str$9,pY="g",pX="text",pW=str_image,pU="rect",pT="ellipse",pS="circle",pR="svg",pN=str$9,pO=str$9,pZ="viewBox",p2="r",p3="rx",p4="ry",p8=str_opacity,p9=str_href,p_="text-anchor",p$="dominant-baseline",qa="font-size",qb="font-family",qc="textContent",tn=str$9,tg=str$9,th=str_System_Browser,ti=str$9,tj=str_Workspace,tk=str_System_Transcript,tl="Display fillWhite",tm=[0,[11,"Image saved: ",[4,0,0,0,[11," objects, ",[4,0,0,0,[11," bytes.\n",0]]]]],"Image saved: %d objects, %d bytes.\n"],uq="running... (Control-C interrupts)",uj=str_Control,uk=str_c,ul="Display",uf=[0,"saved"],ug=str_image,uh="window",t0=str_center,t1=str_Rectangle,ua=str$9,t2=str_center,t3="rectangle functions",t4=str_Rectangle,t5="Graphics-Primitives",t6=[num_254,8.,num_20,num_560,num_300],t7=str_System_Browser,t8=[num_254,480.,num_350,312.,num_240],t9=str_System_Transcript,t_=[num_254,8.,num_350,462.,num_240],t$=str_Workspace,tY=str$9,tZ=str$9,tU="\t",tV=str$16,tW=str$9,tX=str$9,tS=str_Control,tT=str_a,tG=str_close,tH="expand",tI="collapse",tJ="file out",tK="comment",tL="definition",tM="remove",tN=str_send,tO=str_step,tP=str_restart,tQ=str_proceed,tx=str_paste,ty=str_cut,tz=str_copy,tA="cancel",tB="accept",tC="inspect it",tD="print it",tE="do it",tr=str$9,tq=str$9,to=str$9,tp=str$9,tb=str_as_yet_unclassified,tc=str_as_yet_unclassified,s$=str$9,ta=str$9,s9=str$9,s_=str$9,s6=str$16,s5=str_as_yet_unclassified,s2=str$9,s3=str$9,s0=[0,[11,"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '",[2,0,[12,39,0]]],"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '%s'"],sX=str_User_Interrupt,sY=str_User_Interrupt,sR=[num_254,num_180,num_150,num_420,num_100],sN=str$9,sO=str$9,sP=str$9,sM=str$9,sJ=[0,0],sz=str$9,sk=str_class$0,sl="instance",sj=[0,str_apps_devtools_we_abr,368,81],sn=str_define,so=str_send,sp=str_step,sq=str_restart,sr=str_proceed,sm=[0,str_apps_devtools_we_abr,399,15],ss=str_close,st=str_define,su="debug",sv=str_proceed,sh=str_self,r_="\"The caret on a line, then the right button's menu:\ndo it, print it, inspect it (or Control-D, P, I).\"\n3 + 4 * 2\n100 factorial\n(1/3) + (2/3)\n#(5 3 8 1 2) asSortedCollection\n(Rectangle origin: 0@0 corner: 4@6) center\n(1 to: 10) collect: [:i | i * i]\nTranscript show: 'Hello, world!'; cr\nMetaclass class class == Metaclass\n(3@4) inspect\nPen new dragon: 9\nPen new spiral: 150 angle: 89\nPen new scribble\n10 fib\n3 zork: 4\n3 halt\n[true] whileTrue",r$="Smalltalk-80 of the Blue Book (Goldberg and Robson, 1983), in OCaml.\nThe kernel's classes compiled to its bytecodes, from their text.\n",sZ='message selector and argument names\n\t"comment stating purpose of message"\n\n\t| temporary variable names |\n\tstatements',tF=[0,[0,"restore display",3],[0,[0,str_browser,0],[0,[0,"workspace",1],[0,[0,"system transcript",2],[0,[0,"save",4],[0,[0,str_load,5],0]]]]]],ub=[0,0,0,0],ud=str$9,k=num_2147483647,bv=[num_248,"Stdlib.Queue.Empty",caml_fresh_oo_id(0)];try{var
-ut=caml_sys_getenv(str_OCAMLRUNPARAM),eD=ut}catch(aLV){var
+s="output_substring",R="tl",aM="Bytes.of_seq: cannot grow bytes",a0="String.rindex_from_opt / Bytes.rindex_from_opt",a9="Array.sub",ew=str_x,eJ="Hashtbl: unsupported hash table format",eB=str$9,fh=[3,0,3],fi=str$2,fe=str$9,fc=str$9,e_=str$16,e7=[0,str$9],e1=str$9,e2=str$9,e3=str$9,e4=str$9,eP="Stdlib.Format.String_tag",gy=str_E2BIG,gA=str_EACCES,gB=str_EAGAIN,gC=str_EBADF,gD=str_EBUSY,gE=str_ECHILD,gF=str_EDEADLK,gG=str_EDOM,gH=str_EEXIST,gI=str_EFAULT,gJ=str_EFBIG,gK=str_EINTR,gL=str_EINVAL,gM=str_EIO,gN=str_EISDIR,gO=str_EMFILE,gP=str_EMLINK,gQ=str_ENAMETOOLONG,gR=str_ENFILE,gS=str_ENODEV,gT=str_ENOENT,gU=str_ENOEXEC,gV=str_ENOLCK,gW=str_ENOMEM,gX=str_ENOSPC,gY=str_ENOSYS,gZ=str_ENOTDIR,g0=str_ENOTEMPTY,g1=str_ENOTTY,g2=str_ENXIO,g3=str_EPERM,g4=str_EPIPE,g5=str_ERANGE,g6=str_EROFS,g7=str_ESPIPE,g8=str_ESRCH,g9=str_EXDEV,g_=str_EWOULDBLOCK,g$=str_EINPROGRESS,ha=str_EALREADY,hb=str_ENOTSOCK,hc=str_EDESTADDRREQ,hd=str_EMSGSIZE,he=str_EPROTOTYPE,hf=str_ENOPROTOOPT,hg=str_EPROTONOSUPPORT,hh=str_ESOCKTNOSUPPORT,hi=str_EOPNOTSUPP,hj=str_EPFNOSUPPORT,hk=str_EAFNOSUPPORT,hl=str_EADDRINUSE,hm=str_EADDRNOTAVAIL,hn=str_ENETDOWN,ho=str_ENETUNREACH,hp=str_ENETRESET,hq=str_ECONNABORTED,hr=str_ECONNRESET,hs=str_ENOBUFS,ht=str_EISCONN,hu=str_ENOTCONN,hv=str_ESHUTDOWN,hw=str_ETOOMANYREFS,hx=str_ETIMEDOUT,hy=str_ECONNREFUSED,hz=str_EHOSTDOWN,hA=str_EHOSTUNREACH,hB=str_ELOOP,hC=str_EOVERFLOW,hD=[0,[11,"EUNKNOWNERR ",[4,0,0,0,0]],"EUNKNOWNERR %d"],gz=[0,[11,"Unix.Unix_error(Unix.",[2,0,[11,str$13,[3,0,[11,str$13,[3,0,[12,41,0]]]]]]],"Unix.Unix_error(Unix.%s, %S, %S)"],gt=str_Unix_Unix_error,gv=str$9,gw=str$9,gx=str_Unix_Unix_error,hL="Cap.main() already called",hE=[0,str_open_in,str_argv,str_bind,str_draw,str_exec,str_exit,str_fork,str_chdir,str_kill,str_wait,str_network,str_time_limit,str_keyboard,str_open_out,str_env,str_tmp,str_readdir,str_stdin,str_stderr,str_stdout,str_mount,str_mouse,str_signal,str_random,str_memory_limit],hF=[0,str_wait,str_tmp,str_time_limit,str_stdout,str_stdin,str_stderr,str_signal,str_readdir,str_random,str_open_out,str_open_in,str_network,str_mouse,str_mount,str_memory_limit,str_kill,str_keyboard,str_fork,str_exit,str_exec,str_env,str_draw,str_chdir,str_bind,str_argv],hY="Set.remove_min_elt",h0=[0,0,0,0],hQ=str_Set_bal,hR=str_Set_bal,hS=str_Set_bal,hT=str_Set_bal,ia=[0,"#edd400"],ip="unmatched comment quote",ir="unmatched string quote",iq="a character expected after $",is="a literal expected after #",it=[0,[11,"unexpected character ",[1,0]],"unexpected character %C"],io="bad radix",ie="St_lexer.Error",iH=str$9,iR=[0,str$17,str$12,str$25,str$6,str,str$21,"=","~=","*",str$20,str$22,str$26,"bitShift:","//","bitAnd:","bitOr:","at:","at:put:","size","next","nextPut:","atEnd","==",str_class$0,"blockCopy:","value","value:","do:","new","new:",str_x,"y"],jN="Class",jy="variableSubclass:",jz="variableByteSubclass:",jt="subclass:",ju=str$14,jv=str$14,jw=str_nil,jx=[0,[2,0,[12,32,[2,0,[11," #",[2,0,[11,"\n\tinstanceVariableNames: '",[2,0,[11,"'\n\tclassVariableNames: '",[2,0,[11,"'\n\tpoolDictionaries: ''\n\tcategory: '",partial$0]]]]]]]]]],"%s %s #%s\n\tinstanceVariableNames: '%s'\n\tclassVariableNames: '%s'\n\tpoolDictionaries: ''\n\tcategory: '%s'"],jl=str$9,jk=str$9,jg=str_nil,i$=[0,0,1,2,3,4],jZ=str_expected,j0="literal expected",j1=[5,str$19],j9="Cascading not expected",j$=str$19,j_="Message expected",ka=str$19,kc=str_expected,kb="Argument expected",kd=str_Argument_name_ex_abr,kf=str_Vertical_bar_exp_abr,ke="Period or right bracket expected",kg=str$9,kh=str_Vertical_bar_exp_abr,kj=str_Nothing_more_exp_abr,ki=str_Nothing_more_exp_abr,kx="DoIt",kv=str_Nothing_more_exp_abr,kr="> expected",ks=[2,str$6],kq="Integer expected",kl=str_Argument_name_ex_abr,km=str$19,kn=str_Argument_name_ex_abr,ko=str_Argument_name_ex_abr,kk="Message pattern expected",jO="St_parse.Error",k4=" limit",k5=str,k7=str$21,k6=str$17,k3=[0,"languages/smalltalk/St_compile.ml",376,9],k8="Block too long",lc=str_as_yet_unclassified,le=[0,1],k$=[0,0,0],k_=[0,0,0],kR="Too many literals",kP=[0,str_self,[0,str_super,[0,str_true,[0,str_false,[0,str_nil,[0,str_thisContext,0]]]]]],kL="Too many literals or variables",kI="Too many temporaries",ky="St_compile.Error",lD=str_doesNotUnderstand,l8="printString",l9=[0,5000000],l_="<printString not a String>",l6=[1,"Too long: stopped"],l7=[1,"Terminated"],l1=[0,str_Step],lW="receiver",lX=str$9,lY=str_send,lS=[0,[11,"unknown bytecode ",[4,0,0,0,0]],"unknown bytecode %d"],lT="store into a literal",lP="mustBeBoolean",lJ="cannotReturn:",lB="wrong number of arguments",lf="St_interp.Fatal",lL=[0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,1,0,1,0,1,0,1,1,0,1,0,0],mN="Halt",mu=[2,0.],mj=[0,[8,[0,0,0],0,[0,1],0],"%.1f"],mk=[0,[8,[0,0,3],0,[0,15],0],"%.15g"],ml=[0,[8,[0,0,3],0,[0,17],0],"%.17g"],mO=[0,[0,"Definitions.st","\"The kernel's classes, the Blue Book's hierarchy (its part two), a\nsubset. St_boot reads these definitions before anything can run: it\nmakes every class and its metaclass from them, ties the knot at the top\n(Object class superclass == Class, Metaclass class class == Metaclass),\nthen compiles the methods of the other files. The fields the virtual\nmachine reads -- a class's, a context's, a Character's value -- are in\nthe order St_class.mli and St_interp.mli say.\"!\n\nnil subclass: #Object\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Behavior\n\tinstanceVariableNames: 'superclass methodDict format'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nBehavior subclass: #ClassDescription\n\tinstanceVariableNames: 'instanceVariables organization'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Class\n\tinstanceVariableNames: 'name category classPool comment'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nClassDescription subclass: #Metaclass\n\tinstanceVariableNames: 'thisClass'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Classes'!\n\nObject subclass: #UndefinedObject\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Boolean\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #True\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nBoolean subclass: #False\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Association\n\tinstanceVariableNames: 'key value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Objects'!\n\nObject subclass: #Message\n\tinstanceVariableNames: 'selector arguments'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #Magnitude\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Character\n\tinstanceVariableNames: 'value'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Magnitudes'!\n\nMagnitude subclass: #Number\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Integer\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger subclass: #SmallInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nInteger variableByteSubclass: #LargePositiveInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nLargePositiveInteger variableByteSubclass: #LargeNegativeInteger\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Float\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nNumber subclass: #Fraction\n\tinstanceVariableNames: 'numerator denominator'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Numeric-Numbers'!\n\nObject subclass: #Point\n\tinstanceVariableNames: 'x y'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Rectangle\n\tinstanceVariableNames: 'origin corner'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #Collection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nCollection subclass: #SequenceableCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nSequenceableCollection subclass: #ArrayedCollection\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Abstract'!\n\nArrayedCollection variableSubclass: #Array\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nArrayedCollection variableByteSubclass: #String\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nString variableByteSubclass: #Symbol\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Text'!\n\nArrayedCollection variableByteSubclass: #ByteArray\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Arrayed'!\n\nSequenceableCollection subclass: #Interval\n\tinstanceVariableNames: 'start stop step'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nSequenceableCollection variableSubclass: #OrderedCollection\n\tinstanceVariableNames: 'firstIndex lastIndex'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nOrderedCollection variableSubclass: #SortedCollection\n\tinstanceVariableNames: 'sortBlock'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Sequenceable'!\n\nCollection variableSubclass: #Set\n\tinstanceVariableNames: 'tally'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nSet variableSubclass: #Dictionary\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nCollection subclass: #Bag\n\tinstanceVariableNames: 'contents'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Unordered'!\n\nObject subclass: #SystemDictionary\n\tinstanceVariableNames: 'associations'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Stream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nStream subclass: #PositionableStream\n\tinstanceVariableNames: 'collection position readLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #ReadStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nPositionableStream subclass: #WriteStream\n\tinstanceVariableNames: 'writeLimit'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nWriteStream subclass: #ReadWriteStream\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Collections-Streams'!\n\nObject subclass: #MethodDictionary\n\tinstanceVariableNames: 'selectors methods'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #CompiledMethod\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject variableSubclass: #ContextPart\n\tinstanceVariableNames: 'sender pc stackp'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #MethodContext\n\tinstanceVariableNames: 'method unused receiver'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nContextPart variableSubclass: #BlockContext\n\tinstanceVariableNames: 'nargs startpc home'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Methods'!\n\nObject subclass: #TextCollector\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Interface-Transcript'!\n\nObject subclass: #Time\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'System-Support'!\n\nObject subclass: #Form\n\tinstanceVariableNames: 'bits width height'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Display Objects'!\n\nObject subclass: #BitBlt\n\tinstanceVariableNames: 'destForm sourceForm halftoneForm combinationRule destX destY width height sourceX sourceY clipX clipY clipWidth clipHeight'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Support'!\n\nBitBlt subclass: #Pen\n\tinstanceVariableNames: 'frame location direction penDown'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Graphics-Primitives'!\n\nObject subclass: #InputSensor\n\tinstanceVariableNames: ''\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: 'Kernel-Processes'!\n"],[0,[0,"Objects.st","\"Object, nil, the Booleans, and the two small classes everything\nuses: Association (key -> value) and Message (what doesNotUnderstand:\nreceives).\"!\n\n!Object methodsFor: 'comparing'!\n== anObject\n\t\"The same object: the oops equal. Never fails.\"\n\t<primitive: 110>\n\tself primitiveFailed!\n\n= anObject\n\t\"Equal: by default, the same object. Subclasses say more.\"\n\t^self == anObject!\n\n~= anObject\n\t^(self = anObject) == false!\n\n~~ anObject\n\t^(self == anObject) == false!\n\nhash\n\t\"Equal objects must have equal hashes.\"\n\t^self identityHash!\n\nidentityHash\n\t<primitive: 75>\n\tself primitiveFailed! !\n\n!Object methodsFor: 'class membership'!\nclass\n\t<primitive: 111>\n\tself primitiveFailed!\n\nisKindOf: aClass\n\t| c |\n\tc := self class.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\nisMemberOf: aClass\n\t^self class == aClass!\n\nrespondsTo: aSymbol\n\t^self class canUnderstand: aSymbol! !\n\n!Object methodsFor: 'testing'!\nisNil\n\t^false!\n\nnotNil\n\t^true!\n\nisString\n\t^false!\n\nisSymbol\n\t^false!\n\nisNumber\n\t^false!\n\nisInteger\n\t^false!\n\nisSmallInteger\n\t^false!\n\nisCharacter\n\t^false!\n\nisClass\n\t^false!\n\nisArray\n\t^false!\n\nifNil: aBlock\n\t^self!\n\nifNotNil: aBlock\n\t^aBlock value: self! !\n\n!Object methodsFor: 'accessing'!\nat: index\n\t\"The indexed field, from 1.\"\n\t<primitive: 60>\n\tself checkIndex: index!\n\nat: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nbasicAt: index\n\t<primitive: 60>\n\tself checkIndex: index!\n\nbasicAt: index put: value\n\t<primitive: 61>\n\tself checkIndex: index!\n\nsize\n\t\"How many indexed fields.\"\n\t<primitive: 62>\n\t^0!\n\nbasicSize\n\t<primitive: 62>\n\t^0!\n\ninstVarAt: index\n\t<primitive: 73>\n\tself error: 'Index out of bounds'!\n\ninstVarAt: index put: value\n\t<primitive: 74>\n\tself error: 'Index out of bounds'!\n\nyourself\n\t^self!\n\ncheckIndex: index\n\tindex isInteger ifFalse: [^self error: 'Index must be an integer'].\n\t(index < 1 or: [index > self basicSize])\n\t\tifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self error: 'Improper store into indexable object'! !\n\n!Object methodsFor: 'copying'!\nshallowCopy\n\t\"A new object with the same fields: they are shared, not copied.\"\n\t<primitive: 153>\n\tself primitiveFailed!\n\ncopy\n\t^self shallowCopy!\n\ndeepCopy\n\t| new |\n\tnew := self shallowCopy.\n\t1 to: self class instSize do: [:i | new instVarAt: i put: (self instVarAt: i) copy].\n\t^new! !\n\n!Object methodsFor: 'printing'!\nprintString\n\t\"What 'print it' shows: printOn: into a stream on a String.\"\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream.\n\t^aStream contents!\n\nprintOn: aStream\n\t\"By default, the class's name with an article: a Point, an Object.\"\n\t| title |\n\ttitle := self class name.\n\taStream nextPutAll: ((title at: 1) isVowel ifTrue: ['an '] ifFalse: ['a ']).\n\taStream nextPutAll: title!\n\ndisplayString\n\t^self printString!\n\ndisplayNl\n\tTranscript show: self displayString; cr!\n\nprintNl\n\tTranscript show: self printString; cr! !\n\n!Object methodsFor: 'error handling'!\nerror: aString\n\t\"Stop the process, a notifier titled aString: St_debug.mli.\n\tProceeding answers nil.\"\n\t<primitive: 141>!\n\ndoesNotUnderstand: aMessage\n\t\"No method for aMessage selector, up the whole superclass chain.\"\n\t^self error: 'Message not understood: ', aMessage selector!\n\nhalt\n\t^self error: 'Halt'!\n\nprimitiveFailed\n\t^self error: 'Primitive failed'!\n\nsubclassResponsibility\n\t^self error: 'My subclass should have overridden one of my messages'!\n\nshouldNotImplement\n\t^self error: 'This message is not appropriate for this object'!\n\nmustBeBoolean\n\t^self error: 'NonBoolean receiver--proceed for truth'!\n\ncannotReturn: value\n\t^self error: 'Context cannot return'! !\n\n!Object methodsFor: 'message handling'!\nperform: aSymbol\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: anObject\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol with: first with: second\n\t<primitive: 83>\n\t^self error: 'Wrong number of arguments'!\n\nperform: aSymbol withArguments: anArray\n\t<primitive: 84>\n\t^self error: 'Wrong number of arguments'! !\n\n!Object methodsFor: 'system primitives'!\nbecome: otherObject\n\t\"Swap the two objects: every reference to one now reaches the\n\tother (St_memory.mli).\"\n\t<primitive: 72>\n\tself primitiveFailed!\n\ninspect\n\t\"An Inspector on the receiver.\"\n\t<primitive: 158>!\n\n-> anObject\n\t^Association key: self value: anObject! !\n\n!UndefinedObject methodsFor: 'testing'!\nisNil\n\t^true!\n\nnotNil\n\t^false!\n\nifNil: aBlock\n\t^aBlock value!\n\nifNotNil: aBlock\n\t^self! !\n\n!UndefinedObject methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'nil'! !\n\n!UndefinedObject methodsFor: 'class definition'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t\"A class with no superclass: Object's own definition.\"\n\t<primitive: 143>\n\tself primitiveFailed! !\n\n!Boolean methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: (self ifTrue: ['true'] ifFalse: ['false'])! !\n\n!Boolean methodsFor: 'copying'!\nshallowCopy\n\t\"true and false are unique.\"\n\t^self! !\n\n!True methodsFor: 'controlling'!\nifTrue: trueBlock\n\t\"Sent only when the argument is not a literal block: the compiler\n\tinlines the other cases into jumps (St_compile.mli).\"\n\t^trueBlock value!\n\nifFalse: falseBlock\n\t^nil!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^trueBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^trueBlock value!\n\nand: aBlock\n\t^aBlock value!\n\nor: aBlock\n\t^true! !\n\n!True methodsFor: 'logical operations'!\n& aBoolean\n\t^aBoolean!\n\n| aBoolean\n\t^true!\n\nnot\n\t^false! !\n\n!False methodsFor: 'controlling'!\nifTrue: trueBlock\n\t^nil!\n\nifFalse: falseBlock\n\t^falseBlock value!\n\nifTrue: trueBlock ifFalse: falseBlock\n\t^falseBlock value!\n\nifFalse: falseBlock ifTrue: trueBlock\n\t^falseBlock value!\n\nand: aBlock\n\t^false!\n\nor: aBlock\n\t^aBlock value! !\n\n!False methodsFor: 'logical operations'!\n& aBoolean\n\t^false!\n\n| aBoolean\n\t^aBoolean!\n\nnot\n\t^true! !\n\n!Association class methodsFor: 'instance creation'!\nkey: aKey value: aValue\n\t^self new key: aKey value: aValue! !\n\n!Association methodsFor: 'accessing'!\nkey\n\t^key!\n\nvalue\n\t^value!\n\nkey: aKey value: aValue\n\tkey := aKey.\n\tvalue := aValue!\n\nvalue: aValue\n\tvalue := aValue! !\n\n!Association methodsFor: 'comparing'!\n= anAssociation\n\t^(anAssociation isKindOf: Association)\n\t\tand: [key = anAssociation key and: [value = anAssociation value]]!\n\nhash\n\t^key hash! !\n\n!Association methodsFor: 'printing'!\nprintOn: aStream\n\tkey printOn: aStream.\n\taStream nextPutAll: '->'.\n\tvalue printOn: aStream! !\n\n!Message methodsFor: 'accessing'!\nselector\n\t^selector!\n\narguments\n\t^arguments! !\n\n!Message methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Message ('; nextPutAll: selector.\n\targuments do: [:each | aStream space; print: each].\n\taStream nextPut: $)! !\n"],[0,[0,"Classes.st","\"Classes are objects: Behavior (what makes instances and finds\nmethods), ClassDescription (instance variables' names, the methods'\ncategories), Class and Metaclass. And the objects of the machine\nitself: the SystemDictionary Smalltalk, method dictionaries, compiled\nmethods, the contexts, and Time.\"!\n\n!Behavior methodsFor: 'instance creation'!\nnew\n\t<primitive: 70>\n\t^self error: 'This class cannot make instances with new'!\n\nnew: anInteger\n\t<primitive: 71>\n\t^self error: 'This class cannot make indexed instances'!\n\nbasicNew\n\t<primitive: 70>\n\tself primitiveFailed!\n\nbasicNew: anInteger\n\t<primitive: 71>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'accessing'!\nsuperclass\n\t^superclass!\n\nmethodDictionary\n\t^methodDict!\n\ninstSize\n\t\"The named fields of an instance: the format's high bits.\"\n\t^format bitShift: -3!\n\nisVariable\n\t^(format bitAnd: 7) between: 1 and: 2!\n\ninstanceVariableNames\n\t| names |\n\tnames := superclass == nil ifTrue: [OrderedCollection new] ifFalse: [superclass instanceVariableNames].\n\tinstanceVariables == nil ifFalse: [instanceVariables do: [:each | names add: each]].\n\t^names!\n\nselectors\n\t<primitive: 149>\n\tself primitiveFailed!\n\nallInstances\n\t<primitive: 145>\n\tself primitiveFailed!\n\nsubclasses\n\t| result |\n\tresult := OrderedCollection new.\n\tSmalltalk classesDo: [:each | each superclass == self ifTrue: [result add: each]].\n\t^result!\n\nwithAllSuperclasses\n\t| result c |\n\tresult := OrderedCollection new.\n\tc := self.\n\t[c == nil] whileFalse: [result add: c. c := c superclass].\n\t^result! !\n\n!Behavior methodsFor: 'testing'!\nisClass\n\t^true!\n\ninheritsFrom: aClass\n\t| c |\n\tc := superclass.\n\t[c == nil] whileFalse: [c == aClass ifTrue: [^true]. c := c superclass].\n\t^false!\n\ncanUnderstand: aSymbol\n\t<primitive: 147>\n\tself primitiveFailed!\n\nincludesSelector: aSymbol\n\t<primitive: 148>\n\tself primitiveFailed! !\n\n!Behavior methodsFor: 'compiling'!\ncompile: code classified: category\n\t\"What the Browser's accept does: the selector, or the compiler's\n\tcomplaint, a String.\"\n\t<primitive: 142>\n\tself primitiveFailed!\n\ncompile: code\n\t^self compile: code classified: 'as yet unclassified'! !\n\n!Behavior methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self name! !\n\n!Class methodsFor: 'accessing'!\nname\n\t^name!\n\ncategory\n\t^category!\n\ncomment\n\t^comment!\n\ncomment: aString\n\tcomment := aString! !\n\n!Class methodsFor: 'subclass creation'!\nsubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 143>\n\tself primitiveFailed!\n\nvariableSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 151>\n\tself primitiveFailed!\n\nvariableByteSubclass: nameSymbol instanceVariableNames: instVarNames classVariableNames: classVarNames poolDictionaries: pools category: categoryString\n\t<primitive: 152>\n\tself primitiveFailed! !\n\n!Metaclass methodsFor: 'accessing'!\nname\n\t^thisClass name , ' class'!\n\nsoleInstance\n\t^thisClass!\n\ncategory\n\t^thisClass category! !\n\n!SystemDictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key]!\n\nat: key ifAbsent: aBlock\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifTrue: [^aBlock value].\n\t^a value!\n\nat: key put: value\n\t\"The same Association kept: the methods that use the global see\n\tits new value (St_class.mli).\"\n\t| a |\n\ta := self associationAt: key ifAbsent: [nil].\n\ta == nil ifFalse: [a value: value. ^value].\n\tassociations := associations copyWith: (Association key: key asSymbol value: value).\n\t^value!\n\nassociationAt: key ifAbsent: aBlock\n\t| k |\n\tk := key asSymbol.\n\tassociations do: [:each | each key == k ifTrue: [^each]].\n\t^aBlock value!\n\nincludesKey: key\n\tself associationAt: key ifAbsent: [^false].\n\t^true!\n\nkeys\n\t^associations collect: [:each | each key]!\n\nclassesDo: aBlock\n\tassociations do: [:each | (each value isClass and: [each value name == each key]) ifTrue: [aBlock value: each value]]!\n\ngarbageCollect\n\t\"The entries freed.\"\n\t<primitive: 146>\n\tself primitiveFailed! !\n\n!SystemDictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'Smalltalk'! !\n\n!MethodDictionary methodsFor: 'accessing'!\nkeys\n\t^selectors!\n\nat: aSymbol\n\t1 to: selectors size do: [:i | (selectors at: i) == aSymbol ifTrue: [^methods at: i]].\n\t^self error: 'Key not found'!\n\nsize\n\t^selectors size! !\n\n!CompiledMethod methodsFor: 'accessing'!\nselector\n\t<primitive: 156>\n\tself primitiveFailed!\n\nmethodClass\n\t<primitive: 157>\n\tself primitiveFailed! !\n\n!CompiledMethod methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self methodClass name; nextPutAll: '>>'; nextPutAll: self selector! !\n\n!ContextPart methodsFor: 'controlling'!\nblockCopy: numArgs\n\t\"What the compiler sends for each [...]: a BlockContext that will\n\tstart after the jump that follows this send (St_compile.mli).\"\n\t<primitive: 80>\n\tself primitiveFailed! !\n\n!ContextPart methodsFor: 'accessing'!\nsender\n\t^sender!\n\nmethod\n\t^self subclassResponsibility!\n\nreceiver\n\t^self subclassResponsibility! !\n\n!MethodContext methodsFor: 'accessing'!\nmethod\n\t^method!\n\nreceiver\n\t^receiver!\n\nhome\n\t^self! !\n\n!MethodContext methodsFor: 'printing'!\nprintOn: aStream\n\t\"Point(Object)>>printString: the receiver's class, and the class\n\tthe method was found in if another\"\n\t| mclass |\n\tmclass := method methodClass.\n\taStream nextPutAll: receiver class name.\n\tmclass == receiver class ifFalse: [aStream nextPut: $(; nextPutAll: mclass name; nextPut: $)].\n\taStream nextPutAll: '>>'; nextPutAll: method selector! !\n\n!BlockContext methodsFor: 'accessing'!\nmethod\n\t^home method!\n\nreceiver\n\t^home receiver!\n\nhome\n\t^home!\n\nnumArgs\n\t^nargs! !\n\n!BlockContext methodsFor: 'evaluating'!\nvalue\n\t\"Evaluate the block. It runs in this same context each time: the\n\tBlue Book's blocks are not reentrant (St_compile.mli).\"\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalue: arg1 value: arg2 value: arg3 value: arg4\n\t<primitive: 81>\n\t^self error: 'Wrong number of arguments'!\n\nvalueWithArguments: anArray\n\t<primitive: 82>\n\t^self error: 'Wrong number of arguments'! !\n\n!BlockContext methodsFor: 'controlling'!\nwhileTrue: aBlock\n\t\"Sent only when the compiler could not inline it.\"\n\t[self value] whileTrue: [aBlock value].\n\t^nil!\n\nwhileFalse: aBlock\n\t[self value] whileFalse: [aBlock value].\n\t^nil!\n\nwhileTrue\n\t[self value] whileTrue.\n\t^nil!\n\nrepeat\n\t[true] whileTrue: [self value]! !\n\n!BlockContext methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: '[] in '.\n\thome printOn: aStream! !\n\n!Time class methodsFor: 'general inquiries'!\nmillisecondClock\n\t<primitive: 144>\n\tself primitiveFailed!\n\nmillisecondsToRun: aBlock\n\t| start |\n\tstart := self millisecondClock.\n\taBlock value.\n\t^self millisecondClock - start! !\n\n!TextCollector methodsFor: 'accessing'!\nshow: aString\n\t\"The Transcript's text, given to the host.\"\n\t<primitive: 140>\n\t^self show: aString printString!\n\nnextPutAll: aString\n\t^self show: aString!\n\nnextPut: aCharacter\n\t^self show: (String with: aCharacter)!\n\ncr\n\t^self nextPut: Character cr!\n\ntab\n\t^self nextPut: Character tab!\n\nspace\n\t^self nextPut: Character space!\n\nprint: anObject\n\t^self show: anObject printString!\n\ndisplay: anObject\n\t^self show: anObject displayString! !\n\n!TextCollector methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a TextCollector'! !\n"],[0,[0,"Numbers.st","\"The numbers. SmallInteger's arithmetic is primitives (and even the\nbytecodes' own, St_interp.mli); when one fails -- an overflow, or an\nargument of another kind -- the method's Smalltalk runs instead:\noverflows go on in LargePositiveInteger and LargeNegativeInteger,\nwritten here over their bytes as in the Blue Book, and mixed kinds are\ncoerced to the more general one (retry:coercing:, generality: a\nSmallInteger 20, a large one 40, a Fraction 60, a Float 80).\"!\n\n!Magnitude methodsFor: 'comparing'!\n< aMagnitude\n\t^self subclassResponsibility!\n\n> aMagnitude\n\t^aMagnitude < self!\n\n<= aMagnitude\n\t^(aMagnitude < self) not!\n\n>= aMagnitude\n\t^(self < aMagnitude) not!\n\nbetween: min and: max\n\t^self >= min and: [self <= max]!\n\nmax: aMagnitude\n\t^self > aMagnitude ifTrue: [self] ifFalse: [aMagnitude]!\n\nmin: aMagnitude\n\t^self < aMagnitude ifTrue: [self] ifFalse: [aMagnitude]! !\n\n!Character class methodsFor: 'instance creation'!\nvalue: anInteger\n\t\"The unique Character of a code: $a == (Character value: 97).\"\n\t<primitive: 120>\n\t^self error: 'Not a character code'!\n\ndigitValue: anInteger\n\t^'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ' at: anInteger + 1!\n\ncr\n\t^self value: 13!\n\nlf\n\t^self value: 10!\n\ntab\n\t^self value: 9!\n\nspace\n\t^self value: 32! !\n\n!Character methodsFor: 'accessing'!\nvalue\n\t^value!\n\nasInteger\n\t^value!\n\nasCharacter\n\t^self!\n\ndigitValue\n\tvalue <= 57 ifTrue: [^value - 48].\n\tvalue <= 90 ifTrue: [^value - 55].\n\t^value - 87! !\n\n!Character methodsFor: 'comparing'!\n< aCharacter\n\t^value < aCharacter asInteger!\n\n= aCharacter\n\t^self == aCharacter!\n\nhash\n\t^value! !\n\n!Character methodsFor: 'testing'!\nisCharacter\n\t^true!\n\nisVowel\n\t^'aeiouAEIOU' includes: self!\n\nisLetter\n\t^self isUppercase or: [self isLowercase]!\n\nisUppercase\n\t^value between: 65 and: 90!\n\nisLowercase\n\t^value between: 97 and: 122!\n\nisDigit\n\t^value between: 48 and: 57!\n\nisSeparator\n\t^value = 32 or: [value = 13 or: [value = 9 or: [value = 10]]]! !\n\n!Character methodsFor: 'converting'!\nasUppercase\n\tself isLowercase ifTrue: [^Character value: value - 32].\n\t^self!\n\nasLowercase\n\tself isUppercase ifTrue: [^Character value: value + 32].\n\t^self!\n\nasString\n\t^String with: self! !\n\n!Character methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $$; nextPut: self!\n\ndisplayString\n\t^String with: self! !\n\n!Character methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!Number methodsFor: 'arithmetic'!\n+ aNumber\n\t^self subclassResponsibility!\n\n- aNumber\n\t^self + aNumber negated!\n\nnegated\n\t^0 - self!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self!\n\nreciprocal\n\t^1 / self!\n\nsquared\n\t^self * self!\n\n// aNumber\n\t^(self / aNumber) floor!\n\n\\\\ aNumber\n\t^self - (self // aNumber * aNumber)!\n\nquo: aNumber\n\t^(self / aNumber) truncated!\n\nrem: aNumber\n\t^self - ((self quo: aNumber) * aNumber)!\n\nraisedTo: anInteger\n\t| result |\n\tanInteger < 0 ifTrue: [^(self raisedTo: anInteger negated) reciprocal].\n\tresult := 1.\n\tanInteger timesRepeat: [result := result * self].\n\t^result!\n\nsqrt\n\t^self asFloat sqrt! !\n\n!Number methodsFor: 'testing'!\nisNumber\n\t^true!\n\nnegative\n\t^self < 0!\n\npositive\n\t^self >= 0!\n\nstrictlyPositive\n\t^self > 0!\n\nisZero\n\t^self = 0!\n\nsign\n\tself > 0 ifTrue: [^1].\n\tself < 0 ifTrue: [^-1].\n\t^0!\n\neven\n\t^self \\\\ 2 = 0!\n\nodd\n\t^self even not! !\n\n!Number methodsFor: 'truncation and round off'!\ntruncated\n\t^self subclassResponsibility!\n\nfloor\n\t| t |\n\tt := self truncated.\n\t(self < 0 and: [t ~= self]) ifTrue: [^t - 1].\n\t^t!\n\nceiling\n\t| t |\n\tt := self truncated.\n\t(self > 0 and: [t ~= self]) ifTrue: [^t + 1].\n\t^t!\n\nrounded\n\t^(self + (self sign / 2)) truncated!\n\nasInteger\n\t^self truncated! !\n\n!Number methodsFor: 'coercing'!\ngenerality\n\t^self subclassResponsibility!\n\ncoerce: aNumber\n\t^self subclassResponsibility!\n\nretry: aSymbol coercing: aNumber\n\t\"Do the operation again, the less general number made like the\n\tother: 3 + (1/2) becomes (3/1) + (1/2).\"\n\taNumber isNumber ifFalse: [\n\t\taSymbol == #= ifTrue: [^false].\n\t\taSymbol == #~= ifTrue: [^true].\n\t\t^self error: 'Not a number: ', aNumber printString].\n\tself generality < aNumber generality\n\t\tifTrue: [^(aNumber coerce: self) perform: aSymbol with: aNumber].\n\tself generality > aNumber generality\n\t\tifTrue: [^self perform: aSymbol with: (self coerce: aNumber)].\n\t^self error: 'Coercion failed'! !\n\n!Number methodsFor: 'intervals'!\nto: stop\n\t^Interval from: self to: stop by: 1!\n\nto: stop by: step\n\t^Interval from: self to: stop by: step!\n\nto: stop do: aBlock\n\t\"Sent only when the compiler could not inline it.\"\n\t| i |\n\ti := self.\n\t[i <= stop] whileTrue: [aBlock value: i. i := i + 1]!\n\nto: stop by: step do: aBlock\n\t| i |\n\ti := self.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]! !\n\n!Number methodsFor: 'converting'!\n@ y\n\t\"A Point.\"\n\t<primitive: 18>\n\t^Point x: self y: y!\n\nasPoint\n\t^self @ self! !\n\n!Number methodsFor: 'printing'!\nprintString: base\n\t| aStream |\n\taStream := WriteStream on: (String new: 16).\n\tself printOn: aStream base: base.\n\t^aStream contents! !\n\n!Integer methodsFor: 'testing'!\nisInteger\n\t^true! !\n\n!Integer methodsFor: 'arithmetic'!\n+ anInteger\n\t\"Here when a large integer is involved: SmallInteger's own + is a\n\tprimitive.\"\n\tanInteger isInteger ifFalse: [^self retry: #+ coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger asLargeInteger!\n\n- anInteger\n\tanInteger isInteger ifFalse: [^self retry: #- coercing: anInteger].\n\t^self asLargeInteger digitPlus: anInteger negated asLargeInteger!\n\n* anInteger\n\tanInteger isInteger ifFalse: [^self retry: #* coercing: anInteger].\n\t^self asLargeInteger digitTimes: anInteger asLargeInteger!\n\n/ anInteger\n\t\"An Integer if it divides exactly, else a Fraction.\"\n\tanInteger isInteger ifFalse: [^self retry: #/ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(Fraction numerator: self denominator: anInteger) reduced!\n\nquo: anInteger\n\t\"Truncated towards zero.\"\n\tanInteger isInteger ifFalse: [^self retry: #quo: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 1!\n\nrem: anInteger\n\tanInteger isInteger ifFalse: [^self retry: #rem: coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\t^(self digitDivide: anInteger) at: 2!\n\n// anInteger\n\t\"Truncated towards minus infinity.\"\n\t| qr |\n\tanInteger isInteger ifFalse: [^self retry: #// coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tqr := self digitDivide: anInteger.\n\t((qr at: 2) ~= 0 and: [self negative ~~ anInteger negative]) ifTrue: [^(qr at: 1) - 1].\n\t^qr at: 1!\n\n\\\\ anInteger\n\t\"The remainder of //: the sign of the divisor.\"\n\t| r |\n\tanInteger isInteger ifFalse: [^self retry: #\\\\ coercing: anInteger].\n\tanInteger = 0 ifTrue: [^self error: 'Division by zero'].\n\tr := (self digitDivide: anInteger) at: 2.\n\t(r ~= 0 and: [r negative ~~ anInteger negative]) ifTrue: [^r + anInteger].\n\t^r!\n\n< anInteger\n\tanInteger isInteger ifFalse: [^self retry: #< coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) < 0!\n\n= anInteger\n\tanInteger isNumber ifFalse: [^false].\n\tanInteger isInteger ifFalse: [^self retry: #= coercing: anInteger].\n\t^(self asLargeInteger compareWith: anInteger asLargeInteger) = 0!\n\nhash\n\t^(self \\\\ 1073741823) hash!\n\nnegated\n\t^0 - self!\n\ngcd: anInteger\n\t\"Euclid's.\"\n\t| a b t |\n\ta := self abs.\n\tb := anInteger abs.\n\t[b = 0] whileFalse: [t := a \\\\ b. a := b. b := t].\n\t^a!\n\nlcm: anInteger\n\t^(self * anInteger) abs // (self gcd: anInteger)!\n\nfactorial\n\t\"100 factorial printString size = 158.\"\n\t| result |\n\tself < 0 ifTrue: [^self error: 'Not valid for negative integers'].\n\tresult := 1.\n\t2 to: self do: [:i | result := result * i].\n\t^result!\n\ntimesRepeat: aBlock\n\t| i |\n\ti := 1.\n\t[i <= self] whileTrue: [aBlock value. i := i + 1]!\n\nisPrime\n\tself < 2 ifTrue: [^false].\n\t2 to: self sqrtFloor do: [:i | self \\\\ i = 0 ifTrue: [^false]].\n\t^true!\n\nsqrtFloor\n\t| r |\n\tr := self asFloat sqrt truncated.\n\t[r * r > self] whileTrue: [r := r - 1].\n\t[(r + 1) * (r + 1) <= self] whileTrue: [r := r + 1].\n\t^r! !\n\n!Integer methodsFor: 'coercing'!\ngenerality\n\t^40!\n\ncoerce: aNumber\n\t^aNumber asLargeInteger! !\n\n!Integer methodsFor: 'converting'!\nasFloat\n\t\"A large integer's bytes, summed as floats.\"\n\t| f |\n\tf := 0.0.\n\tself digitLength to: 1 by: -1 do: [:i | f := f * 256.0 + (self digitAt: i)].\n\tself negative ifTrue: [^f negated].\n\t^f!\n\ntruncated\n\t^self!\n\nasCharacter\n\t^Character value: self!\n\ndigitDivide: anInteger\n\t\"The quotient and the remainder truncated towards zero, an Array:\n\tby the schoolbook's short division when the divisor is small\n\tenough for a digit times it to stay a SmallInteger, else bit by\n\tbit.\"\n\t| a b qr q r |\n\ta := self abs asLargeInteger.\n\tb := anInteger abs.\n\tqr := (b isSmallInteger and: [b < 4194304])\n\t\tifTrue: [a shortDivide: b]\n\t\tifFalse: [a longDivide: b].\n\tq := qr at: 1.\n\tr := qr at: 2.\n\tself negative == anInteger negative ifFalse: [q := q negated].\n\tself negative ifTrue: [r := r negated].\n\t^Array with: q with: r! !\n\n!Integer methodsFor: 'printing'!\nprintOn: aStream\n\tself printOn: aStream base: 10!\n\nprintOn: aStream base: base\n\tself < 0 ifTrue: [aStream nextPut: $-. ^self negated printOn: aStream base: base].\n\tself >= base ifTrue: [self // base printOn: aStream base: base].\n\taStream nextPut: (Character digitValue: self \\\\ base)! !\n\n!SmallInteger class methodsFor: 'instance creation'!\nnew\n\t^self error: 'SmallIntegers are not made, they are'! !\n\n!SmallInteger methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 1>\n\t^super + aNumber!\n\n- aNumber\n\t<primitive: 2>\n\t^super - aNumber!\n\n< aNumber\n\t<primitive: 3>\n\t^super < aNumber!\n\n> aNumber\n\t<primitive: 4>\n\t^super > aNumber!\n\n<= aNumber\n\t<primitive: 5>\n\t^super <= aNumber!\n\n>= aNumber\n\t<primitive: 6>\n\t^super >= aNumber!\n\n= aNumber\n\t<primitive: 7>\n\t^super = aNumber!\n\n~= aNumber\n\t<primitive: 8>\n\t^super ~= aNumber!\n\n* aNumber\n\t<primitive: 9>\n\t^super * aNumber!\n\n/ aNumber\n\t<primitive: 10>\n\t^super / aNumber!\n\n\\\\ aNumber\n\t<primitive: 11>\n\t^super \\\\ aNumber!\n\n// aNumber\n\t<primitive: 12>\n\t^super // aNumber!\n\nquo: aNumber\n\t<primitive: 13>\n\t^super quo: aNumber!\n\nbitAnd: anInteger\n\t<primitive: 14>\n\t^self error: 'Not a SmallInteger'!\n\nbitOr: anInteger\n\t<primitive: 15>\n\t^self error: 'Not a SmallInteger'!\n\nbitXor: anInteger\n\t<primitive: 16>\n\t^self error: 'Not a SmallInteger'!\n\nbitShift: anInteger\n\t<primitive: 17>\n\tanInteger > 0 ifTrue: [^self asLargeInteger * (2 raisedTo: anInteger)].\n\t^self error: 'Not a SmallInteger'! !\n\n!SmallInteger methodsFor: 'testing'!\nisSmallInteger\n\t^true!\n\neven\n\t^(self bitAnd: 1) = 0! !\n\n!SmallInteger methodsFor: 'coercing'!\ngenerality\n\t^20!\n\ncoerce: aNumber\n\t^aNumber!\n\nasLargeInteger\n\t<primitive: 154>\n\tself primitiveFailed! !\n\n!SmallInteger methodsFor: 'converting'!\nasFloat\n\t<primitive: 40>\n\tself primitiveFailed!\n\nhash\n\t^self! !\n\n!SmallInteger methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digits'!\ndigitAt: index\n\t\"A byte of the magnitude, least significant first; 0 past the end.\"\n\t<primitive: 60>\n\t^0!\n\ndigitAt: index put: value\n\t<primitive: 61>\n\tself primitiveFailed!\n\ndigitLength\n\t<primitive: 62>\n\tself primitiveFailed!\n\nnormalize\n\t\"The leading zero bytes dropped, a SmallInteger if it fits.\"\n\t<primitive: 155>\n\tself primitiveFailed!\n\nasLargeInteger\n\t^self!\n\nnegative\n\t^false!\n\nnegated\n\t| result |\n\tresult := (self negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: self digitLength.\n\t1 to: self digitLength do: [:i | result digitAt: i put: (self digitAt: i)].\n\t^result normalize!\n\nabs\n\tself negative ifTrue: [^self negated].\n\t^self! !\n\n!LargePositiveInteger methodsFor: 'digit arithmetic'!\ndigitPlus: arg\n\t\"The sum of two large integers of any signs.\"\n\tself negative == arg negative\n\t\tifTrue: [^(self magnitudeAdd: arg negative: self negative) normalize].\n\t(self magnitudeCompare: arg) >= 0\n\t\tifTrue: [^(self magnitudeSubtract: arg negative: self negative) normalize].\n\t^(arg magnitudeSubtract: self negative: arg negative) normalize!\n\nmagnitudeAdd: arg negative: aBoolean\n\t| len result carry sum |\n\tlen := (self digitLength max: arg digitLength) + 1.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tcarry := 0.\n\t1 to: len do: [:i |\n\t\tsum := (self digitAt: i) + (arg digitAt: i) + carry.\n\t\tresult digitAt: i put: (sum bitAnd: 255).\n\t\tcarry := sum bitShift: -8].\n\t^result!\n\nmagnitudeSubtract: arg negative: aBoolean\n\t\"The receiver's magnitude is the larger.\"\n\t| len result borrow diff |\n\tlen := self digitLength.\n\tresult := (aBoolean ifTrue: [LargeNegativeInteger] ifFalse: [LargePositiveInteger]) new: len.\n\tborrow := 0.\n\t1 to: len do: [:i |\n\t\tdiff := (self digitAt: i) - (arg digitAt: i) - borrow.\n\t\tdiff < 0\n\t\t\tifTrue: [diff := diff + 256. borrow := 1]\n\t\t\tifFalse: [borrow := 0].\n\t\tresult digitAt: i put: diff].\n\t^result!\n\nmagnitudeCompare: arg\n\t\"-1, 0 or 1.\"\n\t| a b |\n\t(self digitLength max: arg digitLength) to: 1 by: -1 do: [:i |\n\t\ta := self digitAt: i.\n\t\tb := arg digitAt: i.\n\t\ta < b ifTrue: [^-1].\n\t\ta > b ifTrue: [^1]].\n\t^0!\n\ncompareWith: arg\n\tself negative == arg negative ifFalse: [self negative ifTrue: [^-1] ifFalse: [^1]].\n\tself negative ifTrue: [^arg magnitudeCompare: self].\n\t^self magnitudeCompare: arg!\n\ndigitTimes: arg\n\t\"The schoolbook's: each digit of one by each of the other.\"\n\t| la lb result carry prod k |\n\tla := self digitLength.\n\tlb := arg digitLength.\n\tresult := (self negative == arg negative ifTrue: [LargePositiveInteger] ifFalse: [LargeNegativeInteger]) new: la + lb.\n\t1 to: la do: [:i |\n\t\tcarry := 0.\n\t\t1 to: lb do: [:j |\n\t\t\tk := i + j - 1.\n\t\t\tprod := (self digitAt: i) * (arg digitAt: j) + (result digitAt: k) + carry.\n\t\t\tresult digitAt: k put: (prod bitAnd: 255).\n\t\t\tcarry := prod bitShift: -8].\n\t\tresult digitAt: i + lb put: carry].\n\t^result normalize!\n\nshortDivide: divisor\n\t\"The magnitude by a small SmallInteger, a digit at a time from the\n\ttop: the quotient and the remainder.\"\n\t| len q r |\n\tlen := self digitLength.\n\tq := LargePositiveInteger new: len.\n\tr := 0.\n\tlen to: 1 by: -1 do: [:i |\n\t\tr := r * 256 + (self digitAt: i).\n\t\tq digitAt: i put: r // divisor.\n\t\tr := r \\\\ divisor].\n\t^Array with: q normalize with: r!\n\nlongDivide: divisor\n\t\"A bit at a time: slow, but only for large divisors.\"\n\t| q r bit |\n\tq := 0.\n\tr := 0.\n\tself digitLength * 8 to: 1 by: -1 do: [:i |\n\t\tbit := ((self digitAt: i - 1 // 8 + 1) bitShift: 0 - (i - 1 \\\\ 8)) bitAnd: 1.\n\t\tr := r * 2 + bit.\n\t\tq := q * 2.\n\t\tr >= divisor ifTrue: [r := r - divisor. q := q + 1]].\n\t^Array with: q with: r! !\n\n!LargePositiveInteger methodsFor: 'bit manipulation'!\nbitShift: anInteger\n\tanInteger >= 0 ifTrue: [^self * (2 raisedTo: anInteger)].\n\t^self // (2 raisedTo: anInteger negated)!\n\nhash\n\t^self digitAt: 1! !\n\n!LargeNegativeInteger methodsFor: 'testing'!\nnegative\n\t^true! !\n\n!Fraction class methodsFor: 'instance creation'!\nnumerator: n denominator: d\n\t\"Not reduced: Integer>>/ reduces it.\"\n\t^self new setNumerator: n denominator: d! !\n\n!Fraction methodsFor: 'private'!\nsetNumerator: n denominator: d\n\td < 0\n\t\tifTrue: [numerator := n negated. denominator := d negated]\n\t\tifFalse: [numerator := n. denominator := d]! !\n\n!Fraction methodsFor: 'accessing'!\nnumerator\n\t^numerator!\n\ndenominator\n\t^denominator! !\n\n!Fraction methodsFor: 'arithmetic'!\n+ aNumber\n\taNumber isNumber ifFalse: [^self retry: #+ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #+ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator + (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n- aNumber\n\taNumber isNumber ifFalse: [^self retry: #- coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #- coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator - (aNumber numerator * denominator)\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n* aNumber\n\taNumber isNumber ifFalse: [^self retry: #* coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #* coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber numerator\n\t\tdenominator: denominator * aNumber denominator) reduced!\n\n/ aNumber\n\taNumber isNumber ifFalse: [^self retry: #/ coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #/ coercing: aNumber].\n\t^(Fraction\n\t\tnumerator: numerator * aNumber denominator\n\t\tdenominator: denominator * aNumber numerator) reduced!\n\nnegated\n\t^Fraction numerator: numerator negated denominator: denominator!\n\nreduced\n\t\"Lowest terms, and an Integer when the denominator is 1.\"\n\t| g |\n\tnumerator = 0 ifTrue: [^0].\n\tg := numerator gcd: denominator.\n\tg = denominator ifTrue: [^numerator // g].\n\t^Fraction numerator: numerator // g denominator: denominator // g! !\n\n!Fraction methodsFor: 'comparing'!\n< aNumber\n\taNumber isNumber ifFalse: [^self retry: #< coercing: aNumber].\n\taNumber generality = self generality ifFalse: [^self retry: #< coercing: aNumber].\n\t^numerator * aNumber denominator < (aNumber numerator * denominator)!\n\n= aNumber\n\taNumber isNumber ifFalse: [^false].\n\taNumber generality = self generality ifFalse: [^self retry: #= coercing: aNumber].\n\t^numerator = aNumber numerator and: [denominator = aNumber denominator]!\n\nhash\n\t^numerator hash bitXor: denominator hash! !\n\n!Fraction methodsFor: 'truncation and round off'!\ntruncated\n\t^numerator quo: denominator! !\n\n!Fraction methodsFor: 'coercing'!\ngenerality\n\t^60!\n\ncoerce: aNumber\n\t^Fraction numerator: aNumber denominator: 1! !\n\n!Fraction methodsFor: 'converting'!\nasFloat\n\t^numerator asFloat / denominator asFloat! !\n\n!Fraction methodsFor: 'printing'!\nprintOn: aStream\n\taStream print: numerator; nextPut: $/; print: denominator! !\n\n!Float methodsFor: 'arithmetic'!\n+ aNumber\n\t<primitive: 41>\n\t^self retry: #+ coercing: aNumber!\n\n- aNumber\n\t<primitive: 42>\n\t^self retry: #- coercing: aNumber!\n\n< aNumber\n\t<primitive: 43>\n\t^self retry: #< coercing: aNumber!\n\n> aNumber\n\t<primitive: 44>\n\t^self retry: #> coercing: aNumber!\n\n<= aNumber\n\t<primitive: 45>\n\t^self retry: #<= coercing: aNumber!\n\n>= aNumber\n\t<primitive: 46>\n\t^self retry: #>= coercing: aNumber!\n\n= aNumber\n\t<primitive: 47>\n\t^self retry: #= coercing: aNumber!\n\n~= aNumber\n\t<primitive: 48>\n\t^self retry: #~= coercing: aNumber!\n\n* aNumber\n\t<primitive: 49>\n\t^self retry: #* coercing: aNumber!\n\n/ aNumber\n\t<primitive: 50>\n\taNumber = 0 ifTrue: [^self error: 'Division by zero'].\n\t^self retry: #/ coercing: aNumber!\n\nsqrt\n\t<primitive: 55>\n\tself primitiveFailed!\n\nsin\n\t<primitive: 56>\n\tself primitiveFailed!\n\ncos\n\t^(self + 1.5707963267948966) sin!\n\narcTan\n\t<primitive: 57>\n\tself primitiveFailed!\n\nln\n\t<primitive: 58>\n\tself primitiveFailed!\n\nexp\n\t<primitive: 59>\n\tself primitiveFailed! !\n\n!Float methodsFor: 'truncation and round off'!\ntruncated\n\t\"Too large for a SmallInteger: the high part and the low part.\"\n\t| q |\n\t<primitive: 51>\n\tq := (self / 65536.0) truncated.\n\t^q * 65536 + (self - (q * 65536.0)) truncated! !\n\n!Float methodsFor: 'truncation and round off'!\nrounded\n\t^(self + (self sign * 0.5)) truncated! !\n\n!Float methodsFor: 'coercing'!\ngenerality\n\t^80!\n\ncoerce: aNumber\n\t^aNumber asFloat!\n\nasFloat\n\t^self!\n\nhash\n\t^self truncated hash! !\n\n!Float methodsFor: 'printing'!\nprintString\n\t<primitive: 130>\n\tself primitiveFailed!\n\nprintOn: aStream\n\taStream nextPutAll: self printString! !\n\n!Point class methodsFor: 'instance creation'!\nx: xInteger y: yInteger\n\t^self new setX: xInteger setY: yInteger! !\n\n!Point methodsFor: 'private'!\nsetX: xValue setY: yValue\n\tx := xValue.\n\ty := yValue! !\n\n!Point methodsFor: 'accessing'!\nx\n\t^x!\n\ny\n\t^y! !\n\n!Point methodsFor: 'arithmetic'!\n+ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x + p x) @ (y + p y)!\n\n- arg\n\t| p |\n\tp := arg asPoint.\n\t^(x - p x) @ (y - p y)!\n\n* arg\n\t| p |\n\tp := arg asPoint.\n\t^(x * p x) @ (y * p y)!\n\n/ arg\n\t| p |\n\tp := arg asPoint.\n\t^(x / p x) @ (y / p y)!\n\n// arg\n\t| p |\n\tp := arg asPoint.\n\t^(x // p x) @ (y // p y)!\n\nabs\n\t^x abs @ y abs! !\n\n!Point methodsFor: 'comparing'!\n= aPoint\n\t^(aPoint isKindOf: Point) and: [x = aPoint x and: [y = aPoint y]]!\n\nhash\n\t^x hash bitXor: y hash!\n\n< aPoint\n\t^x < aPoint x and: [y < aPoint y]!\n\n> aPoint\n\t^x > aPoint x and: [y > aPoint y]!\n\n<= aPoint\n\t^x <= aPoint x and: [y <= aPoint y]!\n\n>= aPoint\n\t^x >= aPoint x and: [y >= aPoint y]!\n\nmax: aPoint\n\t^(x max: aPoint x) @ (y max: aPoint y)!\n\nmin: aPoint\n\t^(x min: aPoint x) @ (y min: aPoint y)! !\n\n!Point methodsFor: 'point functions'!\ndist: aPoint\n\t| dx dy |\n\tdx := aPoint x - x.\n\tdy := aPoint y - y.\n\t^(dx * dx + (dy * dy)) sqrt!\n\ntranspose\n\t^y @ x!\n\ncorner: aPoint\n\t^Rectangle origin: self corner: aPoint!\n\nextent: aPoint\n\t^Rectangle origin: self corner: self + aPoint! !\n\n!Point methodsFor: 'converting'!\nasPoint\n\t^self! !\n\n!Point methodsFor: 'printing'!\nprintOn: aStream\n\tx printOn: aStream.\n\taStream nextPut: $@.\n\ty printOn: aStream! !\n\n!Rectangle class methodsFor: 'instance creation'!\norigin: originPoint corner: cornerPoint\n\t^self new setOrigin: originPoint corner: cornerPoint! !\n\n!Rectangle methodsFor: 'private'!\nsetOrigin: originPoint corner: cornerPoint\n\torigin := originPoint.\n\tcorner := cornerPoint! !\n\n!Rectangle methodsFor: 'accessing'!\norigin\n\t^origin!\n\ncorner\n\t^corner!\n\nwidth\n\t^corner x - origin x!\n\nheight\n\t^corner y - origin y!\n\nextent\n\t^corner - origin!\n\narea\n\t^self width * self height! !\n\n!Rectangle methodsFor: 'rectangle functions'!\ncenter\n\t\"The Blue Book's example of compiled code (St_bytecode.mli):\n\t0 1 176 119 185 124.\"\n\t^origin + corner / 2!\n\ncontainsPoint: aPoint\n\t^origin <= aPoint and: [aPoint < corner]!\n\nintersects: aRectangle\n\t^(origin max: aRectangle origin) < (corner min: aRectangle corner)! !\n\n!Rectangle methodsFor: 'comparing'!\n= aRectangle\n\t^(aRectangle isKindOf: Rectangle) and: [origin = aRectangle origin and: [corner = aRectangle corner]]!\n\nhash\n\t^origin hash bitXor: corner hash! !\n\n!Rectangle methodsFor: 'printing'!\nprintOn: aStream\n\torigin printOn: aStream.\n\taStream nextPutAll: ' corner: '.\n\tcorner printOn: aStream! !\n"],[0,[0,"Collections.st","\"The collections, and their iteration protocol -- do:, collect:,\nselect:, reject:, detect:, inject:into: -- the one the rest of the\nworld copied (Ruby's each, map, select, detect, inject; Python's\ncomprehensions). Every collection answers them once it has do:.\n\nOrderedCollection and Set grow the Blue Book's way: a bigger copy,\nthen 'self become: newSelf' (St_memory.mli), so that everything that\nknew the collection now knows the bigger one.\"!\n\n!Collection class methodsFor: 'instance creation'!\nwith: anObject\n\t^self new add: anObject; yourself!\n\nwith: first with: second\n\t^self new add: first; add: second; yourself!\n\nwith: first with: second with: third\n\t^self new add: first; add: second; add: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^self new add: first; add: second; add: third; add: fourth; yourself!\n\nwithAll: aCollection\n\t^self new addAll: aCollection; yourself! !\n\n!Collection methodsFor: 'adding'!\nadd: anObject\n\t^self subclassResponsibility!\n\naddAll: aCollection\n\taCollection do: [:each | self add: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'removing'!\nremove: oldObject\n\t^self remove: oldObject ifAbsent: [self error: 'Object is not in the collection']!\n\nremove: oldObject ifAbsent: aBlock\n\t^self subclassResponsibility!\n\nremoveAll: aCollection\n\taCollection do: [:each | self remove: each].\n\t^aCollection! !\n\n!Collection methodsFor: 'testing'!\nincludes: anObject\n\tself do: [:each | anObject = each ifTrue: [^true]].\n\t^false!\n\nisEmpty\n\t^self size = 0!\n\nnotEmpty\n\t^self isEmpty not!\n\noccurrencesOf: anObject\n\t| tally |\n\ttally := 0.\n\tself do: [:each | anObject = each ifTrue: [tally := tally + 1]].\n\t^tally! !\n\n!Collection methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tself do: [:each | tally := tally + 1].\n\t^tally! !\n\n!Collection methodsFor: 'enumerating'!\ndo: aBlock\n\t^self subclassResponsibility!\n\ndo: aBlock separatedBy: separatorBlock\n\t| first |\n\tfirst := true.\n\tself do: [:each |\n\t\tfirst ifTrue: [first := false] ifFalse: [separatorBlock value].\n\t\taBlock value: each]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self species new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\nreject: aBlock\n\t^self select: [:each | (aBlock value: each) == false]!\n\ndetect: aBlock\n\t^self detect: aBlock ifNone: [self error: 'Object is not in the collection']!\n\ndetect: aBlock ifNone: exceptionBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^each]].\n\t^exceptionBlock value!\n\ninject: thisValue into: binaryBlock\n\t| nextValue |\n\tnextValue := thisValue.\n\tself do: [:each | nextValue := binaryBlock value: nextValue value: each].\n\t^nextValue!\n\nanySatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifTrue: [^true]].\n\t^false!\n\nallSatisfy: aBlock\n\tself do: [:each | (aBlock value: each) ifFalse: [^false]].\n\t^true!\n\nmax\n\t^self inject: self anyOne into: [:a :b | a max: b]!\n\nmin\n\t^self inject: self anyOne into: [:a :b | a min: b]!\n\nsum\n\t^self inject: 0 into: [:a :b | a + b]!\n\nanyOne\n\tself do: [:each | ^each].\n\t^self error: 'Collection is empty'! !\n\n!Collection methodsFor: 'converting'!\nasArray\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: each].\n\t^result!\n\nasOrderedCollection\n\t^OrderedCollection withAll: self!\n\nasBag\n\t^Bag withAll: self!\n\nasSet\n\t^Set withAll: self!\n\nasSortedCollection\n\t^SortedCollection withAll: self!\n\nasSortedCollection: aBlock\n\t^(SortedCollection sortBlock: aBlock) addAll: self; yourself! !\n\n!Collection methodsFor: 'private'!\nspecies\n\t^self class! !\n\n!Collection methodsFor: 'printing'!\nprintOn: aStream\n\t\"OrderedCollection (1 2 3 ), as the Blue Book prints it.\"\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself do: [:element | element printOn: aStream. aStream space].\n\taStream nextPut: $)! !\n\n!SequenceableCollection methodsFor: 'comparing'!\n= aCollection\n\tself class == aCollection class ifFalse: [^false].\n\tself size = aCollection size ifFalse: [^false].\n\t1 to: self size do: [:i | (self at: i) = (aCollection at: i) ifFalse: [^false]].\n\t^true!\n\nhash\n\t^self size! !\n\n!SequenceableCollection methodsFor: 'accessing'!\nfirst\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: 1!\n\nlast\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\t^self at: self size!\n\nindexOf: anElement\n\t1 to: self size do: [:i | (self at: i) = anElement ifTrue: [^i]].\n\t^0!\n\nallButFirst\n\t^self copyFrom: 2 to: self size!\n\nallButLast\n\t^self copyFrom: 1 to: self size - 1! !\n\n!SequenceableCollection methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i)]!\n\nreverseDo: aBlock\n\tself size to: 1 by: -1 do: [:i | aBlock value: (self at: i)]!\n\ndoWithIndex: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: i]!\n\nkeysAndValuesDo: aBlock\n\t1 to: self size do: [:i | aBlock value: i value: (self at: i)]!\n\nwith: aCollection do: aBlock\n\t1 to: self size do: [:i | aBlock value: (self at: i) value: (aCollection at: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := self species new: self size.\n\t1 to: self size do: [:i | result at: i put: (aBlock value: (self at: i))].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^(self species inheritsFrom: ArrayedCollection)\n\t\tifTrue: [(self species new: result size) replaceFrom: 1 to: result size with: result startingAt: 1]\n\t\tifFalse: [result]! !\n\n!SequenceableCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := self species new: (stop - start + 1 max: 0).\n\tstart to: stop do: [:i | result at: i - start + 1 put: (self at: i)].\n\t^result!\n\ncopyWith: newElement\n\t| result |\n\tresult := self species new: self size + 1.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult at: result size put: newElement.\n\t^result!\n\nreversed\n\t| result n |\n\tn := self size.\n\tresult := self species new: n.\n\t1 to: n do: [:i | result at: i put: (self at: n + 1 - i)].\n\t^result!\n\nreverse\n\t^self reversed!\n\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t| j |\n\tj := repStart.\n\tstart to: stop do: [:i | self at: i put: (replacement at: j). j := j + 1]!\n\n, aSequenceableCollection\n\t| result |\n\tresult := self species new: self size + aSequenceableCollection size.\n\tresult replaceFrom: 1 to: self size with: self startingAt: 1.\n\tresult replaceFrom: self size + 1 to: result size with: aSequenceableCollection startingAt: 1.\n\t^result! !\n\n!SequenceableCollection methodsFor: 'converting'!\nreadStream\n\t^ReadStream on: self! !\n\n!ArrayedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 0!\n\nwith: anObject\n\t^(self new: 1) at: 1 put: anObject; yourself!\n\nwith: first with: second\n\t^(self new: 2) at: 1 put: first; at: 2 put: second; yourself!\n\nwith: first with: second with: third\n\t^(self new: 3) at: 1 put: first; at: 2 put: second; at: 3 put: third; yourself!\n\nwith: first with: second with: third with: fourth\n\t^(self new: 4) at: 1 put: first; at: 2 put: second; at: 3 put: third; at: 4 put: fourth; yourself!\n\nwithAll: aCollection\n\t| result i |\n\tresult := self new: aCollection size.\n\ti := 0.\n\taCollection do: [:each | result at: (i := i + 1) put: each].\n\t^result! !\n\n!ArrayedCollection methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!ArrayedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self shouldNotImplement! !\n\n!ArrayedCollection methodsFor: 'copying'!\nreplaceFrom: start to: stop with: replacement startingAt: repStart\n\t\"The primitive when both are pointers or both bytes.\"\n\t<primitive: 105>\n\t^super replaceFrom: start to: stop with: replacement startingAt: repStart! !\n\n!ArrayedCollection methodsFor: 'sorting'!\nasSortedArray\n\t^self asSortedCollection asArray! !\n\n!Array methodsFor: 'testing'!\nisArray\n\t^true! !\n\n!Array methodsFor: 'printing'!\nprintOn: aStream\n\t\"#(1 $a 'b'), as a literal reads\"\n\taStream nextPutAll: '#('.\n\tself do: [:each | each printOn: aStream] separatedBy: [aStream space].\n\taStream nextPut: $)! !\n\n!String class methodsFor: 'instance creation'!\nnew\n\t^self new: 0! !\n\n!String methodsFor: 'accessing'!\nat: index\n\t\"A Character: the bytes are characters.\"\n\t<primitive: 63>\n\t^self checkIndex: index!\n\nat: index put: aCharacter\n\t<primitive: 64>\n\taCharacter isCharacter ifFalse: [^self error: 'Strings only store Characters'].\n\t^self checkIndex: index!\n\nsize\n\t<primitive: 62>\n\t^0! !\n\n!String methodsFor: 'comparing'!\n= aString\n\t<primitive: 123>\n\t^false!\n\n< aString\n\t<primitive: 124>\n\t^self error: 'Not a String'!\n\n> aString\n\t^aString < self!\n\n<= aString\n\t^(aString < self) not!\n\n>= aString\n\t^(self < aString) not!\n\nhash\n\t<primitive: 125>\n\t^0! !\n\n!String methodsFor: 'testing'!\nisString\n\t^true!\n\nincludesSubstring: aString\n\t| n |\n\tn := aString size.\n\t1 to: self size - n + 1 do: [:i | (self copyFrom: i to: i + n - 1) = aString ifTrue: [^true]].\n\t^false! !\n\n!String methodsFor: 'converting'!\nasSymbol\n\t<primitive: 122>\n\tself primitiveFailed!\n\nasString\n\t^self!\n\nasNumber\n\t\"The number the text reads as, or nil.\"\n\t<primitive: 150>\n\t^nil!\n\nasUppercase\n\t^self collect: [:c | c asUppercase]!\n\nasLowercase\n\t^self collect: [:c | c asLowercase]!\n\ndisplayString\n\t^self!\n\nspecies\n\t^String! !\n\n!String methodsFor: 'printing'!\nprintOn: aStream\n\t\"'it''s': quoted, a quote doubled\"\n\taStream nextPut: $'.\n\tself do: [:c | aStream nextPut: c. c == $' ifTrue: [aStream nextPut: c]].\n\taStream nextPut: $'! !\n\n!Symbol class methodsFor: 'instance creation'!\nnew: anInteger\n\t^self error: 'Symbols are made by asSymbol, unique'! !\n\n!Symbol methodsFor: 'comparing'!\n= anObject\n\t\"Symbols are unique: equal is identical.\"\n\t^self == anObject!\n\nhash\n\t^self identityHash! !\n\n!Symbol methodsFor: 'accessing'!\nat: index put: aCharacter\n\t^self error: 'Symbols cannot be changed'! !\n\n!Symbol methodsFor: 'converting'!\nasSymbol\n\t^self!\n\nasString\n\t| s |\n\ts := String new: self size.\n\ts replaceFrom: 1 to: self size with: self startingAt: 1.\n\t^s!\n\nnumArgs\n\t| n |\n\tn := 0.\n\tself do: [:c | c == $: ifTrue: [n := n + 1]].\n\t(n = 0 and: [(self at: 1) isLetter not]) ifTrue: [^1].\n\t^n! !\n\n!Symbol methodsFor: 'testing'!\nisSymbol\n\t^true! !\n\n!Symbol methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $#; nextPutAll: self!\n\ndisplayString\n\t^self asString! !\n\n!Symbol methodsFor: 'copying'!\nshallowCopy\n\t^self! !\n\n!ByteArray methodsFor: 'accessing'!\nsize\n\t<primitive: 62>\n\t^0! !\n\n!Interval class methodsFor: 'instance creation'!\nfrom: start to: stop by: step\n\t^self new setFrom: start to: stop by: step! !\n\n!Interval methodsFor: 'private'!\nsetFrom: startNumber to: stopNumber by: stepNumber\n\tstart := startNumber.\n\tstop := stopNumber.\n\tstep := stepNumber!\n\nspecies\n\t^Array! !\n\n!Interval methodsFor: 'accessing'!\nsize\n\tstep > 0\n\t\tifTrue: [stop < start ifTrue: [^0]]\n\t\tifFalse: [start < stop ifTrue: [^0]].\n\t^stop - start // step + 1!\n\nat: index\n\t(index >= 1 and: [index <= self size]) ifTrue: [^start + (step * (index - 1))].\n\t^self error: 'Index out of bounds'!\n\nat: index put: anObject\n\t^self error: 'Intervals cannot be changed'! !\n\n!Interval methodsFor: 'enumerating'!\ndo: aBlock\n\t| i |\n\ti := start.\n\tstep > 0\n\t\tifTrue: [[i <= stop] whileTrue: [aBlock value: i. i := i + step]]\n\t\tifFalse: [[i >= stop] whileTrue: [aBlock value: i. i := i + step]]!\n\ncollect: aBlock\n\t| result i |\n\tresult := Array new: self size.\n\ti := 0.\n\tself do: [:each | result at: (i := i + 1) put: (aBlock value: each)].\n\t^result! !\n\n!Interval methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPut: $(; print: start; nextPutAll: ' to: '; print: stop.\n\tstep = 1 ifFalse: [aStream nextPutAll: ' by: '; print: step].\n\taStream nextPut: $)! !\n\n!OrderedCollection class methodsFor: 'instance creation'!\nnew\n\t^self new: 8!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setIndices! !\n\n!OrderedCollection methodsFor: 'private'!\nsetIndices\n\tfirstIndex := self basicSize // 2 max: 1.\n\tlastIndex := firstIndex - 1!\n\nsetFirst: first last: last\n\tfirstIndex := first.\n\tlastIndex := last!\n\ngrow\n\t\"A copy with room at both ends, then become: -- the receiver is the\n\tbigger one from now on, for whoever holds it.\"\n\t| newSelf newFirst n |\n\tn := self basicSize * 2 + 8.\n\tnewSelf := self class basicNew: n.\n\t1 to: self class instSize do: [:i | newSelf instVarAt: i put: (self instVarAt: i)].\n\tnewFirst := n - self size // 2 + 1.\n\t1 to: self size do: [:i | newSelf basicAt: newFirst + i - 1 put: (self basicAt: firstIndex + i - 1)].\n\tnewSelf setFirst: newFirst last: newFirst + self size - 1.\n\tself become: newSelf! !\n\n!OrderedCollection methodsFor: 'accessing'!\nsize\n\t^lastIndex - firstIndex + 1!\n\nat: index\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1!\n\nat: index put: anObject\n\t(index < 1 or: [index > self size]) ifTrue: [^self error: 'Index out of bounds: ', index printString].\n\t^self basicAt: index + firstIndex - 1 put: anObject! !\n\n!OrderedCollection methodsFor: 'adding'!\nadd: anObject\n\t^self addLast: anObject!\n\naddLast: anObject\n\tlastIndex = self basicSize ifTrue: [self grow].\n\tlastIndex := lastIndex + 1.\n\t^self basicAt: lastIndex put: anObject!\n\naddFirst: anObject\n\tfirstIndex = 1 ifTrue: [self grow].\n\tfirstIndex := firstIndex - 1.\n\t^self basicAt: firstIndex put: anObject! !\n\n!OrderedCollection methodsFor: 'removing'!\nremoveFirst\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: firstIndex.\n\tself basicAt: firstIndex put: nil.\n\tfirstIndex := firstIndex + 1.\n\t^answer!\n\nremoveLast\n\t| answer |\n\tself isEmpty ifTrue: [^self error: 'Collection is empty'].\n\tanswer := self basicAt: lastIndex.\n\tself basicAt: lastIndex put: nil.\n\tlastIndex := lastIndex - 1.\n\t^answer!\n\nremove: oldObject ifAbsent: aBlock\n\t| index |\n\tindex := firstIndex.\n\t[index <= lastIndex] whileTrue: [\n\t\toldObject = (self basicAt: index) ifTrue: [\n\t\t\tindex to: lastIndex - 1 do: [:i | self basicAt: i put: (self basicAt: i + 1)].\n\t\t\tself basicAt: lastIndex put: nil.\n\t\t\tlastIndex := lastIndex - 1.\n\t\t\t^oldObject].\n\t\tindex := index + 1].\n\t^aBlock value! !\n\n!OrderedCollection methodsFor: 'enumerating'!\ndo: aBlock\n\tfirstIndex to: lastIndex do: [:i | aBlock value: (self basicAt: i)]!\n\ncollect: aBlock\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := self copyEmpty.\n\tself do: [:each | (aBlock value: each) ifTrue: [result add: each]].\n\t^result!\n\ncopyEmpty\n\t^self class new! !\n\n!OrderedCollection methodsFor: 'copying'!\ncopyFrom: start to: stop\n\t| result |\n\tresult := OrderedCollection new.\n\tstart to: stop do: [:i | result addLast: (self at: i)].\n\t^result!\n\n, aCollection\n\t^self copy addAll: aCollection; yourself!\n\ncopy\n\t^self collect: [:each | each]!\n\nreversed\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:each | result addFirst: each].\n\t^result! !\n\n!SortedCollection class methodsFor: 'instance creation'!\nnew\n\t^self sortBlock: [:a :b | a <= b]!\n\nsortBlock: aBlock\n\t^(self new: 8) setSortBlock: aBlock! !\n\n!SortedCollection methodsFor: 'private'!\nsetSortBlock: aBlock\n\tsortBlock := aBlock!\n\ncopyEmpty\n\t^SortedCollection sortBlock: sortBlock! !\n\n!SortedCollection methodsFor: 'adding'!\nadd: anObject\n\t\"Put at the end, then moved down past the ones it sorts before:\n\tan insertion sort, one element at a time.\"\n\t| i |\n\tself addLast: anObject.\n\ti := lastIndex.\n\t[i > firstIndex and: [sortBlock value: anObject value: (self basicAt: i - 1)]] whileTrue: [\n\t\tself basicAt: i put: (self basicAt: i - 1).\n\t\ti := i - 1].\n\tself basicAt: i put: anObject.\n\t^anObject!\n\naddFirst: anObject\n\t^self shouldNotImplement!\n\nat: index put: anObject\n\t^self shouldNotImplement! !\n\n!SortedCollection methodsFor: 'accessing'!\nsortBlock\n\t^sortBlock!\n\nmedian\n\t^self at: self size + 1 // 2! !\n\n!SortedCollection methodsFor: 'enumerating'!\ncollect: aBlock\n\t\"The answers are not sorted: an OrderedCollection.\"\n\t| result |\n\tresult := OrderedCollection new: self size.\n\tself do: [:each | result addLast: (aBlock value: each)].\n\t^result! !\n\n!Set class methodsFor: 'instance creation'!\nnew\n\t^self new: 16!\n\nnew: anInteger\n\t^(self basicNew: anInteger) setTally! !\n\n!Set methodsFor: 'private'!\nsetTally\n\ttally := 0!\n\nfindIndexFor: anObject\n\t\"Where anObject is, or the empty slot where it would go: its hash,\n\tthen the next slots in turn (open addressing).\"\n\t| index element |\n\tindex := anObject hash \\\\ self basicSize + 1.\n\t[element := self basicAt: index.\n\telement == nil or: [self matches: element key: anObject]]\n\t\twhileFalse: [index := index \\\\ self basicSize + 1].\n\t^index!\n\nmatches: element key: anObject\n\t^element = anObject!\n\ngrow\n\t| newSelf |\n\tnewSelf := self class new: self basicSize * 2.\n\t\"the slots themselves: a Dictionary's do: gives its values\"\n\t1 to: self basicSize do: [:i |\n\t\t(self basicAt: i) == nil ifFalse: [newSelf noCheckAdd: (self basicAt: i)]].\n\tself become: newSelf!\n\nnoCheckAdd: anObject\n\tself basicAt: (self findIndexFor: (self keyOf: anObject)) put: anObject.\n\ttally := tally + 1!\n\nkeyOf: element\n\t^element! !\n\n!Set methodsFor: 'accessing'!\nsize\n\t^tally! !\n\n!Set methodsFor: 'adding'!\nadd: newObject\n\t| index |\n\tnewObject == nil ifTrue: [^newObject].\n\tindex := self findIndexFor: newObject.\n\t(self basicAt: index) == nil ifTrue: [\n\t\tself basicAt: index put: newObject.\n\t\ttally := tally + 1.\n\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]].\n\t^newObject! !\n\n!Set methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| index rest |\n\tindex := self findIndexFor: oldObject.\n\t(self basicAt: index) == nil ifTrue: [^aBlock value].\n\tself basicAt: index put: nil.\n\ttally := tally - 1.\n\t\"the ones after it, in its run, put again\"\n\trest := OrderedCollection new.\n\tindex := index \\\\ self basicSize + 1.\n\t[(self basicAt: index) == nil] whileFalse: [\n\t\trest add: (self basicAt: index).\n\t\tself basicAt: index put: nil.\n\t\ttally := tally - 1.\n\t\tindex := index \\\\ self basicSize + 1].\n\trest do: [:each | self noCheckAdd: each].\n\t^oldObject! !\n\n!Set methodsFor: 'testing'!\nincludes: anObject\n\t^(self basicAt: (self findIndexFor: anObject)) ~~ nil! !\n\n!Set methodsFor: 'enumerating'!\ndo: aBlock\n\t1 to: self basicSize do: [:i | | each | each := self basicAt: i. each == nil ifFalse: [aBlock value: each]]! !\n\n!Dictionary methodsFor: 'private'!\nmatches: element key: aKey\n\t^element key = aKey!\n\nkeyOf: element\n\t^element key! !\n\n!Dictionary methodsFor: 'accessing'!\nat: key\n\t^self at: key ifAbsent: [self error: 'Key not found: ', key printString]!\n\nat: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\t^assoc value!\n\nat: key put: value\n\t| index assoc |\n\tindex := self findIndexFor: key.\n\tassoc := self basicAt: index.\n\tassoc == nil\n\t\tifTrue: [\n\t\t\tself basicAt: index put: (Association key: key value: value).\n\t\t\ttally := tally + 1.\n\t\t\ttally * 4 > (self basicSize * 3) ifTrue: [self grow]]\n\t\tifFalse: [assoc value: value].\n\t^value!\n\nassociationAt: key\n\t^self basicAt: (self findIndexFor: key)!\n\nkeys\n\t| result |\n\tresult := Set new.\n\tself associationsDo: [:assoc | result add: assoc key].\n\t^result!\n\nvalues\n\t| result |\n\tresult := OrderedCollection new.\n\tself do: [:value | result add: value].\n\t^result!\n\nkeyAtValue: value\n\tself associationsDo: [:assoc | assoc value = value ifTrue: [^assoc key]].\n\t^nil! !\n\n!Dictionary methodsFor: 'adding'!\nadd: anAssociation\n\tself at: anAssociation key put: anAssociation value.\n\t^anAssociation! !\n\n!Dictionary methodsFor: 'removing'!\nremoveKey: key\n\t^self removeKey: key ifAbsent: [self error: 'Key not found']!\n\nremoveKey: key ifAbsent: aBlock\n\t| assoc |\n\tassoc := self basicAt: (self findIndexFor: key).\n\tassoc == nil ifTrue: [^aBlock value].\n\tsuper remove: key ifAbsent: [].\n\t^assoc value! !\n\n!Dictionary methodsFor: 'testing'!\nincludesKey: key\n\t^(self basicAt: (self findIndexFor: key)) ~~ nil!\n\nincludes: value\n\tself do: [:each | each = value ifTrue: [^true]].\n\t^false! !\n\n!Dictionary methodsFor: 'enumerating'!\nassociationsDo: aBlock\n\tsuper do: aBlock!\n\ndo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc value]!\n\nkeysDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key]!\n\nkeysAndValuesDo: aBlock\n\tself associationsDo: [:assoc | aBlock value: assoc key value: assoc value]!\n\ncollect: aBlock\n\t| result |\n\tresult := Bag new.\n\tself do: [:each | result add: (aBlock value: each)].\n\t^result!\n\nselect: aBlock\n\t| result |\n\tresult := Dictionary new.\n\tself associationsDo: [:assoc | (aBlock value: assoc value) ifTrue: [result add: assoc]].\n\t^result! !\n\n!Dictionary methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: self class name; nextPutAll: ' ('.\n\tself associationsDo: [:assoc | aStream print: assoc; space].\n\taStream nextPut: $)! !\n\n!Bag class methodsFor: 'instance creation'!\nnew\n\t^self basicNew setContents! !\n\n!Bag methodsFor: 'private'!\nsetContents\n\tcontents := Dictionary new! !\n\n!Bag methodsFor: 'adding'!\nadd: newObject\n\t^self add: newObject withOccurrences: 1!\n\nadd: newObject withOccurrences: anInteger\n\tcontents at: newObject put: (contents at: newObject ifAbsent: [0]) + anInteger.\n\t^newObject! !\n\n!Bag methodsFor: 'removing'!\nremove: oldObject ifAbsent: aBlock\n\t| count |\n\tcount := contents at: oldObject ifAbsent: [^aBlock value].\n\tcount = 1\n\t\tifTrue: [contents removeKey: oldObject]\n\t\tifFalse: [contents at: oldObject put: count - 1].\n\t^oldObject! !\n\n!Bag methodsFor: 'accessing'!\nsize\n\t| tally |\n\ttally := 0.\n\tcontents do: [:count | tally := tally + count].\n\t^tally!\n\noccurrencesOf: anObject\n\t^contents at: anObject ifAbsent: [0]! !\n\n!Bag methodsFor: 'enumerating'!\ndo: aBlock\n\tcontents associationsDo: [:assoc | assoc value timesRepeat: [aBlock value: assoc key]]! !\n"],[0,[0,"Streams.st","\"Streams over collections: printString is printOn: into a WriteStream\non a String, and a ReadStream reads one element at a time.\"!\n\n!Stream methodsFor: 'accessing'!\nnext\n\t^self subclassResponsibility!\n\nnextPut: anObject\n\t^self subclassResponsibility!\n\nnextPutAll: aCollection\n\taCollection do: [:each | self nextPut: each].\n\t^aCollection!\n\natEnd\n\t^self subclassResponsibility!\n\ndo: aBlock\n\t[self atEnd] whileFalse: [aBlock value: self next]! !\n\n!Stream methodsFor: 'printing'!\nprint: anObject\n\tanObject printOn: self!\n\ncr\n\tself nextPut: Character cr!\n\ntab\n\tself nextPut: Character tab!\n\nspace\n\tself nextPut: Character space! !\n\n!PositionableStream class methodsFor: 'instance creation'!\non: aCollection\n\t^self basicNew on: aCollection! !\n\n!PositionableStream methodsFor: 'private'!\non: aCollection\n\tcollection := aCollection.\n\treadLimit := aCollection size.\n\tposition := 0! !\n\n!PositionableStream methodsFor: 'accessing'!\ncontents\n\t^collection copyFrom: 1 to: readLimit!\n\nposition\n\t^position!\n\nposition: anInteger\n\tposition := anInteger!\n\nreset\n\tposition := 0!\n\nisEmpty\n\t^readLimit = 0!\n\natEnd\n\t^position >= readLimit!\n\npeek\n\tself atEnd ifTrue: [^nil].\n\t^collection at: position + 1!\n\nskip: anInteger\n\tposition := (position + anInteger min: readLimit) max: 0!\n\nupTo: anObject\n\t| start |\n\tstart := position + 1.\n\t[self atEnd or: [self next = anObject]] whileFalse.\n\t^collection copyFrom: start to: (self atEnd ifTrue: [position] ifFalse: [position - 1])!\n\nupToEnd\n\t| start |\n\tstart := position + 1.\n\tposition := readLimit.\n\t^collection copyFrom: start to: readLimit!\n\nskipSeparators\n\t[self atEnd not and: [self peek isSeparator]] whileTrue: [self next]! !\n\n!ReadStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\nnextPut: anObject\n\t^self shouldNotImplement! !\n\n!WriteStream class methodsFor: 'instance creation'!\nwith: aCollection\n\t^(self on: aCollection) setToEnd! !\n\n!WriteStream methodsFor: 'private'!\non: aCollection\n\tsuper on: aCollection.\n\treadLimit := 0.\n\twriteLimit := aCollection size!\n\nsetToEnd\n\tposition := readLimit := writeLimit!\n\ngrowCollection\n\t| bigger |\n\tbigger := collection species new: collection size * 2 + 16.\n\tbigger replaceFrom: 1 to: collection size with: collection startingAt: 1.\n\tcollection := bigger.\n\twriteLimit := collection size! !\n\n!WriteStream methodsFor: 'accessing'!\nnextPut: anObject\n\tposition >= writeLimit ifTrue: [self growCollection].\n\tposition := position + 1.\n\tcollection at: position put: anObject.\n\tposition > readLimit ifTrue: [readLimit := position].\n\t^anObject!\n\ncontents\n\t^collection copyFrom: 1 to: position!\n\nnext\n\t^self shouldNotImplement! !\n\n!ReadWriteStream methodsFor: 'accessing'!\nnext\n\tself atEnd ifTrue: [^nil].\n\tposition := position + 1.\n\t^collection at: position!\n\ncontents\n\t^collection copyFrom: 1 to: readLimit! !\n\n!SequenceableCollection methodsFor: 'converting'!\nwriteStream\n\t^WriteStream on: self! !\n"],[0,[0,"Graphics.st","\"The display, as the Blue Book's chapters 18 to 20 have it: Forms,\npictures of one bit per pixel; BitBlt, the one primitive that draws\nthem (St_bitblt.mli); and Pen, a turtle that draws lines with it,\nLogo's idea brought to Smalltalk (Papert and Kay were friends).\nDisplay is the Form of the screen: what a Pen draws there is drawn over\nthe windows, until the screen menu's 'restore display' erases it.\"!\n\n!Form class methodsFor: 'instance creation'!\nextent: aPoint\n\t^self width: aPoint x height: aPoint y!\n\nwidth: w height: h\n\t^self new setBits: (ByteArray new: w + 15 // 16 * 2 * h) width: w height: h! !\n\n!Form methodsFor: 'private'!\nsetBits: aByteArray width: w height: h\n\tbits := aByteArray.\n\twidth := w.\n\theight := h! !\n\n!Form methodsFor: 'accessing'!\nwidth\n\t^width!\n\nheight\n\t^height!\n\nextent\n\t^width @ height!\n\nboundingBox\n\t^0 @ 0 corner: width @ height!\n\ncenter\n\t^(width // 2) @ (height // 2)!\n\nbits\n\t^bits! !\n\n!Form methodsFor: 'displaying'!\nfill: aRectangle rule: anInteger\n\t(BitBlt destForm: self sourceForm: nil halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aRectangle origin sourceOrigin: 0 @ 0 extent: aRectangle extent clipRect: self boundingBox) copyBits!\n\nfillWhite\n\tself fill: self boundingBox rule: 0!\n\nfillBlack\n\tself fill: self boundingBox rule: 15!\n\nreverse\n\tself fill: self boundingBox rule: 10!\n\ndisplayOn: aForm at: aPoint rule: anInteger\n\t(BitBlt destForm: aForm sourceForm: self halftoneForm: nil combinationRule: anInteger\n\t\tdestOrigin: aPoint sourceOrigin: 0 @ 0 extent: self extent clipRect: aForm boundingBox) copyBits!\n\ndisplayAt: aPoint\n\tself displayOn: Display at: aPoint rule: 3!\n\npixelAt: aPoint\n\t\"0 or 1, read the BitBlt way: the pixel copied onto a Form of one.\"\n\t| one |\n\tone := Form width: 1 height: 1.\n\t(BitBlt destForm: one sourceForm: self halftoneForm: nil combinationRule: 3\n\t\tdestOrigin: 0 @ 0 sourceOrigin: aPoint extent: 1 @ 1 clipRect: one boundingBox) copyBits.\n\t^(one bits at: 1) bitShift: -7! !\n\n!Form methodsFor: 'printing'!\nprintOn: aStream\n\taStream nextPutAll: 'a Form('; print: width; nextPut: $x; print: height; nextPut: $)! !\n\n!BitBlt class methodsFor: 'instance creation'!\ndestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\t^self new\n\t\tsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr\n\t\tdestOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect! !\n\n!BitBlt methodsFor: 'private'!\nsetDestForm: df sourceForm: sf halftoneForm: hf combinationRule: cr destOrigin: destOrigin sourceOrigin: sourceOrigin extent: extent clipRect: clipRect\n\tdestForm := df.\n\tsourceForm := sf.\n\thalftoneForm := hf.\n\tcombinationRule := cr.\n\tdestX := destOrigin x.\n\tdestY := destOrigin y.\n\tsourceX := sourceOrigin x.\n\tsourceY := sourceOrigin y.\n\twidth := extent x.\n\theight := extent y.\n\tclipX := clipRect origin x.\n\tclipY := clipRect origin y.\n\tclipWidth := clipRect width.\n\tclipHeight := clipRect height! !\n\n!BitBlt methodsFor: 'accessing'!\ndestForm: aForm\n\tdestForm := aForm!\n\nsourceForm: aForm\n\tsourceForm := aForm!\n\nhalftoneForm: aForm\n\thalftoneForm := aForm!\n\ncombinationRule: anInteger\n\tcombinationRule := anInteger!\n\ndestOrigin: aPoint\n\tdestX := aPoint x.\n\tdestY := aPoint y!\n\ndestX: x destY: y\n\tdestX := x.\n\tdestY := y!\n\nwidth: w height: h\n\twidth := w.\n\theight := h!\n\nclipRect: aRectangle\n\tclipX := aRectangle origin x.\n\tclipY := aRectangle origin y.\n\tclipWidth := aRectangle width.\n\tclipHeight := aRectangle height! !\n\n!BitBlt methodsFor: 'copying'!\ncopyBits\n\t\"The one drawing primitive (St_bitblt.mli).\"\n\t<primitive: 96>\n\t^self error: 'Bad BitBlt arguments'! !\n\n!Pen class methodsFor: 'instance creation'!\nnew\n\t\"A pen of one pixel on the Display, at its center, pointing up.\"\n\t^super new defaultNib: 1! !\n\n!Pen methodsFor: 'initialize'!\ndefaultNib: n\n\tdestForm := Display.\n\tsourceForm := (Form width: n height: n) fillBlack; yourself.\n\tcombinationRule := 7.\n\twidth := n.\n\theight := n.\n\tsourceX := 0.\n\tsourceY := 0.\n\tself clipRect: Display boundingBox.\n\tframe := Display boundingBox.\n\tlocation := Display center.\n\tdirection := 270.\n\tpenDown := true! !\n\n!Pen methodsFor: 'accessing'!\nlocation\n\t^location!\n\ndirection\n\t^direction! !\n\n!Pen methodsFor: 'moving'!\nup\n\tpenDown := false!\n\ndown\n\tpenDown := true!\n\nturn: degrees\n\t\"Clockwise, the y axis going down.\"\n\tdirection := direction + degrees \\\\ 360!\n\nnorth\n\tdirection := 270!\n\nhome\n\tlocation := Display center!\n\nplace: aPoint\n\tlocation := aPoint!\n\ngo: distance\n\t\"Forward, drawing if the pen is down.\"\n\t| old radians |\n\told := location.\n\tradians := direction degreesToRadians.\n\tlocation := location + ((radians cos * distance) @ (radians sin * distance)).\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ngoto: aPoint\n\t| old |\n\told := location.\n\tlocation := aPoint.\n\tpenDown ifTrue: [self drawFrom: old to: location]!\n\ndrawFrom: startPoint to: endPoint\n\t\"Bresenham's line (1965), a copyBits of the nib at each point:\n\tthe error term says when to step across as well as along.\"\n\t| x0 y0 x1 y1 dx dy sx sy err e2 |\n\tx0 := startPoint x rounded.\n\ty0 := startPoint y rounded.\n\tx1 := endPoint x rounded.\n\ty1 := endPoint y rounded.\n\tdx := (x1 - x0) abs.\n\tdy := (y1 - y0) abs negated.\n\tsx := x0 < x1 ifTrue: [1] ifFalse: [-1].\n\tsy := y0 < y1 ifTrue: [1] ifFalse: [-1].\n\terr := dx + dy.\n\t[destX := x0.\n\tdestY := y0.\n\tself copyBits.\n\tx0 = x1 and: [y0 = y1]] whileFalse: [\n\t\te2 := 2 * err.\n\t\te2 >= dy ifTrue: [err := err + dy. x0 := x0 + sx].\n\t\te2 <= dx ifTrue: [err := err + dx. y0 := y0 + sy]]! !\n\n!Pen methodsFor: 'geometric designs'!\ndragon: n\n\t\"The dragon curve, the Blue Book's (chapter 20): Pen new dragon: 9.\"\n\tn = 0\n\t\tifTrue: [self go: 10]\n\t\tifFalse: [\n\t\t\tn > 0\n\t\t\t\tifTrue: [self dragon: n - 1; turn: 90; dragon: 1 - n]\n\t\t\t\tifFalse: [self dragon: -1 - n; turn: -90; dragon: 1 + n]]!\n\nspiral: n angle: a\n\t\"Pen new spiral: 200 angle: 89.\"\n\t1 to: n do: [:i | self go: i; turn: a]!\n\npolygon: sides length: length\n\tsides timesRepeat: [self go: length; turn: 360 // sides]!\n\nscribble\n\t\"Pen new scribble: press the button and draw, release to stop --\n\tthe mouse read by Smalltalk while it runs.\"\n\tself place: Sensor waitButton.\n\t[Sensor anyButtonPressed] whileTrue: [self goto: Sensor mousePoint]! !\n\n!Number methodsFor: 'converting'!\ndegreesToRadians\n\t^self asFloat * 0.017453292519943295! !\n\n!InputSensor methodsFor: 'mouse'!\nmousePoint\n\t\"Where the mouse is, on the Display.\"\n\t<primitive: 90>\n\tself primitiveFailed!\n\ncursorPoint\n\t^self mousePoint!\n\nbuttons\n\t<primitive: 91>\n\tself primitiveFailed!\n\nredButtonPressed\n\t^(self buttons bitAnd: 4) ~= 0!\n\nyellowButtonPressed\n\t^(self buttons bitAnd: 2) ~= 0!\n\nblueButtonPressed\n\t^(self buttons bitAnd: 1) ~= 0!\n\nanyButtonPressed\n\t^self buttons ~= 0!\n\nwaitButton\n\t[self anyButtonPressed] whileFalse.\n\t^self mousePoint!\n\nwaitNoButton\n\t[self anyButtonPressed] whileTrue! !\n"],[0,[0,"System.st","\"The last chunks the bootstrap runs, once every method is compiled:\nthe globals that are objects rather than classes.\"!\n\nSmalltalk at: #Transcript put: TextCollector new!\n\nSmalltalk at: #Display put: (Form extent: 800 @ 600)!\n\nSmalltalk at: #Sensor put: InputSensor new!\n\nRectangle comment: 'A rectangle of the screen, from its origin (top left) to its corner (bottom right), each a Point.'!\n\nPoint comment: 'A point of the screen, x to the right and y downwards: 3@4.'!\n\nObject comment: 'The root of the classes: what every object answers.'!\n"],0]]]]]]]],m0="\n\n",mY=str_class,m2=str$9,mZ=[0,[12,33,[2,0,[2,0,[11," methodsFor: '",[2,0,[11,"'!\n",0]]]]]],"!%s%s methodsFor: '%s'!\n"],m1=" !\n",mX="!!",mT=str$9,mU=str$9,mV="methodsFor: expected",mS=str$0,mR=str$0,mP="St_chunk.Error",ny=[0,[2,0,[12,58,[4,0,0,0,[11,str$8,[2,0,0]]]]],"%s:%d: %s"],nx=[0,1],nw=[0,[2,0,[12,58,[4,0,0,0,[11,str$8,[2,0,[11,str$10,[2,0,0]]]]]]],"%s:%d: %s>>%s"],nb="Metaclass",nc="SmallInteger",nd="String",ne="Symbol",nf="Array",ng=str_Float,nh="Character",ni=str_CompiledMethod,nj="MethodContext",nk="BlockContext",nl="Message",nm="Association",nn="Point",no="LargePositiveInteger",np="LargeNegativeInteger",nq="MethodDictionary",nr="UndefinedObject",ns="True",nt="False",nu="SystemDictionary",nv="Smalltalk",m_=[0,3],m$=[0,4],m7=[0,1],m8=[0,2],m9=[0,0],m3="St_boot.Error",nM=caml_int64_create_lo_mi_hi(0,0,0),nL="bad object in image",nK="not a TinySmalltalk80 image",nJ=caml_int64_create_lo_mi_hi(num_255,0,0),nI="bad image header",nH=str_truncated_image,nF=str_truncated_image,nD=str_truncated_image,nz=str_TinySmalltalk80_abr,nX=str$14,nT="Step: still running",nQ="header",nP=str_self,n9=[0,2],oo=[0,1],op=[0,1],or="hard",os="tanh",ot="cubic",ou="asymmetric",oq=[0,0,[0,1,[0,2,[0,3,0]]]],ow="compressor",ox="limiter",oy="gate",ov=[0,0,[0,1,[0,2,0]]],oz="Jsoo_runtime.Error.Exn",oB=str_jsError,oH=str$9,oJ=str_to_js,oC=[0,str_to_js],o6=str_href,o7="download",o5="no localStorage in this browser",o3=[0,0],o1=str_ABCDEFGHIJKLMNOP_abr,pG=[5,1],pF=[5,0],pE=[6,1],pD=[6,0],pA=str$9,ps=str_Escape,pt=str_End,pu=str_Delete,pv=str_Backspace,pm=str_Tab,po="PageUp",pp="PageDown",pq="Insert",pr=str_Home,pn=str_Enter,pj=str_Shift,pk=str_Control,pl=str_Alt,pi=str$9,pb=str_sans_serif,pg=str$9,pz=[0,0.,0.,0,0,0,0.,0.,0.,0],rL=[0,[11,"requestAnimationFrame rate: ",[8,[0,0,0],0,[0,0],[11," Hz",0]]],"requestAnimationFrame rate: %.0f Hz"],rM=[0,[0,str_Control,"ctrlKey"],[0,[0,str_Alt,"altKey"],[0,[0,str_Shift,"shiftKey"],[0,[0,"Meta","metaKey"],0]]]],rN=[0,93,[0,90,[0,96,[0,76,[0,78,[0,174,[0,31,0]]]]]]],rH=[3,0],rI=[0,num_1000,0.,0.],rJ=[3,1],rG=[0,num_1000,0.,0.],rK=[0,str_pointerdown,[0,str_pointermove,[0,str_pointerup,0]]],rC=str_flex,rE=str_none,rD=str_display,rw=str_div,rx=[0,[0,str_position,str_fixed],[0,[0,str_left,str_0],[0,[0,str_right,str_0],[0,[0,str_bottom,str_0],[0,[0,"zIndex","10"],0]]]]],ry=str_div,rz=caml_list_of_js_array([[0,str_position,str_fixed],[0,str_right,str_8px],[0,str_bottom,str_4px],[0,str_width,str_44px],[0,str_height,str_44px],[0,"lineHeight",str_44px],[0,"textAlign",str_center],[0,str_fontSize,"26px"],[0,str_borderRadius,str_8px],[0,str_background,"rgba(255,255,255,0.75)"],[0,str_color,str_222]]),rA=str_pointerdown,rB=str_mousedown,rF=str_click,rt=[0,[8,[0,0,0],0,[0,0],[11,str_px,0]],"%.0fpx"],ru=str_height,rv=str_resize,rg=str_div,rh=[0,[0,str_flex,"1"],[0,[0,str_display,str_flex],[0,[0,"alignItems",str_center],[0,[0,"justifyContent",str_center],[0,[0,str_fontSize,"18px"],[0,[0,str_borderRadius,"6px"],[0,[0,str_background,"rgba(255,255,255,0.8)"],[0,[0,str_color,str_222],[0,[0,"fontFamily",str_sans_serif],0]]]]]]]]],ri=str_pointerdown,rj=str_mousedown,rk=[0,str_pointerup,[0,str_pointercancel,[0,str_pointerleave,0]]],q$=str_div,ra=[0,[0,str_display,str_none],[0,[0,"gap",str_4px],[0,[0,str_padding,str_4px],[0,[0,"boxSizing","border-box"],[0,[0,str_background,"#333"],0]]]]],rb=str_height,rc=[0,str_right,"60px"],rd=[0,str_bottom,str_0],re=[0,str_left,str_0],rf=[0,str_position,str_fixed],rl=str_ArrowLeft,rm=str_ArrowUp,rn=str_ArrowDown,ro=str_ArrowRight,rp=[0,str$14],rq=str_space,rr=str_Enter,rs=str_Escape,q8=str_space,q7=str_Backspace,q3=str_input,q4=[0,[0,"autocomplete",str_off],[0,[0,"autocorrect",str_off],[0,[0,"autocapitalize",str_off],[0,[0,"spellcheck",str_false],0]]]],q5=[0,[0,str_position,str_fixed],[0,[0,str_left,str_0],[0,[0,str_bottom,str_0],[0,[0,str_width,str_1px],[0,[0,str_height,str_1px],[0,[0,str_opacity,str_0],[0,[0,str_fontSize,"16px"],[0,[0,"border",str_0],[0,[0,str_padding,str_0],0]]]]]]]]],q6=str_keydown,q9=str_input,qX=[1,0],qW="GET",qY="POST",qT="outputLatency",qU="baseLatency",qH=[0,[4,0]],qI=[0,[4,1]],qJ=[0,0],qF=[0,[11,"key = '",[2,0,[12,39,0]]],"key = '%s'"],qG=str_space,qB="pixelated",qC="image-rendering",qz="crispEdges",qA="shape-rendering",qr=str_100,qs=str_100,qt=str_0,qu=str_left,qv=str_0,qw="top",qx=str_fixed,qy=str_position,qm=str$14,qj="central",qk="middle",qi=str$9,qe=str$9,qf=str$9,pX="g",pW="text",pV=str_image,pT="rect",pS="ellipse",pR="circle",pQ="svg",pM=str$9,pN=str$9,pY="viewBox",p1="r",p2="rx",p3="ry",p7=str_opacity,p8=str_href,p9="text-anchor",p_="dominant-baseline",p$="font-size",qa="font-family",qb="textContent",tm=str$9,tf=str$9,tg=str_System_Browser,th=str$9,ti=str_Workspace,tj=str_System_Transcript,tk="Display fillWhite",tl=[0,[11,"Image saved: ",[4,0,0,0,[11," objects, ",[4,0,0,0,[11," bytes.\n",0]]]]],"Image saved: %d objects, %d bytes.\n"],up="running... (Control-C interrupts)",ui=str_Control,uj=str_c,uk="Display",ue=[0,"saved"],uf=str_image,ug="window",tZ=str_center,t0=str_Rectangle,t$=str$9,t1=str_center,t2="rectangle functions",t3=str_Rectangle,t4="Graphics-Primitives",t5=[num_254,8.,num_20,num_560,num_300],t6=str_System_Browser,t7=[num_254,480.,num_350,312.,num_240],t8=str_System_Transcript,t9=[num_254,8.,num_350,462.,num_240],t_=str_Workspace,tX=str$9,tY=str$9,tT="\t",tU=str$16,tV=str$9,tW=str$9,tR=str_Control,tS=str_a,tF=str_close,tG="expand",tH="collapse",tI="file out",tJ="comment",tK="definition",tL="remove",tM=str_send,tN=str_step,tO=str_restart,tP=str_proceed,tw=str_paste,tx=str_cut,ty=str_copy,tz="cancel",tA="accept",tB="inspect it",tC="print it",tD="do it",tq=str$9,tp=str$9,tn=str$9,to=str$9,ta=str_as_yet_unclassified,tb=str_as_yet_unclassified,s_=str$9,s$=str$9,s8=str$9,s9=str$9,s5=str$16,s4=str_as_yet_unclassified,s1=str$9,s2=str$9,sZ=[0,[11,"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '",[2,0,[12,39,0]]],"Object subclass: #NameOfClass\n\tinstanceVariableNames: 'instVarName1 instVarName2'\n\tclassVariableNames: ''\n\tpoolDictionaries: ''\n\tcategory: '%s'"],sW=str_User_Interrupt,sX=str_User_Interrupt,sQ=[num_254,num_180,num_150,num_420,num_100],sM=str$9,sN=str$9,sO=str$9,sL=str$9,sI=[0,0],sy=str$9,sj=str_class$0,sk="instance",si=[0,str_apps_devtools_we_abr,368,81],sm=str_define,sn=str_send,so=str_step,sp=str_restart,sq=str_proceed,sl=[0,str_apps_devtools_we_abr,399,15],sr=str_close,ss=str_define,st="debug",su=str_proceed,sg=str_self,r9="\"The caret on a line, then the right button's menu:\ndo it, print it, inspect it (or Control-D, P, I).\"\n3 + 4 * 2\n100 factorial\n(1/3) + (2/3)\n#(5 3 8 1 2) asSortedCollection\n(Rectangle origin: 0@0 corner: 4@6) center\n(1 to: 10) collect: [:i | i * i]\nTranscript show: 'Hello, world!'; cr\nMetaclass class class == Metaclass\n(3@4) inspect\nPen new dragon: 9\nPen new spiral: 150 angle: 89\nPen new scribble\n10 fib\n3 zork: 4\n3 halt\n[true] whileTrue",r_="Smalltalk-80 of the Blue Book (Goldberg and Robson, 1983), in OCaml.\nThe kernel's classes compiled to its bytecodes, from their text.\n",sY='message selector and argument names\n\t"comment stating purpose of message"\n\n\t| temporary variable names |\n\tstatements',tE=[0,[0,"restore display",3],[0,[0,str_browser,0],[0,[0,"workspace",1],[0,[0,"system transcript",2],[0,[0,"save",4],[0,[0,str_load,5],0]]]]]],ua=[0,0,0,0],uc=str$9,k=num_2147483647,bv=[num_248,"Stdlib.Queue.Empty",caml_fresh_oo_id(0)];try{var
+us=caml_sys_getenv(str_OCAMLRUNPARAM),eD=us}catch(aLV){var
 ez=caml_wrap_exception(aLV);if(ez!==Not_found)throw caml_maybe_attach_backtrace(ez,0);try{var
-us=caml_sys_getenv("CAMLRUNPARAM"),eC=us}catch(aLW){var
+ur=caml_sys_getenv("CAMLRUNPARAM"),eC=ur}catch(aLW){var
 eA=caml_wrap_exception(aLW);if(eA!==Not_found)throw caml_maybe_attach_backtrace(eA,0);var
 eC=eB}var
 eD=eC}var
@@ -2330,8 +2330,8 @@ aIo=bq(0);e6(aIo);bs([0,1,aIn],aIo);var
 aIp=78,aIq=bq(0),aIr=bq(0),aIs=bq(0),aIt=[0,aIo,bq(0),aIs,aIr,aIq,aIp,10,68,aIp,0,1,1,1,1,k,fi,aIv,aIu,function(aIB){return 0},function(aIA){return 0},function(aIz){return 0},0,0,fb,fd,ff,fg,aIm];aIt[19]=function(aIy){return caml_call3(aIt[17],e_,0,1)};aIt[20]=function(aIx){return fa(aIt,aIx)};aIt[21]=function(aIw){return fa(aIt,aIw)};return aIt}function
 fk(aIh){return fj(function(aIj,aIk,aIl){if(0<=aIk&&0<=aIl&&(caml_ml_string_length(aIj)-aIl|0)>=aIk)return caml_ml_output(aIh,aIj,aIk,aIl);return g(s)},function(aIi){return caml_ml_flush(aIh)})}var
 fl=by(num_512),fm=fk(p),fn=fk(q);fj(function(aIe,aIf,aIg){return bF(fl,aIe,aIf,aIg)},function(aId){return 0});for(;;){var
-uv=d[1];let
-aIa=uv,aIb=[0,1];if(!(1-e(d,uv,function(aIc){if(e(aIb,1,0)){e9(fm,0);e9(fn,0)}return caml_call1(aIa,0)})))break}function
+uu=d[1];let
+aIa=uu,aIb=[0,1];if(!(1-e(d,uu,function(aIc){if(e(aIb,1,0)){e9(fm,0);e9(fn,0)}return caml_call1(aIa,0)})))break}function
 fo(aH_,aH9){var
 aH$=caml_obj_tag(aH9)===num_248?aH9:aH9[1];caml_register_named_value(aH_,aH$)}var
 fr=bp([0,caml_string_compare]),fs=bp([0,caml_string_compare]),ft=bp([0,caml_int_compare]),fv=caml_obj_block(0,0),fp=2,fu=[0,0];function
@@ -2659,1375 +2659,1374 @@ aDY=hX(aD6);return hV(aD7,hW(aD6),aDY)}function
 h5(aDT,aDS){var
 aDV=aDT,aDU=aDS;for(;;){if(!aDU)return aDV;var
 aDW=aDU[2],aDX=aDU[1];aDV=[0,aDW,h5(aDV,aDU[3])];aDU=aDX}}function
-h6(aDR,aDQ,aDP){return caml_lessthan(aDP,aDR)?aDR:caml_greaterthan(aDP,aDQ)?aDQ:aDP}function
-h7(aDO){return h6(0,num_255,aDO)}var
-ic=0;function
-id(aDN){return typeof
-aDN==="number"?0:3===aDN[0]?ar(id,aDN[1]):[0,aDN,0]}function
-ie(aDL){var
-aDM=caml_bytes_of_string(aDL),aDD=[0,0],aDF=caml_ml_bytes_length(aDM)-1|0,aDE=0;if(aDF>=0){var
-aDH=aDE;for(;;){var
-aDI=aDD[1],aDJ=58===caml_bytes_unsafe_get(aDM,aDH)?aDI+1|0:aDI;aDD[1]=aDJ;var
-aDK=aDH+1|0;if(aDF===aDH)break;aDH=aDK}}var
-aDG=aDD[1];if(0<aDG)return aDG;a:if(aDL!==str$9){if(97<=caml_string_get(aDL,0)&&num_122>=caml_string_get(aDL,0))break a;if(65<=caml_string_get(aDL,0)&&90>=caml_string_get(aDL,0))break a;return 1}return 0}var
-ih=[num_248,ig,caml_fresh_oo_id(0)];function
-ii(aDy,aDx,aDw){function
-aDz(aDB,aDA){if(!aDB)return 0===aDA?0:[0,aDA&num_255,aDz(0,aDA>>>8|0)];var
-aDC=caml_mul(aDB[1],aDx)+aDA|0;return[0,aDC&num_255,aDz(aDB[2],aDC>>>8|0)]}return aDz(aDy,aDw)}function
-ij(aDm,aDl){a:{var
-aDn=Y(aDl);for(;;){if(!aDn)break a;if(0!==aDn[1])break;aDn=aDn[2]}}if(4<O(aDn))return 0;var
-aDo=O(aDn),aDp=aDn?aDn[1]:0;a:if(4===aDo&&64<=aDp){if(aDm&&64===aDp){var
-aDq=aDn?aDn[2]:f(R);if(aj(function(aDv){return 0===aDv?1:0},aDq))break a}return 0}var
-aDr=ag(function(aDu,aDt){return aDu<<8|aDt},0,aDn),aDs=aDm?-aDr|0:aDr;return[0,aDs]}function
+h6(aDR){return 0<=aDR?num_255<aDR?num_255:aDR:0}var
+ib=0;function
+ic(aDQ){return typeof
+aDQ==="number"?0:3===aDQ[0]?ar(ic,aDQ[1]):[0,aDQ,0]}function
+id(aDO){var
+aDP=caml_bytes_of_string(aDO),aDG=[0,0],aDI=caml_ml_bytes_length(aDP)-1|0,aDH=0;if(aDI>=0){var
+aDK=aDH;for(;;){var
+aDL=aDG[1],aDM=58===caml_bytes_unsafe_get(aDP,aDK)?aDL+1|0:aDL;aDG[1]=aDM;var
+aDN=aDK+1|0;if(aDI===aDK)break;aDK=aDN}}var
+aDJ=aDG[1];if(0<aDJ)return aDJ;a:if(aDO!==str$9){if(97<=caml_string_get(aDO,0)&&num_122>=caml_string_get(aDO,0))break a;if(65<=caml_string_get(aDO,0)&&90>=caml_string_get(aDO,0))break a;return 1}return 0}var
+ig=[num_248,ie,caml_fresh_oo_id(0)];function
+ih(aDB,aDA,aDz){function
+aDC(aDE,aDD){if(!aDE)return 0===aDD?0:[0,aDD&num_255,aDC(0,aDD>>>8|0)];var
+aDF=caml_mul(aDE[1],aDA)+aDD|0;return[0,aDF&num_255,aDC(aDE[2],aDF>>>8|0)]}return aDC(aDB,aDz)}function
+ii(aDp,aDo){a:{var
+aDq=Y(aDo);for(;;){if(!aDq)break a;if(0!==aDq[1])break;aDq=aDq[2]}}if(4<O(aDq))return 0;var
+aDr=O(aDq),aDs=aDq?aDq[1]:0;a:if(4===aDr&&64<=aDs){if(aDp&&64===aDs){var
+aDt=aDq?aDq[2]:f(R);if(aj(function(aDy){return 0===aDy?1:0},aDt))break a}return 0}var
+aDu=ag(function(aDx,aDw){return aDx<<8|aDw},0,aDq),aDv=aDp?-aDu|0:aDu;return[0,aDv]}function
+ij(aDj){var
+aDk=97<=aDj?1:0,aDl=aDk?aDj<=num_122?1:0:aDk;if(aDl)var
+aDm=aDl;else
+var
+aDn=65<=aDj?1:0,aDm=aDn?aDj<=90?1:0:aDn;return aDm}function
 ik(aDg){var
-aDh=97<=aDg?1:0,aDi=aDh?aDg<=num_122?1:0:aDh;if(aDi)var
-aDj=aDi;else
-var
-aDk=65<=aDg?1:0,aDj=aDk?aDg<=90?1:0:aDk;return aDj}function
-il(aDd){var
-aDe=48<=aDd?1:0,aDf=aDe?aDd<=57?1:0:aDe;return aDf}function
-io(aDc){if(il(aDc))return aDc-48|0;if(65<=aDc&&90>=aDc)return(aDc-65|0)+10|0;return 99}var
-iv=0;function
-iw(aDb){return 1===(aDb&1)?1:0}function
-ix(aDa){return aDa<<1|1}function
-iy(aC9){var
-aC_=-1073741824<=aC9?1:0,aC$=aC_?aC9<=num_1073741823?1:0:aC_;return aC$}function
-iz(aC4,aC3,aC2){var
-aC5=aC4[3];if(aC5){var
-aC6=aC5[1];aC4[3]=aC5[2];var
-aC7=aC6}else{if(aC4[1].length-1<=aC4[4]){var
-aCZ=aC4[1].length-1,aC0=caml_make_vect(2*aCZ|0,0),aC1=caml_make_vect(2*aCZ|0,0);ba(aC4[1],0,aC0,0,aCZ);ba(aC4[2],0,aC1,0,aCZ);aC4[1]=aC0;aC4[2]=aC1}var
-aC8=aC4[4];aC4[4]=aC4[4]+1|0;var
-aC7=aC8}caml_check_bound(aC4[1],aC7)[1+aC7]=aC3;caml_check_bound(aC4[2],aC7)[1+aC7]=aC2;aC4[5]=aC4[5]+1|0;aC4[6]=aC4[6]+1|0;return aC7<<1}function
-iA(aCX,aCW){if(iw(aCW))return aCX[8][1];var
-aCY=aCW>>>1|0;return caml_check_bound(aCX[1],aCY)[1+aCY]}function
-iB(aCU,aCT,aCS){var
-aCV=aCT>>>1|0;caml_check_bound(aCU[1],aCV)[1+aCV]=aCS;return 0}function
-iC(aCQ,aCP){if(iw(aCP))return 0;var
-aCR=aCP>>>1|0;return caml_check_bound(aCQ[2],aCR)[1+aCR]}function
-iD(aCN,aCM){var
-aCO=iC(aCN,aCM);if(typeof
-aCO!=="number")switch(aCO[0]){case
+aDh=48<=aDg?1:0,aDi=aDh?aDg<=57?1:0:aDh;return aDi}function
+im(aDf){if(ik(aDf))return aDf-48|0;if(65<=aDf&&90>=aDf)return(aDf-65|0)+10|0;return 99}var
+iu=0;function
+iv(aDe){return 1===(aDe&1)?1:0}function
+iw(aDd){return aDd<<1|1}function
+ix(aDa){var
+aDb=-1073741824<=aDa?1:0,aDc=aDb?aDa<=num_1073741823?1:0:aDb;return aDc}function
+iy(aC7,aC6,aC5){var
+aC8=aC7[3];if(aC8){var
+aC9=aC8[1];aC7[3]=aC8[2];var
+aC_=aC9}else{if(aC7[1].length-1<=aC7[4]){var
+aC2=aC7[1].length-1,aC3=caml_make_vect(2*aC2|0,0),aC4=caml_make_vect(2*aC2|0,0);ba(aC7[1],0,aC3,0,aC2);ba(aC7[2],0,aC4,0,aC2);aC7[1]=aC3;aC7[2]=aC4}var
+aC$=aC7[4];aC7[4]=aC7[4]+1|0;var
+aC_=aC$}caml_check_bound(aC7[1],aC_)[1+aC_]=aC6;caml_check_bound(aC7[2],aC_)[1+aC_]=aC5;aC7[5]=aC7[5]+1|0;aC7[6]=aC7[6]+1|0;return aC_<<1}function
+iz(aC0,aCZ){if(iv(aCZ))return aC0[8][1];var
+aC1=aCZ>>>1|0;return caml_check_bound(aC0[1],aC1)[1+aC1]}function
+iA(aCX,aCW,aCV){var
+aCY=aCW>>>1|0;caml_check_bound(aCX[1],aCY)[1+aCY]=aCV;return 0}function
+iB(aCT,aCS){if(iv(aCS))return 0;var
+aCU=aCS>>>1|0;return caml_check_bound(aCT[2],aCU)[1+aCU]}function
+iC(aCQ,aCP){var
+aCR=iB(aCQ,aCP);if(typeof
+aCR!=="number")switch(aCR[0]){case
 0:case
-3:return aCO[1]}return[0]}function
-iE(aCL,aCK,aCJ){return caml_check_bound(iD(aCL,aCK),aCJ)[1+aCJ]}function
-iF(aCI,aCH,aCG,aCF){caml_check_bound(iD(aCI,aCH),aCG)[1+aCG]=aCF}function
+3:return aCR[1]}return[0]}function
+iD(aCO,aCN,aCM){return caml_check_bound(iC(aCO,aCN),aCM)[1+aCM]}function
+iE(aCL,aCK,aCJ,aCI){caml_check_bound(iC(aCL,aCK),aCJ)[1+aCJ]=aCI}function
+iF(aCG,aCF){var
+aCH=iB(aCG,aCF);if(typeof
+aCH!=="number")switch(aCH[0]){case
+1:return caml_ml_bytes_length(aCH[1]);case
+2:break;default:return aCH[1].length-1}return 0}function
 iG(aCD,aCC){var
-aCE=iC(aCD,aCC);if(typeof
-aCE!=="number")switch(aCE[0]){case
-1:return caml_ml_bytes_length(aCE[1]);case
-2:break;default:return aCE[1].length-1}return 0}function
-iH(aCA,aCz){var
-aCB=iC(aCA,aCz);if(typeof
-aCB!=="number"&&1===aCB[0])return aB(aCB[1]);return iI}function
-iJ(aCx,aCw){var
-aCy=[1,aC(aCw)];return iz(aCx,aCx[8][2],aCy)}function
-iK(aCv,aCu){return iz(aCv,aCv[8][4],[0,aCu])}function
-iL(aCt,aCs){return iz(aCt,aCt[8][5],[2,aCs])}function
-iM(aCo,aCn){var
-aCp=eL(aCo[7],aCn);if(aCp)return aCp[1];var
-aCq=[1,aC(aCn)],aCr=iz(aCo,aCo[8][3],aCq);eM(aCo[7],aCn,aCr);return aCr}function
-iN(aCg,aCf,aCe){var
-aCm=aCf>>>1|0,aCl=aCe>>>1|0,aCh=caml_check_bound(aCg[1],aCm)[1+aCm],aCi=caml_check_bound(aCg[2],aCm)[1+aCm],aCj=caml_check_bound(aCg[1],aCl)[1+aCl];caml_check_bound(aCg[1],aCm)[1+aCm]=aCj;var
-aCk=caml_check_bound(aCg[2],aCl)[1+aCl];caml_check_bound(aCg[2],aCm)[1+aCm]=aCk;caml_check_bound(aCg[1],aCl)[1+aCl]=aCh;caml_check_bound(aCg[2],aCl)[1+aCl]=aCi}var
-iO=[0,0];function
-iP(aCb,aCa,aB$){var
-aCc=iE(aCb,aCa,aB$);if(iw(aCc))return[0,aCc>>1];var
-aCd=iC(aCb,aCc);if(typeof
-aCd!=="number"&&2===aCd[0])return[0,caml_round_float(aCd[1])|0];return 0}function
-iQ(aB3,aB2){if(!iw(aB2)&&aB2!==0&&3<=iG(aB3,aB2)){var
-aB4=iC(aB3,iE(aB3,aB2,0)),aB5=iP(aB3,aB2,1),aB6=iP(aB3,aB2,2);if(typeof
-aB4!=="number"&&1===aB4[0]&&aB5&&aB6){var
-aB7=aB6[1],aB8=aB5[1],aB9=aB4[1],aB_=((aB8+15|0)/16|0)*2|0;if(0<=aB8&&0<=aB7&&caml_mul(aB_,aB7)<=caml_ml_bytes_length(aB9))return[0,[0,aB9,aB8,aB7,aB_]];return 0}return 0}return 0}function
-iR(aB1,aB0,aBZ){if(0<=aB0&&0<=aBZ&&aB1[2]>aB0&&aB1[3]>aBZ)return(caml_bytes_get(aB1[1],caml_mul(aBZ,aB1[4])+(aB0>>>3|0)|0)>>>(7-(aB0&7)|0)|0)&1;return 0}var
-hJ=fK(0,hH),iT=iS.slice();function
-iU(aBO,aBN,aBM,aBL,aBK,aBJ,aBI,aBH,aBG){var
-aBP=iJ(aBO,aBI),aBQ=iK(aBO,bg(ar(function(aBU){var
-aBV=aBU[2],aBW=aBU[1],aBX=[0,ix(aBU[3]),0],aBY=[0,ix(aBV),aBX];return[0,ix(aBW),aBY]},aBH))),aBR=[0,aBM,[0,[0,aBK,aBJ,aBP,aBQ,iK(aBO,bg(ab(function(aBT){return iJ(aBO,aBT)},aBG)))],0]],aBS=[3,caml_array_concat([0,[0,ix(aBN[1]|aBN[2]<<9|aBN[3]<<14|aBN[4]<<20)],aBR]),aBL];return iz(aBO,aBO[8][7],aBS)}function
+aCE=iB(aCD,aCC);if(typeof
+aCE!=="number"&&1===aCE[0])return aB(aCE[1]);return iH}function
+iI(aCA,aCz){var
+aCB=[1,aC(aCz)];return iy(aCA,aCA[8][2],aCB)}function
+iJ(aCy,aCx){return iy(aCy,aCy[8][4],[0,aCx])}function
+iK(aCw,aCv){return iy(aCw,aCw[8][5],[2,aCv])}function
+iL(aCr,aCq){var
+aCs=eL(aCr[7],aCq);if(aCs)return aCs[1];var
+aCt=[1,aC(aCq)],aCu=iy(aCr,aCr[8][3],aCt);eM(aCr[7],aCq,aCu);return aCu}function
+iM(aCj,aCi,aCh){var
+aCp=aCi>>>1|0,aCo=aCh>>>1|0,aCk=caml_check_bound(aCj[1],aCp)[1+aCp],aCl=caml_check_bound(aCj[2],aCp)[1+aCp],aCm=caml_check_bound(aCj[1],aCo)[1+aCo];caml_check_bound(aCj[1],aCp)[1+aCp]=aCm;var
+aCn=caml_check_bound(aCj[2],aCo)[1+aCo];caml_check_bound(aCj[2],aCp)[1+aCp]=aCn;caml_check_bound(aCj[1],aCo)[1+aCo]=aCk;caml_check_bound(aCj[2],aCo)[1+aCo]=aCl}var
+iN=[0,0];function
+iO(aCe,aCd,aCc){var
+aCf=iD(aCe,aCd,aCc);if(iv(aCf))return[0,aCf>>1];var
+aCg=iB(aCe,aCf);if(typeof
+aCg!=="number"&&2===aCg[0])return[0,caml_round_float(aCg[1])|0];return 0}function
+iP(aB6,aB5){if(!iv(aB5)&&aB5!==0&&3<=iF(aB6,aB5)){var
+aB7=iB(aB6,iD(aB6,aB5,0)),aB8=iO(aB6,aB5,1),aB9=iO(aB6,aB5,2);if(typeof
+aB7!=="number"&&1===aB7[0]&&aB8&&aB9){var
+aB_=aB9[1],aB$=aB8[1],aCa=aB7[1],aCb=((aB$+15|0)/16|0)*2|0;if(0<=aB$&&0<=aB_&&caml_mul(aCb,aB_)<=caml_ml_bytes_length(aCa))return[0,[0,aCa,aB$,aB_,aCb]];return 0}return 0}return 0}function
+iQ(aB4,aB3,aB2){if(0<=aB3&&0<=aB2&&aB4[2]>aB3&&aB4[3]>aB2)return(caml_bytes_get(aB4[1],caml_mul(aB2,aB4[4])+(aB3>>>3|0)|0)>>>(7-(aB3&7)|0)|0)&1;return 0}var
+hJ=fK(0,hH),iS=iR.slice();function
+iT(aBR,aBQ,aBP,aBO,aBN,aBM,aBL,aBK,aBJ){var
+aBS=iI(aBR,aBL),aBT=iJ(aBR,bg(ar(function(aBX){var
+aBY=aBX[2],aBZ=aBX[1],aB0=[0,iw(aBX[3]),0],aB1=[0,iw(aBY),aB0];return[0,iw(aBZ),aB1]},aBK))),aBU=[0,aBP,[0,[0,aBN,aBM,aBS,aBT,iJ(aBR,bg(ab(function(aBW){return iI(aBR,aBW)},aBJ)))],0]],aBV=[3,caml_array_concat([0,[0,iw(aBQ[1]|aBQ[2]<<9|aBQ[3]<<14|aBQ[4]<<20)],aBU]),aBO];return iy(aBR,aBR[8][7],aBV)}function
+iU(aBH,aBG){var
+aBI=iB(aBH,aBG);if(typeof
+aBI!=="number"&&3===aBI[0])return aBI[1];return[0]}function
 iV(aBE,aBD){var
-aBF=iC(aBE,aBD);if(typeof
-aBF!=="number"&&3===aBF[0])return aBF[1];return[0]}function
+aBF=caml_check_bound(iU(aBE,aBD),0)[1]>>1;return[0,aBF&511,(aBF>>>9|0)&31,(aBF>>>14|0)&63,(aBF>>>20|0)&num_255]}function
 iW(aBB,aBA){var
-aBC=caml_check_bound(iV(aBB,aBA),0)[1]>>1;return[0,aBC&511,(aBC>>>9|0)&31,(aBC>>>14|0)&63,(aBC>>>20|0)&num_255]}function
-iX(aBy,aBx){var
-aBz=iC(aBy,aBx);if(typeof
-aBz!=="number"&&3===aBz[0])return aBz[2];return az}function
-iY(aBu,aBt,aBs){var
-aBv=iV(aBu,aBt),aBw=(aBv.length-6|0)+aBs|0;return caml_check_bound(aBv,aBw)[1+aBw]}function
-iZ(aBr,aBq){return iY(aBr,aBq,0)}function
-i0(aBp,aBo){return iY(aBp,aBo,1)}function
-i1(aBn,aBm){return iH(aBn,iY(aBn,aBm,2))}function
-i2(aBe,aBd){var
-aBf=iD(aBe,iY(aBe,aBd,3));return _((aBf.length-1)/3|0,function(aBg){var
-aBh=(3*aBg|0)+2|0,aBi=(3*aBg|0)+1|0,aBl=caml_check_bound(aBf,aBh)[1+aBh]>>1,aBj=3*aBg|0,aBk=caml_check_bound(aBf,aBi)[1+aBi]>>1;return[0,caml_check_bound(aBf,aBj)[1+aBj]>>1,aBk,aBl]})}var
-i3=0,i4=1,i5=2,i6=3,i7=4,i8=5,i9=6,i_=7,jb=ja.slice();function
-jc(aBa,aA$){var
-aBc=iE(aBa,aA$,i5)>>1,aBb=aBc&7;return[0,aBc>>>3|0,caml_check_bound(jb,aBb)[1+aBb]]}function
-jd(aA9,aA8){switch(aA8){case
+aBC=iB(aBB,aBA);if(typeof
+aBC!=="number"&&3===aBC[0])return aBC[2];return az}function
+iX(aBx,aBw,aBv){var
+aBy=iU(aBx,aBw),aBz=(aBy.length-6|0)+aBv|0;return caml_check_bound(aBy,aBz)[1+aBz]}function
+iY(aBu,aBt){return iX(aBu,aBt,0)}function
+iZ(aBs,aBr){return iX(aBs,aBr,1)}function
+i0(aBq,aBp){return iG(aBq,iX(aBq,aBp,2))}function
+i1(aBh,aBg){var
+aBi=iC(aBh,iX(aBh,aBg,3));return _((aBi.length-1)/3|0,function(aBj){var
+aBk=(3*aBj|0)+2|0,aBl=(3*aBj|0)+1|0,aBo=caml_check_bound(aBi,aBk)[1+aBk]>>1,aBm=3*aBj|0,aBn=caml_check_bound(aBi,aBl)[1+aBl]>>1;return[0,caml_check_bound(aBi,aBm)[1+aBm]>>1,aBn,aBo]})}var
+i2=0,i3=1,i4=2,i5=3,i6=4,i7=5,i8=6,i9=7,ja=i$.slice();function
+jb(aBd,aBc){var
+aBf=iD(aBd,aBc,i4)>>1,aBe=aBf&7;return[0,aBf>>>3|0,caml_check_bound(ja,aBe)[1+aBe]]}function
+jc(aBa,aA$){switch(aA$){case
 0:var
-aA_=0;break;case
+aBb=0;break;case
 1:var
-aA_=1;break;case
+aBb=1;break;case
 2:var
-aA_=2;break;case
+aBb=2;break;case
 3:var
-aA_=3;break;default:var
-aA_=4}return aA9<<3|aA_}function
-je(aA4,aA3){var
-aA5=aA3!==0?1:0;if(aA5)var
-aA6=aA4[8][15],aA7=iA(aA4,aA3)===aA6?1:0;else
+aBb=3;break;default:var
+aBb=4}return aBa<<3|aBb}function
+jd(aA7,aA6){var
+aA8=aA6!==0?1:0;if(aA8)var
+aA9=aA7[8][15],aA_=iz(aA7,aA6)===aA9?1:0;else
 var
-aA7=aA5;return aA7}function
-jf(aA2,aA1){return je(aA2,aA1)?iE(aA2,aA1,i8):aA1}function
-jg(aA0,aAZ){return aAZ===0?jh:je(aA0,aAZ)?iH(aA0,iE(aA0,jf(aA0,aAZ),i8))+str_class:iH(aA0,iE(aA0,aAZ,i8))}function
-ji(aAW,aAV){var
-aAX=iE(aAW,aAV,i6);return aAX===0?0:bf(bd(function(aAY){return iH(aAW,aAY)},iD(aAW,aAX)))}function
-jj(aAT,aAS){if(aAS===0)return 0;var
-aAU=ji(aAT,aAS);return o(jj(aAT,iE(aAT,aAS,i3)),aAU)}function
-jk(aAQ,aAP){var
-aAR=iE(aAQ,jf(aAQ,aAP),i9);return aAR===0?jl:iH(aAQ,aAR)}function
-jn(aAO,aAN,aAM){return iz(aAO,aAO[8][11],[0,[0,aAN,aAM]])}function
-jo(aAK){var
-aAL=aAK[8][19];return aAL===0?[0]:iD(aAK,iE(aAK,aAL,0))}function
-jp(aAH,aAG,aAF){var
-aAI=iM(aAH,aAF);return bh(function(aAJ){return iE(aAH,aAJ,0)===aAI?1:0},aAG)}function
-jq(aAE,aAD){return jp(aAE,jo(aAE),aAD)}function
-jr(aAy,aAx,aAw){var
-aAz=jq(aAy,aAx);if(aAz){var
-aAA=aAz[1];iF(aAy,aAA,1,aAw);return aAA}var
-aAB=jn(aAy,iM(aAy,aAx),aAw),aAC=aAy[8][19];iF(aAy,aAC,0,iK(aAy,a8(jo(aAy),[0,aAB])));return aAB}function
-js(aAi){var
-aAj=ab(function(aAu){var
-aAv=iE(aAi,aAu,1);return[0,iH(aAi,iE(aAi,aAu,0)),aAv]},bf(jo(aAi)));return ab(function(aAt){return aAt[2]},au(function(aAs,aAr){return caml_string_compare(aAs[1],aAr[1])},ao(function(aAk){var
-aAl=aAk[2],aAm=aAk[1],aAn=1-iw(aAl);if(aAn){var
-aAo=aAl!==0?1:0;if(aAo)var
-aAp=je(aAi,iA(aAi,aAl)),aAq=aAp?jg(aAi,aAl)===aAm?1:0:aAp;else
+aA_=aA8;return aA_}function
+je(aA5,aA4){return jd(aA5,aA4)?iD(aA5,aA4,i7):aA4}function
+jf(aA3,aA2){return aA2===0?jg:jd(aA3,aA2)?iG(aA3,iD(aA3,je(aA3,aA2),i7))+str_class:iG(aA3,iD(aA3,aA2,i7))}function
+jh(aAZ,aAY){var
+aA0=iD(aAZ,aAY,i5);return aA0===0?0:bf(bd(function(aA1){return iG(aAZ,aA1)},iC(aAZ,aA0)))}function
+ji(aAW,aAV){if(aAV===0)return 0;var
+aAX=jh(aAW,aAV);return o(ji(aAW,iD(aAW,aAV,i2)),aAX)}function
+jj(aAT,aAS){var
+aAU=iD(aAT,je(aAT,aAS),i8);return aAU===0?jk:iG(aAT,aAU)}function
+jm(aAR,aAQ,aAP){return iy(aAR,aAR[8][11],[0,[0,aAQ,aAP]])}function
+jn(aAN){var
+aAO=aAN[8][19];return aAO===0?[0]:iC(aAN,iD(aAN,aAO,0))}function
+jo(aAK,aAJ,aAI){var
+aAL=iL(aAK,aAI);return bh(function(aAM){return iD(aAK,aAM,0)===aAL?1:0},aAJ)}function
+jp(aAH,aAG){return jo(aAH,jn(aAH),aAG)}function
+jq(aAB,aAA,aAz){var
+aAC=jp(aAB,aAA);if(aAC){var
+aAD=aAC[1];iE(aAB,aAD,1,aAz);return aAD}var
+aAE=jm(aAB,iL(aAB,aAA),aAz),aAF=aAB[8][19];iE(aAB,aAF,0,iJ(aAB,a8(jn(aAB),[0,aAE])));return aAE}function
+jr(aAl){var
+aAm=ab(function(aAx){var
+aAy=iD(aAl,aAx,1);return[0,iG(aAl,iD(aAl,aAx,0)),aAy]},bf(jn(aAl)));return ab(function(aAw){return aAw[2]},au(function(aAv,aAu){return caml_string_compare(aAv[1],aAu[1])},ao(function(aAn){var
+aAo=aAn[2],aAp=aAn[1],aAq=1-iv(aAo);if(aAq){var
+aAr=aAo!==0?1:0;if(aAr)var
+aAs=jd(aAl,iz(aAl,aAo)),aAt=aAs?jf(aAl,aAo)===aAp?1:0:aAs;else
 var
-aAq=aAo}else
+aAt=aAr}else
 var
-aAq=aAn;return aAq})(aAj)))}function
-jt(az8,az7){var
-az9=jf(az8,az7),aAg=iE(az8,az9,i3),az_=jc(az8,az9)[2];a:{if(3>az_)switch(az_){case
+aAt=aAq;return aAt})(aAm)))}function
+js(az$,az_){var
+aAa=je(az$,az_),aAj=iD(az$,aAa,i2),aAb=jb(az$,aAa)[2];a:{if(3>aAb)switch(aAb){case
 1:var
-az$=jz;break a;case
+aAc=jy;break a;case
 2:var
-az$=jA;break a}var
-az$=ju}var
-aAa=jk(az8,az9),az6=iE(az8,jf(az8,az9),i_),aAb=az6===0?0:ab(function(aAh){return iH(az8,iE(az8,aAh,0))},bf(iD(az8,az6))),aAc=aR(jv,aAb),aAd=aR(jw,ji(az8,az9)),aAe=jg(az8,az9),aAf=aAg===0?jx:jg(az8,aAg);return caml_call6(dX(jy),aAf,az$,aAe,aAd,aAc,aAa)}function
-jB(az3,az2){var
-az4=iE(az3,az2,i4),az5=iD(az3,iE(az3,az4,1));return[0,iD(az3,iE(az3,az4,0)),az5]}function
-jC(azX,azW,azV){var
-azY=jB(azX,azW),az0=azY[1],az1=0,azZ=azY[2];for(;;){if(az0.length-1<=az1)return 0;if(caml_check_bound(az0,az1)[1+az1]===azV)return[0,caml_check_bound(azZ,az1)[1+az1]];az1=az1+1|0}}function
-jD(azS,azR,azQ){var
-azT=azR;for(;;){if(azT===0)return 0;var
-azU=jC(azS,azT,azQ);if(azU)return[0,azU[1]];azT=iE(azS,azT,i3)}}function
-jE(azO,azN){return au(caml_string_compare,ab(function(azP){return iH(azO,azP)},bf(jB(azO,azN)[1])))}function
-jF(azI,azH){var
-azJ=iE(azI,azH,i7);return azJ===0?0:ab(function(azK){var
-azL=ab(function(azM){return iH(azI,azM)},bf(iD(azI,iE(azI,azK,1))));return[0,iH(azI,iE(azI,azK,0)),azL]},bf(iD(azI,azJ)))}function
-jG(azB,azA,azz){return iF(azB,azA,i7,iK(azB,bg(ab(function(azD){var
-azE=azD[1],azF=iK(azB,bg(ab(function(azG){return iM(azB,azG)},au(caml_string_compare,azD[2]))));return jn(azB,iJ(azB,azE),azF)},ao(function(azC){return 0!==azC[2]?1:0})(azz)))))}function
-jH(azx,azw){return ab(function(azy){return azy[1]},jF(azx,azw))}function
-jI(azt,azs,azr){try{var
-azn=jF(azt,azs);for(;;){if(!azn)throw caml_maybe_attach_backtrace(Not_found,1);var
-azp=azn[1],azo=azn[2],azq=azp[2];if(0===caml_compare(azp[1],azr))return azq;azn=azo}}catch(azv){var
-azu=caml_wrap_exception(azv);if(azu===Not_found)return 0;throw caml_maybe_attach_backtrace(azu,0)}}function
-jJ(azk,azj,azi){return an(function(azl){var
-azm=azl[1];return ak(azi,azl[2])?[0,azm]:0},jF(azk,azj))}function
-jK(azf){var
-azg=iK(azf,[0]),azh=[0,[0,iK(azf,[0]),azg]];return iz(azf,azf[8][16],azh)}function
-jL(azc,azb){var
-azd=js(azc);return ao(function(aze){return iE(azc,aze,i3)===azb?1:0})(azd)}function
-jM(ay9,ay8){var
-ay7=iE(ay9,ay8,i3),ay_=ay7===0?0:jc(ay9,ay7)[1],ay$=jc(ay9,ay8)[2];iF(ay9,ay8,i5,ix(jd(ay_+O(ji(ay9,ay8))|0,ay$)));return ae(function(aza){return jM(ay9,aza)},jL(ay9,ay8))}function
-jN(ayx,ayw,ayv,ayu,ayt,ays,ayr){var
-ay2=ayx[8],ayy=jq(ayx,ayv);a:{if(ayy){var
-ayz=ayy[1],ayA=iE(ayx,ayz,1),ayo=1-iw(ayA);b:{if(ayo){var
-ayp=ayA!==0?1:0;if(ayp){var
-ayB=je(ayx,iA(ayx,ayA));break b}var
-ayq=ayp}else
+aAc=jz;break a}var
+aAc=jt}var
+aAd=jj(az$,aAa),az9=iD(az$,je(az$,aAa),i9),aAe=az9===0?0:ab(function(aAk){return iG(az$,iD(az$,aAk,0))},bf(iC(az$,az9))),aAf=aR(ju,aAe),aAg=aR(jv,jh(az$,aAa)),aAh=jf(az$,aAa),aAi=aAj===0?jw:jf(az$,aAj);return caml_call6(dX(jx),aAi,aAc,aAh,aAg,aAf,aAd)}function
+jA(az6,az5){var
+az7=iD(az6,az5,i3),az8=iC(az6,iD(az6,az7,1));return[0,iC(az6,iD(az6,az7,0)),az8]}function
+jB(az0,azZ,azY){var
+az1=jA(az0,azZ),az3=az1[1],az4=0,az2=az1[2];for(;;){if(az3.length-1<=az4)return 0;if(caml_check_bound(az3,az4)[1+az4]===azY)return[0,caml_check_bound(az2,az4)[1+az4]];az4=az4+1|0}}function
+jC(azV,azU,azT){var
+azW=azU;for(;;){if(azW===0)return 0;var
+azX=jB(azV,azW,azT);if(azX)return[0,azX[1]];azW=iD(azV,azW,i2)}}function
+jD(azR,azQ){return au(caml_string_compare,ab(function(azS){return iG(azR,azS)},bf(jA(azR,azQ)[1])))}function
+jE(azL,azK){var
+azM=iD(azL,azK,i6);return azM===0?0:ab(function(azN){var
+azO=ab(function(azP){return iG(azL,azP)},bf(iC(azL,iD(azL,azN,1))));return[0,iG(azL,iD(azL,azN,0)),azO]},bf(iC(azL,azM)))}function
+jF(azE,azD,azC){return iE(azE,azD,i6,iJ(azE,bg(ab(function(azG){var
+azH=azG[1],azI=iJ(azE,bg(ab(function(azJ){return iL(azE,azJ)},au(caml_string_compare,azG[2]))));return jm(azE,iI(azE,azH),azI)},ao(function(azF){return 0!==azF[2]?1:0})(azC)))))}function
+jG(azA,azz){return ab(function(azB){return azB[1]},jE(azA,azz))}function
+jH(azw,azv,azu){try{var
+azq=jE(azw,azv);for(;;){if(!azq)throw caml_maybe_attach_backtrace(Not_found,1);var
+azs=azq[1],azr=azq[2],azt=azs[2];if(0===caml_compare(azs[1],azu))return azt;azq=azr}}catch(azy){var
+azx=caml_wrap_exception(azy);if(azx===Not_found)return 0;throw caml_maybe_attach_backtrace(azx,0)}}function
+jI(azn,azm,azl){return an(function(azo){var
+azp=azo[1];return ak(azl,azo[2])?[0,azp]:0},jE(azn,azm))}function
+jJ(azi){var
+azj=iJ(azi,[0]),azk=[0,[0,iJ(azi,[0]),azj]];return iy(azi,azi[8][16],azk)}function
+jK(azf,aze){var
+azg=jr(azf);return ao(function(azh){return iD(azf,azh,i2)===aze?1:0})(azg)}function
+jL(aza,ay$){var
+ay_=iD(aza,ay$,i2),azb=ay_===0?0:jb(aza,ay_)[1],azc=jb(aza,ay$)[2];iE(aza,ay$,i4,iw(jc(azb+O(jh(aza,ay$))|0,azc)));return ae(function(azd){return jL(aza,azd)},jK(aza,ay$))}function
+jM(ayA,ayz,ayy,ayx,ayw,ayv,ayu){var
+ay5=ayA[8],ayB=jp(ayA,ayy);a:{if(ayB){var
+ayC=ayB[1],ayD=iD(ayA,ayC,1),ayr=1-iv(ayD);b:{if(ayr){var
+ays=ayD!==0?1:0;if(ays){var
+ayE=jd(ayA,iz(ayA,ayD));break b}var
+ayt=ays}else
 var
-ayq=ayo;var
-ayB=ayq}if(ayB){var
-ayC=[0,iE(ayx,ayz,1)];break a}}var
-ayC=0}if(ayC){var
-ayD=ayC[1],ayE=caml_notequal(ji(ayx,ayD),ayt);if(ayE)var
-ayF=ayE;else
+ayt=ayr;var
+ayE=ayt}if(ayE){var
+ayF=[0,iD(ayA,ayC,1)];break a}}var
+ayF=0}if(ayF){var
+ayG=ayF[1],ayH=caml_notequal(jh(ayA,ayG),ayw);if(ayH)var
+ayI=ayH;else
 var
-ayZ=ayw!==iE(ayx,ayD,i3)?1:0,ayF=ayZ||(jc(ayx,ayD)[2]!==ayu?1:0);var
-ayI=ayF,ayH=iA(ayx,ayD),ayG=ayD}else{var
-ay0=iz(ayx,ay2[15],[0,caml_make_vect(6,0)]),ay1=iz(ayx,ay0,[0,caml_make_vect(9,0)]);jr(ayx,ayv,ay1);var
-ayI=0,ayH=ay0,ayG=ay1}var
-ayJ=iD(ayx,ayG),ayK=iD(ayx,ayH);caml_check_bound(ayJ,0)[1+i3]=ayw;if(caml_check_bound(ayJ,1)[1+i4]===0){var
-ayL=jK(ayx);caml_check_bound(ayJ,1)[1+i4]=ayL}var
-ayM=ix(jd(0,ayu));caml_check_bound(ayJ,2)[1+i5]=ayM;var
-ayN=iK(ayx,bg(ab(function(ay6){return iJ(ayx,ay6)},ayt)));caml_check_bound(ayJ,3)[1+i6]=ayN;var
-ayO=iM(ayx,ayv);caml_check_bound(ayJ,5)[1+i8]=ayO;var
-ayP=iJ(ayx,ayr);caml_check_bound(ayJ,6)[1+i9]=ayP;var
-ayQ=caml_check_bound(ayJ,7)[1+i_]===0?[0]:iD(ayx,caml_check_bound(ayJ,7)[1+i_]),ayR=ab(function(ay3){var
-ay4=bh(function(ay5){return iH(ayx,iE(ayx,ay5,0))===ay3?1:0},ayQ);return ay4?ay4[1]:jn(ayx,iM(ayx,ay3),iv)},ays),ayS=0===ayR?iv:iK(ayx,bg(ayR));caml_check_bound(ayJ,7)[1+i_]=ayS;if(ayw===0)var
-ayT=jq(ayx,jO),ayU=ayT?iE(ayx,ayT[1],1):iv,ayV=ayU;else
+ay2=ayz!==iD(ayA,ayG,i2)?1:0,ayI=ay2||(jb(ayA,ayG)[2]!==ayx?1:0);var
+ayL=ayI,ayK=iz(ayA,ayG),ayJ=ayG}else{var
+ay3=iy(ayA,ay5[15],[0,caml_make_vect(6,0)]),ay4=iy(ayA,ay3,[0,caml_make_vect(9,0)]);jq(ayA,ayy,ay4);var
+ayL=0,ayK=ay3,ayJ=ay4}var
+ayM=iC(ayA,ayJ),ayN=iC(ayA,ayK);caml_check_bound(ayM,0)[1+i2]=ayz;if(caml_check_bound(ayM,1)[1+i3]===0){var
+ayO=jJ(ayA);caml_check_bound(ayM,1)[1+i3]=ayO}var
+ayP=iw(jc(0,ayx));caml_check_bound(ayM,2)[1+i4]=ayP;var
+ayQ=iJ(ayA,bg(ab(function(ay9){return iI(ayA,ay9)},ayw)));caml_check_bound(ayM,3)[1+i5]=ayQ;var
+ayR=iL(ayA,ayy);caml_check_bound(ayM,5)[1+i7]=ayR;var
+ayS=iI(ayA,ayu);caml_check_bound(ayM,6)[1+i8]=ayS;var
+ayT=caml_check_bound(ayM,7)[1+i9]===0?[0]:iC(ayA,caml_check_bound(ayM,7)[1+i9]),ayU=ab(function(ay6){var
+ay7=bh(function(ay8){return iG(ayA,iD(ayA,ay8,0))===ay6?1:0},ayT);return ay7?ay7[1]:jm(ayA,iL(ayA,ay6),iu)},ayv),ayV=0===ayU?iu:iJ(ayA,bg(ayU));caml_check_bound(ayM,7)[1+i9]=ayV;if(ayz===0)var
+ayW=jp(ayA,jN),ayX=ayW?iD(ayA,ayW[1],1):iu,ayY=ayX;else
 var
-ayV=iA(ayx,ayw);caml_check_bound(ayK,0)[1+i3]=ayV;if(caml_check_bound(ayK,1)[1+i4]===0){var
-ayW=jK(ayx);caml_check_bound(ayK,1)[1+i4]=ayW}var
-ayX=ix(jd(9,0));caml_check_bound(ayK,2)[1+i5]=ayX;var
-ayY=iK(ayx,[0]);caml_check_bound(ayK,3)[1+i6]=ayY;caml_check_bound(ayK,5)[1+i8]=ayG;jM(ayx,ayG);return[0,ayG,ayI]}var
-jQ=[num_248,jP,caml_fresh_oo_id(0)];function
-jR(aym){var
-ayn=aym[2];return caml_check_bound(aym[1],ayn)[1+ayn][1]}function
-jS(ayk){if((ayk[2]+1|0)>=ayk[1].length-1)return 11;var
-ayl=ayk[2]+1|0;return caml_check_bound(ayk[1],ayl)[1+ayl][1]}function
-jT(ayi){var
-ayj=ayi[2];return caml_check_bound(ayi[1],ayj)[1+ayj]}function
-jU(ayh){if(ayh[2]<(ayh[1].length-2|0))ayh[2]=ayh[2]+1|0}function
-jV(ayg,ayf){throw caml_maybe_attach_backtrace([0,jQ,jT(ayg)[2],ayf],1)}function
-jW(ayd){if(0===ayd[2])return 0;var
-aye=ayd[2]-1|0;return caml_check_bound(ayd[1],aye)[1+aye][3]}function
-jX(ayc,ayb,aya){return caml_equal(jR(ayc),ayb)?jU(ayc):jV(ayc,aya)}function
-jY(ax9,ax8){var
-ax_=jR(ax9);if(typeof
-ax_!=="number"&&0===ax_[0]){var
-ax$=ax_[1];jU(ax9);return ax$}return jV(ax9,ax8)}function
-jZ(axM){var
-axN=[0,0];for(;;){var
-axO=jR(axM);a:if(typeof
-axO==="number"){if(2===axO)jU(axM);else{if(11>axO)break a;jV(axM,j0)}return[6,Y(axN[1])]}var
-axP=axN[1],axR=jT(axM),axS=axR[1];if(typeof
-axS==="number")switch(axS){case
-9:jU(axM);var
-axQ=j2;break;case
+ayY=iz(ayA,ayz);caml_check_bound(ayN,0)[1+i2]=ayY;if(caml_check_bound(ayN,1)[1+i3]===0){var
+ayZ=jJ(ayA);caml_check_bound(ayN,1)[1+i3]=ayZ}var
+ay0=iw(jc(9,0));caml_check_bound(ayN,2)[1+i4]=ay0;var
+ay1=iJ(ayA,[0]);caml_check_bound(ayN,3)[1+i5]=ay1;caml_check_bound(ayN,5)[1+i7]=ayJ;jL(ayA,ayJ);return[0,ayJ,ayL]}var
+jP=[num_248,jO,caml_fresh_oo_id(0)];function
+jQ(ayp){var
+ayq=ayp[2];return caml_check_bound(ayp[1],ayq)[1+ayq][1]}function
+jR(ayn){if((ayn[2]+1|0)>=ayn[1].length-1)return 11;var
+ayo=ayn[2]+1|0;return caml_check_bound(ayn[1],ayo)[1+ayo][1]}function
+jS(ayl){var
+aym=ayl[2];return caml_check_bound(ayl[1],aym)[1+aym]}function
+jT(ayk){if(ayk[2]<(ayk[1].length-2|0))ayk[2]=ayk[2]+1|0}function
+jU(ayj,ayi){throw caml_maybe_attach_backtrace([0,jP,jS(ayj)[2],ayi],1)}function
+jV(ayg){if(0===ayg[2])return 0;var
+ayh=ayg[2]-1|0;return caml_check_bound(ayg[1],ayh)[1+ayh][3]}function
+jW(ayf,aye,ayd){return caml_equal(jQ(ayf),aye)?jT(ayf):jU(ayf,ayd)}function
+jX(aya,ax$){var
+ayb=jQ(aya);if(typeof
+ayb!=="number"&&0===ayb[0]){var
+ayc=ayb[1];jT(aya);return ayc}return jU(aya,ax$)}function
+jY(axP){var
+axQ=[0,0];for(;;){var
+axR=jQ(axP);a:if(typeof
+axR==="number"){if(2===axR)jT(axP);else{if(11>axR)break a;jU(axP,jZ)}return[6,Y(axQ[1])]}var
+axS=axQ[1],axU=jS(axP),axV=axU[1];if(typeof
+axV==="number")switch(axV){case
+9:jT(axP);var
+axT=j1;break;case
 0:case
-1:jU(axM);var
-axQ=jZ(axM);break;default:var
-axQ=jV(axM,j1)}else
-switch(axS[0]){case
+1:jT(axP);var
+axT=jY(axP);break;default:var
+axT=jU(axP,j0)}else
+switch(axV[0]){case
 0:var
-axT=axS[1],axQ=axT!==str_false?axT!==str_nil?axT!==str_true?(jU(axM),[5,axT]):(jU(axM),1):(jU(axM),0):(jU(axM),2);break;case
+axW=axV[1],axT=axW!==str_false?axW!==str_nil?axW!==str_true?(jT(axP),[5,axW]):(jT(axP),1):(jT(axP),0):(jT(axP),2);break;case
 1:var
-axU=axS[1];jU(axM);a:b:{var
-axW=axU,axV=axR[3];for(;;){var
-axX=jT(axM)[1];if(typeof
-axX==="number")break b;if(1!==axX[0])break a;var
-axY=axX[1];if(jT(axM)[2]!==axV)break;var
-axZ=jT(axM)[3];jU(axM);axW=axW+axY;axV=axZ}break a}var
-axQ=[5,axW];break;case
+axX=axV[1];jT(axP);a:b:{var
+axZ=axX,axY=axU[3];for(;;){var
+ax0=jS(axP)[1];if(typeof
+ax0==="number")break b;if(1!==ax0[0])break a;var
+ax1=ax0[1];if(jS(axP)[2]!==axY)break;var
+ax2=jS(axP)[3];jT(axP);axZ=axZ+ax1;axY=ax2}break a}var
+axT=[5,axZ];break;case
 2:var
-ax0=axS[1];jU(axM);var
-axQ=[5,ax0];break;case
+ax3=axV[1];jT(axP);var
+axT=[5,ax3];break;case
 3:var
-ax1=axS[1];jU(axM);var
-axQ=[0,ax1];break;case
+ax4=axV[1];jT(axP);var
+axT=[0,ax4];break;case
 4:var
-ax2=axS[2],ax3=axS[1];jU(axM);var
-axQ=[1,ax3,ax2];break;case
+ax5=axV[2],ax6=axV[1];jT(axP);var
+axT=[1,ax6,ax5];break;case
 5:var
-ax4=axS[1];jU(axM);var
-axQ=[2,ax4];break;case
+ax7=axV[1];jT(axP);var
+axT=[2,ax7];break;case
 6:var
-ax5=axS[1];jU(axM);var
-axQ=[3,ax5];break;case
+ax8=axV[1];jT(axP);var
+axT=[3,ax8];break;case
 7:var
-ax6=axS[1];jU(axM);var
-axQ=[4,ax6];break;default:var
-ax7=axS[1];jU(axM);var
-axQ=[5,ax7]}axN[1]=[0,axQ,axP]}}function
-j3(axD){var
-axE=jR(axD);if(typeof
-axE==="number"){if(0===axE){jU(axD);return[0,jZ(axD)]}}else
-switch(axE[0]){case
+ax9=axV[1];jT(axP);var
+axT=[4,ax9];break;default:var
+ax_=axV[1];jT(axP);var
+axT=[5,ax_]}axQ[1]=[0,axT,axS]}}function
+j2(axG){var
+axH=jQ(axG);if(typeof
+axH==="number"){if(0===axH){jT(axG);return[0,jY(axG)]}}else
+switch(axH[0]){case
 3:var
-axF=axE[1];jU(axD);return[0,[0,axF]];case
+axI=axH[1];jT(axG);return[0,[0,axI]];case
 4:var
-axG=axE[2],axH=axE[1];jU(axD);return[0,[1,axH,axG]];case
+axJ=axH[2],axK=axH[1];jT(axG);return[0,[1,axK,axJ]];case
 5:var
-axI=axE[1];jU(axD);return[0,[2,axI]];case
+axL=axH[1];jT(axG);return[0,[2,axL]];case
 6:var
-axJ=axE[1];jU(axD);return[0,[3,axJ]];case
+axM=axH[1];jT(axG);return[0,[3,axM]];case
 7:var
-axK=axE[1];jU(axD);return[0,[4,axK]];case
+axN=axH[1];jT(axG);return[0,[4,axN]];case
 8:var
-axL=axE[1];jU(axD);return[0,[5,axL]]}return 0}function
-j4(axC,axB,axA){return[0,axC,[0,axB,axA]]}function
-j5(awZ){var
-aw0=jR(awZ),aw1=jS(awZ);if(typeof
-aw0!=="number"&&0===aw0[0]&&typeof
-aw1==="number"&&6===aw1){var
-aw2=aw0[1],aw3=jT(awZ)[2];jU(awZ);jU(awZ);var
-aw4=j5(awZ);return j4([2,aw2,aw4],aw3,aw4[2][2])}var
-axp=j6(awZ),axq=jR(awZ);a:{if(typeof
-axq!=="number"&&1===axq[0]){var
-axr=by(16),axs=[0,0];for(;;){var
-axt=jR(awZ);b:{if(typeof
+axO=axH[1];jT(axG);return[0,[5,axO]]}return 0}function
+j3(axF,axE,axD){return[0,axF,[0,axE,axD]]}function
+j4(aw2){var
+aw3=jQ(aw2),aw4=jR(aw2);if(typeof
+aw3!=="number"&&0===aw3[0]&&typeof
+aw4==="number"&&6===aw4){var
+aw5=aw3[1],aw6=jS(aw2)[2];jT(aw2);jT(aw2);var
+aw7=j4(aw2);return j3([2,aw5,aw7],aw6,aw7[2][2])}var
+axs=j5(aw2),axt=jQ(aw2);a:{if(typeof
 axt!=="number"&&1===axt[0]){var
-axu=1;break b}var
-axu=0}if(!axu)break;var
-axv=jR(awZ);b:if(typeof
-axv!=="number"&&1===axv[0]){bH(axr,axv[1]);break b}jU(awZ);var
-axw=axs[1];axs[1]=[0,j6(awZ),axw]}var
-axx=jW(awZ),axy=axp[2][1],axz=Y(axs[1]),aw5=j4([3,axp,bz(axr),axz],axy,axx);break a}var
-aw5=axp}if(8!==jR(awZ))return aw5;var
-aw6=aw5[1];if(3!==aw6[0])return jV(awZ,j_);var
-aw8=[0,[0,[0,aw6[2],aw6[3],aw5[2]],0]],aw7=aw6[1];for(;;){if(8!==jR(awZ)){var
-aw$=jW(awZ),axa=aw5[2][1];return j4([4,aw7,Y(aw8[1])],axa,aw$)}jU(awZ);var
-aw9=aw8[1],axb=jT(awZ)[2],axc=jR(awZ);a:{if(typeof
-axc==="number"){if(9===axc){jU(awZ);var
-axd=j7(awZ),aw_=[0,ka,[0,axd,0],[0,axb,jW(awZ)]];break a}}else
-switch(axc[0]){case
+axu=by(16),axv=[0,0];for(;;){var
+axw=jQ(aw2);b:{if(typeof
+axw!=="number"&&1===axw[0]){var
+axx=1;break b}var
+axx=0}if(!axx)break;var
+axy=jQ(aw2);b:if(typeof
+axy!=="number"&&1===axy[0]){bH(axu,axy[1]);break b}jT(aw2);var
+axz=axv[1];axv[1]=[0,j5(aw2),axz]}var
+axA=jV(aw2),axB=axs[2][1],axC=Y(axv[1]),aw8=j3([3,axs,bz(axu),axC],axB,axA);break a}var
+aw8=axs}if(8!==jQ(aw2))return aw8;var
+aw9=aw8[1];if(3!==aw9[0])return jU(aw2,j9);var
+aw$=[0,[0,[0,aw9[2],aw9[3],aw8[2]],0]],aw_=aw9[1];for(;;){if(8!==jQ(aw2)){var
+axc=jV(aw2),axd=aw8[2][1];return j3([4,aw_,Y(aw$[1])],axd,axc)}jT(aw2);var
+axa=aw$[1],axe=jS(aw2)[2],axf=jQ(aw2);a:{if(typeof
+axf==="number"){if(9===axf){jT(aw2);var
+axg=j6(aw2),axb=[0,j$,[0,axg,0],[0,axe,jV(aw2)]];break a}}else
+switch(axf[0]){case
 0:var
-axe=axc[1];jU(awZ);var
-aw_=[0,axe,0,[0,axb,jW(awZ)]];break a;case
+axh=axf[1];jT(aw2);var
+axb=[0,axh,0,[0,axe,jV(aw2)]];break a;case
 1:var
-axf=by(16),axg=[0,0];for(;;){var
-axh=jR(awZ);b:{if(typeof
-axh!=="number"&&1===axh[0]){var
-axi=1;break b}var
-axi=0}if(!axi)break;var
-axj=jR(awZ);b:if(typeof
-axj!=="number"&&1===axj[0]){bH(axf,axj[1]);break b}jU(awZ);var
-axk=axg[1];axg[1]=[0,j6(awZ),axk]}var
-axl=[0,axb,jW(awZ)],axm=Y(axg[1]),aw_=[0,bz(axf),axm,axl];break a;case
+axi=by(16),axj=[0,0];for(;;){var
+axk=jQ(aw2);b:{if(typeof
+axk!=="number"&&1===axk[0]){var
+axl=1;break b}var
+axl=0}if(!axl)break;var
+axm=jQ(aw2);b:if(typeof
+axm!=="number"&&1===axm[0]){bH(axi,axm[1]);break b}jT(aw2);var
+axn=axj[1];axj[1]=[0,j5(aw2),axn]}var
+axo=[0,axe,jV(aw2)],axp=Y(axj[1]),axb=[0,bz(axi),axp,axo];break a;case
 2:var
-axn=axc[1];jU(awZ);var
-axo=j7(awZ),aw_=[0,axn,[0,axo,0],[0,axb,jW(awZ)]];break a}var
-aw_=jV(awZ,j$)}aw8[1]=[0,aw_,aw9]}}function
-j6(awT){var
-awU=j7(awT);for(;;){var
-awV=jR(awT);if(typeof
-awV==="number"){if(9===awV){jU(awT);var
-awW=j7(awT);awU=j4([3,awU,kb,[0,awW,0]],awU[2][1],awW[2][2]);continue}}else if(2===awV[0]){var
-awX=awV[1];jU(awT);var
-awY=j7(awT);awU=j4([3,awU,awX,[0,awY,0]],awU[2][1],awY[2][2]);continue}return awU}}function
-j7(awz){var
-awF=jT(awz)[2],awG=j3(awz);a:if(awG)var
-awH=awG[1],awE=j4([0,awH],awF,jW(awz));else{var
-awI=jR(awz);if(typeof
-awI==="number")switch(awI){case
-1:jU(awz);var
-awJ=j5(awz);jX(awz,2,kd);var
-awK=[0,awF,jW(awz)],awE=[0,awJ[1],awK];break a;case
+axq=axf[1];jT(aw2);var
+axr=j6(aw2),axb=[0,axq,[0,axr,0],[0,axe,jV(aw2)]];break a}var
+axb=jU(aw2,j_)}aw$[1]=[0,axb,axa]}}function
+j5(awW){var
+awX=j6(awW);for(;;){var
+awY=jQ(awW);if(typeof
+awY==="number"){if(9===awY){jT(awW);var
+awZ=j6(awW);awX=j3([3,awX,ka,[0,awZ,0]],awX[2][1],awZ[2][2]);continue}}else if(2===awY[0]){var
+aw0=awY[1];jT(awW);var
+aw1=j6(awW);awX=j3([3,awX,aw0,[0,aw1,0]],awX[2][1],aw1[2][2]);continue}return awX}}function
+j6(awC){var
+awI=jS(awC)[2],awJ=j2(awC);a:if(awJ)var
+awK=awJ[1],awH=j3([0,awK],awI,jV(awC));else{var
+awL=jQ(awC);if(typeof
+awL==="number")switch(awL){case
+1:jT(awC);var
+awM=j4(awC);jW(awC,2,kc);var
+awN=[0,awI,jV(awC)],awH=[0,awM[1],awN];break a;case
 3:var
-awM=jT(awz)[2];jU(awz);var
-awN=[0,0];for(;;){if(10!==jR(awz))break;jU(awz);var
-awO=awN[1];awN[1]=[0,jY(awz,ke),awO]}if(0!==awN[1]){var
-awP=jR(awz);b:{if(typeof
-awP==="number"){if(4===awP)break b;if(9===awP){jU(awz);break b}}jV(awz,kg)}}var
-awQ=j8(awz),awR=j9(awz);jX(awz,4,kf);var
-awS=jW(awz),awE=j4([5,Y(awN[1]),awQ,awR],awM,awS);break a}else if(0===awI[0]){var
-awL=awI[1];jU(awz);var
-awE=j4([1,awL],awF,jW(awz));break a}var
-awE=jV(awz,kc)}var
-awA=awE;for(;;){var
-awB=jR(awz);if(typeof
-awB!=="number"&&0===awB[0]){var
-awC=awB[1],awD=jT(awz)[3];jU(awz);awA=j4([3,awA,awC,0],awA[2][1],awD);continue}return awA}}function
-j8(awu){if(9!==jR(awu))return 0;jU(awu);var
-awv=[0,0];for(;;){var
-aww=jR(awu);a:{if(typeof
-aww!=="number"&&0===aww[0]){var
-awx=1;break a}var
-awx=0}if(!awx){jX(awu,9,ki);return Y(awv[1])}var
-awy=awv[1];awv[1]=[0,jY(awu,kh),awy]}}function
-j9(awl){var
-awm=0;a:for(;;){var
-awn=jR(awl);if(typeof
-awn==="number")switch(awn){case
+awP=jS(awC)[2];jT(awC);var
+awQ=[0,0];for(;;){if(10!==jQ(awC))break;jT(awC);var
+awR=awQ[1];awQ[1]=[0,jX(awC,kd),awR]}if(0!==awQ[1]){var
+awS=jQ(awC);b:{if(typeof
+awS==="number"){if(4===awS)break b;if(9===awS){jT(awC);break b}}jU(awC,kf)}}var
+awT=j7(awC),awU=j8(awC);jW(awC,4,ke);var
+awV=jV(awC),awH=j3([5,Y(awQ[1]),awT,awU],awP,awV);break a}else if(0===awL[0]){var
+awO=awL[1];jT(awC);var
+awH=j3([1,awO],awI,jV(awC));break a}var
+awH=jU(awC,kb)}var
+awD=awH;for(;;){var
+awE=jQ(awC);if(typeof
+awE!=="number"&&0===awE[0]){var
+awF=awE[1],awG=jS(awC)[3];jT(awC);awD=j3([3,awD,awF,0],awD[2][1],awG);continue}return awD}}function
+j7(awx){if(9!==jQ(awx))return 0;jT(awx);var
+awy=[0,0];for(;;){var
+awz=jQ(awx);a:{if(typeof
+awz!=="number"&&0===awz[0]){var
+awA=1;break a}var
+awA=0}if(!awA){jW(awx,9,kh);return Y(awy[1])}var
+awB=awy[1];awy[1]=[0,jX(awx,kg),awB]}}function
+j8(awo){var
+awp=0;a:for(;;){var
+awq=jQ(awo);if(typeof
+awq==="number")switch(awq){case
 5:break a;case
 4:case
-11:return Y(awm)}var
-awo=j5(awl),awp=jR(awl);if(typeof
-awp==="number")switch(awp){case
-7:jU(awl);awm=[0,[0,awo],awm];continue;case
+11:return Y(awp)}var
+awr=j4(awo),aws=jQ(awo);if(typeof
+aws==="number")switch(aws){case
+7:jT(awo);awp=[0,[0,awr],awp];continue;case
 4:case
-11:return Y([0,[0,awo],awm])}return jV(awl,kj)}var
-awq=jT(awl)[2];jU(awl);var
-awr=j5(awl),aws=[1,awr,[0,awq,awr[2][2]]];if(7===jR(awl))jU(awl);var
-awt=jR(awl);a:{b:if(typeof
-awt==="number"){if(4!==awt&&11>awt)break b;break a}jV(awl,kk)}return Y([0,aws,awm])}function
-kq(awg){var
-awh=jR(awg),awi=jS(awg);a:if(typeof
-awh!=="number"&&2===awh[0]&&awh[1]===str$25&&typeof
-awi!=="number"&&1===awi[0]){if(awi[1]!=="primitive:")break a;jU(awg);jU(awg);var
-awj=jR(awg);if(typeof
-awj!=="number"&&3===awj[0]){var
-awk=awj[1];jU(awg);jX(awg,kt,ks);return[0,awk]}return jV(awg,kr)}return 0}function
-ku(au7){try{var
-au2=caml_ml_string_length(au7),au3=[0,0],au4=function(awf){return awf<au2?caml_string_get(au7,awf):0},au5=function(awe,awd,awc){au3[1]=[0,[0,awe,awd,awc],au3[1]]},au6=function(avF,avE,avD){function
-avG(av_,av9){var
-awa=av_,av$=0;for(;;){if(awa<au2&&io(caml_string_get(au7,awa))<av9){var
-awb=ii(av$,av9,io(caml_string_get(au7,awa)));awa=awa+1|0;av$=awb;continue}return[0,awa,av$]}}var
-avH=avG(avD,10),avI=avH[2],avJ=avH[1];a:{if(num_114===au4(avJ)&&36>io(au4(avJ+1|0))){var
-av3=ij(0,avI);if(av3){var
-av4=av3[1];if(2<=av4&&36>=av4){var
-av5=avG(avJ+1|0,av4),avM=av4,avL=av5[2],avK=av5[1];break a}}throw caml_maybe_attach_backtrace([0,ih,avJ,ip],1)}var
-avM=10,avL=avI,avK=avJ}function
-avN(av7,av6){var
-av8=ij(avE,av6);return av8?au5([3,av8[1]],avF,av7):au5([4,avE,av6],avF,av7)}if(10===avM&&46===au4(avK)&&il(au4(avK+1|0))){var
-avO=[0,avK+1|0];for(;;){if(!il(au4(avO[1])))break;avO[1]++}var
-avP=num_101===au4(avO[1])?1:0;if(avP){var
-avQ=il(au4(avO[1]+1|0));if(avQ)var
-avR=avQ;else
+11:return Y([0,[0,awr],awp])}return jU(awo,ki)}var
+awt=jS(awo)[2];jT(awo);var
+awu=j4(awo),awv=[1,awu,[0,awt,awu[2][2]]];if(7===jQ(awo))jT(awo);var
+aww=jQ(awo);a:{b:if(typeof
+aww==="number"){if(4!==aww&&11>aww)break b;break a}jU(awo,kj)}return Y([0,awv,awp])}function
+kp(awj){var
+awk=jQ(awj),awl=jR(awj);a:if(typeof
+awk!=="number"&&2===awk[0]&&awk[1]===str$25&&typeof
+awl!=="number"&&1===awl[0]){if(awl[1]!=="primitive:")break a;jT(awj);jT(awj);var
+awm=jQ(awj);if(typeof
+awm!=="number"&&3===awm[0]){var
+awn=awm[1];jT(awj);jW(awj,ks,kr);return[0,awn]}return jU(awj,kq)}return 0}function
+kt(au_){try{var
+au5=caml_ml_string_length(au_),au6=[0,0],au7=function(awi){return awi<au5?caml_string_get(au_,awi):0},au8=function(awh,awg,awf){au6[1]=[0,[0,awh,awg,awf],au6[1]]},au9=function(avI,avH,avG){function
+avJ(awb,awa){var
+awd=awb,awc=0;for(;;){if(awd<au5&&im(caml_string_get(au_,awd))<awa){var
+awe=ih(awc,awa,im(caml_string_get(au_,awd)));awd=awd+1|0;awc=awe;continue}return[0,awd,awc]}}var
+avK=avJ(avG,10),avL=avK[2],avM=avK[1];a:{if(num_114===au7(avM)&&36>im(au7(avM+1|0))){var
+av6=ii(0,avL);if(av6){var
+av7=av6[1];if(2<=av7&&36>=av7){var
+av8=avJ(avM+1|0,av7),avP=av7,avO=av8[2],avN=av8[1];break a}}throw caml_maybe_attach_backtrace([0,ig,avM,io],1)}var
+avP=10,avO=avL,avN=avM}function
+avQ(av_,av9){var
+av$=ii(avH,av9);return av$?au8([3,av$[1]],avI,av_):au8([4,avH,av9],avI,av_)}if(10===avP&&46===au7(avN)&&ik(au7(avN+1|0))){var
+avR=[0,avN+1|0];for(;;){if(!ik(au7(avR[1])))break;avR[1]++}var
+avS=num_101===au7(avR[1])?1:0;if(avS){var
+avT=ik(au7(avR[1]+1|0));if(avT)var
+avU=avT;else
 var
-avU=45===au4(avO[1]+1|0)?1:0,avR=avU?il(au4(avO[1]+2|0)):avU}else
+avX=45===au7(avR[1]+1|0)?1:0,avU=avX?ik(au7(avR[1]+2|0)):avX}else
 var
-avR=avP;if(avR){avO[1]=avO[1]+2|0;for(;;){if(!il(au4(avO[1])))break;avO[1]++}}var
-avS=aP(au7,avF,avO[1]-avF|0),avT=avO[1];return au5([5,caml_float_of_string(avS)],avF,avT)}if(num_101===au4(avK)&&il(au4(avK+1|0))){var
-avV=[0,avK+1|0],avW=[0,0];for(;;){if(!il(au4(avV[1])))break;var
-avX=io(caml_string_get(au7,avV[1]));avW[1]=(avW[1]*10|0)+avX|0;avV[1]++}var
-avY=[0,avL],av0=avW[1],avZ=1;if(av0>=1){var
-av1=avZ;for(;;){avY[1]=ii(avY[1],avM,0);var
-av2=av1+1|0;if(av0===av1)break;av1=av2}}return avN(avV[1],avY[1])}return avN(avK,avL)};(function(avi){var
-avj=avi;for(;;){a:b:{c:d:{e:{var
-ave=avj;for(;;){if(au2<=ave)break b;var
-avf=caml_string_get(au7,ave)-9|0;if(4<avf>>>0){var
-avg=avf-23|0;if(2<avg>>>0)break d;switch(avg){case
+avU=avS;if(avU){avR[1]=avR[1]+2|0;for(;;){if(!ik(au7(avR[1])))break;avR[1]++}}var
+avV=aP(au_,avI,avR[1]-avI|0),avW=avR[1];return au8([5,caml_float_of_string(avV)],avI,avW)}if(num_101===au7(avN)&&ik(au7(avN+1|0))){var
+avY=[0,avN+1|0],avZ=[0,0];for(;;){if(!ik(au7(avY[1])))break;var
+av0=im(caml_string_get(au_,avY[1]));avZ[1]=(avZ[1]*10|0)+av0|0;avY[1]++}var
+av1=[0,avO],av3=avZ[1],av2=1;if(av3>=1){var
+av4=av2;for(;;){av1[1]=ih(av1[1],avP,0);var
+av5=av4+1|0;if(av3===av4)break;av4=av5}}return avQ(avY[1],av1[1])}return avQ(avN,avO)};(function(avl){var
+avm=avl;for(;;){a:b:{c:d:{e:{var
+avh=avm;for(;;){if(au5<=avh)break b;var
+avi=caml_string_get(au_,avh)-9|0;if(4<avi>>>0){var
+avj=avi-23|0;if(2<avj>>>0)break d;switch(avj){case
 0:break;case
 1:break e;default:var
-avh=aY(au7,ave+1|0,34);if(!avh)throw caml_maybe_attach_backtrace([0,ih,ave,iq],1);ave=avh[1]+1|0;continue}}else if(2===avf)break;ave=ave+1|0}break c}break c}break a}if(au2<=ave)return au5(11,au2,au2);var
-avk=caml_string_get(au7,ave);if(ik(avk)){var
-avl=[0,ave];for(;;){if(!ik(au4(avl[1]))&&!il(au4(avl[1])))break;avl[1]++}var
-avm=aP(au7,ave,avl[1]-ave|0);if(58===au4(avl[1])&&61!==au4(avl[1]+1|0)){au5([1,avm+str$24],ave,avl[1]+1|0);avj=avl[1]+1|0;continue}au5([0,avm],ave,avl[1]);avj=avl[1]}else if(il(avk)){au6(ave,0,ave);avj=P(au3[1])[3]}else{if(45===avk&&il(au4(ave+1|0))){var
-avc=au3[1];a:{if(avc){var
-avd=avc[1][1];b:{if(typeof
-avd==="number")switch(avd){case
+avk=aY(au_,avh+1|0,34);if(!avk)throw caml_maybe_attach_backtrace([0,ig,avh,ip],1);avh=avk[1]+1|0;continue}}else if(2===avi)break;avh=avh+1|0}break c}break c}break a}if(au5<=avh)return au8(11,au5,au5);var
+avn=caml_string_get(au_,avh);if(ij(avn)){var
+avo=[0,avh];for(;;){if(!ij(au7(avo[1]))&&!ik(au7(avo[1])))break;avo[1]++}var
+avp=aP(au_,avh,avo[1]-avh|0);if(58===au7(avo[1])&&61!==au7(avo[1]+1|0)){au8([1,avp+str$24],avh,avo[1]+1|0);avm=avo[1]+1|0;continue}au8([0,avp],avh,avo[1]);avm=avo[1]}else if(ik(avn)){au9(avh,0,avh);avm=P(au6[1])[3]}else{if(45===avn&&ik(au7(avh+1|0))){var
+avf=au6[1];a:{if(avf){var
+avg=avf[1][1];b:{if(typeof
+avg==="number")switch(avg){case
 2:case
 4:break;default:break b}else
-switch(avd[0]){case
+switch(avg[0]){case
 1:case
 2:break b}var
-avn=1;break a}}var
-avn=0}if(!avn){au6(ave,1,ave+1|0);avj=P(au3[1])[3];continue}}if(36===avk){if(au2<=(ave+1|0))throw caml_maybe_attach_backtrace([0,ih,ave,ir],1);au5([6,caml_string_get(au7,ave+1|0)],ave,ave+2|0);avj=ave+2|0}else if(39===avk){var
-avo=by(16),avp=ave+1|0;for(;;){if(au2<=avp)throw caml_maybe_attach_backtrace([0,ih,ave,is],1);if(39===caml_string_get(au7,avp)){if(39!==au4(avp+1|0))break;bE(avo,39);avp=avp+2|0}else{bE(avo,caml_string_get(au7,avp));avp=avp+1|0}}var
-avq=avp+1|0;au5([7,bz(avo)],ave,avq);avj=avq}else if(35===avk){var
-avr=au4(ave+1|0);if(40===avr){au5(0,ave,ave+2|0);avj=ave+2|0}else if(ik(avr)){var
-avs=[0,ave+1|0];for(;;){if(!ik(au4(avs[1]))&&!il(au4(avs[1]))&&58!==au4(avs[1]))break;avs[1]++}var
-avt=avs[1];au5([8,aP(au7,ave+1|0,(avs[1]-ave|0)-1|0)],ave,avt);avj=avs[1]}else if(39===avr)avj=ave+1|0;else{if(!a2(im,avr)&&num_124!==avr)throw caml_maybe_attach_backtrace([0,ih,ave,it],1);var
-avu=[0,ave+1|0];for(;;){if(!a2(im,au4(avu[1]))&&num_124!==au4(avu[1]))break;avu[1]++}var
-avv=avu[1];au5([8,aP(au7,ave+1|0,(avu[1]-ave|0)-1|0)],ave,avv);avj=avu[1]}}else{if(58===avk&&61===au4(ave+1|0)){au5(6,ave,ave+2|0);avj=ave+2|0;continue}if(95===avk){au5(6,ave,ave+1|0);avj=ave+1|0}else{if(num_226===avk&&num_134===au4(ave+1|0)&&num_144===au4(ave+2|0)){au5(6,ave,ave+3|0);avj=ave+3|0;continue}a:if(94!==avk){if(num_226===avk&&num_134===au4(ave+1|0)&&num_145===au4(ave+2|0))break a;if(a2(im,avk)){var
-avx=[0,ave+1|0];for(;;){if(!a2(im,au4(avx[1])))break;if(45===au4(avx[1])&&il(au4(avx[1]+1|0)))break;avx[1]++}var
-avy=avx[1];au5([2,aP(au7,ave,avx[1]-ave|0)],ave,avy);avj=avx[1];continue}b:{if(60<=avk)if(94<=avk){if(num_124!==avk)break b;var
-avz=9}else{if(91>avk)break b;switch(avk-91|0){case
+avq=1;break a}}var
+avq=0}if(!avq){au9(avh,1,avh+1|0);avm=P(au6[1])[3];continue}}if(36===avn){if(au5<=(avh+1|0))throw caml_maybe_attach_backtrace([0,ig,avh,iq],1);au8([6,caml_string_get(au_,avh+1|0)],avh,avh+2|0);avm=avh+2|0}else if(39===avn){var
+avr=by(16),avs=avh+1|0;for(;;){if(au5<=avs)throw caml_maybe_attach_backtrace([0,ig,avh,ir],1);if(39===caml_string_get(au_,avs)){if(39!==au7(avs+1|0))break;bE(avr,39);avs=avs+2|0}else{bE(avr,caml_string_get(au_,avs));avs=avs+1|0}}var
+avt=avs+1|0;au8([7,bz(avr)],avh,avt);avm=avt}else if(35===avn){var
+avu=au7(avh+1|0);if(40===avu){au8(0,avh,avh+2|0);avm=avh+2|0}else if(ij(avu)){var
+avv=[0,avh+1|0];for(;;){if(!ij(au7(avv[1]))&&!ik(au7(avv[1]))&&58!==au7(avv[1]))break;avv[1]++}var
+avw=avv[1];au8([8,aP(au_,avh+1|0,(avv[1]-avh|0)-1|0)],avh,avw);avm=avv[1]}else if(39===avu)avm=avh+1|0;else{if(!a2(il,avu)&&num_124!==avu)throw caml_maybe_attach_backtrace([0,ig,avh,is],1);var
+avx=[0,avh+1|0];for(;;){if(!a2(il,au7(avx[1]))&&num_124!==au7(avx[1]))break;avx[1]++}var
+avy=avx[1];au8([8,aP(au_,avh+1|0,(avx[1]-avh|0)-1|0)],avh,avy);avm=avx[1]}}else{if(58===avn&&61===au7(avh+1|0)){au8(6,avh,avh+2|0);avm=avh+2|0;continue}if(95===avn){au8(6,avh,avh+1|0);avm=avh+1|0}else{if(num_226===avn&&num_134===au7(avh+1|0)&&num_144===au7(avh+2|0)){au8(6,avh,avh+3|0);avm=avh+3|0;continue}a:if(94!==avn){if(num_226===avn&&num_134===au7(avh+1|0)&&num_145===au7(avh+2|0))break a;if(a2(il,avn)){var
+avA=[0,avh+1|0];for(;;){if(!a2(il,au7(avA[1])))break;if(45===au7(avA[1])&&ik(au7(avA[1]+1|0)))break;avA[1]++}var
+avB=avA[1];au8([2,aP(au_,avh,avA[1]-avh|0)],avh,avB);avm=avA[1];continue}b:{if(60<=avn)if(94<=avn){if(num_124!==avn)break b;var
+avC=9}else{if(91>avn)break b;switch(avn-91|0){case
 0:var
-avA=3;break;case
+avD=3;break;case
 1:break b;default:var
-avA=4}var
-avz=avA}else if(58<=avk)var
-avz=59<=avk?8:10;else{var
-avB=avk-40|0;if(6<avB>>>0)break b;switch(avB){case
+avD=4}var
+avC=avD}else if(58<=avn)var
+avC=59<=avn?8:10;else{var
+avE=avn-40|0;if(6<avE>>>0)break b;switch(avE){case
 0:var
-avC=1;break;case
+avF=1;break;case
 1:var
-avC=2;break;case
+avF=2;break;case
 6:var
-avC=7;break;default:break b}var
-avz=avC}au5(avz,ave,ave+1|0);avj=ave+1|0;continue}throw caml_maybe_attach_backtrace([0,ih,ave,caml_call1(dX(iu),avk)],1)}var
-avw=94===avk?1:3;au5(5,ave,ave+avw|0);avj=ave+avw|0}}}}}(0));var
-au9=[0,bd(function(au$){var
-ava=au$[1];if(typeof
-ava!=="number"&&7===ava[0]){var
-avb=ava[1];if(0<au$[2]&&35===caml_string_get(au7,au$[2]-1|0))return[0,[8,avb],au$[2]-1|0,au$[3]]}return au$},bg(Y(au3[1]))),0];return au9}catch(au_){var
-au8=caml_wrap_exception(au_);if(au8[1]===ih)throw caml_maybe_attach_backtrace([0,jQ,au8[2],au8[3]],1);throw caml_maybe_attach_backtrace(au8,0)}}function
-kv(auW,auV,auU){var
-auX=kq(auW),auY=j8(auW),auZ=kq(auW),au0=j9(auW);if(11!==jR(auW))jV(auW,kw);var
-au1=auX||auZ;return[0,auV,auU,auY,au1,au0]}function
-kx(auT){return kv(ku(auT),ky,0)}var
-kA=[num_248,kz,caml_fresh_oo_id(0)];function
-kB(auS){return[0,by(64),0]}function
-kC(auR){return auR[1][2]}function
-kD(auP,auO){var
-auQ=E(auO);return bE(auP[1],auQ)}function
-kE(auI,auH){var
-auJ=kC(auI),auK=auH[1],auL=auI[1],auG=auK[2];bF(auL,caml_string_of_bytes(auK[1]),0,auG);var
-auM=auI[2];auI[2]=o(ab(function(auN){return[0,auN[1]+auJ|0,auN[2],auN[3]]},auH[2]),auM);return 0}function
-kF(auF,auE){throw caml_maybe_attach_backtrace([0,kA,auF[1],auE],1)}function
-kG(auB,auA){auB[11]=auB[11]+auA|0;var
-auC=auB[12]<auB[11]?1:0,auD=auC?(auB[12]=auB[11],0):auC;return auD}function
-kH(auv,auu){var
-aux=auv[6]-1|0,auw=auv[5];for(;;){if(auw){var
-auy=auw[2];if(auw[1]!==auu){aux=aux-1|0;auw=auy;continue}var
-auz=[0,aux]}else
+avF=7;break;default:break b}var
+avC=avF}au8(avC,avh,avh+1|0);avm=avh+1|0;continue}throw caml_maybe_attach_backtrace([0,ig,avh,caml_call1(dX(it),avn)],1)}var
+avz=94===avn?1:3;au8(5,avh,avh+avz|0);avm=avh+avz|0}}}}}(0));var
+ava=[0,bd(function(avc){var
+avd=avc[1];if(typeof
+avd!=="number"&&7===avd[0]){var
+ave=avd[1];if(0<avc[2]&&35===caml_string_get(au_,avc[2]-1|0))return[0,[8,ave],avc[2]-1|0,avc[3]]}return avc},bg(Y(au6[1]))),0];return ava}catch(avb){var
+au$=caml_wrap_exception(avb);if(au$[1]===ig)throw caml_maybe_attach_backtrace([0,jP,au$[2],au$[3]],1);throw caml_maybe_attach_backtrace(au$,0)}}function
+ku(auZ,auY,auX){var
+au0=kp(auZ),au1=j7(auZ),au2=kp(auZ),au3=j8(auZ);if(11!==jQ(auZ))jU(auZ,kv);var
+au4=au0||au2;return[0,auY,auX,au1,au4,au3]}function
+kw(auW){return ku(kt(auW),kx,0)}var
+kz=[num_248,ky,caml_fresh_oo_id(0)];function
+kA(auV){return[0,by(64),0]}function
+kB(auU){return auU[1][2]}function
+kC(auS,auR){var
+auT=E(auR);return bE(auS[1],auT)}function
+kD(auL,auK){var
+auM=kB(auL),auN=auK[1],auO=auL[1],auJ=auN[2];bF(auO,caml_string_of_bytes(auN[1]),0,auJ);var
+auP=auL[2];auL[2]=o(ab(function(auQ){return[0,auQ[1]+auM|0,auQ[2],auQ[3]]},auK[2]),auP);return 0}function
+kE(auI,auH){throw caml_maybe_attach_backtrace([0,kz,auI[1],auH],1)}function
+kF(auE,auD){auE[11]=auE[11]+auD|0;var
+auF=auE[12]<auE[11]?1:0,auG=auF?(auE[12]=auE[11],0):auF;return auG}function
+kG(auy,aux){var
+auA=auy[6]-1|0,auz=auy[5];for(;;){if(auz){var
+auB=auz[2];if(auz[1]!==aux){auA=auA-1|0;auz=auB;continue}var
+auC=[0,auA]}else
 var
-auz=0;return auz?auz[1]:(auv[5]=[0,auu,auv[5]],auv[6]=auv[6]+1|0,auv[6]-1|0)}}function
-kI(aus,aur,auq){var
-aut=aus[9];if(63<=aut)kF(aur,kJ);aus[9]=aus[9]+1|0;aus[10]=[0,auq,aus[10]];aus[7]=[0,[0,auq,aut],aus[7]];return aut}function
-kK(auh,aug){var
-aun=auh[8];if(typeof
-aug==="number")switch(aug){case
-0:return iv;case
-1:return aun[17];default:return aun[18]}switch(aug[0]){case
-0:return ix(aug[1]);case
+auC=0;return auC?auC[1]:(auy[5]=[0,aux,auy[5]],auy[6]=auy[6]+1|0,auy[6]-1|0)}}function
+kH(auv,auu,aut){var
+auw=auv[9];if(63<=auw)kE(auu,kI);auv[9]=auv[9]+1|0;auv[10]=[0,aut,auv[10]];auv[7]=[0,[0,aut,auw],auv[7]];return auw}function
+kJ(auk,auj){var
+auq=auk[8];if(typeof
+auj==="number")switch(auj){case
+0:return iu;case
+1:return auq[17];default:return auq[18]}switch(auj[0]){case
+0:return iw(auj[1]);case
 1:var
-aui=aug[2],auj=aug[1],auk=[1,aC(aO(O(aui),function(aup){return E(S(aui,aup))}))],aul=auj?aun[14]:aun[13];return iz(auh,aul,auk);case
-2:return iL(auh,aug[1]);case
+aul=auj[2],aum=auj[1],aun=[1,aC(aO(O(aul),function(aus){return E(S(aul,aus))}))],auo=aum?auq[14]:auq[13];return iy(auk,auo,aun);case
+2:return iK(auk,auj[1]);case
 3:var
-aum=aug[1];return caml_check_bound(aun[20],aum)[1+aum];case
-4:return iJ(auh,aug[1]);case
-5:return iM(auh,aug[1]);default:return iK(auh,bg(ab(function(auo){return kK(auh,auo)},aug[1])))}}function
-kL(auf,aue,aud,auc,aub,aua){if(63<aub)kF(aua,kM);kD(aue,aud);kD(aue,auc<<6|aub)}function
-kN(at9,at8,at7,at6){a:{if(typeof
-at7!=="number"&&0===at7[0]){var
-at$=at7[1]+1|0;if(3>=at$>>>0){switch(at$){case
-0:kD(at8,num_116);break;case
-1:kD(at8,117);break;case
-2:kD(at8,118);break;default:kD(at8,119)}break a}}var
-at_=kH(at9,kK(at9[1],at7));if(32<=at_)kL(at9,at8,num_128,2,at_,at6);else
-kD(at8,32+at_|0)}return kG(at9,1)}function
-kO(atW,atV,atU){var
-atX=al(atV,atW[7]);if(atX)return[0,atX[1]];a:{b:{var
-atZ=0,atY=Y(atW[4]);for(;;){if(!atY)break;var
-at0=atY[2];if(atY[1]===atV)break b;atZ=atZ+1|0;atY=at0}var
-at1=0;break a}var
-at1=[0,atZ]}if(at1){var
-at2=at1[1];return[1,(O(atW[4])-1|0)-at2|0]}var
-at3=atW[1],atQ=atW[2];for(;;){if(atQ===0)var
-at4=0;else{var
-atR=jf(at3,atQ),atS=iE(at3,atR,i_),atT=atS===0?0:jp(at3,iD(at3,atS),atV);if(!atT){atQ=iE(at3,atR,i3);continue}var
-at4=[0,atT[1]]}if(at4)return[2,at4[1]];var
-at5=jq(atW[1],atV);return at5?[2,at5[1]]:atW[3]?[2,jr(atW[1],atV,iv)]:kF(atU,"Undeclared variable "+atV)}}function
-kP(atD,atC,atB,atA,atz){var
-atE=ak(atB,kQ),atF=atE||ak(atB,atD[8]);if(atF)kF(atA,"Cannot store into "+atB);var
-atG=kO(atD,atB,atA);switch(atG[0]){case
+aup=auj[1];return caml_check_bound(auq[20],aup)[1+aup];case
+4:return iI(auk,auj[1]);case
+5:return iL(auk,auj[1]);default:return iJ(auk,bg(ab(function(aur){return kJ(auk,aur)},auj[1])))}}function
+kK(aui,auh,aug,auf,aue,aud){if(63<aue)kE(aud,kL);kC(auh,aug);kC(auh,auf<<6|aue)}function
+kM(aua,at$,at_,at9){a:{if(typeof
+at_!=="number"&&0===at_[0]){var
+auc=at_[1]+1|0;if(3>=auc>>>0){switch(auc){case
+0:kC(at$,num_116);break;case
+1:kC(at$,117);break;case
+2:kC(at$,118);break;default:kC(at$,119)}break a}}var
+aub=kG(aua,kJ(aua[1],at_));if(32<=aub)kK(aua,at$,num_128,2,aub,at9);else
+kC(at$,32+aub|0)}return kF(aua,1)}function
+kN(atZ,atY,atX){var
+at0=al(atY,atZ[7]);if(at0)return[0,at0[1]];a:{b:{var
+at2=0,at1=Y(atZ[4]);for(;;){if(!at1)break;var
+at3=at1[2];if(at1[1]===atY)break b;at2=at2+1|0;at1=at3}var
+at4=0;break a}var
+at4=[0,at2]}if(at4){var
+at5=at4[1];return[1,(O(atZ[4])-1|0)-at5|0]}var
+at6=atZ[1],atT=atZ[2];for(;;){if(atT===0)var
+at7=0;else{var
+atU=je(at6,atT),atV=iD(at6,atU,i9),atW=atV===0?0:jo(at6,iC(at6,atV),atY);if(!atW){atT=iD(at6,atU,i2);continue}var
+at7=[0,atW[1]]}if(at7)return[2,at7[1]];var
+at8=jp(atZ[1],atY);return at8?[2,at8[1]]:atZ[3]?[2,jq(atZ[1],atY,iu)]:kE(atX,"Undeclared variable "+atY)}}function
+kO(atG,atF,atE,atD,atC){var
+atH=ak(atE,kP),atI=atH||ak(atE,atG[8]);if(atI)kE(atD,"Cannot store into "+atE);var
+atJ=kN(atG,atE,atD);switch(atJ[0]){case
 0:var
-atH=atG[1];a:{if(atz&&8>atH){kD(atC,num_104+atH|0);break a}var
-atI=1,atJ=atz?num_130:num_129;kL(atD,atC,atJ,atI,atH,atA)}break;case
+atK=atJ[1];a:{if(atC&&8>atK){kC(atF,num_104+atK|0);break a}var
+atL=1,atM=atC?num_130:num_129;kK(atG,atF,atM,atL,atK,atD)}break;case
 1:var
-atK=atG[1];a:{if(atz&&8>atK){kD(atC,96+atK|0);break a}var
-atL=0,atM=atz?num_130:num_129;kL(atD,atC,atM,atL,atK,atA)}break;default:var
-atN=kH(atD,atG[1]),atO=3,atP=atz?num_130:num_129;kL(atD,atC,atP,atO,atN,atA)}return atz?kG(atD,-1):atz}function
-kR(atr,atq,atp,ato,atn,atm){var
-ats=atm[2],att=atm[1],atu=atq[2];atq[2]=[0,[0,kC(atq),att,ats],atu];if(atn)var
-atw=0;else{a:{b:{var
-atv=0;for(;;){if(iT.length-1<=atv)break b;if(caml_check_bound(iT,atv)[1+atv]===atp)break;atv=atv+1|0}var
-aty=[0,atv];break a}var
-aty=0}var
-atw=aty}if(atw)kD(atq,num_176+atw[1]|0);else{var
-atx=kH(atr,iM(atr[1],atp));a:if(atn){if(8>ato&&32>atx){kD(atq,133);kD(atq,ato<<5|atx);break a}kD(atq,num_134);kD(atq,ato);kD(atq,atx)}else{if(2>=ato&&16>atx){kD(atq,(num_208+(ato*16|0)|0)+atx|0);break a}if(8>ato&&32>atx){kD(atq,num_131);kD(atq,ato<<5|atx);break a}if(num_255<atx)kF(atm,kS);kD(atq,num_132);kD(atq,ato);kD(atq,atx)}}return kG(atr,-ato|0)}function
-kT(atl,atk){if(1<=atk&&8>=atk)return kD(atl,num_143+atk|0);kD(atl,num_164+(atk>>8)|0);return kD(atl,atk&num_255)}function
-kU(atj,ati){if(1<=ati&&8>=ati)return kD(atj,num_151+ati|0);kD(atj,num_172+(ati>>>8|0)|0);return kD(atj,ati&num_255)}function
-kV(ath,atg){kD(ath,num_168+(atg>>>8|0)|0);return kD(ath,atg&num_255)}function
-kW(ate,atd){var
-atf=atd-(kC(ate)+2|0)|0;kD(ate,num_164+(atf>>8)|0);return kD(ate,atf&num_255)}function
-kX(atb){var
-atc=atb[1];if(5===atc[0]&&!atc[1])return 1;return 0}function
-kY(asJ,asI,asH){var
-asK=asH[1];switch(asK[0]){case
-0:return kN(asJ,asI,asK[1],asH[2]);case
+atN=atJ[1];a:{if(atC&&8>atN){kC(atF,96+atN|0);break a}var
+atO=0,atP=atC?num_130:num_129;kK(atG,atF,atP,atO,atN,atD)}break;default:var
+atQ=kG(atG,atJ[1]),atR=3,atS=atC?num_130:num_129;kK(atG,atF,atS,atR,atQ,atD)}return atC?kF(atG,-1):atC}function
+kQ(atu,att,ats,atr,atq,atp){var
+atv=atp[2],atw=atp[1],atx=att[2];att[2]=[0,[0,kB(att),atw,atv],atx];if(atq)var
+atz=0;else{a:{b:{var
+aty=0;for(;;){if(iS.length-1<=aty)break b;if(caml_check_bound(iS,aty)[1+aty]===ats)break;aty=aty+1|0}var
+atB=[0,aty];break a}var
+atB=0}var
+atz=atB}if(atz)kC(att,num_176+atz[1]|0);else{var
+atA=kG(atu,iL(atu[1],ats));a:if(atq){if(8>atr&&32>atA){kC(att,133);kC(att,atr<<5|atA);break a}kC(att,num_134);kC(att,atr);kC(att,atA)}else{if(2>=atr&&16>atA){kC(att,(num_208+(atr*16|0)|0)+atA|0);break a}if(8>atr&&32>atA){kC(att,num_131);kC(att,atr<<5|atA);break a}if(num_255<atA)kE(atp,kR);kC(att,num_132);kC(att,atr);kC(att,atA)}}return kF(atu,-atr|0)}function
+kS(ato,atn){if(1<=atn&&8>=atn)return kC(ato,num_143+atn|0);kC(ato,num_164+(atn>>8)|0);return kC(ato,atn&num_255)}function
+kT(atm,atl){if(1<=atl&&8>=atl)return kC(atm,num_151+atl|0);kC(atm,num_172+(atl>>>8|0)|0);return kC(atm,atl&num_255)}function
+kU(atk,atj){kC(atk,num_168+(atj>>>8|0)|0);return kC(atk,atj&num_255)}function
+kV(ath,atg){var
+ati=atg-(kB(ath)+2|0)|0;kC(ath,num_164+(ati>>8)|0);return kC(ath,ati&num_255)}function
+kW(ate){var
+atf=ate[1];if(5===atf[0]&&!atf[1])return 1;return 0}function
+kX(asM,asL,asK){var
+asN=asK[1];switch(asN[0]){case
+0:return kM(asM,asL,asN[1],asK[2]);case
 1:var
-asL=asK[1],asM=asH[2];a:if(asL!==str_false)if(asL!==str_nil){if(asL!==str_self&&asL!==str_super){if(asL===str_thisContext){kD(asI,num_137);break a}if(asL===str_true){kD(asI,num_113);break a}var
-asD=kO(asJ,asL,asM);switch(asD[0]){case
+asO=asN[1],asP=asK[2];a:if(asO!==str_false)if(asO!==str_nil){if(asO!==str_self&&asO!==str_super){if(asO===str_thisContext){kC(asL,num_137);break a}if(asO===str_true){kC(asL,num_113);break a}var
+asG=kN(asM,asO,asP);switch(asG[0]){case
 0:var
-asE=asD[1];if(16<=asE)kL(asJ,asI,num_128,1,asE,asM);else
-kD(asI,16+asE|0);break;case
+asH=asG[1];if(16<=asH)kK(asM,asL,num_128,1,asH,asP);else
+kC(asL,16+asH|0);break;case
 1:var
-asF=asD[1];if(16<=asF)kL(asJ,asI,num_128,0,asF,asM);else
-kD(asI,asF);break;default:var
-asG=kH(asJ,asD[1]);if(32<=asG)kL(asJ,asI,num_128,3,asG,asM);else
-kD(asI,64+asG|0)}break a}kD(asI,num_112)}else
-kD(asI,num_115);else
-kD(asI,num_114);return kG(asJ,1);case
+asI=asG[1];if(16<=asI)kK(asM,asL,num_128,0,asI,asP);else
+kC(asL,asI);break;default:var
+asJ=kG(asM,asG[1]);if(32<=asJ)kK(asM,asL,num_128,3,asJ,asP);else
+kC(asL,64+asJ|0)}break a}kC(asL,num_112)}else
+kC(asL,num_115);else
+kC(asL,num_114);return kF(asM,1);case
 2:var
-asN=asK[1];kY(asJ,asI,asK[2]);return kP(asJ,asI,asN,asH[2],0);case
-3:return kZ(asJ,asI,asK[1],asK[2],asK[3],asH[2]);case
+asQ=asN[1];kX(asM,asL,asN[2]);return kO(asM,asL,asQ,asK[2],0);case
+3:return kY(asM,asL,asN[1],asN[2],asN[3],asK[2]);case
 4:var
-asO=asK[2],asP=asK[1],asQ=asP[1];a:{if(1===asQ[0]&&asQ[1]===str_super){var
-asR=1;break a}var
-asR=0}kY(asJ,asI,asP);var
-asS=O(asO);return af(function(as7,as6){var
-as9=as6[2],as8=as6[3],as_=as6[1];if(as7<(asS-1|0)){kD(asI,136);kG(asJ,1)}ae(function(ata){return kY(asJ,asI,ata)},as9);kR(asJ,asI,as_,O(as9),asR,as8);var
-as$=as7<(asS-1|0)?1:0;return as$?(kD(asI,num_135),kG(asJ,-1)):as$},asO);default:var
-asV=asK[1],asW=asH[2],asT=asK[3],asU=asK[2];kD(asI,num_137);kG(asJ,1);kN(asJ,asI,[0,O(asV)],asW);kD(asI,num_200);kG(asJ,-1);var
-asX=asJ[7],asY=asJ[8],asZ=asJ[11],as0=ab(function(as5){return kI(asJ,asW,as5)},asV);asJ[8]=o(asV,asJ[8]);ae(function(as4){kI(asJ,asW,as4);return 0},asU);asJ[11]=0;kG(asJ,O(asV));var
-as1=kB(0);ae(function(as3){if(8<=as3)kL(asJ,as1,num_130,1,as3,asW);else
-kD(as1,num_104+as3|0);return kG(asJ,-1)},Y(as0));k2(asJ,as1,asT,1);kD(as1,num_125);asJ[7]=asX;asJ[8]=asY;asJ[11]=asZ;var
-as2=kC(as1);if(num_1023<as2)kF(asW,k9);kD(asI,num_164+(as2>>8)|0);kD(asI,as2&num_255);return kE(asI,as1)}}function
-kZ(ar4,ar3,ar2,ar1,ar0,arZ){var
-ar6=caml_string_compare(ar1,"to:by:do:");a:{var
-ar5=ar4[11];if(0<=ar6){if(0<ar6){if(ar1!=="to:do:"){b:if(ar1!=="whileFalse"){if(ar1!=="whileFalse:"){if(ar1===str_whileTrue$0)break b;if(ar1!==str_whileTrue)break a}if(!ar0)break a;if(ar0[2])break a;var
-ar9=ar0[1];if(kX(ar2)&&kX(ar9)){var
-ar_=kC(ar3);k1(ar4,ar3,ar2);kG(ar4,-1);var
-ar$=kB(0);k1(ar4,ar$,ar9);kD(ar$,num_135);kG(ar4,-1);if(ar1===str_whileTrue)kU(ar3,kC(ar$)+2|0);else
-kV(ar3,kC(ar$)+2|0);kE(ar3,ar$);kW(ar3,ar_);kD(ar3,num_115);return kG(ar4,1)}break a}if(!ar0&&kX(ar2)){var
-asa=kC(ar3);k1(ar4,ar3,ar2);kG(ar4,-1);if(ar1===str_whileTrue$0)kU(ar3,2);else
-kV(ar3,2);kW(ar3,asa);kD(ar3,num_115);return kG(ar4,1)}}else if(ar0){var
-asb=ar0[2];if(asb){var
-asc=asb[1],asd=asc[1];if(5===asd[0]){var
-ase=asd[1];if(ase&&!ase[2]&&!asb[2])return k0(ar4,ar3,ar2,ar0[1],1,asc,arZ)}}}}else if(ar0){var
-asf=ar0[2];if(asf){var
-asg=asf[1][1];if(0===asg[0]){var
-ash=asg[1];if(typeof
-ash!=="number"&&0===ash[0]){var
-asi=asf[2];if(!asi)break a;var
-asj=asi[1],ask=asj[1];if(5!==ask[0])break a;var
-asl=ask[1];if(!asl)break a;if(asl[2])break a;if(asi[2])break a;var
-asm=ash[1],asn=ar0[1];if(0===asm)break a;return k0(ar4,ar3,ar2,asn,asm,asj,arZ)}}}}}else{b:if(ar1!==str_and){c:if(ar1!=="ifFalse:"){if(ar1!=="ifFalse:ifTrue:"){if(ar1===str_ifTrue)break c;if(ar1!==str_ifTrue_ifFalse){if(ar1!=="or:")break a;break b}}if(!ar0)break a;var
-asr=ar0[2];if(!asr)break a;if(asr[2])break a;var
-ass=asr[1],ast=ar0[1];if(kX(ast)&&kX(ass)){if(ar1===str_ifTrue_ifFalse)var
-asv=ass,asu=ast;else
+asR=asN[2],asS=asN[1],asT=asS[1];a:{if(1===asT[0]&&asT[1]===str_super){var
+asU=1;break a}var
+asU=0}kX(asM,asL,asS);var
+asV=O(asR);return af(function(as_,as9){var
+ata=as9[2],as$=as9[3],atb=as9[1];if(as_<(asV-1|0)){kC(asL,136);kF(asM,1)}ae(function(atd){return kX(asM,asL,atd)},ata);kQ(asM,asL,atb,O(ata),asU,as$);var
+atc=as_<(asV-1|0)?1:0;return atc?(kC(asL,num_135),kF(asM,-1)):atc},asR);default:var
+asY=asN[1],asZ=asK[2],asW=asN[3],asX=asN[2];kC(asL,num_137);kF(asM,1);kM(asM,asL,[0,O(asY)],asZ);kC(asL,num_200);kF(asM,-1);var
+as0=asM[7],as1=asM[8],as2=asM[11],as3=ab(function(as8){return kH(asM,asZ,as8)},asY);asM[8]=o(asY,asM[8]);ae(function(as7){kH(asM,asZ,as7);return 0},asX);asM[11]=0;kF(asM,O(asY));var
+as4=kA(0);ae(function(as6){if(8<=as6)kK(asM,as4,num_130,1,as6,asZ);else
+kC(as4,num_104+as6|0);return kF(asM,-1)},Y(as3));k1(asM,as4,asW,1);kC(as4,num_125);asM[7]=as0;asM[8]=as1;asM[11]=as2;var
+as5=kB(as4);if(num_1023<as5)kE(asZ,k8);kC(asL,num_164+(as5>>8)|0);kC(asL,as5&num_255);return kD(asL,as4)}}function
+kY(ar7,ar6,ar5,ar4,ar3,ar2){var
+ar9=caml_string_compare(ar4,"to:by:do:");a:{var
+ar8=ar7[11];if(0<=ar9){if(0<ar9){if(ar4!=="to:do:"){b:if(ar4!=="whileFalse"){if(ar4!=="whileFalse:"){if(ar4===str_whileTrue$0)break b;if(ar4!==str_whileTrue)break a}if(!ar3)break a;if(ar3[2])break a;var
+asa=ar3[1];if(kW(ar5)&&kW(asa)){var
+asb=kB(ar6);k0(ar7,ar6,ar5);kF(ar7,-1);var
+asc=kA(0);k0(ar7,asc,asa);kC(asc,num_135);kF(ar7,-1);if(ar4===str_whileTrue)kT(ar6,kB(asc)+2|0);else
+kU(ar6,kB(asc)+2|0);kD(ar6,asc);kV(ar6,asb);kC(ar6,num_115);return kF(ar7,1)}break a}if(!ar3&&kW(ar5)){var
+asd=kB(ar6);k0(ar7,ar6,ar5);kF(ar7,-1);if(ar4===str_whileTrue$0)kT(ar6,2);else
+kU(ar6,2);kV(ar6,asd);kC(ar6,num_115);return kF(ar7,1)}}else if(ar3){var
+ase=ar3[2];if(ase){var
+asf=ase[1],asg=asf[1];if(5===asg[0]){var
+ash=asg[1];if(ash&&!ash[2]&&!ase[2])return kZ(ar7,ar6,ar5,ar3[1],1,asf,ar2)}}}}else if(ar3){var
+asi=ar3[2];if(asi){var
+asj=asi[1][1];if(0===asj[0]){var
+ask=asj[1];if(typeof
+ask!=="number"&&0===ask[0]){var
+asl=asi[2];if(!asl)break a;var
+asm=asl[1],asn=asm[1];if(5!==asn[0])break a;var
+aso=asn[1];if(!aso)break a;if(aso[2])break a;if(asl[2])break a;var
+asp=ask[1],asq=ar3[1];if(0===asp)break a;return kZ(ar7,ar6,ar5,asq,asp,asm,ar2)}}}}}else{b:if(ar4!==str_and){c:if(ar4!=="ifFalse:"){if(ar4!=="ifFalse:ifTrue:"){if(ar4===str_ifTrue)break c;if(ar4!==str_ifTrue_ifFalse){if(ar4!=="or:")break a;break b}}if(!ar3)break a;var
+asu=ar3[2];if(!asu)break a;if(asu[2])break a;var
+asv=asu[1],asw=ar3[1];if(kW(asw)&&kW(asv)){if(ar4===str_ifTrue_ifFalse)var
+asy=asv,asx=asw;else
 var
-asv=ast,asu=ass;kY(ar4,ar3,ar2);kG(ar4,-1);var
-asw=kB(0);k1(ar4,asw,asu);ar4[11]=ar5;var
-asx=kB(0);k1(ar4,asx,asv);var
-asy=kC(asx);d:{if(1<=asy&&8>=asy){var
-asz=1;break d}var
-asz=2}kU(ar3,kC(asw)+asz|0);kE(ar3,asw);kT(ar3,kC(asx));return kE(ar3,asx)}break a}if(!ar0)break a;if(ar0[2])break a;var
-asA=ar0[1];if(!kX(asA))break a;kY(ar4,ar3,ar2);kG(ar4,-1);var
-asB=kB(0);k1(ar4,asB,asA);if(ar1===str_ifTrue)kU(ar3,kC(asB)+1|0);else
-kV(ar3,kC(asB)+1|0);kE(ar3,asB);kT(ar3,1);return kD(ar3,num_115)}if(ar0&&!ar0[2]){var
-aso=ar0[1];if(kX(aso)){kY(ar4,ar3,ar2);kG(ar4,-1);var
-asp=kB(0);k1(ar4,asp,aso);if(ar1===str_and)kU(ar3,kC(asp)+1|0);else
-kV(ar3,kC(asp)+1|0);kE(ar3,asp);kT(ar3,1);var
-asq=ar1===str_and?num_114:num_113;return kD(ar3,asq)}}}}var
-ar7=ar2[1];a:{if(1===ar7[0]&&ar7[1]===str_super){var
-ar8=1;break a}var
-ar8=0}kY(ar4,ar3,ar2);ae(function(asC){return kY(ar4,ar3,asC)},ar0);return kR(ar4,ar3,ar1,O(ar0),ar8,arZ)}function
-k0(arE,arD,arC,arB,arA,arz,ary){var
-arF=arz[1];if(5===arF[0]){var
-arG=arF[1];if(arG&&!arG[2]){var
-arJ=arG[1],arH=arF[3],arI=arF[2],arK=arE[7],arL=arE[8],arM=kI(arE,arz[2],arJ),arN=kI(arE,arz[2],k5),arO=function(arY){if(8<=arY)kL(arE,arD,num_130,1,arY,ary);else
-kD(arD,num_104+arY|0);return kG(arE,-1)},arP=function(arX,arW){if(16<=arW)kL(arE,arX,num_128,1,arW,ary);else
-kD(arX,16+arW|0);return kG(arE,1)};kY(arE,arD,arC);arO(arM);kY(arE,arD,arB);arO(arN);arE[8]=[0,arJ,arE[8]];ae(function(arV){kI(arE,arz[2],arV);return 0},arI);var
-arQ=kC(arD);arP(arD,arM);arP(arD,arN);var
-arR=0,arS=1,arT=0<arA?k6:k8;kR(arE,arD,arT,arS,arR,ary);kG(arE,-1);var
-arU=kB(0);k2(arE,arU,arH,0);arP(arU,arM);kN(arE,arU,[0,arA],ary);kR(arE,arU,k7,1,0,ary);if(8<=arM)kL(arE,arU,num_130,1,arM,ary);else
-kD(arU,num_104+arM|0);kG(arE,-1);kU(arD,kC(arU)+2|0);kE(arD,arU);kW(arD,arQ);kD(arD,num_115);kG(arE,1);arE[7]=arK;arE[8]=arL;return 0}}throw caml_maybe_attach_backtrace([0,Assert_failure,k4],1)}function
-k1(art,ars,arr){var
-aru=arr[1];if(5!==aru[0])return kY(art,ars,arr);var
-arv=aru[3],arw=art[7];ae(function(arx){kI(art,arr[2],arx);return 0},aru[2]);k2(art,ars,arv,1);art[7]=arw}function
-k2(arj,ari,arh,arg){var
-ark=arh;for(;;){if(!ark)return arg?(kD(ari,num_115),kG(arj,1)):arg;var
-arl=ark[1];if(0!==arl[0]){var
-aro=arl[1];return ark[2]?k3(arj,ari,aro):(k3(arj,ari,aro),arg?kG(arj,1):arg)}var
-arm=arl[1];if(!ark[2]&&arg)return kY(arj,ari,arm);var
-arn=ark[2],arp=arm[1];if(2===arp[0]){var
-arq=arp[1];kY(arj,ari,arp[2]);kP(arj,ari,arq,arm[2],1)}else{kY(arj,ari,arm);kD(ari,num_135);kG(arj,-1)}if(0===arn&&arg){kD(ari,num_115);return kG(arj,1)}ark=arn}}function
-k3(ard,arc,arb){var
-are=arb[1];if(1===are[0]){var
-arf=are[1];if(arf===str_false)return kD(arc,num_122);if(arf===str_nil)return kD(arc,num_123);if(arf===str_self)return kD(arc,num_120);if(arf===str_true)return kD(arc,121)}kY(ard,arc,arb);kD(arc,num_124);return kG(ard,-1)}function
-k_(aqW,aqV,aqU,aqT,aqS){var
-aqX=aqT?aqT[1]:0,aqY=aqS[2],aqZ=[0,aqW,aqV,aqX,jj(aqW,aqV),0,0,0,aqY,0,0,0,0];ae(function(ara){kI(aqZ,k$,ara);return 0},aqS[2]);ae(function(aq$){kI(aqZ,la,aq$);return 0},aqS[3]);var
-aq0=kB(0),aq1=Y(aqS[5]);a:{if(aq1&&0!==aq1[1][0]){var
-aq2=1;break a}var
-aq2=0}k2(aqZ,aq0,aqS[5],0);if(1-aq2)kD(aq0,num_120);var
-aq3=h(num_255,(aqZ[9]+aqZ[12]|0)+1|0),aq4=aqZ[9],aq5=O(aqS[2]),aq6=[0,C(aqS[4],0),aq5,aq4,aq3],aq7=Y(aqZ[10]),aq8=Y(aq0[2]),aq9=iM(aqW,aqS[1]),aq_=aq0[1],aqR=aD(aq_[1],0,aq_[2]);return iU(aqW,aq6,bg(Y(aqZ[5])),aqR,aq9,aqV,aqU,aq8,aq7)}function
-lb(aqD,aqC,aqB,aqA,aqz){var
-aqE=aqA?aqA[1]:0;try{var
-aqw=ku(aqz),aqm=jR(aqw);a:{if(typeof
-aqm==="number"){if(9===aqm){jU(aqw);var
-aqx=[0,kn,[0,jY(aqw,km),0]];break a}}else
-switch(aqm[0]){case
+asy=asw,asx=asv;kX(ar7,ar6,ar5);kF(ar7,-1);var
+asz=kA(0);k0(ar7,asz,asx);ar7[11]=ar8;var
+asA=kA(0);k0(ar7,asA,asy);var
+asB=kB(asA);d:{if(1<=asB&&8>=asB){var
+asC=1;break d}var
+asC=2}kT(ar6,kB(asz)+asC|0);kD(ar6,asz);kS(ar6,kB(asA));return kD(ar6,asA)}break a}if(!ar3)break a;if(ar3[2])break a;var
+asD=ar3[1];if(!kW(asD))break a;kX(ar7,ar6,ar5);kF(ar7,-1);var
+asE=kA(0);k0(ar7,asE,asD);if(ar4===str_ifTrue)kT(ar6,kB(asE)+1|0);else
+kU(ar6,kB(asE)+1|0);kD(ar6,asE);kS(ar6,1);return kC(ar6,num_115)}if(ar3&&!ar3[2]){var
+asr=ar3[1];if(kW(asr)){kX(ar7,ar6,ar5);kF(ar7,-1);var
+ass=kA(0);k0(ar7,ass,asr);if(ar4===str_and)kT(ar6,kB(ass)+1|0);else
+kU(ar6,kB(ass)+1|0);kD(ar6,ass);kS(ar6,1);var
+ast=ar4===str_and?num_114:num_113;return kC(ar6,ast)}}}}var
+ar_=ar5[1];a:{if(1===ar_[0]&&ar_[1]===str_super){var
+ar$=1;break a}var
+ar$=0}kX(ar7,ar6,ar5);ae(function(asF){return kX(ar7,ar6,asF)},ar3);return kQ(ar7,ar6,ar4,O(ar3),ar$,ar2)}function
+kZ(arH,arG,arF,arE,arD,arC,arB){var
+arI=arC[1];if(5===arI[0]){var
+arJ=arI[1];if(arJ&&!arJ[2]){var
+arM=arJ[1],arK=arI[3],arL=arI[2],arN=arH[7],arO=arH[8],arP=kH(arH,arC[2],arM),arQ=kH(arH,arC[2],k4),arR=function(ar1){if(8<=ar1)kK(arH,arG,num_130,1,ar1,arB);else
+kC(arG,num_104+ar1|0);return kF(arH,-1)},arS=function(ar0,arZ){if(16<=arZ)kK(arH,ar0,num_128,1,arZ,arB);else
+kC(ar0,16+arZ|0);return kF(arH,1)};kX(arH,arG,arF);arR(arP);kX(arH,arG,arE);arR(arQ);arH[8]=[0,arM,arH[8]];ae(function(arY){kH(arH,arC[2],arY);return 0},arL);var
+arT=kB(arG);arS(arG,arP);arS(arG,arQ);var
+arU=0,arV=1,arW=0<arD?k5:k7;kQ(arH,arG,arW,arV,arU,arB);kF(arH,-1);var
+arX=kA(0);k1(arH,arX,arK,0);arS(arX,arP);kM(arH,arX,[0,arD],arB);kQ(arH,arX,k6,1,0,arB);if(8<=arP)kK(arH,arX,num_130,1,arP,arB);else
+kC(arX,num_104+arP|0);kF(arH,-1);kT(arG,kB(arX)+2|0);kD(arG,arX);kV(arG,arT);kC(arG,num_115);kF(arH,1);arH[7]=arN;arH[8]=arO;return 0}}throw caml_maybe_attach_backtrace([0,Assert_failure,k3],1)}function
+k0(arw,arv,aru){var
+arx=aru[1];if(5!==arx[0])return kX(arw,arv,aru);var
+ary=arx[3],arz=arw[7];ae(function(arA){kH(arw,aru[2],arA);return 0},arx[2]);k1(arw,arv,ary,1);arw[7]=arz}function
+k1(arm,arl,ark,arj){var
+arn=ark;for(;;){if(!arn)return arj?(kC(arl,num_115),kF(arm,1)):arj;var
+aro=arn[1];if(0!==aro[0]){var
+arr=aro[1];return arn[2]?k2(arm,arl,arr):(k2(arm,arl,arr),arj?kF(arm,1):arj)}var
+arp=aro[1];if(!arn[2]&&arj)return kX(arm,arl,arp);var
+arq=arn[2],ars=arp[1];if(2===ars[0]){var
+art=ars[1];kX(arm,arl,ars[2]);kO(arm,arl,art,arp[2],1)}else{kX(arm,arl,arp);kC(arl,num_135);kF(arm,-1)}if(0===arq&&arj){kC(arl,num_115);return kF(arm,1)}arn=arq}}function
+k2(arg,arf,are){var
+arh=are[1];if(1===arh[0]){var
+ari=arh[1];if(ari===str_false)return kC(arf,num_122);if(ari===str_nil)return kC(arf,num_123);if(ari===str_self)return kC(arf,num_120);if(ari===str_true)return kC(arf,121)}kX(arg,arf,are);kC(arf,num_124);return kF(arg,-1)}function
+k9(aqZ,aqY,aqX,aqW,aqV){var
+aq0=aqW?aqW[1]:0,aq1=aqV[2],aq2=[0,aqZ,aqY,aq0,ji(aqZ,aqY),0,0,0,aq1,0,0,0,0];ae(function(ard){kH(aq2,k_,ard);return 0},aqV[2]);ae(function(arc){kH(aq2,k$,arc);return 0},aqV[3]);var
+aq3=kA(0),aq4=Y(aqV[5]);a:{if(aq4&&0!==aq4[1][0]){var
+aq5=1;break a}var
+aq5=0}k1(aq2,aq3,aqV[5],0);if(1-aq5)kC(aq3,num_120);var
+aq6=h(num_255,(aq2[9]+aq2[12]|0)+1|0),aq7=aq2[9],aq8=O(aqV[2]),aq9=[0,C(aqV[4],0),aq8,aq7,aq6],aq_=Y(aq2[10]),aq$=Y(aq3[2]),ara=iL(aqZ,aqV[1]),arb=aq3[1],aqU=aD(arb[1],0,arb[2]);return iT(aqZ,aq9,bg(Y(aq2[5])),aqU,ara,aqY,aqX,aq$,aq_)}function
+la(aqG,aqF,aqE,aqD,aqC){var
+aqH=aqD?aqD[1]:0;try{var
+aqz=kt(aqC),aqp=jQ(aqz);a:{if(typeof
+aqp==="number"){if(9===aqp){jT(aqz);var
+aqA=[0,km,[0,jX(aqz,kl),0]];break a}}else
+switch(aqp[0]){case
 0:var
-aqn=aqm[1];jU(aqw);var
-aqx=[0,aqn,0];break a;case
+aqq=aqp[1];jT(aqz);var
+aqA=[0,aqq,0];break a;case
 1:var
-aqo=by(16),aqp=[0,0];for(;;){var
-aqq=jR(aqw);b:{if(typeof
-aqq!=="number"&&1===aqq[0]){var
-aqr=1;break b}var
-aqr=0}if(!aqr)break;var
-aqs=jR(aqw);b:if(typeof
-aqs!=="number"&&1===aqs[0]){bH(aqo,aqs[1]);break b}jU(aqw);var
-aqt=aqp[1];aqp[1]=[0,jY(aqw,ko),aqt]}var
-aqu=Y(aqp[1]),aqx=[0,bz(aqo),aqu];break a;case
+aqr=by(16),aqs=[0,0];for(;;){var
+aqt=jQ(aqz);b:{if(typeof
+aqt!=="number"&&1===aqt[0]){var
+aqu=1;break b}var
+aqu=0}if(!aqu)break;var
+aqv=jQ(aqz);b:if(typeof
+aqv!=="number"&&1===aqv[0]){bH(aqr,aqv[1]);break b}jT(aqz);var
+aqw=aqs[1];aqs[1]=[0,jX(aqz,kn),aqw]}var
+aqx=Y(aqs[1]),aqA=[0,bz(aqr),aqx];break a;case
 2:var
-aqv=aqm[1];jU(aqw);var
-aqx=[0,aqv,[0,jY(aqw,kp),0]];break a}var
-aqx=jV(aqw,kl)}var
-aqy=kv(aqw,aqx[1],aqx[2])}catch(aqQ){var
-aqF=caml_wrap_exception(aqQ);if(aqF[1]===jQ)throw caml_maybe_attach_backtrace([0,kA,aqF[2],aqF[3]],1);throw caml_maybe_attach_backtrace(aqF,0)}var
-aqG=k_(aqD,aqC,aqz,[0,aqE],aqy),aqH=iM(aqD,aqy[1]),aqc=iE(aqD,aqC,i4),aqd=jB(aqD,aqC),aqe=aqd[2],aqf=aqd[1];a:{b:{var
-aqg=0;for(;;){if(aqf.length-1<=aqg)break b;if(caml_check_bound(aqf,aqg)[1+aqg]===aqH)break;aqg=aqg+1|0}var
-aqh=[0,aqg];break a}var
-aqh=0}if(aqh){var
-aqi=aqh[1];caml_check_bound(aqe,aqi)[1+aqi]=aqG}else{iF(aqD,aqc,0,iK(aqD,a8(aqf,[0,aqH])));iF(aqD,aqc,1,iK(aqD,a8(aqe,[0,aqG])))}var
-aqj=iH(aqD,aqH),aqI=ab(function(aqM){var
-aqN=aqM[2],aqO=aqM[1];return[0,aqO,ao(function(aqP){return aqj!==aqP?1:0})(aqN)]},jF(aqD,aqC));a:{b:{var
-ap$=aqI;for(;;){if(!ap$)break;var
-aqa=ap$[2],aqb=0===caml_compare(ap$[1][1],aqB)?1:0;if(aqb)break b;ap$=aqa}var
-aqk=0;break a}var
-aqk=aqb}var
-aql=aqk?ab(function(aqJ){var
-aqK=aqJ[2],aqL=aqJ[1];return aqL===aqB?[0,aqL,[0,aqj,aqK]]:[0,aqL,aqK]},aqI):o(aqI,[0,[0,aqB,[0,aqj,0]],0]);jG(aqD,aqC,aql);return aqy[1]}function
-lc(apZ,apY){var
-ap0=jE(apZ,apY),ap1=aq(function(ap3){var
-ap4=jC(apZ,apY,iM(apZ,ap3));if(!ap4)return 0;var
-ap5=i1(apZ,ap4[1]),ap6=C(jJ(apZ,apY,ap3),ld);try{lb(apZ,apY,ap6,0,ap5);var
-ap9=0;return ap9}catch(ap_){var
-ap7=caml_wrap_exception(ap_);if(ap7[1]!==kA)throw caml_maybe_attach_backtrace(ap7,0);var
-ap8=ap7[3];return[0,[0,jg(apZ,apY)+str$10+ap3,ap8]]}})(ap0);return o(ap1,ar(function(ap2){return lc(apZ,ap2)},jL(apZ,apY)))}function
-le(apQ,apP,apO){try{var
-apS=kx(apO)}catch(apX){var
-apR=caml_wrap_exception(apX);if(apR[1]===jQ)throw caml_maybe_attach_backtrace([0,kA,apR[2],apR[3]],1);throw caml_maybe_attach_backtrace(apR,0)}var
-apT=Y(apS[5]);a:{if(apT){var
-apU=apT[1];if(0===apU[0]){var
-apV=apU[1],apW=Y([0,[1,apV,apV[2]],apT[2]]);break a}}var
-apW=apS[5]}return k_(apQ,apP,apO,lf,[0,apS[1],apS[2],apS[3],apS[4],apW])}var
-lh=[num_248,lg,caml_fresh_oo_id(0)],li=0,lj=1,lk=2,ll=3,lm=5,ln=5,lp=num_1024;function
-lq(apM,apL){return[0,apM,apL,caml_make_vect(num_512,0),function(apN){return 0},0,1,iv,[0],iv,[0],iv,[0],az,iv,0,0,0,0,caml_make_vect(num_1024,-1),caml_make_vect(num_1024,-1),caml_make_vect(num_1024,0),0,0,0]}function
-lr(apK){a_(apK[19],0,lp,-1);return a_(apK[20],0,lp,-1)}function
-ls(apI,apH){var
-apJ=apI[1][8][9];return iA(apI[1],apH)===apJ?1:0}function
-lt(apG,apF){return ls(apG,apF)?iE(apG[1],apF,ln):apF}function
-lu(apD,apC){var
-apE=lt(apD,apC);return iE(apD[1],apE,ll)}function
-lv(apz,apy){var
-apA=iD(apz[1],apy);apz[7]=apy;apz[8]=apA;var
-apB=ls(apz,apy)?caml_check_bound(apA,5)[1+ln]:apy;apz[9]=apB;apz[10]=iD(apz[1],apB);apz[11]=caml_check_bound(apz[10],3)[1+ll];apz[12]=iD(apz[1],apz[11]);apz[13]=iX(apz[1],apz[11]);apz[14]=caml_check_bound(apz[10],5)[1+lm];apz[15]=caml_check_bound(apA,1)[1+lj]>>1;apz[16]=caml_check_bound(apA,2)[1+lk]>>1}function
-lw(apv){if(apv[7]!==0){var
-apw=ix(apv[15]);caml_check_bound(apv[8],1)[1+lj]=apw;var
-apx=ix(apv[16]);caml_check_bound(apv[8],2)[1+lk]=apx}}function
-lx(apt,aps){apt[16]=apt[16]+1|0;var
-apu=apt[16];caml_check_bound(apt[8],apu)[1+apu]=aps;return 0}function
-ly(apq,app){var
-apr=apq[16]-app|0;return caml_check_bound(apq[8],apr)[1+apr]}function
-lz(apo,apn){apo[16]=apo[16]-apn|0}function
-lA(apk){var
-apl=apk[16],apm=caml_check_bound(apk[8],apl)[1+apl];apk[16]=apk[16]-1|0;return apm}function
-lB(apj,api){return api?apj[1][8][17]:apj[1][8][18]}function
-lD(ao8,ao7,ao6,ao5){var
-ao_=ao6,ao9=ao5;for(;;){var
-aoG=((ao7^ao_<<3)>>>1|0)&num_1023;a:{if(caml_check_bound(ao8[19],aoG)[1+aoG]===ao7&&caml_check_bound(ao8[20],aoG)[1+aoG]===ao_){ao8[22]=ao8[22]+1|0;var
-ao$=[0,caml_check_bound(ao8[21],aoG)[1+aoG]];break a}ao8[23]=ao8[23]+1|0;var
-aoH=jD(ao8[1],ao7,ao_);if(aoH){var
-aoI=aoH[1];caml_check_bound(ao8[19],aoG)[1+aoG]=ao7;caml_check_bound(ao8[20],aoG)[1+aoG]=ao_;caml_check_bound(ao8[21],aoG)[1+aoG]=aoI;var
-ao$=[0,aoI]}else
+aqy=aqp[1];jT(aqz);var
+aqA=[0,aqy,[0,jX(aqz,ko),0]];break a}var
+aqA=jU(aqz,kk)}var
+aqB=ku(aqz,aqA[1],aqA[2])}catch(aqT){var
+aqI=caml_wrap_exception(aqT);if(aqI[1]===jP)throw caml_maybe_attach_backtrace([0,kz,aqI[2],aqI[3]],1);throw caml_maybe_attach_backtrace(aqI,0)}var
+aqJ=k9(aqG,aqF,aqC,[0,aqH],aqB),aqK=iL(aqG,aqB[1]),aqf=iD(aqG,aqF,i3),aqg=jA(aqG,aqF),aqh=aqg[2],aqi=aqg[1];a:{b:{var
+aqj=0;for(;;){if(aqi.length-1<=aqj)break b;if(caml_check_bound(aqi,aqj)[1+aqj]===aqK)break;aqj=aqj+1|0}var
+aqk=[0,aqj];break a}var
+aqk=0}if(aqk){var
+aql=aqk[1];caml_check_bound(aqh,aql)[1+aql]=aqJ}else{iE(aqG,aqf,0,iJ(aqG,a8(aqi,[0,aqK])));iE(aqG,aqf,1,iJ(aqG,a8(aqh,[0,aqJ])))}var
+aqm=iG(aqG,aqK),aqL=ab(function(aqP){var
+aqQ=aqP[2],aqR=aqP[1];return[0,aqR,ao(function(aqS){return aqm!==aqS?1:0})(aqQ)]},jE(aqG,aqF));a:{b:{var
+aqc=aqL;for(;;){if(!aqc)break;var
+aqd=aqc[2],aqe=0===caml_compare(aqc[1][1],aqE)?1:0;if(aqe)break b;aqc=aqd}var
+aqn=0;break a}var
+aqn=aqe}var
+aqo=aqn?ab(function(aqM){var
+aqN=aqM[2],aqO=aqM[1];return aqO===aqE?[0,aqO,[0,aqm,aqN]]:[0,aqO,aqN]},aqL):o(aqL,[0,[0,aqE,[0,aqm,0]],0]);jF(aqG,aqF,aqo);return aqB[1]}function
+lb(ap2,ap1){var
+ap3=jD(ap2,ap1),ap4=aq(function(ap6){var
+ap7=jB(ap2,ap1,iL(ap2,ap6));if(!ap7)return 0;var
+ap8=i0(ap2,ap7[1]),ap9=C(jI(ap2,ap1,ap6),lc);try{la(ap2,ap1,ap9,0,ap8);var
+aqa=0;return aqa}catch(aqb){var
+ap_=caml_wrap_exception(aqb);if(ap_[1]!==kz)throw caml_maybe_attach_backtrace(ap_,0);var
+ap$=ap_[3];return[0,[0,jf(ap2,ap1)+str$10+ap6,ap$]]}})(ap3);return o(ap4,ar(function(ap5){return lb(ap2,ap5)},jK(ap2,ap1)))}function
+ld(apT,apS,apR){try{var
+apV=kw(apR)}catch(ap0){var
+apU=caml_wrap_exception(ap0);if(apU[1]===jP)throw caml_maybe_attach_backtrace([0,kz,apU[2],apU[3]],1);throw caml_maybe_attach_backtrace(apU,0)}var
+apW=Y(apV[5]);a:{if(apW){var
+apX=apW[1];if(0===apX[0]){var
+apY=apX[1],apZ=Y([0,[1,apY,apY[2]],apW[2]]);break a}}var
+apZ=apV[5]}return k9(apT,apS,apR,le,[0,apV[1],apV[2],apV[3],apV[4],apZ])}var
+lg=[num_248,lf,caml_fresh_oo_id(0)],lh=0,li=1,lj=2,lk=3,ll=5,lm=5,lo=num_1024;function
+lp(apP,apO){return[0,apP,apO,caml_make_vect(num_512,0),function(apQ){return 0},0,1,iu,[0],iu,[0],iu,[0],az,iu,0,0,0,0,caml_make_vect(num_1024,-1),caml_make_vect(num_1024,-1),caml_make_vect(num_1024,0),0,0,0]}function
+lq(apN){a_(apN[19],0,lo,-1);return a_(apN[20],0,lo,-1)}function
+lr(apL,apK){var
+apM=apL[1][8][9];return iz(apL[1],apK)===apM?1:0}function
+ls(apJ,apI){return lr(apJ,apI)?iD(apJ[1],apI,lm):apI}function
+lt(apG,apF){var
+apH=ls(apG,apF);return iD(apG[1],apH,lk)}function
+lu(apC,apB){var
+apD=iC(apC[1],apB);apC[7]=apB;apC[8]=apD;var
+apE=lr(apC,apB)?caml_check_bound(apD,5)[1+lm]:apB;apC[9]=apE;apC[10]=iC(apC[1],apE);apC[11]=caml_check_bound(apC[10],3)[1+lk];apC[12]=iC(apC[1],apC[11]);apC[13]=iW(apC[1],apC[11]);apC[14]=caml_check_bound(apC[10],5)[1+ll];apC[15]=caml_check_bound(apD,1)[1+li]>>1;apC[16]=caml_check_bound(apD,2)[1+lj]>>1}function
+lv(apy){if(apy[7]!==0){var
+apz=iw(apy[15]);caml_check_bound(apy[8],1)[1+li]=apz;var
+apA=iw(apy[16]);caml_check_bound(apy[8],2)[1+lj]=apA}}function
+lw(apw,apv){apw[16]=apw[16]+1|0;var
+apx=apw[16];caml_check_bound(apw[8],apx)[1+apx]=apv;return 0}function
+lx(apt,aps){var
+apu=apt[16]-aps|0;return caml_check_bound(apt[8],apu)[1+apu]}function
+ly(apr,apq){apr[16]=apr[16]-apq|0}function
+lz(apn){var
+apo=apn[16],app=caml_check_bound(apn[8],apo)[1+apo];apn[16]=apn[16]-1|0;return app}function
+lA(apm,apl){return apl?apm[1][8][17]:apm[1][8][18]}function
+lC(ao$,ao_,ao9,ao8){var
+apb=ao9,apa=ao8;for(;;){var
+aoJ=((ao_^apb<<3)>>>1|0)&num_1023;a:{if(caml_check_bound(ao$[19],aoJ)[1+aoJ]===ao_&&caml_check_bound(ao$[20],aoJ)[1+aoJ]===apb){ao$[22]=ao$[22]+1|0;var
+apc=[0,caml_check_bound(ao$[21],aoJ)[1+aoJ]];break a}ao$[23]=ao$[23]+1|0;var
+aoK=jC(ao$[1],ao_,apb);if(aoK){var
+aoL=aoK[1];caml_check_bound(ao$[19],aoJ)[1+aoJ]=ao_;caml_check_bound(ao$[20],aoJ)[1+aoJ]=apb;caml_check_bound(ao$[21],aoJ)[1+aoJ]=aoL;var
+apc=[0,aoL]}else
 var
-ao$=0}if(ao$){var
-apa=ao$[1],aoY=iW(ao8[1],apa),aoZ=0!==aoY[1]?1:0;if(aoZ)var
-ao0=aoY[1],ao1=caml_check_bound(ao8[3],ao0)[1+ao0],ao2=ao1?caml_call2(ao1[1],ao8,ao9):0,ao3=ao2;else
+apc=0}if(apc){var
+apd=apc[1],ao1=iV(ao$[1],apd),ao2=0!==ao1[1]?1:0;if(ao2)var
+ao3=ao1[1],ao4=caml_check_bound(ao$[3],ao3)[1+ao3],ao5=ao4?caml_call2(ao4[1],ao$,apa):0,ao6=ao5;else
 var
-ao3=aoZ;var
-ao4=1-ao3;if(!ao4)return ao4;var
-aoJ=iW(ao8[1],apa);if(aoJ[2]!==ao9)throw caml_maybe_attach_backtrace([0,lh,lC],1);var
-aoK=caml_make_vect(6+aoJ[4]|0,0),aoL=ao8[7];caml_check_bound(aoK,0)[1+li]=aoL;var
-aoM=ix(0);caml_check_bound(aoK,1)[1+lj]=aoM;var
-aoN=ix((6+aoJ[3]|0)-1|0);caml_check_bound(aoK,2)[1+lk]=aoN;caml_check_bound(aoK,3)[1+ll]=apa;var
-aoO=ao8[16]-ao9|0,aoP=caml_check_bound(ao8[8],aoO)[1+aoO];caml_check_bound(aoK,5)[1+lm]=aoP;var
-aoR=ao9-1|0,aoQ=0;if(aoR>=0){var
-aoT=aoQ;for(;;){var
-aoU=((ao8[16]-ao9|0)+1|0)+aoT|0,aoW=6+aoT|0,aoV=caml_check_bound(ao8[8],aoU)[1+aoU];caml_check_bound(aoK,aoW)[1+aoW]=aoV;var
-aoX=aoT+1|0;if(aoR===aoT)break;aoT=aoX}}var
-aoS=iz(ao8[1],ao8[1][8][8],[0,aoK]);ao8[16]=(ao8[16]-ao9|0)-1|0;lw(ao8);return lv(ao8,aoS)}let
-apf=ao9;var
-apb=a5(ao9,function(apg){var
-aph=((ao8[16]-apf|0)+1|0)+apg|0;return caml_check_bound(ao8[8],aph)[1+aph]}),apc=[0,[0,ao_,iK(ao8[1],apb)]],apd=iz(ao8[1],ao8[1][8][10],apc);lz(ao8,ao9);lx(ao8,apd);var
-ape=iM(ao8[1],lE);if(ao_===ape)throw caml_maybe_attach_backtrace([0,lh,"recursive doesNotUnderstand: in "+jg(ao8[1],ao7)],1);ao_=ape;ao9=1}}function
-lF(aoE,aoD,aoC){var
-aoF=ly(aoE,aoC);return lD(aoE,iA(aoE[1],aoF),aoD,aoC)}function
-lG(aoA,aoz,aoy){var
-aoB=i0(aoA[1],aoA[11]);return lD(aoA,iE(aoA[1],aoB,i3),aoz,aoy)}function
-lH(aox,aow){return iE(aox[1],aow,lj)===0?1:0}function
-lI(aov,aou){iF(aov[1],aou,li,iv);return iF(aov[1],aou,lj,iv)}function
-lJ(aot,aos){lx(aot,aot[7]);lx(aot,aos);return lF(aot,iM(aot[1],lK),1)}function
-lL(aop,aoo){var
-aoq=aop[9],aor=iE(aop[1],aoq,li);if(lH(aop,aoq))return lJ(aop,aoo);if(aor===0){lI(aop,aoq);if(aop[7]!==aoq)lI(aop,aop[7]);aop[18]=[0,aoo];return}if(lH(aop,aor))return lJ(aop,aoo);lI(aop,aoq);if(aop[7]!==aoq)lI(aop,aop[7]);lv(aop,aor);return lx(aop,aoo)}var
-lN=lM.slice();function
-lO(aon,aom){if((aon<0?1:0)!==(aom<0?1:0)&&0!==caml_mod(aon,aom))return caml_div(aon,aom)-1|0;return caml_div(aon,aom)}function
-lP(aoh,aog,aof){var
-aoi=lA(aoh),aol=aoh[1][8],aoj=aog?aol[17]:aol[18];if(aoi===aoj){aoh[15]=aoh[15]+aof|0;return}var
-aok=aog?aol[18]:aol[17];if(aoi===aok)return;lx(aoh,aoi);return lF(aoh,iM(aoh[1],lQ),0)}function
-lR(aod){var
-aoe=caml_bytes_unsafe_get(aod[13],aod[15]);aod[15]=aod[15]+1|0;return aoe}function
-lS(anw){var
-anx=anw[1],any=lR(anw);if(16>any)return lx(anw,caml_check_bound(iD(anx,anw[14]),any)[1+any]);if(32>any){var
-an8=(6+any|0)-16|0;return lx(anw,caml_check_bound(anw[10],an8)[1+an8])}if(64>any){var
-an7=(1+any|0)+num_32|0;return lx(anw,caml_check_bound(anw[12],an7)[1+an7])}if(96>any){var
-an6=(1+any|0)-64|0;return lx(anw,iE(anx,caml_check_bound(anw[12],an6)[1+an6],1))}if(num_104>any){var
-an5=any-96|0,an4=lA(anw);caml_check_bound(iD(anx,anw[14]),an5)[1+an5]=an4;return}if(num_112>any){var
-an3=(6+any|0)-104|0,an2=lA(anw);caml_check_bound(anw[10],an3)[1+an3]=an2;return}if(num_120>any){var
-aoa=anx[8],an0=any-112|0;if(3<an0>>>0)var
-an1=ix(any-117|0);else
-switch(an0){case
+ao6=ao2;var
+ao7=1-ao6;if(!ao7)return ao7;var
+aoM=iV(ao$[1],apd);if(aoM[2]!==apa)throw caml_maybe_attach_backtrace([0,lg,lB],1);var
+aoN=caml_make_vect(6+aoM[4]|0,0),aoO=ao$[7];caml_check_bound(aoN,0)[1+lh]=aoO;var
+aoP=iw(0);caml_check_bound(aoN,1)[1+li]=aoP;var
+aoQ=iw((6+aoM[3]|0)-1|0);caml_check_bound(aoN,2)[1+lj]=aoQ;caml_check_bound(aoN,3)[1+lk]=apd;var
+aoR=ao$[16]-apa|0,aoS=caml_check_bound(ao$[8],aoR)[1+aoR];caml_check_bound(aoN,5)[1+ll]=aoS;var
+aoU=apa-1|0,aoT=0;if(aoU>=0){var
+aoW=aoT;for(;;){var
+aoX=((ao$[16]-apa|0)+1|0)+aoW|0,aoZ=6+aoW|0,aoY=caml_check_bound(ao$[8],aoX)[1+aoX];caml_check_bound(aoN,aoZ)[1+aoZ]=aoY;var
+ao0=aoW+1|0;if(aoU===aoW)break;aoW=ao0}}var
+aoV=iy(ao$[1],ao$[1][8][8],[0,aoN]);ao$[16]=(ao$[16]-apa|0)-1|0;lv(ao$);return lu(ao$,aoV)}let
+api=apa;var
+ape=a5(apa,function(apj){var
+apk=((ao$[16]-api|0)+1|0)+apj|0;return caml_check_bound(ao$[8],apk)[1+apk]}),apf=[0,[0,apb,iJ(ao$[1],ape)]],apg=iy(ao$[1],ao$[1][8][10],apf);ly(ao$,apa);lw(ao$,apg);var
+aph=iL(ao$[1],lD);if(apb===aph)throw caml_maybe_attach_backtrace([0,lg,"recursive doesNotUnderstand: in "+jf(ao$[1],ao_)],1);apb=aph;apa=1}}function
+lE(aoH,aoG,aoF){var
+aoI=lx(aoH,aoF);return lC(aoH,iz(aoH[1],aoI),aoG,aoF)}function
+lF(aoD,aoC,aoB){var
+aoE=iZ(aoD[1],aoD[11]);return lC(aoD,iD(aoD[1],aoE,i2),aoC,aoB)}function
+lG(aoA,aoz){return iD(aoA[1],aoz,li)===0?1:0}function
+lH(aoy,aox){iE(aoy[1],aox,lh,iu);return iE(aoy[1],aox,li,iu)}function
+lI(aow,aov){lw(aow,aow[7]);lw(aow,aov);return lE(aow,iL(aow[1],lJ),1)}function
+lK(aos,aor){var
+aot=aos[9],aou=iD(aos[1],aot,lh);if(lG(aos,aot))return lI(aos,aor);if(aou===0){lH(aos,aot);if(aos[7]!==aot)lH(aos,aos[7]);aos[18]=[0,aor];return}if(lG(aos,aou))return lI(aos,aor);lH(aos,aot);if(aos[7]!==aot)lH(aos,aos[7]);lu(aos,aou);return lw(aos,aor)}var
+lM=lL.slice();function
+lN(aoq,aop){if((aoq<0?1:0)!==(aop<0?1:0)&&0!==caml_mod(aoq,aop))return caml_div(aoq,aop)-1|0;return caml_div(aoq,aop)}function
+lO(aok,aoj,aoi){var
+aol=lz(aok),aoo=aok[1][8],aom=aoj?aoo[17]:aoo[18];if(aol===aom){aok[15]=aok[15]+aoi|0;return}var
+aon=aoj?aoo[18]:aoo[17];if(aol===aon)return;lw(aok,aol);return lE(aok,iL(aok[1],lP),0)}function
+lQ(aog){var
+aoh=caml_bytes_unsafe_get(aog[13],aog[15]);aog[15]=aog[15]+1|0;return aoh}function
+lR(anz){var
+anA=anz[1],anB=lQ(anz);if(16>anB)return lw(anz,caml_check_bound(iC(anA,anz[14]),anB)[1+anB]);if(32>anB){var
+an$=(6+anB|0)-16|0;return lw(anz,caml_check_bound(anz[10],an$)[1+an$])}if(64>anB){var
+an_=(1+anB|0)+num_32|0;return lw(anz,caml_check_bound(anz[12],an_)[1+an_])}if(96>anB){var
+an9=(1+anB|0)-64|0;return lw(anz,iD(anA,caml_check_bound(anz[12],an9)[1+an9],1))}if(num_104>anB){var
+an8=anB-96|0,an7=lz(anz);caml_check_bound(iC(anA,anz[14]),an8)[1+an8]=an7;return}if(num_112>anB){var
+an6=(6+anB|0)-104|0,an5=lz(anz);caml_check_bound(anz[10],an6)[1+an6]=an5;return}if(num_120>anB){var
+aod=anA[8],an3=anB-112|0;if(3<an3>>>0)var
+an4=iw(anB-117|0);else
+switch(an3){case
 0:var
-an1=anw[14];break;case
+an4=anz[14];break;case
 1:var
-an1=aoa[17];break;case
+an4=aod[17];break;case
 2:var
-an1=aoa[18];break;default:var
-an1=iv}return lx(anw,an1)}if(num_208<=any){var
-anz=1+(any&15)|0;return lF(anw,caml_check_bound(anw[12],anz)[1+anz],(any-208|0)/16|0)}if(num_176>any){var
-anG=any-120|0;if(17>=anG>>>0)switch(anG){case
-0:return lL(anw,anw[14]);case
-1:return lL(anw,anx[8][17]);case
-2:return lL(anw,anx[8][18]);case
-3:return lL(anw,iv);case
-4:return lL(anw,lA(anw));case
+an4=aod[18];break;default:var
+an4=iu}return lw(anz,an4)}if(num_208<=anB){var
+anC=1+(anB&15)|0;return lE(anz,caml_check_bound(anz[12],anC)[1+anC],(anB-208|0)/16|0)}if(num_176>anB){var
+anJ=anB-120|0;if(17>=anJ>>>0)switch(anJ){case
+0:return lK(anz,anz[14]);case
+1:return lK(anz,anA[8][17]);case
+2:return lK(anz,anA[8][18]);case
+3:return lK(anz,iu);case
+4:return lK(anz,lz(anz));case
 5:var
-anI=lA(anw),anr=caml_check_bound(anw[8],0)[1+li];if(anr!==0&&!lH(anw,anr)){lI(anw,anw[7]);lv(anw,anr);return lx(anw,anI)}return lJ(anw,anI);case
+anL=lz(anz),anu=caml_check_bound(anz[8],0)[1+lh];if(anu!==0&&!lG(anz,anu)){lH(anz,anz[7]);lu(anz,anu);return lw(anz,anL)}return lI(anz,anL);case
 11:var
-anS=lR(anw),anT=1+(anS&31)|0;return lF(anw,caml_check_bound(anw[12],anT)[1+anT],anS>>>5|0);case
+anV=lQ(anz),anW=1+(anV&31)|0;return lE(anz,caml_check_bound(anz[12],anW)[1+anW],anV>>>5|0);case
 12:var
-anU=lR(anw),anV=1+lR(anw)|0;return lF(anw,caml_check_bound(anw[12],anV)[1+anV],anU);case
+anX=lQ(anz),anY=1+lQ(anz)|0;return lE(anz,caml_check_bound(anz[12],anY)[1+anY],anX);case
 13:var
-anW=lR(anw),anX=1+(anW&31)|0;return lG(anw,caml_check_bound(anw[12],anX)[1+anX],anW>>>5|0);case
+anZ=lQ(anz),an0=1+(anZ&31)|0;return lF(anz,caml_check_bound(anz[12],an0)[1+an0],anZ>>>5|0);case
 14:var
-anY=lR(anw),anZ=1+lR(anw)|0;return lG(anw,caml_check_bound(anw[12],anZ)[1+anZ],anY);case
-15:return lz(anw,1);case
-16:return lx(anw,ly(anw,0));case
-17:return lx(anw,anw[7]);case
+an1=lQ(anz),an2=1+lQ(anz)|0;return lF(anz,caml_check_bound(anz[12],an2)[1+an2],an1);case
+15:return ly(anz,1);case
+16:return lw(anz,lx(anz,0));case
+17:return lw(anz,anz[7]);case
 6:case
 7:break;default:var
-anJ=lR(anw),anK=anJ&63,anL=anJ>>>6|0;if(num_128===any){if(2>=anL>>>0)switch(anL){case
-0:return lx(anw,caml_check_bound(iD(anx,anw[14]),anK)[1+anK]);case
+anM=lQ(anz),anN=anM&63,anO=anM>>>6|0;if(num_128===anB){if(2>=anO>>>0)switch(anO){case
+0:return lw(anz,caml_check_bound(iC(anA,anz[14]),anN)[1+anN]);case
 1:var
-anN=6+anK|0;return lx(anw,caml_check_bound(anw[10],anN)[1+anN]);default:var
-anO=1+anK|0;return lx(anw,caml_check_bound(anw[12],anO)[1+anO])}var
-anM=1+anK|0;return lx(anw,iE(anx,caml_check_bound(anw[12],anM)[1+anM],1))}var
-anP=ly(anw,0);if(num_130===any)lz(anw,1);if(3>=anL>>>0)switch(anL){case
-0:caml_check_bound(iD(anx,anw[14]),anK)[1+anK]=anP;return;case
+anQ=6+anN|0;return lw(anz,caml_check_bound(anz[10],anQ)[1+anQ]);default:var
+anR=1+anN|0;return lw(anz,caml_check_bound(anz[12],anR)[1+anR])}var
+anP=1+anN|0;return lw(anz,iD(anA,caml_check_bound(anz[12],anP)[1+anP],1))}var
+anS=lx(anz,0);if(num_130===anB)ly(anz,1);if(3>=anO>>>0)switch(anO){case
+0:caml_check_bound(iC(anA,anz[14]),anN)[1+anN]=anS;return;case
 1:var
-anQ=6+anK|0;caml_check_bound(anw[10],anQ)[1+anQ]=anP;return;case
+anT=6+anN|0;caml_check_bound(anz[10],anT)[1+anT]=anS;return;case
 3:var
-anR=1+anK|0;return iF(anx,caml_check_bound(anw[12],anR)[1+anR],1,anP)}throw caml_maybe_attach_backtrace([0,lh,lU],1)}if(num_144<=any&&num_151>=any){anw[15]=anw[15]+(any-143|0)|0;return}if(num_152<=any&&159>=any)return lP(anw,0,any-151|0);if(num_160<=any&&167>=any){var
-anH=((any-164|0)*num_256|0)+lR(anw)|0;anw[15]=anw[15]+anH|0;return}if(num_168<=any&&171>=any)return lP(anw,1,((any-168|0)*num_256|0)+lR(anw)|0);if(num_172<=any&&num_175>=any)return lP(anw,0,((any-172|0)*num_256|0)+lR(anw)|0);throw caml_maybe_attach_backtrace([0,lh,caml_call1(dX(lT),any)],1)}var
-anA=any-176|0,an$=anx[8];if(16>anA){var
-ans=ly(anw,1),ant=ly(anw,0);a:{if(iw(ans)&&iw(ant)){var
-an_=ans>>1,an9=ant>>1,anu=function(aoc){return iy(aoc)?(lz(anw,2),lx(anw,ix(aoc)),1):0},anv=function(aob){lz(anw,2);lx(anw,lB(anw,aob));return 1};if(15>=anA>>>0)switch(anA){case
+anU=1+anN|0;return iE(anA,caml_check_bound(anz[12],anU)[1+anU],1,anS)}throw caml_maybe_attach_backtrace([0,lg,lT],1)}if(num_144<=anB&&num_151>=anB){anz[15]=anz[15]+(anB-143|0)|0;return}if(num_152<=anB&&159>=anB)return lO(anz,0,anB-151|0);if(num_160<=anB&&167>=anB){var
+anK=((anB-164|0)*num_256|0)+lQ(anz)|0;anz[15]=anz[15]+anK|0;return}if(num_168<=anB&&171>=anB)return lO(anz,1,((anB-168|0)*num_256|0)+lQ(anz)|0);if(num_172<=anB&&num_175>=anB)return lO(anz,0,((anB-172|0)*num_256|0)+lQ(anz)|0);throw caml_maybe_attach_backtrace([0,lg,caml_call1(dX(lS),anB)],1)}var
+anD=anB-176|0,aoc=anA[8];if(16>anD){var
+anv=lx(anz,1),anw=lx(anz,0);a:{if(iv(anv)&&iv(anw)){var
+aob=anv>>1,aoa=anw>>1,anx=function(aof){return ix(aof)?(ly(anz,2),lw(anz,iw(aof)),1):0},any=function(aoe){ly(anz,2);lw(anz,lA(anz,aoe));return 1};if(15>=anD>>>0)switch(anD){case
 0:var
-anF=anu(an_+an9|0);break a;case
+anI=anx(aob+aoa|0);break a;case
 1:var
-anF=anu(an_-an9|0);break a;case
+anI=anx(aob-aoa|0);break a;case
 2:var
-anF=anv(an_<an9?1:0);break a;case
+anI=any(aob<aoa?1:0);break a;case
 3:var
-anF=anv(an9<an_?1:0);break a;case
+anI=any(aoa<aob?1:0);break a;case
 4:var
-anF=anv(an_<=an9?1:0);break a;case
+anI=any(aob<=aoa?1:0);break a;case
 5:var
-anF=anv(an9<=an_?1:0);break a;case
+anI=any(aoa<=aob?1:0);break a;case
 6:var
-anF=anv(an_===an9?1:0);break a;case
+anI=any(aob===aoa?1:0);break a;case
 7:var
-anF=anv(an_!==an9?1:0);break a;case
-8:if(Math.abs(an_*an9)<=num_1073741823$0){var
-anF=anu(caml_mul(an_,an9));break a}var
-anF=0;break a;case
-9:if(0!==an9&&0===caml_mod(an_,an9)){var
-anF=anu(caml_div(an_,an9));break a}var
-anF=0;break a;case
-10:if(0===an9){var
-anF=0;break a}var
-anF=anu(an_-caml_mul(an9,lO(an_,an9))|0);break a;case
-13:if(0===an9){var
-anF=0;break a}var
-anF=anu(lO(an_,an9));break a;case
+anI=any(aob!==aoa?1:0);break a;case
+8:if(Math.abs(aob*aoa)<=num_1073741823$0){var
+anI=anx(caml_mul(aob,aoa));break a}var
+anI=0;break a;case
+9:if(0!==aoa&&0===caml_mod(aob,aoa)){var
+anI=anx(caml_div(aob,aoa));break a}var
+anI=0;break a;case
+10:if(0===aoa){var
+anI=0;break a}var
+anI=anx(aob-caml_mul(aoa,lN(aob,aoa))|0);break a;case
+13:if(0===aoa){var
+anI=0;break a}var
+anI=anx(lN(aob,aoa));break a;case
 14:var
-anF=anu(an_&an9);break a;case
+anI=anx(aob&aoa);break a;case
 15:var
-anF=anu(an_|an9);break a}var
-anF=0;break a}var
-anF=0}if(anF)return}if(22===anA){var
-anB=ly(anw,1),anC=ly(anw,0)===anB?1:0;lz(anw,2);return lx(anw,lB(anw,anC))}if(23===anA){var
-anD=iA(anx,ly(anw,0));lz(anw,1);return lx(anw,anD)}var
-anE=caml_check_bound(lN,anA)[1+anA];return lF(anw,caml_check_bound(an$[21],anA)[1+anA],anE)}function
-lV(ane){lw(ane);var
-anf=caml_call1(ane[4],0),ang=ab(function(anq){return anq[2]},ane[5]),anh=o([0,ane[7],ang],anf),ani=ane[1],amW=ax(ani[4],0),amX=ani[8],amY=[0,0];function
-amZ(anl){var
-anm=1-iw(anl);if(anm)var
-ann=(anl>>>1|0)<ani[4]?1:0,ano=ann?0===caml_bytes_get(amW,anl>>>1|0)?1:0:ann;else
+anI=anx(aob|aoa);break a}var
+anI=0;break a}var
+anI=0}if(anI)return}if(22===anD){var
+anE=lx(anz,1),anF=lx(anz,0)===anE?1:0;ly(anz,2);return lw(anz,lA(anz,anF))}if(23===anD){var
+anG=iz(anA,lx(anz,0));ly(anz,1);return lw(anz,anG)}var
+anH=caml_check_bound(lM,anD)[1+anD];return lE(anz,caml_check_bound(aoc[21],anD)[1+anD],anH)}function
+lU(anh){lv(anh);var
+ani=caml_call1(anh[4],0),anj=ab(function(ant){return ant[2]},anh[5]),ank=o([0,anh[7],anj],ani),anl=anh[1],amZ=ax(anl[4],0),am0=anl[8],am1=[0,0];function
+am2(ano){var
+anp=1-iv(ano);if(anp)var
+anq=(ano>>>1|0)<anl[4]?1:0,anr=anq?0===caml_bytes_get(amZ,ano>>>1|0)?1:0:anq;else
 var
-ano=anm;var
-anp=ano?(caml_bytes_set(amW,anl>>>1|0,1),amY[1]=[0,anl,amY[1]],0):ano;return anp}amZ(iv);ae(amZ,[0,amX[17],[0,amX[18],[0,amX[19],0]]]);bc(amZ,amX[20]);bc(amZ,amX[21]);eH(function(ank,anj){return amZ(anj)},ani[7]);ae(amZ,anh);for(;;){var
-am7=amY[1];if(!am7)break;var
-am8=am7[1];amY[1]=am7[2];var
-amV=am8>>>1|0;amZ(caml_check_bound(ani[1],amV)[1+amV]);var
-am0=caml_check_bound(ani[2],amV)[1+amV];a:if(typeof
-am0!=="number")switch(am0[0]){case
+anr=anp;var
+ans=anr?(caml_bytes_set(amZ,ano>>>1|0,1),am1[1]=[0,ano,am1[1]],0):anr;return ans}am2(iu);ae(am2,[0,am0[17],[0,am0[18],[0,am0[19],0]]]);bc(am2,am0[20]);bc(am2,am0[21]);eH(function(ann,anm){return am2(anm)},anl[7]);ae(am2,ank);for(;;){var
+am_=am1[1];if(!am_)break;var
+am$=am_[1];am1[1]=am_[2];var
+amY=am$>>>1|0;am2(caml_check_bound(anl[1],amY)[1+amY]);var
+am3=caml_check_bound(anl[2],amY)[1+amY];a:if(typeof
+am3!=="number")switch(am3[0]){case
 0:var
-am1=am0[1],am2=caml_check_bound(ani[1],amV)[1+amV];b:{c:{if(am2!==amX[8]&&am2!==amX[9])break c;if(2<am1.length-1&&iw(caml_check_bound(am1,2)[3])){var
-am3=h(am1.length-2|0,caml_check_bound(am1,2)[3]>>1);break b}}var
-am3=am1.length-2|0}var
-am4=0;if(am3>=0){var
-am5=am4;for(;;){amZ(caml_check_bound(am1,am5)[1+am5]);var
-am6=am5+1|0;if(am3===am5)break;am5=am6}}break a;case
-3:bc(amZ,am0[1]);break a}}var
-am9=[0,0],am$=ani[4]-1|0,am_=1;if(am$>=1){var
-ana=am_;for(;;){var
-anb=0===caml_bytes_get(amW,ana)?1:0,anc=anb?0!==caml_check_bound(ani[2],ana)[1+ana]?1:0:anb;if(anc){caml_check_bound(ani[2],ana)[1+ana]=0;caml_check_bound(ani[1],ana)[1+ana]=0;ani[3]=[0,ana,ani[3]];am9[1]++}var
-and=ana+1|0;if(am$===ana)break;ana=and}}ani[5]=ani[5]-am9[1]|0;ani[6]=0;return lr(ane)}function
-lW(amP,amO,amN){var
-amQ=iW(amP[1],amO),amR=caml_make_vect(6+amQ[4]|0,0),amS=ix(0);caml_check_bound(amR,1)[1+lj]=amS;var
-amT=ix((6+amQ[3]|0)-1|0);caml_check_bound(amR,2)[1+lk]=amT;caml_check_bound(amR,3)[1+ll]=amO;caml_check_bound(amR,5)[1+lm]=amN;var
-amU=iz(amP[1],amP[1][8][8],[0,amR]),amM=[0,amP[6],amU,0];amP[6]=amP[6]+1|0;amP[5]=[0,amM,amP[5]];return amM}function
-l0(amJ,amI){var
-amK=amJ[5];amJ[5]=ao(function(amL){return amL!==amI?1:0})(amK)}function
-l1(amy,amx,amw,amv){var
-amz=amw[3];if(typeof
-amz==="number"&&!amz){amx[17]=0;amx[18]=0;lv(amx,amw[2]);var
-amA=[0,0];try{for(;;){if(amA[1]<amv&&0===amx[17]&&0===amx[18]){if(amy){var
-amE=amy[1];if(0<amA[1]&&caml_call1(amE,amx)){amx[17]=l2;continue}}lS(amx);amA[1]++;var
-amF=0===(amA[1]&num_1023)?1:0,amG=amF?(num_100000+(amx[1][5]/2|0)|0)<amx[1][6]?1:0:amF;if(!amG)continue;lV(amx);continue}break}}catch(amH){var
-amB=caml_wrap_exception(amH);if(amB[1]===lh)amx[17]=[0,str_Virtual_machine+amB[2]];else{if(amB[1]!==Invalid_argument)throw caml_maybe_attach_backtrace(amB,0);amx[17]=[0,str_Virtual_machine+amB[2]]}}amx[24]=amx[24]+amA[1]|0;var
-amC=amx[18];if(amC){amw[3]=[1,amC[1]];amw[2]=iv;l0(amx,amw)}else{lw(amx);amw[2]=amx[7];var
-amD=amx[17];if(amD)amw[3]=[0,amD[1]]}amx[7]=iv;return}}function
-l3(amt){var
-amu=amt[3];if(typeof
-amu!=="number"&&0===amu[0]){amt[3]=0;return}}function
-l4(amr,amq){var
-ams=amr[3];if(typeof
-ams==="number"&&!ams){amr[3]=[0,amq];return}}function
-l5(amp,amo){amo[3]=1;return l0(amp,amo)}function
-l6(aml,amk,amj){l1(0,aml,amk,amj);var
-amm=amk[3],amn=typeof
-amm==="number"?0===amm?l7:l8:0===amm[0]?[1,amm[1]]:[0,amm[1]];l0(aml,amk);return amn}function
-ma(amc,amb,ama,al$){var
-amd=amb?amb[1]:num_20000000,ame=ama?ama[1]:iv;try{var
-amg=iA(amc[1],ame),amh=le(amc[1],amg,al$)}catch(ami){var
-amf=caml_wrap_exception(ami);if(amf[1]===kA)return[1,amf[3]];throw caml_maybe_attach_backtrace(amf,0)}return l6(amc,lW(amc,amh,ame),amd)}function
-mb(al_,al9,al8){return ly(al_,(al9-1|0)-al8|0)}function
-mc(al7,al6,al5){lz(al7,al6+1|0);lx(al7,al5);return 1}function
-md(alY,alX){var
-al4=alY[8],alZ=1-iw(alX);if(alZ){var
-al0=al4[2],al1=iA(alY,alX)===al0?1:0;if(al1)var
-al2=al1;else
+am4=am3[1],am5=caml_check_bound(anl[1],amY)[1+amY];b:{c:{if(am5!==am0[8]&&am5!==am0[9])break c;if(2<am4.length-1&&iv(caml_check_bound(am4,2)[3])){var
+am6=h(am4.length-2|0,caml_check_bound(am4,2)[3]>>1);break b}}var
+am6=am4.length-2|0}var
+am7=0;if(am6>=0){var
+am8=am7;for(;;){am2(caml_check_bound(am4,am8)[1+am8]);var
+am9=am8+1|0;if(am6===am8)break;am8=am9}}break a;case
+3:bc(am2,am3[1]);break a}}var
+ana=[0,0],anc=anl[4]-1|0,anb=1;if(anc>=1){var
+and=anb;for(;;){var
+ane=0===caml_bytes_get(amZ,and)?1:0,anf=ane?0!==caml_check_bound(anl[2],and)[1+and]?1:0:ane;if(anf){caml_check_bound(anl[2],and)[1+and]=0;caml_check_bound(anl[1],and)[1+and]=0;anl[3]=[0,and,anl[3]];ana[1]++}var
+ang=and+1|0;if(anc===and)break;and=ang}}anl[5]=anl[5]-ana[1]|0;anl[6]=0;return lq(anh)}function
+lV(amS,amR,amQ){var
+amT=iV(amS[1],amR),amU=caml_make_vect(6+amT[4]|0,0),amV=iw(0);caml_check_bound(amU,1)[1+li]=amV;var
+amW=iw((6+amT[3]|0)-1|0);caml_check_bound(amU,2)[1+lj]=amW;caml_check_bound(amU,3)[1+lk]=amR;caml_check_bound(amU,5)[1+ll]=amQ;var
+amX=iy(amS[1],amS[1][8][8],[0,amU]),amP=[0,amS[6],amX,0];amS[6]=amS[6]+1|0;amS[5]=[0,amP,amS[5]];return amP}function
+lZ(amM,amL){var
+amN=amM[5];amM[5]=ao(function(amO){return amO!==amL?1:0})(amN)}function
+l0(amB,amA,amz,amy){var
+amC=amz[3];if(typeof
+amC==="number"&&!amC){amA[17]=0;amA[18]=0;lu(amA,amz[2]);var
+amD=[0,0];try{for(;;){if(amD[1]<amy&&0===amA[17]&&0===amA[18]){if(amB){var
+amH=amB[1];if(0<amD[1]&&caml_call1(amH,amA)){amA[17]=l1;continue}}lR(amA);amD[1]++;var
+amI=0===(amD[1]&num_1023)?1:0,amJ=amI?(num_100000+(amA[1][5]/2|0)|0)<amA[1][6]?1:0:amI;if(!amJ)continue;lU(amA);continue}break}}catch(amK){var
+amE=caml_wrap_exception(amK);if(amE[1]===lg)amA[17]=[0,str_Virtual_machine+amE[2]];else{if(amE[1]!==Invalid_argument)throw caml_maybe_attach_backtrace(amE,0);amA[17]=[0,str_Virtual_machine+amE[2]]}}amA[24]=amA[24]+amD[1]|0;var
+amF=amA[18];if(amF){amz[3]=[1,amF[1]];amz[2]=iu;lZ(amA,amz)}else{lv(amA);amz[2]=amA[7];var
+amG=amA[17];if(amG)amz[3]=[0,amG[1]]}amA[7]=iu;return}}function
+l2(amw){var
+amx=amw[3];if(typeof
+amx!=="number"&&0===amx[0]){amw[3]=0;return}}function
+l3(amu,amt){var
+amv=amu[3];if(typeof
+amv==="number"&&!amv){amu[3]=[0,amt];return}}function
+l4(ams,amr){amr[3]=1;return lZ(ams,amr)}function
+l5(amo,amn,amm){l0(0,amo,amn,amm);var
+amp=amn[3],amq=typeof
+amp==="number"?0===amp?l6:l7:0===amp[0]?[1,amp[1]]:[0,amp[1]];lZ(amo,amn);return amq}function
+l$(amf,ame,amd,amc){var
+amg=ame?ame[1]:num_20000000,amh=amd?amd[1]:iu;try{var
+amj=iz(amf[1],amh),amk=ld(amf[1],amj,amc)}catch(aml){var
+ami=caml_wrap_exception(aml);if(ami[1]===kz)return[1,ami[3]];throw caml_maybe_attach_backtrace(ami,0)}return l5(amf,lV(amf,amk,amh),amg)}function
+ma(amb,ama,al$){return lx(amb,(ama-1|0)-al$|0)}function
+mb(al_,al9,al8){ly(al_,al9+1|0);lw(al_,al8);return 1}function
+mc(al1,al0){var
+al7=al1[8],al2=1-iv(al0);if(al2){var
+al3=al7[2],al4=iz(al1,al0)===al3?1:0;if(al4)var
+al5=al4;else
 var
-al3=al4[3],al2=iA(alY,alX)===al3?1:0}else
+al6=al7[3],al5=iz(al1,al0)===al6?1:0}else
 var
-al2=alZ;return al2}function
-me(alW,alV){return jc(alW,iA(alW,alV))[1]}function
-mf(alS,alR){var
-alT=1-iw(alR);if(alT){if(1<jc(alS,iA(alS,alR))[2]-1>>>0)return 0;var
-alU=1}else
+al5=al2;return al5}function
+md(alZ,alY){return jb(alZ,iz(alZ,alY))[1]}function
+me(alV,alU){var
+alW=1-iv(alU);if(alW){if(1<jb(alV,iz(alV,alU))[2]-1>>>0)return 0;var
+alX=1}else
 var
-alU=alT;return alU}function
-mg(alQ,alP){if((alQ<0?1:0)!==(alP<0?1:0)&&0!==caml_mod(alQ,alP))return caml_div(alQ,alP)-1|0;return caml_div(alQ,alP)}var
-mh=[0,[0,1,function(alO,alN){return[0,num_3654863,alO+alN|0]}],[0,[0,2,function(alM,alL){return[0,num_3654863,alM-alL|0]}],[0,[0,3,function(alK,alJ){return[0,num_737456202,alK<alJ?1:0]}],[0,[0,4,function(alI,alH){return[0,num_737456202,alH<alI?1:0]}],[0,[0,5,function(alG,alF){return[0,num_737456202,alG<=alF?1:0]}],[0,[0,6,function(alE,alD){return[0,num_737456202,alD<=alE?1:0]}],[0,[0,7,function(alC,alB){return[0,num_737456202,alC===alB?1:0]}],[0,[0,8,function(alA,alz){return[0,num_737456202,alA!==alz?1:0]}],[0,[0,9,function(aly,alx){return Math.abs(aly*alx)<=num_1073741823$0?[0,num_3654863,caml_mul(aly,alx)]:num_781116926}],[0,[0,10,function(alw,alv){if(0!==alv&&0===caml_mod(alw,alv))return[0,num_3654863,caml_div(alw,alv)];return num_781116926}],[0,[0,11,function(alu,alt){return 0===alt?num_781116926:[0,num_3654863,alu-caml_mul(alt,mg(alu,alt))|0]}],[0,[0,12,function(als,alr){return 0===alr?num_781116926:[0,num_3654863,mg(als,alr)]}],[0,[0,13,function(alq,alp){return 0===alp?num_781116926:[0,num_3654863,caml_div(alq,alp)]}],[0,[0,14,function(alo,aln){return[0,num_3654863,alo&aln]}],[0,[0,15,function(alm,all){return[0,num_3654863,alm|all]}],[0,[0,16,function(alk,alj){return[0,num_3654863,alk^alj]}],[0,[0,17,function(ali,alh){if(0>alh)return[0,num_3654863,ali>>h(31,-alh|0)];if(31>alh&&ali<<alh>>alh===ali&&iy(ali<<alh))return[0,num_3654863,ali<<alh];return num_781116926}],0]]]]]]]]]]]]]]]]],mi=[0,[0,41,function(alg,alf){return[0,num_365180284,alg+alf]}],[0,[0,42,function(ale,ald){return[0,num_365180284,ale-ald]}],[0,[0,43,function(alc,alb){return[0,num_737456202,alc<alb?1:0]}],[0,[0,44,function(ala,ak$){return[0,num_737456202,ak$<ala?1:0]}],[0,[0,45,function(ak_,ak9){return[0,num_737456202,ak_<=ak9?1:0]}],[0,[0,46,function(ak8,ak7){return[0,num_737456202,ak7<=ak8?1:0]}],[0,[0,47,function(ak6,ak5){return[0,num_737456202,ak6===ak5?1:0]}],[0,[0,48,function(ak4,ak3){return[0,num_737456202,ak4!==ak3?1:0]}],[0,[0,49,function(ak2,ak1){return[0,num_365180284,ak2*ak1]}],[0,[0,50,function(ak0,akZ){return akZ===0.?num_781116926:[0,num_365180284,ak0/akZ]}],0]]]]]]]]]];function
-mj(akW,akV,akU){var
-akY=akV[1],akX=iC(akY,ly(akV,akU));if(typeof
-akX!=="number"&&2===akX[0])return mc(akV,akU,iL(akY,caml_call1(akW,akX[1])));return 0}function
-mn(akQ,akP,akO){var
-akT=akQ[1];if(iw(akO)&&mf(akT,akP)){var
-akS=akO>>1,akR=me(akT,akP);if(1<=akS&&(akR+akS|0)<=iG(akT,akP))return[0,(akR+akS|0)-1|0];return 0}return 0}function
-mo(akI,akH){var
-akN=akI[1],akM=ly(akI,akH),akJ=mn(akI,akM,mb(akI,akH,0));if(!akJ)return 0;var
-akK=akJ[1],akL=iC(akN,akM);if(typeof
-akL!=="number")switch(akL[0]){case
-0:return mc(akI,akH,caml_check_bound(akL[1],akK)[1+akK]);case
-1:return mc(akI,akH,ix(caml_bytes_get(akL[1],akK)))}return 0}function
-mp(akz,aky){var
-akG=akz[1],akF=ly(akz,aky),akA=mb(akz,aky,1),akB=mn(akz,akF,mb(akz,aky,0));if(!akB)return 0;var
-akC=akB[1],akD=iC(akG,akF);if(typeof
-akD!=="number")switch(akD[0]){case
-0:caml_check_bound(akD[1],akC)[1+akC]=akA;return mc(akz,aky,akA);case
+alX=alW;return alX}function
+mf(alT,alS){if((alT<0?1:0)!==(alS<0?1:0)&&0!==caml_mod(alT,alS))return caml_div(alT,alS)-1|0;return caml_div(alT,alS)}var
+mg=[0,[0,1,function(alR,alQ){return[0,num_3654863,alR+alQ|0]}],[0,[0,2,function(alP,alO){return[0,num_3654863,alP-alO|0]}],[0,[0,3,function(alN,alM){return[0,num_737456202,alN<alM?1:0]}],[0,[0,4,function(alL,alK){return[0,num_737456202,alK<alL?1:0]}],[0,[0,5,function(alJ,alI){return[0,num_737456202,alJ<=alI?1:0]}],[0,[0,6,function(alH,alG){return[0,num_737456202,alG<=alH?1:0]}],[0,[0,7,function(alF,alE){return[0,num_737456202,alF===alE?1:0]}],[0,[0,8,function(alD,alC){return[0,num_737456202,alD!==alC?1:0]}],[0,[0,9,function(alB,alA){return Math.abs(alB*alA)<=num_1073741823$0?[0,num_3654863,caml_mul(alB,alA)]:num_781116926}],[0,[0,10,function(alz,aly){if(0!==aly&&0===caml_mod(alz,aly))return[0,num_3654863,caml_div(alz,aly)];return num_781116926}],[0,[0,11,function(alx,alw){return 0===alw?num_781116926:[0,num_3654863,alx-caml_mul(alw,mf(alx,alw))|0]}],[0,[0,12,function(alv,alu){return 0===alu?num_781116926:[0,num_3654863,mf(alv,alu)]}],[0,[0,13,function(alt,als){return 0===als?num_781116926:[0,num_3654863,caml_div(alt,als)]}],[0,[0,14,function(alr,alq){return[0,num_3654863,alr&alq]}],[0,[0,15,function(alp,alo){return[0,num_3654863,alp|alo]}],[0,[0,16,function(aln,alm){return[0,num_3654863,aln^alm]}],[0,[0,17,function(all,alk){if(0>alk)return[0,num_3654863,all>>h(31,-alk|0)];if(31>alk&&all<<alk>>alk===all&&ix(all<<alk))return[0,num_3654863,all<<alk];return num_781116926}],0]]]]]]]]]]]]]]]]],mh=[0,[0,41,function(alj,ali){return[0,num_365180284,alj+ali]}],[0,[0,42,function(alh,alg){return[0,num_365180284,alh-alg]}],[0,[0,43,function(alf,ale){return[0,num_737456202,alf<ale?1:0]}],[0,[0,44,function(ald,alc){return[0,num_737456202,alc<ald?1:0]}],[0,[0,45,function(alb,ala){return[0,num_737456202,alb<=ala?1:0]}],[0,[0,46,function(ak$,ak_){return[0,num_737456202,ak_<=ak$?1:0]}],[0,[0,47,function(ak9,ak8){return[0,num_737456202,ak9===ak8?1:0]}],[0,[0,48,function(ak7,ak6){return[0,num_737456202,ak7!==ak6?1:0]}],[0,[0,49,function(ak5,ak4){return[0,num_365180284,ak5*ak4]}],[0,[0,50,function(ak3,ak2){return ak2===0.?num_781116926:[0,num_365180284,ak3/ak2]}],0]]]]]]]]]];function
+mi(akZ,akY,akX){var
+ak1=akY[1],ak0=iB(ak1,lx(akY,akX));if(typeof
+ak0!=="number"&&2===ak0[0])return mb(akY,akX,iK(ak1,caml_call1(akZ,ak0[1])));return 0}function
+mm(akT,akS,akR){var
+akW=akT[1];if(iv(akR)&&me(akW,akS)){var
+akV=akR>>1,akU=md(akW,akS);if(1<=akV&&(akU+akV|0)<=iF(akW,akS))return[0,(akU+akV|0)-1|0];return 0}return 0}function
+mn(akL,akK){var
+akQ=akL[1],akP=lx(akL,akK),akM=mm(akL,akP,ma(akL,akK,0));if(!akM)return 0;var
+akN=akM[1],akO=iB(akQ,akP);if(typeof
+akO!=="number")switch(akO[0]){case
+0:return mb(akL,akK,caml_check_bound(akO[1],akN)[1+akN]);case
+1:return mb(akL,akK,iw(caml_bytes_get(akO[1],akN)))}return 0}function
+mo(akC,akB){var
+akJ=akC[1],akI=lx(akC,akB),akD=ma(akC,akB,1),akE=mm(akC,akI,ma(akC,akB,0));if(!akE)return 0;var
+akF=akE[1],akG=iB(akJ,akI);if(typeof
+akG!=="number")switch(akG[0]){case
+0:caml_check_bound(akG[1],akF)[1+akF]=akD;return mb(akC,akB,akD);case
 1:var
-akE=akD[1];if(iw(akA)&&0<=akA>>1&&num_256>akA>>1){caml_bytes_set(akE,akC,E(akA>>1));return mc(akz,aky,akA)}break}return 0}function
-mq(aku,akt){var
-akx=aku[1],akw=ly(aku,akt);if(iw(akw))return 0;if(!mf(akx,akw))return mc(aku,akt,ix(0));var
-akv=me(akx,akw);return mc(aku,akt,ix(iG(akx,akw)-akv|0))}function
-mr(akn,akm){var
-aks=akn[1],ako=iC(aks,ly(akn,akm)),akp=mb(akn,akm,0);if(typeof
-ako!=="number"&&1===ako[0]){var
-akq=ako[1];if(iw(akp)&&1<=akp>>1&&akp>>1<=caml_ml_bytes_length(akq)){var
-akr=caml_bytes_get(akq,(akp>>1)-1|0);return mc(akn,akm,caml_check_bound(aks[8][20],akr)[1+akr])}}return 0}function
-ms(akc,akb){var
-akl=akc[1],akk=ly(akc,akb),akd=mb(akc,akb,1),ake=iC(akl,akk),akf=mb(akc,akb,0);a:{if(!iw(akd)){var
-aj$=akl[8][6];if(iA(akl,akd)===aj$){var
-aka=iE(akl,akd,0);if(iw(aka)&&0<=aka>>1&&num_256>aka>>1){var
-akg=[0,aka>>1];break a}var
-akg=0;break a}}var
-akg=0}if(typeof
-ake!=="number"&&1===ake[0]&&akg){var
-aki=ake[1],akh=akg[1],akj=akl[8][3];if(iA(akl,akk)!==akj&&iw(akf)&&1<=akf>>1&&akf>>1<=caml_ml_bytes_length(aki)){caml_bytes_set(aki,(akf>>1)-1|0,E(akh));return mc(akc,akb,akd)}}return 0}function
-mt(ajW,ajV){var
-aj_=ajW[1],aj9=ly(ajW,ajV),ajX=mb(ajW,ajV,0),ajY=mb(ajW,ajV,1),ajZ=mb(ajW,ajV,2),aj0=mb(ajW,ajV,3);if(aj(iw,[0,ajX,[0,ajY,[0,aj0,0]]])&&mf(aj_,aj9)&&mf(aj_,ajZ)){var
-aj8=ajX>>1,aj7=ajY>>1,aj6=aj0>>1,aj1=(aj7-aj8|0)+1|0,aj2=me(aj_,aj9),aj3=me(aj_,ajZ);if(0===aj2&&0===aj3){if(0<=aj1&&1<=aj8&&1<=aj6&&iG(aj_,aj9)>=(aj2+aj7|0)&&iG(aj_,ajZ)>=(((aj3+aj6|0)+aj1|0)-1|0)){var
-aj4=iC(aj_,aj9),aj5=iC(aj_,ajZ);if(typeof
-aj4!=="number")switch(aj4[0]){case
+akH=akG[1];if(iv(akD)&&0<=akD>>1&&num_256>akD>>1){caml_bytes_set(akH,akF,E(akD>>1));return mb(akC,akB,akD)}break}return 0}function
+mp(akx,akw){var
+akA=akx[1],akz=lx(akx,akw);if(iv(akz))return 0;if(!me(akA,akz))return mb(akx,akw,iw(0));var
+aky=md(akA,akz);return mb(akx,akw,iw(iF(akA,akz)-aky|0))}function
+mq(akq,akp){var
+akv=akq[1],akr=iB(akv,lx(akq,akp)),aks=ma(akq,akp,0);if(typeof
+akr!=="number"&&1===akr[0]){var
+akt=akr[1];if(iv(aks)&&1<=aks>>1&&aks>>1<=caml_ml_bytes_length(akt)){var
+aku=caml_bytes_get(akt,(aks>>1)-1|0);return mb(akq,akp,caml_check_bound(akv[8][20],aku)[1+aku])}}return 0}function
+mr(akf,ake){var
+ako=akf[1],akn=lx(akf,ake),akg=ma(akf,ake,1),akh=iB(ako,akn),aki=ma(akf,ake,0);a:{if(!iv(akg)){var
+akc=ako[8][6];if(iz(ako,akg)===akc){var
+akd=iD(ako,akg,0);if(iv(akd)&&0<=akd>>1&&num_256>akd>>1){var
+akj=[0,akd>>1];break a}var
+akj=0;break a}}var
+akj=0}if(typeof
+akh!=="number"&&1===akh[0]&&akj){var
+akl=akh[1],akk=akj[1],akm=ako[8][3];if(iz(ako,akn)!==akm&&iv(aki)&&1<=aki>>1&&aki>>1<=caml_ml_bytes_length(akl)){caml_bytes_set(akl,(aki>>1)-1|0,E(akk));return mb(akf,ake,akg)}}return 0}function
+ms(ajZ,ajY){var
+akb=ajZ[1],aka=lx(ajZ,ajY),aj0=ma(ajZ,ajY,0),aj1=ma(ajZ,ajY,1),aj2=ma(ajZ,ajY,2),aj3=ma(ajZ,ajY,3);if(aj(iv,[0,aj0,[0,aj1,[0,aj3,0]]])&&me(akb,aka)&&me(akb,aj2)){var
+aj$=aj0>>1,aj_=aj1>>1,aj9=aj3>>1,aj4=(aj_-aj$|0)+1|0,aj5=md(akb,aka),aj6=md(akb,aj2);if(0===aj5&&0===aj6){if(0<=aj4&&1<=aj$&&1<=aj9&&iF(akb,aka)>=(aj5+aj_|0)&&iF(akb,aj2)>=(((aj6+aj9|0)+aj4|0)-1|0)){var
+aj7=iB(akb,aka),aj8=iB(akb,aj2);if(typeof
+aj7!=="number")switch(aj7[0]){case
 0:if(typeof
-aj5!=="number"&&0===aj5[0]){ba(aj5[1],(aj3+aj6|0)-1|0,aj4[1],(aj2+aj8|0)-1|0,aj1);return mc(ajW,ajV,aj9)}break;case
+aj8!=="number"&&0===aj8[0]){ba(aj8[1],(aj6+aj9|0)-1|0,aj7[1],(aj5+aj$|0)-1|0,aj4);return mb(ajZ,ajY,aka)}break;case
 1:if(typeof
-aj5!=="number"&&1===aj5[0]){aG(aj5[1],aj6-1|0,aj4[1],aj8-1|0,aj1);return mc(ajW,ajV,aj9)}break}return 0}return 0}return 0}return 0}function
-mu(ajR,ajQ,ajP){var
-ajU=ajR[1];if(!iw(ajQ)&&ajQ!==0&&je(ajU,iA(ajU,ajQ))){var
-ajS=jc(ajU,ajQ),ajT=ajS[1];switch(ajS[2]){case
-0:if(0===ajP)return[0,iz(ajU,ajQ,[0,caml_make_vect(ajT,0)])];break;case
-1:return[0,iz(ajU,ajQ,[0,caml_make_vect(ajT+ajP|0,0)])];case
-2:return[0,iz(ajU,ajQ,[1,ax(ajP,0)])];case
-3:if(0===ajP)return[0,iz(ajU,ajQ,mv)];break}return 0}return 0}function
-mw(ajN,ajM){var
-ajO=mu(ajN,ly(ajN,ajM),0);return ajO?mc(ajN,ajM,ajO[1]):0}function
-mx(ajJ,ajI){var
-ajK=mb(ajJ,ajI,0);if(iw(ajK)&&0<=ajK>>1){var
-ajL=mu(ajJ,ly(ajJ,ajI),ajK>>1);return ajL?mc(ajJ,ajI,ajL[1]):0}return 0}function
-my(ajB,ajA){var
-ajH=ajB[1],ajG=ly(ajB,ajA),ajC=mb(ajB,ajA,0),ajD=iC(ajH,ajG);if(typeof
-ajD!=="number"&&0===ajD[0]){var
-ajE=ajD[1];if(iw(ajC)&&1<=ajC>>1&&ajC>>1<=ajE.length-1){var
-ajF=(ajC>>1)-1|0;return mc(ajB,ajA,caml_check_bound(ajE,ajF)[1+ajF])}}return 0}function
-mz(ajs,ajr){var
-ajz=ajs[1],ajy=ly(ajs,ajr),ajt=mb(ajs,ajr,0),aju=mb(ajs,ajr,1),ajv=iC(ajz,ajy);if(typeof
-ajv!=="number"&&0===ajv[0]){var
-ajw=ajv[1];if(iw(ajt)&&1<=ajt>>1&&ajt>>1<=ajw.length-1){var
-ajx=(ajt>>1)-1|0;caml_check_bound(ajw,ajx)[1+ajx]=aju;return mc(ajs,ajr,aju)}}return 0}function
-mA(ajk,ajj){var
-ajq=ajk[1],ajp=ly(ajk,ajj);if(!iw(ajp)&&ajp!==0){var
-ajl=iC(ajq,ajp);a:{if(typeof
-ajl!=="number")switch(ajl[0]){case
+aj8!=="number"&&1===aj8[0]){aG(aj8[1],aj9-1|0,aj7[1],aj$-1|0,aj4);return mb(ajZ,ajY,aka)}break}return 0}return 0}return 0}return 0}function
+mt(ajU,ajT,ajS){var
+ajX=ajU[1];if(!iv(ajT)&&ajT!==0&&jd(ajX,iz(ajX,ajT))){var
+ajV=jb(ajX,ajT),ajW=ajV[1];switch(ajV[2]){case
+0:if(0===ajS)return[0,iy(ajX,ajT,[0,caml_make_vect(ajW,0)])];break;case
+1:return[0,iy(ajX,ajT,[0,caml_make_vect(ajW+ajS|0,0)])];case
+2:return[0,iy(ajX,ajT,[1,ax(ajS,0)])];case
+3:if(0===ajS)return[0,iy(ajX,ajT,mu)];break}return 0}return 0}function
+mv(ajQ,ajP){var
+ajR=mt(ajQ,lx(ajQ,ajP),0);return ajR?mb(ajQ,ajP,ajR[1]):0}function
+mw(ajM,ajL){var
+ajN=ma(ajM,ajL,0);if(iv(ajN)&&0<=ajN>>1){var
+ajO=mt(ajM,lx(ajM,ajL),ajN>>1);return ajO?mb(ajM,ajL,ajO[1]):0}return 0}function
+mx(ajE,ajD){var
+ajK=ajE[1],ajJ=lx(ajE,ajD),ajF=ma(ajE,ajD,0),ajG=iB(ajK,ajJ);if(typeof
+ajG!=="number"&&0===ajG[0]){var
+ajH=ajG[1];if(iv(ajF)&&1<=ajF>>1&&ajF>>1<=ajH.length-1){var
+ajI=(ajF>>1)-1|0;return mb(ajE,ajD,caml_check_bound(ajH,ajI)[1+ajI])}}return 0}function
+my(ajv,aju){var
+ajC=ajv[1],ajB=lx(ajv,aju),ajw=ma(ajv,aju,0),ajx=ma(ajv,aju,1),ajy=iB(ajC,ajB);if(typeof
+ajy!=="number"&&0===ajy[0]){var
+ajz=ajy[1];if(iv(ajw)&&1<=ajw>>1&&ajw>>1<=ajz.length-1){var
+ajA=(ajw>>1)-1|0;caml_check_bound(ajz,ajA)[1+ajA]=ajx;return mb(ajv,aju,ajx)}}return 0}function
+mz(ajn,ajm){var
+ajt=ajn[1],ajs=lx(ajn,ajm);if(!iv(ajs)&&ajs!==0){var
+ajo=iB(ajt,ajs);a:{if(typeof
+ajo!=="number")switch(ajo[0]){case
 0:var
-ajm=[0,a7(ajl[1])];break a;case
+ajp=[0,a7(ajo[1])];break a;case
 1:var
-ajm=[1,aA(ajl[1])];break a;case
+ajp=[1,aA(ajo[1])];break a;case
 3:var
-ajn=ajl[1],ajo=aA(ajl[2]),ajm=[3,a7(ajn),ajo];break a}var
-ajm=ajl}return mc(ajk,ajj,iz(ajq,iA(ajq,ajp),ajm))}return mc(ajk,ajj,ajp)}function
-mB(ajb,aja){var
-aji=ajb[1],ajh=ly(ajb,aja),ajc=mb(ajb,aja,0),ajd=lt(ajb,ajh),aje=caml_make_vect(iG(aji,ajd),0),ajf=ix(ajb[15]+2|0);caml_check_bound(aje,1)[2]=ajf;var
-ajg=ix(5);caml_check_bound(aje,2)[3]=ajg;caml_check_bound(aje,3)[4]=ajc;caml_check_bound(aje,4)[5]=ajf;caml_check_bound(aje,5)[6]=ajd;return mc(ajb,aja,iz(aji,aji[8][9],[0,aje]))}function
-mC(ai2,ai1,ai0){var
-ai8=ai2[1];if(!iw(ai1)){var
-ai3=ai8[8][9];if(iA(ai8,ai1)===ai3){var
-ai4=iD(ai8,ai1),ai5=O(ai0);if(caml_check_bound(ai4,3)[4]>>1!==ai5)return 0;af(function(ai_,ai9){var
-ai$=6+ai_|0;caml_check_bound(ai4,ai$)[1+ai$]=ai9;return 0},ai0);var
-ai6=ix((6+O(ai0)|0)-1|0);caml_check_bound(ai4,2)[3]=ai6;var
-ai7=caml_check_bound(ai4,4)[5];caml_check_bound(ai4,1)[2]=ai7;lz(ai2,O(ai0)+1|0);var
-aiZ=ai2[7];caml_check_bound(ai4,0)[1]=aiZ;lw(ai2);lv(ai2,ai1);return 1}}return 0}function
-mD(aiW,aiV){var
-aiX=_(aiV,function(aiY){return mb(aiW,aiV,aiY)});return mC(aiW,ly(aiW,aiV),aiX)}function
-mE(aiO,aiN){var
-aiT=aiO[1],aiP=mb(aiO,aiN,0);if(!iw(aiP)){var
-aiQ=aiT[8][4];if(iA(aiT,aiP)===aiQ){var
-aiR=bf(iD(aiT,aiP)),aiS=ly(aiO,aiN);lz(aiO,1);ae(function(aiU){return lx(aiO,aiU)},aiR);return mC(aiO,aiS,aiR)?1:(lz(aiO,O(aiR)),lx(aiO,aiP),0)}}return 0}function
-mF(aiG,aiF){var
-aiK=aiG[1],aiH=mb(aiG,aiF,0);if(!iw(aiH)){var
-aiI=aiK[8][3];if(iA(aiK,aiH)===aiI&&ie(iH(aiK,aiH))===(aiF-1|0)){var
-aiJ=_(aiF-1|0,function(aiM){return mb(aiG,aiF,aiM+1|0)});lz(aiG,aiF);ae(function(aiL){return lx(aiG,aiL)},aiJ);lF(aiG,aiH,aiF-1|0);return 1}}return 0}function
-mG(aix,aiw){var
-aiD=aix[1],aiy=mb(aix,aiw,0),aiz=mb(aix,aiw,1);if(!iw(aiz)){var
-aiA=aiD[8][4];if(iA(aiD,aiz)===aiA&&!iw(aiy)){var
-aiB=bf(iD(aiD,aiz)),aiC=O(aiB);return ie(iH(aiD,aiy))!==aiC?0:(lz(aix,2),ae(function(aiE){return lx(aix,aiE)},aiB),lF(aix,aiy,O(aiB)),1)}}return 0}function
-mH(air,aiq,aip){var
-aiv=aiq[1],aiu=ly(aiq,aip),ais=mb(aiq,aip,0);if(md(aiv,aiu)&&md(aiv,ais)){var
-ait=iH(aiv,ais);return mc(aiq,aip,lB(aiq,caml_call2(air,iH(aiv,aiu),ait)[2]))}return 0}function
-mI(ah7,ah6,ah5){var
-aih=ah6[1],aig=ly(ah6,ah5),ah8=mb(ah6,ah5,0),ah9=mb(ah6,ah5,1),ah_=mb(ah6,ah5,2),ah$=mb(ah6,ah5,4);if(!aj(function(aio){return md(aih,aio)},[0,ah8,[0,ah9,[0,ah_,[0,ah$,0]]]]))return 0;function
-aia(aij){var
-aik=9,ail=ar(function(ain){return a4(aik,ain)},a4(32,iH(aih,aij)));return ao(function(aim){return str$9!==aim?1:0})(ail)}var
-aib=iH(aih,ah$),aic=aia(ah_),aid=aia(ah9),aie=jN(aih,aig,iH(aih,ah8),ah7,aid,aic,aib),aif=aie[1];if(aie[2])ae(function(aii){return caml_call1(ah6[2][1],aii[1]+str$8+aii[2]+str$16)},lc(aih,aif));lr(ah6);return mc(ah6,ah5,aif)}function
-mJ(ahW,ahV){var
-ah3=ahW[1],ah2=ly(ahW,ahV),ahX=mb(ahW,ahV,0),ahY=mb(ahW,ahV,1);if(md(ah3,ahX)&&md(ah3,ahY)){try{var
-ah0=iH(ah3,ahX),ah1=lb(ah3,ah2,iH(ah3,ahY),0,ah0)}catch(ah4){var
-ahZ=caml_wrap_exception(ah4);if(ahZ[1]===kA)return mc(ahW,ahV,iJ(ah3,ahZ[3]));throw caml_maybe_attach_backtrace(ahZ,0)}lr(ahW);return mc(ahW,ahV,iM(ah3,ah1))}return 0}function
-mK(ahN,ahM){var
-ahS=ahN[1],ahR=ly(ahN,ahM);if(!md(ahS,ahR))return 0;a:{var
-ahO=aV(iH(ahS,ahR));try{var
-ahI=ku(ahO)}catch(ahU){var
-ahH=caml_wrap_exception(ahU);if(ahH[1]!==jQ)throw caml_maybe_attach_backtrace(ahH,0);var
-ahP=0;break a}try{var
-ahK=j3(ahI)}catch(ahT){var
-ahJ=caml_wrap_exception(ahT);if(ahJ[1]!==jQ)throw caml_maybe_attach_backtrace(ahJ,0);var
-ahP=0;break a}if(ahK){var
-ahL=ahK[1];if(11===jR(ahI)){var
-ahP=[0,ahL];break a}}var
-ahP=0}if(ahP){var
-ahQ=ahP[1];if(typeof
-ahQ!=="number"&&2>=ahQ[0])return mc(ahN,ahM,kK(ahS,ahQ))}return mc(ahN,ahM,iv)}function
-mL(ahx,ahw){var
-ahF=ahx[1],ahE=ly(ahx,ahw);if(!iw(ahE))return 0;var
-ahD=ahE>>1,ahy=j(ahD),ahz=ay(4,function(ahG){return E((ahy>>>(8*ahG|0)|0)&num_255)}),ahC=ahF[8],ahA=[1,ahz],ahB=0<=ahD?ahC[13]:ahC[14];return mc(ahx,ahw,iz(ahF,ahB,ahA))}function
-mM(ahk,ahj){var
-ahu=ahk[1],aht=ly(ahk,ahj),ahl=iC(ahu,aht);if(typeof
-ahl!=="number"&&1===ahl[0]){var
-ahm=ahl[1],ahn=[0,caml_ml_bytes_length(ahm)];for(;;){if(0>=ahn[1])break;if(0!==caml_bytes_get(ahm,ahn[1]-1|0))break;ahn[1]--}var
-aho=ahu[8][14],ahp=iA(ahu,aht)===aho?1:0,ahq=_(ahn[1],function(ahv){return caml_bytes_get(ahm,ahv)});if(0===ahn[1])return mc(ahk,ahj,ix(0));var
-ahr=ij(ahp,ahq);if(ahr)return mc(ahk,ahj,ix(ahr[1]));if(ahn[1]===caml_ml_bytes_length(ahm))return mc(ahk,ahj,aht);var
-ahs=[1,aD(ahm,0,ahn[1])];return mc(ahk,ahj,iz(ahu,iA(ahu,aht),ahs))}return 0}function
-mN(adD){var
-adC=adD[3];function
-adE(ahi,ahh){caml_check_bound(adC,ahi)[1+ahi]=[0,ahh];return 0}ae(function(ag$){var
-aha=ag$[2];return adE(ag$[1],function(ahe,ahf){var
-ahg=ly(ahe,ahf),ahb=mb(ahe,ahf,0);if(iw(ahg)&&iw(ahb)){var
-ahc=caml_call2(aha,ahg>>1,ahb>>1);if(typeof
-ahc!=="number"){if(num_737456202<=ahc[1])return mc(ahe,ahf,lB(ahe,ahc[2]));var
-ahd=ahc[2];if(iy(ahd))return mc(ahe,ahf,ix(ahd))}return 0}return 0})},mh);adE(18,function(ag7,ag6){var
-ag_=ag7[1],ag8=mb(ag7,ag6,0),ag9=[0,[0,ly(ag7,ag6),ag8]];return mc(ag7,ag6,iz(ag_,ag_[8][12],ag9))});adE(40,function(ag4,ag3){var
-ag5=ly(ag4,ag3);return iw(ag5)?mc(ag4,ag3,iL(ag4[1],ag5>>1)):0});ae(function(agR){var
-agS=agR[2];return adE(agR[1],function(ag0,ag1){var
-ag2=ag0[1],agW=iC(ag2,ly(ag0,ag1)),agX=mb(ag0,ag1,0);a:if(iw(agX))var
-agY=[0,agX>>1];else{var
-agT=iC(ag2,agX);if(typeof
-agT!=="number"&&2===agT[0]){var
-agU=agT[1],agV=ag2[8][5];if(iA(ag2,agX)===agV){var
-agY=[0,agU];break a}}var
-agY=0}if(typeof
-agW!=="number"&&2===agW[0]&&agY){var
-agZ=caml_call2(agS,agW[1],agY[1]);return typeof
-agZ==="number"?0:num_737456202<=agZ[1]?mc(ag0,ag1,lB(ag0,agZ[2])):mc(ag0,ag1,iL(ag2,agZ[2]))}return 0})},mi);adE(51,function(agN,agM){var
-agQ=ly(agN,agM),agO=iC(agN[1],agQ);if(typeof
-agO!=="number"&&2===agO[0]){var
-agP=agO[1];if(bi(agP)&&iy(agP|0)&&Math.abs(agP)<1073741824.)return mc(agN,agM,ix(agP|0))}return 0});function
-adF(agL){return Math.sqrt(agL)}adE(55,function(agJ,agK){return mj(adF,agJ,agK)});function
-adG(agI){return Math.sin(agI)}adE(56,function(agG,agH){return mj(adG,agG,agH)});function
-adH(agF){return Math.atan(agF)}adE(57,function(agD,agE){return mj(adH,agD,agE)});function
-adI(agC){return Math.log(agC)}adE(58,function(agA,agB){return mj(adI,agA,agB)});function
-adJ(agz){return Math.exp(agz)}adE(59,function(agx,agy){return mj(adJ,agx,agy)});adE(60,mo);adE(61,mp);adE(62,mq);adE(63,mr);adE(64,ms);adE(68,function(agq,agp){var
-agw=agq[1],agv=ly(agq,agp),agr=mb(agq,agp,0),ags=iC(agw,agv);if(typeof
-ags!=="number"&&3===ags[0]){var
-agt=ags[1];if(iw(agr)&&1<=agr>>1&&agr>>1<=agt.length-1){var
-agu=(agr>>1)-1|0;return mc(agq,agp,caml_check_bound(agt,agu)[1+agu])}}return 0});adE(69,function(agh,agg){var
-ago=agh[1],agn=ly(agh,agg),agi=mb(agh,agg,0),agj=mb(agh,agg,1),agk=iC(ago,agn);if(typeof
-agk!=="number"&&3===agk[0]){var
-agl=agk[1];if(iw(agi)&&1<=agi>>1&&agi>>1<=agl.length-1){var
-agm=(agi>>1)-1|0;caml_check_bound(agl,agm)[1+agm]=agj;return mc(agh,agg,agj)}}return 0});adE(70,mw);adE(71,mx);adE(72,function(agd,agc){var
-agf=ly(agd,agc),age=mb(agd,agc,0);if(!iw(agf)&&!iw(age)&&agf!==0&&age!==0){iN(agd[1],agf,age);lr(agd);return mc(agd,agc,agf)}return 0});adE(73,my);adE(74,mz);adE(75,function(af$,af_){var
-agb=ly(af$,af_),aga=iw(agb)?agb:ix(agb>>>1|0);return mc(af$,af_,aga)});adE(80,mB);adE(81,mD);adE(82,mE);adE(83,mF);adE(84,mG);adE(num_105,mt);adE(num_110,function(af8,af7){var
-af9=mb(af8,af7,0);return mc(af8,af7,lB(af8,ly(af8,af7)===af9?1:0))});adE(111,function(af5,af4){var
-af6=ly(af5,af4);return mc(af5,af4,iA(af5[1],af6))});adE(num_120,function(af1,af0){var
-af2=mb(af1,af0,0);if(iw(af2)&&0<=af2>>1&&num_256>af2>>1){var
-af3=af2>>1;return mc(af1,af0,caml_check_bound(af1[1][8][20],af3)[1+af3])}return 0});adE(num_122,function(afX,afW){var
-afZ=afX[1],afY=ly(afX,afW);return md(afZ,afY)?mc(afX,afW,iM(afZ,iH(afZ,afY))):0});function
-adK(afV,afU){return[0,num_737456202,afV===afU?1:0]}adE(num_123,function(afS,afT){return mH(adK,afS,afT)});function
-adL(afR,afQ){return[0,num_737456202,caml_string_lessthan(afR,afQ)]}adE(num_124,function(afO,afP){return mH(adL,afO,afP)});adE(num_125,function(afL,afK){var
-afN=afL[1],afM=ly(afL,afK);return md(afN,afM)?mc(afL,afK,ix(caml_hash(10,num_100$0,0,iH(afN,afM))&67108863)):0});adE(num_130,function(afF,afE){var
-afJ=afF[1],afG=iC(afJ,ly(afF,afE));if(typeof
-afG!=="number"&&2===afG[0]){var
-afH=afG[1],afA=afH===caml_trunc_float(afH)?1:0,afB=afA?bi(afH):afA;a:{if(afB&&Math.abs(afH)<1000000000000000.){var
-afI=caml_call1(dX(mk),afH);break a}var
-afC=caml_call1(dX(ml),afH),afD=caml_float_of_string(afC)===afH?afC:caml_call1(dX(mm),afH);if(!a2(afD,46)&&!a2(afD,num_101)&&!a2(afD,num_110)&&!a2(afD,num_105)){var
-afI=afD+".0";break a}var
-afI=afD}return mc(afF,afE,iJ(afJ,afI))}return 0});adE(140,function(afw,afv){var
-afz=afw[1],afx=mb(afw,afv,0);if(!md(afz,afx))return 0;var
-afy=iH(afz,afx);caml_call1(afw[2][1],afy);return mc(afw,afv,ly(afw,afv))});adE(141,function(afr,afq){var
-afu=afr[1],afs=mb(afr,afq,0),aft=md(afu,afs)?iH(afu,afs):mO;afr[17]=[0,aft];return mc(afr,afq,iv)});adE(142,mJ);var
-adM=0;adE(num_143,function(afo,afp){return mI(adM,afo,afp)});var
-adN=1;adE(num_151,function(afm,afn){return mI(adN,afm,afn)});var
-adO=2;adE(num_152,function(afk,afl){return mI(adO,afk,afl)});adE(num_144,function(afj,afi){return mc(afj,afi,ix(caml_call1(afj[2][2],0)&num_1073741823))});adE(num_145,function(aff,afe){var
-afh=aff[1],ae_=[0,0],afg=ly(aff,afe),ae$=afh[4]-1|0;if(ae$>=0){var
-afa=ae$;for(;;){var
-afb=caml_check_bound(afh[1],afa)[1+afa]===afg?1:0,afc=afb?0!==caml_check_bound(afh[2],afa)[1+afa]?1:0:afb;if(afc)ae_[1]=[0,afa<<1,ae_[1]];var
-afd=afa-1|0;if(0===afa)break;afa=afd}}return mc(aff,afe,iK(afh,bg(ae_[1])))});adE(146,function(ae8,ae7){var
-ae9=ae8[1][5];lV(ae8);return mc(ae8,ae7,ix(ae9-ae8[1][5]|0))});adE(147,function(ae4,ae3){var
-ae6=ae4[1],ae5=mb(ae4,ae3,0);return mc(ae4,ae3,lB(ae4,0!==jD(ae6,ly(ae4,ae3),ae5)?1:0))});adE(148,function(ae0,aeZ){var
-ae2=ae0[1],ae1=mb(ae0,aeZ,0);return mc(ae0,aeZ,lB(ae0,0!==jC(ae2,ly(ae0,aeZ),ae1)?1:0))});adE(149,function(aeW,aeV){var
-aeX=aeW[1];return mc(aeW,aeV,iK(aeX,bg(ab(function(aeY){return iM(aeX,aeY)},jE(aeX,ly(aeW,aeV))))))});adE(num_150$0,mK);adE(153,mA);adE(154,mL);adE(155,mM);adE(156,function(aeS,aeR){var
-aeU=aeS[1],aeT=iC(aeU,ly(aeS,aeR));if(typeof
-aeT!=="number"&&3===aeT[0])return mc(aeS,aeR,iZ(aeU,ly(aeS,aeR)));return 0});adE(157,function(aeO,aeN){var
-aeQ=aeO[1],aeP=iC(aeQ,ly(aeO,aeN));if(typeof
-aeP!=="number"&&3===aeP[0])return mc(aeO,aeN,i0(aeQ,ly(aeO,aeN)));return 0});adE(90,function(aeH,aeG){var
-aeM=aeH[1],aeI=caml_call1(aeH[2][4],0),aeJ=aeI[1],aeK=ix(aeI[2]),aeL=[0,[0,ix(aeJ),aeK]];return mc(aeH,aeG,iz(aeM,aeM[8][12],aeL))});adE(91,function(aeF,aeE){return mc(aeF,aeE,ix(caml_call1(aeF[2][4],0)[3]))});adE(96,function(aer,aeq){var
-aet=ly(aer,aeq),aep=aer[1],adY=iQ(aep,iE(aep,aet,0)),adX=iP(aep,aet,7),aeD=iP(aep,aet,6),aeC=iP(aep,aet,5),aeB=iP(aep,aet,4),aeA=iP(aep,aet,3),aez=iP(aep,aet,13),aey=iP(aep,aet,12),aex=iP(aep,aet,11),aew=iP(aep,aet,10),aev=iP(aep,aet,9);a:{var
-aeu=iP(aep,aet,8);if(adY&&aeA&&aeB&&aeC&&aeD&&adX){var
-ad1=aeC[1],ad2=aeB[1],ad3=aeA[1],ad4=adY[1],adZ=adX[1],ad0=aeD[1];if(0<=ad3&&16>ad3){var
-ad5=iE(aep,aet,1),ad6=iE(aep,aet,2),ad7=ad5===0?0:iQ(aep,ad5),ad8=ad6===0?0:iQ(aep,ad6),ad9=C(aeu,0),ad_=C(aev,0),ad$=C(aew,0),aea=C(aex,0),aeb=C(aey,ad4[2]),aec=C(aez,ad4[3]),aed=i(ad2,i(ad$,0)),aee=i(ad1,i(aea,0)),aef=h(ad2+ad0|0,h(ad$+aeb|0,ad4[2])),aeg=h(ad1+adZ|0,h(aea+aec|0,ad4[3]))-1|0;if(aeg>=aee){var
-aeh=aee;for(;;){var
-aei=aef-1|0;if(aei>=aed){var
-aek=aed;for(;;){var
-ael=ad7?iR(ad7[1],(ad9+aek|0)-ad2|0,(ad_+aeh|0)-ad1|0):1,aem=ad8?ael&iR(ad8[1],aek&15,aeh&15):ael,aen=(ad3>>>(3-((2*aem|0)+iR(ad4,aek,aeh)|0)|0)|0)&1,adS=caml_mul(aeh,ad4[4])+(aek>>>3|0)|0,adT=1<<(7-(aek&7)|0),adU=caml_bytes_get(ad4[1],adS),adV=1===aen?adU|adT:adU&(adT^-1)&num_255,adW=E(adV);caml_bytes_set(ad4[1],adS,adW);var
-aeo=aek+1|0;if(aei===aek)break;aek=aeo}}var
-aej=aeh+1|0;if(aeg===aeh)break;aeh=aej}}iO[1]++;var
-aes=1;break a}}var
-aes=0}return aes?mc(aer,aeq,ly(aer,aeq)):0});return adE(158,function(adR,adQ){var
-adP=ly(adR,adQ);caml_call1(adR[2][3],adP);return mc(adR,adQ,ly(adR,adQ))})}function
-mX(adz){var
-adA=by(caml_ml_string_length(adz)+2|0);aT(function(adB){return 33===adB?bH(adA,mY):bE(adA,adB)},adz);bE(adA,33);return bz(adA)}var
-m5=[num_248,m4,caml_fresh_oo_id(0)];function
-m6(ads){var
-adt=9,adu=10,adv=ar(function(ady){return a4(adu,ady)},ar(function(adx){return a4(adt,adx)},a4(32,ads)));return ao(function(adw){return str$9!==adw?1:0})(adv)}function
-m7(ac0){try{var
-ac2=kx(ac0)}catch(adr){var
-ac1=caml_wrap_exception(adr);if(ac1[1]===jQ)return 0;throw caml_maybe_attach_backtrace(ac1,0)}var
-ac3=ac2[5];a:if(ac3){var
-ac4=ac3[1];if(0===ac4[0]){var
-ac5=ac4[1][1];if(3===ac5[0]){var
-ac6=ac5[1][1];if(1===ac6[0]){var
-ac7=ac5[3];if(ac7){var
-ac8=ac7[1][1];if(0===ac8[0]){var
-ac9=ac8[1];if(typeof
-ac9!=="number"&&5===ac9[0]){var
-ac_=ac7[2];if(!ac_)break a;var
-ac$=ac_[1][1];if(0!==ac$[0])break a;var
+ajq=ajo[1],ajr=aA(ajo[2]),ajp=[3,a7(ajq),ajr];break a}var
+ajp=ajo}return mb(ajn,ajm,iy(ajt,iz(ajt,ajs),ajp))}return mb(ajn,ajm,ajs)}function
+mA(aje,ajd){var
+ajl=aje[1],ajk=lx(aje,ajd),ajf=ma(aje,ajd,0),ajg=ls(aje,ajk),ajh=caml_make_vect(iF(ajl,ajg),0),aji=iw(aje[15]+2|0);caml_check_bound(ajh,1)[2]=aji;var
+ajj=iw(5);caml_check_bound(ajh,2)[3]=ajj;caml_check_bound(ajh,3)[4]=ajf;caml_check_bound(ajh,4)[5]=aji;caml_check_bound(ajh,5)[6]=ajg;return mb(aje,ajd,iy(ajl,ajl[8][9],[0,ajh]))}function
+mB(ai5,ai4,ai3){var
+ai$=ai5[1];if(!iv(ai4)){var
+ai6=ai$[8][9];if(iz(ai$,ai4)===ai6){var
+ai7=iC(ai$,ai4),ai8=O(ai3);if(caml_check_bound(ai7,3)[4]>>1!==ai8)return 0;af(function(ajb,aja){var
+ajc=6+ajb|0;caml_check_bound(ai7,ajc)[1+ajc]=aja;return 0},ai3);var
+ai9=iw((6+O(ai3)|0)-1|0);caml_check_bound(ai7,2)[3]=ai9;var
+ai_=caml_check_bound(ai7,4)[5];caml_check_bound(ai7,1)[2]=ai_;ly(ai5,O(ai3)+1|0);var
+ai2=ai5[7];caml_check_bound(ai7,0)[1]=ai2;lv(ai5);lu(ai5,ai4);return 1}}return 0}function
+mC(aiZ,aiY){var
+ai0=_(aiY,function(ai1){return ma(aiZ,aiY,ai1)});return mB(aiZ,lx(aiZ,aiY),ai0)}function
+mD(aiR,aiQ){var
+aiW=aiR[1],aiS=ma(aiR,aiQ,0);if(!iv(aiS)){var
+aiT=aiW[8][4];if(iz(aiW,aiS)===aiT){var
+aiU=bf(iC(aiW,aiS)),aiV=lx(aiR,aiQ);ly(aiR,1);ae(function(aiX){return lw(aiR,aiX)},aiU);return mB(aiR,aiV,aiU)?1:(ly(aiR,O(aiU)),lw(aiR,aiS),0)}}return 0}function
+mE(aiJ,aiI){var
+aiN=aiJ[1],aiK=ma(aiJ,aiI,0);if(!iv(aiK)){var
+aiL=aiN[8][3];if(iz(aiN,aiK)===aiL&&id(iG(aiN,aiK))===(aiI-1|0)){var
+aiM=_(aiI-1|0,function(aiP){return ma(aiJ,aiI,aiP+1|0)});ly(aiJ,aiI);ae(function(aiO){return lw(aiJ,aiO)},aiM);lE(aiJ,aiK,aiI-1|0);return 1}}return 0}function
+mF(aiA,aiz){var
+aiG=aiA[1],aiB=ma(aiA,aiz,0),aiC=ma(aiA,aiz,1);if(!iv(aiC)){var
+aiD=aiG[8][4];if(iz(aiG,aiC)===aiD&&!iv(aiB)){var
+aiE=bf(iC(aiG,aiC)),aiF=O(aiE);return id(iG(aiG,aiB))!==aiF?0:(ly(aiA,2),ae(function(aiH){return lw(aiA,aiH)},aiE),lE(aiA,aiB,O(aiE)),1)}}return 0}function
+mG(aiu,ait,ais){var
+aiy=ait[1],aix=lx(ait,ais),aiv=ma(ait,ais,0);if(mc(aiy,aix)&&mc(aiy,aiv)){var
+aiw=iG(aiy,aiv);return mb(ait,ais,lA(ait,caml_call2(aiu,iG(aiy,aix),aiw)[2]))}return 0}function
+mH(ah_,ah9,ah8){var
+aik=ah9[1],aij=lx(ah9,ah8),ah$=ma(ah9,ah8,0),aia=ma(ah9,ah8,1),aib=ma(ah9,ah8,2),aic=ma(ah9,ah8,4);if(!aj(function(air){return mc(aik,air)},[0,ah$,[0,aia,[0,aib,[0,aic,0]]]]))return 0;function
+aid(aim){var
+ain=9,aio=ar(function(aiq){return a4(ain,aiq)},a4(32,iG(aik,aim)));return ao(function(aip){return str$9!==aip?1:0})(aio)}var
+aie=iG(aik,aic),aif=aid(aib),aig=aid(aia),aih=jM(aik,aij,iG(aik,ah$),ah_,aig,aif,aie),aii=aih[1];if(aih[2])ae(function(ail){return caml_call1(ah9[2][1],ail[1]+str$8+ail[2]+str$16)},lb(aik,aii));lq(ah9);return mb(ah9,ah8,aii)}function
+mI(ahZ,ahY){var
+ah6=ahZ[1],ah5=lx(ahZ,ahY),ah0=ma(ahZ,ahY,0),ah1=ma(ahZ,ahY,1);if(mc(ah6,ah0)&&mc(ah6,ah1)){try{var
+ah3=iG(ah6,ah0),ah4=la(ah6,ah5,iG(ah6,ah1),0,ah3)}catch(ah7){var
+ah2=caml_wrap_exception(ah7);if(ah2[1]===kz)return mb(ahZ,ahY,iI(ah6,ah2[3]));throw caml_maybe_attach_backtrace(ah2,0)}lq(ahZ);return mb(ahZ,ahY,iL(ah6,ah4))}return 0}function
+mJ(ahQ,ahP){var
+ahV=ahQ[1],ahU=lx(ahQ,ahP);if(!mc(ahV,ahU))return 0;a:{var
+ahR=aV(iG(ahV,ahU));try{var
+ahL=kt(ahR)}catch(ahX){var
+ahK=caml_wrap_exception(ahX);if(ahK[1]!==jP)throw caml_maybe_attach_backtrace(ahK,0);var
+ahS=0;break a}try{var
+ahN=j2(ahL)}catch(ahW){var
+ahM=caml_wrap_exception(ahW);if(ahM[1]!==jP)throw caml_maybe_attach_backtrace(ahM,0);var
+ahS=0;break a}if(ahN){var
+ahO=ahN[1];if(11===jQ(ahL)){var
+ahS=[0,ahO];break a}}var
+ahS=0}if(ahS){var
+ahT=ahS[1];if(typeof
+ahT!=="number"&&2>=ahT[0])return mb(ahQ,ahP,kJ(ahV,ahT))}return mb(ahQ,ahP,iu)}function
+mK(ahA,ahz){var
+ahI=ahA[1],ahH=lx(ahA,ahz);if(!iv(ahH))return 0;var
+ahG=ahH>>1,ahB=j(ahG),ahC=ay(4,function(ahJ){return E((ahB>>>(8*ahJ|0)|0)&num_255)}),ahF=ahI[8],ahD=[1,ahC],ahE=0<=ahG?ahF[13]:ahF[14];return mb(ahA,ahz,iy(ahI,ahE,ahD))}function
+mL(ahn,ahm){var
+ahx=ahn[1],ahw=lx(ahn,ahm),aho=iB(ahx,ahw);if(typeof
+aho!=="number"&&1===aho[0]){var
+ahp=aho[1],ahq=[0,caml_ml_bytes_length(ahp)];for(;;){if(0>=ahq[1])break;if(0!==caml_bytes_get(ahp,ahq[1]-1|0))break;ahq[1]--}var
+ahr=ahx[8][14],ahs=iz(ahx,ahw)===ahr?1:0,aht=_(ahq[1],function(ahy){return caml_bytes_get(ahp,ahy)});if(0===ahq[1])return mb(ahn,ahm,iw(0));var
+ahu=ii(ahs,aht);if(ahu)return mb(ahn,ahm,iw(ahu[1]));if(ahq[1]===caml_ml_bytes_length(ahp))return mb(ahn,ahm,ahw);var
+ahv=[1,aD(ahp,0,ahq[1])];return mb(ahn,ahm,iy(ahx,iz(ahx,ahw),ahv))}return 0}function
+mM(adG){var
+adF=adG[3];function
+adH(ahl,ahk){caml_check_bound(adF,ahl)[1+ahl]=[0,ahk];return 0}ae(function(ahc){var
+ahd=ahc[2];return adH(ahc[1],function(ahh,ahi){var
+ahj=lx(ahh,ahi),ahe=ma(ahh,ahi,0);if(iv(ahj)&&iv(ahe)){var
+ahf=caml_call2(ahd,ahj>>1,ahe>>1);if(typeof
+ahf!=="number"){if(num_737456202<=ahf[1])return mb(ahh,ahi,lA(ahh,ahf[2]));var
+ahg=ahf[2];if(ix(ahg))return mb(ahh,ahi,iw(ahg))}return 0}return 0})},mg);adH(18,function(ag_,ag9){var
+ahb=ag_[1],ag$=ma(ag_,ag9,0),aha=[0,[0,lx(ag_,ag9),ag$]];return mb(ag_,ag9,iy(ahb,ahb[8][12],aha))});adH(40,function(ag7,ag6){var
+ag8=lx(ag7,ag6);return iv(ag8)?mb(ag7,ag6,iK(ag7[1],ag8>>1)):0});ae(function(agU){var
+agV=agU[2];return adH(agU[1],function(ag3,ag4){var
+ag5=ag3[1],agZ=iB(ag5,lx(ag3,ag4)),ag0=ma(ag3,ag4,0);a:if(iv(ag0))var
+ag1=[0,ag0>>1];else{var
+agW=iB(ag5,ag0);if(typeof
+agW!=="number"&&2===agW[0]){var
+agX=agW[1],agY=ag5[8][5];if(iz(ag5,ag0)===agY){var
+ag1=[0,agX];break a}}var
+ag1=0}if(typeof
+agZ!=="number"&&2===agZ[0]&&ag1){var
+ag2=caml_call2(agV,agZ[1],ag1[1]);return typeof
+ag2==="number"?0:num_737456202<=ag2[1]?mb(ag3,ag4,lA(ag3,ag2[2])):mb(ag3,ag4,iK(ag5,ag2[2]))}return 0})},mh);adH(51,function(agQ,agP){var
+agT=lx(agQ,agP),agR=iB(agQ[1],agT);if(typeof
+agR!=="number"&&2===agR[0]){var
+agS=agR[1];if(bi(agS)&&ix(agS|0)&&Math.abs(agS)<1073741824.)return mb(agQ,agP,iw(agS|0))}return 0});function
+adI(agO){return Math.sqrt(agO)}adH(55,function(agM,agN){return mi(adI,agM,agN)});function
+adJ(agL){return Math.sin(agL)}adH(56,function(agJ,agK){return mi(adJ,agJ,agK)});function
+adK(agI){return Math.atan(agI)}adH(57,function(agG,agH){return mi(adK,agG,agH)});function
+adL(agF){return Math.log(agF)}adH(58,function(agD,agE){return mi(adL,agD,agE)});function
+adM(agC){return Math.exp(agC)}adH(59,function(agA,agB){return mi(adM,agA,agB)});adH(60,mn);adH(61,mo);adH(62,mp);adH(63,mq);adH(64,mr);adH(68,function(agt,ags){var
+agz=agt[1],agy=lx(agt,ags),agu=ma(agt,ags,0),agv=iB(agz,agy);if(typeof
+agv!=="number"&&3===agv[0]){var
+agw=agv[1];if(iv(agu)&&1<=agu>>1&&agu>>1<=agw.length-1){var
+agx=(agu>>1)-1|0;return mb(agt,ags,caml_check_bound(agw,agx)[1+agx])}}return 0});adH(69,function(agk,agj){var
+agr=agk[1],agq=lx(agk,agj),agl=ma(agk,agj,0),agm=ma(agk,agj,1),agn=iB(agr,agq);if(typeof
+agn!=="number"&&3===agn[0]){var
+ago=agn[1];if(iv(agl)&&1<=agl>>1&&agl>>1<=ago.length-1){var
+agp=(agl>>1)-1|0;caml_check_bound(ago,agp)[1+agp]=agm;return mb(agk,agj,agm)}}return 0});adH(70,mv);adH(71,mw);adH(72,function(agg,agf){var
+agi=lx(agg,agf),agh=ma(agg,agf,0);if(!iv(agi)&&!iv(agh)&&agi!==0&&agh!==0){iM(agg[1],agi,agh);lq(agg);return mb(agg,agf,agi)}return 0});adH(73,mx);adH(74,my);adH(75,function(agc,agb){var
+age=lx(agc,agb),agd=iv(age)?age:iw(age>>>1|0);return mb(agc,agb,agd)});adH(80,mA);adH(81,mC);adH(82,mD);adH(83,mE);adH(84,mF);adH(num_105,ms);adH(num_110,function(af$,af_){var
+aga=ma(af$,af_,0);return mb(af$,af_,lA(af$,lx(af$,af_)===aga?1:0))});adH(111,function(af8,af7){var
+af9=lx(af8,af7);return mb(af8,af7,iz(af8[1],af9))});adH(num_120,function(af4,af3){var
+af5=ma(af4,af3,0);if(iv(af5)&&0<=af5>>1&&num_256>af5>>1){var
+af6=af5>>1;return mb(af4,af3,caml_check_bound(af4[1][8][20],af6)[1+af6])}return 0});adH(num_122,function(af0,afZ){var
+af2=af0[1],af1=lx(af0,afZ);return mc(af2,af1)?mb(af0,afZ,iL(af2,iG(af2,af1))):0});function
+adN(afY,afX){return[0,num_737456202,afY===afX?1:0]}adH(num_123,function(afV,afW){return mG(adN,afV,afW)});function
+adO(afU,afT){return[0,num_737456202,caml_string_lessthan(afU,afT)]}adH(num_124,function(afR,afS){return mG(adO,afR,afS)});adH(num_125,function(afO,afN){var
+afQ=afO[1],afP=lx(afO,afN);return mc(afQ,afP)?mb(afO,afN,iw(caml_hash(10,num_100$0,0,iG(afQ,afP))&67108863)):0});adH(num_130,function(afI,afH){var
+afM=afI[1],afJ=iB(afM,lx(afI,afH));if(typeof
+afJ!=="number"&&2===afJ[0]){var
+afK=afJ[1],afD=afK===caml_trunc_float(afK)?1:0,afE=afD?bi(afK):afD;a:{if(afE&&Math.abs(afK)<1000000000000000.){var
+afL=caml_call1(dX(mj),afK);break a}var
+afF=caml_call1(dX(mk),afK),afG=caml_float_of_string(afF)===afK?afF:caml_call1(dX(ml),afK);if(!a2(afG,46)&&!a2(afG,num_101)&&!a2(afG,num_110)&&!a2(afG,num_105)){var
+afL=afG+".0";break a}var
+afL=afG}return mb(afI,afH,iI(afM,afL))}return 0});adH(140,function(afz,afy){var
+afC=afz[1],afA=ma(afz,afy,0);if(!mc(afC,afA))return 0;var
+afB=iG(afC,afA);caml_call1(afz[2][1],afB);return mb(afz,afy,lx(afz,afy))});adH(141,function(afu,aft){var
+afx=afu[1],afv=ma(afu,aft,0),afw=mc(afx,afv)?iG(afx,afv):mN;afu[17]=[0,afw];return mb(afu,aft,iu)});adH(142,mI);var
+adP=0;adH(num_143,function(afr,afs){return mH(adP,afr,afs)});var
+adQ=1;adH(num_151,function(afp,afq){return mH(adQ,afp,afq)});var
+adR=2;adH(num_152,function(afn,afo){return mH(adR,afn,afo)});adH(num_144,function(afm,afl){return mb(afm,afl,iw(caml_call1(afm[2][2],0)&num_1073741823))});adH(num_145,function(afi,afh){var
+afk=afi[1],afb=[0,0],afj=lx(afi,afh),afc=afk[4]-1|0;if(afc>=0){var
+afd=afc;for(;;){var
+afe=caml_check_bound(afk[1],afd)[1+afd]===afj?1:0,aff=afe?0!==caml_check_bound(afk[2],afd)[1+afd]?1:0:afe;if(aff)afb[1]=[0,afd<<1,afb[1]];var
+afg=afd-1|0;if(0===afd)break;afd=afg}}return mb(afi,afh,iJ(afk,bg(afb[1])))});adH(146,function(ae$,ae_){var
+afa=ae$[1][5];lU(ae$);return mb(ae$,ae_,iw(afa-ae$[1][5]|0))});adH(147,function(ae7,ae6){var
+ae9=ae7[1],ae8=ma(ae7,ae6,0);return mb(ae7,ae6,lA(ae7,0!==jC(ae9,lx(ae7,ae6),ae8)?1:0))});adH(148,function(ae3,ae2){var
+ae5=ae3[1],ae4=ma(ae3,ae2,0);return mb(ae3,ae2,lA(ae3,0!==jB(ae5,lx(ae3,ae2),ae4)?1:0))});adH(149,function(aeZ,aeY){var
+ae0=aeZ[1];return mb(aeZ,aeY,iJ(ae0,bg(ab(function(ae1){return iL(ae0,ae1)},jD(ae0,lx(aeZ,aeY))))))});adH(num_150$0,mJ);adH(153,mz);adH(154,mK);adH(155,mL);adH(156,function(aeV,aeU){var
+aeX=aeV[1],aeW=iB(aeX,lx(aeV,aeU));if(typeof
+aeW!=="number"&&3===aeW[0])return mb(aeV,aeU,iY(aeX,lx(aeV,aeU)));return 0});adH(157,function(aeR,aeQ){var
+aeT=aeR[1],aeS=iB(aeT,lx(aeR,aeQ));if(typeof
+aeS!=="number"&&3===aeS[0])return mb(aeR,aeQ,iZ(aeT,lx(aeR,aeQ)));return 0});adH(90,function(aeK,aeJ){var
+aeP=aeK[1],aeL=caml_call1(aeK[2][4],0),aeM=aeL[1],aeN=iw(aeL[2]),aeO=[0,[0,iw(aeM),aeN]];return mb(aeK,aeJ,iy(aeP,aeP[8][12],aeO))});adH(91,function(aeI,aeH){return mb(aeI,aeH,iw(caml_call1(aeI[2][4],0)[3]))});adH(96,function(aeu,aet){var
+aew=lx(aeu,aet),aes=aeu[1],ad1=iP(aes,iD(aes,aew,0)),ad0=iO(aes,aew,7),aeG=iO(aes,aew,6),aeF=iO(aes,aew,5),aeE=iO(aes,aew,4),aeD=iO(aes,aew,3),aeC=iO(aes,aew,13),aeB=iO(aes,aew,12),aeA=iO(aes,aew,11),aez=iO(aes,aew,10),aey=iO(aes,aew,9);a:{var
+aex=iO(aes,aew,8);if(ad1&&aeD&&aeE&&aeF&&aeG&&ad0){var
+ad4=aeF[1],ad5=aeE[1],ad6=aeD[1],ad7=ad1[1],ad2=ad0[1],ad3=aeG[1];if(0<=ad6&&16>ad6){var
+ad8=iD(aes,aew,1),ad9=iD(aes,aew,2),ad_=ad8===0?0:iP(aes,ad8),ad$=ad9===0?0:iP(aes,ad9),aea=C(aex,0),aeb=C(aey,0),aec=C(aez,0),aed=C(aeA,0),aee=C(aeB,ad7[2]),aef=C(aeC,ad7[3]),aeg=i(ad5,i(aec,0)),aeh=i(ad4,i(aed,0)),aei=h(ad5+ad3|0,h(aec+aee|0,ad7[2])),aej=h(ad4+ad2|0,h(aed+aef|0,ad7[3]))-1|0;if(aej>=aeh){var
+aek=aeh;for(;;){var
+ael=aei-1|0;if(ael>=aeg){var
+aen=aeg;for(;;){var
+aeo=ad_?iQ(ad_[1],(aea+aen|0)-ad5|0,(aeb+aek|0)-ad4|0):1,aep=ad$?aeo&iQ(ad$[1],aen&15,aek&15):aeo,aeq=(ad6>>>(3-((2*aep|0)+iQ(ad7,aen,aek)|0)|0)|0)&1,adV=caml_mul(aek,ad7[4])+(aen>>>3|0)|0,adW=1<<(7-(aen&7)|0),adX=caml_bytes_get(ad7[1],adV),adY=1===aeq?adX|adW:adX&(adW^-1)&num_255,adZ=E(adY);caml_bytes_set(ad7[1],adV,adZ);var
+aer=aen+1|0;if(ael===aen)break;aen=aer}}var
+aem=aek+1|0;if(aej===aek)break;aek=aem}}iN[1]++;var
+aev=1;break a}}var
+aev=0}return aev?mb(aeu,aet,lx(aeu,aet)):0});return adH(158,function(adU,adT){var
+adS=lx(adU,adT);caml_call1(adU[2][3],adS);return mb(adU,adT,lx(adU,adT))})}function
+mW(adC){var
+adD=by(caml_ml_string_length(adC)+2|0);aT(function(adE){return 33===adE?bH(adD,mX):bE(adD,adE)},adC);bE(adD,33);return bz(adD)}var
+m4=[num_248,m3,caml_fresh_oo_id(0)];function
+m5(adv){var
+adw=9,adx=10,ady=ar(function(adB){return a4(adx,adB)},ar(function(adA){return a4(adw,adA)},a4(32,adv)));return ao(function(adz){return str$9!==adz?1:0})(ady)}function
+m6(ac3){try{var
+ac5=kw(ac3)}catch(adu){var
+ac4=caml_wrap_exception(adu);if(ac4[1]===jP)return 0;throw caml_maybe_attach_backtrace(ac4,0)}var
+ac6=ac5[5];a:if(ac6){var
+ac7=ac6[1];if(0===ac7[0]){var
+ac8=ac7[1][1];if(3===ac8[0]){var
+ac9=ac8[1][1];if(1===ac9[0]){var
+ac_=ac8[3];if(ac_){var
+ac$=ac_[1][1];if(0===ac$[0]){var
 ada=ac$[1];if(typeof
-ada!=="number"&&4===ada[0]){var
+ada!=="number"&&5===ada[0]){var
 adb=ac_[2];if(!adb)break a;var
 adc=adb[1][1];if(0!==adc[0])break a;var
 add=adc[1];if(typeof
 add!=="number"&&4===add[0]){var
 ade=adb[2];if(!ade)break a;var
-adf=ade[2];if(!adf)break a;var
-adg=adf[1][1];if(0!==adg[0])break a;var
-adh=adg[1];if(typeof
-adh!=="number"&&4===adh[0]){if(adf[2])break a;if(ac3[2])break a;var
-adl=ac9[1],adm=ac5[2],adi=adh[1],adj=add[1],adk=ada[1],adn=ac6[1],ado=adl!==str_CompiledMethod?adl!==str_Float?adm!=="subclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?adm!=="variableByteSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?adm!=="variableSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?0:m8:m9:m_:m$:na;if(!ado)return 0;var
-adp=ado[1],adq=m6(adj);return[0,[0,adn,adl,adp,m6(adk),adq,adi]]}break a}break a}break a}}}}}}}return 0}function
-nb(acW,acV){var
-acX=[0,1],acR=caml_ml_string_length(acW)-1|0,acQ=0;if(acR>=0){var
-acS=acQ;for(;;){var
-acY=acS<acV?1:0,acT=caml_string_unsafe_get(acW,acS),acZ=acY?10===acT?1:0:acY;if(acZ)acX[1]++;var
-acU=acS+1|0;if(acR===acS)break;acS=acU}}return acX[1]}function
-nB(acO,acN){var
-acP=acN;for(;;){if(num_128>acP)return bE(acO,E(acP));bE(acO,E(num_128|acP&num_127));acP=acP>>>7|0}}function
-nC(acH,acG){if(iw(acG))var
-acM=acG>>1,acI=0<=acM?2*acM|0:(-2*acM|0)-1|0,acK=acI,acJ=1;else
+adf=ade[1][1];if(0!==adf[0])break a;var
+adg=adf[1];if(typeof
+adg!=="number"&&4===adg[0]){var
+adh=ade[2];if(!adh)break a;var
+adi=adh[2];if(!adi)break a;var
+adj=adi[1][1];if(0!==adj[0])break a;var
+adk=adj[1];if(typeof
+adk!=="number"&&4===adk[0]){if(adi[2])break a;if(ac6[2])break a;var
+ado=ada[1],adp=ac8[2],adl=adk[1],adm=adg[1],adn=add[1],adq=ac9[1],adr=ado!==str_CompiledMethod?ado!==str_Float?adp!=="subclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?adp!=="variableByteSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?adp!=="variableSubclass:instanceVariableNames:classVariableNames:poolDictionaries:category:"?0:m7:m8:m9:m_:m$;if(!adr)return 0;var
+ads=adr[1],adt=m5(adm);return[0,[0,adq,ado,ads,m5(adn),adt,adl]]}break a}break a}break a}}}}}}}return 0}function
+na(acZ,acY){var
+ac0=[0,1],acU=caml_ml_string_length(acZ)-1|0,acT=0;if(acU>=0){var
+acV=acT;for(;;){var
+ac1=acV<acY?1:0,acW=caml_string_unsafe_get(acZ,acV),ac2=ac1?10===acW?1:0:ac1;if(ac2)ac0[1]++;var
+acX=acV+1|0;if(acU===acV)break;acV=acX}}return ac0[1]}function
+nA(acR,acQ){var
+acS=acQ;for(;;){if(num_128>acS)return bE(acR,E(acS));bE(acR,E(num_128|acS&num_127));acS=acS>>>7|0}}function
+nB(acK,acJ){if(iv(acJ))var
+acP=acJ>>1,acL=0<=acP?2*acP|0:(-2*acP|0)-1|0,acN=acL,acM=1;else
 var
-acK=acG>>>1|0,acJ=0;var
-acL=acJ|(acK&63)<<1;return 0===(acK>>>6|0)?bE(acH,E(acL)):(bE(acH,E(acL|num_128)),nB(acH,acK>>>6|0))}function
-nD(acB){var
-acD=0,acC=0;for(;;){if(caml_ml_string_length(acB[1])<=acB[2])f(nE);var
-acE=caml_string_get(acB[1],acB[2]);acB[2]=acB[2]+1|0;var
-acF=acC|(acE&num_127)<<acD;if(num_128>acE)return acF;acD=acD+7|0;acC=acF}}function
-nF(acw){if(caml_ml_string_length(acw[1])<=acw[2])f(nG);var
-acx=caml_string_get(acw[1],acw[2]);acw[2]=acw[2]+1|0;var
-acy=(acx>>>1|0)&63,acz=num_128<=acx?acy|nD(acw)<<6:acy;if(1!==(acx&1))return acz<<1;var
-acA=0===(acz&1)?acz/2|0:-((acz+1|0)/2|0)|0;return ix(acA)}function
-nH(acu,act){if(caml_ml_string_length(acu[1])<(acu[2]+act|0))f(nI);var
-acv=aC(aP(acu[1],acu[2],act));acu[2]=acu[2]+act|0;return acv}function
-nO(acs,acr){return iE(acs[1],acr,lj)===0?1:0}function
-nP(acc,acb){var
-ach=acc[1],acd=lt(acc,acb),aca=bf(bd(function(acq){return iH(ach,acq)},iD(ach,iY(ach,iE(ach,acd,ll),4)))),ace=iD(ach,acd),acf=ad(function(acn,acm){if((6+acn|0)<ace.length-1)var
-aco=6+acn|0,acp=caml_check_bound(ace,aco)[1+aco];else
+acN=acJ>>>1|0,acM=0;var
+acO=acM|(acN&63)<<1;return 0===(acN>>>6|0)?bE(acK,E(acO)):(bE(acK,E(acO|num_128)),nA(acK,acN>>>6|0))}function
+nC(acE){var
+acG=0,acF=0;for(;;){if(caml_ml_string_length(acE[1])<=acE[2])f(nD);var
+acH=caml_string_get(acE[1],acE[2]);acE[2]=acE[2]+1|0;var
+acI=acF|(acH&num_127)<<acG;if(num_128>acH)return acI;acG=acG+7|0;acF=acI}}function
+nE(acz){if(caml_ml_string_length(acz[1])<=acz[2])f(nF);var
+acA=caml_string_get(acz[1],acz[2]);acz[2]=acz[2]+1|0;var
+acB=(acA>>>1|0)&63,acC=num_128<=acA?acB|nC(acz)<<6:acB;if(1!==(acA&1))return acC<<1;var
+acD=0===(acC&1)?acC/2|0:-((acC+1|0)/2|0)|0;return iw(acD)}function
+nG(acx,acw){if(caml_ml_string_length(acx[1])<(acx[2]+acw|0))f(nH);var
+acy=aC(aP(acx[1],acx[2],acw));acx[2]=acx[2]+acw|0;return acy}function
+nN(acv,acu){return iD(acv[1],acu,li)===0?1:0}function
+nO(acf,ace){var
+ack=acf[1],acg=ls(acf,ace),acd=bf(bd(function(act){return iG(ack,act)},iC(ack,iX(ack,iD(ack,acg,lk),4)))),ach=iC(ack,acg),aci=ad(function(acq,acp){if((6+acq|0)<ach.length-1)var
+acr=6+acq|0,acs=caml_check_bound(ach,acr)[1+acr];else
 var
-acp=iv;return[0,acm,acp]},aca),acg=[0,[0,nQ,caml_check_bound(ace,5)[1+lm]],acf];return ao(function(aci){var
-acj=aci[1],ack=acj!==str$9?1:0,acl=ack?32!==caml_string_get(acj,0)?1:0:ack;return acl})(acg)}var
-lo=6,nS=num_20000000;function
-nT(ab_,ab9,ab8){l3(ab9);l1([0,ab8],ab_,ab9,nS);var
-ab$=ab9[3];if(typeof
-ab$==="number"&&!ab$)return l4(ab9,nU)}function
-nV(abO,abN,abM){var
-abX=abO[1],abP=lu(abO,abM),abQ=iX(abX,abP),abR=ab(function(ab7){return ab7[1]},i2(abX,abP)),abS=iE(abX,abM,lj),abT=iw(abS)?abS>>1:0,abU=abN[2]!==abM?[0,abT]:D(function(ab5){var
-ab3=caml_bytes_get(abQ,ab5),ab4=ab3-128|0;a:{if(5<ab4>>>0){if(6!==ab4){if(num_160<=ab3&&num_175>=ab3){var
-ab6=2;break a}var
-ab6=1;break a}}else if(4!==ab4){var
-ab6=2;break a}var
-ab6=3}return ab5+ab6|0},am(function(ab2){return abT<=ab2?1:0},abR));if(!abU)return function(ab1){return nO(ab1,abM)};var
-abW=[0,0],abV=abU[1];return function(abY){if(nO(abY,abM))return 1;if(abY[7]!==abM)return 0;var
-ab0=abY[15];if(ab0===abV)abW[1]=1;var
-abZ=abW[1];return abZ?ak(ab0,abR):abZ}}function
-nW(abv,abu,abt){var
-abL=abv[1],abw=lt(abv,abt);if(nO(abv,abw))return;var
-abx=iE(abL,abw,ll),aby=i0(abL,abx),abz=aby===0?abx:C(jC(abL,aby,iZ(abL,abx)),abx),abA=iW(abL,abz),abB=6+abA[4]|0;if(iG(abL,abw)<abB){var
-abC=caml_make_vect(abB,0),abD=h(abB,iG(abL,abw));ba(iD(abL,abw),0,abC,0,abD);iN(abL,abw,iz(abL,abL[8][8],[0,abC]))}var
-abE=iD(abL,abw);caml_check_bound(abE,3)[1+ll]=abz;var
-abF=ix(0);caml_check_bound(abE,1)[1+lj]=abF;var
-abG=ix((6+abA[3]|0)-1|0);caml_check_bound(abE,2)[1+lk]=abG;var
-abH=6+abA[2]|0,abI=abE.length-2|0;if(abI>=abH){var
-abJ=abH;for(;;){caml_check_bound(abE,abJ)[1+abJ]=iv;var
-abK=abJ+1|0;if(abI===abJ)break;abJ=abK}}abu[2]=abw;lr(abv)}function
-nX(abl,abk){var
-abs=abl[1],abm=abk[2];if(abm!==0&&!ls(abl,abm)){if(iH(abs,iZ(abs,iE(abs,abm,ll)))!==str_doesNotUnderstand)return 0;var
-abn=iE(abs,abm,lo),abo=iE(abs,abm,lm),abp=iE(abs,abm,li);if(!iw(abn)){var
-abq=abs[8][10];if(iA(abs,abn)===abq){var
-abr=iH(abs,iE(abs,abn,0));return[0,[0,iA(abs,abo),abr,abp]]}}return 0}return 0}function
-nZ(abj){return bk(num_1,bj(1.,abj))}var
-n0=caml_tanh_float;function
-n1(abg,abf){var
-abh=abg?abg[1]:0,abi=abh?n0:nZ;return bd(abi,abf)}function
-n2(abe,abd){switch(abe){case
-0:return Math.sin(num_6_283185307179586*abd);case
-1:return abd<num_0_5?1.:num_1;case
-2:return abd<num_0_25?4.*abd:abd<num_0_75?2.-4.*abd:4.*abd-4.;default:return 2.*abd-1.}}function
-n3(aba,aa$){if(aa$<aba){var
-abb=aa$/aba;return 2.*abb-abb*abb-1.}if(!(1.-aba<aa$))return 0.;var
-abc=(aa$-1.)/aba;return abc*abc+2.*abc+1.}function
-n4(aa8,aa7){if(aa7<aa8){var
-aa9=1.-aa7/aa8;return aa9*aa9*aa9/6.}if(!(1.-aa8<aa7))return 0.;var
-aa_=(aa7-1.)/aa8+1.;return aa_*aa_*aa_/6.}function
-n5(aa6){return aa6-Math.floor(aa6)}function
-n6(aa5){return Math.pow(2.,aa5/num_12)}function
-n7(aa3){var
-aa4=(bk(num_1,bj(1.,aa3))+1.)*3.141592653589793/4.;return[0,num_1_4142135623730951*Math.cos(aa4),num_1_4142135623730951*Math.sin(aa4)]}function
-n8(aa2){return aa2-Math.floor(aa2)}function
-n9(aaz,aay){var
-aaA=aaz?aaz[1]:1.;return function(aaI,aaH){if(typeof
-aay!=="number"){if(2===aay[0]){var
-aaG=Math.sin(num_6_283185307179586*aaH[1]+aay[2]*aaA*Math.sin(num_6_283185307179586*aaH[2])),aaX=aaH[6],aaY=aaH[5],aaZ=aaH[4],aa0=aaH[3],aa1=n8(aaH[2]+aaI*aay[1]/num_44100);return[0,aaG,[0,n8(aaH[1]+aaI/num_44100),aa1,aa0,aaZ,aaY,aaX]]}var
-aaN=aay[1],aaO=aaI/num_44100;a:{if(typeof
-aay!=="number"&&0===aay[0]){var
-aaV=aaH[1];switch(aaN){case
+acs=iu;return[0,acp,acs]},acd),acj=[0,[0,nP,caml_check_bound(ach,5)[1+ll]],aci];return ao(function(acl){var
+acm=acl[1],acn=acm!==str$9?1:0,aco=acn?32!==caml_string_get(acm,0)?1:0:acn;return aco})(acj)}var
+ln=6,nR=num_20000000;function
+nS(acb,aca,ab$){l2(aca);l0([0,ab$],acb,aca,nR);var
+acc=aca[3];if(typeof
+acc==="number"&&!acc)return l3(aca,nT)}function
+nU(abR,abQ,abP){var
+ab0=abR[1],abS=lt(abR,abP),abT=iW(ab0,abS),abU=ab(function(ab_){return ab_[1]},i1(ab0,abS)),abV=iD(ab0,abP,li),abW=iv(abV)?abV>>1:0,abX=abQ[2]!==abP?[0,abW]:D(function(ab8){var
+ab6=caml_bytes_get(abT,ab8),ab7=ab6-128|0;a:{if(5<ab7>>>0){if(6!==ab7){if(num_160<=ab6&&num_175>=ab6){var
+ab9=2;break a}var
+ab9=1;break a}}else if(4!==ab7){var
+ab9=2;break a}var
+ab9=3}return ab8+ab9|0},am(function(ab5){return abW<=ab5?1:0},abU));if(!abX)return function(ab4){return nN(ab4,abP)};var
+abZ=[0,0],abY=abX[1];return function(ab1){if(nN(ab1,abP))return 1;if(ab1[7]!==abP)return 0;var
+ab3=ab1[15];if(ab3===abY)abZ[1]=1;var
+ab2=abZ[1];return ab2?ak(ab3,abU):ab2}}function
+nV(aby,abx,abw){var
+abO=aby[1],abz=ls(aby,abw);if(nN(aby,abz))return;var
+abA=iD(abO,abz,lk),abB=iZ(abO,abA),abC=abB===0?abA:C(jB(abO,abB,iY(abO,abA)),abA),abD=iV(abO,abC),abE=6+abD[4]|0;if(iF(abO,abz)<abE){var
+abF=caml_make_vect(abE,0),abG=h(abE,iF(abO,abz));ba(iC(abO,abz),0,abF,0,abG);iM(abO,abz,iy(abO,abO[8][8],[0,abF]))}var
+abH=iC(abO,abz);caml_check_bound(abH,3)[1+lk]=abC;var
+abI=iw(0);caml_check_bound(abH,1)[1+li]=abI;var
+abJ=iw((6+abD[3]|0)-1|0);caml_check_bound(abH,2)[1+lj]=abJ;var
+abK=6+abD[2]|0,abL=abH.length-2|0;if(abL>=abK){var
+abM=abK;for(;;){caml_check_bound(abH,abM)[1+abM]=iu;var
+abN=abM+1|0;if(abL===abM)break;abM=abN}}abx[2]=abz;lq(aby)}function
+nW(abo,abn){var
+abv=abo[1],abp=abn[2];if(abp!==0&&!lr(abo,abp)){if(iG(abv,iY(abv,iD(abv,abp,lk)))!==str_doesNotUnderstand)return 0;var
+abq=iD(abv,abp,ln),abr=iD(abv,abp,ll),abs=iD(abv,abp,lh);if(!iv(abq)){var
+abt=abv[8][10];if(iz(abv,abq)===abt){var
+abu=iG(abv,iD(abv,abq,0));return[0,[0,iz(abv,abr),abu,abs]]}}return 0}return 0}function
+nY(abm){return bk(num_1,bj(1.,abm))}var
+nZ=caml_tanh_float;function
+n0(abj,abi){var
+abk=abj?abj[1]:0,abl=abk?nZ:nY;return bd(abl,abi)}function
+n1(abh,abg){switch(abh){case
+0:return Math.sin(num_6_283185307179586*abg);case
+1:return abg<num_0_5?1.:num_1;case
+2:return abg<num_0_25?4.*abg:abg<num_0_75?2.-4.*abg:4.*abg-4.;default:return 2.*abg-1.}}function
+n2(abd,abc){if(abc<abd){var
+abe=abc/abd;return 2.*abe-abe*abe-1.}if(!(1.-abd<abc))return 0.;var
+abf=(abc-1.)/abd;return abf*abf+2.*abf+1.}function
+n3(aa$,aa_){if(aa_<aa$){var
+aba=1.-aa_/aa$;return aba*aba*aba/6.}if(!(1.-aa$<aa_))return 0.;var
+abb=(aa_-1.)/aa$+1.;return abb*abb*abb/6.}function
+n4(aa9){return aa9-Math.floor(aa9)}function
+n5(aa8){return Math.pow(2.,aa8/num_12)}function
+n6(aa6){var
+aa7=(bk(num_1,bj(1.,aa6))+1.)*3.141592653589793/4.;return[0,num_1_4142135623730951*Math.cos(aa7),num_1_4142135623730951*Math.sin(aa7)]}function
+n7(aa5){return aa5-Math.floor(aa5)}function
+n8(aaC,aaB){var
+aaD=aaC?aaC[1]:1.;return function(aaL,aaK){if(typeof
+aaB!=="number"){if(2===aaB[0]){var
+aaJ=Math.sin(num_6_283185307179586*aaK[1]+aaB[2]*aaD*Math.sin(num_6_283185307179586*aaK[2])),aa0=aaK[6],aa1=aaK[5],aa2=aaK[4],aa3=aaK[3],aa4=n7(aaK[2]+aaL*aaB[1]/num_44100);return[0,aaJ,[0,n7(aaK[1]+aaL/num_44100),aa4,aa3,aa2,aa1,aa0]]}var
+aaQ=aaB[1],aaR=aaL/num_44100;a:{if(typeof
+aaB!=="number"&&0===aaB[0]){var
+aaY=aaK[1];switch(aaQ){case
 0:var
-aaW=n2(aaN,aaV);break;case
+aaZ=n1(aaQ,aaY);break;case
 1:var
-aaB=n3(aaO,n5(aaV+num_0_5)),aaC=n3(aaO,aaV),aaW=n2(aaN,aaV)+aaC-aaB;break;case
+aaE=n2(aaR,n4(aaY+num_0_5)),aaF=n2(aaR,aaY),aaZ=n1(aaQ,aaY)+aaF-aaE;break;case
 2:var
-aaD=8.*aaO*n4(aaO,n5(aaV-num_0_75)),aaE=8.*aaO*n4(aaO,n5(aaV-num_0_25)),aaW=n2(aaN,aaV)-aaE+aaD;break;default:var
-aaF=n3(aaO,aaV),aaW=n2(aaN,aaV)-aaF}var
-aaP=aaW;break a}var
-aaP=n2(aaN,aaH[1])}var
-aaQ=aaH[6],aaR=aaH[5],aaS=aaH[4],aaT=aaH[3],aaU=aaH[2];return[0,aaP,[0,n8(aaH[1]+aaO),aaU,aaT,aaS,aaR,aaQ]]}if(0!==aay)return n9(0,n_)(aaI,aaH);var
-aaJ=1===(aaH[3]&1)?1.:num_1,aaK=[0,aaH[4]+aaI/num_44100],aaL=[0,aaH[3]];for(;;){if(!(1.<=aaK[1]))return[0,aaJ,[0,aaH[1],aaH[2],aaL[1],aaK[1],aaH[5],aaH[6]]];var
-aaM=aaL[1];aaL[1]=aaM>>>1|0|(aaM&1^(aaM>>>1|0)&1)<<14;aaK[1]=aaK[1]-1.}}}function
-n$(aaf,aae,aad){var
-aag=[0,aaf],aah=aaf[5],aai=a5(aad,function(aal){var
-aan=aag[1][6],aam=aag[1],aak=ag(function(aaw,aav){switch(aav[0]){case
+aaG=8.*aaR*n3(aaR,n4(aaY-num_0_75)),aaH=8.*aaR*n3(aaR,n4(aaY-num_0_25)),aaZ=n1(aaQ,aaY)-aaH+aaG;break;default:var
+aaI=n2(aaR,aaY),aaZ=n1(aaQ,aaY)-aaI}var
+aaS=aaZ;break a}var
+aaS=n1(aaQ,aaK[1])}var
+aaT=aaK[6],aaU=aaK[5],aaV=aaK[4],aaW=aaK[3],aaX=aaK[2];return[0,aaS,[0,n7(aaK[1]+aaR),aaX,aaW,aaV,aaU,aaT]]}if(0!==aaB)return n8(0,n9)(aaL,aaK);var
+aaM=1===(aaK[3]&1)?1.:num_1,aaN=[0,aaK[4]+aaL/num_44100],aaO=[0,aaK[3]];for(;;){if(!(1.<=aaN[1]))return[0,aaM,[0,aaK[1],aaK[2],aaO[1],aaN[1],aaK[5],aaK[6]]];var
+aaP=aaO[1];aaO[1]=aaP>>>1|0|(aaP&1^(aaP>>>1|0)&1)<<14;aaN[1]=aaN[1]-1.}}}function
+n_(aai,aah,aag){var
+aaj=[0,aai],aak=aai[5],aal=a5(aag,function(aao){var
+aaq=aaj[1][6],aap=aaj[1],aan=ag(function(aaz,aay){switch(aay[0]){case
 0:var
-aax=n6(aav[2]*Math.sin(num_6_283185307179586*aav[1]*aan));break;case
+aaA=n5(aay[2]*Math.sin(num_6_283185307179586*aay[1]*aaq));break;case
 1:var
-aas=aav[1],aax=aan<aav[2]?1.:n6(aas);break;default:var
-aat=aav[1];if(aat)var
-aau=aav[2],aax=n6(S(aat,caml_mod(aan/aau|0,O(aat))));else
+aav=aay[1],aaA=aaq<aay[2]?1.:n5(aav);break;default:var
+aaw=aay[1];if(aaw)var
+aax=aay[2],aaA=n5(S(aaw,caml_mod(aaq/aax|0,O(aaw))));else
 var
-aax=1.}return aaw*aax},1.,aae[7]),aao=aae[2]*aak,aap=n9(0,aae[1])(aao,aam),aaq=aap[2],aar=aap[1];aag[1]=[0,aaq[1],aaq[2],aaq[3],aaq[4],aaq[5],aaq[6]+2.2675736961451248e-5];return aar*(aah+(aae[5]-aah)*(aal+1|0)/aad)}),aaj=aag[1];return[0,aai,[0,aaj[1],aaj[2],aaj[3],aaj[4],aae[5],aaj[6]]]}function
-ob(aaa){switch(aaa[1]){case
+aaA=1.}return aaz*aaA},1.,aah[7]),aar=aah[2]*aan,aas=n8(0,aah[1])(aar,aap),aat=aas[2],aau=aas[1];aaj[1]=[0,aat[1],aat[2],aat[3],aat[4],aat[5],aat[6]+2.2675736961451248e-5];return aau*(aak+(aah[5]-aak)*(aao+1|0)/aag)}),aam=aaj[1];return[0,aal,[0,aam[1],aam[2],aam[3],aam[4],aah[5],aam[6]]]}function
+oa(aad){switch(aad[1]){case
 0:break;case
 1:break;case
 2:break;case
 3:break}var
-aab=aaa[9]!==0.?[0,[1,aaa[9],aaa[10]],0]:0,aac=0.<aaa[8]?[0,[0,aaa[7],aaa[8]],0]:0;o(aac,aab);aaa[3]===aaa[2];if(0.<aaa[11])0.<aaa[12];0.<aaa[14];0.<aaa[15];if(0.<aaa[16])return}function
-ok($$){return $$[1].length-1}function
-oo(_P,_O){var
-_Q=caml_make_vect(_O,0.),_R=caml_make_vect(_O,0.);ae(function($0){var
-$1=$0[2],$2=h(_O,ok($0[1])-$1|0),$4=$2-1|0,$3=0;if($4>=0){var
-$5=$3;for(;;){var
-$6=$0[2]+$5|0,$7=caml_check_bound($0[1][1],$6)[1+$6];_Q[1+$5]=caml_check_bound(_Q,$5)[1+$5]+$7;var
-$8=$0[2]+$5|0,$9=caml_check_bound($0[1][2],$8)[1+$8];_R[1+$5]=caml_check_bound(_R,$5)[1+$5]+$9;var
-$_=$5+1|0;if($4===$5)break;$5=$_}}$0[2]=$0[2]+$2|0;return 0},_P[1]);var
-_S=_P[1];_P[1]=ao(function($Y){var
-$Z=ok($Y[1]);return $Y[2]<$Z?1:0})(_S);var
-_T=[0,0];eH(function($E,$D){if($D[3]){var
-$F=n$($D[2],$D[1],_O),$G=$F[1];$D[2]=$F[2];var
-$H=$G}else{_T[1]=[0,$E,_T[1]];var
-$S=$D[1],$H=n$($D[2],[0,$S[1],$S[2],$S[3],$S[4],0.,$S[6],$S[7],$S[8]],_O)[1]}var
-$I=$D[4];if($I){var
-$J=$I[1],$r=num_6_283185307179586*$J[2]/num_44100,$s=Math.cos($r),$t=Math.sin($r)/(2.*$J[4]),$u=1.+$t;switch($J[1]){case
+aae=aad[9]!==0.?[0,[1,aad[9],aad[10]],0]:0,aaf=0.<aad[8]?[0,[0,aad[7],aad[8]],0]:0;o(aaf,aae);aad[3]===aad[2];if(0.<aad[11])0.<aad[12];0.<aad[14];0.<aad[15];if(0.<aad[16])return}function
+oj(aac){return aac[1].length-1}function
+on(_S,_R){var
+_T=caml_make_vect(_R,0.),_U=caml_make_vect(_R,0.);ae(function($3){var
+$4=$3[2],$5=h(_R,oj($3[1])-$4|0),$7=$5-1|0,$6=0;if($7>=0){var
+$8=$6;for(;;){var
+$9=$3[2]+$8|0,$_=caml_check_bound($3[1][1],$9)[1+$9];_T[1+$8]=caml_check_bound(_T,$8)[1+$8]+$_;var
+$$=$3[2]+$8|0,aaa=caml_check_bound($3[1][2],$$)[1+$$];_U[1+$8]=caml_check_bound(_U,$8)[1+$8]+aaa;var
+aab=$8+1|0;if($7===$8)break;$8=aab}}$3[2]=$3[2]+$5|0;return 0},_S[1]);var
+_V=_S[1];_S[1]=ao(function($1){var
+$2=oj($1[1]);return $1[2]<$2?1:0})(_V);var
+_W=[0,0];eH(function($H,$G){if($G[3]){var
+$I=n_($G[2],$G[1],_R),$J=$I[1];$G[2]=$I[2];var
+$K=$J}else{_W[1]=[0,$H,_W[1]];var
+$V=$G[1],$K=n_($G[2],[0,$V[1],$V[2],$V[3],$V[4],0.,$V[6],$V[7],$V[8]],_R)[1]}var
+$L=$G[4];if($L){var
+$M=$L[1],$u=num_6_283185307179586*$M[2]/num_44100,$v=Math.cos($u),$w=Math.sin($u)/(2.*$M[4]),$x=1.+$w;switch($M[1]){case
 0:var
-$x=(1.-$s)/2.,$w=1.-$s,$v=(1.-$s)/2.;break;case
+$A=(1.-$v)/2.,$z=1.-$v,$y=(1.-$v)/2.;break;case
 1:var
-$x=(1.+$s)/2.,$w=-(1.+$s),$v=(1.+$s)/2.;break;default:var
-$x=-$t,$w=0.,$v=$t}var
-$K=$D[5],$y=(1.-$t)/$u,$z=-2.*$s/$u,$A=$x/$u,$B=$w/$u,$C=$v/$u,$L=bd(function($X){var
-$W=$C*$X+$B*$K[1]+$A*$K[2]-$z*$K[3]-$y*$K[4];$K[2]=$K[1];$K[1]=$X;$K[4]=$K[3];$K[3]=$W;return $W},$H)}else
+$A=(1.+$v)/2.,$z=-(1.+$v),$y=(1.+$v)/2.;break;default:var
+$A=-$w,$z=0.,$y=$w}var
+$N=$G[5],$B=(1.-$w)/$x,$C=-2.*$v/$x,$D=$A/$x,$E=$z/$x,$F=$y/$x,$O=bd(function($0){var
+$Z=$F*$0+$E*$N[1]+$D*$N[2]-$C*$N[3]-$B*$N[4];$N[2]=$N[1];$N[1]=$0;$N[4]=$N[3];$N[3]=$Z;return $Z},$K)}else
 var
-$L=$H;var
-$M=n7($D[7]),$N=$M[2],$O=$M[1],$P=n7($D[6]),$Q=$P[2],$R=$P[1];be(function($U,$T){var
-$V=($U+1|0)/_O;_Q[1+$U]=caml_check_bound(_Q,$U)[1+$U]+$T*($O+($R-$O)*$V);_R[1+$U]=caml_check_bound(_R,$U)[1+$U]+$T*($N+($Q-$N)*$V);return 0},$L);$D[7]=$D[6];$D[3]=0;return 0},_P[2]);var
-_U=_P[2];ae(function($q){return eK(_U,$q)},_T[1]);var
-_V=[0,0];eH(function($d,$c){var
-$g=_O-1|0,$e=ok($c[1]),$f=0;if($g>=0){var
-$j=$f;for(;;){var
-$k=$c[4]?1.-$j/_O:1.,$l=$c[2],$m=$k*caml_check_bound($c[1][1],$l)[1+$l];_Q[1+$j]=caml_check_bound(_Q,$j)[1+$j]+$m;var
-$n=$c[2],$o=$k*caml_check_bound($c[1][2],$n)[1+$n];_R[1+$j]=caml_check_bound(_R,$j)[1+$j]+$o;$c[2]=caml_mod($c[2]+1|0,$e);var
-$p=$j+1|0;if($g===$j)break;$j=$p}}$c[3]=$c[3]+_O|0;var
-$h=$c[4],$i=$h?(_V[1]=[0,$d,_V[1]],0):$h;return $i},_P[3]);var
-_W=_P[3];ae(function($b){return eK(_W,$b)},_V[1]);var
-_X=[0,0];eH(function(_2,_1){var
-_3=[0,caml_make_vect(_O,0.),caml_make_vect(_O,0.)];caml_call1(_1[1][4],_3);var
-_5=_O-1|0,_4=0;if(_5>=0){var
-_8=_4;for(;;){var
-_9=_1[2]?1.-_8/_O:1.,__=_9*caml_check_bound(_3[1],_8)[1+_8];_Q[1+_8]=caml_check_bound(_Q,_8)[1+_8]+__;var
-_$=_9*caml_check_bound(_3[2],_8)[1+_8];_R[1+_8]=caml_check_bound(_R,_8)[1+_8]+_$;var
-$a=_8+1|0;if(_5===_8)break;_8=$a}}var
-_6=_1[2],_7=_6?(_X[1]=[0,_2,_X[1]],0):_6;return _7},_P[4]);var
-_Y=_P[4];ae(function(_0){return eK(_Y,_0)},_X[1]);var
-_Z=n1(op,_R);return[0,n1(oq,_Q),_Z]}var
-oc=[0,oa[1],num_880,num_880,oa[4],num_0_03,num_0_04,oa[7],oa[8],oa[9],oa[10],oa[11],oa[12],oa[13],oa[14],oa[15],oa[16],oa[17]],od=[0,oa[1],num_1047,num_1047,oa[4],0.08,0.22,oa[7],oa[8],7.,0.07,oa[11],oa[12],oa[13],oa[14],oa[15],oa[16],num_0_4],oe=[0,oa[1],num_300,650.,oa[4],num_0_04,0.14,oa[7],oa[8],oa[9],oa[10],oa[11],oa[12],oa[13],oa[14],oa[15],oa[16],num_0_4],of=[0,1,1200.,num_200$0,oa[4],0.02,0.18,oa[7],oa[8],oa[9],oa[10],8000.,num_1000$0,oa[13],oa[14],oa[15],oa[16],oa[17]],og=[0,4,3000.,num_1500,oa[4],0.01,0.09,oa[7],oa[8],oa[9],oa[10],5000.,oa[12],oa[13],oa[14],oa[15],oa[16],oa[17]],oh=[0,4,num_1500,num_150,oa[4],num_0_1,0.6,oa[7],oa[8],oa[9],oa[10],4000.,num_150,oa[13],oa[14],oa[15],oa[16],num_0_75],oi=[0,2,num_150,90.,oa[4],0.,num_0_05,oa[7],oa[8],oa[9],oa[10],oa[11],oa[12],oa[13],oa[14],oa[15],oa[16],num_0_3],oj=[0,oa[1],330.,990.,oa[4],num_0_25,0.2,14.,num_0_5,oa[9],oa[10],oa[11],oa[12],oa[13],oa[14],oa[15],oa[16],num_0_35];ab(function(_N){switch(_N){case
-0:return os;case
-1:return ot;case
-2:return ou;default:return ov}},or);ab(function(_M){switch(_M){case
-0:return ox;case
-1:return oy;default:return oz}},ow);var
-oB=[num_248,oA,caml_fresh_oo_id(0)];fo(oC,[0,oB,[0]]);(function(exn){throw exn});function
-oE(_L){return caml_js_to_string(typeof
-_L)}var
-oF=null,oG=joo_global_object;function
-oH(_K,_J){return _J==oF?0:[0,caml_call1(_K,_J)]}var
-fJ=fH(oD),i$=8,mR=[num_248,mQ,caml_fresh_oo_id(0)];try{var
-fG=fr[28].call(null,oI,fJ[7]),oJ=fG}catch(_I){var
-fF=caml_wrap_exception(_I);if(fF!==Not_found)throw caml_maybe_attach_backtrace(fF,0);var
+$O=$K;var
+$P=n6($G[7]),$Q=$P[2],$R=$P[1],$S=n6($G[6]),$T=$S[2],$U=$S[1];be(function($X,$W){var
+$Y=($X+1|0)/_R;_T[1+$X]=caml_check_bound(_T,$X)[1+$X]+$W*($R+($U-$R)*$Y);_U[1+$X]=caml_check_bound(_U,$X)[1+$X]+$W*($Q+($T-$Q)*$Y);return 0},$O);$G[7]=$G[6];$G[3]=0;return 0},_S[2]);var
+_X=_S[2];ae(function($t){return eK(_X,$t)},_W[1]);var
+_Y=[0,0];eH(function($g,$f){var
+$j=_R-1|0,$h=oj($f[1]),$i=0;if($j>=0){var
+$m=$i;for(;;){var
+$n=$f[4]?1.-$m/_R:1.,$o=$f[2],$p=$n*caml_check_bound($f[1][1],$o)[1+$o];_T[1+$m]=caml_check_bound(_T,$m)[1+$m]+$p;var
+$q=$f[2],$r=$n*caml_check_bound($f[1][2],$q)[1+$q];_U[1+$m]=caml_check_bound(_U,$m)[1+$m]+$r;$f[2]=caml_mod($f[2]+1|0,$h);var
+$s=$m+1|0;if($j===$m)break;$m=$s}}$f[3]=$f[3]+_R|0;var
+$k=$f[4],$l=$k?(_Y[1]=[0,$g,_Y[1]],0):$k;return $l},_S[3]);var
+_Z=_S[3];ae(function($e){return eK(_Z,$e)},_Y[1]);var
+_0=[0,0];eH(function(_5,_4){var
+_6=[0,caml_make_vect(_R,0.),caml_make_vect(_R,0.)];caml_call1(_4[1][4],_6);var
+_8=_R-1|0,_7=0;if(_8>=0){var
+_$=_7;for(;;){var
+$a=_4[2]?1.-_$/_R:1.,$b=$a*caml_check_bound(_6[1],_$)[1+_$];_T[1+_$]=caml_check_bound(_T,_$)[1+_$]+$b;var
+$c=$a*caml_check_bound(_6[2],_$)[1+_$];_U[1+_$]=caml_check_bound(_U,_$)[1+_$]+$c;var
+$d=_$+1|0;if(_8===_$)break;_$=$d}}var
+_9=_4[2],__=_9?(_0[1]=[0,_5,_0[1]],0):_9;return __},_S[4]);var
+_1=_S[4];ae(function(_3){return eK(_1,_3)},_0[1]);var
+_2=n0(oo,_U);return[0,n0(op,_T),_2]}var
+ob=[0,n$[1],num_880,num_880,n$[4],num_0_03,num_0_04,n$[7],n$[8],n$[9],n$[10],n$[11],n$[12],n$[13],n$[14],n$[15],n$[16],n$[17]],oc=[0,n$[1],num_1047,num_1047,n$[4],0.08,0.22,n$[7],n$[8],7.,0.07,n$[11],n$[12],n$[13],n$[14],n$[15],n$[16],num_0_4],od=[0,n$[1],num_300,650.,n$[4],num_0_04,0.14,n$[7],n$[8],n$[9],n$[10],n$[11],n$[12],n$[13],n$[14],n$[15],n$[16],num_0_4],oe=[0,1,1200.,num_200$0,n$[4],0.02,0.18,n$[7],n$[8],n$[9],n$[10],8000.,num_1000$0,n$[13],n$[14],n$[15],n$[16],n$[17]],of=[0,4,3000.,num_1500,n$[4],0.01,0.09,n$[7],n$[8],n$[9],n$[10],5000.,n$[12],n$[13],n$[14],n$[15],n$[16],n$[17]],og=[0,4,num_1500,num_150,n$[4],num_0_1,0.6,n$[7],n$[8],n$[9],n$[10],4000.,num_150,n$[13],n$[14],n$[15],n$[16],num_0_75],oh=[0,2,num_150,90.,n$[4],0.,num_0_05,n$[7],n$[8],n$[9],n$[10],n$[11],n$[12],n$[13],n$[14],n$[15],n$[16],num_0_3],oi=[0,n$[1],330.,990.,n$[4],num_0_25,0.2,14.,num_0_5,n$[9],n$[10],n$[11],n$[12],n$[13],n$[14],n$[15],n$[16],num_0_35];ab(function(_Q){switch(_Q){case
+0:return or;case
+1:return os;case
+2:return ot;default:return ou}},oq);ab(function(_P){switch(_P){case
+0:return ow;case
+1:return ox;default:return oy}},ov);var
+oA=[num_248,oz,caml_fresh_oo_id(0)];fo(oB,[0,oA,[0]]);(function(exn){throw exn});function
+oD(_O){return caml_js_to_string(typeof
+_O)}var
+oE=null,oF=joo_global_object;function
+oG(_N,_M){return _M==oE?0:[0,caml_call1(_N,_M)]}var
+fJ=fH(oC),i_=8,mQ=[num_248,mP,caml_fresh_oo_id(0)];try{var
+fG=fr[28].call(null,oH,fJ[7]),oI=fG}catch(_L){var
+fF=caml_wrap_exception(_L);if(fF!==Not_found)throw caml_maybe_attach_backtrace(fF,0);var
 fE=fJ[1];fJ[1]=fE+1|0;var
-oJ=fE}fD(fJ,fB(fJ,oK),function(_H){return _H[1+oJ]});fI(fJ);function
-oM(_G){return oG.Date.now()}function
-oO(_F){_F.preventDefault();return 0}function
-oP(_E){return caml_js_to_string(_E.type)}function
-oQ(_D){return caml_js_to_string(_D.key)}function
-oN(_B){if(typeof
-_B!=="number")return caml_js_from_string(_B[1]);var
-_C=_B;if(88<=_C){if(num_132<=_C)switch(_C){case
+oI=fE}fD(fJ,fB(fJ,oJ),function(_K){return _K[1+oI]});fI(fJ);function
+oL(_J){return oF.Date.now()}function
+oN(_I){_I.preventDefault();return 0}function
+oO(_H){return caml_js_to_string(_H.type)}function
+oP(_G){return caml_js_to_string(_G.key)}function
+oM(_E){if(typeof
+_E!=="number")return caml_js_from_string(_E[1]);var
+_F=_E;if(88<=_F){if(num_132<=_F)switch(_F){case
 132:return"resume";case
 133:return"scroll";case
 134:return"seeked";case
@@ -4069,7 +4068,7 @@ _C=_B;if(88<=_C){if(num_132<=_C)switch(_C){case
 170:return"visibilitychange";case
 171:return"voiceschanged";case
 172:return"volumechange";case
-173:return"waiting";default:return str_wheel}switch(_C){case
+173:return"waiting";default:return str_wheel}switch(_F){case
 88:return"message";case
 89:return"messageerror";case
 90:return str_mousedown;case
@@ -4112,7 +4111,7 @@ _C=_B;if(88<=_C){if(num_132<=_C)switch(_C){case
 127:return"repeatEvent";case
 128:return"reset";case
 129:return str_resize;case
-130:return"resourcetimingbufferfull";default:return"result"}}if(44<=_C)switch(_C){case
+130:return"resourcetimingbufferfull";default:return"result"}}if(44<=_F)switch(_F){case
 44:return"DOMFocusIn";case
 45:return"DOMFocusOut";case
 46:return"DOMNodeInserted";case
@@ -4155,7 +4154,7 @@ _C=_B;if(88<=_C){if(num_132<=_C)switch(_C){case
 83:return"loadedmetadata";case
 84:return"loadend";case
 85:return"loadstart";case
-86:return"lostpointercapture";default:return"mark"}switch(_C){case
+86:return"lostpointercapture";default:return"mark"}switch(_F){case
 0:return"abort";case
 1:return"afterprint";case
 2:return"animationend";case
@@ -4199,440 +4198,442 @@ _C=_B;if(88<=_C){if(num_132<=_C)switch(_C){case
 40:return"DOMAttrModified";case
 41:return"DOMCharacterDataModified";case
 42:return"DOMContentLoaded";default:return"DOMElementNameChanged"}}function
-oR(_A,_z){_A.appendChild(_z);return 0}function
-oS(_y,_x){_y.removeChild(_x)}function
-oT(_w,_v,_u){_w.setAttribute(caml_js_from_string(_v),caml_js_from_string(_u));return 0}function
-oU(_s,_r,_q,_p){_s.addEventListener(oN(_r),caml_js_wrap_callback_strict(1,function(_t){return caml_call1(_q,_t)}),!!_p);return 0}function
-oV(_n,_m){_n.requestAnimationFrame(caml_js_wrap_callback_strict(1,function(_o){return caml_call1(_m,_o)}));return 0}var
-oW=oG.window,oX=oG.document,oZ=globalThis;oZ.String;oZ.RegExp;oZ.Object;oZ.Array;oZ.Date;oZ.Math;function
-o1(_l){return caml_string_of_jsstring(_l.toString())}oZ.JSON;var
-o0=oZ.Error,oY=oG.console;eo(function(_k){return _k
+oQ(_D,_C){_D.appendChild(_C);return 0}function
+oR(_B,_A){_B.removeChild(_A)}function
+oS(_z,_y,_x){_z.setAttribute(caml_js_from_string(_y),caml_js_from_string(_x));return 0}function
+oT(_v,_u,_t,_s){_v.addEventListener(oM(_u),caml_js_wrap_callback_strict(1,function(_w){return caml_call1(_t,_w)}),!!_s);return 0}function
+oU(_q,_p){_q.requestAnimationFrame(caml_js_wrap_callback_strict(1,function(_r){return caml_call1(_p,_r)}));return 0}var
+oV=oF.window,oW=oF.document,oY=globalThis;oY.String;oY.RegExp;oY.Object;oY.Array;oY.Date;oY.Math;function
+o0(_o){return caml_string_of_jsstring(_o.toString())}oY.JSON;var
+oZ=oY.Error,oX=oF.console;eo(function(_n){return _n
 instanceof
-o0?[0,o1(_k)]:_k[1]===oB?[0,o1(_k[2])]:0});oZ.ArrayBuffer;oZ.Int8Array;oZ.Uint8Array;oZ.Int16Array;oZ.Uint16Array;oZ.Int32Array;oZ.Uint32Array;oZ.Float32Array;oZ.Float64Array;oZ.DataView;function
-oL(_j){return _j}function
-o3(Z_){var
-Z$=caml_ml_string_length(Z_),_a=by(((Z$+2|0)/3|0)*4|0);function
-_b(_i){return _i<Z$?caml_string_get(Z_,_i):0}var
-_c=[0,0];for(;;){if(_c[1]>=Z$)return bz(_a);var
-_d=_b(_c[1]+2|0),_e=_b(_c[1]+1|0)<<8,_g=0,_f=_b(_c[1])<<16|_e|_d;for(;;){a:{if(((_c[1]+_g|0)-1|0)>=Z$&&2<=_g){bE(_a,61);break a}bE(_a,caml_string_get(str_ABCDEFGHIJKLMNOP_abr,(_f>>>(18-(6*_g|0)|0)|0)&63))}var
-_h=_g+1|0;if(3===_g)break;_g=_h}_c[1]=_c[1]+3|0}}function
-o5(Z9){var
-Z8=oH(oL,oW.localStorage);return Z8?Z8[1]:f(o6)}ob(oc);ob(od);ob(oe);ob(of);ob(og);ob(oh);ob(oi);ob(oj);var
-ol=eG(0,2),om=eG(0,2),on=[0,0,eG(0,8),om,ol];eG(0,2);eG(0,2);var
-o9=[0,0],o_=num_1000$0,o$=num_1000$0;function
-pa(Z7,Z6,Z5){return[0,0.,0.,0.,1.,1.,[2,Z7,Z6,Z5]]}function
-pd(Z4,Z3,Z2){return[0,Z2[1]+Z4,Z2[2]+Z3,Z2[3],Z2[4],Z2[5],Z2[6]]}function
-pe(Z1,Z0){return[num_254,Z1,Z0,Z0/2.,-Z1/2.,Z1/2.,-Z0/2.]}function
-pf(ZZ,ZY){return[0,ZY[1],ZY[2],ZY[3],ZZ,ZY[5],ZY[6],ZY[7],ZY[8],ZY[9]]}function
-pg(ZX,ZW){return[0,ZW[1],ZW[2],ZX,ZW[4],ZW[5],ZW[6],ZW[7],ZW[8],ZW[9]]}function
-px(ZR,ZQ,ZP){var
-ZM=caml_string_compare(ZQ,"home");a:{b:{if(0<=ZM){if(0>=ZM){var
-ZS=ps;break a}if(ZQ==="insert"){var
-ZS=pr;break a}if(ZQ==="pagedown"){var
-ZS=pq;break a}if(ZQ==="pageup"){var
-ZS=pp;break a}if(ZQ!=="return"){if(ZQ!=="tab")break b;var
-ZS=pn;break a}}else if(ZQ!==str_Enter){if(ZQ==="backspace"){var
-ZS=pw;break a}if(ZQ==="delete"){var
-ZS=pv;break a}if(ZQ===str_end){var
-ZS=pu;break a}if(ZQ!=="escape")break b;var
-ZS=pt;break a}var
-ZS=po;break a}if(2<=caml_ml_string_length(ZQ)&&num_102===caml_string_get(ZQ,0)){var
-ZV=caml_bytes_of_string(aP(ZQ,1,caml_ml_string_length(ZQ)-1|0));b:{c:{var
-ZJ=0,ZI=caml_ml_bytes_length(ZV);for(;;){if(ZJ===ZI)break c;var
-ZK=caml_bytes_unsafe_get(ZV,ZJ),ZN=48<=ZK?1:0,ZO=ZN?ZK<=57?1:0:ZN;if(!ZO)break;ZJ=ZJ+1|0}var
-ZL=0;break b}var
-ZL=1}if(ZL){var
-ZS="F"+aP(ZQ,1,caml_ml_string_length(ZQ)-1|0);break a}}b:if(ZQ!=="left alt"){c:if(ZQ!=="left ctrl"){if(ZQ!=="left shift"){if(ZQ==="right alt")break b;if(ZQ==="right ctrl")break c;if(ZQ!=="right shift"){var
-ZS=ZQ;break a}}var
-ZS=pk;break a}var
-ZS=pl;break a}var
-ZS=pm}var
-ZT=ZR?hU(ZS,ZP[13]):h3(ZS,ZP[13]),ZU=caml_string_compare(ZS,str_Shift);if(0<=ZU){if(0>=ZU)return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZR,ZP[12],ZT,ZP[14]];if(ZS===str_a)return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZR,ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS===str_d$0)return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZR,ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS===str_s)return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZR,ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS===str_space)return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZR,ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS==="w")return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZR,ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]]}else{if(ZS===str_ArrowDown)return[0,ZP[1],ZR,ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS===str_ArrowLeft)return[0,ZP[1],ZP[2],ZR,ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS===str_ArrowRight)return[0,ZP[1],ZP[2],ZP[3],ZR,ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS===str_ArrowUp)return[0,ZR,ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]];if(ZS===str_Backspace)return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZR,ZT,ZP[14]];if(ZS===str_Enter)return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZR,ZP[11],ZP[12],ZT,ZP[14]]}return[0,ZP[1],ZP[2],ZP[3],ZP[4],ZP[5],ZP[6],ZP[7],ZP[8],ZP[9],ZP[10],ZP[11],ZP[12],ZT,ZP[14]]}function
-pJ(ZH){oY.log(caml_js_from_string(ZH))}var
-pz=pe(o_,o$),pK=oG.String;function
-pL(ZG){return caml_js_to_string(pK(ZG))}function
-pM(ZF,ZE){switch(ZE[0]){case
-0:return oT(ZF,ZE[1],ZE[2]);case
-1:return ZF.style[ZE[1]]=caml_js_from_string(ZE[2]);default:return ZF[ZE[1]]=caml_js_from_string(ZE[2])}}function
-pP(ZB){var
-ZA=oX.createElementNS("http://www.w3.org/2000/svg",caml_js_from_string(ZB[1]));ae(function(ZD){return pM(ZA,ZD)},ZB[2]);ae(function(ZC){return oR(ZA,pP(ZC))},ZB[3]);return ZA}function
-pQ(Zc,Zb,Za,Y$){if(Za[1]!==Y$[1]){var
-Zd=pP(Y$);Zc.replaceChild(Zd,Zb);return Zd}ae(function(Zx){var
-Zo=Y$[2];for(;;){if(Zo){var
-Zq=Zo[1],Zp=Zo[2];a:{b:{switch(Zx[0]){case
+oZ?[0,o0(_n)]:_n[1]===oA?[0,o0(_n[2])]:0});oY.ArrayBuffer;oY.Int8Array;oY.Uint8Array;oY.Int16Array;oY.Uint16Array;oY.Int32Array;oY.Uint32Array;oY.Float32Array;oY.Float64Array;oY.DataView;function
+oK(_m){return _m}function
+o2(_b){var
+_c=caml_ml_string_length(_b),_d=by(((_c+2|0)/3|0)*4|0);function
+_e(_l){return _l<_c?caml_string_get(_b,_l):0}var
+_f=[0,0];for(;;){if(_f[1]>=_c)return bz(_d);var
+_g=_e(_f[1]+2|0),_h=_e(_f[1]+1|0)<<8,_j=0,_i=_e(_f[1])<<16|_h|_g;for(;;){a:{if(((_f[1]+_j|0)-1|0)>=_c&&2<=_j){bE(_d,61);break a}bE(_d,caml_string_get(str_ABCDEFGHIJKLMNOP_abr,(_i>>>(18-(6*_j|0)|0)|0)&63))}var
+_k=_j+1|0;if(3===_j)break;_j=_k}_f[1]=_f[1]+3|0}}function
+o4(_a){var
+Z$=oG(oK,oV.localStorage);return Z$?Z$[1]:f(o5)}oa(ob);oa(oc);oa(od);oa(oe);oa(of);oa(og);oa(oh);oa(oi);var
+ok=eG(0,2),ol=eG(0,2),om=[0,0,eG(0,8),ol,ok];eG(0,2);eG(0,2);var
+o8=[0,0],o9=num_1000$0,o_=num_1000$0;function
+o$(Z_,Z9,Z8){return[0,0.,0.,0.,1.,1.,[2,Z_,Z9,Z8]]}function
+pc(Z7,Z6,Z5){return[0,Z5[1]+Z7,Z5[2]+Z6,Z5[3],Z5[4],Z5[5],Z5[6]]}function
+pd(Z4,Z3){return[num_254,Z4,Z3,Z3/2.,-Z4/2.,Z4/2.,-Z3/2.]}function
+pe(Z2,Z1){return[0,Z1[1],Z1[2],Z1[3],Z2,Z1[5],Z1[6],Z1[7],Z1[8],Z1[9]]}function
+pf(Z0,ZZ){return[0,ZZ[1],ZZ[2],Z0,ZZ[4],ZZ[5],ZZ[6],ZZ[7],ZZ[8],ZZ[9]]}function
+pw(ZU,ZT,ZS){var
+ZP=caml_string_compare(ZT,"home");a:{b:{if(0<=ZP){if(0>=ZP){var
+ZV=pr;break a}if(ZT==="insert"){var
+ZV=pq;break a}if(ZT==="pagedown"){var
+ZV=pp;break a}if(ZT==="pageup"){var
+ZV=po;break a}if(ZT!=="return"){if(ZT!=="tab")break b;var
+ZV=pm;break a}}else if(ZT!==str_Enter){if(ZT==="backspace"){var
+ZV=pv;break a}if(ZT==="delete"){var
+ZV=pu;break a}if(ZT===str_end){var
+ZV=pt;break a}if(ZT!=="escape")break b;var
+ZV=ps;break a}var
+ZV=pn;break a}if(2<=caml_ml_string_length(ZT)&&num_102===caml_string_get(ZT,0)){var
+ZY=caml_bytes_of_string(aP(ZT,1,caml_ml_string_length(ZT)-1|0));b:{c:{var
+ZM=0,ZL=caml_ml_bytes_length(ZY);for(;;){if(ZM===ZL)break c;var
+ZN=caml_bytes_unsafe_get(ZY,ZM),ZQ=48<=ZN?1:0,ZR=ZQ?ZN<=57?1:0:ZQ;if(!ZR)break;ZM=ZM+1|0}var
+ZO=0;break b}var
+ZO=1}if(ZO){var
+ZV="F"+aP(ZT,1,caml_ml_string_length(ZT)-1|0);break a}}b:if(ZT!=="left alt"){c:if(ZT!=="left ctrl"){if(ZT!=="left shift"){if(ZT==="right alt")break b;if(ZT==="right ctrl")break c;if(ZT!=="right shift"){var
+ZV=ZT;break a}}var
+ZV=pj;break a}var
+ZV=pk;break a}var
+ZV=pl}var
+ZW=ZU?hU(ZV,ZS[13]):h3(ZV,ZS[13]),ZX=caml_string_compare(ZV,str_Shift);if(0<=ZX){if(0>=ZX)return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZU,ZS[12],ZW,ZS[14]];if(ZV===str_a)return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZU,ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV===str_d$0)return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZU,ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV===str_s)return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZU,ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV===str_space)return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZU,ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV==="w")return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZU,ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]]}else{if(ZV===str_ArrowDown)return[0,ZS[1],ZU,ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV===str_ArrowLeft)return[0,ZS[1],ZS[2],ZU,ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV===str_ArrowRight)return[0,ZS[1],ZS[2],ZS[3],ZU,ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV===str_ArrowUp)return[0,ZU,ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]];if(ZV===str_Backspace)return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZU,ZW,ZS[14]];if(ZV===str_Enter)return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZU,ZS[11],ZS[12],ZW,ZS[14]]}return[0,ZS[1],ZS[2],ZS[3],ZS[4],ZS[5],ZS[6],ZS[7],ZS[8],ZS[9],ZS[10],ZS[11],ZS[12],ZW,ZS[14]]}function
+pI(ZK){oX.log(caml_js_from_string(ZK))}var
+py=pd(o9,o_),pJ=oF.String;function
+pK(ZJ){return caml_js_to_string(pJ(ZJ))}function
+pL(ZI,ZH){switch(ZH[0]){case
+0:return oS(ZI,ZH[1],ZH[2]);case
+1:return ZI.style[ZH[1]]=caml_js_from_string(ZH[2]);default:return ZI[ZH[1]]=caml_js_from_string(ZH[2])}}function
+pO(ZE){var
+ZD=oW.createElementNS("http://www.w3.org/2000/svg",caml_js_from_string(ZE[1]));ae(function(ZG){return pL(ZD,ZG)},ZE[2]);ae(function(ZF){return oQ(ZD,pO(ZF))},ZE[3]);return ZD}function
+pP(Zf,Ze,Zd,Zc){if(Zd[1]!==Zc[1]){var
+Zg=pO(Zc);Zf.replaceChild(Zg,Ze);return Zg}ae(function(ZA){var
+Zr=Zc[2];for(;;){if(Zr){var
+Zt=Zr[1],Zs=Zr[2];a:{b:{switch(ZA[0]){case
 0:var
-Zs=Zx[1];if(0===Zq[0]){var
-Zu=Zq[1],Zt=Zs;break b}break;case
+Zv=ZA[1];if(0===Zt[0]){var
+Zx=Zt[1],Zw=Zv;break b}break;case
 1:var
-Zv=Zx[1];if(1===Zq[0]){var
-Zu=Zq[1],Zt=Zv;break b}break;default:var
-Zw=Zx[1];if(2===Zq[0]){var
-Zu=Zq[1],Zt=Zw;break b}}var
-Zr=0;break a}var
-Zr=Zt===Zu?1:0}if(!Zr){Zo=Zp;continue}var
-Zy=Zr}else
+Zy=ZA[1];if(1===Zt[0]){var
+Zx=Zt[1],Zw=Zy;break b}break;default:var
+Zz=ZA[1];if(2===Zt[0]){var
+Zx=Zt[1],Zw=Zz;break b}}var
+Zu=0;break a}var
+Zu=Zw===Zx?1:0}if(!Zu){Zr=Zs;continue}var
+ZB=Zu}else
 var
-Zy=0;var
-Zz=1-Zy;if(Zz)switch(Zx[0]){case
-0:Zb.removeAttribute(caml_js_from_string(Zx[1]));return 0;case
-1:return pM(Zb,[1,Zx[1],pN]);default:return pM(Zb,[2,Zx[1],pO])}return Zz}},Za[2]);ae(function(Zm){var
-Zn=1-ak(Zm,Za[2]);return Zn?pM(Zb,Zm):Zn},Y$[2]);var
-Zg=Zb.firstChild,Zf=Za[3],Ze=Y$[3];for(;;)if(Zf){var
-Zh=Zf[2],Zi=Zf[1];if(Ze){var
-Zj=Ze[2],Zl=Zg.nextSibling;pQ(Zb,Zg,Zi,Ze[1]);Zg=Zl;Zf=Zh;Ze=Zj}else{var
-Y_=Zg.nextSibling;oS(Zb,Zg);Zg=Y_;Zf=Zh;Ze=0}}else{if(!Ze)return Zb;var
-Zk=Ze[2];oR(Zb,pP(Ze[1]));Zf=0;Ze=Zk}}function
-qd(Y9){return 0===Y9[0]?Y9[1]:"rgb("+str$9+Y9[1]+str$1+str$9+Y9[2]+str$1+str$9+Y9[3]+str$7}function
-qe(Y4,Y3,Y2,Y1){var
-Y8=str$13+pL(-Y3)+str$7,Y7="translate("+pL(Y4)+Y8,Y5=Y2===0.?qf:" rotate("+pL(-Y2)+str$7,Y6=Y1===1.?qg:" scale("+pL(Y1)+str$7;return Y7+Y5+Y6}function
-qh(YY,YX,YW,YV,YU,YT){var
-Y0=str$13+pL(-YX/2.)+str$7,YZ=" translate("+pL(-YY/2.)+Y0;return qe(YW,YV,YU,YT)+YZ}function
-qi(YS){return YS===1.?0:[0,[0,p8,pL(h6(0.,1.,YS))],0]}function
-qm(YR,YQ){var
-YO=0,YN=YQ;for(;;){if(!YN)return Y(YO);var
-YP=YN[2];YO=[0,caml_call1(YR,YN[1]),YO];YN=YP}}function
-qo(YI,YH,YG,YF,YE,YD,YC,YB){var
-YJ=qi(YB),YK=[0,[0,p7,qh(YI,YH,YF,YE,YD,YC)],YJ],YL=[0,[0,p5,qd(ib)],YK],YM=[0,[0,p1,pL(YH)],YL];return[0,pW,[0,[0,p9,YG],[0,[0,p0,pL(YI)],YM]],0]}var
-qp=[0,0],qq=[0,0],pb=10.;function
-qr(X3){var
-X4=X3[6],X5=X3[5],X6=X3[4],X7=X3[3],X8=X3[2],X9=X3[1];switch(X4[0]){case
+ZB=0;var
+ZC=1-ZB;if(ZC)switch(ZA[0]){case
+0:Ze.removeAttribute(caml_js_from_string(ZA[1]));return 0;case
+1:return pL(Ze,[1,ZA[1],pM]);default:return pL(Ze,[2,ZA[1],pN])}return ZC}},Zd[2]);ae(function(Zp){var
+Zq=1-ak(Zp,Zd[2]);return Zq?pL(Ze,Zp):Zq},Zc[2]);var
+Zj=Ze.firstChild,Zi=Zd[3],Zh=Zc[3];for(;;)if(Zi){var
+Zk=Zi[2],Zl=Zi[1];if(Zh){var
+Zm=Zh[2],Zo=Zj.nextSibling;pP(Ze,Zj,Zl,Zh[1]);Zj=Zo;Zi=Zk;Zh=Zm}else{var
+Zb=Zj.nextSibling;oR(Ze,Zj);Zj=Zb;Zi=Zk;Zh=0}}else{if(!Zh)return Ze;var
+Zn=Zh[2];oQ(Ze,pO(Zh[1]));Zi=0;Zh=Zn}}function
+qc(Za){return 0===Za[0]?Za[1]:"rgb("+str$9+Za[1]+str$1+str$9+Za[2]+str$1+str$9+Za[3]+str$7}function
+qd(Y7,Y6,Y5,Y4){var
+Y$=str$13+pK(-Y6)+str$7,Y_="translate("+pK(Y7)+Y$,Y8=Y5===0.?qe:" rotate("+pK(-Y5)+str$7,Y9=Y4===1.?qf:" scale("+pK(Y4)+str$7;return Y_+Y8+Y9}function
+qg(Y1,Y0,YZ,YY,YX,YW){var
+Y3=str$13+pK(-Y0/2.)+str$7,Y2=" translate("+pK(-Y1/2.)+Y3;return qd(YZ,YY,YX,YW)+Y2}function
+qh(YR){if(YR===1.)return 0;var
+YS=0,YT=1.,YU=0.,YV=caml_lessthan(YR,0.)?YU:caml_greaterthan(YR,1.)?YT:YR;return[0,[0,p7,pK(YV)],YS]}function
+ql(YQ,YP){var
+YN=0,YM=YP;for(;;){if(!YM)return Y(YN);var
+YO=YM[2];YN=[0,caml_call1(YQ,YM[1]),YN];YM=YO}}function
+qn(YH,YG,YF,YE,YD,YC,YB,YA){var
+YI=qh(YA),YJ=[0,[0,p6,qg(YH,YG,YE,YD,YC,YB)],YI],YK=[0,[0,p4,qc(ia)],YJ],YL=[0,[0,p0,pK(YG)],YK];return[0,pV,[0,[0,p8,YF],[0,[0,pZ,pK(YH)],YL]],0]}var
+qo=[0,0],qp=[0,0],pa=10.;function
+qq(X2){var
+X3=X2[6],X4=X2[5],X5=X2[4],X6=X2[3],X7=X2[2],X8=X2[1];switch(X3[0]){case
 0:var
-X_=X4[2],X$=X4[1],XA=qi(X5),XB=[0,[0,p7,qe(X9,X8,X7,X6)],XA],XC=[0,[0,p5,qd(X$)],XB];return[0,pS,[0,[0,p2,pL(X_)],XC],0];case
+X9=X3[2],X_=X3[1],Xz=qh(X4),XA=[0,[0,p6,qd(X8,X7,X6,X5)],Xz],XB=[0,[0,p4,qc(X_)],XA];return[0,pR,[0,[0,p1,pK(X9)],XB],0];case
 1:var
-Ya=X4[3],Yb=X4[2],Yc=X4[1],XD=qi(X5),XE=[0,[0,p7,qe(X9,X8,X7,X6)],XD],XF=[0,[0,p5,qd(Yc)],XE],XG=[0,[0,p4,pL(Ya/2.)],XF];return[0,pT,[0,[0,p3,pL(Yb/2.)],XG],0];case
+X$=X3[3],Ya=X3[2],Yb=X3[1],XC=qh(X4),XD=[0,[0,p6,qd(X8,X7,X6,X5)],XC],XE=[0,[0,p4,qc(Yb)],XD],XF=[0,[0,p3,pK(X$/2.)],XE];return[0,pS,[0,[0,p2,pK(Ya/2.)],XF],0];case
 2:var
-Yd=X4[3],Ye=X4[2],Yf=X4[1],XH=qi(X5),XI=[0,[0,p7,qh(Ye,Yd,X9,X8,X7,X6)],XH],XJ=[0,[0,p5,qd(Yf)],XI],XK=[0,[0,p1,pL(Yd)],XJ];return[0,pU,[0,[0,p0,pL(Ye)],XK],0];case
+Yc=X3[3],Yd=X3[2],Ye=X3[1],XG=qh(X4),XH=[0,[0,p6,qg(Yd,Yc,X8,X7,X6,X5)],XG],XI=[0,[0,p4,qc(Ye)],XH],XJ=[0,[0,p0,pK(Yc)],XI];return[0,pT,[0,[0,pZ,pK(Yd)],XJ],0];case
 3:var
-Yg=X4[3],Yh=X4[2],Yi=X4[1],XO=qi(X5),XP=[0,[0,p7,qe(X9,X8,X7,X6)],XO],XM=0,XL=qj,XN=0,XQ=[0,[0,p5,qd(Yi)],XP];for(;;){if(XM===Yh)return[0,pV,[0,[0,p6,XL],XQ],XN];var
-Yt=num_6_283185307179586*(XM/Yh-num_0_25),Yu=str$1+pL(Yg*Math.sin(Yt))+str$14;XM=XM+1|0;XL=XL+pL(Yg*Math.cos(Yt))+Yu}break;case
+Yf=X3[3],Yg=X3[2],Yh=X3[1],XN=qh(X4),XO=[0,[0,p6,qd(X8,X7,X6,X5)],XN],XL=0,XK=qi,XM=0,XP=[0,[0,p4,qc(Yh)],XO];for(;;){if(XL===Yg)return[0,pU,[0,[0,p5,XK],XP],XM];var
+Ys=num_6_283185307179586*(XL/Yg-num_0_25),Yt=str$1+pK(Yf*Math.sin(Ys))+str$14;XL=XL+1|0;XK=XK+pK(Yf*Math.cos(Ys))+Yt}break;case
 4:var
-Yj=X4[1],Ys=aR(qn,qm(function(Yy){var
-Yz=Yy[1],YA=str$1+pL(-Yy[2]);return pL(Yz)+YA},X4[2])),XU=qi(X5),XV=[0,[0,p7,qe(X9,X8,X7,X6)],XU];return[0,pV,[0,[0,p6,Ys],[0,[0,p5,qd(Yj)],XV]],0];case
-5:return qo(X4[1],X4[2],X4[3],X9,X8,X7,X6,X5);case
+Yi=X3[1],Yr=aR(qm,ql(function(Yx){var
+Yy=Yx[1],Yz=str$1+pK(-Yx[2]);return pK(Yy)+Yz},X3[2])),XT=qh(X4),XU=[0,[0,p6,qd(X8,X7,X6,X5)],XT];return[0,pU,[0,[0,p5,Yr],[0,[0,p4,qc(Yi)],XU]],0];case
+5:return qn(X3[1],X3[2],X3[3],X8,X7,X6,X5,X4);case
 6:var
-Yk=X4[3],Yl=X4[2],Ym=X4[1],X2=am(function(Yx){return Yx[1]===Yk?1:0},qp[1]);if(X2)var
-Yn=X2[1][2];else{var
-XW=qq[1];if(XW)var
-XX=XW[1];else{var
-X1=oG.document.createElement("canvas");qq[1]=[0,X1];var
-XX=X1}XX.width=Yk[1];XX.height=Yk[2];var
-XY=XX.getContext("2d"),Xz=caml_ba_to_typed_array(Yk[3]),XZ=new
-oG.Uint8ClampedArray(Xz.buffer,Xz.byteOffset,Xz.length);XY.putImageData(new
-oG.ImageData(XZ,Yk[1],Yk[2]),0,0);var
-X0=caml_js_to_string(XX.toDataURL("image/png"));qp[1]=ap(function(Yw,Yv){return Yw<32?1:0},[0,[0,Yk,X0],qp[1]]);var
-Yn=X0}return qo(Ym,Yl,Yn,X9,X8,X7,X6,X5);case
+Yj=X3[3],Yk=X3[2],Yl=X3[1],X1=am(function(Yw){return Yw[1]===Yj?1:0},qo[1]);if(X1)var
+Ym=X1[1][2];else{var
+XV=qp[1];if(XV)var
+XW=XV[1];else{var
+X0=oF.document.createElement("canvas");qp[1]=[0,X0];var
+XW=X0}XW.width=Yj[1];XW.height=Yj[2];var
+XX=XW.getContext("2d"),Xy=caml_ba_to_typed_array(Yj[3]),XY=new
+oF.Uint8ClampedArray(Xy.buffer,Xy.byteOffset,Xy.length);XX.putImageData(new
+oF.ImageData(XY,Yj[1],Yj[2]),0,0);var
+XZ=caml_js_to_string(XW.toDataURL("image/png"));qo[1]=ap(function(Yv,Yu){return Yv<32?1:0},[0,[0,Yj,XZ],qo[1]]);var
+Ym=XZ}return qn(Yl,Yk,Ym,X8,X7,X6,X5,X4);case
 7:var
-Yo=X4[2],Yp=X4[1],XR=qi(X5),XS=[0,[0,p7,qe(X9,X8,X7,X6)],XR],XT=[0,[0,qb,pc],[0,[2,qc,Yo],[0,[0,p5,qd(Yp)],XS]]];return[0,pX,[0,[0,p_,ql],[0,[0,p$,qk],[0,[0,qa,pL(pb)],XT]]],0];default:var
-Yq=qm(qr,X4[1]),Yr=qi(X5);return[0,pY,[0,[0,p7,qe(X9,X8,X7,X6)],Yr],Yq]}}function
-qE(Xw,Xv,Xu){var
-Xx=Xw.createSVGPoint();Xx.x=Xv;Xx.y=Xu;var
-Xy=Xx.matrixTransform(Xw.getScreenCTM().inverse());return[0,Xy.x,-Xy.y]}function
-qF(Xt){pJ(caml_call1(dX(qG),Xt));return Xt!==str$14?Xt:qH}eG(0,16);var
-qO=[num_246,function(Xr){var
-Xs=oG.AudioContext;return oE(Xs)==="undefined"?0:[0,new
-Xs]}];function
-qP(Xq){return caml_js_to_string(Xq.state)}function
-qQ(Xm){var
-Xn=caml_obj_tag(qO),Xo=num_250===Xn?qO[1]:num_246===Xn?A(qO):qO;if(Xo){var
-Xp=Xo[1];if(qP(Xp)==="suspended"){Xp.resume();return}}}var
-qR=[0,0.],qS=num_0_05,qT=[0,qS];function
-qW(W5,W4,W3){var
-W6=new
-oG.XMLHttpRequest,W7=0===W5?qX:qZ;try{W6.open(caml_js_from_string(W7),caml_js_from_string(W4))}catch(Xl){return caml_call1(W3,[1,[0,W4]])}W6.timeout=30000;W6.responseType="arraybuffer";W6.onload=caml_js_wrap_callback_strict(1,function(Xc){var
-Xd=W6.status,Xe=new
-oG.Uint8Array(W6.response),Xf=aO(Xe.length,function(Xk){return E(Xe[Xk])}),Xa=a4(10,caml_js_to_string(W6.getAllResponseHeaders())),Xb=aq(function(Xg){var
-Xh=aX(Xg,58);if(!Xh)return 0;var
-Xi=Xh[1],Xj=aV(aP(Xg,Xi+1|0,(caml_ml_string_length(Xg)-Xi|0)-1|0));return[0,[0,aV(aP(Xg,0,Xi)),Xj]]})(Xa);return caml_call1(W3,[0,[0,caml_js_to_string(W6.responseURL),Xd,Xb,Xf]])});W6.onerror=caml_js_wrap_callback_strict(1,function(W$){return caml_call1(W3,[1,[1,W4+": no answer (network, or CORS)"]])});W6.ontimeout=caml_js_wrap_callback_strict(1,function(W_){return caml_call1(W3,qY)});if(W5){var
-W8=W5[1],W9=W8[2];W6.setRequestHeader("Content-Type",caml_js_from_string(W8[1]));W6.send(caml_js_from_string(W9));return 0}W6.send();return 0}function
-q0(W2){return oG.document.createElement(caml_js_from_string(W2))}function
-q1(WZ,WY){var
-W0=WZ.style;return ae(function(W1){return W0[W1[1]]=caml_js_from_string(W1[2])},WY)}function
-q2(WX,WW,WV){WX.addEventListener(caml_js_from_string(WW),caml_js_wrap_callback_strict(1,WV));return 0}function
-q3(WU){return oG.String.fromCharCode(WU)}var
-rS=num_13;function
-rU(WN,WM){var
-WO=WM[2],WP=WM[1],WQ=WN[1]<=WP?1:0;if(WQ){var
-WR=WP<WN[1]+WN[3]?1:0;if(WR)var
-WS=WN[2]<=WO?1:0,WT=WS?WO<WN[2]+WN[4]?1:0:WS;else
+Yn=X3[2],Yo=X3[1],XQ=qh(X4),XR=[0,[0,p6,qd(X8,X7,X6,X5)],XQ],XS=[0,[0,qa,pb],[0,[2,qb,Yn],[0,[0,p4,qc(Yo)],XR]]];return[0,pW,[0,[0,p9,qk],[0,[0,p_,qj],[0,[0,p$,pK(pa)],XS]]],0];default:var
+Yp=ql(qq,X3[1]),Yq=qh(X4);return[0,pX,[0,[0,p6,qd(X8,X7,X6,X5)],Yq],Yp]}}function
+qD(Xv,Xu,Xt){var
+Xw=Xv.createSVGPoint();Xw.x=Xu;Xw.y=Xt;var
+Xx=Xw.matrixTransform(Xv.getScreenCTM().inverse());return[0,Xx.x,-Xx.y]}function
+qE(Xs){pI(caml_call1(dX(qF),Xs));return Xs!==str$14?Xs:qG}eG(0,16);var
+qN=[num_246,function(Xq){var
+Xr=oF.AudioContext;return oD(Xr)==="undefined"?0:[0,new
+Xr]}];function
+qO(Xp){return caml_js_to_string(Xp.state)}function
+qP(Xl){var
+Xm=caml_obj_tag(qN),Xn=num_250===Xm?qN[1]:num_246===Xm?A(qN):qN;if(Xn){var
+Xo=Xn[1];if(qO(Xo)==="suspended"){Xo.resume();return}}}var
+qQ=[0,0.],qR=num_0_05,qS=[0,qR];function
+qV(W4,W3,W2){var
+W5=new
+oF.XMLHttpRequest,W6=0===W4?qW:qY;try{W5.open(caml_js_from_string(W6),caml_js_from_string(W3))}catch(Xk){return caml_call1(W2,[1,[0,W3]])}W5.timeout=30000;W5.responseType="arraybuffer";W5.onload=caml_js_wrap_callback_strict(1,function(Xb){var
+Xc=W5.status,Xd=new
+oF.Uint8Array(W5.response),Xe=aO(Xd.length,function(Xj){return E(Xd[Xj])}),W$=a4(10,caml_js_to_string(W5.getAllResponseHeaders())),Xa=aq(function(Xf){var
+Xg=aX(Xf,58);if(!Xg)return 0;var
+Xh=Xg[1],Xi=aV(aP(Xf,Xh+1|0,(caml_ml_string_length(Xf)-Xh|0)-1|0));return[0,[0,aV(aP(Xf,0,Xh)),Xi]]})(W$);return caml_call1(W2,[0,[0,caml_js_to_string(W5.responseURL),Xc,Xa,Xe]])});W5.onerror=caml_js_wrap_callback_strict(1,function(W_){return caml_call1(W2,[1,[1,W3+": no answer (network, or CORS)"]])});W5.ontimeout=caml_js_wrap_callback_strict(1,function(W9){return caml_call1(W2,qX)});if(W4){var
+W7=W4[1],W8=W7[2];W5.setRequestHeader("Content-Type",caml_js_from_string(W7[1]));W5.send(caml_js_from_string(W8));return 0}W5.send();return 0}function
+qZ(W1){return oF.document.createElement(caml_js_from_string(W1))}function
+q0(WY,WX){var
+WZ=WY.style;return ae(function(W0){return WZ[W0[1]]=caml_js_from_string(W0[2])},WX)}function
+q1(WW,WV,WU){WW.addEventListener(caml_js_from_string(WV),caml_js_wrap_callback_strict(1,WU));return 0}function
+q2(WT){return oF.String.fromCharCode(WT)}var
+rR=num_13;function
+rT(WM,WL){var
+WN=WL[2],WO=WL[1],WP=WM[1]<=WO?1:0;if(WP){var
+WQ=WO<WM[1]+WM[3]?1:0;if(WQ)var
+WR=WM[2]<=WN?1:0,WS=WR?WN<WM[2]+WM[4]?1:0:WR;else
 var
-WT=WR}else
+WS=WQ}else
 var
-WT=WQ;return WT}function
-rV(WL){return bj(WL[3][1]/num_800,WL[3][2]/num_600)}function
-rW(WJ){var
-WK=rV(WJ);return[0,WJ[1][1]/WK+num_400,num_300-WJ[1][2]/WK]}function
-rX(WI){return[0,WI,0,0,0]}function
-rY(WG){var
-WH=i(WG[2],WG[3]);return[0,h(WG[2],WG[3]),WH]}function
-rZ(WD){var
-WE=rY(WD),WF=WE[1];return aP(WD[1],WF,WE[2]-WF|0)}function
-r0(Ww,Wv){var
-Wx=rY(Ww),Wy=Wx[2],Wz=Wx[1],WC=Wv+aP(Ww[1],Wy,caml_ml_string_length(Ww[1])-Wy|0),WA=Wz+caml_ml_string_length(Wv)|0,WB=aP(Ww[1],0,Wz)+WC;return[0,WB,WA,WA,Ww[4]]}function
-r1(Wr,Wq){var
-Ws=Wq-1|0;a:{if(-1<=Ws&&caml_ml_string_length(Wr)>Ws){var
-Wo=Ws;for(;;){if(0<=Wo){if(caml_string_unsafe_get(Wr,Wo)!==10){Wo=Wo-1|0;continue}var
-Wp=[0,Wo]}else
+WS=WP;return WS}function
+rU(WK){return bj(WK[3][1]/num_800,WK[3][2]/num_600)}function
+rV(WI){var
+WJ=rU(WI);return[0,WI[1][1]/WJ+num_400,num_300-WI[1][2]/WJ]}function
+rW(WH){return[0,WH,0,0,0]}function
+rX(WF){var
+WG=i(WF[2],WF[3]);return[0,h(WF[2],WF[3]),WG]}function
+rY(WC){var
+WD=rX(WC),WE=WD[1];return aP(WC[1],WE,WD[2]-WE|0)}function
+rZ(Wv,Wu){var
+Ww=rX(Wv),Wx=Ww[2],Wy=Ww[1],WB=Wu+aP(Wv[1],Wx,caml_ml_string_length(Wv[1])-Wx|0),Wz=Wy+caml_ml_string_length(Wu)|0,WA=aP(Wv[1],0,Wy)+WB;return[0,WA,Wz,Wz,Wv[4]]}function
+r0(Wq,Wp){var
+Wr=Wp-1|0;a:{if(-1<=Wr&&caml_ml_string_length(Wq)>Wr){var
+Wn=Wr;for(;;){if(0<=Wn){if(caml_string_unsafe_get(Wq,Wn)!==10){Wn=Wn-1|0;continue}var
+Wo=[0,Wn]}else
 var
-Wp=0;var
-Wt=Wp;break a}}var
-Wt=g(a0)}if(Wt){var
-Wu=Wt[1];if(0<Wq)return Wu+1|0}return 0}function
-r2(Wm,Wl){var
-Wn=aY(Wm,Wl,10);return Wn?Wn[1]:caml_ml_string_length(Wm)}function
-r3(Wf,We){var
-Wg=[0,0],Wi=h(We,caml_ml_string_length(Wf))-1|0,Wh=0;if(Wi>=0){var
-Wj=Wh;for(;;){if(10===caml_string_get(Wf,Wj))Wg[1]++;var
-Wk=Wj+1|0;if(Wi===Wj)break;Wj=Wk}}return Wg[1]}function
-r4(Wa,V$){var
-Wc=0,Wb=0;for(;;){if(Wb===V$)return[0,Wc];var
-Wd=aY(Wa,Wc,10);if(!Wd)return 0;Wc=Wd[1]+1|0;Wb=Wb+1|0}}function
-r5(V5,V4){var
-V6=[0,0],V7=r1(V5,V4),V8=V4-1|0;if(V8>=V7){var
-V9=V7;for(;;){if(9===caml_string_get(V5,V9))V6[1]=((V6[1]/4|0)*4|0)+4|0;else
-V6[1]++;var
-V_=V9+1|0;if(V8===V9)break;V9=V_}}return V6[1]}function
-r6(VZ,VY,VX){var
-V0=r2(VZ,VY),V2=VY,V1=0;for(;;){if(V0<=V2)return V0;var
-V3=9===caml_string_get(VZ,V2)?((V1/4|0)*4|0)+4|0:V1+1|0;if(VX<V3)return(VX-V1|0)<(V3-VX|0)?V2:V2+1|0;V2=V2+1|0;V1=V3}}function
-r7(VP){var
-VQ=97<=VP?1:0,VR=VQ?VP<=num_122?1:0:VQ;if(VR)var
-VS=VR;else{var
-VT=65<=VP?1:0,VU=VT?VP<=90?1:0:VT;if(VU)var
-VS=VU;else
+Wo=0;var
+Ws=Wo;break a}}var
+Ws=g(a0)}if(Ws){var
+Wt=Ws[1];if(0<Wp)return Wt+1|0}return 0}function
+r1(Wl,Wk){var
+Wm=aY(Wl,Wk,10);return Wm?Wm[1]:caml_ml_string_length(Wl)}function
+r2(We,Wd){var
+Wf=[0,0],Wh=h(Wd,caml_ml_string_length(We))-1|0,Wg=0;if(Wh>=0){var
+Wi=Wg;for(;;){if(10===caml_string_get(We,Wi))Wf[1]++;var
+Wj=Wi+1|0;if(Wh===Wi)break;Wi=Wj}}return Wf[1]}function
+r3(V$,V_){var
+Wb=0,Wa=0;for(;;){if(Wa===V_)return[0,Wb];var
+Wc=aY(V$,Wb,10);if(!Wc)return 0;Wb=Wc[1]+1|0;Wa=Wa+1|0}}function
+r4(V4,V3){var
+V5=[0,0],V6=r0(V4,V3),V7=V3-1|0;if(V7>=V6){var
+V8=V6;for(;;){if(9===caml_string_get(V4,V8))V5[1]=((V5[1]/4|0)*4|0)+4|0;else
+V5[1]++;var
+V9=V8+1|0;if(V7===V8)break;V8=V9}}return V5[1]}function
+r5(VY,VX,VW){var
+VZ=r1(VY,VX),V1=VX,V0=0;for(;;){if(VZ<=V1)return VZ;var
+V2=9===caml_string_get(VY,V1)?((V0/4|0)*4|0)+4|0:V0+1|0;if(VW<V2)return(VW-V0|0)<(V2-VW|0)?V1:V1+1|0;V1=V1+1|0;V0=V2}}function
+r6(VO){var
+VP=97<=VO?1:0,VQ=VP?VO<=num_122?1:0:VP;if(VQ)var
+VR=VQ;else{var
+VS=65<=VO?1:0,VT=VS?VO<=90?1:0:VS;if(VT)var
+VR=VT;else
 var
-VV=48<=VP?1:0,VW=VV?VP<=57?1:0:VV,VS=VW||(58===VP?1:0)}return VS}function
-r8(VN,VM){var
-VO=r3(VM[1],VM[2]);return VO<VM[4]?[0,VM[1],VM[2],VM[3],VO]:(VM[4]+VN|0)<=VO?[0,VM[1],VM[2],VM[3],(VO-VN|0)+1|0]:VM}function
-r9(VL){return VL[1][1]}function
-sa(VI,VH){var
-VJ=VI[3]/VH;return _(VH,function(VK){return[num_254,VI[1]+VK*VJ,VI[2],VJ,VI[4]]})}function
-sb(VF,VE){var
-VG=caml_round_float(VF[4]*VE);return[0,[num_254,VF[1],VF[2],VF[3],VG],[num_254,VF[1],VF[2]+VG,VF[3],VF[4]-VG]]}function
-sc(VB,VA){return ah(function(VD,VC){return[2,[num_254,VD[1]+2.,VD[2]+2.,VD[3]-4.,VD[4]-4.],VC[1],VC[2],VC[3]]},sa(VB,O(VA)),VA)}function
-sd(Vx,Vw){var
-Vy=jq(Vx,Vw);if(Vy){var
-Vz=Vy[1];if(je(Vx,iA(Vx,iE(Vx,Vz,1))))return[0,iE(Vx,Vz,1)]}return 0}function
-se(Vr,Vq){var
-Vs=Vq[2],Vt=Vs?sd(Vr,Vs[1]):0;if(!Vt)return 0;var
-Vu=Vt[1],Vv=Vq[3]?iA(Vr,Vu):Vu;return[0,Vv]}function
-sf(Vl,Vk){if(!Vl)return 0;var
-Vo=0,Vn=Vk,Vm=Vl[1];for(;;){if(!Vn)return 0;var
-Vp=Vn[2];if(Vm===Vn[1])return[0,Vo];Vo=Vo+1|0;Vn=Vp}}function
-sg(U6,U5){var
-U9=U6[1][1];a:if(iw(U5))var
-U7=0;else{var
-U8=U9[8],US=iA(U9,U5),UT=jj(U9,US),UU=num_200,UV=iC(U9,U5);if(typeof
-UV!=="number")switch(UV[0]){case
+VU=48<=VO?1:0,VV=VU?VO<=57?1:0:VU,VR=VV||(58===VO?1:0)}return VR}function
+r7(VM,VL){var
+VN=r2(VL[1],VL[2]);return VN<VL[4]?[0,VL[1],VL[2],VL[3],VN]:(VL[4]+VM|0)<=VN?[0,VL[1],VL[2],VL[3],(VN-VM|0)+1|0]:VL}function
+r8(VK){return VK[1][1]}function
+r$(VH,VG){var
+VI=VH[3]/VG;return _(VG,function(VJ){return[num_254,VH[1]+VJ*VI,VH[2],VI,VH[4]]})}function
+sa(VE,VD){var
+VF=caml_round_float(VE[4]*VD);return[0,[num_254,VE[1],VE[2],VE[3],VF],[num_254,VE[1],VE[2]+VF,VE[3],VE[4]-VF]]}function
+sb(VA,Vz){return ah(function(VC,VB){return[2,[num_254,VC[1]+2.,VC[2]+2.,VC[3]-4.,VC[4]-4.],VB[1],VB[2],VB[3]]},r$(VA,O(Vz)),Vz)}function
+sc(Vw,Vv){var
+Vx=jp(Vw,Vv);if(Vx){var
+Vy=Vx[1];if(jd(Vw,iz(Vw,iD(Vw,Vy,1))))return[0,iD(Vw,Vy,1)]}return 0}function
+sd(Vq,Vp){var
+Vr=Vp[2],Vs=Vr?sc(Vq,Vr[1]):0;if(!Vs)return 0;var
+Vt=Vs[1],Vu=Vp[3]?iz(Vq,Vt):Vt;return[0,Vu]}function
+se(Vk,Vj){if(!Vk)return 0;var
+Vn=0,Vm=Vj,Vl=Vk[1];for(;;){if(!Vm)return 0;var
+Vo=Vm[2];if(Vl===Vm[1])return[0,Vn];Vn=Vn+1|0;Vm=Vo}}function
+sf(U5,U4){var
+U8=U5[1][1];a:if(iv(U4))var
+U6=0;else{var
+U7=U8[8],UR=iz(U8,U4),US=ji(U8,UR),UT=num_200,UU=iB(U8,U4);if(typeof
+UU!=="number")switch(UU[0]){case
 0:var
-UW=UV[1],UX=O(UT),UY=_(h(UU,i(0,UW.length-1-UX|0)),function(Vi){var
-Vj=UX+Vi|0;return[0,str$9+(Vi+1|0),caml_check_bound(UW,Vj)[1+Vj]]}),U7=o(ad(function(Vh,Vg){return[0,Vg,caml_check_bound(UW,Vh)[1+Vh]]},ap(function(Vf,Ve){return Vf<UW.length-1?1:0},UT)),UY);break a;case
+UV=UU[1],UW=O(US),UX=_(h(UT,i(0,UV.length-1-UW|0)),function(Vh){var
+Vi=UW+Vh|0;return[0,str$9+(Vh+1|0),caml_check_bound(UV,Vi)[1+Vi]]}),U6=o(ad(function(Vg,Vf){return[0,Vf,caml_check_bound(UV,Vg)[1+Vg]]},ap(function(Ve,Vd){return Ve<UV.length-1?1:0},US)),UX);break a;case
 1:var
-UZ=UV[1],U0=US===U8[2]?1:0,U1=U0||(US===U8[3]?1:0),U7=_(h(UU,caml_ml_bytes_length(UZ)),function(Vb){var
-Vc=caml_bytes_get(UZ,Vb),Vd=U1?caml_check_bound(U8[20],Vc)[1+Vc]:ix(Vc);return[0,str$9+(Vb+1|0),Vd]});break a;case
+UY=UU[1],UZ=UR===U7[2]?1:0,U0=UZ||(UR===U7[3]?1:0),U6=_(h(UT,caml_ml_bytes_length(UY)),function(Va){var
+Vb=caml_bytes_get(UY,Va),Vc=U0?caml_check_bound(U7[20],Vb)[1+Vb]:iw(Vb);return[0,str$9+(Va+1|0),Vc]});break a;case
 3:var
-U2=UV[1],U3=U2.length-6|0;b:{if(0<=U3&&(U2.length-1-U3|0)>=0){var
-U4=caml_array_sub(U2,0,U3);break b}var
-U4=g(a9)}var
-U7=ad(function(U$,U_){var
-Va=0===U$?nR:"literal "+str$9+U$;return[0,Va,U_]},bf(U4));break a}var
-U7=0}return[0,[0,sh,U5],U7]}function
-si(Sm,Sl){var
-Sn=r9(Sm),So=Sl[2],Sp=Sl[5];switch(Sp[0]){case
+U1=UU[1],U2=U1.length-6|0;b:{if(0<=U2&&(U1.length-1-U2|0)>=0){var
+U3=caml_array_sub(U1,0,U2);break b}var
+U3=g(a9)}var
+U6=ad(function(U_,U9){var
+U$=0===U_?nQ:"literal "+str$9+U_;return[0,U$,U9]},bf(U3));break a}var
+U6=0}return[0,[0,sg,U4],U6]}function
+sh(Sl,Sk){var
+Sm=r8(Sl),Sn=Sk[2],So=Sk[5];switch(So[0]){case
 2:var
-Sq=Sp[1],Sr=sb(So,0.45),Ss=Sr[2],St=sa(Sr[1],4);if(St){var
+Sp=So[1],Sq=sa(Sn,0.45),Sr=Sq[2],Ss=r$(Sq[1],4);if(Ss){var
+St=Ss[2];if(St){var
 Su=St[2];if(Su){var
-Sv=Su[2];if(Sv){var
-Sw=Sv[2];if(Sw&&!Sw[2]){var
-Sz=Su[1],Sx=Sw[1],Sy=Sv[1],SA=St[1],SB=sb(Sz,(Sz[4]-num_16)/Sz[4]),SC=SB[2],SD=SB[1],Sk=ab(function(UR){return jk(Sn,UR)},js(Sn)),Sh=function(Ul,Uk){if(2===Ul){if(Uk){var
-Um=Uk[2];if(Um){var
-Uo=Um[1],Up=Uk[1],UJ=caml_string_compare(Up,Uo),Un=Um[2],Uq=0===UJ?[0,Up,0]:0<=UJ?[0,Uo,[0,Up,0]]:[0,Up,[0,Uo,0]];return[0,Uq,Un]}}}else if(3===Ul&&Uk){var
-Ux=Uk[2];if(Ux){var
-Uy=Ux[2];if(Uy){var
-UA=Uy[1],UB=Ux[1],UC=Uk[1],UQ=caml_string_compare(UC,UB),Uz=Uy[2];if(0===UQ)var
-UL=caml_string_compare(UB,UA),UD=0===UL?[0,UB,0]:0<=UL?[0,UA,[0,UB,0]]:[0,UB,[0,UA,0]],UE=UD;else if(0<=UQ){var
-UN=caml_string_compare(UC,UA);if(0===UN)var
-UF=[0,UB,[0,UC,0]];else if(0<=UN)var
-UM=caml_string_compare(UB,UA),UG=0===UM?[0,UB,[0,UC,0]]:0<=UM?[0,UA,[0,UB,[0,UC,0]]]:[0,UB,[0,UA,[0,UC,0]]],UF=UG;else
+Sv=Su[2];if(Sv&&!Sv[2]){var
+Sy=St[1],Sw=Sv[1],Sx=Su[1],Sz=Ss[1],SA=sa(Sy,(Sy[4]-num_16)/Sy[4]),SB=SA[2],SC=SA[1],Sj=ab(function(UQ){return jj(Sm,UQ)},jr(Sm)),Sg=function(Uk,Uj){if(2===Uk){if(Uj){var
+Ul=Uj[2];if(Ul){var
+Un=Ul[1],Uo=Uj[1],UI=caml_string_compare(Uo,Un),Um=Ul[2],Up=0===UI?[0,Uo,0]:0<=UI?[0,Un,[0,Uo,0]]:[0,Uo,[0,Un,0]];return[0,Up,Um]}}}else if(3===Uk&&Uj){var
+Uw=Uj[2];if(Uw){var
+Ux=Uw[2];if(Ux){var
+Uz=Ux[1],UA=Uw[1],UB=Uj[1],UP=caml_string_compare(UB,UA),Uy=Ux[2];if(0===UP)var
+UK=caml_string_compare(UA,Uz),UC=0===UK?[0,UA,0]:0<=UK?[0,Uz,[0,UA,0]]:[0,UA,[0,Uz,0]],UD=UC;else if(0<=UP){var
+UM=caml_string_compare(UB,Uz);if(0===UM)var
+UE=[0,UA,[0,UB,0]];else if(0<=UM)var
+UL=caml_string_compare(UA,Uz),UF=0===UL?[0,UA,[0,UB,0]]:0<=UL?[0,Uz,[0,UA,[0,UB,0]]]:[0,UA,[0,Uz,[0,UB,0]]],UE=UF;else
 var
-UF=[0,UB,[0,UC,[0,UA,0]]];var
-UE=UF}else{var
-UP=caml_string_compare(UB,UA);if(0===UP)var
-UH=[0,UC,[0,UB,0]];else if(0<=UP)var
-UO=caml_string_compare(UC,UA),UI=0===UO?[0,UC,[0,UB,0]]:0<=UO?[0,UA,[0,UC,[0,UB,0]]]:[0,UC,[0,UA,[0,UB,0]]],UH=UI;else
+UE=[0,UA,[0,UB,[0,Uz,0]]];var
+UD=UE}else{var
+UO=caml_string_compare(UA,Uz);if(0===UO)var
+UG=[0,UB,[0,UA,0]];else if(0<=UO)var
+UN=caml_string_compare(UB,Uz),UH=0===UN?[0,UB,[0,UA,0]]:0<=UN?[0,Uz,[0,UB,[0,UA,0]]]:[0,UB,[0,Uz,[0,UA,0]]],UG=UH;else
 var
-UH=[0,UC,[0,UB,[0,UA,0]]];var
-UE=UH}return[0,UE,Uz]}}}var
-Ur=Ul>>1,Us=Si(Ur,Uk),Ut=Us[1],Uu=Si(Ul-Ur|0,Us[2]),Uf=Ut,Ue=Uu[1],Ud=0,Uv=Uu[2];for(;;){if(Uf){if(Ue){var
-Ug=Ue[2],Uh=Ue[1],Ui=Uf[2],Uj=Uf[1],UK=caml_string_compare(Uj,Uh);if(0===UK){Uf=Ui;Ue=Ug;Ud=[0,Uj,Ud];continue}if(0<UK){Uf=Ui;Ud=[0,Uj,Ud];continue}Ue=Ug;Ud=[0,Uh,Ud];continue}var
-Uw=X(Uf,Ud)}else
+UG=[0,UB,[0,UA,[0,Uz,0]]];var
+UD=UG}return[0,UD,Uy]}}}var
+Uq=Uk>>1,Ur=Sh(Uq,Uj),Us=Ur[1],Ut=Sh(Uk-Uq|0,Ur[2]),Ue=Us,Ud=Ut[1],Uc=0,Uu=Ut[2];for(;;){if(Ue){if(Ud){var
+Uf=Ud[2],Ug=Ud[1],Uh=Ue[2],Ui=Ue[1],UJ=caml_string_compare(Ui,Ug);if(0===UJ){Ue=Uh;Ud=Uf;Uc=[0,Ui,Uc];continue}if(0<UJ){Ue=Uh;Uc=[0,Ui,Uc];continue}Ud=Uf;Uc=[0,Ug,Uc];continue}var
+Uv=X(Ue,Uc)}else
 var
-Uw=X(Ue,Ud);return[0,Uw,Uv]}},Si=function(TJ,TI){if(2===TJ){if(TI){var
-TK=TI[2];if(TK){var
-TM=TK[1],TN=TI[1],T8=caml_string_compare(TN,TM),TL=TK[2],TO=0===T8?[0,TN,0]:0<T8?[0,TN,[0,TM,0]]:[0,TM,[0,TN,0]];return[0,TO,TL]}}}else if(3===TJ&&TI){var
-TV=TI[2];if(TV){var
-TW=TV[2];if(TW){var
-TY=TW[1],TZ=TV[1],T0=TI[1],T7=caml_string_compare(T0,TZ),TX=TW[2];if(0===T7)var
-T_=caml_string_compare(TZ,TY),T1=0===T_?[0,TZ,0]:0<T_?[0,TZ,[0,TY,0]]:[0,TY,[0,TZ,0]],T2=T1;else if(0<T7){var
-Ua=caml_string_compare(TZ,TY);if(0===Ua)var
-T3=[0,T0,[0,TZ,0]];else if(0<Ua)var
-T3=[0,T0,[0,TZ,[0,TY,0]]];else
+Uv=X(Ud,Uc);return[0,Uv,Uu]}},Sh=function(TI,TH){if(2===TI){if(TH){var
+TJ=TH[2];if(TJ){var
+TL=TJ[1],TM=TH[1],T7=caml_string_compare(TM,TL),TK=TJ[2],TN=0===T7?[0,TM,0]:0<T7?[0,TM,[0,TL,0]]:[0,TL,[0,TM,0]];return[0,TN,TK]}}}else if(3===TI&&TH){var
+TU=TH[2];if(TU){var
+TV=TU[2];if(TV){var
+TX=TV[1],TY=TU[1],TZ=TH[1],T6=caml_string_compare(TZ,TY),TW=TV[2];if(0===T6)var
+T9=caml_string_compare(TY,TX),T0=0===T9?[0,TY,0]:0<T9?[0,TY,[0,TX,0]]:[0,TX,[0,TY,0]],T1=T0;else if(0<T6){var
+T$=caml_string_compare(TY,TX);if(0===T$)var
+T2=[0,TZ,[0,TY,0]];else if(0<T$)var
+T2=[0,TZ,[0,TY,[0,TX,0]]];else
 var
-T$=caml_string_compare(T0,TY),T4=0===T$?[0,T0,[0,TZ,0]]:0<T$?[0,T0,[0,TY,[0,TZ,0]]]:[0,TY,[0,T0,[0,TZ,0]]],T3=T4;var
-T2=T3}else{var
-Uc=caml_string_compare(T0,TY);if(0===Uc)var
-T5=[0,TZ,[0,T0,0]];else if(0<Uc)var
-T5=[0,TZ,[0,T0,[0,TY,0]]];else
+T_=caml_string_compare(TZ,TX),T3=0===T_?[0,TZ,[0,TY,0]]:0<T_?[0,TZ,[0,TX,[0,TY,0]]]:[0,TX,[0,TZ,[0,TY,0]]],T2=T3;var
+T1=T2}else{var
+Ub=caml_string_compare(TZ,TX);if(0===Ub)var
+T4=[0,TY,[0,TZ,0]];else if(0<Ub)var
+T4=[0,TY,[0,TZ,[0,TX,0]]];else
 var
-Ub=caml_string_compare(TZ,TY),T6=0===Ub?[0,TZ,[0,T0,0]]:0<Ub?[0,TZ,[0,TY,[0,T0,0]]]:[0,TY,[0,TZ,[0,T0,0]]],T5=T6;var
-T2=T5}return[0,T2,TX]}}}var
-TP=TJ>>1,TQ=Sh(TP,TI),TR=TQ[1],TS=Sh(TJ-TP|0,TQ[2]),TD=TR,TC=TS[1],TB=0,TT=TS[2];for(;;){if(TD){if(TC){var
-TE=TC[2],TF=TC[1],TG=TD[2],TH=TD[1],T9=caml_string_compare(TH,TF);if(0===T9){TD=TG;TC=TE;TB=[0,TH,TB];continue}if(0<=T9){TC=TE;TB=[0,TF,TB];continue}TD=TG;TB=[0,TH,TB];continue}var
-TU=X(TD,TB)}else
+Ua=caml_string_compare(TY,TX),T5=0===Ua?[0,TY,[0,TZ,0]]:0<Ua?[0,TY,[0,TX,[0,TZ,0]]]:[0,TX,[0,TY,[0,TZ,0]]],T4=T5;var
+T1=T4}return[0,T1,TW]}}}var
+TO=TI>>1,TP=Sg(TO,TH),TQ=TP[1],TR=Sg(TI-TO|0,TP[2]),TC=TQ,TB=TR[1],TA=0,TS=TR[2];for(;;){if(TC){if(TB){var
+TD=TB[2],TE=TB[1],TF=TC[2],TG=TC[1],T8=caml_string_compare(TG,TE);if(0===T8){TC=TF;TB=TD;TA=[0,TG,TA];continue}if(0<=T8){TB=TD;TA=[0,TE,TA];continue}TC=TF;TA=[0,TG,TA];continue}var
+TT=X(TC,TA)}else
 var
-TU=X(TC,TB);return[0,TU,TT]}},Sj=O(Sk),SE=2<=Sj?Sh(Sj,Sk)[1]:Sk,SF=Sq[1];if(SF)var
-SG=SF[1],SH=js(Sn),SI=ab(function(TA){return jg(Sn,TA)},ao(function(Tz){return jk(Sn,Tz)===SG?1:0})(SH));else
+TT=X(TB,TA);return[0,TT,TS]}},Si=O(Sj),SD=2<=Si?Sg(Si,Sj)[1]:Sj,SE=Sp[1];if(SE)var
+SF=SE[1],SG=jr(Sm),SH=ab(function(Tz){return jf(Sm,Tz)},ao(function(Ty){return jj(Sm,Ty)===SF?1:0})(SG));else
 var
-SI=0;var
-SJ=se(Sn,Sq),SK=SJ?jH(Sn,SJ[1]):0,SL=se(Sn,Sq),SM=Sq[4];a:{if(SL&&SM){var
-SN=jI(Sn,SL[1],SM[1]);break a}var
-SN=0}var
-SO=sc(SC,[0,[0,sl,1-Sq[3],[20,Sl[1],1]],[0,[0,sk,Sq[3],[20,Sl[1],0]],0]]),SP=[0,[1,3,Sx,SN,sf(Sq[5],SN)],[0,[0,0,Ss],0]],SQ=[0,[1,2,Sy,SK,sf(Sq[4],SK)],SP],SR=[0,[1,1,SD,SI,sf(Sq[2],SI)],SQ];return o([0,[1,0,SA,SE,sf(Sq[1],SE)],SR],SO)}}}}throw caml_maybe_attach_backtrace([0,Assert_failure,sj],1);case
+SH=0;var
+SI=sd(Sm,Sp),SJ=SI?jG(Sm,SI[1]):0,SK=sd(Sm,Sp),SL=Sp[4];a:{if(SK&&SL){var
+SM=jH(Sm,SK[1],SL[1]);break a}var
+SM=0}var
+SN=sb(SB,[0,[0,sk,1-Sp[3],[20,Sk[1],1]],[0,[0,sj,Sp[3],[20,Sk[1],0]],0]]),SO=[0,[1,3,Sw,SM,se(Sp[5],SM)],[0,[0,0,Sr],0]],SP=[0,[1,2,Sx,SJ,se(Sp[4],SJ)],SO],SQ=[0,[1,1,SC,SH,se(Sp[2],SH)],SP];return o([0,[1,0,Sz,SD,se(Sp[1],SD)],SQ],SN)}}}}throw caml_maybe_attach_backtrace([0,Assert_failure,si],1);case
 3:var
-SS=Sp[1],ST=ab(function(Ty){return Ty[1]},sg(Sm,SS[1]));return[0,[1,0,[num_254,So[1],So[2],caml_round_float(So[3]*num_0_35),So[4]],ST,SS[2]],[0,[0,0,[num_254,So[1]+caml_round_float(So[3]*num_0_35),So[2],So[3]-caml_round_float(So[3]*num_0_35),So[4]]],0]];case
+SR=So[1],SS=ab(function(Tx){return Tx[1]},sf(Sl,SR[1]));return[0,[1,0,[num_254,Sn[1],Sn[2],caml_round_float(Sn[3]*num_0_35),Sn[4]],SS,SR[2]],[0,[0,0,[num_254,Sn[1]+caml_round_float(Sn[3]*num_0_35),Sn[2],Sn[3]-caml_round_float(Sn[3]*num_0_35),Sn[4]]],0]];case
 4:var
-SU=Sp[1],SV=sb(So,num_0_25),SW=SV[2],SX=SV[1],SY=sb(SW,num_18/SW[4]),SZ=SY[1],S0=sb(SY[2],0.62),S1=S0[1],S2=sa(S0[2],2);if(S2){var
-S3=S2[2];if(S3&&!S3[2]){var
-S5=function(Tx){return[0,[num_254,Tx[1],Tx[2],caml_round_float(Tx[3]*num_0_4),Tx[4]],[num_254,Tx[1]+caml_round_float(Tx[3]*num_0_4),Tx[2],Tx[3]-caml_round_float(Tx[3]*num_0_4),Tx[4]]]},S4=S3[1],S6=S5(S2[1]),S7=S6[2],S8=S6[1],S9=S5(S4),S_=S9[2],S$=S9[1],Ta=V(SU[3],SU[4]),Tb=Ta?Ta[1][1]:iv,Tc=Tb===0?iv:iE(Sn,lt(Sm[1],Tb),lm),Td=0!==nX(Sm[1],SU[1])?[0,[0,sn,0!==SU[10]?1:0,[15,Sl[1]]],0]:0,Te=sc(SZ,o([0,[0,sr,0,[10,Sl[1]]],[0,[0,sq,0,[12,Sl[1]]],[0,[0,sp,0,[13,Sl[1]]],[0,[0,so,0,[14,Sl[1]]],0]]]],Td)),Tf=[0,[0,2,S_],0],Tg=SU[8],Th=Tb===0?0:ab(function(Tw){return Tw[1]},nP(Sm[1],Tb)),Ti=SU[6],Tj=[0,[0,0,S1],[0,[1,1,S8,ab(function(Tv){return Tv[1]},sg(Sm,Tc)),Ti],[0,[0,1,S7],[0,[1,2,S$,Th,Tg],Tf]]]],Tk=[0,SU[4]];return o([0,[1,0,SX,ab(function(Tu){return Tu[2]},SU[3]),Tk],Tj],Te)}}throw caml_maybe_attach_backtrace([0,Assert_failure,sm],1);case
+ST=So[1],SU=sa(Sn,num_0_25),SV=SU[2],SW=SU[1],SX=sa(SV,num_18/SV[4]),SY=SX[1],SZ=sa(SX[2],0.62),S0=SZ[1],S1=r$(SZ[2],2);if(S1){var
+S2=S1[2];if(S2&&!S2[2]){var
+S4=function(Tw){return[0,[num_254,Tw[1],Tw[2],caml_round_float(Tw[3]*num_0_4),Tw[4]],[num_254,Tw[1]+caml_round_float(Tw[3]*num_0_4),Tw[2],Tw[3]-caml_round_float(Tw[3]*num_0_4),Tw[4]]]},S3=S2[1],S5=S4(S1[1]),S6=S5[2],S7=S5[1],S8=S4(S3),S9=S8[2],S_=S8[1],S$=V(ST[3],ST[4]),Ta=S$?S$[1][1]:iu,Tb=Ta===0?iu:iD(Sm,ls(Sl[1],Ta),ll),Tc=0!==nW(Sl[1],ST[1])?[0,[0,sm,0!==ST[10]?1:0,[15,Sk[1]]],0]:0,Td=sb(SY,o([0,[0,sq,0,[10,Sk[1]]],[0,[0,sp,0,[12,Sk[1]]],[0,[0,so,0,[13,Sk[1]]],[0,[0,sn,0,[14,Sk[1]]],0]]]],Tc)),Te=[0,[0,2,S9],0],Tf=ST[8],Tg=Ta===0?0:ab(function(Tv){return Tv[1]},nO(Sl[1],Ta)),Th=ST[6],Ti=[0,[0,0,S0],[0,[1,1,S7,ab(function(Tu){return Tu[1]},sf(Sl,Tb)),Th],[0,[0,1,S6],[0,[1,2,S_,Tg,Tf],Te]]]],Tj=[0,ST[4]];return o([0,[1,0,SW,ab(function(Tt){return Tt[2]},ST[3]),Tj],Ti],Td)}}throw caml_maybe_attach_backtrace([0,Assert_failure,sl],1);case
 5:var
-Tl=Sp[1],Tm=sb(So,(So[4]-num_20)/So[4]),Tn=Tm[2],To=Tm[1],Tp=0!==nX(Sm[1],Tl[1])?1:0,Tq=[0,[0,ss,0,[8,Sl[1]]],0],Tr=Tp?[0,[0,st,0,[15,Sl[1]]],0]:0,Ts=o(Tr,Tq),Tt=sc(Tn,o([0,[0,sv,0,[10,Sl[1]]],[0,[0,su,0,[11,Sl[1]]],0]],Ts));return[0,[1,0,To,Tl[3],0],Tt];default:return[0,[0,0,So],0]}}function
-sw(Se,Sd){var
-Sf=si(Se,Sd);return aq(function(Sg){return 0===Sg[0]?[0,[0,Sg[1],Sg[2]]]:0})(Sf)}function
-sx(Sc){return i(1,(Sc[4]-4.)/num_13|0)}function
-sy(R$,R_){var
-Sa=R$[5];switch(Sa[0]){case
-2:return Sa[1][6];case
-3:return Sa[1][3];case
+Tk=So[1],Tl=sa(Sn,(Sn[4]-num_20)/Sn[4]),Tm=Tl[2],Tn=Tl[1],To=0!==nW(Sl[1],Tk[1])?1:0,Tp=[0,[0,sr,0,[8,Sk[1]]],0],Tq=To?[0,[0,ss,0,[15,Sk[1]]],0]:0,Tr=o(Tq,Tp),Ts=sb(Tm,o([0,[0,su,0,[10,Sk[1]]],[0,[0,st,0,[11,Sk[1]]],0]],Tr));return[0,[1,0,Tn,Tk[3],0],Ts];default:return[0,[0,0,Sn],0]}}function
+sv(Sd,Sc){var
+Se=sh(Sd,Sc);return aq(function(Sf){return 0===Sf[0]?[0,[0,Sf[1],Sf[2]]]:0})(Se)}function
+sw(Sb){return i(1,(Sb[4]-4.)/num_13|0)}function
+sx(R_,R9){var
+R$=R_[5];switch(R$[0]){case
+2:return R$[1][6];case
+3:return R$[1][3];case
 4:var
-Sb=Sa[1];return 0===R_?Sb[5]:1===R_?Sb[7]:Sb[9];case
-5:return rX(sz);default:return Sa[1]}}function
-sA(R9,R8){return C(V(R9[6],R8),0)}function
-sB(R6,R5){return am(function(R7){return R7[1]===R5?1:0},R6[3])}function
-sC(RQ,RP,RO){var
-RR=RQ[15],RS=RQ[14],RT=RQ[13],RU=RQ[12],RV=RQ[11],RW=RQ[10],RX=RQ[9],RY=RQ[8],RZ=RQ[7],R0=RQ[6],R1=RQ[5],R2=RQ[4],R3=ab(function(R4){return R4[1]===RP?caml_call1(RO,R4):R4},RQ[3]);return[0,RQ[1],RQ[2],R3,R2,R1,R0,RZ,RY,RX,RW,RV,RU,RT,RS,RR]}function
-sD(Rw,Rv){var
-Rx=sB(Rw,Rv);if(!Rx)return Rw;var
-Ry=Rw[15],Rz=Rw[14],RA=Rw[13],RB=Rw[12],RC=Rw[11],RD=Rw[10],RE=Rw[9],RF=Rw[8],RG=Rw[7],RH=Rw[6],RI=Rw[5],RJ=Rw[4],RK=[0,Rx[1],0],RL=Rw[3],RM=o(ao(function(RN){return RN[1]!==Rv?1:0})(RL),RK);return[0,Rw[1],Rw[2],RM,RJ,RI,RH,RG,RF,RE,RD,RC,RB,RA,Rz,Ry]}function
-sE(Rh,Rg,Rf,Re){var
-Ri=Rh[8],Rj=Rh[15],Rk=Rh[14],Rl=Rh[13],Rm=Rh[12],Rn=Rh[11],Ro=Rh[10],Rp=Rh[9],Rq=Rh[7],Rr=Rh[6],Rs=Rh[5],Rt=Rh[4],Ru=o(Rh[3],[0,[0,Ri,Rf,Rg,0,Re,0],0]);return[0,[0,Rh[1],Rh[2],Ru,Rt,Rs,Rr,Rq,Ri+1|0,Rp,Ro,Rn,Rm,Rl,Rk,Rj],Ri]}function
-sF(QZ,QY){var
-Q$=QZ[4];a:{var
-Q0=QZ[15],Q1=QZ[14],Q2=QZ[13],Q3=QZ[12],Q4=QZ[11],Q5=QZ[10],Q6=QZ[9],Q7=QZ[8],Q8=QZ[7],Q9=QZ[6],Q_=QZ[5];if(Q$&&Q$[1][1]===QY){var
-Ra=0;break a}var
-Ra=Q$}var
-Rb=QZ[3],Rc=ao(function(Rd){return Rd[1]!==QY?1:0})(Rb);return[0,QZ[1],QZ[2],Rc,Ra,Q_,Q9,Q8,Q7,Q6,Q5,Q4,Q3,Q2,Q1,Q0]}function
-sG(QW,QV,QU){var
-QX=O(QW[3])%6|0;return[num_254,140.+QX*num_18,num_60+QX*num_18,QV,QU]}function
-sH(QO,QN){var
-QP=QO[1],QK=0,QI=l_[1],Qy=O(QK),Qz=caml_create_bytes(Qy+4|0),QA=0;if(Qy>=0){var
-QG=QA;for(;;){caml_bytes_set(Qz,QG,E(16+QG|0));var
-QH=QG+1|0;if(Qy===QG)break;QG=QH}}caml_bytes_set(Qz,Qy+1|0,E(num_131));caml_bytes_set(Qz,Qy+2|0,E(Qy<<5));caml_bytes_set(Qz,Qy+3|0,E(num_124));var
-QB=iM(QP[1],l9),QC=_(Qy+1|0,function(QT){return 0===QT?lX:"arg"+str$9+QT}),QD=iM(QP[1],lZ),QE=lW(QP,iU(QP[1],[0,0,Qy+1|0,Qy+1|0,(2*Qy|0)+4|0],[0,QB],Qz,QD,iv,lY,[0,[0,Qy+1|0,0,0],0],QC),iv),QF=iD(QP[1],QE[2]);af(function(QR,QQ){var
-QS=6+QR|0;caml_check_bound(QF,QS)[1+QS]=QQ;return 0},[0,QN,QK]);var
-QJ=l6(QP,QE,QI);if(0!==QJ[0])return"<printString failed: "+QJ[1]+str$6;var
-QL=QJ[1],QM=QP[1][8][2];return iA(QP[1],QL)===QM?iH(QP[1],QL):l$}function
-sI(Qu,Qt){var
-Qv=iA(r9(Qu),Qt),Qw=jg(r9(Qu),Qv),Qx=[3,[0,Qt,sJ,rX(sH(Qu,Qt))]];return sE(Qu,Qw,sG(Qu,360.,num_180),Qx)[1]}function
-sK(Qh,Qg,Qf){var
-Qi=Qh[1],Qm=Qi[1],P$=Qg[2],P_=1,P9=0;for(;;){if(P$!==0&&num_200>=O(P9)){var
-Qa=P_?Qf:P_,Ql=Qi[1],P3=iE(Ql,P$,lj);a:if(P3===0)var
-Qb=0;else{var
-Qk=P3>>1,P4=i2(Ql,lu(Qi,P$));if(Qa){let
-Qo=Qk;var
-P5=am(function(Qp){return Qo<=Qp[1]?1:0},P4)}else{let
-Qq=Qk;var
-P5=ag(function(Qs,Qr){return Qr[1]<Qq?[0,Qr]:Qs},0,P4)}if(P5){var
-P6=P5[1],P7=P6[3],P8=P6[2];if(P8<P7){var
-Qb=[0,[0,P8,P7]];break a}}var
-Qb=0}var
-Qc=i1(Qm,lu(Qi,P$)),Qj=Qi[1],PX=lt(Qi,P$),PY=iE(Qj,PX,ll),PZ=iA(Qj,iE(Qj,PX,lm)),P0=i0(Qj,PY),P1=iH(Qj,iZ(Qj,PY));a:{if(P0!==PZ&&P0!==0){var
-Qn=str$4+jg(Qj,P0)+")>>"+P1,P2=jg(Qj,PZ)+Qn;break a}var
-P2=jg(Qj,PZ)+str$10+P1}var
-Qd=ls(Qi,P$)?"[] in "+P2:P2,Qe=[0,[0,P$,Qd,Qc,Qb],P9];P$=iE(Qm,P$,li);P_=0;P9=Qe;continue}return Y(P9)}}function
-sL(PR){var
-PS=V(PR[3],PR[4]);if(!PS)return rX(sM);var
-PT=PS[1],PU=rX(PT[3]),PV=PT[4];if(!PV)return PU;var
-PW=PV[1];return r8(8,[0,PU[1],PW[2],PW[1],PU[4]])}function
-sQ(PN,PM,PL,PK){return sE(PN,PM,sR,[5,[0,PL,PK,ap(function(PQ,PP){return PQ<5?1:0},ab(function(PO){return PO[2]},sK(PN,PL,0)))]])[1]}var
-rT=num_15;function
-sT(PB,PA,Pz,Py){return sC(PB,PA,function(PI){var
-PJ=caml_call1(Py,sy(PI,Pz)),PC=PI[5];switch(PC[0]){case
+Sa=R$[1];return 0===R9?Sa[5]:1===R9?Sa[7]:Sa[9];case
+5:return rW(sy);default:return R$[1]}}function
+sz(R8,R7){return C(V(R8[6],R7),0)}function
+sA(R5,R4){return am(function(R6){return R6[1]===R4?1:0},R5[3])}function
+sB(RP,RO,RN){var
+RQ=RP[15],RR=RP[14],RS=RP[13],RT=RP[12],RU=RP[11],RV=RP[10],RW=RP[9],RX=RP[8],RY=RP[7],RZ=RP[6],R0=RP[5],R1=RP[4],R2=ab(function(R3){return R3[1]===RO?caml_call1(RN,R3):R3},RP[3]);return[0,RP[1],RP[2],R2,R1,R0,RZ,RY,RX,RW,RV,RU,RT,RS,RR,RQ]}function
+sC(Rv,Ru){var
+Rw=sA(Rv,Ru);if(!Rw)return Rv;var
+Rx=Rv[15],Ry=Rv[14],Rz=Rv[13],RA=Rv[12],RB=Rv[11],RC=Rv[10],RD=Rv[9],RE=Rv[8],RF=Rv[7],RG=Rv[6],RH=Rv[5],RI=Rv[4],RJ=[0,Rw[1],0],RK=Rv[3],RL=o(ao(function(RM){return RM[1]!==Ru?1:0})(RK),RJ);return[0,Rv[1],Rv[2],RL,RI,RH,RG,RF,RE,RD,RC,RB,RA,Rz,Ry,Rx]}function
+sD(Rg,Rf,Re,Rd){var
+Rh=Rg[8],Ri=Rg[15],Rj=Rg[14],Rk=Rg[13],Rl=Rg[12],Rm=Rg[11],Rn=Rg[10],Ro=Rg[9],Rp=Rg[7],Rq=Rg[6],Rr=Rg[5],Rs=Rg[4],Rt=o(Rg[3],[0,[0,Rh,Re,Rf,0,Rd,0],0]);return[0,[0,Rg[1],Rg[2],Rt,Rs,Rr,Rq,Rp,Rh+1|0,Ro,Rn,Rm,Rl,Rk,Rj,Ri],Rh]}function
+sE(QY,QX){var
+Q_=QY[4];a:{var
+QZ=QY[15],Q0=QY[14],Q1=QY[13],Q2=QY[12],Q3=QY[11],Q4=QY[10],Q5=QY[9],Q6=QY[8],Q7=QY[7],Q8=QY[6],Q9=QY[5];if(Q_&&Q_[1][1]===QX){var
+Q$=0;break a}var
+Q$=Q_}var
+Ra=QY[3],Rb=ao(function(Rc){return Rc[1]!==QX?1:0})(Ra);return[0,QY[1],QY[2],Rb,Q$,Q9,Q8,Q7,Q6,Q5,Q4,Q3,Q2,Q1,Q0,QZ]}function
+sF(QV,QU,QT){var
+QW=O(QV[3])%6|0;return[num_254,140.+QW*num_18,num_60+QW*num_18,QU,QT]}function
+sG(QN,QM){var
+QO=QN[1],QJ=0,QH=l9[1],Qx=O(QJ),Qy=caml_create_bytes(Qx+4|0),Qz=0;if(Qx>=0){var
+QF=Qz;for(;;){caml_bytes_set(Qy,QF,E(16+QF|0));var
+QG=QF+1|0;if(Qx===QF)break;QF=QG}}caml_bytes_set(Qy,Qx+1|0,E(num_131));caml_bytes_set(Qy,Qx+2|0,E(Qx<<5));caml_bytes_set(Qy,Qx+3|0,E(num_124));var
+QA=iL(QO[1],l8),QB=_(Qx+1|0,function(QS){return 0===QS?lW:"arg"+str$9+QS}),QC=iL(QO[1],lY),QD=lV(QO,iT(QO[1],[0,0,Qx+1|0,Qx+1|0,(2*Qx|0)+4|0],[0,QA],Qy,QC,iu,lX,[0,[0,Qx+1|0,0,0],0],QB),iu),QE=iC(QO[1],QD[2]);af(function(QQ,QP){var
+QR=6+QQ|0;caml_check_bound(QE,QR)[1+QR]=QP;return 0},[0,QM,QJ]);var
+QI=l5(QO,QD,QH);if(0!==QI[0])return"<printString failed: "+QI[1]+str$6;var
+QK=QI[1],QL=QO[1][8][2];return iz(QO[1],QK)===QL?iG(QO[1],QK):l_}function
+sH(Qt,Qs){var
+Qu=iz(r8(Qt),Qs),Qv=jf(r8(Qt),Qu),Qw=[3,[0,Qs,sI,rW(sG(Qt,Qs))]];return sD(Qt,Qv,sF(Qt,360.,num_180),Qw)[1]}function
+sJ(Qg,Qf,Qe){var
+Qh=Qg[1],Ql=Qh[1],P_=Qf[2],P9=1,P8=0;for(;;){if(P_!==0&&num_200>=O(P8)){var
+P$=P9?Qe:P9,Qk=Qh[1],P2=iD(Qk,P_,li);a:if(P2===0)var
+Qa=0;else{var
+Qj=P2>>1,P3=i1(Qk,lt(Qh,P_));if(P$){let
+Qn=Qj;var
+P4=am(function(Qo){return Qn<=Qo[1]?1:0},P3)}else{let
+Qp=Qj;var
+P4=ag(function(Qr,Qq){return Qq[1]<Qp?[0,Qq]:Qr},0,P3)}if(P4){var
+P5=P4[1],P6=P5[3],P7=P5[2];if(P7<P6){var
+Qa=[0,[0,P7,P6]];break a}}var
+Qa=0}var
+Qb=i0(Ql,lt(Qh,P_)),Qi=Qh[1],PW=ls(Qh,P_),PX=iD(Qi,PW,lk),PY=iz(Qi,iD(Qi,PW,ll)),PZ=iZ(Qi,PX),P0=iG(Qi,iY(Qi,PX));a:{if(PZ!==PY&&PZ!==0){var
+Qm=str$4+jf(Qi,PZ)+")>>"+P0,P1=jf(Qi,PY)+Qm;break a}var
+P1=jf(Qi,PY)+str$10+P0}var
+Qc=lr(Qh,P_)?"[] in "+P1:P1,Qd=[0,[0,P_,Qc,Qb,Qa],P8];P_=iD(Ql,P_,lh);P9=0;P8=Qd;continue}return Y(P8)}}function
+sK(PQ){var
+PR=V(PQ[3],PQ[4]);if(!PR)return rW(sL);var
+PS=PR[1],PT=rW(PS[3]),PU=PS[4];if(!PU)return PT;var
+PV=PU[1];return r7(8,[0,PT[1],PV[2],PV[1],PT[4]])}function
+sP(PM,PL,PK,PJ){return sD(PM,PL,sQ,[5,[0,PK,PJ,ap(function(PP,PO){return PP<5?1:0},ab(function(PN){return PN[2]},sJ(PM,PK,0)))]])[1]}var
+rS=num_15;function
+sS(PA,Pz,Py,Px){return sB(PA,Pz,function(PH){var
+PI=caml_call1(Px,sx(PH,Py)),PB=PH[5];switch(PB[0]){case
 0:var
-PD=[0,PJ];break;case
+PC=[0,PI];break;case
 1:var
-PD=[1,PJ];break;case
+PC=[1,PI];break;case
 2:var
-PE=PC[1],PD=[2,[0,PE[1],PE[2],PE[3],PE[4],PE[5],PJ]];break;case
+PD=PB[1],PC=[2,[0,PD[1],PD[2],PD[3],PD[4],PD[5],PI]];break;case
 3:var
-PF=PC[1],PD=[3,[0,PF[1],PF[2],PJ]];break;case
+PE=PB[1],PC=[3,[0,PE[1],PE[2],PI]];break;case
 4:var
-PG=PC[1],PH=0===Pz?[4,[0,PG[1],PG[2],PG[3],PG[4],PJ,PG[6],PG[7],PG[8],PG[9],PG[10]]]:1===Pz?[4,[0,PG[1],PG[2],PG[3],PG[4],PG[5],PG[6],PJ,PG[8],PG[9],PG[10]]]:[4,[0,PG[1],PG[2],PG[3],PG[4],PG[5],PG[6],PG[7],PG[8],PJ,PG[10]]],PD=PH;break;default:var
-PD=PC}return[0,PI[1],PI[2],PI[3],PI[4],PD,PI[6]]})}function
-sU(Pv,Pu,Pt){var
-Px=str$14+Pt+" ->",Pw=r0([0,Pv[1],Pu,Pu,Pv[4]],Px);return[0,Pw[1],Pu+caml_ml_string_length(Px)|0,Pu,Pw[4]]}function
-sV(O4,O3,O2,O1){var
-O5=sB(O4,O3);if(!O5)return O4;var
-O6=O5[1],O7=sy(O6,O2);if(O7[2]!==O7[3])var
-O8=O7;else
+PF=PB[1],PG=0===Py?[4,[0,PF[1],PF[2],PF[3],PF[4],PI,PF[6],PF[7],PF[8],PF[9],PF[10]]]:1===Py?[4,[0,PF[1],PF[2],PF[3],PF[4],PF[5],PF[6],PI,PF[8],PF[9],PF[10]]]:[4,[0,PF[1],PF[2],PF[3],PF[4],PF[5],PF[6],PF[7],PF[8],PI,PF[10]]],PC=PG;break;default:var
+PC=PB}return[0,PH[1],PH[2],PH[3],PH[4],PC,PH[6]]})}function
+sT(Pu,Pt,Ps){var
+Pw=str$14+Ps+" ->",Pv=rZ([0,Pu[1],Pt,Pt,Pu[4]],Pw);return[0,Pv[1],Pt+caml_ml_string_length(Pw)|0,Pt,Pv[4]]}function
+sU(O3,O2,O1,O0){var
+O4=sA(O3,O2);if(!O4)return O3;var
+O5=O4[1],O6=sx(O5,O1);if(O6[2]!==O6[3])var
+O7=O6;else
 var
-OU=O7[4],OV=r1(O7[1],O7[2]),OW=r2(O7[1],O7[2]),O8=[0,O7[1],OW,OV,OU];var
-O9=rY(O8)[1],OX=O6[5];a:{switch(OX[0]){case
+OT=O6[4],OU=r0(O6[1],O6[2]),OV=r1(O6[1],O6[2]),O7=[0,O6[1],OV,OU,OT];var
+O8=rX(O7)[1],OW=O5[5];a:{switch(OW[0]){case
 3:var
-O_=OX[1][1];break a;case
+O9=OW[1][1];break a;case
 4:var
-OY=OX[1];if(0===O2){var
-OZ=V(OY[3],OY[4]);if(OZ){var
-O0=lt(O4[1],OZ[1][1]),O_=iE(r9(O4),O0,lm);break a}var
-O_=iv;break a}break}var
-O_=iv}var
-O$=r9(O4);try{var
-Pd=rZ(O8),Pe=le(O$,iA(O$,O_),Pd)}catch(Pr){var
-Pa=caml_wrap_exception(Pr);if(Pa[1]!==kA)throw caml_maybe_attach_backtrace(Pa,0);var
-Pb=Pa[3],Pc=Pa[2];return sT(O4,O3,O2,function(Ps){return sU(O8,O9+Pc|0,Pb)})}var
-Pf=lW(O4[1],Pe,O_),Pg=sT(O4,O3,O2,function(Pq){return O8}),Ph=Pg[15],Pi=Pg[14],Pj=Pg[13],Pk=Pg[12],Pl=Pg[11],Pm=Pg[10],Pn=Pg[9],Po=Pg[8],Pp=o(O4[7],[0,[0,Pf,O1],0]);return[0,Pg[1],Pg[2],Pg[3],Pg[4],Pg[5],Pg[6],Pp,Po,Pn,Pm,Pl,Pk,Pj,Pi,Ph]}function
-sW(OF,OE,OD){var
-OG=OE[3];if(typeof
-OG==="number"){if(0!==OG)return OF;var
-OH=OF[15],OI=OF[14],OJ=OF[13],OK=OF[12],OL=OF[11],OM=OF[10],ON=OF[9],OO=OF[8],OP=o(OF[7],[0,[0,OE,OD],0]);return[0,OF[1],OF[2],OF[3],OF[4],OF[5],OF[6],OP,OO,ON,OM,OL,OK,OJ,OI,OH]}if(0===OG[0])return sQ(OF,OG[1],OE,OD);var
-OQ=OG[1];if(typeof
-OD==="number")return OD?sI(OF,OQ):OF;var
-OA=OD[2],OB=OD[1],OC=sH(OF,OQ);return sT(OF,OB,OA,function(OR){var
-OS=rY(OR)[2],OT=r0([0,OR[1],OS,OS,OR[4]],str$14+OC);return[0,OT[1],OT[2],OS+1|0,OT[4]]})}function
-s1(Os,Or){var
-Ot=se(Os,Or),Ov=Or[5],Ou=Or[4];if(Ot){var
-Ow=Ot[1];if(!Ov)return Ou?rX(sZ):rX(jt(Os,Ow));var
-Ox=jC(Os,Ow,iM(Os,Ov[1]));return Ox?rX(i1(Os,Ox[1])):rX(s2)}var
-Oy=Or[1];if(!Oy)return rX(s3);var
-Oz=Oy[1];return rX(caml_call1(dX(s0),Oz))}function
-s4(Ok,Oj,Oi){var
-Ol=r9(Ok);return sC(Ok,Oj,function(Om){var
-On=Om[5];if(2!==On[0])return Om;var
-Oo=caml_call1(Oi,On[1]),Op=Om[6],Oq=s1(Ol,Oo);return[0,Om[1],Om[2],Om[3],Om[4],[2,[0,Oo[1],Oo[2],Oo[3],Oo[4],Oo[5],Oq]],Op]})}function
-s7(Of,Oe,Od){var
-Og=sB(Of,Oe);if(Og){var
-Oh=Og[1][5];if(4===Oh[0])return caml_call1(Od,Oh[1])}return Of}function
-s8(NX,NW,NV){return s7(NX,NW,function(NY){var
-NZ=NY[1][3];if(typeof
-NZ!=="number"&&0===NZ[0]){var
-N2=sK(NX,NY[1],NV),N3=NY[10],N4=rX(s9),N5=rX(s_),N6=[0,NY[1],NY[2],N2,0,NY[5],0,N5,0,N4,N3];return sC(NX,NW,function(N7){var
-N8=N7[6],N9=N6[10],N_=N6[9],N$=N6[8],Oa=N6[7],Ob=N6[6],Oc=sL(N6);return[0,N7[1],N7[2],N7[3],N7[4],[4,[0,N6[1],N6[2],N6[3],N6[4],Oc,Ob,Oa,N$,N_,N9]],N8]})}var
-N0=NY[2],N1=NY[1];return sW(sF(NX,NW),N1,N0)})}function
-td(NM){return[0,function(NQ){var
-NS=caml_string_of_bytes(aL(function(NU){return 13===NU?10:NU},caml_bytes_of_string(NQ))),NT=NM[1]+NS,NR=num_20000<caml_ml_string_length(NT)?aP(NT,caml_ml_string_length(NT)-20000|0,num_20000):NT;NM[1]=NR;return 0},function(NP){return caml_sys_time(0)*num_1000$0|0},function(NO){NM[2]=o(NM[2],[0,NO,0]);return 0},function(NN){return NM[3]}]}function
-te(LH,LG){if(LG){var
-LI=LG[1],Lv=24,Lw=caml_ml_string_length(LI)<24?1:0,LJ=td(LH),Lx=Lw||(aP(LI,0,Lv)!==str_TinySmalltalk80_abr?1:0);if(Lx)f(nL);var
-Ly=[0,LI,Lv],Lz=function(Mb){return _(nD(Ly),function(Mc){return nF(Ly)})},LA=Lz(0),LB=bg(Lz(0));a:{var
-LC=bg(Lz(0));if(LA){var
-Ld=LA[2];if(Ld){var
+OX=OW[1];if(0===O1){var
+OY=V(OX[3],OX[4]);if(OY){var
+OZ=ls(O3[1],OY[1][1]),O9=iD(r8(O3),OZ,ll);break a}var
+O9=iu;break a}break}var
+O9=iu}var
+O_=r8(O3);try{var
+Pc=rY(O7),Pd=ld(O_,iz(O_,O9),Pc)}catch(Pq){var
+O$=caml_wrap_exception(Pq);if(O$[1]!==kz)throw caml_maybe_attach_backtrace(O$,0);var
+Pa=O$[3],Pb=O$[2];return sS(O3,O2,O1,function(Pr){return sT(O7,O8+Pb|0,Pa)})}var
+Pe=lV(O3[1],Pd,O9),Pf=sS(O3,O2,O1,function(Pp){return O7}),Pg=Pf[15],Ph=Pf[14],Pi=Pf[13],Pj=Pf[12],Pk=Pf[11],Pl=Pf[10],Pm=Pf[9],Pn=Pf[8],Po=o(O3[7],[0,[0,Pe,O0],0]);return[0,Pf[1],Pf[2],Pf[3],Pf[4],Pf[5],Pf[6],Po,Pn,Pm,Pl,Pk,Pj,Pi,Ph,Pg]}function
+sV(OE,OD,OC){var
+OF=OD[3];if(typeof
+OF==="number"){if(0!==OF)return OE;var
+OG=OE[15],OH=OE[14],OI=OE[13],OJ=OE[12],OK=OE[11],OL=OE[10],OM=OE[9],ON=OE[8],OO=o(OE[7],[0,[0,OD,OC],0]);return[0,OE[1],OE[2],OE[3],OE[4],OE[5],OE[6],OO,ON,OM,OL,OK,OJ,OI,OH,OG]}if(0===OF[0])return sP(OE,OF[1],OD,OC);var
+OP=OF[1];if(typeof
+OC==="number")return OC?sH(OE,OP):OE;var
+Oz=OC[2],OA=OC[1],OB=sG(OE,OP);return sS(OE,OA,Oz,function(OQ){var
+OR=rX(OQ)[2],OS=rZ([0,OQ[1],OR,OR,OQ[4]],str$14+OB);return[0,OS[1],OS[2],OR+1|0,OS[4]]})}function
+s0(Or,Oq){var
+Os=sd(Or,Oq),Ou=Oq[5],Ot=Oq[4];if(Os){var
+Ov=Os[1];if(!Ou)return Ot?rW(sY):rW(js(Or,Ov));var
+Ow=jB(Or,Ov,iL(Or,Ou[1]));return Ow?rW(i0(Or,Ow[1])):rW(s1)}var
+Ox=Oq[1];if(!Ox)return rW(s2);var
+Oy=Ox[1];return rW(caml_call1(dX(sZ),Oy))}function
+s3(Oj,Oi,Oh){var
+Ok=r8(Oj);return sB(Oj,Oi,function(Ol){var
+Om=Ol[5];if(2!==Om[0])return Ol;var
+On=caml_call1(Oh,Om[1]),Oo=Ol[6],Op=s0(Ok,On);return[0,Ol[1],Ol[2],Ol[3],Ol[4],[2,[0,On[1],On[2],On[3],On[4],On[5],Op]],Oo]})}function
+s6(Oe,Od,Oc){var
+Of=sA(Oe,Od);if(Of){var
+Og=Of[1][5];if(4===Og[0])return caml_call1(Oc,Og[1])}return Oe}function
+s7(NW,NV,NU){return s6(NW,NV,function(NX){var
+NY=NX[1][3];if(typeof
+NY!=="number"&&0===NY[0]){var
+N1=sJ(NW,NX[1],NU),N2=NX[10],N3=rW(s8),N4=rW(s9),N5=[0,NX[1],NX[2],N1,0,NX[5],0,N4,0,N3,N2];return sB(NW,NV,function(N6){var
+N7=N6[6],N8=N5[10],N9=N5[9],N_=N5[8],N$=N5[7],Oa=N5[6],Ob=sK(N5);return[0,N6[1],N6[2],N6[3],N6[4],[4,[0,N5[1],N5[2],N5[3],N5[4],Ob,Oa,N$,N_,N9,N8]],N7]})}var
+NZ=NX[2],N0=NX[1];return sV(sE(NW,NV),N0,NZ)})}function
+tc(NL){return[0,function(NP){var
+NR=caml_string_of_bytes(aL(function(NT){return 13===NT?10:NT},caml_bytes_of_string(NP))),NS=NL[1]+NR,NQ=num_20000<caml_ml_string_length(NS)?aP(NS,caml_ml_string_length(NS)-20000|0,num_20000):NS;NL[1]=NQ;return 0},function(NO){return caml_sys_time(0)*num_1000$0|0},function(NN){NL[2]=o(NL[2],[0,NN,0]);return 0},function(NM){return NL[3]}]}function
+td(LG,LF){if(LF){var
+LH=LF[1],Lu=24,Lv=caml_ml_string_length(LH)<24?1:0,LI=tc(LG),Lw=Lv||(aP(LH,0,Lu)!==str_TinySmalltalk80_abr?1:0);if(Lw)f(nK);var
+Lx=[0,LH,Lu],Ly=function(Ma){return _(nC(Lx),function(Mb){return nE(Lx)})},Lz=Ly(0),LA=bg(Ly(0));a:{var
+LB=bg(Ly(0));if(Lz){var
+Lc=Lz[2];if(Lc){var
+Ld=Lc[2];if(Ld){var
 Le=Ld[2];if(Le){var
 Lf=Le[2];if(Lf){var
 Lg=Lf[2];if(Lg){var
@@ -4648,716 +4649,715 @@ Lp=Lo[2];if(Lp){var
 Lq=Lp[2];if(Lq){var
 Lr=Lq[2];if(Lr){var
 Ls=Lr[2];if(Ls){var
-Lt=Ls[2];if(Lt){var
-Lu=Lt[2];if(Lu&&!Lu[2]){var
-LD=[0,LA[1],Ld[1],Le[1],Lf[1],Lg[1],Lh[1],Li[1],Lj[1],Lk[1],Ll[1],Lm[1],Ln[1],Lo[1],Lp[1],Lq[1],Lr[1],Ls[1],Lt[1],Lu[1],LB,LC];break a}}}}}}}}}}}}}}}}}}}var
-LD=f(nJ)}var
-LE=_(nD(Ly),function(L0){var
-L1=nD(Ly),L2=nF(Ly),L3=caml_string_get(Ly[1],Ly[2]);Ly[2]=Ly[2]+1|0;var
-L4=L3-66|0;a:{b:if(14>=L4>>>0){switch(L4){case
+Lt=Ls[2];if(Lt&&!Lt[2]){var
+LC=[0,Lz[1],Lc[1],Ld[1],Le[1],Lf[1],Lg[1],Lh[1],Li[1],Lj[1],Lk[1],Ll[1],Lm[1],Ln[1],Lo[1],Lp[1],Lq[1],Lr[1],Ls[1],Lt[1],LA,LB];break a}}}}}}}}}}}}}}}}}}}var
+LC=f(nI)}var
+LD=_(nC(Lx),function(LZ){var
+L0=nC(Lx),L1=nE(Lx),L2=caml_string_get(Lx[1],Lx[2]);Lx[2]=Lx[2]+1|0;var
+L3=L2-66|0;a:{b:if(14>=L3>>>0){switch(L3){case
 0:var
-L6=[1,nH(Ly,nD(Ly))];break;case
+L5=[1,nG(Lx,nC(Lx))];break;case
 4:var
-L8=[0,nN],L9=7,L7=nH(Ly,8);for(;;){var
-L_=caml_int64_of_int32(caml_bytes_get(L7,L9));L8[1]=caml_int64_or(caml_int64_shift_left(L8[1],8),L_);var
-L$=L9-1|0;if(0===L9){var
-L6=[2,caml_int64_float_of_bits(L8[1])];break}L9=L$}break;case
+L7=[0,nM],L8=7,L6=nG(Lx,8);for(;;){var
+L9=caml_int64_of_int32(caml_bytes_get(L6,L8));L7[1]=caml_int64_or(caml_int64_shift_left(L7[1],8),L9);var
+L_=L8-1|0;if(0===L8){var
+L5=[2,caml_int64_float_of_bits(L7[1])];break}L8=L_}break;case
 11:var
-Ma=bg(Lz(0)),L6=[3,Ma,nH(Ly,nD(Ly))];break;case
+L$=bg(Ly(0)),L5=[3,L$,nG(Lx,nC(Lx))];break;case
 14:var
-L6=[0,bg(Lz(0))];break;default:break b}var
-L5=L6;break a}var
-L5=f(nM)}return[0,L1,L2,L5]}),K1=ag(function(LZ,LY){return i(LZ,LY[1]+1|0)},1,LE),K2=[0,num_4096];for(;;){if(K2[1]>=(K1+1|0))break;K2[1]=2*K2[1]|0}var
-K3=eG(0,num_1024),K4=[0,caml_make_vect(K2[1],0),caml_make_vect(K2[1],0),0,K1,0,0,K3,LD];ae(function(LU){var
-LX=LU[1],LV=LU[3],LW=LU[2];caml_check_bound(K4[1],LX)[1+LX]=LW;caml_check_bound(K4[2],LX)[1+LX]=LV;K4[5]=K4[5]+1|0;return 0},LE);var
-K5=K1-1|0;if(K5>=1){var
-K6=K5;for(;;){if(0===caml_check_bound(K4[2],K6)[1+K6])K4[3]=[0,K6,K4[3]];var
-K7=K6-1|0;if(1===K6)break;K6=K7}}ae(function(LO){var
-LP=LO[3],LQ=LO[2],LR=LO[1];if(typeof
-LP!=="number"&&1===LP[0]){var
-LS=LP[1];if(LQ===LD[3]){var
-LT=aB(LS);return eM(K4[7],LT,LR<<1)}}return 0},LE);var
-LF=lq(K4,LJ);mN(LF);var
-LK=LF}else{var
-LL=td(LH),K0=[0,caml_make_vect(num_4096,0),caml_make_vect(num_4096,0),0,1,1,0,eG(0,num_1024),[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,[0],[0]]];caml_check_bound(K0[2],0)[1]=[0,[0]];var
-LM=K0[8],K8=ar(function(Nz){var
-NA=Nz[2],M0=caml_ml_string_length(NA);a:{b:{var
-M2=0,M1=0,NB=Nz[1],Nx=0;for(;;){if(M0<=M2)break b;var
-M3=by(num_256);c:{d:{var
-M4=M2;for(;;){if(M0<=M4)break d;if(33===caml_string_get(NA,M4)){if((M4+1|0)>=M0)break;if(33!==caml_string_get(NA,M4+1|0))break;bE(M3,33);M4=M4+2|0}else{bE(M3,caml_string_get(NA,M4));M4=M4+1|0}}var
-M5=M4+1|0;break c}var
-M5=M4}var
-M6=bz(M3),M7=[0,0];for(;;){if(M7[1]>=caml_ml_string_length(M6))break;if(!a2(mS,caml_string_get(M6,M7[1])))break;M7[1]++}var
-M8=aP(M6,M7[1],caml_ml_string_length(M6)-M7[1]|0);c:if(M0<=M5&&M5===M0){if(0!==M0&&33===caml_string_get(NA,M0-1|0))break c;if(aV(M8)===str$9)break}var
-M9=M8,M$=M2+M7[1]|0;for(;;){var
-M_=caml_ml_string_length(M9);if(0>=M_)break;if(!a2(mT,caml_string_get(M9,M_-1|0)))break;M9=aP(M9,0,M_-1|0)}M2=M5;M1=[0,[0,M9,M$],M1]}var
-Ny=Y(M1);break a}var
-Ny=Y(M1)}var
-Nh=Ny,Ng=Nx;for(;;){if(!Nh)break;var
-Ni=Nh[1],Nj=Ni[1];if(Nj!==str$9){Nh=Nh[2];Ng=[0,[0,Nj,Ni[2]],Ng]}else{var
-Nk=Nh[2];if(Nk){var
-Nm=Nk[1],No=Nm[1],Nl=Nk[2],Nn=Nm[2];let
-NE=10;var
-NC=ar(function(NL){return a4(NE,NL)},a4(32,No)),Na=ao(function(NK){return str$9!==NK?1:0})(NC);let
-NF=No;var
-Nb=function(NG){var
-NH=aX(NF,39);if(!NH)return mV;var
-NI=NH[1],NJ=aY(NF,NI+1|0,39);return NJ?aP(NF,NI+1|0,(NJ[1]-NI|0)-1|0):mU};a:if(Na){var
-Nc=Na[2];if(Nc){var
-Nd=Nc[1],Ne=Na[1];if(Nd!==str_class$0){if(Nd!==str_methodsFor)break a;var
-Np=[0,,0,Nb(0)]}else{var
-Nf=Nc[2];if(!Nf)break a;if(Nf[1]!==str_methodsFor)break a;var
-Np=[0,,1,Nb(0)]}b:{c:{var
-Nt=Nl,Ns=0,Nq=Np[3],Nr=Np[2];for(;;){if(!Nt)break;var
-Nu=Nt[1];if(Nu[1]===str$9)break c;Nt=Nt[2];Ns=[0,Nu,Ns]}var
-Nw=[0,0,Y(Ns)];break b}var
-Nv=Nt[2],Nw=[0,Nv,Y(Ns)]}Nh=Nw[1];Ng=[0,[1,Ne,Nr,Nq,Nw[2]],Ng];continue}}throw caml_maybe_attach_backtrace([0,mR,Nn,mW],1)}Nh=Nh[2]}}return ab(function(ND){return[0,NB,NA,ND]},Y(Ng))},mP),K9=aq(function(MY){var
-MZ=MY[3];return 0===MZ[0]?m7(MZ[1]):0})(K8),K_=eG(0,64),La=function(MW){var
-MX=eL(K_,MW);if(MX)return MX[1];throw caml_maybe_attach_backtrace([0,m5,"the kernel defines no "+MW],1)},K$=ab(function(MT){var
-MU=iz(K0,iv,[0,caml_make_vect(6,0)]),MV=iz(K0,MU,[0,caml_make_vect(9,0)]);eM(K_,MT[2],MV);return MU},K9);LM[15]=La(nc);ae(function(MS){return iB(K0,MS,LM[15])},K$);LM[1]=La(nd);LM[2]=La(ne);LM[3]=La(nf);LM[4]=La(ng);LM[5]=La(nh);LM[6]=La(ni);LM[7]=La(nj);LM[8]=La(nk);LM[9]=La(nl);LM[10]=La(nm);LM[11]=La(nn);LM[12]=La(no);LM[13]=La(np);LM[14]=La(nq);LM[16]=La(nr);iB(K0,iv,La(ns));LM[17]=iz(K0,La(nt),[0,[0]]);LM[18]=iz(K0,La(nu),[0,[0]]);LM[20]=a5(num_256,function(MQ){var
-MR=[0,[0,ix(MQ)]];return iz(K0,LM[6],MR)});var
-Lb=[0,[0,iK(K0,[0])]];LM[19]=iz(K0,La(nv),Lb);LM[21]=bd(function(MP){return iM(K0,MP)},iT);jr(K0,nw,LM[19]);ae(function(MN){var
-MO=La(MN[2]);jr(K0,MN[2],MO);return 0},K9);ae(function(ML){var
-MM=ML[1]===str_nil?iv:La(ML[1]);jN(K0,MM,ML[2],ML[3],ML[4],ML[5],ML[6]);return 0},K9);ae(function(Ms){var
-Mt=Ms[3],Mu=Ms[2],Mv=Ms[1];if(0===Mt[0])return 0;var
-Mw=Mt[4],Mx=Mt[3],My=Mt[2],Mz=La(Mt[1]),MA=My?iA(K0,Mz):Mz;return ae(function(MB){var
-MC=MB[2],MD=MB[1];try{lb(K0,MA,Mx,ny,MD);var
-MJ=0;return MJ}catch(MK){var
-ME=caml_wrap_exception(MK);if(ME[1]!==kA)throw caml_maybe_attach_backtrace(ME,0);var
-MF=ME[3],MG=ME[2],MH=jg(K0,MA),MI=nb(Mu,MC+MG|0);throw caml_maybe_attach_backtrace([0,m5,caml_call4(dX(nx),Mv,MI,MH,MF)],1)}},Mw)},K8);var
-Lc=lq(K0,LL);mN(Lc);ae(function(Md){var
-Me=Md[3],Mf=Md[2],Mg=Md[1];if(0===Me[0]){var
-Mi=Me[1],Mh=Me[2];if(0===m7(Mi)){a:{try{var
-Mp=kx(Mi)}catch(Mr){var
-Mj=caml_wrap_exception(Mr);if(Mj[1]!==jQ)throw caml_maybe_attach_backtrace(Mj,0);var
-Mk=0;break a}var
-Mq=Mp[5]?0:1,Mk=Mq}var
-Ml=1-Mk;if(!Ml)return Ml;var
-Mm=ma(Lc,0,0,Mi);if(0===Mm[0])return 0;var
-Mn=Mm[1],Mo=nb(Mf,Mh);throw caml_maybe_attach_backtrace([0,m5,caml_call3(dX(nz),Mg,Mo,Mn)],1)}}return 0},K8);var
-LK=Lc}LK[4]=function(LN){return LH[4]};return LK}function
-tf(HR,HQ,HP){var
-HT=HQ,HS=HP;for(;;){var
-HU=r9(HT);if(typeof
-HS==="number")switch(HS){case
+L5=[0,bg(Ly(0))];break;default:break b}var
+L4=L5;break a}var
+L4=f(nL)}return[0,L0,L1,L4]}),K0=ag(function(LY,LX){return i(LY,LX[1]+1|0)},1,LD),K1=[0,num_4096];for(;;){if(K1[1]>=(K0+1|0))break;K1[1]=2*K1[1]|0}var
+K2=eG(0,num_1024),K3=[0,caml_make_vect(K1[1],0),caml_make_vect(K1[1],0),0,K0,0,0,K2,LC];ae(function(LT){var
+LW=LT[1],LU=LT[3],LV=LT[2];caml_check_bound(K3[1],LW)[1+LW]=LV;caml_check_bound(K3[2],LW)[1+LW]=LU;K3[5]=K3[5]+1|0;return 0},LD);var
+K4=K0-1|0;if(K4>=1){var
+K5=K4;for(;;){if(0===caml_check_bound(K3[2],K5)[1+K5])K3[3]=[0,K5,K3[3]];var
+K6=K5-1|0;if(1===K5)break;K5=K6}}ae(function(LN){var
+LO=LN[3],LP=LN[2],LQ=LN[1];if(typeof
+LO!=="number"&&1===LO[0]){var
+LR=LO[1];if(LP===LC[3]){var
+LS=aB(LR);return eM(K3[7],LS,LQ<<1)}}return 0},LD);var
+LE=lp(K3,LI);mM(LE);var
+LJ=LE}else{var
+LK=tc(LG),KZ=[0,caml_make_vect(num_4096,0),caml_make_vect(num_4096,0),0,1,1,0,eG(0,num_1024),[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,[0],[0]]];caml_check_bound(KZ[2],0)[1]=[0,[0]];var
+LL=KZ[8],K7=ar(function(Ny){var
+Nz=Ny[2],MZ=caml_ml_string_length(Nz);a:{b:{var
+M1=0,M0=0,NA=Ny[1],Nw=0;for(;;){if(MZ<=M1)break b;var
+M2=by(num_256);c:{d:{var
+M3=M1;for(;;){if(MZ<=M3)break d;if(33===caml_string_get(Nz,M3)){if((M3+1|0)>=MZ)break;if(33!==caml_string_get(Nz,M3+1|0))break;bE(M2,33);M3=M3+2|0}else{bE(M2,caml_string_get(Nz,M3));M3=M3+1|0}}var
+M4=M3+1|0;break c}var
+M4=M3}var
+M5=bz(M2),M6=[0,0];for(;;){if(M6[1]>=caml_ml_string_length(M5))break;if(!a2(mR,caml_string_get(M5,M6[1])))break;M6[1]++}var
+M7=aP(M5,M6[1],caml_ml_string_length(M5)-M6[1]|0);c:if(MZ<=M4&&M4===MZ){if(0!==MZ&&33===caml_string_get(Nz,MZ-1|0))break c;if(aV(M7)===str$9)break}var
+M8=M7,M_=M1+M6[1]|0;for(;;){var
+M9=caml_ml_string_length(M8);if(0>=M9)break;if(!a2(mS,caml_string_get(M8,M9-1|0)))break;M8=aP(M8,0,M9-1|0)}M1=M4;M0=[0,[0,M8,M_],M0]}var
+Nx=Y(M0);break a}var
+Nx=Y(M0)}var
+Ng=Nx,Nf=Nw;for(;;){if(!Ng)break;var
+Nh=Ng[1],Ni=Nh[1];if(Ni!==str$9){Ng=Ng[2];Nf=[0,[0,Ni,Nh[2]],Nf]}else{var
+Nj=Ng[2];if(Nj){var
+Nl=Nj[1],Nn=Nl[1],Nk=Nj[2],Nm=Nl[2];let
+ND=10;var
+NB=ar(function(NK){return a4(ND,NK)},a4(32,Nn)),M$=ao(function(NJ){return str$9!==NJ?1:0})(NB);let
+NE=Nn;var
+Na=function(NF){var
+NG=aX(NE,39);if(!NG)return mU;var
+NH=NG[1],NI=aY(NE,NH+1|0,39);return NI?aP(NE,NH+1|0,(NI[1]-NH|0)-1|0):mT};a:if(M$){var
+Nb=M$[2];if(Nb){var
+Nc=Nb[1],Nd=M$[1];if(Nc!==str_class$0){if(Nc!==str_methodsFor)break a;var
+No=[0,,0,Na(0)]}else{var
+Ne=Nb[2];if(!Ne)break a;if(Ne[1]!==str_methodsFor)break a;var
+No=[0,,1,Na(0)]}b:{c:{var
+Ns=Nk,Nr=0,Np=No[3],Nq=No[2];for(;;){if(!Ns)break;var
+Nt=Ns[1];if(Nt[1]===str$9)break c;Ns=Ns[2];Nr=[0,Nt,Nr]}var
+Nv=[0,0,Y(Nr)];break b}var
+Nu=Ns[2],Nv=[0,Nu,Y(Nr)]}Ng=Nv[1];Nf=[0,[1,Nd,Nq,Np,Nv[2]],Nf];continue}}throw caml_maybe_attach_backtrace([0,mQ,Nm,mV],1)}Ng=Ng[2]}}return ab(function(NC){return[0,NA,Nz,NC]},Y(Nf))},mO),K8=aq(function(MX){var
+MY=MX[3];return 0===MY[0]?m6(MY[1]):0})(K7),K9=eG(0,64),K$=function(MV){var
+MW=eL(K9,MV);if(MW)return MW[1];throw caml_maybe_attach_backtrace([0,m4,"the kernel defines no "+MV],1)},K_=ab(function(MS){var
+MT=iy(KZ,iu,[0,caml_make_vect(6,0)]),MU=iy(KZ,MT,[0,caml_make_vect(9,0)]);eM(K9,MS[2],MU);return MT},K8);LL[15]=K$(nb);ae(function(MR){return iA(KZ,MR,LL[15])},K_);LL[1]=K$(nc);LL[2]=K$(nd);LL[3]=K$(ne);LL[4]=K$(nf);LL[5]=K$(ng);LL[6]=K$(nh);LL[7]=K$(ni);LL[8]=K$(nj);LL[9]=K$(nk);LL[10]=K$(nl);LL[11]=K$(nm);LL[12]=K$(nn);LL[13]=K$(no);LL[14]=K$(np);LL[16]=K$(nq);iA(KZ,iu,K$(nr));LL[17]=iy(KZ,K$(ns),[0,[0]]);LL[18]=iy(KZ,K$(nt),[0,[0]]);LL[20]=a5(num_256,function(MP){var
+MQ=[0,[0,iw(MP)]];return iy(KZ,LL[6],MQ)});var
+La=[0,[0,iJ(KZ,[0])]];LL[19]=iy(KZ,K$(nu),La);LL[21]=bd(function(MO){return iL(KZ,MO)},iS);jq(KZ,nv,LL[19]);ae(function(MM){var
+MN=K$(MM[2]);jq(KZ,MM[2],MN);return 0},K8);ae(function(MK){var
+ML=MK[1]===str_nil?iu:K$(MK[1]);jM(KZ,ML,MK[2],MK[3],MK[4],MK[5],MK[6]);return 0},K8);ae(function(Mr){var
+Ms=Mr[3],Mt=Mr[2],Mu=Mr[1];if(0===Ms[0])return 0;var
+Mv=Ms[4],Mw=Ms[3],Mx=Ms[2],My=K$(Ms[1]),Mz=Mx?iz(KZ,My):My;return ae(function(MA){var
+MB=MA[2],MC=MA[1];try{la(KZ,Mz,Mw,nx,MC);var
+MI=0;return MI}catch(MJ){var
+MD=caml_wrap_exception(MJ);if(MD[1]!==kz)throw caml_maybe_attach_backtrace(MD,0);var
+ME=MD[3],MF=MD[2],MG=jf(KZ,Mz),MH=na(Mt,MB+MF|0);throw caml_maybe_attach_backtrace([0,m4,caml_call4(dX(nw),Mu,MH,MG,ME)],1)}},Mv)},K7);var
+Lb=lp(KZ,LK);mM(Lb);ae(function(Mc){var
+Md=Mc[3],Me=Mc[2],Mf=Mc[1];if(0===Md[0]){var
+Mh=Md[1],Mg=Md[2];if(0===m6(Mh)){a:{try{var
+Mo=kw(Mh)}catch(Mq){var
+Mi=caml_wrap_exception(Mq);if(Mi[1]!==jP)throw caml_maybe_attach_backtrace(Mi,0);var
+Mj=0;break a}var
+Mp=Mo[5]?0:1,Mj=Mp}var
+Mk=1-Mj;if(!Mk)return Mk;var
+Ml=l$(Lb,0,0,Mh);if(0===Ml[0])return 0;var
+Mm=Ml[1],Mn=na(Me,Mg);throw caml_maybe_attach_backtrace([0,m4,caml_call3(dX(ny),Mf,Mn,Mm)],1)}}return 0},K7);var
+LJ=Lb}LJ[4]=function(LM){return LG[4]};return LJ}function
+te(HQ,HP,HO){var
+HS=HP,HR=HO;for(;;){var
+HT=r8(HS);if(typeof
+HR==="number")switch(HR){case
 0:var
-HV=[2,[0,0,0,0,0,0,rX(tg)]];return sE(HT,th,sG(HT,num_560,320.),HV)[1];case
+HU=[2,[0,0,0,0,0,0,rW(tf)]];return sD(HS,tg,sF(HS,num_560,320.),HU)[1];case
 1:var
-HW=[0,rX(ti)];return sE(HT,tj,sG(HT,num_380,num_200$0),HW)[1];case
+HV=[0,rW(th)];return sD(HS,ti,sF(HS,num_380,num_200$0),HV)[1];case
 2:var
-HX=[1,rX(HT[2][1])];return sE(HT,tk,sG(HT,num_380,num_150),HX)[1];case
-3:ma(HT[1],0,0,tl);return HT;case
+HW=[1,rW(HS[2][1])];return sD(HS,tj,sF(HS,num_380,num_150),HW)[1];case
+3:l$(HS[1],0,0,tk);return HS;case
 4:var
-GR=by(1048576);bH(GR,nA);var
-JJ=HU[8],GS=function(KY){nB(GR,O(KY));return ae(function(KZ){return nC(GR,KZ)},KY)};GS([0,JJ[1],[0,JJ[2],[0,JJ[3],[0,JJ[4],[0,JJ[5],[0,JJ[6],[0,JJ[7],[0,JJ[8],[0,JJ[9],[0,JJ[10],[0,JJ[11],[0,JJ[12],[0,JJ[13],[0,JJ[14],[0,JJ[15],[0,JJ[16],[0,JJ[17],[0,JJ[18],[0,JJ[19],0]]]]]]]]]]]]]]]]]]]);GS(bf(JJ[20]));GS(bf(JJ[21]));var
-GD=[0,0],GE=HU[4]-1|0;if(GE>=0){var
-GG=GE;for(;;){if(0!==caml_check_bound(HU[2],GG)[1+GG]){var
-GH=GD[1],GI=caml_check_bound(HU[2],GG)[1+GG];GD[1]=[0,[0,GG,caml_check_bound(HU[1],GG)[1+GG],GI],GH]}var
-GJ=GG-1|0;if(0===GG)break;GG=GJ}}var
-GF=GD[1];nB(GR,O(GF));ae(function(KN){var
-KO=KN[3],KP=KN[2];nB(GR,KN[1]);nC(GR,KP);if(typeof
-KO==="number")return bE(GR,45);switch(KO[0]){case
+GQ=by(1048576);bH(GQ,nz);var
+JI=HT[8],GR=function(KX){nA(GQ,O(KX));return ae(function(KY){return nB(GQ,KY)},KX)};GR([0,JI[1],[0,JI[2],[0,JI[3],[0,JI[4],[0,JI[5],[0,JI[6],[0,JI[7],[0,JI[8],[0,JI[9],[0,JI[10],[0,JI[11],[0,JI[12],[0,JI[13],[0,JI[14],[0,JI[15],[0,JI[16],[0,JI[17],[0,JI[18],[0,JI[19],0]]]]]]]]]]]]]]]]]]]);GR(bf(JI[20]));GR(bf(JI[21]));var
+GC=[0,0],GD=HT[4]-1|0;if(GD>=0){var
+GF=GD;for(;;){if(0!==caml_check_bound(HT[2],GF)[1+GF]){var
+GG=GC[1],GH=caml_check_bound(HT[2],GF)[1+GF];GC[1]=[0,[0,GF,caml_check_bound(HT[1],GF)[1+GF],GH],GG]}var
+GI=GF-1|0;if(0===GF)break;GF=GI}}var
+GE=GC[1];nA(GQ,O(GE));ae(function(KM){var
+KN=KM[3],KO=KM[2];nA(GQ,KM[1]);nB(GQ,KO);if(typeof
+KN==="number")return bE(GQ,45);switch(KN[0]){case
 0:var
-KQ=KO[1];bE(GR,80);return GS(bf(KQ));case
+KP=KN[1];bE(GQ,80);return GR(bf(KP));case
 1:var
-KR=KO[1];bE(GR,66);nB(GR,caml_ml_bytes_length(KR));return bI(GR,KR);case
+KQ=KN[1];bE(GQ,66);nA(GQ,caml_ml_bytes_length(KQ));return bI(GQ,KQ);case
 2:var
-KS=KO[1];bE(GR,70);var
-KU=0,KT=caml_int64_bits_of_float(KS);for(;;){bE(GR,E(caml_int64_to_int32(caml_int64_and(caml_int64_shift_right_unsigned(KT,8*KU|0),nK))));var
-KV=KU+1|0;if(7===KU)return 0;KU=KV}break;default:var
-KW=KO[2],KX=KO[1];bE(GR,77);GS(bf(KX));nB(GR,caml_ml_bytes_length(KW));return bI(GR,KW)}},GF);var
-GT=bz(GR),G7=o3(GT),G8=o5(0);G8.setItem(caml_js_from_string(str_elm_playground+str_TinySmalltalk80_abr$0),caml_js_from_string(G7));var
-JI=HU[5],HY=caml_call2(dX(tm),JI,caml_ml_string_length(GT));HT[2][1]=HT[2][1]+HY;return HT;default:var
-G9=o5(0),GW=oH(caml_js_to_string,G9.getItem(caml_js_from_string(str_elm_playground+str_TinySmalltalk80_abr$0)));if(GW){var
-JK=GW[1],GY=caml_ml_string_length(JK);a:if(0===(GY%4|0)){var
-GZ=by((GY/4|0)*3|0);b:{var
-G0=0;for(;;){if(GY<=G0)break b;let
-KL=G0;var
-G1=function(KM){return 61===caml_string_get(JK,KL+KM|0)?o4:aX(o2,caml_string_get(JK,KL+KM|0))},G2=G1(0),G3=G1(1),G4=G1(2),G5=G1(3);if(!G2)break;if(!G3)break;if(!G4)break;if(!G5)break;var
-G6=G2[1]<<18|G3[1]<<12|G4[1]<<6|G5[1];bE(GZ,E((G6>>>16|0)&num_255));if(61!==caml_string_get(JK,G0+2|0))bE(GZ,E((G6>>>8|0)&num_255));if(61!==caml_string_get(JK,G0+3|0))bE(GZ,E(G6&num_255));G0=G0+4|0}var
-JL=0;break a}var
-JL=[0,bz(GZ)]}else
+KR=KN[1];bE(GQ,70);var
+KT=0,KS=caml_int64_bits_of_float(KR);for(;;){bE(GQ,E(caml_int64_to_int32(caml_int64_and(caml_int64_shift_right_unsigned(KS,8*KT|0),nJ))));var
+KU=KT+1|0;if(7===KT)return 0;KT=KU}break;default:var
+KV=KN[2],KW=KN[1];bE(GQ,77);GR(bf(KW));nA(GQ,caml_ml_bytes_length(KV));return bI(GQ,KV)}},GE);var
+GS=bz(GQ),G6=o2(GS),G7=o4(0);G7.setItem(caml_js_from_string(str_elm_playground+str_TinySmalltalk80_abr$0),caml_js_from_string(G6));var
+JH=HT[5],HX=caml_call2(dX(tl),JH,caml_ml_string_length(GS));HS[2][1]=HS[2][1]+HX;return HS;default:var
+G8=o4(0),GV=oG(caml_js_to_string,G8.getItem(caml_js_from_string(str_elm_playground+str_TinySmalltalk80_abr$0)));if(GV){var
+JJ=GV[1],GX=caml_ml_string_length(JJ);a:if(0===(GX%4|0)){var
+GY=by((GX/4|0)*3|0);b:{var
+GZ=0;for(;;){if(GX<=GZ)break b;let
+KK=GZ;var
+G0=function(KL){return 61===caml_string_get(JJ,KK+KL|0)?o3:aX(o1,caml_string_get(JJ,KK+KL|0))},G1=G0(0),G2=G0(1),G3=G0(2),G4=G0(3);if(!G1)break;if(!G2)break;if(!G3)break;if(!G4)break;var
+G5=G1[1]<<18|G2[1]<<12|G3[1]<<6|G4[1];bE(GY,E((G5>>>16|0)&num_255));if(61!==caml_string_get(JJ,GZ+2|0))bE(GY,E((G5>>>8|0)&num_255));if(61!==caml_string_get(JJ,GZ+3|0))bE(GY,E(G5&num_255));GZ=GZ+4|0}var
+JK=0;break a}var
+JK=[0,bz(GY)]}else
 var
-JL=0;var
-G_=JL}else
+JK=0;var
+G9=JK}else
 var
-G_=0;if(G_){var
-HZ=te(HT[2],[0,G_[1]]);HT[2][1]=HT[2][1]+"Image loaded.\n";var
-H0=HT[3],H1=ao(function(KK){return 2<KK[5][0]?0:1})(H0);return[0,HZ,HT[2],H1,HT[4],HT[5],HT[6],0,HT[8],HT[9],HT[10],HT[11],HT[12],HT[13],HT[14],HT[15]]}HT[2][1]=HT[2][1]+"No image saved yet: the screen menu's save first.\n";return HT}a:switch(HS[0]){case
-0:return sV(HT,HS[1],HS[2],0);case
+G9=0;if(G9){var
+HY=td(HS[2],[0,G9[1]]);HS[2][1]=HS[2][1]+"Image loaded.\n";var
+HZ=HS[3],H0=ao(function(KJ){return 2<KJ[5][0]?0:1})(HZ);return[0,HY,HS[2],H0,HS[4],HS[5],HS[6],0,HS[8],HS[9],HS[10],HS[11],HS[12],HS[13],HS[14],HS[15]]}HS[2][1]=HS[2][1]+"No image saved yet: the screen menu's save first.\n";return HS}a:switch(HR[0]){case
+0:return sU(HS,HR[1],HR[2],0);case
 1:var
-H2=HS[2],H3=HS[1];return sV(HT,H3,H2,[0,H3,H2]);case
-2:return sV(HT,HS[1],HS[2],1);case
+H1=HR[2],H2=HR[1];return sU(HS,H2,H1,[0,H2,H1]);case
+2:return sU(HS,HR[1],HR[2],1);case
 3:var
-H4=HS[2],H5=HS[1],H6=sB(HT,H5);if(H6){var
-H7=H6[1],H8=H7[5];switch(H8[0]){case
+H3=HR[2],H4=HR[1],H5=sA(HS,H4);if(H5){var
+H6=H5[1],H7=H6[5];switch(H7[0]){case
 2:var
-H9=H8[1],Hj=r9(HT),Hk=H9[6],Hl=se(Hj,H9);b:if(Hl){var
-Hm=Hl[1];if(0===H9[4]&&0===H9[5])break b;var
-Hq=H9[4],Hr=Hq?Hq[1]:s5;try{var
-Hv=lb(Hj,Hm,Hr,0,Hk[1])}catch(KI){var
-Hs=caml_wrap_exception(KI);if(Hs[1]!==kA)throw caml_maybe_attach_backtrace(Hs,0);var
-Ht=Hs[3],Hu=Hs[2];return sT(HT,H5,0,function(KJ){return sU(KJ,Hu,Ht)})}lr(HT[1]);return s4(HT,H5,function(KH){return[0,KH[1],KH[2],KH[3],[0,Hr],[0,Hv],KH[6]]})}var
-Hn=ma(HT[1],0,0,Hk[1]);if(0!==Hn[0]){var
-Hp=Hn[1];return sT(HT,H5,0,function(KG){return sU(KG,caml_ml_string_length(KG[1]),Hp)})}var
-Ho=Hn[1];if(!iw(Ho)&&Ho!==0&&je(Hj,iA(Hj,Ho)))return s4(HT,H5,function(KD){var
-KE=KD[6],KF=[0,jg(Hj,Ho)];return[0,[0,jk(Hj,Ho)],KF,0,0,0,KE]});return HT;case
+H8=H7[1],Hi=r8(HS),Hj=H8[6],Hk=sd(Hi,H8);b:if(Hk){var
+Hl=Hk[1];if(0===H8[4]&&0===H8[5])break b;var
+Hp=H8[4],Hq=Hp?Hp[1]:s4;try{var
+Hu=la(Hi,Hl,Hq,0,Hj[1])}catch(KH){var
+Hr=caml_wrap_exception(KH);if(Hr[1]!==kz)throw caml_maybe_attach_backtrace(Hr,0);var
+Hs=Hr[3],Ht=Hr[2];return sS(HS,H4,0,function(KI){return sT(KI,Ht,Hs)})}lq(HS[1]);return s3(HS,H4,function(KG){return[0,KG[1],KG[2],KG[3],[0,Hq],[0,Hu],KG[6]]})}var
+Hm=l$(HS[1],0,0,Hj[1]);if(0!==Hm[0]){var
+Ho=Hm[1];return sS(HS,H4,0,function(KF){return sT(KF,caml_ml_string_length(KF[1]),Ho)})}var
+Hn=Hm[1];if(!iv(Hn)&&Hn!==0&&jd(Hi,iz(Hi,Hn)))return s3(HS,H4,function(KC){var
+KD=KC[6],KE=[0,jf(Hi,Hn)];return[0,[0,jj(Hi,Hn)],KE,0,0,0,KD]});return HS;case
 3:var
-H_=H8[1],H$=sy(H7,H4)[1],Ia=ma(HT[1],0,[0,H_[1]],H$),Ib=H_[2];if(0===Ia[0]&&Ib){var
-Ic=Ib[1],Id=Ia[1];if(0<Ic&&!iw(H_[1])){var
-Ie=iC(HU,H_[1]);b:if(typeof
-Ie!=="number"&&0===Ie[0]){var
-If=Ie[1];if((Ic-1|0)<If.length-1){var
-Ig=Ic-1|0;caml_check_bound(If,Ig)[1+Ig]=Id;break b}}return HT}}return HT;case
+H9=H7[1],H_=sx(H6,H3)[1],H$=l$(HS[1],0,[0,H9[1]],H_),Ia=H9[2];if(0===H$[0]&&Ia){var
+Ib=Ia[1],Ic=H$[1];if(0<Ib&&!iv(H9[1])){var
+Id=iB(HT,H9[1]);b:if(typeof
+Id!=="number"&&0===Id[0]){var
+Ie=Id[1];if((Ib-1|0)<Ie.length-1){var
+If=Ib-1|0;caml_check_bound(Ie,If)[1+If]=Ic;break b}}return HS}}return HS;case
 4:var
-Ih=H8[1];if(0===H4){var
-HA=r9(HT),HB=Ih[10],HC=V(Ih[3],Ih[4]);if(HB){var
-HD=HB[1];try{lb(HA,HD,tb,0,Ih[5][1])}catch(KB){var
-HE=caml_wrap_exception(KB);if(HE[1]!==kA)throw caml_maybe_attach_backtrace(HE,0);var
-HF=HE[3],HG=HE[2];return sT(HT,H5,0,function(KC){return sU(KC,HG,HF)})}lr(HT[1]);var
-HH=nX(HT[1],Ih[1]);return HH?(nW(HT[1],Ih[1],HH[1][3]),s8(HT,H5,1)):s8(HT,H5,1)}if(!HC)return HT;var
-HI=HC[1],HJ=lu(HT[1],HI[1]),HK=i0(HA,HJ);if(HK===0)return HT;try{var
-HO=Ih[5][1];lb(HA,HK,C(jJ(HA,HK,iH(HA,iZ(HA,HJ))),tc),0,HO)}catch(Kz){var
-HL=caml_wrap_exception(Kz);if(HL[1]!==kA)throw caml_maybe_attach_backtrace(HL,0);var
-HM=HL[3],HN=HL[2];return sT(HT,H5,0,function(KA){return sU(KA,HN,HM)})}lr(HT[1]);nW(HT[1],Ih[1],HI[1]);return s8(HT,H5,1)}break}}return HT;case
+Ig=H7[1];if(0===H3){var
+Hz=r8(HS),HA=Ig[10],HB=V(Ig[3],Ig[4]);if(HA){var
+HC=HA[1];try{la(Hz,HC,ta,0,Ig[5][1])}catch(KA){var
+HD=caml_wrap_exception(KA);if(HD[1]!==kz)throw caml_maybe_attach_backtrace(HD,0);var
+HE=HD[3],HF=HD[2];return sS(HS,H4,0,function(KB){return sT(KB,HF,HE)})}lq(HS[1]);var
+HG=nW(HS[1],Ig[1]);return HG?(nV(HS[1],Ig[1],HG[1][3]),s7(HS,H4,1)):s7(HS,H4,1)}if(!HB)return HS;var
+HH=HB[1],HI=lt(HS[1],HH[1]),HJ=iZ(Hz,HI);if(HJ===0)return HS;try{var
+HN=Ig[5][1];la(Hz,HJ,C(jI(Hz,HJ,iG(Hz,iY(Hz,HI))),tb),0,HN)}catch(Ky){var
+HK=caml_wrap_exception(Ky);if(HK[1]!==kz)throw caml_maybe_attach_backtrace(HK,0);var
+HL=HK[3],HM=HK[2];return sS(HS,H4,0,function(Kz){return sT(Kz,HM,HL)})}lq(HS[1]);nV(HS[1],Ig[1],HH[1]);return s7(HS,H4,1)}break}}return HS;case
 4:var
-Ij=HS[1],Ii=HS[2],Ik=sB(HT,Ij);if(Ik){var
-Il=Ik[1][5];if(2===Il[0]){var
-Im=Il[1];return sT(HT,Ij,Ii,function(Ky){return s1(HU,Im)})}}return HT;case
+Ii=HR[1],Ih=HR[2],Ij=sA(HS,Ii);if(Ij){var
+Ik=Ij[1][5];if(2===Ik[0]){var
+Il=Ik[1];return sS(HS,Ii,Ih,function(Kx){return s0(HT,Il)})}}return HS;case
 5:var
-In=HS[2],Io=sB(HT,HS[1]);if(!Io)return HT;var
-Ip=HT[15],Iq=HT[14],Ir=rZ(sy(Io[1],In));return[0,HT[1],HT[2],HT[3],HT[4],HT[5],HT[6],HT[7],HT[8],HT[9],HT[10],HT[11],HT[12],Ir,Iq,Ip];case
+Im=HR[2],In=sA(HS,HR[1]);if(!In)return HS;var
+Io=HS[15],Ip=HS[14],Iq=rY(sx(In[1],Im));return[0,HS[1],HS[2],HS[3],HS[4],HS[5],HS[6],HS[7],HS[8],HS[9],HS[10],HS[11],HS[12],Iq,Ip,Io];case
 6:var
-Is=HS[2],It=HS[1],Iu=sB(HT,It);if(!Iu)return HT;var
-Iv=sy(Iu[1],Is),Iw=sT(HT,It,Is,function(Kx){return r0(Kx,tn)}),Ix=Iw[15],Iy=Iw[14],Iz=rZ(Iv);return[0,Iw[1],Iw[2],Iw[3],Iw[4],Iw[5],Iw[6],Iw[7],Iw[8],Iw[9],Iw[10],Iw[11],Iw[12],Iz,Iy,Ix];case
-7:return sT(HT,HS[1],HS[2],function(Kw){return r0(Kw,HT[13])});case
+Ir=HR[2],Is=HR[1],It=sA(HS,Is);if(!It)return HS;var
+Iu=sx(It[1],Ir),Iv=sS(HS,Is,Ir,function(Kw){return rZ(Kw,tm)}),Iw=Iv[15],Ix=Iv[14],Iy=rY(Iu);return[0,Iv[1],Iv[2],Iv[3],Iv[4],Iv[5],Iv[6],Iv[7],Iv[8],Iv[9],Iv[10],Iv[11],Iv[12],Iy,Ix,Iw];case
+7:return sS(HS,HR[1],HR[2],function(Kv){return rZ(Kv,HS[13])});case
 8:var
-IA=HS[1],IB=sB(HT,IA);b:c:if(IB){var
-IC=IB[1][5];switch(IC[0]){case
-4:l5(HT[1],IC[1][1]);break;case
-5:l5(HT[1],IC[1][1]);break;default:break c}break b}return sF(HT,IA);case
-9:return sC(HT,HS[1],function(Kv){return[0,Kv[1],Kv[2],Kv[3],1-Kv[4],Kv[5],Kv[6]]});case
+Iz=HR[1],IA=sA(HS,Iz);b:c:if(IA){var
+IB=IA[1][5];switch(IB[0]){case
+4:l4(HS[1],IB[1][1]);break;case
+5:l4(HS[1],IB[1][1]);break;default:break c}break b}return sE(HS,Iz);case
+9:return sB(HS,HR[1],function(Ku){return[0,Ku[1],Ku[2],Ku[3],1-Ku[4],Ku[5],Ku[6]]});case
 10:var
-ID=HS[1],IE=sB(HT,ID);if(IE){var
-IF=IE[1][5];switch(IF[0]){case
+IC=HR[1],ID=sA(HS,IC);if(ID){var
+IE=ID[1][5];switch(IE[0]){case
 4:var
-IG=IF[1];l3(IG[1]);var
-IH=sF(HT,ID),II=IH[15],IJ=IH[14],IK=IH[13],IL=IH[12],IM=IH[11],IN=IH[10],IO=IH[9],IP=IH[8],IQ=o(HT[7],[0,[0,IG[1],IG[2]],0]);return[0,IH[1],IH[2],IH[3],IH[4],IH[5],IH[6],IQ,IP,IO,IN,IM,IL,IK,IJ,II];case
+IF=IE[1];l2(IF[1]);var
+IG=sE(HS,IC),IH=IG[15],II=IG[14],IJ=IG[13],IK=IG[12],IL=IG[11],IM=IG[10],IN=IG[9],IO=IG[8],IP=o(HS[7],[0,[0,IF[1],IF[2]],0]);return[0,IG[1],IG[2],IG[3],IG[4],IG[5],IG[6],IP,IO,IN,IM,IL,IK,IJ,II,IH];case
 5:var
-IR=IF[1];l3(IR[1]);var
-IS=sF(HT,ID),IT=IS[15],IU=IS[14],IV=IS[13],IW=IS[12],IX=IS[11],IY=IS[10],IZ=IS[9],I0=IS[8],I1=o(HT[7],[0,[0,IR[1],IR[2]],0]);return[0,IS[1],IS[2],IS[3],IS[4],IS[5],IS[6],I1,I0,IZ,IY,IX,IW,IV,IU,IT]}}return HT;case
+IQ=IE[1];l2(IQ[1]);var
+IR=sE(HS,IC),IS=IR[15],IT=IR[14],IU=IR[13],IV=IR[12],IW=IR[11],IX=IR[10],IY=IR[9],IZ=IR[8],I0=o(HS[7],[0,[0,IQ[1],IQ[2]],0]);return[0,IR[1],IR[2],IR[3],IR[4],IR[5],IR[6],I0,IZ,IY,IX,IW,IV,IU,IT,IS]}}return HS;case
 11:var
-I2=HS[1],I3=sB(HT,I2);if(I3){var
-I4=I3[1],I5=I4[5];if(5===I5[0]){var
-I6=I5[1],I8=I6[1],I9=I4[3],I_=I4[2],I7=I6[2],I$=sF(HT,I2),G$=sK(I$,I8,I9===str_Step?1:0),Ha=rX(sN),Hb=rX(sO),Hc=[0,I8,I7,G$,0,rX(sP),0,Hb,0,Ha,0],Hd=Hc[10],He=Hc[9],Hf=Hc[8],Hg=Hc[7],Hh=Hc[6],Hi=sL(Hc);return sE(I$,I9,[num_254,I_[1],I_[2],num_560,num_420],[4,[0,Hc[1],Hc[2],Hc[3],Hc[4],Hi,Hh,Hg,Hf,He,Hd]])[1]}}return HT;case
+I1=HR[1],I2=sA(HS,I1);if(I2){var
+I3=I2[1],I4=I3[5];if(5===I4[0]){var
+I5=I4[1],I7=I5[1],I8=I3[3],I9=I3[2],I6=I5[2],I_=sE(HS,I1),G_=sJ(I_,I7,I8===str_Step?1:0),G$=rW(sM),Ha=rW(sN),Hb=[0,I7,I6,G_,0,rW(sO),0,Ha,0,G$,0],Hc=Hb[10],Hd=Hb[9],He=Hb[8],Hf=Hb[7],Hg=Hb[6],Hh=sK(Hb);return sD(I_,I8,[num_254,I9[1],I9[2],num_560,num_420],[4,[0,Hb[1],Hb[2],Hb[3],Hb[4],Hh,Hg,Hf,He,Hd,Hc]])[1]}}return HS;case
 12:var
-Ja=HS[1];return s7(HT,Ja,function(Kt){var
-Ku=V(Kt[3],Kt[4]);return Ku?(nW(HT[1],Kt[1],Ku[1][1]),s8(HT,Ja,1)):HT});case
+I$=HR[1];return s6(HS,I$,function(Ks){var
+Kt=V(Ks[3],Ks[4]);return Kt?(nV(HS[1],Ks[1],Kt[1][1]),s7(HS,I$,1)):HS});case
 13:var
-Jb=HS[1];return s7(HT,Jb,function(Ko){var
-Kp=V(Ko[3],Ko[4]);if(!Kp)return HT;var
-Kq=Kp[1][1],Kr=Ko[1],Ks=HT[1];if(1-nO(Ks,Kq))nT(Ks,Kr,nV(Ks,Kr,Kq));return s8(HT,Jb,1)});case
+Ja=HR[1];return s6(HS,Ja,function(Kn){var
+Ko=V(Kn[3],Kn[4]);if(!Ko)return HS;var
+Kp=Ko[1][1],Kq=Kn[1],Kr=HS[1];if(1-nN(Kr,Kp))nS(Kr,Kq,nU(Kr,Kq,Kp));return s7(HS,Ja,1)});case
 14:var
-Jc=HS[1];return s7(HT,Jc,function(Ke){var
-Kf=V(Ke[3],Ke[4]);if(!Kf)return HT;var
-Kg=Kf[1][1],Kh=Ke[1],Ki=HT[1];if(1-nO(Ki,Kg)){var
-Kd=nV(Ki,Kh,Kg),Kj=Ki[1];nT(Ki,Kh,function(Kk){var
-Kn=Kk[7],Kl=Kn!==Kg?1:0,Km=Kl?iE(Kj,Kn,li)===Kg?1:0:Kl;return Km?Km:Kd(Kk)})}return s8(HT,Jc,1)});case
+Jb=HR[1];return s6(HS,Jb,function(Kd){var
+Ke=V(Kd[3],Kd[4]);if(!Ke)return HS;var
+Kf=Ke[1][1],Kg=Kd[1],Kh=HS[1];if(1-nN(Kh,Kf)){var
+Kc=nU(Kh,Kg,Kf),Ki=Kh[1];nS(Kh,Kg,function(Kj){var
+Km=Kj[7],Kk=Km!==Kf?1:0,Kl=Kk?iD(Ki,Km,lh)===Kf?1:0:Kk;return Kl?Kl:Kc(Kj)})}return s7(HS,Jb,1)});case
 15:var
-Jd=HS[1],Je=sB(HT,Jd);if(Je){var
-Jf=Je[1][5];switch(Jf[0]){case
+Jc=HR[1],Jd=sA(HS,Jc);if(Jd){var
+Je=Jd[1][5];switch(Je[0]){case
 4:var
-Jg=Jf[1],Jh=nX(HT[1],Jg[1]);if(!Jh)return HT;var
-Ji=Jh[1],Jj=Ji[2],Jk=Ji[1];if(0===ie(Jj))var
-GU=Jj;else if(a2(Jj,58))var
-GV=a4(58,Jj),GU=aR(nY,ad(function(Kc,Kb){return Kb+": arg"+str$9+(Kc+1|0)},ao(function(Ka){return str$9!==Ka?1:0})(GV)));else
+Jf=Je[1],Jg=nW(HS[1],Jf[1]);if(!Jg)return HS;var
+Jh=Jg[1],Ji=Jh[2],Jj=Jh[1];if(0===id(Ji))var
+GT=Ji;else if(a2(Ji,58))var
+GU=a4(58,Ji),GT=aR(nX,ad(function(Kb,Ka){return Ka+": arg"+str$9+(Kb+1|0)},ao(function(J$){return str$9!==J$?1:0})(GU)));else
 var
-GU=Jj+" anObject";var
-Jl=rX(GU+'\n\t"A method for '+Jj+', to write here."\n\t^self'),Jm=[0,Jl[1],caml_ml_string_length(Jl[1]),Jl[3],Jl[4]],Jn=sC(HT,Jd,function(J$){return[0,J$[1],J$[2],J$[3],J$[4],[4,[0,Jg[1],Jg[2],Jg[3],Jg[4],Jm,Jg[6],Jg[7],Jg[8],Jg[9],[0,Jk]]],J$[6]]});return[0,Jn[1],Jn[2],Jn[3],[0,[0,Jd,0]],Jn[5],Jn[6],Jn[7],Jn[8],Jn[9],Jn[10],Jn[11],Jn[12],Jn[13],Jn[14],Jn[15]];case
+GT=Ji+" anObject";var
+Jk=rW(GT+'\n\t"A method for '+Ji+', to write here."\n\t^self'),Jl=[0,Jk[1],caml_ml_string_length(Jk[1]),Jk[3],Jk[4]],Jm=sB(HS,Jc,function(J_){return[0,J_[1],J_[2],J_[3],J_[4],[4,[0,Jf[1],Jf[2],Jf[3],Jf[4],Jl,Jf[6],Jf[7],Jf[8],Jf[9],[0,Jj]]],J_[6]]});return[0,Jm[1],Jm[2],Jm[3],[0,[0,Jc,0]],Jm[5],Jm[6],Jm[7],Jm[8],Jm[9],Jm[10],Jm[11],Jm[12],Jm[13],Jm[14],Jm[15]];case
 5:var
-Jo=tf(HR,HT,[11,Jd]);HT=Jo;HS=[15,Jo[8]-1|0];break a}}return HT;case
-16:return s4(HT,HS[1],function(J_){return[0,J_[1],J_[2],J_[3],0,0,J_[6]]});case
+Jn=te(HQ,HS,[11,Jc]);HS=Jn;HR=[15,Jn[8]-1|0];break a}}return HS;case
+16:return s3(HS,HR[1],function(J9){return[0,J9[1],J9[2],J9[3],0,0,J9[6]]});case
 17:var
-Jp=HS[1],Jq=sB(HT,Jp);if(Jq){var
-Jr=Jq[1][5];if(2===Jr[0]){var
-Js=se(HU,Jr[1]);if(!Js)return HT;var
-Jt=Js[1];return sT(HT,Jp,0,function(J8){var
-J7=iE(HU,jf(HU,Jt),i$),J9=J7===0?jm:iH(HU,J7);return rX(str$11+J9+str$11)})}}return HT;case
+Jo=HR[1],Jp=sA(HS,Jo);if(Jp){var
+Jq=Jp[1][5];if(2===Jq[0]){var
+Jr=sd(HT,Jq[1]);if(!Jr)return HS;var
+Js=Jr[1];return sS(HS,Jo,0,function(J7){var
+J6=iD(HT,je(HT,Js),i_),J8=J6===0?jl:iG(HT,J6);return rW(str$11+J8+str$11)})}}return HS;case
 18:var
-Ju=sB(HT,HS[1]);if(Ju){var
-Jv=Ju[1][5];if(2===Jv[0]){var
-Jw=Jv[1][2],Jx=Jw?sd(HU,Jw[1]):0;if(!Jx)return HT;var
-Jy=Jx[1],JM=jg(HU,Jy)+".st",Hw=function(JX,JW){return ab(function(J0){var
-J1=jI(HU,JX,J0),J2=aq(function(J5){return D(function(J6){return i1(HU,J6)},jC(HU,JX,iM(HU,J5)))})(J1),J3=jg(HU,jf(HU,Jy)),JY=by(num_1024),JZ=JW?mZ:m3;bH(JY,caml_call3(dX(m0),J3,JZ,J0));ae(function(J4){bH(JY,mX(J4));return bH(JY,m1)},J2);bH(JY,m2);return bz(JY)},jH(HU,JX))},Hx=Hw(iA(HU,Jy),1),Hy=o(Hw(Jy,0),Hx),Hz=aR(s6,[0,mX(jt(HU,Jy))+str$16,Hy]),GX=oX.createElement(str_a);oT(GX,o7,"data:application/octet-stream;base64,"+o3(Hz));oT(GX,o8,JM);GX.click();HT[2][1]=HT[2][1]+"Filed out "+JM+str$16;return HT}}return HT;case
+Jt=sA(HS,HR[1]);if(Jt){var
+Ju=Jt[1][5];if(2===Ju[0]){var
+Jv=Ju[1][2],Jw=Jv?sc(HT,Jv[1]):0;if(!Jw)return HS;var
+Jx=Jw[1],JL=jf(HT,Jx)+".st",Hv=function(JW,JV){return ab(function(JZ){var
+J0=jH(HT,JW,JZ),J1=aq(function(J4){return D(function(J5){return i0(HT,J5)},jB(HT,JW,iL(HT,J4)))})(J0),J2=jf(HT,je(HT,Jx)),JX=by(num_1024),JY=JV?mY:m2;bH(JX,caml_call3(dX(mZ),J2,JY,JZ));ae(function(J3){bH(JX,mW(J3));return bH(JX,m0)},J1);bH(JX,m1);return bz(JX)},jG(HT,JW))},Hw=Hv(iz(HT,Jx),1),Hx=o(Hv(Jx,0),Hw),Hy=aR(s5,[0,mW(js(HT,Jx))+str$16,Hx]),GW=oW.createElement(str_a);oS(GW,o6,"data:application/octet-stream;base64,"+o2(Hy));oS(GW,o7,JL);GW.click();HS[2][1]=HS[2][1]+"Filed out "+JL+str$16;return HS}}return HS;case
 19:var
-Jz=HS[1],JA=sB(HT,Jz);if(JA){var
-JB=JA[1][5];if(2===JB[0]){var
-JC=JB[1],JD=se(HU,JC),JE=JC[5];if(JD&&JE){var
-JF=JD[1],JG=iM(HU,JE[1]),GK=iE(HU,JF,i4),GL=jB(HU,JF),GM=GL[1],GN=bf(GL[2]),GO=as(bf(GM),GN),GP=ao(function(JV){return JV[1]!==JG?1:0})(GO);iF(HU,GK,0,iK(HU,bg(ab(function(JU){return JU[1]},GP))));iF(HU,GK,1,iK(HU,bg(ab(function(JT){return JT[2]},GP))));var
-GQ=iH(HU,JG);jG(HU,JF,ab(function(JP){var
-JQ=JP[2],JR=JP[1];return[0,JR,ao(function(JS){return GQ!==JS?1:0})(JQ)]},jF(HU,JF)));lr(HT[1]);return s4(HT,Jz,function(JO){return[0,JO[1],JO[2],JO[3],JO[4],0,JO[6]]})}return HT}}return HT;default:var
-JH=HS[2];return s4(HT,HS[1],function(JN){return[0,JN[1],JN[2],1-JH,0,0,JN[6]]})}}}function
-ts(GC){return[num_254,GC[2][1],GC[2][2]-num_15,caml_ml_string_length(GC[3])*7.+num_12,rT]}function
-tt(Gz,Gy){return ag(function(GB,GA){if(rU(ts(GA),Gy))return[0,[0,GA,1]];if(!GA[4]&&rU(GA[2],Gy))return[0,[0,GA,0]];return GB},0,Gz[3])}function
-tu(Gv,Gu,Gt){return am(function(Gw){var
-Gx=2===Gw[0]?Gw[1]:Gw[2];return rU(Gx,Gt)},si(Gv,Gu))}function
-tv(Gp,Go,Gn){var
-Gq=Gn[1],Gr=i(0,(Gn[2]-Gp[2]-2.)/num_13|0),Gs=r4(Go[1],Go[4]+Gr|0);return Gs?r6(Go[1],Gs[1],caml_round_float((Gq-Gp[1]-3.)/7.)|0):caml_ml_string_length(Go[1])}function
-tw(Ge){var
-Gf=Ge[1],Gg=Gf[2],Gh=Gf[1],Gi=ag(function(Gm,Gl){return i(Gm,caml_ml_string_length(Gl[1]))},0,Ge[2])*7.+num_16,Gj=O(Ge[2])*num_13+6.,Gk=bj(Gg,num_600-Gj);return[num_254,bj(Gh,num_800-Gi),Gk,Gi,Gj]}var
-uc=[0,r$,0,ub,0],sS=num_100000;function
-tR(E7,E6,E5,E4){var
-E8=E6[5];if(E8){var
-E9=E8[1],E_=[0,E6[1],E6[2],E6[3],E6[4],0,E6[6],E6[7],E6[8],E6[9],E6[10],E6[11],E6[12],E6[13],E6[14],E6[15]],E3=tw(E9),E$=rU(E3,E4)?D(function(Gd){return Gd[2]},V(E9[2],(E4[2]-E3[2]-3.)/num_13|0)):0;return E$?tf(E7,E_,E$[1]):E_}var
-Fa=tt(E6,E4);if(!Fa)return E6;var
-Fb=Fa[1],Fc=Fb[1];if(Fb[2]){var
-Fd=sD(E6,Fc[1]);return[0,Fd[1],Fd[2],Fd[3],Fd[4],Fd[5],[0,[0,Fc[1],E4[1]-Fc[2][1],E4[2]-Fc[2][2]]],Fd[7],Fd[8],Fd[9],Fd[10],Fd[11],Fd[12],Fd[13],Fd[14],Fd[15]]}var
-Fe=sD(E6,Fc[1]),Ff=tu(Fe,Fc,E4);if(!Ff)return Fe;var
-Fg=Ff[1];switch(Fg[0]){case
+Jy=HR[1],Jz=sA(HS,Jy);if(Jz){var
+JA=Jz[1][5];if(2===JA[0]){var
+JB=JA[1],JC=sd(HT,JB),JD=JB[5];if(JC&&JD){var
+JE=JC[1],JF=iL(HT,JD[1]),GJ=iD(HT,JE,i3),GK=jA(HT,JE),GL=GK[1],GM=bf(GK[2]),GN=as(bf(GL),GM),GO=ao(function(JU){return JU[1]!==JF?1:0})(GN);iE(HT,GJ,0,iJ(HT,bg(ab(function(JT){return JT[1]},GO))));iE(HT,GJ,1,iJ(HT,bg(ab(function(JS){return JS[2]},GO))));var
+GP=iG(HT,JF);jF(HT,JE,ab(function(JO){var
+JP=JO[2],JQ=JO[1];return[0,JQ,ao(function(JR){return GP!==JR?1:0})(JP)]},jE(HT,JE)));lq(HS[1]);return s3(HS,Jy,function(JN){return[0,JN[1],JN[2],JN[3],JN[4],0,JN[6]]})}return HS}}return HS;default:var
+JG=HR[2];return s3(HS,HR[1],function(JM){return[0,JM[1],JM[2],1-JG,0,0,JM[6]]})}}}function
+tr(GB){return[num_254,GB[2][1],GB[2][2]-num_15,caml_ml_string_length(GB[3])*7.+num_12,rS]}function
+ts(Gy,Gx){return ag(function(GA,Gz){if(rT(tr(Gz),Gx))return[0,[0,Gz,1]];if(!Gz[4]&&rT(Gz[2],Gx))return[0,[0,Gz,0]];return GA},0,Gy[3])}function
+tt(Gu,Gt,Gs){return am(function(Gv){var
+Gw=2===Gv[0]?Gv[1]:Gv[2];return rT(Gw,Gs)},sh(Gu,Gt))}function
+tu(Go,Gn,Gm){var
+Gp=Gm[1],Gq=i(0,(Gm[2]-Go[2]-2.)/num_13|0),Gr=r3(Gn[1],Gn[4]+Gq|0);return Gr?r5(Gn[1],Gr[1],caml_round_float((Gp-Go[1]-3.)/7.)|0):caml_ml_string_length(Gn[1])}function
+tv(Gd){var
+Ge=Gd[1],Gf=Ge[2],Gg=Ge[1],Gh=ag(function(Gl,Gk){return i(Gl,caml_ml_string_length(Gk[1]))},0,Gd[2])*7.+num_16,Gi=O(Gd[2])*num_13+6.,Gj=bj(Gf,num_600-Gi);return[num_254,bj(Gg,num_800-Gh),Gj,Gh,Gi]}var
+ub=[0,r_,0,ua,0],sR=num_100000;function
+tQ(E6,E5,E4,E3){var
+E7=E5[5];if(E7){var
+E8=E7[1],E9=[0,E5[1],E5[2],E5[3],E5[4],0,E5[6],E5[7],E5[8],E5[9],E5[10],E5[11],E5[12],E5[13],E5[14],E5[15]],E2=tv(E8),E_=rT(E2,E3)?D(function(Gc){return Gc[2]},V(E8[2],(E3[2]-E2[2]-3.)/num_13|0)):0;return E_?te(E6,E9,E_[1]):E9}var
+E$=ts(E5,E3);if(!E$)return E5;var
+Fa=E$[1],Fb=Fa[1];if(Fa[2]){var
+Fc=sC(E5,Fb[1]);return[0,Fc[1],Fc[2],Fc[3],Fc[4],Fc[5],[0,[0,Fb[1],E3[1]-Fb[2][1],E3[2]-Fb[2][2]]],Fc[7],Fc[8],Fc[9],Fc[10],Fc[11],Fc[12],Fc[13],Fc[14],Fc[15]]}var
+Fd=sC(E5,Fb[1]),Fe=tt(Fd,Fb,E3);if(!Fe)return Fd;var
+Ff=Fe[1];switch(Ff[0]){case
 0:var
-Fi=Fg[1],Fh=Fg[2],Fj=sy(Fc,Fi),Fk=tv(Fh,Fj,E4);if(E5[1][9]){var
-EE=r1(Fj[1],Fk),EF=r2(Fj[1],Fk);a:{if(Fk!==EE&&Fk!==EF){var
-EG=[0,Fk],EH=[0,Fk];for(;;){if(0>=EG[1])break;if(!r7(caml_string_get(Fj[1],EG[1]-1|0)))break;EG[1]--}for(;;){if(EH[1]>=caml_ml_string_length(Fj[1]))break;if(!r7(caml_string_get(Fj[1],EH[1])))break;EH[1]++}var
-Fl=[0,Fj[1],EH[1],EG[1],Fj[4]];break a}var
-Fl=[0,Fj[1],EF,EE,Fj[4]]}var
-Fm=Fl}else
+Fh=Ff[1],Fg=Ff[2],Fi=sx(Fb,Fh),Fj=tu(Fg,Fi,E3);if(E4[1][9]){var
+ED=r0(Fi[1],Fj),EE=r1(Fi[1],Fj);a:{if(Fj!==ED&&Fj!==EE){var
+EF=[0,Fj],EG=[0,Fj];for(;;){if(0>=EF[1])break;if(!r6(caml_string_get(Fi[1],EF[1]-1|0)))break;EF[1]--}for(;;){if(EG[1]>=caml_ml_string_length(Fi[1]))break;if(!r6(caml_string_get(Fi[1],EG[1])))break;EG[1]++}var
+Fk=[0,Fi[1],EG[1],EF[1],Fi[4]];break a}var
+Fk=[0,Fi[1],EE,ED,Fi[4]]}var
+Fl=Fk}else
 var
-Fm=[0,Fj[1],Fk,Fk,Fj[4]];var
-Fn=sT(Fe,Fc[1],Fi,function(Gc){return Fm}),Fo=Fn[15],Fp=Fn[14],Fq=Fn[13],Fr=Fn[12],Fs=Fn[11],Ft=Fn[10],Fu=Fn[9],Fv=Fn[8],Fw=Fn[7],Fx=E5[1][9]?0:[0,[1,Fc[1],Fi]];return[0,Fn[1],Fn[2],Fn[3],[0,[0,Fc[1],Fi]],Fn[5],Fx,Fw,Fv,Fu,Ft,Fs,Fr,Fq,Fp,Fo];case
+Fl=[0,Fi[1],Fj,Fj,Fi[4]];var
+Fm=sS(Fd,Fb[1],Fh,function(Gb){return Fl}),Fn=Fm[15],Fo=Fm[14],Fp=Fm[13],Fq=Fm[12],Fr=Fm[11],Fs=Fm[10],Ft=Fm[9],Fu=Fm[8],Fv=Fm[7],Fw=E4[1][9]?0:[0,[1,Fb[1],Fh]];return[0,Fm[1],Fm[2],Fm[3],[0,[0,Fb[1],Fh]],Fm[5],Fw,Fv,Fu,Ft,Fs,Fr,Fq,Fp,Fo,Fn];case
 1:var
-FB=Fg[1],Fy=Fg[4],Fz=Fg[3],FA=Fg[2],FC=sA(Fc,FB),FD=((E4[2]-FA[2]-2.)/num_13|0)+FC|0;a:{if(0<=FD&&FD<O(Fz)){var
-FE=[0,FD];break a}var
-FE=0}var
-FF=caml_equal(FE,Fy)?0:FE,EI=r9(Fe),EJ=Fc[5];switch(EJ[0]){case
+FA=Ff[1],Fx=Ff[4],Fy=Ff[3],Fz=Ff[2],FB=sz(Fb,FA),FC=((E3[2]-Fz[2]-2.)/num_13|0)+FB|0;a:{if(0<=FC&&FC<O(Fy)){var
+FD=[0,FC];break a}var
+FD=0}var
+FE=caml_equal(FD,Fx)?0:FD,EH=r8(Fd),EI=Fb[5];switch(EI[0]){case
 2:var
-EK=EJ[1],EL=ar(function(Ga){if(1===Ga[0]){var
-Gb=Ga[3];if(Ga[1]===FB)return[0,Gb,0]}return 0},si(Fe,Fc));a:{if(EL&&!EL[2]&&FF){var
-EM=V(EL[1],FF[1]);break a}var
-EM=0}if(2<FB>>>0)return s4(Fe,Fc[1],function(F$){return[0,EK[1],EK[2],EK[3],EK[4],EM,EK[6]]});switch(FB){case
-0:return s4(Fe,Fc[1],function(F_){return[0,EM,0,EK[3],0,0,EK[6]]});case
-1:return s4(Fe,Fc[1],function(F9){return[0,EK[1],EM,EK[3],0,0,EK[6]]});default:return s4(Fe,Fc[1],function(F8){return[0,EK[1],EK[2],EK[3],EM,0,EK[6]]})}case
+EJ=EI[1],EK=ar(function(F$){if(1===F$[0]){var
+Ga=F$[3];if(F$[1]===FA)return[0,Ga,0]}return 0},sh(Fd,Fb));a:{if(EK&&!EK[2]&&FE){var
+EL=V(EK[1],FE[1]);break a}var
+EL=0}if(2<FA>>>0)return s3(Fd,Fb[1],function(F_){return[0,EJ[1],EJ[2],EJ[3],EJ[4],EL,EJ[6]]});switch(FA){case
+0:return s3(Fd,Fb[1],function(F9){return[0,EL,0,EJ[3],0,0,EJ[6]]});case
+1:return s3(Fd,Fb[1],function(F8){return[0,EJ[1],EL,EJ[3],0,0,EJ[6]]});default:return s3(Fd,Fb[1],function(F7){return[0,EJ[1],EJ[2],EJ[3],EL,0,EJ[6]]})}case
 3:var
-EN=EJ[1],EO=sg(Fe,EN[1]);if(FF)var
-EP=V(EO,FF[1]),EQ=EP?rX(sH(Fe,EP[1][2])):rX(to),ER=EQ;else
+EM=EI[1],EN=sf(Fd,EM[1]);if(FE)var
+EO=V(EN,FE[1]),EP=EO?rW(sG(Fd,EO[1][2])):rW(tn),EQ=EP;else
 var
-ER=rX(tp);return sC(Fe,Fc[1],function(F7){return[0,F7[1],F7[2],F7[3],F7[4],[3,[0,EN[1],FF,ER]],F7[6]]});case
+EQ=rW(to);return sB(Fd,Fb[1],function(F6){return[0,F6[1],F6[2],F6[3],F6[4],[3,[0,EM[1],FE,EQ]],F6[6]]});case
 4:var
-ES=EJ[1];if(2>=FB>>>0)switch(FB){case
-0:if(FF){var
-ET=FF[1];return sC(Fe,Fc[1],function(FU){var
-FV=FU[5];if(4!==FV[0])return FU;var
-FW=FV[1],FX=rX(s$),FY=rX(ta),FZ=[0,FW[1],FW[2],FW[3],ET,FW[5],0,FY,0,FX,0],F0=FU[6],F1=FZ[10],F2=FZ[9],F3=FZ[8],F4=FZ[7],F5=FZ[6],F6=sL(FZ);return[0,FU[1],FU[2],FU[3],FU[4],[4,[0,FZ[1],FZ[2],FZ[3],FZ[4],F6,F5,F4,F3,F2,F1]],F0]})}break;case
+ER=EI[1];if(2>=FA>>>0)switch(FA){case
+0:if(FE){var
+ES=FE[1];return sB(Fd,Fb[1],function(FT){var
+FU=FT[5];if(4!==FU[0])return FT;var
+FV=FU[1],FW=rW(s_),FX=rW(s$),FY=[0,FV[1],FV[2],FV[3],ES,FV[5],0,FX,0,FW,0],FZ=FT[6],F0=FY[10],F1=FY[9],F2=FY[8],F3=FY[7],F4=FY[6],F5=sK(FY);return[0,FT[1],FT[2],FT[3],FT[4],[4,[0,FY[1],FY[2],FY[3],FY[4],F5,F4,F3,F2,F1,F0]],FZ]})}break;case
 1:var
-EU=V(ES[3],ES[4]),EV=EU?EU[1][1]:iv,EW=EV===0?iv:iE(EI,lt(Fe[1],EV),lm);if(FF)var
-EX=FF[1],EY=D(function(FT){return FT[2]},V(sg(Fe,EW),EX));else
+ET=V(ER[3],ER[4]),EU=ET?ET[1][1]:iu,EV=EU===0?iu:iD(EH,ls(Fd[1],EU),ll);if(FE)var
+EW=FE[1],EX=D(function(FS){return FS[2]},V(sf(Fd,EV),EW));else
 var
-EY=0;return sC(Fe,Fc[1],function(FM){var
-FN=FM[6],FO=ES[10],FP=ES[9],FQ=ES[8],FR=EY?sH(Fe,EY[1]):tq,FS=rX(FR);return[0,FM[1],FM[2],FM[3],FM[4],[4,[0,ES[1],ES[2],ES[3],ES[4],ES[5],FF,FS,FQ,FP,FO]],FN]});default:var
-EZ=V(ES[3],ES[4]),E0=EZ?EZ[1][1]:iv;a:{if(FF){var
-E1=FF[1];if(E0!==0){var
-E2=D(function(FL){return FL[2]},V(nP(Fe[1],E0),E1));break a}}var
-E2=0}return sC(Fe,Fc[1],function(FG){var
-FH=FG[6],FI=ES[10],FJ=E2?sH(Fe,E2[1]):tr,FK=rX(FJ);return[0,FG[1],FG[2],FG[3],FG[4],[4,[0,ES[1],ES[2],ES[3],ES[4],ES[5],ES[6],ES[7],FF,FK,FI]],FH]})}return Fe;default:return Fe}default:return tf(E7,Fe,Fg[4])}}var
-ue=[0,te(uc,0),uc,0,0,0,0,0,1,h1,0,0,0,ud,0,0],h8=h7(num_150$0),h9=h7(num_150$0);function
-um(EC,EB,EA){var
-ED=pa(EB,EA[3]*EC,EA[4]*EC);return pd((EA[1]+EA[3]/2.-num_400)*EC,(num_300-EA[2]-EA[4]/2.)*EC,ED)}function
-un(Ew,Ev){var
-Ex=[0,um(Ew,ia,[num_254,Ev[1]+Ev[3]-1.,Ev[2],1.,Ev[4]]),0],Ey=[0,um(Ew,ia,[num_254,Ev[1],Ev[2],1.,Ev[4]]),Ex],Ez=[0,um(Ew,ia,[num_254,Ev[1],Ev[2]+Ev[4]-1.,Ev[3],1.]),Ey];return[0,um(Ew,ia,[num_254,Ev[1],Ev[2],Ev[3],1.]),Ez]}function
-uo(Eu,Et,Es,Er,Eq){if(32!==Eq&&9!==Eq)return[0,pd((Es+3.5-num_400)*Eu,(num_300-Er-6.5)*Eu,[0,0.,0.,0.,1.*(Eu*1.1),1.,[7,Et,aN(1,Eq)]]),0];return 0}function
-up(En,Em,El,Ek,Ej,Ei){var
-Eo=Ej?Ej[1]:num_1000$1;return aa(_(h(Eo,caml_ml_string_length(Ei)),function(Ep){return uo(En,Em,El+Ep*7.,Ek,caml_string_get(Ei,Ep))}))}var
-h_=[1,h7(num_150$0),h9,h8],pi=[0,0,0,0,0,0,0,0,0,0,0,0,0,h1,ph],py=[0,1];function
-pD(DQ,DP,DO){var
-DR=DO[2],DS=DO[1];if(typeof
-DP!=="number")switch(DP[0]){case
+EX=0;return sB(Fd,Fb[1],function(FL){var
+FM=FL[6],FN=ER[10],FO=ER[9],FP=ER[8],FQ=EX?sG(Fd,EX[1]):tp,FR=rW(FQ);return[0,FL[1],FL[2],FL[3],FL[4],[4,[0,ER[1],ER[2],ER[3],ER[4],ER[5],FE,FR,FP,FO,FN]],FM]});default:var
+EY=V(ER[3],ER[4]),EZ=EY?EY[1][1]:iu;a:{if(FE){var
+E0=FE[1];if(EZ!==0){var
+E1=D(function(FK){return FK[2]},V(nO(Fd[1],EZ),E0));break a}}var
+E1=0}return sB(Fd,Fb[1],function(FF){var
+FG=FF[6],FH=ER[10],FI=E1?sG(Fd,E1[1]):tq,FJ=rW(FI);return[0,FF[1],FF[2],FF[3],FF[4],[4,[0,ER[1],ER[2],ER[3],ER[4],ER[5],ER[6],ER[7],FE,FJ,FH]],FG]})}return Fd;default:return Fd}default:return te(E6,Fd,Ff[4])}}var
+ud=[0,td(ub,0),ub,0,0,0,0,0,1,h1,0,0,0,uc,0,0],h7=h6(num_150$0),h8=h6(num_150$0);function
+ul(EB,EA,Ez){var
+EC=o$(EA,Ez[3]*EB,Ez[4]*EB);return pc((Ez[1]+Ez[3]/2.-num_400)*EB,(num_300-Ez[2]-Ez[4]/2.)*EB,EC)}function
+um(Ev,Eu){var
+Ew=[0,ul(Ev,h$,[num_254,Eu[1]+Eu[3]-1.,Eu[2],1.,Eu[4]]),0],Ex=[0,ul(Ev,h$,[num_254,Eu[1],Eu[2],1.,Eu[4]]),Ew],Ey=[0,ul(Ev,h$,[num_254,Eu[1],Eu[2]+Eu[4]-1.,Eu[3],1.]),Ex];return[0,ul(Ev,h$,[num_254,Eu[1],Eu[2],Eu[3],1.]),Ey]}function
+un(Et,Es,Er,Eq,Ep){if(32!==Ep&&9!==Ep)return[0,pc((Er+3.5-num_400)*Et,(num_300-Eq-6.5)*Et,[0,0.,0.,0.,1.*(Et*1.1),1.,[7,Es,aN(1,Ep)]]),0];return 0}function
+uo(Em,El,Ek,Ej,Ei,Eh){var
+En=Ei?Ei[1]:num_1000$1;return aa(_(h(En,caml_ml_string_length(Eh)),function(Eo){return un(Em,El,Ek+Eo*7.,Ej,caml_string_get(Eh,Eo))}))}var
+h9=[1,h6(num_150$0),h8,h7],ph=[0,0,0,0,0,0,0,0,0,0,0,0,0,h1,pg],px=[0,1];function
+pC(DP,DO,DN){var
+DQ=DN[2],DR=DN[1];if(typeof
+DO!=="number")switch(DO[0]){case
 0:var
-DY=DR[2],DZ=DR[1],D0=[0,[0,DZ[1],DZ[2],DZ[3],0,DZ[5],0.,0.,0.,0],[0,DY[1],DY[2],DY[3],DY[4],DY[5],DY[6],DY[7],DY[8],DY[9],DY[10],DY[11],DY[12],DY[13],pj],DR[3],[0,DP[1]],DR[5]];return[0,caml_call2(DQ,DR,DS),D0];case
+DX=DQ[2],DY=DQ[1],DZ=[0,[0,DY[1],DY[2],DY[3],0,DY[5],0.,0.,0.,0],[0,DX[1],DX[2],DX[3],DX[4],DX[5],DX[6],DX[7],DX[8],DX[9],DX[10],DX[11],DX[12],DX[13],pi],DQ[3],[0,DO[1]],DQ[5]];return[0,caml_call2(DP,DQ,DR),DZ];case
 1:var
-D1=DR[5],D2=DR[4],D3=pe(DP[1],DP[2]);return[0,DS,[0,DR[1],DR[2],D3,D2,D1]];case
+D0=DQ[5],D1=DQ[4],D2=pd(DO[1],DO[2]);return[0,DR,[0,DQ[1],DQ[2],D2,D1,D0]];case
 2:var
-D4=DR[5],D5=DR[4],D6=DR[3],D7=px(DP[1],DP[2],DR[2]);return[0,DS,[0,DR[1],D7,D6,D5,D4]];case
+D3=DQ[5],D4=DQ[4],D5=DQ[3],D6=pw(DO[1],DO[2],DQ[2]);return[0,DR,[0,DQ[1],D6,D5,D4,D3]];case
 3:var
-D8=DP[1],D9=DR[1];return[0,DS,[0,[0,D8[1],D8[2],D9[3],D9[4],D9[5],D9[6],D9[7],D9[8],D9[9]],DR[2],DR[3],DR[4],DR[5]]];case
+D7=DO[1],D8=DQ[1];return[0,DR,[0,[0,D7[1],D7[2],D8[3],D8[4],D8[5],D8[6],D8[7],D8[8],D8[9]],DQ[2],DQ[3],DQ[4],DQ[5]]];case
 4:var
-D_=DP[1],D$=DR[1];return[0,DS,[0,[0,D$[1],D$[2],D$[3],D$[4],D$[5],D$[6]+D_[1],D$[7]+D_[2],D$[8],D$[9]],DR[2],DR[3],DR[4],DR[5]]];case
+D9=DO[1],D_=DQ[1];return[0,DR,[0,[0,D_[1],D_[2],D_[3],D_[4],D_[5],D_[6]+D9[1],D_[7]+D9[2],D_[8],D_[9]],DQ[2],DQ[3],DQ[4],DQ[5]]];case
 5:var
-Ea=DR[5],Eb=DR[4],Ec=DR[3],Ed=DR[2],Ee=DP[1]?pg(1,DR[1]):pf(1,pg(0,DR[1]));return[0,DS,[0,Ee,Ed,Ec,Eb,Ea]];case
+D$=DQ[5],Ea=DQ[4],Eb=DQ[3],Ec=DQ[2],Ed=DO[1]?pf(1,DQ[1]):pe(1,pf(0,DQ[1]));return[0,DR,[0,Ed,Ec,Eb,Ea,D$]];case
 6:var
-Ef=DR[1];return[0,DS,[0,[0,Ef[1],Ef[2],Ef[3],Ef[4],DP[1],Ef[6],Ef[7],Ef[8],Ef[9]],DR[2],DR[3],DR[4],DR[5]]];case
+Ee=DQ[1];return[0,DR,[0,[0,Ee[1],Ee[2],Ee[3],Ee[4],DO[1],Ee[6],Ee[7],Ee[8],Ee[9]],DQ[2],DQ[3],DQ[4],DQ[5]]];case
 7:var
-Eg=DR[2];return[0,DS,[0,DR[1],[0,Eg[1],Eg[2],Eg[3],Eg[4],Eg[5],Eg[6],Eg[7],Eg[8],Eg[9],Eg[10],Eg[11],Eg[12],Eg[13],Eg[14]+DP[1]],DR[3],DR[4],DR[5]]];default:var
-Eh=DR[1];return[0,DS,[0,[0,Eh[1],Eh[2],Eh[3],Eh[4],Eh[5],Eh[6],Eh[7],Eh[8]+DP[1],Eh[9]],DR[2],DR[3],DR[4],DR[5]]]}if(0===DP){var
-DT=DR[5],DU=DR[4],DV=DR[3],DW=DR[2];return[0,DS,[0,pf(1,DR[1]),DW,DV,DU,DT]]}var
-DX=DR[1];return[0,DS,[0,[0,DX[1],DX[2],DX[3],DX[4],DX[5],DX[6],DX[7],DX[8],1],DR[2],DR[3],DR[4],DR[5]]]}var
-pI=0,q$=52,rP=num_800,rQ=num_600,rR=7.;function
-ui(Bx,Bw,Bv){if(Bv[15])var
-By=Bv;else{var
-Bm=[0,Bv[1],Bv[2],Bv[3],Bv[4],Bv[5],Bv[6],Bv[7],Bv[8],Bv[9],Bv[10],Bv[11],Bv[12],Bv[13],Bv[14],1],Bn=caml_equal(al(ug,Bw[5]),uf)?tf(Bx,Bm,5):Bm,Bd=r9(Bn),Be=sd(Bd,t1);if(Be)var
-Aa=Be[1],Bf=jC(Bd,Aa,iM(Bd,t0));else
+Ef=DQ[2];return[0,DR,[0,DQ[1],[0,Ef[1],Ef[2],Ef[3],Ef[4],Ef[5],Ef[6],Ef[7],Ef[8],Ef[9],Ef[10],Ef[11],Ef[12],Ef[13],Ef[14]+DO[1]],DQ[3],DQ[4],DQ[5]]];default:var
+Eg=DQ[1];return[0,DR,[0,[0,Eg[1],Eg[2],Eg[3],Eg[4],Eg[5],Eg[6],Eg[7],Eg[8]+DO[1],Eg[9]],DQ[2],DQ[3],DQ[4],DQ[5]]]}if(0===DO){var
+DS=DQ[5],DT=DQ[4],DU=DQ[3],DV=DQ[2];return[0,DR,[0,pe(1,DQ[1]),DV,DU,DT,DS]]}var
+DW=DQ[1];return[0,DR,[0,[0,DW[1],DW[2],DW[3],DW[4],DW[5],DW[6],DW[7],DW[8],1],DQ[2],DQ[3],DQ[4],DQ[5]]]}var
+pH=0,q_=52,rO=num_800,rP=num_600,rQ=7.;function
+uh(Bw,Bv,Bu){if(Bu[15])var
+Bx=Bu;else{var
+Bl=[0,Bu[1],Bu[2],Bu[3],Bu[4],Bu[5],Bu[6],Bu[7],Bu[8],Bu[9],Bu[10],Bu[11],Bu[12],Bu[13],Bu[14],1],Bm=caml_equal(al(uf,Bv[5]),ue)?te(Bw,Bl,5):Bl,Bc=r8(Bm),Bd=sc(Bc,t0);if(Bd)var
+z$=Bd[1],Be=jB(Bc,z$,iL(Bc,tZ));else
 var
-Bf=0;var
-Bg=Bf?i1(Bd,Bf[1]):ua,Bh=sE(Bn,t7,t6,[2,[0,[0,t5],[0,t4],0,[0,t3],[0,t2],rX(Bg)]])[1],Bi=sE(Bh,t9,t8,[1,rX(Bh[2][1])])[1],Bj=sE(Bi,t$,t_,[0,rX(r_)]),Bk=Bj[1],Bl=[0,Bk[1],Bk[2],Bk[3],[0,[0,Bj[2],0]],Bk[5],Bk[6],Bk[7],Bk[8],Bk[9],Bk[10],Bk[11],Bk[12],Bk[13],Bk[14],Bk[15]],Bo=al(uh,Bw[5]);a:{if(Bo){var
-Bp=Bo[1];if(Bp===str_browser){var
-Bt=am(function(DN){return 2===DN[5][0]?1:0},Bl[3]);if(Bt){var
-CI=sD(Bl,Bt[1][1]);break a}var
-CI=Bl;break a}if(Bp==="debugger"){var
-Bq=am(function(DM){return 0===DM[5][0]?1:0},Bl[3]);if(Bq){var
-Br=Bq[1],Bs=sT(Bl,Br[1],0,function(DJ){var
-DK=DJ[1],DI=0,DH=6;for(;;){if(caml_ml_string_length(DK)<(DI+6|0))var
-DL=0;else{if(aP(DK,DI,DH)!=="10 fib"){DI=DI+1|0;continue}var
-DL=DI}return[0,DJ[1],DL,DL,DJ[4]]}}),CI=sV(Bs,Br[1],0,[0,Br[1],0]);break a}var
-CI=Bl;break a}}var
-CI=Bl}var
-By=CI}var
-Bz=rW(Bw),Aj=h5(0,h4(Bw[2][13],By[9])),BA=0!==By[7]?1:0,BB=Bw[1][5]?2:0,BC=Bw[1][3]?4:0;By[2][3]=[0,Bz[1]|0,Bz[2]|0,BC|BB];var
-Bu=ar(function(DF){var
-DG=DF[5];return 3===DG[0]?[0,DG[1][1],0]:0},By[3]);By[2][4]=Bu;var
-BD=Bw[1][3],BE=BD?1-By[10]:BD,BF=Bw[1][5],BG=BF?1-By[11]:BF;a:if(BA){if(h2(uj,Bw[2][13])&&ak(uk,Aj)){var
-BH=ag(function(CU,CT){var
-CW=CT[1],CV=CT[2];l4(CW,sX);return sQ(CU,sY,CW,CV)},[0,By[1],By[2],By[3],By[4],By[5],By[6],0,By[8],By[9],By[10],By[11],By[12],By[13],By[14],By[15]],By[7]);break a}var
-BH=By}else{if(BG){var
-At=tt(By,Bz);if(At){var
-Au=At[1],Av=Au[1];if(Au[2])var
-Aw=[0,[0,tG,[8,Av[1]]],0],Ax=[9,Av[1]],Ay=Av[4]?tH:tI,Az=[0,[0,Ay,Ax],Aw];else{var
-AB=Av[5],AC=tu(By,Av,Bz);b:{c:if(AC){var
-AD=AC[1];switch(AD[0]){case
+Be=0;var
+Bf=Be?i0(Bc,Be[1]):t$,Bg=sD(Bm,t6,t5,[2,[0,[0,t4],[0,t3],0,[0,t2],[0,t1],rW(Bf)]])[1],Bh=sD(Bg,t8,t7,[1,rW(Bg[2][1])])[1],Bi=sD(Bh,t_,t9,[0,rW(r9)]),Bj=Bi[1],Bk=[0,Bj[1],Bj[2],Bj[3],[0,[0,Bi[2],0]],Bj[5],Bj[6],Bj[7],Bj[8],Bj[9],Bj[10],Bj[11],Bj[12],Bj[13],Bj[14],Bj[15]],Bn=al(ug,Bv[5]);a:{if(Bn){var
+Bo=Bn[1];if(Bo===str_browser){var
+Bs=am(function(DM){return 2===DM[5][0]?1:0},Bk[3]);if(Bs){var
+CH=sC(Bk,Bs[1][1]);break a}var
+CH=Bk;break a}if(Bo==="debugger"){var
+Bp=am(function(DL){return 0===DL[5][0]?1:0},Bk[3]);if(Bp){var
+Bq=Bp[1],Br=sS(Bk,Bq[1],0,function(DI){var
+DJ=DI[1],DH=0,DG=6;for(;;){if(caml_ml_string_length(DJ)<(DH+6|0))var
+DK=0;else{if(aP(DJ,DH,DG)!=="10 fib"){DH=DH+1|0;continue}var
+DK=DH}return[0,DI[1],DK,DK,DI[4]]}}),CH=sU(Br,Bq[1],0,[0,Bq[1],0]);break a}var
+CH=Bk;break a}}var
+CH=Bk}var
+Bx=CH}var
+By=rV(Bv),Ai=h5(0,h4(Bv[2][13],Bx[9])),Bz=0!==Bx[7]?1:0,BA=Bv[1][5]?2:0,BB=Bv[1][3]?4:0;Bx[2][3]=[0,By[1]|0,By[2]|0,BB|BA];var
+Bt=ar(function(DE){var
+DF=DE[5];return 3===DF[0]?[0,DF[1][1],0]:0},Bx[3]);Bx[2][4]=Bt;var
+BC=Bv[1][3],BD=BC?1-Bx[10]:BC,BE=Bv[1][5],BF=BE?1-Bx[11]:BE;a:if(Bz){if(h2(ui,Bv[2][13])&&ak(uj,Ai)){var
+BG=ag(function(CT,CS){var
+CV=CS[1],CU=CS[2];l3(CV,sW);return sP(CT,sX,CV,CU)},[0,Bx[1],Bx[2],Bx[3],Bx[4],Bx[5],Bx[6],0,Bx[8],Bx[9],Bx[10],Bx[11],Bx[12],Bx[13],Bx[14],Bx[15]],Bx[7]);break a}var
+BG=Bx}else{if(BF){var
+As=ts(Bx,By);if(As){var
+At=As[1],Au=At[1];if(At[2])var
+Av=[0,[0,tF,[8,Au[1]]],0],Aw=[9,Au[1]],Ax=Au[4]?tG:tH,Ay=[0,[0,Ax,Aw],Av];else{var
+AA=Au[5],AB=tt(Bx,Au,By);b:{c:if(AB){var
+AC=AB[1];switch(AC[0]){case
 0:var
-AE=AD[1],AF=Av[1],AG=[0,[0,tE,[0,AF,AE]],[0,[0,tD,[1,AF,AE]],[0,[0,tC,[2,AF,AE]],[0,[0,tB,[3,AF,AE]],[0,[0,tA,[4,AF,AE]],[0,[0,tz,[5,AF,AE]],[0,[0,ty,[6,AF,AE]],[0,[0,tx,[7,AF,AE]],0]]]]]]]];break;case
-1:switch(AB[0]){case
+AD=AC[1],AE=Au[1],AF=[0,[0,tD,[0,AE,AD]],[0,[0,tC,[1,AE,AD]],[0,[0,tB,[2,AE,AD]],[0,[0,tA,[3,AE,AD]],[0,[0,tz,[4,AE,AD]],[0,[0,ty,[5,AE,AD]],[0,[0,tx,[6,AE,AD]],[0,[0,tw,[7,AE,AD]],0]]]]]]]];break;case
+1:switch(AA[0]){case
 2:var
-AI=AC[1][1]-1|0;if(2<AI>>>0)break c;switch(AI){case
+AH=AB[1][1]-1|0;if(2<AH>>>0)break c;switch(AH){case
 0:var
-AJ=[0,[0,tL,[16,Av[1]]],[0,[0,tK,[17,Av[1]]],[0,[0,tJ,[18,Av[1]]],0]]];break;case
+AI=[0,[0,tK,[16,Au[1]]],[0,[0,tJ,[17,Au[1]]],[0,[0,tI,[18,Au[1]]],0]]];break;case
 1:break c;default:var
-AJ=[0,[0,tM,[19,Av[1]]],0]}var
-AG=AJ;break;case
-4:if(0!==AC[1][1])break c;var
-AG=[0,[0,tQ,[10,Av[1]]],[0,[0,tP,[12,Av[1]]],[0,[0,tO,[13,Av[1]]],[0,[0,tN,[14,Av[1]]],0]]]];break;default:break c}break;default:break c}var
-AH=AG;break b}var
-AH=0}var
-Az=AH}var
-AA=Az}else
+AI=[0,[0,tL,[19,Au[1]]],0]}var
+AF=AI;break;case
+4:if(0!==AB[1][1])break c;var
+AF=[0,[0,tP,[10,Au[1]]],[0,[0,tO,[12,Au[1]]],[0,[0,tN,[13,Au[1]]],[0,[0,tM,[14,Au[1]]],0]]]];break;default:break c}break;default:break c}var
+AG=AF;break b}var
+AG=0}var
+Ay=AG}var
+Az=Ay}else
 var
-AA=tF;var
-Cw=0===AA?By:[0,By[1],By[2],By[3],By[4],[0,[0,Bz,AA]],By[6],By[7],By[8],By[9],By[10],By[11],By[12],By[13],By[14],By[15]],Cx=Cw}else
+Az=tE;var
+Cv=0===Az?Bx:[0,Bx[1],Bx[2],Bx[3],Bx[4],[0,[0,By,Az]],Bx[6],Bx[7],Bx[8],Bx[9],Bx[10],Bx[11],Bx[12],Bx[13],Bx[14],Bx[15]],Cw=Cv}else
 var
-Cx=BE?tR(Bx,By,Bw,Bz):By;b:{if(Bw[1][3]&&0!==Cx[6]){var
-AK=Cx[6];if(AK){var
-AL=AK[1];if(0===AL[0])var
-AM=AL[3],AN=AL[2],CH=sC(Cx,AL[1],function(Dz){var
-DA=Dz[2];return[0,Dz[1],[num_254,Bz[1]-AN,Bz[2]-AM,DA[3],DA[4]],Dz[3],Dz[4],Dz[5],Dz[6]]});else{var
-AO=AL[2],AP=AL[1],AQ=sB(Cx,AP);if(AQ){var
-AR=al(AO,sw(Cx,AQ[1]));if(AR)var
-AS=AR[1],CH=sT(Cx,AP,AO,function(DB){var
-DC=DB[4],DD=DB[3],DE=tv(AS,DB,Bz);return[0,DB[1],DE,DD,DC]});else
+Cw=BD?tQ(Bw,Bx,Bv,By):Bx;b:{if(Bv[1][3]&&0!==Cw[6]){var
+AJ=Cw[6];if(AJ){var
+AK=AJ[1];if(0===AK[0])var
+AL=AK[3],AM=AK[2],CG=sB(Cw,AK[1],function(Dy){var
+Dz=Dy[2];return[0,Dy[1],[num_254,By[1]-AM,By[2]-AL,Dz[3],Dz[4]],Dy[3],Dy[4],Dy[5],Dy[6]]});else{var
+AN=AK[2],AO=AK[1],AP=sA(Cw,AO);if(AP){var
+AQ=al(AN,sv(Cw,AP[1]));if(AQ)var
+AR=AQ[1],CG=sS(Cw,AO,AN,function(DA){var
+DB=DA[4],DC=DA[3],DD=tu(AR,DA,By);return[0,DA[1],DD,DC,DB]});else
 var
-CH=Cx}else
+CG=Cw}else
 var
-CH=Cx}}else
+CG=Cw}}else
 var
-CH=Cx;var
-Cy=CH;break b}var
-Cy=Cx}var
-Cz=Bw[1][3]?Cy:[0,Cy[1],Cy[2],Cy[3],Cy[4],Cy[5],0,Cy[7],Cy[8],Cy[9],Cy[10],Cy[11],Cy[12],Cy[13],Cy[14],Cy[15]];if(Bw[1][8]!==0.){var
-AT=0.<Bw[1][8]?-3:3,AU=tt(Cz,Bz);b:{if(AU){var
-AV=AU[1];if(!AV[2]){var
-AW=AV[1],AX=tu(Cz,AW,Bz);if(AX){var
-AY=AX[1];switch(AY[0]){case
+CG=Cw;var
+Cx=CG;break b}var
+Cx=Cw}var
+Cy=Bv[1][3]?Cx:[0,Cx[1],Cx[2],Cx[3],Cx[4],Cx[5],0,Cx[7],Cx[8],Cx[9],Cx[10],Cx[11],Cx[12],Cx[13],Cx[14],Cx[15]];if(Bv[1][8]!==0.){var
+AS=0.<Bv[1][8]?-3:3,AT=ts(Cy,By);b:{if(AT){var
+AU=AT[1];if(!AU[2]){var
+AV=AU[1],AW=tt(Cy,AV,By);if(AW){var
+AX=AW[1];switch(AX[0]){case
 0:var
-CA=sT(Cz,AW[1],AY[1],function(Dw){var
-Dx=Dw[4]+AT|0,Dy=i(0,h(r3(Dw[1],caml_ml_string_length(Dw[1])),Dx));return[0,Dw[1],Dw[2],Dw[3],Dy]});break b;case
+Cz=sS(Cy,AV[1],AX[1],function(Dv){var
+Dw=Dv[4]+AS|0,Dx=i(0,h(r2(Dv[1],caml_ml_string_length(Dv[1])),Dw));return[0,Dv[1],Dv[2],Dv[3],Dx]});break b;case
 1:var
-A0=AY[1],AZ=AY[3],CA=sC(Cz,AW[1],function(Ds){var
-Dt=sA(Ds,A0)+AT|0,Du=h(O(AZ)-1|0,Dt),Dr=_(i(A0+1|0,O(Ds[6])),function(Dv){return Dv===A0?i(0,Du):sA(Ds,Dv)});return[0,Ds[1],Ds[2],Ds[3],Ds[4],Ds[5],Dr]});break b}}var
-CA=Cz;break b}}var
-CA=Cz}var
-CB=CA}else
+AZ=AX[1],AY=AX[3],Cz=sB(Cy,AV[1],function(Dr){var
+Ds=sz(Dr,AZ)+AS|0,Dt=h(O(AY)-1|0,Ds),Dq=_(i(AZ+1|0,O(Dr[6])),function(Du){return Du===AZ?i(0,Dt):sz(Dr,Du)});return[0,Dr[1],Dr[2],Dr[3],Dr[4],Dr[5],Dq]});break b}}var
+Cz=Cy;break b}}var
+Cz=Cy}var
+CA=Cz}else
 var
-CB=Cz;var
-A1=CB[4];if(A1){var
-A2=A1[1],A3=A2[1],A4=A2[2];if(h2(tS,Bw[2][13]))var
-A5=ak(tT,ab(a3,Aj))?sT(CB,A3,A4,function(C0){return[0,C0[1],caml_ml_string_length(C0[1]),0,C0[4]]}):CB,CC=[0,A5,an(function(CZ){var
-CY=a3(CZ);return CY!==str_c?CY!==str_d$0?CY!=="i"?CY!==str_p?CY!==str_s?CY!=="v"?CY!==str_x?0:[0,[6,A3,A4]]:[0,[7,A3,A4]]:[0,[3,A3,A4]]:[0,[1,A3,A4]]:[0,[2,A3,A4]]:[0,[0,A3,A4]]:[0,[5,A3,A4]]},Aj)];else{var
-CK=caml_bytes_of_string(Bw[2][14]),Ab=function(Do,Dn){if(Do===caml_ml_bytes_length(CK))return 0;var
-Dp=Do+1|0;return[0,caml_bytes_get(CK,Do),function(Dq){return Ab(Dp,Dq)}]},Ac=0,Ad=function(Dm){return Ab(Ac,Dm)},A7=function(Dj){var
-Dk=32<=Dj?1:0,Dl=Dk?Dj<num_127?1:0:Dk;return Dl},Ae=[0,0],A6=A2[2],Af=[0,ax(num_256,0)],z8=function(Di){return B(A7,Ad,Di)};for(;;){var
-z9=z8(0);if(!z9)break;var
-z_=z9[2],z$=z9[1];if(Ae[1]===caml_ml_bytes_length(Af[1])){var
-Ag=av(2*caml_ml_bytes_length(Af[1])|0,x);if(caml_ml_bytes_length(Af[1])===Ag)f(aM);var
-Ah=ax(Ag,0);aG(Af[1],0,Ah,0,Ae[1]);Af[1]=Ah}caml_bytes_set(Af[1],Ae[1],z$);Ae[1]++;z8=z_}var
-CJ=caml_string_of_bytes(aD(Af[1],0,Ae[1])),CC=[0,sT(CB,A3,A6,function(C1){var
-C2=CJ!==str$9?r0(C1,CJ):C1;return ag(function(C4,C3){var
-C5=caml_ml_string_length(C4[1]),C6=rY(C4),C7=C6[2],C8=C6[1],C9=caml_string_compare(C3,str_Delete);a:{if(0>C9){if(C3!==str_ArrowDown){if(C3===str_ArrowLeft){var
-Dh=C8<C7?C8:i(0,C4[2]-1|0);return[0,C4[1],Dh,Dh,C4[4]]}if(C3===str_ArrowRight){var
-Dg=C8<C7?C7:h(C5,C4[2]+1|0);return[0,C4[1],Dg,Dg,C4[4]]}if(C3!==str_ArrowUp){if(C3!==str_Backspace)break a;return C8<C7?r0(C4,tY):0<C8?r0([0,C4[1],C8,C8-1|0,C4[4]],tZ):C4}}var
-Da=r1(C4[1],C4[2]),Db=r5(C4[1],C4[2]);if(C3===str_ArrowUp)var
-Dc=0===Da?0:[0,r1(C4[1],Da-1|0)];else
+CA=Cy;var
+A0=CA[4];if(A0){var
+A1=A0[1],A2=A1[1],A3=A1[2];if(h2(tR,Bv[2][13]))var
+A4=ak(tS,ab(a3,Ai))?sS(CA,A2,A3,function(CZ){return[0,CZ[1],caml_ml_string_length(CZ[1]),0,CZ[4]]}):CA,CB=[0,A4,an(function(CY){var
+CX=a3(CY);return CX!==str_c?CX!==str_d$0?CX!=="i"?CX!==str_p?CX!==str_s?CX!=="v"?CX!==str_x?0:[0,[6,A2,A3]]:[0,[7,A2,A3]]:[0,[3,A2,A3]]:[0,[1,A2,A3]]:[0,[2,A2,A3]]:[0,[0,A2,A3]]:[0,[5,A2,A3]]},Ai)];else{var
+CJ=caml_bytes_of_string(Bv[2][14]),Aa=function(Dn,Dm){if(Dn===caml_ml_bytes_length(CJ))return 0;var
+Do=Dn+1|0;return[0,caml_bytes_get(CJ,Dn),function(Dp){return Aa(Do,Dp)}]},Ab=0,Ac=function(Dl){return Aa(Ab,Dl)},A6=function(Di){var
+Dj=32<=Di?1:0,Dk=Dj?Di<num_127?1:0:Dj;return Dk},Ad=[0,0],A5=A1[2],Ae=[0,ax(num_256,0)],z7=function(Dh){return B(A6,Ac,Dh)};for(;;){var
+z8=z7(0);if(!z8)break;var
+z9=z8[2],z_=z8[1];if(Ad[1]===caml_ml_bytes_length(Ae[1])){var
+Af=av(2*caml_ml_bytes_length(Ae[1])|0,x);if(caml_ml_bytes_length(Ae[1])===Af)f(aM);var
+Ag=ax(Af,0);aG(Ae[1],0,Ag,0,Ad[1]);Ae[1]=Ag}caml_bytes_set(Ae[1],Ad[1],z_);Ad[1]++;z7=z9}var
+CI=caml_string_of_bytes(aD(Ae[1],0,Ad[1])),CB=[0,sS(CA,A2,A5,function(C0){var
+C1=CI!==str$9?rZ(C0,CI):C0;return ag(function(C3,C2){var
+C4=caml_ml_string_length(C3[1]),C5=rX(C3),C6=C5[2],C7=C5[1],C8=caml_string_compare(C2,str_Delete);a:{if(0>C8){if(C2!==str_ArrowDown){if(C2===str_ArrowLeft){var
+Dg=C7<C6?C7:i(0,C3[2]-1|0);return[0,C3[1],Dg,Dg,C3[4]]}if(C2===str_ArrowRight){var
+Df=C7<C6?C6:h(C4,C3[2]+1|0);return[0,C3[1],Df,Df,C3[4]]}if(C2!==str_ArrowUp){if(C2!==str_Backspace)break a;return C7<C6?rZ(C3,tX):0<C7?rZ([0,C3[1],C7,C7-1|0,C3[4]],tY):C3}}var
+C$=r0(C3[1],C3[2]),Da=r4(C3[1],C3[2]);if(C2===str_ArrowUp)var
+Db=0===C$?0:[0,r0(C3[1],C$-1|0)];else
 var
-De=r2(C4[1],C4[2]),Df=C5<=De?0:[0,De+1|0],Dc=Df;if(!Dc)return C4;var
-Dd=r6(C4[1],Dc[1],Db);return[0,C4[1],Dd,Dd,C4[4]]}if(0>=C9)return C8<C7?r0(C4,tW):C8<C5?r0([0,C4[1],C8+1|0,C8,C4[4]],tX):C4;if(C3===str_End){var
-C$=r2(C4[1],C4[2]);return[0,C4[1],C$,C$,C4[4]]}if(C3===str_Enter)return r0(C4,tV);if(C3===str_Home){var
-C_=r1(C4[1],C4[2]);return[0,C4[1],C_,C_,C4[4]]}if(C3===str_Tab)return r0(C4,tU)}return C4},C2,Aj)}),0]}}else
+Dd=r1(C3[1],C3[2]),De=C4<=Dd?0:[0,Dd+1|0],Db=De;if(!Db)return C3;var
+Dc=r5(C3[1],Db[1],Da);return[0,C3[1],Dc,Dc,C3[4]]}if(0>=C8)return C7<C6?rZ(C3,tV):C7<C4?rZ([0,C3[1],C7+1|0,C7,C3[4]],tW):C3;if(C2===str_End){var
+C_=r1(C3[1],C3[2]);return[0,C3[1],C_,C_,C3[4]]}if(C2===str_Enter)return rZ(C3,tU);if(C2===str_Home){var
+C9=r0(C3[1],C3[2]);return[0,C3[1],C9,C9,C3[4]]}if(C2===str_Tab)return rZ(C3,tT)}return C3},C1,Ai)}),0]}}else
 var
-CC=[0,CB,0];var
-CD=CC[2],CE=CC[1],CF=CD?tf(Bx,CE,CD[1]):CE,A8=CF[4];if(A8){var
-A9=A8[1],A_=A9[2],A$=A9[1],Ba=sB(CF,A$);if(Ba){var
-Bb=al(A_,sw(CF,Ba[1]));if(Bb)var
-Bc=sx(Bb[1]),CG=sT(CF,A$,A_,function(CX){return r8(Bc,CX)});else
+CB=[0,CA,0];var
+CC=CB[2],CD=CB[1],CE=CC?te(Bw,CD,CC[1]):CD,A7=CE[4];if(A7){var
+A8=A7[1],A9=A8[2],A_=A8[1],A$=sA(CE,A_);if(A$){var
+Ba=al(A9,sv(CE,A$[1]));if(Ba)var
+Bb=sw(Ba[1]),CF=sS(CE,A_,A9,function(CW){return r7(Bb,CW)});else
 var
-CG=CF}else
+CF=CE}else
 var
-CG=CF}else
+CF=CE}else
 var
-CG=CF;var
-BH=CG}var
-Ao=BH[7];if(Ao){var
-Aq=Ao[1],As=Aq[1],Ap=Ao[2],Ar=Aq[2];l1(0,BH[1],As,sS);var
-BI=sW([0,BH[1],BH[2],BH[3],BH[4],BH[5],BH[6],Ap,BH[8],BH[9],BH[10],BH[11],BH[12],BH[13],BH[14],BH[15]],As,Ar)}else
+CF=CE;var
+BG=CF}var
+An=BG[7];if(An){var
+Ap=An[1],Ar=Ap[1],Ao=An[2],Aq=Ap[2];l0(0,BG[1],Ar,sR);var
+BH=sV([0,BG[1],BG[2],BG[3],BG[4],BG[5],BG[6],Ao,BG[8],BG[9],BG[10],BG[11],BG[12],BG[13],BG[14],BG[15]],Ar,Aq)}else
 var
-BI=BH;var
-BJ=BI[2][2];BI[2][2]=0;var
-BK=ag(sI,BI,BJ);if(caml_ml_string_length(BK[2][1])===BK[14])var
-BL=BK;else
+BH=BG;var
+BI=BH[2][2];BH[2][2]=0;var
+BJ=ag(sH,BH,BI);if(caml_ml_string_length(BJ[2][1])===BJ[14])var
+BK=BJ;else
 var
-Cj=BK[2][1],Ck=BK[15],Cl=BK[13],Cm=BK[12],Cn=BK[11],Co=BK[10],Cp=BK[9],Cq=BK[8],Cr=BK[7],Cs=BK[6],Ct=BK[5],Cu=BK[4],Cv=ab(function(CN){if(1!==CN[5][0])return CN;var
-CO=caml_ml_string_length(Cj),CP=CN[6],CQ=rX(Cj),CR=[0,CQ[1],CO,CO,CQ[4]],CS=[1,r8(sx(CN[2]),CR)];return[0,CN[1],CN[2],CN[3],CN[4],CS,CP]},BK[3]),BL=[0,BK[1],BK[2],Cv,Cu,Ct,Cs,Cr,Cq,Cp,Co,Cn,Cm,Cl,caml_ml_string_length(Cj),Ck];var
-Ak=iO[1],BM=BL[12];a:{if(BM&&BM[1][1]===Ak){var
-BN=BL;break a}var
-BO=jq(r9(BL),ul);if(BO){var
-BP=BO[1],BQ=iE(r9(BL),BP,1),Al=iQ(r9(BL),BQ);if(Al)var
-Am=Al[1],BR=[0,[0,Am[2],Am[3],function(CM,CL){return 1===iR(Am,CM,CL)?1:0}]];else
+Ci=BJ[2][1],Cj=BJ[15],Ck=BJ[13],Cl=BJ[12],Cm=BJ[11],Cn=BJ[10],Co=BJ[9],Cp=BJ[8],Cq=BJ[7],Cr=BJ[6],Cs=BJ[5],Ct=BJ[4],Cu=ab(function(CM){if(1!==CM[5][0])return CM;var
+CN=caml_ml_string_length(Ci),CO=CM[6],CP=rW(Ci),CQ=[0,CP[1],CN,CN,CP[4]],CR=[1,r7(sw(CM[2]),CQ)];return[0,CM[1],CM[2],CM[3],CM[4],CR,CO]},BJ[3]),BK=[0,BJ[1],BJ[2],Cu,Ct,Cs,Cr,Cq,Cp,Co,Cn,Cm,Cl,Ck,caml_ml_string_length(Ci),Cj];var
+Aj=iN[1],BL=BK[12];a:{if(BL&&BL[1][1]===Aj){var
+BM=BK;break a}var
+BN=jp(r8(BK),uk);if(BN){var
+BO=BN[1],BP=iD(r8(BK),BO,1),Ak=iP(r8(BK),BP);if(Ak)var
+Al=Ak[1],BQ=[0,[0,Al[2],Al[3],function(CL,CK){return 1===iQ(Al,CL,CK)?1:0}]];else
 var
-BR=0;if(BR){var
-BS=BR[1],BT=BS[3],BU=BS[2],BV=BS[1],BW=[0,BV],BX=[0,BU],BY=[0,-1],BZ=[0,-1],B1=BU-1|0,B0=0;if(B1>=0){var
-Cd=B0;for(;;){var
-Cf=BV-1|0,Ce=0;if(Cf>=0){var
-Ch=Ce;for(;;){if(BT(Ch,Cd)){BW[1]=h(BW[1],Ch);BX[1]=h(BX[1],Cd);BY[1]=i(BY[1],Ch);BZ[1]=i(BZ[1],Cd)}var
-Ci=Ch+1|0;if(Cf===Ch)break;Ch=Ci}}var
-Cg=Cd+1|0;if(B1===Cd)break;Cd=Cg}}if(0<=BY[1]){var
-B2=(BY[1]-BW[1]|0)+1|0,B3=(BZ[1]-BX[1]|0)+1|0,Ai=caml_ba_create(3,0,[0,caml_mul(B2,B3)*4|0]);caml_ba_fill(Ai,0);var
-An=[0,B2,B3,Ai],B5=B3-1|0,B4=0;if(B5>=0){var
-B9=B4;for(;;){var
-B$=B2-1|0,B_=0;if(B$>=0){var
-Cb=B_;for(;;){if(BT(BW[1]+Cb|0,BX[1]+B9|0))caml_ba_set_1(An[3],((caml_mul(B9,B2)+Cb|0)*4|0)+3|0,num_255);var
-Cc=Cb+1|0;if(B$===Cb)break;Cb=Cc}}var
-Ca=B9+1|0;if(B5===B9)break;B9=Ca}}var
-B6=[0,[0,[num_254,BW[1],BX[1],B2,B3],An]]}else
+BQ=0;if(BQ){var
+BR=BQ[1],BS=BR[3],BT=BR[2],BU=BR[1],BV=[0,BU],BW=[0,BT],BX=[0,-1],BY=[0,-1],B0=BT-1|0,BZ=0;if(B0>=0){var
+Cc=BZ;for(;;){var
+Ce=BU-1|0,Cd=0;if(Ce>=0){var
+Cg=Cd;for(;;){if(BS(Cg,Cc)){BV[1]=h(BV[1],Cg);BW[1]=h(BW[1],Cc);BX[1]=i(BX[1],Cg);BY[1]=i(BY[1],Cc)}var
+Ch=Cg+1|0;if(Ce===Cg)break;Cg=Ch}}var
+Cf=Cc+1|0;if(B0===Cc)break;Cc=Cf}}if(0<=BX[1]){var
+B1=(BX[1]-BV[1]|0)+1|0,B2=(BY[1]-BW[1]|0)+1|0,Ah=caml_ba_create(3,0,[0,caml_mul(B1,B2)*4|0]);caml_ba_fill(Ah,0);var
+Am=[0,B1,B2,Ah],B4=B2-1|0,B3=0;if(B4>=0){var
+B8=B3;for(;;){var
+B_=B1-1|0,B9=0;if(B_>=0){var
+Ca=B9;for(;;){if(BS(BV[1]+Ca|0,BW[1]+B8|0))caml_ba_set_1(Am[3],((caml_mul(B8,B1)+Ca|0)*4|0)+3|0,num_255);var
+Cb=Ca+1|0;if(B_===Ca)break;Ca=Cb}}var
+B$=B8+1|0;if(B4===B8)break;B8=B$}}var
+B5=[0,[0,[num_254,BV[1],BW[1],B1,B2],Am]]}else
+var
+B5=0;var
+B6=B5}else
 var
 B6=0;var
 B7=B6}else
 var
 B7=0;var
-B8=B7}else
-var
-B8=0;var
-BN=[0,BL[1],BL[2],BL[3],BL[4],BL[5],BL[6],BL[7],BL[8],,,,[0,[0,Ak,B8]],BL[13],BL[14],BL[15]]}return[0,BN[1],BN[2],BN[3],BN[4],BN[5],BN[6],BN[7],BN[8],Bw[2][13],Bw[1][3],Bw[1][5],BN[12],BN[13],BN[14],BN[15]]}if(hK[1])f(hL);else{hK[1]=1;var
-qL=caml_js_to_string(oG.location.search);a:{var
-ur=function(z6,z7){return ui(hJ,z6,z7)};if(0<caml_ml_string_length(qL)&&63===caml_string_get(qL,0)){var
-qM=aP(qL,1,caml_ml_string_length(qL)-1|0);break a}var
-qM=qL}var
-qN=a4(38,qM),uu=ab(function(z2){var
-z3=aX(z2,61);if(!z3)return[0,z2,pB];var
-z4=z3[1],z5=aP(z2,z4+1|0,(caml_ml_string_length(z2)-z4|0)-1|0);return[0,aP(z2,0,z4),z5]},ao(function(z1){return z1!==str$9?1:0})(qN));oW.onload=caml_js_wrap_callback_strict(1,function(uB){var
-uG=pe(o_,o$),uH=[0,[0,ue,[0,pA,pi,pz,py,uu]]],uI=[0,0];function
-uJ(z0){uH[1]=pD(ur,z0,uH[1]);return uK(ic)}function
-uK(zU){return ae(function(zV){if(typeof
-zV!=="number")switch(zV[0]){case
-0:uI[1]=o(uI[1],[0,zV[1],0]);return 0;case
+BM=[0,BK[1],BK[2],BK[3],BK[4],BK[5],BK[6],BK[7],BK[8],,,,[0,[0,Aj,B7]],BK[13],BK[14],BK[15]]}return[0,BM[1],BM[2],BM[3],BM[4],BM[5],BM[6],BM[7],BM[8],Bv[2][13],Bv[1][3],Bv[1][5],BM[12],BM[13],BM[14],BM[15]]}if(hK[1])f(hL);else{hK[1]=1;var
+qK=caml_js_to_string(oF.location.search);a:{var
+uq=function(z5,z6){return uh(hJ,z5,z6)};if(0<caml_ml_string_length(qK)&&63===caml_string_get(qK,0)){var
+qL=aP(qK,1,caml_ml_string_length(qK)-1|0);break a}var
+qL=qK}var
+qM=a4(38,qL),ut=ab(function(z1){var
+z2=aX(z1,61);if(!z2)return[0,z1,pA];var
+z3=z2[1],z4=aP(z1,z3+1|0,(caml_ml_string_length(z1)-z3|0)-1|0);return[0,aP(z1,0,z3),z4]},ao(function(z0){return z0!==str$9?1:0})(qM));oV.onload=caml_js_wrap_callback_strict(1,function(uA){var
+uF=pd(o9,o_),uG=[0,[0,ud,[0,pz,ph,py,px,ut]]],uH=[0,0];function
+uI(zZ){uG[1]=pC(uq,zZ,uG[1]);return uJ(ib)}function
+uJ(zT){return ae(function(zU){if(typeof
+zU!=="number")switch(zU[0]){case
+0:uH[1]=o(uH[1],[0,zU[1],0]);return 0;case
 1:var
-zW=zV[3];return qW(0,zV[2],function(zZ){return uJ(caml_call1(zW,zZ))});case
+zV=zU[3];return qV(0,zU[2],function(zY){return uI(caml_call1(zV,zY))});case
 2:var
-zX=zV[4];return qW([0,zV[3]],zV[2],function(zY){return uJ(caml_call1(zX,zY))})}return 0},id(zU))}uK(ic);function
-uL(zr){var
-zd=aa([0,[0,[12,function(zT,zS){return[1,zT,zS]}],0],[0,[0,[0,function(zR){return[0,zR]}],0],[0,[0,[1,function(zQ){return[3,zQ]}],0],[0,[0,[2,function(zP){return[4,zP]}],0],[0,[0,[3,function(zO){return pH}],0],[0,[0,[4,function(zN){return pG}],0],[0,[0,[5,function(zM){return pF}],0],[0,[0,[6,function(zL){return pE}],0],[0,[0,[7,function(zK){return[2,1,zK]}],0],[0,[0,[8,function(zJ){return[2,0,zJ]}],0],[0,[0,[9,function(zI){return[7,zI]}],0],[0,[0,[10,function(zH){return[8,zH]}],0],[0,[0,[11,function(zG){return 1}],0],0]]]]]]]]]]]]]);if(typeof
-zr==="number")var
-zs=hM(function(zt){return 11===zt[0]?[0,caml_call1(zt[1],0)]:0},zd);else
-switch(zr[0]){case
+zW=zU[4];return qV([0,zU[3]],zU[2],function(zX){return uI(caml_call1(zW,zX))})}return 0},ic(zT))}uJ(ib);function
+uK(zq){var
+zc=aa([0,[0,[12,function(zS,zR){return[1,zS,zR]}],0],[0,[0,[0,function(zQ){return[0,zQ]}],0],[0,[0,[1,function(zP){return[3,zP]}],0],[0,[0,[2,function(zO){return[4,zO]}],0],[0,[0,[3,function(zN){return pG}],0],[0,[0,[4,function(zM){return pF}],0],[0,[0,[5,function(zL){return pE}],0],[0,[0,[6,function(zK){return pD}],0],[0,[0,[7,function(zJ){return[2,1,zJ]}],0],[0,[0,[8,function(zI){return[2,0,zI]}],0],[0,[0,[9,function(zH){return[7,zH]}],0],[0,[0,[10,function(zG){return[8,zG]}],0],[0,[0,[11,function(zF){return 1}],0],0]]]]]]]]]]]]]);if(typeof
+zq==="number")var
+zr=hM(function(zs){return 11===zs[0]?[0,caml_call1(zs[1],0)]:0},zc);else
+switch(zq[0]){case
 0:var
-ze=zr[1],zs=hM(function(zF){return 0===zF[0]?[0,caml_call1(zF[1],ze)]:0},zd);break;case
+zd=zq[1],zr=hM(function(zE){return 0===zE[0]?[0,caml_call1(zE[1],zd)]:0},zc);break;case
 1:var
-zf=zr[1],zg=zf[2],zh=zf[1],zs=hM(function(zE){return 1===zE[0]?[0,caml_call1(zE[1],[0,zh,zg])]:0},zd);break;case
+ze=zq[1],zf=ze[2],zg=ze[1],zr=hM(function(zD){return 1===zD[0]?[0,caml_call1(zD[1],[0,zg,zf])]:0},zc);break;case
 2:var
-zi=zr[1],zs=hM(function(zD){return 2===zD[0]?[0,caml_call1(zD[1],zi)]:0},zd);break;case
+zh=zq[1],zr=hM(function(zC){return 2===zC[0]?[0,caml_call1(zC[1],zh)]:0},zc);break;case
 3:var
-zs=zr[1]?hM(function(zB){return 3===zB[0]?[0,caml_call1(zB[1],0)]:0},zd):hM(function(zC){return 4===zC[0]?[0,caml_call1(zC[1],0)]:0},zd);break;case
+zr=zq[1]?hM(function(zA){return 3===zA[0]?[0,caml_call1(zA[1],0)]:0},zc):hM(function(zB){return 4===zB[0]?[0,caml_call1(zB[1],0)]:0},zc);break;case
 4:var
-zs=zr[1]?hM(function(zz){return 5===zz[0]?[0,caml_call1(zz[1],0)]:0},zd):hM(function(zA){return 6===zA[0]?[0,caml_call1(zA[1],0)]:0},zd);break;case
+zr=zq[1]?hM(function(zy){return 5===zy[0]?[0,caml_call1(zy[1],0)]:0},zc):hM(function(zz){return 6===zz[0]?[0,caml_call1(zz[1],0)]:0},zc);break;case
 5:var
-zj=zr[1];if(zj[1])var
-zk=zj[2],zs=hM(function(zx){return 7===zx[0]?[0,caml_call1(zx[1],zk)]:0},zd);else
+zi=zq[1];if(zi[1])var
+zj=zi[2],zr=hM(function(zw){return 7===zw[0]?[0,caml_call1(zw[1],zj)]:0},zc);else
 var
-zl=zj[2],zs=hM(function(zy){return 8===zy[0]?[0,caml_call1(zy[1],zl)]:0},zd);break;case
+zk=zi[2],zr=hM(function(zx){return 8===zx[0]?[0,caml_call1(zx[1],zk)]:0},zc);break;case
 6:var
-zm=zr[1],zs=hM(function(zw){return 9===zw[0]?[0,caml_call1(zw[1],zm)]:0},zd);break;case
+zl=zq[1],zr=hM(function(zv){return 9===zv[0]?[0,caml_call1(zv[1],zl)]:0},zc);break;case
 7:var
-zn=zr[1],zs=hM(function(zv){return 10===zv[0]?[0,caml_call1(zv[1],zn)]:0},zd);break;default:var
-zo=zr[1],zp=zo[2],zq=zo[1],zs=hM(function(zu){return 12===zu[0]?[0,caml_call2(zu[1],zq,zp)]:0},zd)}return zs?uJ(zs[1]):0}var
-uM=num_0_016666666666666666,uN=[0,0],uO=[0,0.],uP=[0,0],uQ=[0,0],uR=[0,0];function
-uS(xn){var
-xo=xn/num_1000$0,xp=uP[1];if(xp){var
-xq=xp[1];uQ[1]++;if(num_120===uQ[1]){var
-xr=uQ[1]/(xo-xq);pJ(caml_call1(dX(rM),xr))}}else
-uP[1]=[0,xo];var
-xs=uN[1];uO[1]=xs?uO[1]+(xo-xs[1]):uM;uN[1]=[0,xo];if(num_0_25<uO[1])uO[1]=uM;var
-xt=oM(0)/num_1000$0,xu=uI[1];uI[1]=0;ae(uJ,xu);var
-xv=[0,0];for(;;){if(!(0.014666666666666666<=uO[1]))break;uL([0,xt]);uO[1]=uO[1]-num_0_016666666666666666;xv[1]++}var
-xw=xv[1],xc=caml_obj_tag(qO),xd=num_250===xc?qO[1]:num_246===xc?A(qO):qO;a:{if(xd){var
-xe=xd[1];if(qP(xe)==="running"){var
-xf=xe.currentTime;if(qR[1]<xf){if(0.<qR[1])qT[1]=bj(num_0_3,qT[1]+num_0_03);qR[1]=xf+qT[1]/2.}else
-qT[1]=bk(qS,qT[1]-0.0002);var
-xg=function(zb){var
-zc=xe[zb];return oE(zc)==="number"?zc:0.},xh=xg(qU),xi=xg(qV),xj=qR[1]-xf+xi+xh,w2=o9[1];if(w2)var
-w3=w2[1],w4=w3+(xj-w3)/num_60;else
+zm=zq[1],zr=hM(function(zu){return 10===zu[0]?[0,caml_call1(zu[1],zm)]:0},zc);break;default:var
+zn=zq[1],zo=zn[2],zp=zn[1],zr=hM(function(zt){return 12===zt[0]?[0,caml_call2(zt[1],zp,zo)]:0},zc)}return zr?uI(zr[1]):0}var
+uL=num_0_016666666666666666,uM=[0,0],uN=[0,0.],uO=[0,0],uP=[0,0],uQ=[0,0];function
+uR(xm){var
+xn=xm/num_1000$0,xo=uO[1];if(xo){var
+xp=xo[1];uP[1]++;if(num_120===uP[1]){var
+xq=uP[1]/(xn-xp);pI(caml_call1(dX(rL),xq))}}else
+uO[1]=[0,xn];var
+xr=uM[1];uN[1]=xr?uN[1]+(xn-xr[1]):uL;uM[1]=[0,xn];if(num_0_25<uN[1])uN[1]=uL;var
+xs=oL(0)/num_1000$0,xt=uH[1];uH[1]=0;ae(uI,xt);var
+xu=[0,0];for(;;){if(!(0.014666666666666666<=uN[1]))break;uK([0,xs]);uN[1]=uN[1]-num_0_016666666666666666;xu[1]++}var
+xv=xu[1],xb=caml_obj_tag(qN),xc=num_250===xb?qN[1]:num_246===xb?A(qN):qN;a:{if(xc){var
+xd=xc[1];if(qO(xd)==="running"){var
+xe=xd.currentTime;if(qQ[1]<xe){if(0.<qQ[1])qS[1]=bj(num_0_3,qS[1]+num_0_03);qQ[1]=xe+qS[1]/2.}else
+qS[1]=bk(qR,qS[1]-0.0002);var
+xf=function(za){var
+zb=xd[za];return oD(zb)==="number"?zb:0.},xg=xf(qT),xh=xf(qU),xi=qQ[1]-xe+xh+xg,w1=o8[1];if(w1)var
+w2=w1[1],w3=w2+(xi-w2)/num_60;else
 var
-w4=xj;o9[1]=[0,w4];var
-xk=(qT[1]-(qR[1]-xf))*num_44100$0|0;if(0<xk){var
-xX=oo(on,xk),xl=xe.createBuffer(2,xk,num_44100);af(function(y9,y8){var
-y_=xl.getChannelData(y9);return be(function(za,y$){return y_[za]=y$},y8)},[0,xX[1],[0,xX[2],0]]);var
-xm=xe.createBufferSource();xm.buffer=xl;xm.connect(xe.destination);xm.start(qR[1]);qR[1]=qR[1]+xk/num_44100$0}break a}}oo(on,xw*735|0)}var
-xx=uH[1],w5=xx[2],w6=xx[1],xF=rV(w5),xH=O(w6[3]),xI=aa(ad(function(ya,x$){var
-x3=ts(x$);if(ya===(xH-1|0))var
-x5=ia,x4=h$;else
+w3=xi;o8[1]=[0,w3];var
+xj=(qS[1]-(qQ[1]-xe))*num_44100$0|0;if(0<xj){var
+xW=on(om,xj),xk=xd.createBuffer(2,xj,num_44100);af(function(y8,y7){var
+y9=xk.getChannelData(y8);return be(function(y$,y_){return y9[y$]=y_},y7)},[0,xW[1],[0,xW[2],0]]);var
+xl=xd.createBufferSource();xl.buffer=xk;xl.connect(xd.destination);xl.start(qQ[1]);qQ[1]=qQ[1]+xj/num_44100$0}break a}}on(om,xv*735|0)}var
+xw=uG[1],w4=xw[2],w5=xw[1],xE=rU(w4),xG=O(w5[3]),xH=aa(ad(function(x$,x_){var
+x2=tr(x_);if(x$===(xG-1|0))var
+x4=h$,x3=h_;else
 var
-x5=h$,x4=ia;var
-x6=up(xF,x4,x3[1]+6.,x3[2]+1.,0,x$[3]),x7=un(xF,x3),x8=o([0,um(xF,x5,x3),x7],x6);if(x$[4])return x8;var
-x9=ar(function(yP){switch(yP[0]){case
+x4=h_,x3=h$;var
+x5=uo(xE,x3,x2[1]+6.,x2[2]+1.,0,x_[3]),x6=um(xE,x2),x7=o([0,ul(xE,x4,x2),x6],x5);if(x_[4])return x7;var
+x8=ar(function(yO){switch(yO[0]){case
 0:var
-yQ=yP[2],yR=yP[1],yS=caml_equal(w6[4],[0,[0,x$[1],yR]]),yT=sy(x$,yR),yb=(yQ[3]-6.)/7.|0,yc=rY(yT),yd=yc[2],ye=yc[1],yf=[0,0],yg=function(y7){yf[1]=o(y7,yf[1])},yh=[0,0],yi=r4(yT[1],yT[4]),yj=yi?yi[1]:caml_ml_string_length(yT[1]),yk=[0,yj],yl=caml_ml_string_length(yT[1]),ym=sx(yQ);for(;;){if(yh[1]<ym&&yk[1]<=yl){var
-yn=yk[1],yo=r2(yT[1],yn),yp=yQ[2]+2.+yh[1]*num_13,yq=[0,0],yr=yo-1|0;if(yr>=yn){var
-yA=yn;for(;;){var
-yB=caml_string_get(yT[1],yA),yC=9===yB?(((yq[1]/4|0)*4|0)+4|0)-yq[1]|0:1;if((yq[1]+yC|0)<=yb){var
-yD=yQ[1]+3.+yq[1]*7.;a:{if(ye<=yA&&yA<yd){yg([0,um(xF,ia,[num_254,yD,yp,yC*7.,rS]),0]);yg(uo(xF,h$,yD,yp,yB));break a}yg(uo(xF,ia,yD,yp,yB))}}yq[1]=yq[1]+yC|0;var
-yE=yA+1|0;if(yr===yA)break;yA=yE}}var
-ys=ye<=yo?1:0;if(ys){var
-yt=yo<yd?1:0;if(yt)var
-yu=yo<yl?1:0,yv=yu?yq[1]<yb?1:0:yu;else
+yP=yO[2],yQ=yO[1],yR=caml_equal(w5[4],[0,[0,x_[1],yQ]]),yS=sx(x_,yQ),ya=(yP[3]-6.)/7.|0,yb=rX(yS),yc=yb[2],yd=yb[1],ye=[0,0],yf=function(y6){ye[1]=o(y6,ye[1])},yg=[0,0],yh=r3(yS[1],yS[4]),yi=yh?yh[1]:caml_ml_string_length(yS[1]),yj=[0,yi],yk=caml_ml_string_length(yS[1]),yl=sw(yP);for(;;){if(yg[1]<yl&&yj[1]<=yk){var
+ym=yj[1],yn=r1(yS[1],ym),yo=yP[2]+2.+yg[1]*num_13,yp=[0,0],yq=yn-1|0;if(yq>=ym){var
+yz=ym;for(;;){var
+yA=caml_string_get(yS[1],yz),yB=9===yA?(((yp[1]/4|0)*4|0)+4|0)-yp[1]|0:1;if((yp[1]+yB|0)<=ya){var
+yC=yP[1]+3.+yp[1]*7.;a:{if(yd<=yz&&yz<yc){yf([0,ul(xE,h$,[num_254,yC,yo,yB*7.,rR]),0]);yf(un(xE,h_,yC,yo,yA));break a}yf(un(xE,h$,yC,yo,yA))}}yp[1]=yp[1]+yB|0;var
+yD=yz+1|0;if(yq===yz)break;yz=yD}}var
+yr=yd<=yn?1:0;if(yr){var
+ys=yn<yc?1:0;if(ys)var
+yt=yn<yk?1:0,yu=yt?yp[1]<ya?1:0:yt;else
 var
-yv=yt}else
+yu=ys}else
 var
-yv=ys;if(yv)yg([0,um(xF,ia,[num_254,yQ[1]+3.+yq[1]*7.,yp,rR,rS]),0]);if(yS){var
-yw=ye===yd?1:0;if(yw)var
-yx=yn<=yT[2]?1:0,yy=yx?yT[2]<=yo?1:0:yx;else
+yu=yr;if(yu)yf([0,ul(xE,h$,[num_254,yP[1]+3.+yp[1]*7.,yo,rQ,rR]),0]);if(yR){var
+yv=yd===yc?1:0;if(yv)var
+yw=ym<=yS[2]?1:0,yx=yw?yS[2]<=yn?1:0:yw;else
 var
-yy=yw}else
+yx=yv}else
 var
-yy=yS;if(yy){var
-yz=r5(yT[1],yT[2])*7.;yg([0,um(xF,ia,[num_254,yQ[1]+3.+yz-1.,yp+1.,1.5,11.]),0])}yh[1]++;yk[1]=yo+1|0;continue}var
-yF=Y(yf[1]),yG=un(xF,yQ);return o([0,um(xF,h$,yQ),yG],yF)}case
+yx=yR;if(yx){var
+yy=r4(yS[1],yS[2])*7.;yf([0,ul(xE,h$,[num_254,yP[1]+3.+yy-1.,yo+1.,1.5,11.]),0])}yg[1]++;yj[1]=yn+1|0;continue}var
+yE=Y(ye[1]),yF=um(xE,yP);return o([0,ul(xE,h_,yP),yF],yE)}case
 1:var
-yW=yP[2],yU=yP[4],yV=yP[3],yX=sA(x$,yP[1]),yH=(yW[3]-6.)/7.|0,yI=sx(yW),yJ=aa(ad(function(y3,y2){var
-y4=y3+yX|0;if(yI<=y3)return 0;var
-y5=yW[2]+2.+y3*num_13;if(!caml_equal(yU,[0,y4]))return up(xF,ia,yW[1]+3.,y5,[0,yH],y2);var
-y6=up(xF,h$,yW[1]+3.,y5,[0,yH],y2);return[0,um(xF,ia,[num_254,yW[1]+1.,y5,yW[3]-2.,rS]),y6]},ap(function(y1,y0){return yX<=y1?1:0},yV))),yK=un(xF,yW);return o([0,um(xF,h$,yW),yK],yJ);default:var
-yY=yP[2],yZ=yP[1];if(yP[3])var
-yM=ia,yL=h$;else
+yV=yO[2],yT=yO[4],yU=yO[3],yW=sz(x_,yO[1]),yG=(yV[3]-6.)/7.|0,yH=sw(yV),yI=aa(ad(function(y2,y1){var
+y3=y2+yW|0;if(yH<=y2)return 0;var
+y4=yV[2]+2.+y2*num_13;if(!caml_equal(yT,[0,y3]))return uo(xE,h$,yV[1]+3.,y4,[0,yG],y1);var
+y5=uo(xE,h_,yV[1]+3.,y4,[0,yG],y1);return[0,ul(xE,h$,[num_254,yV[1]+1.,y4,yV[3]-2.,rR]),y5]},ap(function(y0,yZ){return yW<=y0?1:0},yU))),yJ=um(xE,yV);return o([0,ul(xE,h_,yV),yJ],yI);default:var
+yX=yO[2],yY=yO[1];if(yO[3])var
+yL=h$,yK=h_;else
 var
-yM=h$,yL=ia;var
-yN=up(xF,yL,yZ[1]+(yZ[3]-caml_ml_string_length(yY)*7.)/2.,yZ[2]+(yZ[4]-num_13)/2.,0,yY),yO=un(xF,yZ);return o([0,um(xF,yM,yZ),yO],yN)}},si(w6,x$)),x_=un(xF,[num_254,x$[2][1]-1.,x$[2][2]-1.,x$[2][3]+2.,x$[2][4]+2.]);return o(x8,o([0,um(xF,h$,x$[2]),x9],x_))},w6[3])),xJ=w6[12];a:{var
-xG=[num_254,0.,0.,rP,rQ];if(xJ){var
-xK=xJ[1][2];if(xK){var
-xL=xK[1],xM=xL[1],xN=[0,pd((xM[1]+xM[3]/2.-num_400)*xF,(num_300-xM[2]-xM[4]/2.)*xF,[0,0.,0.,0.,1.,1.,[6,xM[3]*xF,xM[4]*xF,xL[2]]]),0];break a}}var
-xN=0}var
-xO=0===w6[7]?0:up(xF,ia,4.,2.,0,uq),xP=w6[5];if(xP)var
-xQ=xP[1],xR=rW(w5),xB=tw(xQ),xC=rU(xB,xR)?[0,(xR[2]-xB[2]-3.)/num_13|0]:0,xD=aa(ad(function(xZ,xY){var
-x0=xY[1],x1=xB[2]+3.+xZ*num_13;if(!caml_equal(xC,[0,xZ]))return up(xF,ia,xB[1]+8.,x1,0,x0);var
-x2=up(xF,h$,xB[1]+8.,x1,0,x0);return[0,um(xF,ia,[num_254,xB[1]+1.,x1,xB[3]-2.,rS]),x2]},xQ[2])),xE=un(xF,xB),xS=o([0,um(xF,h$,xB),xE],xD);else
+yL=h_,yK=h$;var
+yM=uo(xE,yK,yY[1]+(yY[3]-caml_ml_string_length(yX)*7.)/2.,yY[2]+(yY[4]-num_13)/2.,0,yX),yN=um(xE,yY);return o([0,ul(xE,yL,yY),yN],yM)}},sh(w5,x_)),x9=um(xE,[num_254,x_[2][1]-1.,x_[2][2]-1.,x_[2][3]+2.,x_[2][4]+2.]);return o(x7,o([0,ul(xE,h_,x_[2]),x8],x9))},w5[3])),xI=w5[12];a:{var
+xF=[num_254,0.,0.,rO,rP];if(xI){var
+xJ=xI[1][2];if(xJ){var
+xK=xJ[1],xL=xK[1],xM=[0,pc((xL[1]+xL[3]/2.-num_400)*xE,(num_300-xL[2]-xL[4]/2.)*xE,[0,0.,0.,0.,1.,1.,[6,xL[3]*xE,xL[4]*xE,xK[2]]]),0];break a}}var
+xM=0}var
+xN=0===w5[7]?0:uo(xE,h$,4.,2.,0,up),xO=w5[5];if(xO)var
+xP=xO[1],xQ=rV(w4),xA=tv(xP),xB=rT(xA,xQ)?[0,(xQ[2]-xA[2]-3.)/num_13|0]:0,xC=aa(ad(function(xY,xX){var
+xZ=xX[1],x0=xA[2]+3.+xY*num_13;if(!caml_equal(xB,[0,xY]))return uo(xE,h$,xA[1]+8.,x0,0,xZ);var
+x1=uo(xE,h_,xA[1]+8.,x0,0,xZ);return[0,ul(xE,h$,[num_254,xA[1]+1.,x0,xA[3]-2.,rR]),x1]},xP[2])),xD=um(xE,xA),xR=o([0,ul(xE,h_,xA),xD],xC);else
 var
-xS=0;var
-xT=o(xN,o(xO,xS)),xU=[0,um(xF,h_,xG),xI],xV=o([0,pa(ia,w5[3][1],w5[3][2]),xU],xT),w7=pL(uG[1]),w8=pL(uG[2]),w9=pL(uG[4]),w_=pL(uG[6]),w$=qm(qr,xV),xa=pC[2]?0:[0,[1,qD,qC],0],xb=pC[1]?0:[0,[0,qB,qA],0],xW=[0,pR,o([0,[0,pZ,w9+str$14+w_+str$14+w7+str$14+w8],[0,[1,qz,qy],[0,[1,qx,qw],[0,[1,qv,qu],[0,[0,p0,qt],[0,[0,p1,qs],0]]]]]],o(xb,xa)),w$],w1=oX.body,xy=uR[1];if(xy){var
-xz=xy[1];uR[1]=[0,[0,xW,pQ(w1,xz[2],xz[1],xW)]]}else{var
-w0=w1.firstChild;for(;;){if(caml_equal(w0,oF)){var
-xA=pP(xW);oR(w1,xA);uR[1]=[0,[0,xW,xA]];break}oS(w1,w0);w0=w1.firstChild}}return oV(oW,uS)}oV(oW,uS);var
-uT=[0,0];function
-uU(wW){var
-wX=ak(wW,uT[1]);if(!wX)return wX;var
-wY=uT[1];uT[1]=ao(function(wZ){return wZ!==wW?1:0})(wY);return uL([5,[0,0,wW]])}oG.addEventListener(str_blur,caml_js_wrap_callback_strict(1,function(wV){return ae(uU,uT[1])}));function
-uV(wE){qQ(0);ae(function(wQ){var
-wS=wQ[1],wR=wQ[2],wT=ak(wS,uT[1]),wU=wT?1-(wE[wR]|0):wT;return wU?uU(wS):wU},rN);var
-wF=D(function(wP){return wP[2]},uR[1]),wz=oP(wE);a:if(wz!==str_dblclick)if(wz!==str_keydown)if(wz!==str_keyup){if(wz!==str_mousedown){if(wz===str_mousemove){if(wF){var
-wD=qE(wF[1],wE.clientX,wE.clientY),wG=[0,[1,[0,wD[1]|0,wD[2]|0]]];break a}var
-wG=0;break a}if(wz!==str_mouseup){if(wz!==str_wheel){var
-wG=0;break a}var
-wA=wE.deltaY,wB=wE.deltaMode|0,wC=0===wB?wA/num_100:1===wB?wA/3.:wA,wG=[0,[7,-wC]];break a}if(2===wE.button){var
-wG=qI;break a}}else if(2===wE.button){var
-wG=qJ;break a}var
-wG=[0,[3,0!==(wE.buttons&1)?1:0]]}else
+xR=0;var
+xS=o(xM,o(xN,xR)),xT=[0,ul(xE,h9,xF),xH],xU=o([0,o$(h$,w4[3][1],w4[3][2]),xT],xS),w6=pK(uF[1]),w7=pK(uF[2]),w8=pK(uF[4]),w9=pK(uF[6]),w_=ql(qq,xU),w$=pB[2]?0:[0,[1,qC,qB],0],xa=pB[1]?0:[0,[0,qA,qz],0],xV=[0,pQ,o([0,[0,pY,w8+str$14+w9+str$14+w6+str$14+w7],[0,[1,qy,qx],[0,[1,qw,qv],[0,[1,qu,qt],[0,[0,pZ,qs],[0,[0,p0,qr],0]]]]]],o(xa,w$)),w_],w0=oW.body,xx=uQ[1];if(xx){var
+xy=xx[1];uQ[1]=[0,[0,xV,pP(w0,xy[2],xy[1],xV)]]}else{var
+wZ=w0.firstChild;for(;;){if(caml_equal(wZ,oE)){var
+xz=pO(xV);oQ(w0,xz);uQ[1]=[0,[0,xV,xz]];break}oR(w0,wZ);wZ=w0.firstChild}}return oU(oV,uR)}oU(oV,uR);var
+uS=[0,0];function
+uT(wV){var
+wW=ak(wV,uS[1]);if(!wW)return wW;var
+wX=uS[1];uS[1]=ao(function(wY){return wY!==wV?1:0})(wX);return uK([5,[0,0,wV]])}oF.addEventListener(str_blur,caml_js_wrap_callback_strict(1,function(wU){return ae(uT,uS[1])}));function
+uU(wD){qP(0);ae(function(wP){var
+wR=wP[1],wQ=wP[2],wS=ak(wR,uS[1]),wT=wS?1-(wD[wQ]|0):wS;return wT?uT(wR):wT},rM);var
+wE=D(function(wO){return wO[2]},uQ[1]),wy=oO(wD);a:if(wy!==str_dblclick)if(wy!==str_keydown)if(wy!==str_keyup){if(wy!==str_mousedown){if(wy===str_mousemove){if(wE){var
+wC=qD(wE[1],wD.clientX,wD.clientY),wF=[0,[1,[0,wC[1]|0,wC[2]|0]]];break a}var
+wF=0;break a}if(wy!==str_mouseup){if(wy!==str_wheel){var
+wF=0;break a}var
+wz=wD.deltaY,wA=wD.deltaMode|0,wB=0===wA?wz/num_100:1===wA?wz/3.:wz,wF=[0,[7,-wB]];break a}if(2===wD.button){var
+wF=qH;break a}}else if(2===wD.button){var
+wF=qI;break a}var
+wF=[0,[3,0!==(wD.buttons&1)?1:0]]}else
 var
-wG=[0,[5,[0,0,qF(oQ(wE))]]];else
+wF=[0,[5,[0,0,qE(oP(wD))]]];else
 var
-wG=[0,[5,[0,1,qF(oQ(wE))]]];else
+wF=[0,[5,[0,1,qE(oP(wD))]]];else
 var
-wG=qK;if(wG){var
-wH=wG[1];a:if(typeof
-wH!=="number"&&5===wH[0]){var
-wK=wH[1];if(wK[1]){var
-wL=wK[2];if(1-ak(wL,uT[1]))uT[1]=[0,wL,uT[1]]}else{var
-wM=wK[2],wN=uT[1];uT[1]=ao(function(wO){return wO!==wM?1:0})(wN)}break a}uL(wH)}if(oP(wE)===str_mousemove)uL([2,[0,wE.movementX,-wE.movementY]]);if(oP(wE)===str_keydown){var
-wI=oQ(wE);a:if(wI===str$9)var
-wJ=0;else{if(1!==caml_ml_string_length(wI)&&num_128>caml_string_get(wI,0)){var
-wJ=0;break a}var
-wJ=[0,wI]}if(wJ)uL([6,wJ[1]])}return pI}ae(function(wy){return oU(oW,wy,uV,1)},rO);oU(oW,28,oO,1);oU(oW,76,function(wt){var
-wu=oQ(wt),wg=wu===str_Tab?1:0;a:{if(wg)var
-wh=wg;else{var
-wi=2<=caml_ml_string_length(wu)?1:0;if(wi){var
-wj=70===caml_string_get(wu,0)?1:0;if(wj){var
-wk=aP(wu,1,caml_ml_string_length(wu)-1|0);try{var
-wf=[0,caml_int_of_string(wk)],wl=wf}catch(wx){var
-we=caml_wrap_exception(wx);if(we[1]!==Failure)throw caml_maybe_attach_backtrace(we,0);var
-wl=0}if(wl){var
-wm=wl[1],wn=1<=wm?1:0,wo=wn?wm<=10?1:0:wn,wv=wo;break a}var
-wh=0}else
+wF=qJ;if(wF){var
+wG=wF[1];a:if(typeof
+wG!=="number"&&5===wG[0]){var
+wJ=wG[1];if(wJ[1]){var
+wK=wJ[2];if(1-ak(wK,uS[1]))uS[1]=[0,wK,uS[1]]}else{var
+wL=wJ[2],wM=uS[1];uS[1]=ao(function(wN){return wN!==wL?1:0})(wM)}break a}uK(wG)}if(oO(wD)===str_mousemove)uK([2,[0,wD.movementX,-wD.movementY]]);if(oO(wD)===str_keydown){var
+wH=oP(wD);a:if(wH===str$9)var
+wI=0;else{if(1!==caml_ml_string_length(wH)&&num_128>caml_string_get(wH,0)){var
+wI=0;break a}var
+wI=[0,wH]}if(wI)uK([6,wI[1]])}return pH}ae(function(wx){return oT(oV,wx,uU,1)},rN);oT(oV,28,oN,1);oT(oV,76,function(ws){var
+wt=oP(ws),wf=wt===str_Tab?1:0;a:{if(wf)var
+wg=wf;else{var
+wh=2<=caml_ml_string_length(wt)?1:0;if(wh){var
+wi=70===caml_string_get(wt,0)?1:0;if(wi){var
+wj=aP(wt,1,caml_ml_string_length(wt)-1|0);try{var
+we=[0,caml_int_of_string(wj)],wk=we}catch(ww){var
+wd=caml_wrap_exception(ww);if(wd[1]!==Failure)throw caml_maybe_attach_backtrace(wd,0);var
+wk=0}if(wk){var
+wl=wk[1],wm=1<=wl?1:0,wn=wm?wl<=10?1:0:wm,wu=wn;break a}var
+wg=0}else
 var
-wh=wj}else
+wg=wi}else
 var
-wh=wi}var
-wv=wh}if(wv)var
-ww=wv;else{var
-wp=wt.ctrlKey|0;if(wp){var
-wq=1===caml_ml_string_length(wu)?1:0;if(wq)var
-wr=48<=caml_string_get(wu,0)?1:0,ws=wr?caml_string_get(wu,0)<=57?1:0:wr;else
+wg=wh}var
+wu=wg}if(wu)var
+wv=wu;else{var
+wo=ws.ctrlKey|0;if(wo){var
+wp=1===caml_ml_string_length(wt)?1:0;if(wp)var
+wq=48<=caml_string_get(wt,0)?1:0,wr=wq?caml_string_get(wt,0)<=57?1:0:wq;else
 var
-ws=wq}else
+wr=wp}else
 var
-ws=wp;var
-ww=ws}return ww?oO(wt):ww},1);var
-uC=oG.document,uD=uC.createElement("meta");uD.name="viewport";uD.content="width=device-width, initial-scale=1";uC.head.appendChild(uD);ae(function(wc){var
-wd=wc.style;wd.touchAction=str_none;return wd.userSelect=str_none},[0,uC.documentElement,[0,uC.body,0]]);var
-uE=[0,0],uF=[0,rH];return ae(function(uW){oG.addEventListener(caml_js_from_string(uW),caml_js_wrap_callback_strict(1,function(vm){var
-vc=caml_js_to_string(vm.pointerType)!==str_mouse?1:0;if(vc){var
-u8=uE[1],vq=vm.target;if(u8)var
-vd=u8[1];else{var
-u9=q0(rx);q1(u9,ry);oG.document.body.appendChild(u9);var
-uX=q0(q4);ae(function(wb){uX.setAttribute(caml_js_from_string(wb[1]),caml_js_from_string(wb[2]));return 0},q5);q1(uX,q6);u9.appendChild(uX);uX.value=str$23;var
-uY=function(v$,v_){uL([5,[0,1,v$]]);if(v_)uL([6,v_[1]]);oG.setTimeout(caml_js_wrap_callback_strict(1,function(wa){return uL([5,[0,0,v$]])}),80);return 0},uZ=[0,0];q2(uX,q7,function(v9){uZ[1]=caml_js_to_string(v9.key)!=="Unidentified"?1:0;return 0});q2(uX,q_,function(v3){if(1-uZ[1]){var
-v4=v3.data;if(caml_js_to_string(v3.inputType)==="deleteContentBackward")uY(q8,0);else if(1-(v4==oF?1:0))aT(function(v5){var
-v6=aN(1,v5),v7=[0,v6],v8=32===v5?q9:v6;return uY(v8,v7)},caml_js_to_string(v4))}uZ[1]=0;return uX.value=str$23});var
-u0=function(v2){return v2?(uX.value=str$23,uX.focus(),0):(uX.blur(),0)},u1=q0(ra);q1(u1,[0,rg,[0,rf,[0,re,[0,rd,[0,[0,rc,"52"+str_px],rb]]]]]);var
-u2=function(vT,vS,vR){var
-vU=q0(rh);vU.textContent=vT;q1(vU,ri);var
-vV=[0,0];q2(vU,rj,function(v1){v1.preventDefault();vV[1]=1;return caml_call1(vS,0)});q2(vU,rk,function(v0){v0.preventDefault();return 0});function
-vW(vY){var
-vZ=vV[1];return vZ?(vV[1]=0,caml_call1(vR,0)):vZ}ae(function(vX){return q2(vU,vX,vW)},rl);u1.appendChild(vU)},u3=function(vO,vN,vM,vL){return u2(vO,function(vQ){uL([5,[0,1,vN]]);return vM?uL([6,vM[1]]):0},function(vP){return uL([5,[0,0,vN]])})};u3(q3(9664),rm,0,0);u3(q3(9650),rn,0,0);u3(q3(9660),ro,0,0);u3(q3(9654),rp,0,0);u3("Space",rr,rq,0);u3(str_Enter,rs,0,0);u3("Esc",rt,0,0);var
-u4=[0,0];u2("abc",function(vK){u4[1]=1-u4[1];return u0(u4[1])},function(vJ){return 0});u9.appendChild(u1);var
-vn=D(function(vI){return vI[2]},uR[1]);if(vn){var
-u_=vn[1];u_.setAttribute("preserveAspectRatio","xMidYMin meet");var
-u5=oG.visualViewport,u6=[0,0],u7=function(vE){var
-vF=u5==oF?oG.innerHeight:u5.height,vG=vF-u6[1];return q1(u_,[0,[0,rv,caml_call1(dX(ru),vG)],0])};u7(0);if(1-(u5==oF?1:0))q2(u5,rw,function(vD){return u7(0)});var
-u$=function(vC){u6[1]=vC;return u7(0)}}else
+wr=wo;var
+wv=wr}return wv?oN(ws):wv},1);var
+uB=oF.document,uC=uB.createElement("meta");uC.name="viewport";uC.content="width=device-width, initial-scale=1";uB.head.appendChild(uC);ae(function(wb){var
+wc=wb.style;wc.touchAction=str_none;return wc.userSelect=str_none},[0,uB.documentElement,[0,uB.body,0]]);var
+uD=[0,0],uE=[0,rG];return ae(function(uV){oF.addEventListener(caml_js_from_string(uV),caml_js_wrap_callback_strict(1,function(vl){var
+vb=caml_js_to_string(vl.pointerType)!==str_mouse?1:0;if(vb){var
+u7=uD[1],vp=vl.target;if(u7)var
+vc=u7[1];else{var
+u8=qZ(rw);q0(u8,rx);oF.document.body.appendChild(u8);var
+uW=qZ(q3);ae(function(wa){uW.setAttribute(caml_js_from_string(wa[1]),caml_js_from_string(wa[2]));return 0},q4);q0(uW,q5);u8.appendChild(uW);uW.value=str$23;var
+uX=function(v_,v9){uK([5,[0,1,v_]]);if(v9)uK([6,v9[1]]);oF.setTimeout(caml_js_wrap_callback_strict(1,function(v$){return uK([5,[0,0,v_]])}),80);return 0},uY=[0,0];q1(uW,q6,function(v8){uY[1]=caml_js_to_string(v8.key)!=="Unidentified"?1:0;return 0});q1(uW,q9,function(v2){if(1-uY[1]){var
+v3=v2.data;if(caml_js_to_string(v2.inputType)==="deleteContentBackward")uX(q7,0);else if(1-(v3==oE?1:0))aT(function(v4){var
+v5=aN(1,v4),v6=[0,v5],v7=32===v4?q8:v5;return uX(v7,v6)},caml_js_to_string(v3))}uY[1]=0;return uW.value=str$23});var
+uZ=function(v1){return v1?(uW.value=str$23,uW.focus(),0):(uW.blur(),0)},u0=qZ(q$);q0(u0,[0,rf,[0,re,[0,rd,[0,rc,[0,[0,rb,"52"+str_px],ra]]]]]);var
+u1=function(vS,vR,vQ){var
+vT=qZ(rg);vT.textContent=vS;q0(vT,rh);var
+vU=[0,0];q1(vT,ri,function(v0){v0.preventDefault();vU[1]=1;return caml_call1(vR,0)});q1(vT,rj,function(vZ){vZ.preventDefault();return 0});function
+vV(vX){var
+vY=vU[1];return vY?(vU[1]=0,caml_call1(vQ,0)):vY}ae(function(vW){return q1(vT,vW,vV)},rk);u0.appendChild(vT)},u2=function(vN,vM,vL,vK){return u1(vN,function(vP){uK([5,[0,1,vM]]);return vL?uK([6,vL[1]]):0},function(vO){return uK([5,[0,0,vM]])})};u2(q2(9664),rl,0,0);u2(q2(9650),rm,0,0);u2(q2(9660),rn,0,0);u2(q2(9654),ro,0,0);u2("Space",rq,rp,0);u2(str_Enter,rr,0,0);u2("Esc",rs,0,0);var
+u3=[0,0];u1("abc",function(vJ){u3[1]=1-u3[1];return uZ(u3[1])},function(vI){return 0});u8.appendChild(u0);var
+vm=D(function(vH){return vH[2]},uQ[1]);if(vm){var
+u9=vm[1];u9.setAttribute("preserveAspectRatio","xMidYMin meet");var
+u4=oF.visualViewport,u5=[0,0],u6=function(vD){var
+vE=u4==oE?oF.innerHeight:u4.height,vF=vE-u5[1];return q0(u9,[0,[0,ru,caml_call1(dX(rt),vF)],0])};u6(0);if(1-(u4==oE?1:0))q1(u4,rv,function(vC){return u6(0)});var
+u_=function(vB){u5[1]=vB;return u6(0)}}else
 var
-u$=function(vH){};var
-va=q0(rz);va.textContent=q3(9000);q1(va,rA);u9.appendChild(va);q2(va,rB,function(vB){vB.preventDefault();return 0});q2(va,rC,function(vA){vA.preventDefault();return 0});var
-vb=[0,0];q2(va,rG,function(vv){vb[1]=1-vb[1];var
-vw=0,vx=vb[1]?rD:rF;q1(u1,[0,[0,rE,vx],vw]);var
-vy=vb[1]?q$:0;u$(vy);var
-vz=1-vb[1];return vz?u0(0):vz});uE[1]=[0,u9];var
-vd=u9}var
-ve=1-(vd.contains(vq)|0)}else
+u_=function(vG){};var
+u$=qZ(ry);u$.textContent=q2(9000);q0(u$,rz);u8.appendChild(u$);q1(u$,rA,function(vA){vA.preventDefault();return 0});q1(u$,rB,function(vz){vz.preventDefault();return 0});var
+va=[0,0];q1(u$,rF,function(vu){va[1]=1-va[1];var
+vv=0,vw=va[1]?rC:rE;q0(u0,[0,[0,rD,vw],vv]);var
+vx=va[1]?q_:0;u_(vx);var
+vy=1-va[1];return vy?uZ(0):vy});uD[1]=[0,u8];var
+vc=u8}var
+vd=1-(vc.contains(vp)|0)}else
 var
-ve=vc;if(ve){oO(vm);qQ(0);var
-vp=vm.clientX,vo=vm.clientY,vf=function(vr){var
-vt=D(function(vu){return vu[2]},uR[1]);if(!vt)return 0;var
-vs=qE(vt[1],vp,vo);return uL([1,[0,vs[1]|0,vs[2]|0]])},vg=oP(vm);if(vg===str_pointerdown){vf(0);return uL(rK)}if(vg===str_pointermove)return vf(0);if(vg===str_pointerup){vf(0);uL(rI);var
-vi=oM(0),vj=uF[1],vk=vj[3],vl=vj[2];if(vi-vj[1]<num_300&&Math.abs(vp-vl)<num_30&&Math.abs(vo-vk)<num_30){uL(0);uF[1]=rJ;return 0}uF[1]=[0,vi,vp,vo];return 0}var
-vh=0}else
+vd=vb;if(vd){oN(vl);qP(0);var
+vo=vl.clientX,vn=vl.clientY,ve=function(vq){var
+vs=D(function(vt){return vt[2]},uQ[1]);if(!vs)return 0;var
+vr=qD(vs[1],vo,vn);return uK([1,[0,vr[1]|0,vr[2]|0]])},vf=oO(vl);if(vf===str_pointerdown){ve(0);return uK(rJ)}if(vf===str_pointermove)return ve(0);if(vf===str_pointerup){ve(0);uK(rH);var
+vh=oL(0),vi=uE[1],vj=vi[3],vk=vi[2];if(vh-vi[1]<num_300&&Math.abs(vo-vk)<num_30&&Math.abs(vn-vj)<num_30){uK(0);uE[1]=rI;return 0}uE[1]=[0,vh,vo,vn];return 0}var
+vg=0}else
 var
-vh=ve;return vh}),!!1);return 0},rL)})}u(0);return}(globalThis));
+vg=vd;return vg}),!!1);return 0},rK)})}u(0);return}(globalThis));
